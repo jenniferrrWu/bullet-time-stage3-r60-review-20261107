@@ -12,3 +12,5 @@
 .video-trio{grid-template-columns:repeat(2,minmax(0,1fr));max-width:780px}.film video{height:220px}@media(max-width:740px){.film video{height:150px}}
 
 .section-row th{width:auto;background:#174134;color:#e8fff4;font-size:1rem;border-top:3px solid #39a879}.section-row.diagnostic th{background:#4b3828;color:#fff0d7;border-top-color:#d99d4d}
+
+.input-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.input-media-grid figure{min-width:0;margin:0}.input-media-grid figcaption{font-weight:650;margin-bottom:6px}.input-media-grid img,.input-media-grid video{display:block;width:100%;aspect-ratio:20/11;object-fit:contain;background:#0b131c;border-radius:6px}.input-media-grid small{display:block;margin-top:4px;color:#a4becb}.prompt-text{display:block;margin-top:4px;padding:8px;background:#0d1d2b;border-left:3px solid #4aaad4;overflow-wrap:anywhere;font-size:.87rem}@media(max-width:740px){.input-media-grid{grid-template-columns:1fr}}
