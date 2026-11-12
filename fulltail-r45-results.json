@@ -307,9 +307,33 @@
       "title": "Tile ControlNet 0.2（官方权重）"
     },
     "tile_camera_combo": {
-      "status": "running",
-      "windows_completed": 4,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/tile_camera_combo.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/tile_camera_combo.jpg",
+      "bytes": 322584,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "33dd0d042cc051f003e4011b57b57a51930fbaa3122d3e0f5fcd7b554d6d508b"
+      },
       "title": "Tile 0.2＋DD 相机增益 1.5"
     },
     "canny_0p5": {
@@ -463,7 +487,7 @@
       "title": "DD 目标视角关节残差 β1.0"
     },
     "screen_pose_beta_0p5": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "DD 连续关节跟随残差 β0.5"
@@ -505,9 +529,33 @@
       "title": "DD 六步人体/运动短训练适配器"
     },
     "tile_depth": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/tile_depth.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/tile_depth.jpg",
+      "bytes": 437699,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "a95e3cc0529af5e52d5fb1ef44d83469bd229a87820be2d7959472f02a05c579"
+      },
       "title": "Tile 0.2＋Depth 0.5 双模块"
     },
     "flashmotion": {
@@ -548,19 +596,19 @@
     },
     "wanmove": {
       "status": "running",
-      "windows_completed": 5,
+      "windows_completed": 6,
       "total_windows": 8,
       "title": "Wan-Move 官方轨迹函数 α0.35"
     },
     "motion_i2v": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 8,
       "title": "Motion-I2V ForwardWarp α0.35"
     },
     "nlf_flashmotion": {
       "status": "running",
-      "windows_completed": 2,
+      "windows_completed": 3,
       "total_windows": 4,
       "title": "NLF 三维人体＋FlashMotion α0.3"
     },
@@ -635,10 +683,10 @@
     },
     "vace": {
       "status": "running",
-      "windows_completed": 3,
+      "windows_completed": 4,
       "total_windows": 13,
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794513322.1908026
+  "last_checked_unix": 1794513393.3245378
 }
