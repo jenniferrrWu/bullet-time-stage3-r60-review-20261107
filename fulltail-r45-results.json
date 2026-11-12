@@ -211,10 +211,29 @@
       "title": "NLF 三维人体＋FlashMotion α0.3"
     },
     "dd_static_roof": {
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/dd_static_roof.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/dd_static_roof.jpg",
+      "bytes": 120889,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "output_sha256": "563a569524405db3b801d9e97ae6cee579fae7fa3b39b7a4427f5b0562404eb1",
+        "kind": "DD baseline postprocess; static roof from same Stage2 endpoint"
+      },
+      "title": "DD＋rembg 人物抠像＋LaMa 静态屋顶"
+    },
+    "dd_camera_roof": {
       "status": "running",
       "windows_completed": 0,
       "total_windows": 1,
-      "title": "DD＋rembg 人物抠像＋LaMa 静态屋顶"
+      "title": "DD 相机增益 1.5＋rembg＋LaMa 固定屋顶"
     },
     "videox_fun": {
       "status": "queued",
@@ -223,5 +242,5 @@
       "title": "VideoX-Fun 官方 5B Control+Ref"
     }
   },
-  "last_checked_unix": 1794505799.5463147
+  "last_checked_unix": 1794505878.7540994
 }
