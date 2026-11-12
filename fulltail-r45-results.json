@@ -186,6 +186,12 @@
       },
       "title": "DD 相机条件增益 1.5"
     },
+    "camera_screen_combo": {
+      "status": "running",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "DD 相机增益 1.5＋连续关节残差 β0.5"
+    },
     "content_camera_combo": {
       "status": "ready_for_visual_review",
       "video": "./media/case13-f845-r45-fulltail/content_camera_combo.mp4",
@@ -560,7 +566,7 @@
     },
     "flashmotion": {
       "status": "running",
-      "windows_completed": 1,
+      "windows_completed": 2,
       "total_windows": 4,
       "title": "FlashMotion SlowAdapter α0.3"
     },
@@ -712,5 +718,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794514063.2165406
+  "last_checked_unix": 1794514115.7668843
 }
