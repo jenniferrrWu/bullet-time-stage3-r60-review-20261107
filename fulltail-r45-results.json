@@ -753,9 +753,41 @@
       "title": "Wan-Move 官方轨迹函数 α0.1"
     },
     "motion_i2v": {
-      "status": "running",
-      "windows_completed": 8,
-      "total_windows": 8,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/motion_i2v.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/motion_i2v.jpg",
+      "bytes": 1933965,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          33,
+          33,
+          33,
+          33,
+          33,
+          33,
+          33,
+          25
+        ],
+        "window_kept_frames": [
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          22
+        ],
+        "output_sha256": "a36015d673510c6d035991d5488e00fe020e3b67544c4583d738d65291e0a40c"
+      },
       "title": "Motion-I2V ForwardWarp α0.35"
     },
     "nlf_flashmotion": {
@@ -907,11 +939,54 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     },
     "vace_nomask": {
-      "status": "running",
-      "windows_completed": 12,
-      "total_windows": 13,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/vace_nomask.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/vace_nomask.jpg",
+      "bytes": 417936,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          9
+        ],
+        "window_kept_frames": [
+          21,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          6
+        ],
+        "output_sha256": "bfed7dad73d6a4dbc76d6124fb59f0669d66af9d6a1049a156de01256c8bf84d",
+        "source_condition": "projected source DWPose controls, not raw RGB source video"
+      },
       "title": "VACE-1.3B 官方默认遮罩 Control+Ref"
     }
   },
-  "last_checked_unix": 1794517435.7024217
+  "last_checked_unix": 1794517504.5436475
 }
