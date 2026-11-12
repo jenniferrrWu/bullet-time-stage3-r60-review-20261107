@@ -157,9 +157,33 @@
       "title": "DD 内容时间残差 0.5"
     },
     "camera_1p25": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/camera_1p25.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/camera_1p25.jpg",
+      "bytes": 312921,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "8701fe4ae7d11ce991c1ac9c2524f4c22e100b2fcbffa9b006272843524a57d0"
+      },
       "title": "DD 相机条件增益 1.25"
     },
     "camera_1p5": {
@@ -193,9 +217,33 @@
       "title": "DD 相机条件增益 1.5"
     },
     "camera_2p0": {
-      "status": "running",
-      "windows_completed": 4,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/camera_2p0.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/camera_2p0.jpg",
+      "bytes": 225026,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "271fdfc5b0e13b1cea1341a9389aadadd62a4dd0967386b23cd32b97aea8047e"
+      },
       "title": "DD 相机条件增益 2.0"
     },
     "camera_screen_combo": {
@@ -747,9 +795,41 @@
       "title": "Wan-Move 官方轨迹函数 α0.35"
     },
     "wanmove_0p1": {
-      "status": "running",
-      "windows_completed": 7,
-      "total_windows": 8,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/wanmove_0p1.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/wanmove_0p1.jpg",
+      "bytes": 1818393,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          33,
+          33,
+          33,
+          33,
+          33,
+          33,
+          33,
+          25
+        ],
+        "window_kept_frames": [
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          22
+        ],
+        "output_sha256": "177c961eae4cb0b6926ba5f8910840529f72234d235cfc49347584cdea2925b2"
+      },
       "title": "Wan-Move 官方轨迹函数 α0.1"
     },
     "motion_i2v": {
@@ -988,5 +1068,5 @@
       "title": "VACE-1.3B 官方默认遮罩 Control+Ref"
     }
   },
-  "last_checked_unix": 1794518812.5310428
+  "last_checked_unix": 1794518898.2428012
 }
