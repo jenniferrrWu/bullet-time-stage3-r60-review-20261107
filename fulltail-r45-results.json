@@ -343,9 +343,33 @@
       "title": "Canny ControlNet 0.5（官方权重）"
     },
     "hed_0p5": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/hed_0p5.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/hed_0p5.jpg",
+      "bytes": 419733,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "b4eb18a6e94dbf4d1733697d1157b2d2fac5ccc46f3b72ca845c0500f3941d3b"
+      },
       "title": "HED ControlNet 0.5（官方权重）"
     },
     "lama_tile_0p2": {
@@ -531,7 +555,7 @@
       "title": "DD 相机增益 1.5＋rembg＋LaMa 固定屋顶"
     },
     "videox_fun": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "VideoX-Fun 官方 5B Control+Ref"
@@ -543,5 +567,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794511360.9313912
+  "last_checked_unix": 1794511691.4670954
 }
