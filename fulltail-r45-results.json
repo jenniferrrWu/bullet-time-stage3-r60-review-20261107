@@ -601,14 +601,46 @@
       "title": "TTM 双时钟强约束 7 步"
     },
     "wanmove": {
-      "status": "running",
-      "windows_completed": 7,
-      "total_windows": 8,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/wanmove.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/wanmove.jpg",
+      "bytes": 1870895,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          33,
+          33,
+          33,
+          33,
+          33,
+          33,
+          33,
+          25
+        ],
+        "window_kept_frames": [
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          22
+        ],
+        "output_sha256": "46c2ea399d9f1a36adce5286fb677d8356815d3c18f284807972a422631de5e2"
+      },
       "title": "Wan-Move 官方轨迹函数 α0.35"
     },
     "motion_i2v": {
       "status": "running",
-      "windows_completed": 1,
+      "windows_completed": 2,
       "total_windows": 8,
       "title": "Motion-I2V ForwardWarp α0.35"
     },
@@ -713,10 +745,10 @@
     },
     "vace": {
       "status": "running",
-      "windows_completed": 9,
+      "windows_completed": 10,
       "total_windows": 13,
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794514303.5462127
+  "last_checked_unix": 1794514412.6502838
 }
