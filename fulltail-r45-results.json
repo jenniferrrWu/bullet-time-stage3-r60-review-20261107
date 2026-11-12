@@ -602,14 +602,38 @@
     },
     "motion_i2v": {
       "status": "running",
-      "windows_completed": 0,
+      "windows_completed": 1,
       "total_windows": 8,
       "title": "Motion-I2V ForwardWarp α0.35"
     },
     "nlf_flashmotion": {
-      "status": "running",
-      "windows_completed": 4,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/nlf_flashmotion.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/nlf_flashmotion.jpg",
+      "bytes": 561420,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "7128bb9e6bf827c09df9c29cc0204ea75a5383cafa998ffca28f4d3d04a3f26e"
+      },
       "title": "NLF 三维人体＋FlashMotion α0.3"
     },
     "dd_static_roof": {
@@ -683,10 +707,10 @@
     },
     "vace": {
       "status": "running",
-      "windows_completed": 6,
+      "windows_completed": 7,
       "total_windows": 13,
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794513861.0309463
+  "last_checked_unix": 1794513921.4136536
 }
