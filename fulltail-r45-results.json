@@ -350,7 +350,7 @@
     },
     "lama_tile_0p2": {
       "status": "running",
-      "windows_completed": 0,
+      "windows_completed": 1,
       "total_windows": 4,
       "title": "LaMa 背景修补＋Tile 0.2"
     },
@@ -413,6 +413,18 @@
         "output_sha256": "e787789bac6a30d2636633f57cd672a5f1c65c45938f85e93f41928b1efe32ff"
       },
       "title": "DD 目标视角关节残差 β1.0"
+    },
+    "screen_pose_beta_0p5": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "DD 连续关节跟随残差 β0.5"
+    },
+    "screen_pose_beta_1p0": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "DD 连续关节跟随残差 β1.0"
     },
     "six_step": {
       "status": "ready_for_visual_review",
@@ -532,5 +544,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794510782.790622
+  "last_checked_unix": 1794510895.1114128
 }
