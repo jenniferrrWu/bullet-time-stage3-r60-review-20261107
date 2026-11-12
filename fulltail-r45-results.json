@@ -156,6 +156,12 @@
       },
       "title": "DD 内容时间残差 0.5"
     },
+    "camera_1p25": {
+      "status": "running",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "DD 相机条件增益 1.25"
+    },
     "camera_1p5": {
       "status": "ready_for_visual_review",
       "video": "./media/case13-f845-r45-fulltail/camera_1p5.mp4",
@@ -186,9 +192,15 @@
       },
       "title": "DD 相机条件增益 1.5"
     },
+    "camera_2p0": {
+      "status": "running",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "DD 相机条件增益 2.0"
+    },
     "camera_screen_combo": {
       "status": "running",
-      "windows_completed": 1,
+      "windows_completed": 2,
       "total_windows": 4,
       "title": "DD 相机增益 1.5＋连续关节残差 β0.5"
     },
@@ -848,10 +860,10 @@
     },
     "vace_nomask": {
       "status": "running",
-      "windows_completed": 3,
+      "windows_completed": 4,
       "total_windows": 13,
       "title": "VACE-1.3B 官方默认遮罩 Control+Ref"
     }
   },
-  "last_checked_unix": 1794515821.505605
+  "last_checked_unix": 1794515961.2813892
 }
