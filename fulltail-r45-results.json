@@ -493,9 +493,33 @@
       "title": "FlashMotion SlowAdapter α0.3"
     },
     "ttm": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/ttm.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/ttm.jpg",
+      "bytes": 471953,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "15fb446f75bdbd865a02a3e445c626f913926528b02647d0b4806144b70e9833"
+      },
       "title": "TTM 双时钟强约束 7 步"
     },
     "wanmove": {
@@ -592,5 +616,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794512595.553938
+  "last_checked_unix": 1794512656.7350798
 }
