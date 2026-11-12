@@ -499,9 +499,33 @@
       "title": "DD 连续关节跟随残差 β0.5"
     },
     "screen_pose_beta_1p0": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/screen_pose_beta_1p0.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/screen_pose_beta_1p0.jpg",
+      "bytes": 612331,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "b5f338b83a17113bb61ff0915ad40bd4c9775c22f546a55423f9e2006e85d941"
+      },
       "title": "DD 连续关节跟随残差 β1.0"
     },
     "six_step": {
@@ -824,10 +848,10 @@
     },
     "vace_nomask": {
       "status": "running",
-      "windows_completed": 1,
+      "windows_completed": 2,
       "total_windows": 13,
       "title": "VACE-1.3B 官方默认遮罩 Control+Ref"
     }
   },
-  "last_checked_unix": 1794515481.202284
+  "last_checked_unix": 1794515631.0886893
 }
