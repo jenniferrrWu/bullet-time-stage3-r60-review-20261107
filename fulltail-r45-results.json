@@ -199,9 +199,33 @@
       "title": "DD 相机条件增益 2.0"
     },
     "camera_screen_combo": {
-      "status": "running",
-      "windows_completed": 4,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/camera_screen_combo.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/camera_screen_combo.jpg",
+      "bytes": 293125,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "30fc86a69de94e358ffe6779bf8690e8d14db6de7c5d799d433d9cf68f7b27e6"
+      },
       "title": "DD 相机增益 1.5＋连续关节残差 β0.5"
     },
     "content_camera_combo": {
@@ -889,5 +913,5 @@
       "title": "VACE-1.3B 官方默认遮罩 Control+Ref"
     }
   },
-  "last_checked_unix": 1794517189.11786
+  "last_checked_unix": 1794517247.7407956
 }
