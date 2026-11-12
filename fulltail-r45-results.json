@@ -565,9 +565,33 @@
       "title": "Tile 0.2＋Depth 0.5 双模块"
     },
     "flashmotion": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/flashmotion.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/flashmotion.jpg",
+      "bytes": 540536,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "3df56cc022e5f675603ede7f132f696ce566288a8dbeebe013346a19bca0926c"
+      },
       "title": "FlashMotion SlowAdapter α0.3"
     },
     "ttm": {
@@ -646,7 +670,7 @@
     },
     "motion_i2v": {
       "status": "running",
-      "windows_completed": 3,
+      "windows_completed": 4,
       "total_windows": 8,
       "title": "Motion-I2V ForwardWarp α0.35"
     },
@@ -805,5 +829,5 @@
       "title": "VACE-1.3B 官方默认遮罩 Control+Ref"
     }
   },
-  "last_checked_unix": 1794515326.797389
+  "last_checked_unix": 1794515432.1600747
 }
