@@ -211,10 +211,9 @@
       "title": "NLF 三维人体＋FlashMotion α0.3"
     },
     "dd_static_roof": {
-      "status": "inference_failed",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 1,
-      "error": "matted 20 /247\nmatted 40 /247\nmatted 60 /247\nmatted 80 /247\nmatted 100 /247\nmatted 120 /247\nmatted 140 /247\nmatted 160 /247\nmatted 180 /247\nmatted 200 /247\nmatted 220 /247\nmatted 240 /247\nav_interleaved_write_frame(): Broken pipe\nError writing trailer of pipe:: Broken pipe\nTraceback (most recent call last):\n  File \"/root/bullet_time_research_20261102/stage3_research/run_dd_static_roof_r45_fulltail.py\", line 99, in <module>\n    main()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_dd_static_roof_r45_fulltail.py\", line 91, in main\n    assert reader.wait() == 0 and writer.wait() == 0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
       "title": "DD＋rembg 人物抠像＋LaMa 静态屋顶"
     },
     "videox_fun": {
@@ -224,5 +223,5 @@
       "title": "VideoX-Fun 官方 5B Control+Ref"
     }
   },
-  "last_checked_unix": 1794505751.393854
+  "last_checked_unix": 1794505799.5463147
 }
