@@ -49,47 +49,89 @@
       "title": "DD 内容残差 0.5 ＋ CFG 2.0"
     },
     "depth_0p5": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Depth ControlNet 0.5（官方权重）"
     },
     "tile_0p2": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Tile ControlNet 0.2（官方权重）"
     },
     "canny_0p5": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Canny ControlNet 0.5（官方权重）"
     },
     "hed_0p5": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "HED ControlNet 0.5（官方权重）"
     },
     "lama_tile_0p2": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "LaMa 背景修补＋Tile 0.2"
     },
     "pose_beta_0p5": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "DD 目标视角关节残差 β0.5"
     },
     "pose_beta_1p0": {
-      "status": "running",
+      "status": "queued",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "DD 目标视角关节残差 β1.0"
+    },
+    "six_step": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "DD 六步人体/运动短训练适配器"
+    },
+    "tile_depth": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "Tile 0.2＋Depth 0.5 双模块"
+    },
+    "flashmotion": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "FlashMotion SlowAdapter α0.3"
+    },
+    "ttm": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "TTM 双时钟强约束 7 步"
+    },
+    "wanmove": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 8,
+      "title": "Wan-Move 官方轨迹函数 α0.35"
+    },
+    "motion_i2v": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 8,
+      "title": "Motion-I2V ForwardWarp α0.35"
+    },
+    "nlf_flashmotion": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 4,
+      "title": "NLF 三维人体＋FlashMotion α0.3"
     }
   },
-  "last_checked_unix": 1794503891.4813194
+  "last_checked_unix": 1794503934.18348
 }
