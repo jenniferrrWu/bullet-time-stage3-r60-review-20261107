@@ -247,27 +247,99 @@
       "title": "DD 内容残差 0.5 ＋ CFG 2.0"
     },
     "depth_0p5": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/depth_0p5.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/depth_0p5.jpg",
+      "bytes": 331527,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "a4d6b5762c63598004e9a94afb536e1827bbf9459311d4e905310e22c4defaef"
+      },
       "title": "Depth ControlNet 0.5（官方权重）"
     },
     "tile_0p2": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/tile_0p2.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/tile_0p2.jpg",
+      "bytes": 414459,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "8229c8544b92b0eb96521adf9d43dbcbb84019ae21fa281bd86af3dba991868c"
+      },
       "title": "Tile ControlNet 0.2（官方权重）"
     },
     "tile_camera_combo": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Tile 0.2＋DD 相机增益 1.5"
     },
     "canny_0p5": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/canny_0p5.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/canny_0p5.jpg",
+      "bytes": 404715,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "264354f913ab4c26b1ddcb56f774e75ab2fdb8b754b38f8e97eb80c212f48ab4"
+      },
       "title": "Canny ControlNet 0.5（官方权重）"
     },
     "hed_0p5": {
@@ -343,13 +415,37 @@
       "title": "DD 目标视角关节残差 β1.0"
     },
     "six_step": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/six_step.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/six_step.jpg",
+      "bytes": 470664,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "4d93737c6a4dfde137e879d8054cff8c0e940cfd23ecdf19978d796193ea33d9"
+      },
       "title": "DD 六步人体/运动短训练适配器"
     },
     "tile_depth": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Tile 0.2＋Depth 0.5 双模块"
@@ -368,7 +464,7 @@
       "title": "TTM 双时钟强约束 7 步"
     },
     "wanmove": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 8,
       "title": "Wan-Move 官方轨迹函数 α0.35"
@@ -436,5 +532,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794509854.2391007
+  "last_checked_unix": 1794510084.1640284
 }
