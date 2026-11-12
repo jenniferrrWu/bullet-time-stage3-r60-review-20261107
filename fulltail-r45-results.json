@@ -187,10 +187,33 @@
       "title": "DD 相机条件增益 1.5"
     },
     "content_camera_combo": {
-      "status": "inference_failed",
-      "windows_completed": 4,
-      "total_windows": 4,
-      "error": "e_research_20261102/stage3_research/run_case13_r45_full_remainder_content_camera_combo.py\", line 121, in generate\n    assemble()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_content_camera_combo.py\", line 142, in assemble\n    ffmpeg('-i', native, '-vf', 'setpts=N/(29.97002997002997*TB)', '-vsync', 'vfr', '-r', '30000/1001', '-frames:v', 247, '-an', '-c:v', 'libx264', '-crf', 18, '-preset', 'fast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', display)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_content_camera_combo.py\", line 45, in ffmpeg\n    subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y', *map(str, args)], check=True)\n  File \"/opt/conda/envs/PyTorch-2.4.1/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y', '-i', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_content_gain_0p5_camera_gain_1p5_247/dd_stage3_full_remainder_247_native15.mp4', '-vf', 'setpts=N/(29.97002997002997*TB)', '-fps_mode', 'passthrough', '-frames:v', '247', '-an', '-c:v', 'libx264', '-crf', '18', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_content_gain_0p5_camera_gain_1p5_247/dd_stage3_full_remainder_247_display30.mp4']' returned non-zero exit status 1.\n",
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/content_camera_combo.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/content_camera_combo.jpg",
+      "bytes": 216261,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "4e2ace4a96d5cedc1b9605dc8a04aaa1805ec70dc8712d8fbba0a02798a96974"
+      },
       "title": "DD 内容残差 0.5＋相机增益 1.5"
     },
     "content_0p5_cfg_2p0": {
@@ -260,17 +283,63 @@
       "title": "LaMa 背景修补＋Tile 0.2"
     },
     "pose_beta_0p5": {
-      "status": "inference_failed",
-      "windows_completed": 4,
-      "total_windows": 4,
-      "error": "^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_projected_pose_0p5.py\", line 121, in generate\n    assemble()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_projected_pose_0p5.py\", line 142, in assemble\n    ffmpeg('-i', native, '-vf', 'setpts=N/(29.97002997002997*TB)', '-vsync', 'vfr', '-r', '30000/1001', '-frames:v', 247, '-an', '-c:v', 'libx264', '-crf', 18, '-preset', 'fast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', display)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_projected_pose_0p5.py\", line 45, in ffmpeg\n    subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y', *map(str, args)], check=True)\n  File \"/opt/conda/envs/PyTorch-2.4.1/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y', '-i', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_projected_pose_0p5_247/dd_stage3_full_remainder_247_native15.mp4', '-vf', 'setpts=N/(29.97002997002997*TB)', '-fps_mode', 'passthrough', '-frames:v', '247', '-an', '-c:v', 'libx264', '-crf', '18', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_projected_pose_0p5_247/dd_stage3_full_remainder_247_display30.mp4']' returned non-zero exit status 1.\n",
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/pose_beta_0p5.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/pose_beta_0p5.jpg",
+      "bytes": 480587,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "7420ab76087cee67c500034ada027c29ad585dabca5ac80936e9227a2e982a04"
+      },
       "title": "DD 目标视角关节残差 β0.5"
     },
     "pose_beta_1p0": {
-      "status": "inference_failed",
-      "windows_completed": 4,
-      "total_windows": 4,
-      "error": "^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_projected_pose_1p0.py\", line 121, in generate\n    assemble()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_projected_pose_1p0.py\", line 142, in assemble\n    ffmpeg('-i', native, '-vf', 'setpts=N/(29.97002997002997*TB)', '-vsync', 'vfr', '-r', '30000/1001', '-frames:v', 247, '-an', '-c:v', 'libx264', '-crf', 18, '-preset', 'fast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', display)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_projected_pose_1p0.py\", line 45, in ffmpeg\n    subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y', *map(str, args)], check=True)\n  File \"/opt/conda/envs/PyTorch-2.4.1/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y', '-i', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_projected_pose_1p0_247/dd_stage3_full_remainder_247_native15.mp4', '-vf', 'setpts=N/(29.97002997002997*TB)', '-fps_mode', 'passthrough', '-frames:v', '247', '-an', '-c:v', 'libx264', '-crf', '18', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_projected_pose_1p0_247/dd_stage3_full_remainder_247_display30.mp4']' returned non-zero exit status 1.\n",
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/pose_beta_1p0.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/pose_beta_1p0.jpg",
+      "bytes": 598420,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "e787789bac6a30d2636633f57cd672a5f1c65c45938f85e93f41928b1efe32ff"
+      },
       "title": "DD 目标视角关节残差 β1.0"
     },
     "six_step": {
@@ -286,9 +355,10 @@
       "title": "Tile 0.2＋Depth 0.5 双模块"
     },
     "flashmotion": {
-      "status": "queued",
+      "status": "inference_failed",
       "windows_completed": 0,
       "total_windows": 4,
+      "error": "prepared 247-frame tail and 4 DD windows\nstarting DD window 0 (0, 81, 81)\nTraceback (most recent call last):\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_flashmotion_0p3.py\", line 155, in <module>\n    {'prepare': prepare, 'generate': lambda: generate(args.gpu), 'assemble': assemble}[args.command]()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_flashmotion_0p3.py\", line 155, in <lambda>\n    {'prepare': prepare, 'generate': lambda: generate(args.gpu), 'assemble': assemble}[args.command]()\n                                             ^^^^^^^^^^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_flashmotion_0p3.py\", line 114, in generate\n    subprocess.run([str(PYTHON), str(ROOT / 'dd_execution.py'), 'stage', '--out', str(d), '--gpu', str(gpu), '--stage', '3'], stdout=log, stderr=subprocess.STDOUT, check=True, env=dict(__import__('os').environ, ABT_DD_FLASHMOTION_ALPHA='0.3'))\n  File \"/opt/conda/envs/PyTorch-2.4.1/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/public/wufeier/automatic_bullet_time/envs/depthdirector/bin/python', '/root/bullet_time_research_20261102/dd_execution.py', 'stage', '--out', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_flashmotion_0p3_247/chunk0', '--gpu', '0', '--stage', '3']' returned non-zero exit status 1.\n",
       "title": "FlashMotion SlowAdapter α0.3"
     },
     "ttm": {
@@ -366,5 +436,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794508501.9047554
+  "last_checked_unix": 1794508582.4930115
 }
