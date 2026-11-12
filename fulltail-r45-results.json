@@ -476,10 +476,9 @@
       "title": "Motion-I2V ForwardWarp α0.35"
     },
     "nlf_flashmotion": {
-      "status": "inference_failed",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
-      "error": "prepared 247-frame tail and 4 DD windows\nstarting DD window 0 (0, 81, 81)\nTraceback (most recent call last):\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_nlf_flashmotion_0p3.py\", line 155, in <module>\n    {'prepare': prepare, 'generate': lambda: generate(args.gpu), 'assemble': assemble}[args.command]()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_nlf_flashmotion_0p3.py\", line 155, in <lambda>\n    {'prepare': prepare, 'generate': lambda: generate(args.gpu), 'assemble': assemble}[args.command]()\n                                             ^^^^^^^^^^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_nlf_flashmotion_0p3.py\", line 114, in generate\n    subprocess.run([str(PYTHON), str(ROOT / 'dd_execution.py'), 'stage', '--out', str(d), '--gpu', str(gpu), '--stage', '3'], stdout=log, stderr=subprocess.STDOUT, check=True, env=dict(__import__('os').environ, ABT_DD_NLF_FLASHMOTION_ALPHA='0.3'))\n  File \"/opt/conda/envs/PyTorch-2.4.1/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/public/wufeier/automatic_bullet_time/envs/depthdirector/bin/python', '/root/bullet_time_research_20261102/dd_execution.py', 'stage', '--out', '/root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_nlf_flashmotion_0p3_247/chunk0', '--gpu', '6', '--stage', '3']' returned non-zero exit status 1.\n",
       "title": "NLF 三维人体＋FlashMotion α0.3"
     },
     "dd_static_roof": {
@@ -533,5 +532,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794510643.8230443
+  "last_checked_unix": 1794510782.790622
 }
