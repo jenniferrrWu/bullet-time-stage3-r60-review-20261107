@@ -211,10 +211,9 @@
       "title": "NLF 三维人体＋FlashMotion α0.3"
     },
     "dd_static_roof": {
-      "status": "inference_failed",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 1,
-      "error": "Traceback (most recent call last):\n  File \"/root/bullet_time_research_20261102/stage3_research/run_dd_static_roof_r45_fulltail.py\", line 15, in <module>\n    import cv2\nModuleNotFoundError: No module named 'cv2'\n",
       "title": "DD＋rembg 人物抠像＋LaMa 静态屋顶"
     },
     "videox_fun": {
@@ -224,5 +223,5 @@
       "title": "VideoX-Fun 官方 5B Control+Ref"
     }
   },
-  "last_checked_unix": 1794505607.869766
+  "last_checked_unix": 1794505658.4374404
 }
