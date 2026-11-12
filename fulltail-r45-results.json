@@ -37,21 +37,93 @@
       "title": "DD 基模"
     },
     "cfg_1p5": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/cfg_1p5.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/cfg_1p5.jpg",
+      "bytes": 339843,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "6eab3742e26ed12b6fd520c9be202e747db93be30c8434ee600afc4d2def09a6"
+      },
       "title": "DD CFG 1.5"
     },
     "cfg_2p0": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/cfg_2p0.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/cfg_2p0.jpg",
+      "bytes": 304938,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "3e32b0a65220fa6a35ff30790c15277f3f09aba66e5c4c5aff0ac8ea536e9775"
+      },
       "title": "DD CFG 2.0"
     },
     "cfg_2p5": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/cfg_2p5.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/cfg_2p5.jpg",
+      "bytes": 283828,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "0c259a908d307b829c6991330fd4143caf89358fff243e23de52bbd87475ca14"
+      },
       "title": "DD CFG 2.5"
     },
     "content_0p5": {
@@ -121,25 +193,49 @@
       "title": "DD 内容残差 0.5＋相机增益 1.5"
     },
     "content_0p5_cfg_2p0": {
-      "status": "running",
-      "windows_completed": 3,
-      "total_windows": 4,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/content_0p5_cfg_2p0.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/content_0p5_cfg_2p0.jpg",
+      "bytes": 250872,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          81,
+          81,
+          65,
+          25
+        ],
+        "window_kept_frames": [
+          81,
+          80,
+          64,
+          22
+        ],
+        "output_sha256": "a01d539e458bf6c2ad01176c961494c80ee67437d2cba51a6285309779ab2e7e"
+      },
       "title": "DD 内容残差 0.5 ＋ CFG 2.0"
     },
     "depth_0p5": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Depth ControlNet 0.5（官方权重）"
     },
     "tile_0p2": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Tile ControlNet 0.2（官方权重）"
     },
     "canny_0p5": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "Canny ControlNet 0.5（官方权重）"
@@ -169,7 +265,7 @@
       "title": "DD 目标视角关节残差 β1.0"
     },
     "six_step": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 4,
       "title": "DD 六步人体/运动短训练适配器"
@@ -261,5 +357,5 @@
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794506655.1745822
+  "last_checked_unix": 1794507013.4294884
 }
