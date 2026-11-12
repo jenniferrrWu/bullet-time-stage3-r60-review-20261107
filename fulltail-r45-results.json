@@ -458,9 +458,10 @@
       "title": "FlashMotion SlowAdapter α0.3"
     },
     "ttm": {
-      "status": "running",
+      "status": "inference_failed",
       "windows_completed": 1,
       "total_windows": 4,
+      "error": "prepared 247-frame tail and 4 DD windows\nskip completed chunk 0\nTraceback (most recent call last):\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_ttm_strong7.py\", line 155, in <module>\n    {'prepare': prepare, 'generate': lambda: generate(args.gpu), 'assemble': assemble}[args.command]()\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_ttm_strong7.py\", line 155, in <lambda>\n    {'prepare': prepare, 'generate': lambda: generate(args.gpu), 'assemble': assemble}[args.command]()\n                                             ^^^^^^^^^^^^^^^^^^\n  File \"/root/bullet_time_research_20261102/stage3_research/run_case13_r45_full_remainder_ttm_strong7.py\", line 111, in generate\n    raise RuntimeError(f'Existing incomplete chunk {index}: {record}')\nRuntimeError: Existing incomplete chunk 1: /root/bullet_time_research_20261102/stage3_research/case13_f845_r45_full_remainder_ttm_strong7_247/chunk1/stage3/records/route_a/depthdirector/stage3/vlm_selected.json\n",
       "title": "TTM 双时钟强约束 7 步"
     },
     "wanmove": {
@@ -526,11 +527,11 @@
       "title": "VideoX-Fun 官方 5B Control+Ref"
     },
     "vace": {
-      "status": "queued",
+      "status": "running",
       "windows_completed": 0,
       "total_windows": 13,
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794510134.3755662
+  "last_checked_unix": 1794510317.626921
 }
