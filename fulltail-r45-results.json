@@ -750,11 +750,54 @@
       "title": "VideoX-Fun 官方 5B Control+Ref"
     },
     "vace": {
-      "status": "running",
-      "windows_completed": 12,
-      "total_windows": 13,
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/vace.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/vace.jpg",
+      "bytes": 213539,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "window_native_frames": [
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          21,
+          9
+        ],
+        "window_kept_frames": [
+          21,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          6
+        ],
+        "output_sha256": "b2bbf73e719f2d48fb393ac019c0f8ddb5d62899f1747bef491e1582b05c13c4",
+        "source_condition": "projected source DWPose controls, not raw RGB source video"
+      },
       "title": "VACE-1.3B 官方 Control+Ref"
     }
   },
-  "last_checked_unix": 1794514746.8882253
+  "last_checked_unix": 1794514888.9628353
 }
