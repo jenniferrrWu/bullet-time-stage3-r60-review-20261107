@@ -60,17 +60,20 @@ async function refresh() {
     if (!response.ok) throw Error(response.status);
     const data = await response.json();
     let ready = 0;
+    let failed = 0;
     for (const row of document.querySelectorAll('tbody tr')) {
       const item = data.jobs[row.dataset.key];
       if (!item) continue;
       const status = row.querySelector('.status');
-      status.textContent = item.status === 'ready_for_visual_review'
+      status.textContent = item.review_result === 'failed'
+        ? '247 帧完成，目视未通过'
+        : item.status === 'ready_for_visual_review'
         ? '247 帧完成，待目视验收'
         : item.status === 'running'
           ? `推理中 ${item.windows_completed || 0}/${item.total_windows || 4} 窗口`
           : item.status === 'queued' ? '排队中' : '失败，见记录';
-      status.title = item.error || '';
-      status.className = 'status ' + (item.status === 'ready_for_visual_review' ? 'ready' : '');
+      status.title = item.review_note || item.error || '';
+      status.className = 'status ' + (item.review_result === 'failed' ? 'failed' : item.status === 'ready_for_visual_review' ? 'ready' : '');
 
       const cell = row.querySelector('.result');
       if (item.video && !cell.querySelector('video')) {
@@ -84,6 +87,7 @@ async function refresh() {
         cell.replaceChildren(video);
       }
       if (item.video) ready++;
+      if (item.review_result === 'failed') failed++;
 
       const baseline = data.jobs.dd_baseline;
       const baselineVideo = row.querySelector('video.baseline');
@@ -97,7 +101,7 @@ async function refresh() {
       }
     }
     document.getElementById('totals').textContent =
-      `已完成 ${ready}/${Object.keys(data.jobs).length} 项完整 247 帧 Stage3 实验；视频仅在所在行进入屏幕时加载，滚动离开即释放播放器。`;
+      `已完成 ${ready}/${Object.keys(data.jobs).length} 项完整 247 帧 Stage3 实验；其中 ${failed} 项目视未通过。视频仅在所在行进入屏幕时加载，滚动离开即释放播放器。`;
   } catch (error) {
     document.getElementById('totals').textContent = '状态更新中：' + error;
   }
