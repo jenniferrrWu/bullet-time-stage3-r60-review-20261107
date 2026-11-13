@@ -12,34 +12,90 @@
       "poster": "./media/case13-f845-r45-fulltail/dd_baseline.jpg"
     },
     "dd_21win": {
-      "status": "running",
-      "windows_completed": 12,
+      "status": "ready_for_visual_review",
+      "windows_completed": 13,
       "total_windows": 13,
-      "video": null,
-      "poster": null,
+      "video": "./media/case13-f845-r45-corrected/dd_21win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_21win.jpg",
       "review_result": "failed",
-      "review_note": "已生成中段 f925 起出现大面积彩噪；短窗整段目视未通过。"
+      "review_note": "已生成中段 f925 起出现大面积彩噪；短窗整段目视未通过。",
+      "bytes": 429451,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 13,
+        "native_output_sha256": "d3d6cbea320856aef42e3395f49db0404f193fe3fb003b3d9677aa7680238fc7",
+        "compressed_output_sha256": "5604328eed717166e2d4e8de59bc7d77a7b0f5bb0af0501d880c2bc9d6fbc06f"
+      }
     },
     "wanmove_0p35_21win": {
-      "status": "running",
-      "windows_completed": 11,
+      "status": "ready_for_visual_review",
+      "windows_completed": 13,
       "total_windows": 13,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/wanmove_0p35_21win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/wanmove_0p35_21win.jpg",
+      "bytes": 424384,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 13,
+        "native_output_sha256": "249dc337b7c227a2d479536b383bdebc804d795ec3960acdf84739a180a33ff7",
+        "compressed_output_sha256": "26b7e32fa2dfe0102cb557729281fd8b505011676eb41a4529fb8fd9ad197123"
+      }
     },
     "wanmove_0p1_21win": {
-      "status": "running",
-      "windows_completed": 12,
+      "status": "ready_for_visual_review",
+      "windows_completed": 13,
       "total_windows": 13,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/wanmove_0p1_21win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/wanmove_0p1_21win.jpg",
+      "bytes": 433306,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 13,
+        "native_output_sha256": "1d9714cbe2fa1da29adcfa93513acfa727a88e893d1225904c84e1aa1e9e1ff8",
+        "compressed_output_sha256": "af99ee3de24aa5f740656fca6e19ce6a21ccc5951ad50399c68fdab360c2ac46"
+      }
     },
     "motion_i2v_0p35_21win": {
-      "status": "running",
-      "windows_completed": 11,
+      "status": "ready_for_visual_review",
+      "windows_completed": 13,
       "total_windows": 13,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/motion_i2v_0p35_21win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/motion_i2v_0p35_21win.jpg",
+      "bytes": 439058,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 13,
+        "native_output_sha256": "7940c7c6af90d304c25ee14152b54150dade2e37c4d62494dfbc4ff55f2dff26",
+        "compressed_output_sha256": "f7c7760fed8dd52bb359965a76235e1fa528d3d6f6c72645a918bdcf5e7d85e7"
+      }
     },
     "dd_41win": {
       "status": "ready_for_visual_review",
@@ -65,64 +121,148 @@
       }
     },
     "wanmove_0p35_41win": {
-      "status": "running",
-      "windows_completed": 5,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/wanmove_0p35_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/wanmove_0p35_41win.jpg",
+      "bytes": 278883,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "64d81589a59be09a6e0d1086c8158eccde630256760046a0f836d78858ceb43c",
+        "compressed_output_sha256": "23355a6b11381b0198bc9362e3efdff4ea36fc5c3021cfcf4e719e01a62ec3c6"
+      }
     },
     "wanmove_0p1_41win": {
-      "status": "running",
-      "windows_completed": 5,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/wanmove_0p1_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/wanmove_0p1_41win.jpg",
+      "bytes": 275955,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "66a98c751aba30be04bb74ffaeeaf44d5fec62d0ac5a651c65b6ab4d77717e8d",
+        "compressed_output_sha256": "0c0e759d55062799de7c3e9be51cca2aab71e9a6fcc7c8a2b8a79d4e417950f8"
+      }
     },
     "motion_i2v_0p35_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/motion_i2v_0p35_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/motion_i2v_0p35_41win.jpg",
+      "bytes": 256196,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "2200195c91949b6333239a7d31c468951898d62a79760fb0594340a3d33342d0",
+        "compressed_output_sha256": "2ca3c70de924939db0851945026d2ef61d0c2dc90d0db55aeaa9730abcc5a938"
+      }
     },
     "dd_videox_hed_0p2_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/dd_videox_hed_0p2_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_videox_hed_0p2_41win.jpg",
+      "bytes": 277503,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "44f55d4e87ab8d1f2da0723639027ff3a844059e88239bb9e15dbfa5c3a62dac",
+        "compressed_output_sha256": "9ed0746c782283fd9bb0ed9ea009fed2a127804af15676356b5008d2bdb34d73"
+      }
     },
     "dd_videox_hed_0p5_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "running",
+      "windows_completed": 6,
       "total_windows": 7,
       "video": null,
       "poster": null
     },
     "dd_videox_canny_0p2_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/dd_videox_canny_0p2_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_videox_canny_0p2_41win.jpg",
+      "bytes": 432869,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "6a4ba09ce6a7af05bd7caa560e9de77cb1a393d00a3090d41f84b0da7876ad71",
+        "compressed_output_sha256": "8b6c3449e105973c7110ce3f04e6fb588a44b5fdeef800c905a633566f7b3c30"
+      }
     },
     "dd_videox_tile_0p2_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "running",
+      "windows_completed": 6,
       "total_windows": 7,
       "video": null,
       "poster": null
     },
     "dd_pose_0p5_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/dd_pose_0p5_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_pose_0p5_41win.jpg",
+      "bytes": 267295,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "0d30bc4e7d8b7ca2e456fc85a384f0258a35dd7ba31b5d452ddda7966eb06b79",
+        "compressed_output_sha256": "5f2f128ccdea154b91678f6b9a6bcaa6f6c91fb5b37a7c56f97304517778e908"
+      }
     },
     "dd_nlf_flashmotion_0p3_41win": {
-      "status": "queued",
-      "windows_completed": 0,
+      "status": "running",
+      "windows_completed": 6,
       "total_windows": 7,
       "video": null,
       "poster": null
