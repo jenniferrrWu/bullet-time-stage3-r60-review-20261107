@@ -205,11 +205,25 @@
       }
     },
     "dd_videox_hed_0p5_41win": {
-      "status": "running",
-      "windows_completed": 6,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/dd_videox_hed_0p5_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_videox_hed_0p5_41win.jpg",
+      "bytes": 174183,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "eb2dd1d21b2e087275c573216b9833292a97bce761d699b5422c1fa0089f775e",
+        "compressed_output_sha256": "1a5c0ec0257d1542812b12f69f85c655ad8ee74f8dd7b27208cd7dc5bb88336d"
+      }
     },
     "dd_videox_canny_0p2_41win": {
       "status": "ready_for_visual_review",
@@ -233,11 +247,25 @@
       }
     },
     "dd_videox_tile_0p2_41win": {
-      "status": "running",
-      "windows_completed": 6,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/dd_videox_tile_0p2_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_videox_tile_0p2_41win.jpg",
+      "bytes": 385094,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "d88fc96a7b0c09d00e6cdf36b68146093ecb1237d2f87df57c394a6b26d38adb",
+        "compressed_output_sha256": "4e83eb2d628b4ccc3d60dbc7a865344eed932b20e08f82fea4982c49449c35a6"
+      }
     },
     "dd_pose_0p5_41win": {
       "status": "ready_for_visual_review",
@@ -261,11 +289,25 @@
       }
     },
     "dd_nlf_flashmotion_0p3_41win": {
-      "status": "running",
-      "windows_completed": 6,
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
       "total_windows": 7,
-      "video": null,
-      "poster": null
+      "video": "./media/case13-f845-r45-corrected/dd_nlf_flashmotion_0p3_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_nlf_flashmotion_0p3_41win.jpg",
+      "bytes": 432505,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "62b506b7f57e36bf4f7b984e4a8807ee5ca0117eb9dbe8f89ab089b0c3396427",
+        "compressed_output_sha256": "765dd191a391ee2b4cb3d5f92aa917422dc6c7fdd305c05f0c18fa15f23c23d4"
+      }
     }
   }
 }
