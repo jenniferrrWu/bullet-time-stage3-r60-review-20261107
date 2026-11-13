@@ -1,0 +1,131 @@
+{
+  "source_range_inclusive": [
+    845,
+    1091
+  ],
+  "source_frames": 247,
+  "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+  "jobs": {
+    "dd_baseline": {
+      "status": "ready_for_visual_review",
+      "video": "./media/case13-f845-r45-fulltail/dd_baseline.mp4",
+      "poster": "./media/case13-f845-r45-fulltail/dd_baseline.jpg"
+    },
+    "dd_21win": {
+      "status": "running",
+      "windows_completed": 12,
+      "total_windows": 13,
+      "video": null,
+      "poster": null,
+      "review_result": "failed",
+      "review_note": "已生成中段 f925 起出现大面积彩噪；短窗整段目视未通过。"
+    },
+    "wanmove_0p35_21win": {
+      "status": "running",
+      "windows_completed": 11,
+      "total_windows": 13,
+      "video": null,
+      "poster": null
+    },
+    "wanmove_0p1_21win": {
+      "status": "running",
+      "windows_completed": 12,
+      "total_windows": 13,
+      "video": null,
+      "poster": null
+    },
+    "motion_i2v_0p35_21win": {
+      "status": "running",
+      "windows_completed": 11,
+      "total_windows": 13,
+      "video": null,
+      "poster": null
+    },
+    "dd_41win": {
+      "status": "ready_for_visual_review",
+      "windows_completed": 7,
+      "total_windows": 7,
+      "video": "./media/case13-f845-r45-corrected/dd_41win.mp4",
+      "poster": "./media/case13-f845-r45-corrected/dd_41win.jpg",
+      "review_result": "failed",
+      "review_note": "已生成中段 f1005 起转为俯视灰地；短窗整段目视未通过。",
+      "bytes": 255510,
+      "audit": {
+        "status": "passed",
+        "source_range_inclusive": [
+          845,
+          1091
+        ],
+        "source_frames": 247,
+        "output_frames": 247,
+        "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "windows_completed": 7,
+        "native_output_sha256": "05f738e2599fc14a3740328afd3e3843520357a2374fdc88a27737486ba6b6a6",
+        "compressed_output_sha256": "3a3c2793eb4491eec6f1d6b295c967dc4898d4d82a6b9a6ad162ae7154f873be"
+      }
+    },
+    "wanmove_0p35_41win": {
+      "status": "running",
+      "windows_completed": 5,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "wanmove_0p1_41win": {
+      "status": "running",
+      "windows_completed": 5,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "motion_i2v_0p35_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "dd_videox_hed_0p2_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "dd_videox_hed_0p5_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "dd_videox_canny_0p2_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "dd_videox_tile_0p2_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "dd_pose_0p5_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    },
+    "dd_nlf_flashmotion_0p3_41win": {
+      "status": "queued",
+      "windows_completed": 0,
+      "total_windows": 7,
+      "video": null,
+      "poster": null
+    }
+  }
+}
