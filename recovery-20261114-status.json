@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T13:00:53.592260+00:00",
+  "updated_at": "2026-11-14T13:02:05.765732+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、1项已生成待独立整段核验、2项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
+  "summary": "已切回原14方案。case13 当前4项完整尾段任务运行、1项已生成待独立整段核验、3项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -199,17 +199,30 @@
         "native_zero_control_passed": true
       },
       "wanmove_0p1_41win": {
-        "status": "running",
+        "status": "verified_eof",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
-        "native_zero_control_passed": true
+        "native_zero_control_passed": true,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true
+        },
+        "video": "./media/recovery-20261114/wanmove_0p1_41win__case13_full247.mp4"
       },
       "motion_i2v_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 2,
+        "windows_completed": 3,
         "total_windows": 7,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "native_zero_control_passed": true
