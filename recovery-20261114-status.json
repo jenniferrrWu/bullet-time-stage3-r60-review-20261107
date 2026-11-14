@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T14:59:52.082342+00:00",
+  "updated_at": "2026-11-14T15:01:03.703187+00:00",
   "phase": "original_methods_fulltail_rerunning",
   "summary": "原14方案完整重跑：复杂case13有2项运行、0项待整段核验、12项核对完整247帧；简单case12有6项运行、0项待核验、1项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
@@ -403,14 +403,14 @@
       "dd_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 18,
+        "windows_completed": 19,
         "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。",
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 10,
+        "windows_completed": 11,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 20,
         "native_zero_control_passed": true
