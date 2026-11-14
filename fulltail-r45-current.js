@@ -7,6 +7,7 @@
   const updated = document.getElementById('current-updated');
   const repairNode = document.getElementById('current-repair');
   let requiresRepairAudit = false;
+  let requiresContext81Audit = false;
   let lastPayload = null;
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
@@ -31,7 +32,8 @@
       audit.stage2_endpoint_sha256 === spec.endpoint_sha256 &&
       audit.window_chain_verified === true && audit.first_latent_pinning_verified === true &&
       audit.original_source_frame_order_verified === true && audit.method_binding_verified === true &&
-      (!requiresRepairAudit || audit.core_time_position_repair_verified === true);
+      (!requiresRepairAudit || audit.core_time_position_repair_verified === true) &&
+      (!requiresContext81Audit || (audit.native81_context_verified === true && audit.kept_native_output_endpoint_chain_verified === true && audit.discarded_context_predictions_not_counted_as_output === true));
   }
   function video(path) {
     const node = element('video');
@@ -45,7 +47,8 @@
       if (!response.ok) throw new Error('HTTP ' + response.status);
       const data = await response.json();
       updated.textContent = '状态更新时间：' + new Date(data.updated_at).toLocaleString('zh-CN', {timeZone: 'Asia/Shanghai'}) + '（北京时间）';
-      requiresRepairAudit = data.repair_campaign?.version === 'source_time_offset_v1';
+      requiresRepairAudit = Boolean(data.repair_campaign?.version);
+      requiresContext81Audit = data.repair_campaign?.version === 'native81_context_v2';
       const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis]);
       if (payload === lastPayload) return;
       if (repairNode && data.repair_diagnosis) {
@@ -57,7 +60,7 @@
           image.style.width = '100%'; image.style.maxWidth = '1280px'; image.style.maxHeight = 'none'; image.style.float = 'none';
           detail.append(image); fragment.append(detail);
         }
-        const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
+        const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = data.repair_diagnosis.prior_bad_campaign || './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
         repairNode.replaceChildren(fragment);
       }
       const ids = ['case13', 'case12'];
