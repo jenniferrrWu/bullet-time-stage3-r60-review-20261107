@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T12:29:32.432020+00:00",
+  "updated_at": "2026-11-14T12:39:03.389008+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、1项已生成待独立整段核验；短窗不计为整段完成。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
+  "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验、1项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -115,13 +115,13 @@
       "dd_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 10,
+        "windows_completed": 12,
         "total_windows": 13
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 6,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -129,7 +129,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 3,
+        "windows_completed": 5,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -140,15 +140,28 @@
         "windows_completed": 0
       },
       "dd_41win": {
-        "status": "generated",
+        "status": "verified_eof",
         "quality": "pending",
         "windows_completed": 7,
-        "total_windows": 7
+        "total_windows": 7,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true
+        },
+        "video": "./media/recovery-20261114/dd_41win__case13_full247.mp4"
       },
       "wanmove_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 2,
+        "windows_completed": 4,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -156,15 +169,16 @@
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 2,
+        "windows_completed": 4,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
       },
       "motion_i2v_0p35_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_videox_hed_0p2_41win": {
         "status": "pending_input_audit",
