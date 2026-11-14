@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T17:55:14.326131+00:00",
+  "updated_at": "2026-11-14T18:05:19.403244+00:00",
   "phase": "native81_context_full_EOF_repair_qualification",
-  "summary": "彩噪修复验证：保留81帧原生上下文，每次推进21/41个真实输出帧。复杂case13有2项运行、0项核对完整247帧；简单case12有2项运行、0项核对完整389帧。这里不统计旧坏结果，整段画质仍需验证。",
+  "summary": "彩噪修复验证：保留81帧原生上下文，每次推进21/41个真实输出帧。复杂case13有2项运行、0项核对完整247帧；简单case12有1项运行、0项核对完整389帧。这里不统计旧坏结果，整段画质仍需验证。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -105,7 +105,7 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，2项完整链运行。Stage2画质与Stage3效果另审。 当前用81帧原生上下文、21/41帧有效推进；全部真实源帧仍须保留。",
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，1项完整链运行。Stage2画质与Stage3效果另审。 当前用81帧原生上下文、21/41帧有效推进；全部真实源帧仍须保留。",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
       "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
@@ -134,7 +134,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 13
       },
       "wanmove_0p35_21win": {
@@ -156,7 +156,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 7
       },
       "wanmove_0p35_41win": {
@@ -177,7 +177,9 @@
       "dd_videox_hed_0p2_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_videox_hed_0p5_41win": {
         "status": "held_for_diagnosis",
@@ -210,7 +212,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
@@ -232,7 +234,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
