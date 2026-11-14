@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T14:11:18.572007+00:00",
+  "updated_at": "2026-11-14T14:11:56.177215+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "原14方案完整重跑：复杂case13有2项运行、1项待整段核验、9项核对完整247帧；简单case12有5项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
+  "summary": "原14方案完整重跑：复杂case13有2项运行、0项待整段核验、10项核对完整247帧；简单case12有5项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -317,10 +317,23 @@
         "video": "./media/recovery-20261114/dd_videox_hed_0p2_41win__case13_full247.mp4"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "generated",
+        "status": "verified_eof",
         "quality": "pending",
         "windows_completed": 7,
-        "total_windows": 7
+        "total_windows": 7,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true
+        },
+        "video": "./media/recovery-20261114/dd_videox_hed_0p5_41win__case13_full247.mp4"
       },
       "dd_videox_canny_0p2_41win": {
         "status": "running",
