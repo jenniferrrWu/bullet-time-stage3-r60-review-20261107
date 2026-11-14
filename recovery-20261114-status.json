@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T22:49:21.785444+00:00",
+  "updated_at": "2026-11-14T22:49:56.733524+00:00",
   "phase": "reference_owned_native_latents_v13",
-  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。2/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
+  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。3/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -301,11 +301,32 @@
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_41win": {
-        "status": "generated",
+        "status": "verified_eof",
         "quality": "failed",
         "windows_completed": 10,
         "total_windows": 10,
-        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
+        "note": "未见旧批整屏彩噪；仍有窗边重影、人物形变和局部场景跳变，画质未通过。",
+        "audit": {
+          "passed": true,
+          "output_frames": 389,
+          "source_range": [
+            171,
+            559
+          ],
+          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+          "actual_original_method": "dd_41win",
+          "native_context_frames": 41,
+          "all_actual_native_window_calls_and_inputs_verified": true,
+          "all_original_source_and_condition_PIL_hashes_verified": true,
+          "all_native_windows_original_G1_target_source_and_camera_first_latents_aligned": true,
+          "all_actual_sampled_latents_verified_and_assembled_without_RGB_recurrence": true,
+          "only_later_reference_latents_discarded_output_source_order_once": true,
+          "all_lossless_global_native_RGB_hashes_verified": true,
+          "method_binding_verified": true,
+          "native_denoise_body_unchanged_only_decode_tail_skipped": true,
+          "source_time_offset_training21_verified": true
+        },
+        "video": "./media/recovery-20261114/reference_v13__dd_41win__case12_full389.mp4"
       },
       "wanmove_0p35_41win": {
         "status": "queued",
