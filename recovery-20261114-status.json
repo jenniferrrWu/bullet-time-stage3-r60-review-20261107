@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T17:00:16.484896+00:00",
+  "updated_at": "2026-11-14T17:10:21.330436+00:00",
   "phase": "source_time_position_repair_full_EOF_qualification",
-  "summary": "共同彩噪故障修复验证：复杂case13有2项运行、0项核对完整247帧；简单case12有2项运行、0项核对完整389帧。这里仅统计位置编码修复版，旧坏结果单独归档。短窗动作改善尚不等于整段通过。",
+  "summary": "共同彩噪故障修复验证：复杂case13有0项运行、0项核对完整247帧；简单case12有0项运行、0项核对完整389帧。这里仅统计位置编码修复版，旧坏结果单独归档。短窗动作改善尚不等于整段通过。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -105,7 +105,7 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，2项完整链运行。Stage2画质与Stage3效果另审。",
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，0项完整链运行。Stage2画质与Stage3效果另审。",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
       "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
@@ -134,7 +134,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "total_windows": 13
       },
       "wanmove_0p35_21win": {
@@ -156,7 +156,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 7
       },
       "wanmove_0p35_41win": {
@@ -210,7 +210,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
@@ -232,7 +232,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
