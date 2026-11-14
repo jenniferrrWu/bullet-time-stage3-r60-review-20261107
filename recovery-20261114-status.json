@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T20:15:41.420912+00:00",
+  "updated_at": "2026-11-14T20:18:48.727657+00:00",
   "phase": "per_window_independent_noise_full_EOF_qualification",
-  "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有0项完整链运行、2项核对247帧；简单case12有1项完整链运行、1项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
+  "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有0项完整链运行、2项核对247帧；简单case12有0项完整链运行、2项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -105,7 +105,7 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，1项完整链运行。Stage2画质与Stage3效果另审。 本轮统一采用seed42+窗号与原生RGB无损续接；Pose/NLF后段条件的2D回退近似单独声明。",
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，0项完整链运行。Stage2画质与Stage3效果另审。 本轮统一采用seed42+窗号与原生RGB无损续接；Pose/NLF后段条件的2D回退近似单独声明。",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
       "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
@@ -249,14 +249,18 @@
         "total_windows": 7
       },
       "dd_videox_canny_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_running",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "首窗真实接口检查中，不计完整结果。",
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_videox_tile_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_running",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "首窗真实接口检查中，不计完整结果。",
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_pose_0p5_41win": {
         "status": "initial_diagnostic_complete",
@@ -266,10 +270,10 @@
         "total_windows": 7
       },
       "dd_nlf_flashmotion_0p3_41win": {
-        "status": "initial_diagnostic_running",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
-        "note": "首窗真实接口检查中，不计完整结果。",
-        "windows_completed": 0,
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
         "total_windows": 7
       }
     },
@@ -327,11 +331,32 @@
         "native_zero_control_passed": true
       },
       "dd_41win": {
-        "status": "running",
+        "status": "verified_eof",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 9,
-        "total_windows": 10
+        "windows_completed": 10,
+        "total_windows": 10,
+        "audit": {
+          "passed": true,
+          "output_frames": 389,
+          "source_range": [
+            171,
+            559
+          ],
+          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true,
+          "core_time_position_repair_verified": true,
+          "fixed_observed_target_background_depth_verified": true,
+          "per_window_noise_schedule_verified": true,
+          "distinct_window_noise_tensors_verified": true,
+          "native_RGB_lossless_handoff_verified": true,
+          "kept_native_output_endpoint_chain_verified": true,
+          "discarded_context_predictions_not_counted_as_output": true,
+          "method_binding_verified": true
+        },
+        "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_41win__case12_full389.mp4"
       },
       "wanmove_0p35_41win": {
         "status": "initial_diagnostic_complete",
@@ -385,10 +410,10 @@
         "total_windows": 10
       },
       "dd_nlf_flashmotion_0p3_41win": {
-        "status": "initial_diagnostic_running",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
-        "note": "首窗真实接口检查中，不计完整结果。",
-        "windows_completed": 0,
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
         "total_windows": 10
       }
     }
