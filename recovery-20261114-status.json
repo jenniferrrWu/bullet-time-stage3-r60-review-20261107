@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T14:17:33.154682+00:00",
+  "updated_at": "2026-11-14T14:27:41.578279+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "原14方案完整重跑：复杂case13有1项运行、0项待整段核验、11项核对完整247帧；简单case12有6项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
+  "summary": "原14方案完整重跑：复杂case13有2项运行、0项待整段核验、11项核对完整247帧；简单case12有6项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -357,13 +357,14 @@
       "dd_videox_tile_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "total_windows": 7
       },
       "dd_pose_0p5_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "pending_input_audit",
@@ -375,14 +376,14 @@
       "dd_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 11,
+        "windows_completed": 12,
         "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。",
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 20,
         "native_zero_control_passed": true
@@ -404,14 +405,14 @@
       "dd_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 8,
         "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。",
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 10,
         "native_zero_control_passed": true
@@ -419,7 +420,7 @@
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 10,
         "native_zero_control_passed": true
