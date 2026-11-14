@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T13:33:07.606746+00:00",
+  "updated_at": "2026-11-14T13:34:42.827487+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "原14方案完整重跑：复杂case13有5项运行、0项待整段核验、6项核对完整247帧；简单case12有2项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
+  "summary": "原14方案完整重跑：复杂case13有5项运行、0项待整段核验、7项核对完整247帧；简单case12有2项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -195,7 +195,7 @@
       "motion_i2v_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 8,
+        "windows_completed": 9,
         "total_windows": 13,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "native_zero_control_passed": true
@@ -263,12 +263,25 @@
         "video": "./media/recovery-20261114/wanmove_0p1_41win__case13_full247.mp4"
       },
       "motion_i2v_0p35_41win": {
-        "status": "running",
+        "status": "verified_eof",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "total_windows": 7,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
-        "native_zero_control_passed": true
+        "native_zero_control_passed": true,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true
+        },
+        "video": "./media/recovery-20261114/motion_i2v_0p35_41win__case13_full247.mp4"
       },
       "dd_videox_hed_0p2_41win": {
         "status": "running",
@@ -286,13 +299,14 @@
       "dd_videox_canny_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "total_windows": 7
       },
       "dd_videox_tile_0p2_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_pose_0p5_41win": {
         "status": "pending_input_audit",
