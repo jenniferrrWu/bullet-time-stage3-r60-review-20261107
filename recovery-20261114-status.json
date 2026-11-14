@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T10:52:27.596507+00:00",
-  "phase": "restoring_original_inputs_and_adapters",
-  "summary": "已恢复原验收仓库和14个方法。旧30°／f236任务已按用户确认停止，输出保留；当前正恢复正确输入和适配器，本轮尚无完整重跑结果。",
+  "updated_at": "2026-11-14T12:09:24.461472+00:00",
+  "phase": "original_methods_fulltail_rerunning",
+  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、0项已生成待独立整段核验；短窗不计为整段完成。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -91,7 +91,7 @@
       "stage2_angle_label": "+45°",
       "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
       "original_lossless_endpoint_recovered": true,
-      "input_status": "共同 Stage2 无损末帧已找回，SHA256 与原页一致；正在恢复原14方案的执行代码。",
+      "input_status": "原始45° Stage2末帧已核对，247帧统一条件及21/41帧轨迹已准备。后段投影覆盖严重不足，仍须实跑和验收；不以完整输入替代画质结论。",
       "source_video": "./media/case13-f845-to-end-247f-source-preview.mp4",
       "endpoint_preview": "./media/case13-f845-previous-cycle-stage2-endpoint.png"
     },
@@ -113,14 +113,18 @@
   "jobs": {
     "case13": {
       "dd_21win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 7,
+        "total_windows": 13
       },
       "wanmove_0p35_21win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 13,
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。 原生零强度对照核验中，未作完整验收。",
+        "native_zero_control_passed": false
       },
       "wanmove_0p1_21win": {
         "status": "pending_input_audit",
@@ -133,19 +137,26 @@
         "windows_completed": 0
       },
       "dd_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 5,
+        "total_windows": 7
       },
       "wanmove_0p35_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。 原生零强度对照核验中，未作完整验收。",
+        "native_zero_control_passed": false
       },
       "wanmove_0p1_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。 原生零强度对照核验中，未作完整验收。",
+        "native_zero_control_passed": false
       },
       "motion_i2v_0p35_41win": {
         "status": "pending_input_audit",
@@ -258,5 +269,9 @@
   },
   "full_EOF_target_chains": 28,
   "current_round_full_EOF_verified": 0,
-  "old_30deg_suite_excluded": true
+  "old_30deg_suite_excluded": true,
+  "auxiliary_controls": {
+    "DD81": "running",
+    "WanMove_zero_hook": null
+  }
 }
