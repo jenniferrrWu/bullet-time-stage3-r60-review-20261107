@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T14:07:44.203309+00:00",
+  "updated_at": "2026-11-14T14:11:18.572007+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "原14方案完整重跑：复杂case13有4项运行、0项待整段核验、8项核对完整247帧；简单case12有3项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
+  "summary": "原14方案完整重跑：复杂case13有2项运行、1项待整段核验、9项核对完整247帧；简单case12有5项运行、0项待核验、0项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -105,7 +105,7 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，3项完整链运行。Stage2画质与Stage3效果另审。",
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，5项完整链运行。Stage2画质与Stage3效果另审。",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
       "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
@@ -297,28 +297,41 @@
         "video": "./media/recovery-20261114/motion_i2v_0p35_41win__case13_full247.mp4"
       },
       "dd_videox_hed_0p2_41win": {
-        "status": "running",
+        "status": "verified_eof",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "total_windows": 7,
-        "note": "正在核对后台进程，暂不声称推理在运行。"
+        "note": "正在核对后台进程，暂不声称推理在运行。",
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true
+        },
+        "video": "./media/recovery-20261114/dd_videox_hed_0p2_41win__case13_full247.mp4"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "running",
+        "status": "generated",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "total_windows": 7
       },
       "dd_videox_canny_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "total_windows": 7
       },
       "dd_videox_tile_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 7
       },
       "dd_pose_0p5_41win": {
@@ -336,23 +349,25 @@
       "dd_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 9,
+        "windows_completed": 10,
         "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。",
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 20,
         "native_zero_control_passed": true
       },
       "wanmove_0p1_21win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
         "windows_completed": 0,
-        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "total_windows": 20,
+        "native_zero_control_passed": true
       },
       "motion_i2v_0p35_21win": {
         "status": "pending_input_audit",
@@ -363,15 +378,17 @@
       "dd_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。",
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
         "windows_completed": 0,
-        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "total_windows": 10,
+        "native_zero_control_passed": true
       },
       "wanmove_0p1_41win": {
         "status": "pending_input_audit",
