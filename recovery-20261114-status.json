@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T12:43:40.217202+00:00",
+  "updated_at": "2026-11-14T12:53:48.110638+00:00",
   "phase": "original_methods_fulltail_rerunning",
   "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验、2项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
   "historical_round": {
@@ -114,7 +114,7 @@
     "case13": {
       "dd_21win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 13,
         "total_windows": 13,
         "audit": {
@@ -134,7 +134,7 @@
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 7,
+        "windows_completed": 9,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -142,7 +142,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 8,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -150,12 +150,12 @@
       "motion_i2v_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 2,
         "total_windows": 13
       },
       "dd_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 7,
         "total_windows": 7,
         "audit": {
@@ -175,7 +175,7 @@
       "wanmove_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 6,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -183,7 +183,7 @@
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 6,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -191,7 +191,7 @@
       "motion_i2v_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 2,
         "total_windows": 7
       },
       "dd_videox_hed_0p2_41win": {
