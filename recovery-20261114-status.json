@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T12:19:28.295234+00:00",
+  "updated_at": "2026-11-14T12:29:32.432020+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验；短窗不计为整段完成。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
+  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、1项已生成待独立整段核验；短窗不计为整段完成。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -115,13 +115,13 @@
       "dd_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 9,
+        "windows_completed": 10,
         "total_windows": 13
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 2,
+        "windows_completed": 4,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -129,7 +129,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 1,
+        "windows_completed": 3,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -140,15 +140,15 @@
         "windows_completed": 0
       },
       "dd_41win": {
-        "status": "running",
+        "status": "generated",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "total_windows": 7
       },
       "wanmove_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -156,7 +156,7 @@
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
