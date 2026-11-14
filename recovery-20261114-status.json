@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T12:09:24.461472+00:00",
+  "updated_at": "2026-11-14T12:19:28.295234+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、0项已生成待独立整段核验；短窗不计为整段完成。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
+  "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验；短窗不计为整段完成。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -115,21 +115,24 @@
       "dd_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 7,
+        "windows_completed": 9,
         "total_windows": 13
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 2,
         "total_windows": 13,
-        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。 原生零强度对照核验中，未作完整验收。",
-        "native_zero_control_passed": false
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "native_zero_control_passed": true
       },
       "wanmove_0p1_21win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 1,
+        "total_windows": 13,
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "native_zero_control_passed": true
       },
       "motion_i2v_0p35_21win": {
         "status": "pending_input_audit",
@@ -139,24 +142,24 @@
       "dd_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "total_windows": 7
       },
       "wanmove_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
-        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。 原生零强度对照核验中，未作完整验收。",
-        "native_zero_control_passed": false
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "native_zero_control_passed": true
       },
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
-        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。 原生零强度对照核验中，未作完整验收。",
-        "native_zero_control_passed": false
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "native_zero_control_passed": true
       },
       "motion_i2v_0p35_41win": {
         "status": "pending_input_audit",
@@ -271,7 +274,7 @@
   "current_round_full_EOF_verified": 0,
   "old_30deg_suite_excluded": true,
   "auxiliary_controls": {
-    "DD81": "running",
-    "WanMove_zero_hook": null
+    "DD81": "native_chain_complete_pending_independent_EOF_assembly",
+    "WanMove_zero_hook": true
   }
 }
