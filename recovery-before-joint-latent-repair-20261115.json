@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-14T21:20:16.616448+00:00",
+  "phase": "per_window_independent_noise_full_EOF_qualification",
+  "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有0项完整链运行、2项核对247帧；简单case12有0项完整链运行、2项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
+  "historical_round": {
+    "date": "2026-11-13",
+    "complete_case13_videos": 14,
+    "quality_passes": 0
+  },
+  "methods": [
+    {
+      "key": "dd_21win",
+      "label": "DD · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "wanmove_0p35_21win",
+      "label": "Wan-Move 官方轨迹函数 α0.35 · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "wanmove_0p1_21win",
+      "label": "Wan-Move α0.1 · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "motion_i2v_0p35_21win",
+      "label": "Motion-I2V ForwardWarp α0.35 · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "dd_41win",
+      "label": "DD · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "wanmove_0p35_41win",
+      "label": "Wan-Move α0.35 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "wanmove_0p1_41win",
+      "label": "Wan-Move α0.1 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "motion_i2v_0p35_41win",
+      "label": "Motion-I2V ForwardWarp α0.35 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_hed_0p2_41win",
+      "label": "DD + VideoX HED 0.2 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_hed_0p5_41win",
+      "label": "DD + VideoX HED 0.5 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_canny_0p2_41win",
+      "label": "DD + VideoX Canny 0.2 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_tile_0p2_41win",
+      "label": "DD + VideoX Tile 0.2 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_pose_0p5_41win",
+      "label": "DD + 投影关节残差 β0.5 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_nlf_flashmotion_0p3_41win",
+      "label": "DD + NLF 轮廓 + FlashMotion 0.3 · 41 帧窗",
+      "window_frames": 41
+    }
+  ],
+  "cases": {
+    "case13": {
+      "label": "复杂屋顶女舞 · case13",
+      "source_range": [
+        845,
+        1091
+      ],
+      "real_frames": 247,
+      "stage2_angle_label": "+45°",
+      "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+      "original_lossless_endpoint_recovered": true,
+      "input_status": "使用原+45度Stage2无损末帧与原片f845–f1091完整247帧；原生21/41帧，逐窗seed42+窗号、原生RGB无损续接，画质分项审查。",
+      "source_video": "./media/case13-f845-to-end-247f-source-preview.mp4",
+      "endpoint_preview": "./media/case13-f845-previous-cycle-stage2-endpoint.png"
+    },
+    "case12": {
+      "label": "简单室内人物 · case12 A",
+      "source_range": [
+        171,
+        559
+      ],
+      "real_frames": 389,
+      "stage2_angle_label": "左转35°（原页标注）",
+      "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+      "original_lossless_endpoint_recovered": false,
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，0项完整链运行。Stage2画质与Stage3效果另审。 本轮统一采用seed42+窗号与原生RGB无损续接；Pose/NLF后段条件的2D回退近似单独声明。",
+      "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
+      "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
+      "new_native_stage2_preparation": {
+        "PID": 1526309,
+        "GPU": 0,
+        "status": "new_native_stage2_complete_pending_visual_review",
+        "created_unix": 1794660336.2537417,
+        "native_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/result/depthdirector.mp4",
+        "endpoint": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_last.png",
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "original_missing_endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+        "identical_to_missing_original": false,
+        "native_first_latent_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_endpoint_audit.json",
+        "JPEG_preview_used_as_input": false,
+        "completed_unix": 1794661153.3993506
+      },
+      "original_endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+      "endpoint_kind": "new_native",
+      "stage2_video": "./media/recovery-20261114/case12_new_native_stage2.mp4",
+      "current_native_endpoint_ready": true
+    }
+  },
+  "jobs": {
+    "case13": {
+      "dd_21win": {
+        "status": "verified_eof",
+        "quality": "failed",
+        "note": "EOF 仍严重破坏人物和场景，独立窗口种子未通过完整画质验证。",
+        "windows_completed": 13,
+        "total_windows": 13,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true,
+          "core_time_position_repair_verified": true,
+          "fixed_observed_target_background_depth_verified": true,
+          "per_window_noise_schedule_verified": true,
+          "distinct_window_noise_tensors_verified": true,
+          "native_RGB_lossless_handoff_verified": true,
+          "kept_native_output_endpoint_chain_verified": true,
+          "discarded_context_predictions_not_counted_as_output": true,
+          "method_binding_verified": true
+        },
+        "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_21win__case13_full247.mp4"
+      },
+      "wanmove_0p35_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 13,
+        "native_zero_control_passed": true
+      },
+      "wanmove_0p1_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 13,
+        "native_zero_control_passed": true
+      },
+      "motion_i2v_0p35_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 13,
+        "native_zero_control_passed": true
+      },
+      "dd_41win": {
+        "status": "verified_eof",
+        "quality": "failed",
+        "note": "EOF 仍严重破坏人物和场景，独立窗口种子未通过完整画质验证。",
+        "windows_completed": 7,
+        "total_windows": 7,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true,
+          "core_time_position_repair_verified": true,
+          "fixed_observed_target_background_depth_verified": true,
+          "per_window_noise_schedule_verified": true,
+          "distinct_window_noise_tensors_verified": true,
+          "native_RGB_lossless_handoff_verified": true,
+          "kept_native_output_endpoint_chain_verified": true,
+          "discarded_context_predictions_not_counted_as_output": true,
+          "method_binding_verified": true
+        },
+        "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_41win__case13_full247.mp4"
+      },
+      "wanmove_0p35_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 7,
+        "native_zero_control_passed": true
+      },
+      "wanmove_0p1_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 7,
+        "native_zero_control_passed": true
+      },
+      "motion_i2v_0p35_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 7,
+        "native_zero_control_passed": true
+      },
+      "dd_videox_hed_0p2_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 7
+      },
+      "dd_videox_hed_0p5_41win": {
+        "status": "waiting_core_fulltail_gate",
+        "quality": "pending",
+        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "windows_completed": 3,
+        "total_windows": 7
+      },
+      "dd_videox_canny_0p2_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 7
+      },
+      "dd_videox_tile_0p2_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 7
+      },
+      "dd_pose_0p5_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 7
+      },
+      "dd_nlf_flashmotion_0p3_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 7
+      }
+    },
+    "case12": {
+      "dd_21win": {
+        "status": "verified_eof",
+        "quality": "failed",
+        "note": "完整389帧末尾仍出现大面积彩色块化和场景失效。",
+        "windows_completed": 20,
+        "total_windows": 20,
+        "audit": {
+          "passed": true,
+          "output_frames": 389,
+          "source_range": [
+            171,
+            559
+          ],
+          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true,
+          "core_time_position_repair_verified": true,
+          "fixed_observed_target_background_depth_verified": true,
+          "per_window_noise_schedule_verified": true,
+          "distinct_window_noise_tensors_verified": true,
+          "native_RGB_lossless_handoff_verified": true,
+          "kept_native_output_endpoint_chain_verified": true,
+          "discarded_context_predictions_not_counted_as_output": true,
+          "method_binding_verified": true
+        },
+        "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_21win__case12_full389.mp4"
+      },
+      "wanmove_0p35_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 20,
+        "native_zero_control_passed": true
+      },
+      "wanmove_0p1_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 20,
+        "native_zero_control_passed": true
+      },
+      "motion_i2v_0p35_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 20,
+        "native_zero_control_passed": true
+      },
+      "dd_41win": {
+        "status": "verified_eof",
+        "quality": "failed",
+        "note": "人物末尾俯身接近画面与原视频动作相关，但固定视角下的背景和家具明显漂移；完整画质未通过。",
+        "windows_completed": 10,
+        "total_windows": 10,
+        "audit": {
+          "passed": true,
+          "output_frames": 389,
+          "source_range": [
+            171,
+            559
+          ],
+          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true,
+          "core_time_position_repair_verified": true,
+          "fixed_observed_target_background_depth_verified": true,
+          "per_window_noise_schedule_verified": true,
+          "distinct_window_noise_tensors_verified": true,
+          "native_RGB_lossless_handoff_verified": true,
+          "kept_native_output_endpoint_chain_verified": true,
+          "discarded_context_predictions_not_counted_as_output": true,
+          "method_binding_verified": true
+        },
+        "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_41win__case12_full389.mp4"
+      },
+      "wanmove_0p35_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 10,
+        "native_zero_control_passed": true
+      },
+      "wanmove_0p1_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 10,
+        "native_zero_control_passed": true
+      },
+      "motion_i2v_0p35_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 10,
+        "native_zero_control_passed": true
+      },
+      "dd_videox_hed_0p2_41win": {
+        "status": "waiting_core_fulltail_gate",
+        "quality": "pending",
+        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+      },
+      "dd_videox_hed_0p5_41win": {
+        "status": "waiting_core_fulltail_gate",
+        "quality": "pending",
+        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+      },
+      "dd_videox_canny_0p2_41win": {
+        "status": "waiting_core_fulltail_gate",
+        "quality": "pending",
+        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+      },
+      "dd_videox_tile_0p2_41win": {
+        "status": "waiting_core_fulltail_gate",
+        "quality": "pending",
+        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+      },
+      "dd_pose_0p5_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 10
+      },
+      "dd_nlf_flashmotion_0p3_41win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
+        "windows_completed": 1,
+        "total_windows": 10
+      }
+    }
+  },
+  "full_EOF_target_chains": 28,
+  "current_round_full_EOF_verified": 0,
+  "old_30deg_suite_excluded": true,
+  "auxiliary_controls": {
+    "wanmove": {
+      "case13": true,
+      "case12": true
+    },
+    "motion": {
+      "case13": true,
+      "case12": true
+    },
+    "pose": {
+      "case13": true,
+      "case12": true
+    },
+    "flashmotion": {
+      "case13": true,
+      "case12": true
+    },
+    "controlnet": {
+      "case13": true,
+      "case12": true
+    }
+  },
+  "diagnosis": {
+    "active": true,
+    "common_failure_confirmed_in_native_output": true,
+    "specific_temporal_position_defect_supported": true,
+    "complete_solution_not_yet_proven": true
+  },
+  "repair_campaign": {
+    "version": "per_window_noise_lossless_v6",
+    "master_seed": 42,
+    "seed_schedule": "42+actual_window_index",
+    "native_window_frames": [
+      21,
+      41
+    ],
+    "raw_pipeline_RGB_lossless_handoff": true,
+    "old_bad_outputs_counted_as_fixed": false,
+    "full_EOF_colored_noise_regression_passed": false,
+    "full_EOF_quality_solution_not_yet_proven": true,
+    "all_visual_quality_dimensions_passed_not_assumed": true
+  },
+  "repair_diagnosis": {
+    "findings": [
+      "同一噪声张量逐窗重复、生成末帧再回灌I2V时，两例的潜变量高频能量持续升高，最终都变成彩噪。正在以两例完整尾段验证逐窗独立噪声能否打断放大。",
+      "原时间位置编码和后段几何确有缺陷，已分别修正；仅修位置、仅保留81帧、仅固定背景深度、仅改无损RGB，都没有单独解决完整彩噪崩坏。",
+      "目前只改每窗噪声后，两例连续到第六窗仍无原来的大面积彩噪；人物重建与机位已有缺陷，不能把这一局部改善称为整段画质通过。",
+      "完整原14方案将等待两例21/41帧共四条完整噪声回归门槛。Pose与NLF后段空条件改用同一当前帧真实预测的明确2D回退，不复制相邻动作。"
+    ],
+    "evidence": [
+      {
+        "image": "./media/recovery-20261114/source_time_v1_not_sufficient.jpg",
+        "label": "已否决的仅位置修复分支：持续接窗仍有彩噪"
+      }
+    ],
+    "prior_bad_campaign": "./recovery-before-independent-window-noise-repair-20261115.json"
+  }
+}

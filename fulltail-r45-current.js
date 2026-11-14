@@ -10,6 +10,7 @@
   let requiresContext81Audit = false;
   let requiresFixedBackgroundAudit = false;
   let requiresIndependentNoiseAudit = false;
+  let requiresJointAudit = false;
   let lastPayload = null;
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
@@ -26,8 +27,18 @@
   function mediaPath(path) {
     return typeof path === 'string' && path.startsWith('./media/') && !path.includes('..');
   }
-  function complete(job, spec) {
+  function complete(job, spec, method) {
     const audit = job.audit || {};
+    if (requiresJointAudit) return job.status === 'verified_eof' && audit.passed === true &&
+      audit.output_frames === spec.real_frames && Array.isArray(audit.source_range) && audit.source_range.length === 2 &&
+      audit.source_range.every((frame, index) => frame === spec.source_range[index]) && audit.stage2_endpoint_sha256 === spec.endpoint_sha256 &&
+      audit.actual_original_method === method.key && audit.native_context_frames === method.window_frames &&
+      audit.first_latent_pinning_verified === true && audit.original_source_frame_order_verified === true && audit.method_binding_verified === true &&
+      audit.global_shared_noise_and_latent_trajectory_verified === true && audit.actual_all_native_model_windows_verified === true &&
+      audit.actual_source_and_camera_sliced_with_each_model_window_verified === true && audit.native_core_reference_qualifications_verified === true &&
+      audit.no_generated_RGB_reencoding_feedback_verified === true && audit.native_RGB_lossless_full_EOF_verified === true &&
+      audit.core_time_position_repair_verified === true;
+
     return job.status === 'verified_eof' && audit.passed === true && audit.output_frames === spec.real_frames &&
       Array.isArray(audit.source_range) && audit.source_range.length === 2 &&
       audit.source_range.every((frame, index) => frame === spec.source_range[index]) &&
@@ -55,7 +66,8 @@
       requiresContext81Audit = data.repair_campaign?.version === 'native81_context_v2';
       requiresFixedBackgroundAudit = data.repair_campaign?.version === 'fixed_target_background_depth_v3';
       requiresIndependentNoiseAudit = data.repair_campaign?.version === 'per_window_noise_lossless_v6';
-      const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis]);
+      requiresJointAudit = data.repair_campaign?.version === 'joint_method_denoising_v11';
+      const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis, data.repair_campaign]);
       if (payload === lastPayload) return;
       if (repairNode && data.repair_diagnosis) {
         const fragment = document.createDocumentFragment();
@@ -101,14 +113,14 @@
         for (const id of ids) {
           const job = (data.jobs[id] || {})[method.key] || {};
           const spec = data.cases[id]; const cell = element('td');
-          const finished = complete(job, spec);
+          const finished = complete(job, spec, method);
           let message = labels[job.status] || '等待执行';
           if (finished) {
             verified++;
             if (job.quality === 'passed') {passed++; message = '画质通过；帧数与输入已核对';}
             else message = (job.quality === 'failed' ? '画质未通过' : '画质待审，尚未通过验收') + '；帧数与输入已核对';
           } else if (job.status === 'verified_eof') message = '完整审计证据不齐，尚不能计为完成';
-          if (job.status === 'running') message += ` ${job.windows_completed || 0}/${job.total_windows || '?'} 窗`;
+          if (job.status === 'running') message += job.joint_global_trajectory ? ` ${job.global_steps_completed || 0}/50 步；每步 ${job.model_windows_per_step} 个 ${method.window_frames} 帧窗` : ` ${job.windows_completed || 0}/${job.total_windows || '?'} 窗`;
           cell.append(element('p', message, finished && job.quality === 'passed' ? 'ready' : job.quality === 'failed' ? 'failed' : 'state'));
           if (job.note) cell.append(element('small', job.note));
           if (mediaPath(job.video)) {
