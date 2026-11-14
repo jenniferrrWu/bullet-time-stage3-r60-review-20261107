@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T23:27:49.277759+00:00",
+  "updated_at": "2026-11-14T23:30:25.650953+00:00",
   "phase": "reference_owned_native_latents_v13",
-  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。9/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
+  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。10/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -278,11 +278,32 @@
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_pose_0p5_41win": {
-        "status": "running",
+        "status": "verified_eof",
         "quality": "pending",
         "windows_completed": 7,
         "total_windows": 7,
-        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
+        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "actual_original_method": "dd_pose_0p5_41win",
+          "native_context_frames": 41,
+          "all_actual_native_window_calls_and_inputs_verified": true,
+          "all_original_source_and_condition_PIL_hashes_verified": true,
+          "all_native_windows_original_G1_target_source_and_camera_first_latents_aligned": true,
+          "all_actual_sampled_latents_verified_and_assembled_without_RGB_recurrence": true,
+          "only_later_reference_latents_discarded_output_source_order_once": true,
+          "all_lossless_global_native_RGB_hashes_verified": true,
+          "method_binding_verified": true,
+          "native_denoise_body_unchanged_only_decode_tail_skipped": true,
+          "source_time_offset_training21_verified": true
+        },
+        "video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case13_full247.mp4"
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "verified_eof",
@@ -450,7 +471,7 @@
       "dd_videox_canny_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 9,
         "total_windows": 10,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
