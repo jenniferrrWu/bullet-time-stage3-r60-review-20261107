@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T22:51:01.818276+00:00",
+  "updated_at": "2026-11-14T22:54:52.349372+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。4/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
@@ -231,7 +231,7 @@
       "dd_videox_hed_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
@@ -259,14 +259,14 @@
       "dd_pose_0p5_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       }
@@ -373,7 +373,7 @@
       "dd_videox_hed_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 10,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
@@ -387,7 +387,7 @@
       "dd_videox_canny_0p2_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 10,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
@@ -408,7 +408,7 @@
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 10,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       }
@@ -471,7 +471,24 @@
       "最新完整样例已恢复可辨认画面，但部分人物动作、重影和窗口衔接仍存在偏差；画质未通过的结果明确标记，不以完整EOF代替通过验收。",
       "独立核验器曾使用不同OpenCV/FFmpeg版本而导致RGB哈希差异，已改回生成时的同一解码环境；保留原严格逐帧哈希检查。"
     ],
-    "evidence": [],
+    "evidence": [
+      {
+        "image": "./media/recovery-20261114/reference_v13__dd_21win__case13_allframes.jpg",
+        "label": "case13 · 原生21帧窗：全部实际输出帧缩略图（仍有动作/衔接缺陷）"
+      },
+      {
+        "image": "./media/recovery-20261114/reference_v13__dd_21win__case12_allframes.jpg",
+        "label": "case12 · 原生21帧窗：全部实际输出帧缩略图（仍有动作/衔接缺陷）"
+      },
+      {
+        "image": "./media/recovery-20261114/reference_v13__dd_41win__case13_allframes.jpg",
+        "label": "case13 · 原生41帧窗：全部实际输出帧缩略图（仍有动作/衔接缺陷）"
+      },
+      {
+        "image": "./media/recovery-20261114/reference_v13__dd_41win__case12_allframes.jpg",
+        "label": "case12 · 原生41帧窗：全部实际输出帧缩略图（仍有动作/衔接缺陷）"
+      }
+    ],
     "prior_bad_campaign": "./recovery-before-reference-owned-repair-20261115.json"
   }
 }
