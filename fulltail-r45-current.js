@@ -5,12 +5,14 @@
   const casesNode = document.getElementById('current-cases');
   const methodsNode = document.getElementById('current-methods');
   const updated = document.getElementById('current-updated');
+  const repairNode = document.getElementById('current-repair');
+  let requiresRepairAudit = false;
   let lastPayload = null;
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
     waiting_original_endpoint: '等待原始无损 Stage2 末帧',
     held_for_diagnosis: '暂缓扩展，先查共同故障', queued: '排队中', running: '整段生成中', failed: '执行失败，待修复',
-    generated: '原生输出已生成，完整核验待完成'
+    waiting_core_fulltail_gate: '待共同故障完整修复验证', generated: '原生输出已生成，完整核验待完成'
   };
   function element(tag, text, className) {
     const node = document.createElement(tag);
@@ -28,7 +30,8 @@
       audit.source_range.every((frame, index) => frame === spec.source_range[index]) &&
       audit.stage2_endpoint_sha256 === spec.endpoint_sha256 &&
       audit.window_chain_verified === true && audit.first_latent_pinning_verified === true &&
-      audit.original_source_frame_order_verified === true && audit.method_binding_verified === true;
+      audit.original_source_frame_order_verified === true && audit.method_binding_verified === true &&
+      (!requiresRepairAudit || audit.core_time_position_repair_verified === true);
   }
   function video(path) {
     const node = element('video');
@@ -42,8 +45,21 @@
       if (!response.ok) throw new Error('HTTP ' + response.status);
       const data = await response.json();
       updated.textContent = '状态更新时间：' + new Date(data.updated_at).toLocaleString('zh-CN', {timeZone: 'Asia/Shanghai'}) + '（北京时间）';
-      const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs]);
+      requiresRepairAudit = data.repair_campaign?.version === 'source_time_offset_v1';
+      const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis]);
       if (payload === lastPayload) return;
+      if (repairNode && data.repair_diagnosis) {
+        const fragment = document.createDocumentFragment();
+        for (const finding of data.repair_diagnosis.findings || []) fragment.append(element('p', finding));
+        for (const evidence of data.repair_diagnosis.evidence || []) if (mediaPath(evidence.image)) {
+          const detail = element('details'); detail.append(element('summary', evidence.label));
+          const image = element('img'); image.src = evidence.image; image.alt = evidence.label;
+          image.style.width = '100%'; image.style.maxWidth = '1280px'; image.style.maxHeight = 'none'; image.style.float = 'none';
+          detail.append(image); fragment.append(detail);
+        }
+        const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
+        repairNode.replaceChildren(fragment);
+      }
       const ids = ['case13', 'case12'];
       const caseCards = document.createDocumentFragment();
       for (const id of ids) {

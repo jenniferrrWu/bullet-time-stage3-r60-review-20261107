@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T15:55:36.325679+00:00",
-  "phase": "diagnosing_common_DD_noise_failure",
-  "summary": "当前结果出现共同故障：后段彩色噪声、人物丢失与动作偏离。后续批量扩展已暂缓，GPU 转入 DD 基础链路对照诊断。下表保留失败与待审输出供排查；帧数及输入核对完成不代表效果通过。",
+  "updated_at": "2026-11-14T16:50:06.279835+00:00",
+  "phase": "source_time_position_repair_full_EOF_qualification",
+  "summary": "共同彩噪故障修复验证：复杂case13有2项运行、0项核对完整247帧；简单case12有2项运行、0项核对完整389帧。这里仅统计位置编码修复版，旧坏结果单独归档。短窗动作改善尚不等于整段通过。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -105,7 +105,7 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，0项完整链运行。Stage2画质与Stage3效果另审。",
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，2项完整链运行。Stage2画质与Stage3效果另审。",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
       "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
@@ -131,418 +131,153 @@
   "jobs": {
     "case13": {
       "dd_21win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 13,
-        "total_windows": 13,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_21win__case13_full247.mp4",
-        "note": "f945起出现大片彩色噪声，f985至EOF1091主体与场景完全失效。"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 2,
+        "total_windows": 13
       },
       "wanmove_0p35_21win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 13,
-        "total_windows": 13,
-        "note": "f925之后出现彩色噪声并迅速崩坏，f965至EOF1091主体与场景失效。",
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/wanmove_0p35_21win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "wanmove_0p1_21win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 13,
-        "total_windows": 13,
-        "note": "f925之后出现彩色噪声并迅速崩坏，f965至EOF1091主体与场景失效。",
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/wanmove_0p1_21win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "motion_i2v_0p35_21win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 13,
-        "total_windows": 13,
-        "note": "f925已出现结构破碎，f965至EOF1091为大片彩色噪声，动作不可验收。",
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/motion_i2v_0p35_21win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_41win__case13_full247.mp4",
-        "note": "f945之后场景明显扭曲，f1025至EOF1091出现大面积雾化、人物缺失和重建错误。"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 2,
+        "total_windows": 7
       },
       "wanmove_0p35_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "note": "动作与原源不一致，后段场景严重扭曲、雾化，EOF1091无法保持人物和背景。",
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/wanmove_0p35_41win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "wanmove_0p1_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "note": "动作与原源不一致，后段场景严重扭曲、雾化，EOF1091无法保持人物和背景。",
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/wanmove_0p1_41win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "motion_i2v_0p35_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "note": "f885视角/人物位置明显偏离，f965噪声，f1005至EOF仅剩天空和手部，未跟随原动作。",
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/motion_i2v_0p35_41win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_hed_0p2_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "note": "人物后段持续破碎且未跟随原动作，EOF1091出现大面积噪声。",
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_videox_hed_0p2_41win__case13_full247.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_videox_hed_0p5_41win__case13_full247.mp4",
-        "note": "场景相对保留，但人物肢体与动作明显失真，末段腿部融化，不能验收。"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_canny_0p2_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_videox_canny_0p2_41win__case13_full247.mp4",
-        "note": "f965起场景严重弯曲与人物变形，f1045噪声，EOF1091人景失效。"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_tile_0p2_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 7,
-        "total_windows": 7,
-        "audit": {
-          "passed": true,
-          "output_frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_videox_tile_0p2_41win__case13_full247.mp4",
-        "note": "人物未跟随原倒立/转身动作，f1005以后场景破碎，EOF1091大面积噪声。"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_pose_0p5_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 6,
-        "total_windows": 7,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 3,
-        "total_windows": 7,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       }
     },
     "case12": {
       "dd_21win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 20,
-        "note": "f291起出现大片噪声，f371至EOF559人物和场景完全失效。",
-        "total_windows": 20,
-        "audit": {
-          "passed": true,
-          "output_frames": 389,
-          "source_range": [
-            171,
-            559
-          ],
-          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_21win__case12_full389.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 2,
+        "total_windows": 20
       },
       "wanmove_0p35_21win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 19,
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "total_windows": 20,
-        "native_zero_control_passed": true
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "wanmove_0p1_21win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 7,
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "total_windows": 20,
-        "native_zero_control_passed": true
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "motion_i2v_0p35_21win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 7,
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "total_windows": 20,
-        "native_zero_control_passed": true
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_41win": {
-        "status": "verified_eof",
-        "quality": "failed",
-        "windows_completed": 10,
-        "note": "人物未跟随动作，f291场景破碎，f371至EOF559逐渐被彩色噪声覆盖。",
-        "total_windows": 10,
-        "audit": {
-          "passed": true,
-          "output_frames": 389,
-          "source_range": [
-            171,
-            559
-          ],
-          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/dd_41win__case12_full389.mp4"
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 2,
+        "total_windows": 10
       },
       "wanmove_0p35_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 7,
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "total_windows": 10,
-        "native_zero_control_passed": true
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "wanmove_0p1_41win": {
-        "status": "verified_eof",
+        "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 10,
-        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
-        "total_windows": 10,
-        "native_zero_control_passed": true,
-        "audit": {
-          "passed": true,
-          "output_frames": 389,
-          "source_range": [
-            171,
-            559
-          ],
-          "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
-          "window_chain_verified": true,
-          "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true,
-          "method_binding_verified": true
-        },
-        "video": "./media/recovery-20261114/wanmove_0p1_41win__case12_full389.mp4"
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "motion_i2v_0p35_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 9,
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "total_windows": 10,
-        "native_zero_control_passed": true
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_hed_0p2_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 0,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_hed_0p5_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 0,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_canny_0p2_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 0,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_videox_tile_0p2_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 0,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_pose_0p5_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 3,
-        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "total_windows": 10
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "held_for_diagnosis",
         "quality": "pending",
-        "windows_completed": 0,
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
       }
     }
@@ -558,7 +293,26 @@
   "diagnosis": {
     "active": true,
     "common_failure_confirmed_in_native_output": true,
-    "root_cause_not_yet_confirmed": true,
-    "paired_GPU_probes": 7
+    "specific_temporal_position_defect_supported": true,
+    "complete_solution_not_yet_proven": true
+  },
+  "repair_campaign": {
+    "version": "source_time_offset_v1",
+    "old_bad_outputs_counted_as_fixed": false,
+    "full_EOF_quality_solution_not_yet_proven": true
+  },
+  "repair_diagnosis": {
+    "findings": [
+      "已定位缩窗后的源视频时间位置错位：原81帧对应源起点21，21/41帧窗错误改到6/11；单变量修正后短窗动作明显恢复。",
+      "两例更换干净参考帧均抑制彩噪，但动作仍冻结，证实末帧误差传播；反复重置参考帧不作为修复。",
+      "同一坏窗口重跑完全一致；纯VAE重复20次未复现彩噪。正在用两例完整尾段和原生一致性检验修复。"
+    ],
+    "evidence": [
+      {
+        "image": "./media/recovery-20261114/source_time_position_causal_short_probe.jpg",
+        "label": "21帧因果对照：短窗动作变化；完整尾段仍在验证"
+      }
+    ],
+    "prior_bad_campaign": "./recovery-before-time-position-repair-20261115.json"
   }
 }
