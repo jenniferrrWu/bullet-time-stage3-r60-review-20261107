@@ -9,7 +9,7 @@
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
     waiting_original_endpoint: '等待原始无损 Stage2 末帧',
-    queued: '排队中', running: '原生推理中', failed: '执行失败，待修复',
+    queued: '排队中', running: '整段生成中', failed: '执行失败，待修复',
     generated: '原生输出已生成，完整核验待完成'
   };
   function element(tag, text, className) {
@@ -28,7 +28,7 @@
       audit.source_range.every((frame, index) => frame === spec.source_range[index]) &&
       audit.stage2_endpoint_sha256 === spec.endpoint_sha256 &&
       audit.window_chain_verified === true && audit.first_latent_pinning_verified === true &&
-      audit.original_source_frame_order_verified === true;
+      audit.original_source_frame_order_verified === true && audit.method_binding_verified === true;
   }
   function video(path) {
     const node = element('video');

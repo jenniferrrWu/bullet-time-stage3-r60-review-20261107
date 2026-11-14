@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T14:56:54.826414+00:00",
+  "updated_at": "2026-11-14T14:59:52.082342+00:00",
   "phase": "original_methods_fulltail_rerunning",
   "summary": "原14方案完整重跑：复杂case13有2项运行、0项待整段核验、12项核对完整247帧；简单case12有6项运行、0项待核验、1项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
@@ -145,7 +145,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_21win__case13_full247.mp4",
         "note": "f945起出现大片彩色噪声，f985至EOF1091主体与场景完全失效。"
@@ -167,7 +168,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/wanmove_0p35_21win__case13_full247.mp4"
       },
@@ -188,7 +190,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/wanmove_0p1_21win__case13_full247.mp4"
       },
@@ -209,7 +212,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/motion_i2v_0p35_21win__case13_full247.mp4"
       },
@@ -228,7 +232,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_41win__case13_full247.mp4",
         "note": "f945之后场景明显扭曲，f1025至EOF1091出现大面积雾化、人物缺失和重建错误。"
@@ -250,7 +255,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/wanmove_0p35_41win__case13_full247.mp4"
       },
@@ -271,7 +277,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/wanmove_0p1_41win__case13_full247.mp4"
       },
@@ -292,7 +299,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/motion_i2v_0p35_41win__case13_full247.mp4"
       },
@@ -312,7 +320,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_videox_hed_0p2_41win__case13_full247.mp4"
       },
@@ -331,7 +340,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_videox_hed_0p5_41win__case13_full247.mp4"
       },
@@ -350,7 +360,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_videox_canny_0p2_41win__case13_full247.mp4"
       },
@@ -369,7 +380,8 @@
           "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_videox_tile_0p2_41win__case13_full247.mp4"
       },
@@ -406,7 +418,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 20,
         "native_zero_control_passed": true
@@ -433,7 +445,8 @@
           "stage2_endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
           "window_chain_verified": true,
           "first_latent_pinning_verified": true,
-          "original_source_frame_order_verified": true
+          "original_source_frame_order_verified": true,
+          "method_binding_verified": true
         },
         "video": "./media/recovery-20261114/dd_41win__case12_full389.mp4"
       },
@@ -448,7 +461,7 @@
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 10,
         "native_zero_control_passed": true
@@ -456,7 +469,7 @@
       "motion_i2v_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 2,
+        "windows_completed": 3,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "total_windows": 10,
         "native_zero_control_passed": true
