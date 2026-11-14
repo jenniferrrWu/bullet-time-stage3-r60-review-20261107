@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T19:04:33.101944+00:00",
+  "updated_at": "2026-11-14T19:15:09.276671+00:00",
   "phase": "fixed_target_background_depth_full_EOF_repair_qualification",
   "summary": "彩噪修复验证：修正短窗源时间位置，并以 Stage2 固定新机位的已观测背景深度约束后段；人体采用当前帧 NLF 估计。复杂case13有0项运行、1项核对完整247帧；简单case12有0项运行、0项核对完整389帧。首窗和局部改善不计整段通过。",
   "historical_round": {
@@ -154,8 +154,8 @@
       },
       "dd_41win": {
         "status": "verified_eof",
-        "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "quality": "failed",
+        "note": "连续第五窗已复现全景彩色纹理噪声与人物劣化。固定背景深度单独修复被否决；此输出仅供诊断，不是修正好的结果。",
         "windows_completed": 7,
         "total_windows": 7,
         "audit": {
