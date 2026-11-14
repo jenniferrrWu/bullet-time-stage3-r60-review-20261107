@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T17:35:05.058172+00:00",
+  "updated_at": "2026-11-14T17:45:09.317236+00:00",
   "phase": "native81_context_full_EOF_repair_qualification",
   "summary": "彩噪修复验证：保留81帧原生上下文，每次推进21/41个真实输出帧。复杂case13有2项运行、0项核对完整247帧；简单case12有2项运行、0项核对完整389帧。这里不统计旧坏结果，整段画质仍需验证。",
   "historical_round": {
@@ -134,7 +134,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "total_windows": 13
       },
       "wanmove_0p35_21win": {
@@ -156,7 +156,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "total_windows": 7
       },
       "wanmove_0p35_41win": {
@@ -232,7 +232,7 @@
         "status": "held_for_diagnosis",
         "quality": "pending",
         "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
-        "windows_completed": 1,
+        "windows_completed": 2,
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
