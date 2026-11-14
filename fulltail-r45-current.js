@@ -8,12 +8,13 @@
   const repairNode = document.getElementById('current-repair');
   let requiresRepairAudit = false;
   let requiresContext81Audit = false;
+  let requiresFixedBackgroundAudit = false;
   let lastPayload = null;
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
     waiting_original_endpoint: '等待原始无损 Stage2 末帧',
     held_for_diagnosis: '暂缓扩展，先查共同故障', queued: '排队中', running: '整段生成中', failed: '执行失败，待修复',
-    waiting_core_fulltail_gate: '待共同故障完整修复验证', generated: '原生输出已生成，完整核验待完成'
+    initial_diagnostic_complete: '首窗接口检查完成，等待整段基线验证', waiting_core_fulltail_gate: '待共同故障完整修复验证', generated: '原生输出已生成，完整核验待完成'
   };
   function element(tag, text, className) {
     const node = document.createElement(tag);
@@ -33,6 +34,7 @@
       audit.window_chain_verified === true && audit.first_latent_pinning_verified === true &&
       audit.original_source_frame_order_verified === true && audit.method_binding_verified === true &&
       (!requiresRepairAudit || audit.core_time_position_repair_verified === true) &&
+      (!requiresFixedBackgroundAudit || (audit.fixed_observed_target_background_depth_verified === true && audit.kept_native_output_endpoint_chain_verified === true)) &&
       (!requiresContext81Audit || (audit.native81_context_verified === true && audit.kept_native_output_endpoint_chain_verified === true && audit.discarded_context_predictions_not_counted_as_output === true));
   }
   function video(path) {
@@ -49,6 +51,7 @@
       updated.textContent = '状态更新时间：' + new Date(data.updated_at).toLocaleString('zh-CN', {timeZone: 'Asia/Shanghai'}) + '（北京时间）';
       requiresRepairAudit = Boolean(data.repair_campaign?.version);
       requiresContext81Audit = data.repair_campaign?.version === 'native81_context_v2';
+      requiresFixedBackgroundAudit = data.repair_campaign?.version === 'fixed_target_background_depth_v3';
       const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis]);
       if (payload === lastPayload) return;
       if (repairNode && data.repair_diagnosis) {

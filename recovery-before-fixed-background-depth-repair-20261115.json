@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-14T18:21:29.475661+00:00",
+  "phase": "native81_context_full_EOF_repair_qualification",
+  "summary": "彩噪修复验证：保留81帧原生上下文，每次推进21/41个真实输出帧。复杂case13有0项运行、0项核对完整247帧；简单case12有0项运行、0项核对完整389帧。这里不统计旧坏结果，整段画质仍需验证。",
+  "historical_round": {
+    "date": "2026-11-13",
+    "complete_case13_videos": 14,
+    "quality_passes": 0
+  },
+  "methods": [
+    {
+      "key": "dd_21win",
+      "label": "DD · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "wanmove_0p35_21win",
+      "label": "Wan-Move 官方轨迹函数 α0.35 · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "wanmove_0p1_21win",
+      "label": "Wan-Move α0.1 · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "motion_i2v_0p35_21win",
+      "label": "Motion-I2V ForwardWarp α0.35 · 21 帧窗",
+      "window_frames": 21
+    },
+    {
+      "key": "dd_41win",
+      "label": "DD · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "wanmove_0p35_41win",
+      "label": "Wan-Move α0.35 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "wanmove_0p1_41win",
+      "label": "Wan-Move α0.1 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "motion_i2v_0p35_41win",
+      "label": "Motion-I2V ForwardWarp α0.35 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_hed_0p2_41win",
+      "label": "DD + VideoX HED 0.2 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_hed_0p5_41win",
+      "label": "DD + VideoX HED 0.5 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_canny_0p2_41win",
+      "label": "DD + VideoX Canny 0.2 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_videox_tile_0p2_41win",
+      "label": "DD + VideoX Tile 0.2 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_pose_0p5_41win",
+      "label": "DD + 投影关节残差 β0.5 · 41 帧窗",
+      "window_frames": 41
+    },
+    {
+      "key": "dd_nlf_flashmotion_0p3_41win",
+      "label": "DD + NLF 轮廓 + FlashMotion 0.3 · 41 帧窗",
+      "window_frames": 41
+    }
+  ],
+  "cases": {
+    "case13": {
+      "label": "复杂屋顶女舞 · case13",
+      "source_range": [
+        845,
+        1091
+      ],
+      "real_frames": 247,
+      "stage2_angle_label": "+45°",
+      "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+      "original_lossless_endpoint_recovered": true,
+      "input_status": "原始45° Stage2末帧已核对，247帧统一条件及21/41帧轨迹已准备。后段投影覆盖严重不足，仍须实跑和验收；不以完整输入替代画质结论。 当前用81帧原生上下文、21/41帧有效推进；全部真实源帧仍须保留。",
+      "source_video": "./media/case13-f845-to-end-247f-source-preview.mp4",
+      "endpoint_preview": "./media/case13-f845-previous-cycle-stage2-endpoint.png"
+    },
+    "case12": {
+      "label": "简单室内人物 · case12 A",
+      "source_range": [
+        171,
+        559
+      ],
+      "real_frames": 389,
+      "stage2_angle_label": "左转35°（原页标注）",
+      "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+      "original_lossless_endpoint_recovered": false,
+      "input_status": "新原生Stage2已生成并作为本轮统一输入；历史无损末帧仍缺失。全部389帧条件已核对，0项完整链运行。Stage2画质与Stage3效果另审。 当前用81帧原生上下文、21/41帧有效推进；全部真实源帧仍须保留。",
+      "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
+      "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
+      "new_native_stage2_preparation": {
+        "PID": 1526309,
+        "GPU": 0,
+        "status": "new_native_stage2_complete_pending_visual_review",
+        "created_unix": 1794660336.2537417,
+        "native_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/result/depthdirector.mp4",
+        "endpoint": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_last.png",
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "original_missing_endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+        "identical_to_missing_original": false,
+        "native_first_latent_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_endpoint_audit.json",
+        "JPEG_preview_used_as_input": false,
+        "completed_unix": 1794661153.3993506
+      },
+      "original_endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+      "endpoint_kind": "new_native",
+      "stage2_video": "./media/recovery-20261114/case12_new_native_stage2.mp4",
+      "current_native_endpoint_ready": true
+    }
+  },
+  "jobs": {
+    "case13": {
+      "dd_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 5,
+        "total_windows": 13
+      },
+      "wanmove_0p35_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "wanmove_0p1_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "motion_i2v_0p35_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 4,
+        "total_windows": 7
+      },
+      "wanmove_0p35_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "wanmove_0p1_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "motion_i2v_0p35_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_hed_0p2_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 1,
+        "total_windows": 7
+      },
+      "dd_videox_hed_0p5_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_canny_0p2_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_tile_0p2_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_pose_0p5_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_nlf_flashmotion_0p3_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      }
+    },
+    "case12": {
+      "dd_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 5,
+        "total_windows": 20
+      },
+      "wanmove_0p35_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "wanmove_0p1_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "motion_i2v_0p35_21win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。",
+        "windows_completed": 4,
+        "total_windows": 10
+      },
+      "wanmove_0p35_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "wanmove_0p1_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "motion_i2v_0p35_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_hed_0p2_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_hed_0p5_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_canny_0p2_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_videox_tile_0p2_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_pose_0p5_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      },
+      "dd_nlf_flashmotion_0p3_41win": {
+        "status": "held_for_diagnosis",
+        "quality": "pending",
+        "note": "后续窗口扩展暂缓，正在定位共用 DD 基础链路故障；已有局部输出仅供诊断。"
+      }
+    }
+  },
+  "full_EOF_target_chains": 28,
+  "current_round_full_EOF_verified": 0,
+  "old_30deg_suite_excluded": true,
+  "auxiliary_controls": {
+    "wanmove": true,
+    "motion": true,
+    "controlnet": true
+  },
+  "diagnosis": {
+    "active": true,
+    "common_failure_confirmed_in_native_output": true,
+    "specific_temporal_position_defect_supported": true,
+    "complete_solution_not_yet_proven": true
+  },
+  "repair_campaign": {
+    "version": "native81_context_v2",
+    "native_context_frames": 81,
+    "effective_output_window_frames": [
+      21,
+      41
+    ],
+    "old_bad_outputs_counted_as_fixed": false,
+    "full_EOF_quality_solution_not_yet_proven": true
+  },
+  "repair_diagnosis": {
+    "findings": [
+      "仅修正缩窗后的源时间位置，虽然恢复部分动作，但第4窗仍复现彩噪；这个独立短窗分支已停止。",
+      "正在验证完整81帧原生上下文和重叠续接：后续上下文使用真实源帧，实际保留到的末帧用于下一窗，最终仍逐帧覆盖247/389帧。",
+      "坏末帧反馈会放大错误；更换干净参考帧可抑制噪声但会冻结动作，因此不以重置参考帧冒充修复。当前不宣称整段已修好。"
+    ],
+    "evidence": [
+      {
+        "image": "./media/recovery-20261114/source_time_v1_not_sufficient.jpg",
+        "label": "已否决的独立位置修复：跨窗仍有彩噪"
+      }
+    ],
+    "prior_bad_campaign": "./recovery-before-native81-context-repair-20261115.json"
+  }
+}
