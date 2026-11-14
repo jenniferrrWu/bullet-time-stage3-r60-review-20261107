@@ -65,7 +65,7 @@ async function refresh() {
 }
 button.onclick = () => {
   together = !together;
-  button.textContent = together ? '一起暂停' : '所有视频一起播';
+  button.textContent = together ? '一起暂停' : '历史视频一起播';
   if (together) {started = performance.now(); for (const row of visible) play(row);}
   else for (const v of document.querySelectorAll('video')) v.pause();
 };

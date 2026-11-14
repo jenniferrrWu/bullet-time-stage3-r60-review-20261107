@@ -2,16 +2,37 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>case13 Stage3 同起点整段修正验收</title>
+<title>DD Stage3 原方案完整重跑 · 两个 case 验收</title>
 <style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0d151b;color:#e8f3f8;font-family:system-ui,sans-serif}main{max-width:1680px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 10px}p{color:#bfd1db;line-height:1.55}.intro{background:#19303c;border:1px solid #426b7a;border-radius:10px;padding:16px;margin:16px 0}.anchors{display:flex;gap:18px;flex-wrap:wrap}.anchors figure{margin:0;width:min(350px,100%)}.anchors img{width:100%;border-radius:7px}.anchors figcaption{margin-top:6px;color:#cce0ea;font-size:14px}.prompt{font-size:13px;overflow-wrap:anywhere}.toolbar{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:16px 0}button{background:#67d3e4;color:#09212b;border:0;border-radius:7px;padding:11px 18px;font-weight:700;font-size:16px;cursor:pointer}.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:1280px}th,td{border-bottom:1px solid #354957;padding:12px;vertical-align:top;text-align:left}thead th{background:#1a2c38;position:sticky;top:0;z-index:1}tbody th{width:240px}small{display:block;color:#a7c2d0;font-weight:400;margin-top:7px;line-height:1.4}.status{width:140px;color:#e8c975}.result{width:310px}video{display:block;width:100%;max-width:350px;border-radius:6px;background:#060c11}a{color:#8bdef7}.ready{color:#7fe3a8}.failed{color:#ff8d83}
 </style>
+
+<style>
+.recovery{border:2px solid #67d3e4;background:#122934;border-radius:12px;padding:20px;margin:20px 0 28px}
+.recovery h2{margin-top:0}.recovery .case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.recovery article{background:#192f3b;padding:16px;border-radius:9px;min-width:0}.recovery img{width:150px;max-height:160px;object-fit:contain;float:right;margin-left:12px}
+.recovery code{overflow-wrap:anywhere;font-size:12px}.recovery table{min-width:900px}.recovery video{max-width:350px}
+.recovery .state{font-size:14px;color:#e8c975}.recovery .method{width:32%}.round-note{padding:13px;background:#263846;border-radius:8px}
+@media(max-width:800px){.recovery .case-grid{grid-template-columns:1fr}.recovery{padding:13px}main{padding:14px}}
+</style>
 </head>
 <body><main>
-<h1>case13 · 2026-11-13 新补跑：同起点 Stage3 整段对照</h1><div style="background:#763d19;color:#fff2da;border:2px solid #dda65d;padding:13px;border-radius:8px;font-weight:700">本轮 14 种方法均已完成 247 帧并通过输入审计；同帧抽查发现全部整段画质未通过。上一轮看着较正常的是 +60° 起点、仅 f845–f865 的 21 帧短片；本轮是 +45° 起点、f845–f1091 的 247 帧，不能把旧短片效果外推到后段。<a style="color:#fff" href="./fulltail-r45-review.html">查看旧版失败实验存档</a> · <a style="color:#fff" href="./case12-dd-replay.html">简单 case12 同输入 DD 回归</a></div>
+<h1>DD Stage3 · 两个 case 原方案完整重跑验收</h1>
+<section class="recovery" id="current-rerun" aria-labelledby="current-title">
+<h2 id="current-title">2026-11-14 · 原方案完整重跑</h2>
+<p id="current-summary">正在恢复原始输入与执行代码。本轮尚无完整重跑结果。</p>
+<p><strong id="current-count">本轮完整 EOF 核验：0 / 28；画质通过：0 / 28。</strong> <small id="current-updated"></small></p>
+<div class="case-grid" id="current-cases"></div>
+<p>验收分别检查：真实 Stage2 末帧、全部源帧直到原片结尾、窗口续接、原生首潜变量约束及实际调用参数。完整核验与画质结论分开显示。下面仅统计本轮新结果，历史视频保留在后半页。</p>
+<div class="wrap"><table><thead><tr><th class="method">原14方案</th><th>复杂 case13：247 帧</th><th>简单 case12：389 帧</th></tr></thead><tbody id="current-methods"></tbody></table></div>
+<p><a href="./recovery-20261114-status.json">本轮状态与输入审计范围</a> · <a href="#history-20261113">查看11月13日历史结果</a></p>
+</section>
+<h2 id="history-20261113">2026-11-13 · 历史整段结果（14项画质未通过）</h2>
+<p class="round-note">以下保留原验收视频和当时记录，供比较。它们不计入上面的11月14日新一轮进度。</p>
+<div style="background:#763d19;color:#fff2da;border:2px solid #dda65d;padding:13px;border-radius:8px;font-weight:700">11月13日历史轮 14 种方法均已完成 247 帧，并有当时的输入审计记录；同帧抽查发现全部整段画质未通过。上一轮看着较正常的是 +60° 起点、仅 f845–f865 的 21 帧短片；本轮是 +45° 起点、f845–f1091 的 247 帧，不能把旧短片效果外推到后段。<a style="color:#fff" href="./fulltail-r45-review.html">查看旧版失败实验存档</a> · <a style="color:#fff" href="./case12-dd-replay.html">简单 case12 同输入 DD 回归</a></div>
 <p>所有方法使用同一张已确认的 DD Stage2 +45° 末帧，原视频参考固定为 f845–f1091，共 247 帧。每行左边是对应源视频，中间是<strong>该方法对应的纯 DD 对照（会在多行重复）</strong>，右边是该行结果。21/41 帧两条纯 DD 行的中栏则是旧 81 帧 DD 对照。视频播放到 6 秒约对应原片 f1025，远超旧 21 帧短片的终点 f865。窗口边界的下一段以本方法上一段的末帧续接；表格状态只在 247 帧、首帧、源范围与窗口链审计通过后显示“待验收”。</p>
 <div class="intro"><div class="anchors"><figure><img src="./media/case13-f845-previous-cycle-source-frame.png" alt="原片 f845"><figcaption>原片对应帧 f845</figcaption></figure><figure><img src="./media/case13-f845-previous-cycle-stage2-endpoint.png" alt="共同 Stage2 末帧"><figcaption>共同输入：Stage2 +45° 末帧，SHA256 5dd314f…</figcaption></figure></div><p class="prompt"><strong>共同 prompt：</strong>At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.</p><p>DD 为相同官方基模与权重；Wan-Move / Motion-I2V 行使用作者函数接入 DD 的推理期适配，未逐方案重新训练。旧 81 帧纯 DD 只在窗口长度对照两行显示；Wan-Move 和 Motion-I2V 均与相同窗口长度的纯 DD 比较，避免把窗口差异误当方法收益。</p></div>
-<div class="toolbar"><button id="playAll">所有视频一起播</button><span id="totals">正在读取结果…</span></div>
+<div class="toolbar"><button id="playAll">历史视频一起播</button><span id="totals">正在读取结果…</span></div>
 <div class="wrap"><table><thead><tr><th>方法 / 改动</th><th>进度与结论</th><th>同一原视频 f845–f1091</th><th>纯 DD 基线</th><th>修正后整段结果</th></tr></thead><tbody>
 <tr data-key="dd_21win" data-baseline="dd_baseline"><th>DD · 21 帧窗<small>只改窗口长度；对照旧 81 帧 DD。短窗旨在减少单窗几何失稳，可能导致动作冻结。</small></th><td class="status">待生成</td><td class="source"></td><td class="baseline"></td><td class="result">待生成</td></tr>
 <tr data-key="wanmove_0p35_21win" data-baseline="dd_21win"><th>Wan-Move 官方轨迹函数 α0.35 · 21 帧窗<small>CoWTracker 密集轨迹与 Wan-Move 特征传播接入 DD。<a href="https://github.com/ali-vilab/Wan-Move">作者源码</a></small></th><td class="status">待生成</td><td class="source"></td><td class="baseline"></td><td class="result">待生成</td></tr>
@@ -29,5 +50,6 @@
 <tr data-key="dd_nlf_flashmotion_0p3_41win" data-baseline="dd_41win"><th>DD + NLF 轮廓 + FlashMotion 0.3 · 41 帧窗<small>使用 <a href="https://github.com/FlashMotion/FlashMotion">FlashMotion 官方 SlowAdapter 权重</a>和已有 NLF 目标轮廓；并非论文完整端到端系统。</small></th><td class="status">排队中</td><td class="source"></td><td class="baseline"></td><td class="result">待生成</td></tr>
 </tbody></table></div>
 <p>完整实验记录和时间估算见项目进度文档；“待验收”表示生成与输入审计完成，最终画质由整段目视决定。</p>
-<script defer src="./fulltail-r45-corrected.js"></script>
+<script defer src="./fulltail-r45-corrected.js?v=20261114-history"></script>
+<script defer src="./fulltail-r45-current.js?v=20261114-recovery"></script>
 </main></body></html>
