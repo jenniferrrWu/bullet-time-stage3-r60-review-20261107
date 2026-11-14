@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T13:03:04.309344+00:00",
+  "updated_at": "2026-11-14T13:13:32.712821+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前4项完整尾段任务运行、0项已生成待独立整段核验、4项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
+  "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验、4项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -149,7 +149,7 @@
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 10,
+        "windows_completed": 12,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -157,7 +157,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 9,
+        "windows_completed": 11,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -165,7 +165,7 @@
       "motion_i2v_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 3,
+        "windows_completed": 5,
         "total_windows": 13,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "native_zero_control_passed": true
@@ -235,20 +235,23 @@
       "motion_i2v_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 3,
+        "windows_completed": 4,
         "total_windows": 7,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "native_zero_control_passed": true
       },
       "dd_videox_hed_0p2_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "正在核对后台进程，暂不声称推理在运行。"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "pending_input_audit",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_videox_canny_0p2_41win": {
         "status": "pending_input_audit",
