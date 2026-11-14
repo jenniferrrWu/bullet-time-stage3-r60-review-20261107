@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T22:48:46.117706+00:00",
+  "updated_at": "2026-11-14T22:49:21.785444+00:00",
   "phase": "reference_owned_native_latents_v13",
-  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。1/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
+  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。2/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -131,11 +131,32 @@
   "jobs": {
     "case13": {
       "dd_21win": {
-        "status": "generated",
-        "quality": "pending",
+        "status": "verified_eof",
+        "quality": "failed",
         "windows_completed": 13,
         "total_windows": 13,
-        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
+        "note": "未见旧批整屏彩噪；仍有窗边重影、动作回跳及末段动作偏差，画质未通过。",
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "actual_original_method": "dd_21win",
+          "native_context_frames": 21,
+          "all_actual_native_window_calls_and_inputs_verified": true,
+          "all_original_source_and_condition_PIL_hashes_verified": true,
+          "all_native_windows_original_G1_target_source_and_camera_first_latents_aligned": true,
+          "all_actual_sampled_latents_verified_and_assembled_without_RGB_recurrence": true,
+          "only_later_reference_latents_discarded_output_source_order_once": true,
+          "all_lossless_global_native_RGB_hashes_verified": true,
+          "method_binding_verified": true,
+          "native_denoise_body_unchanged_only_decode_tail_skipped": true,
+          "source_time_offset_training21_verified": true
+        },
+        "video": "./media/recovery-20261114/reference_v13__dd_21win__case13_full247.mp4"
       },
       "wanmove_0p35_21win": {
         "status": "queued",
@@ -160,7 +181,7 @@
       },
       "dd_41win": {
         "status": "generated",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 7,
         "total_windows": 7,
         "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
@@ -232,10 +253,10 @@
     "case12": {
       "dd_21win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 20,
         "total_windows": 20,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "未见旧批整屏彩噪；仍有窗边重影、人物形变和局部场景跳变，画质未通过。",
         "audit": {
           "passed": true,
           "output_frames": 389,
@@ -281,7 +302,7 @@
       },
       "dd_41win": {
         "status": "generated",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 10,
         "total_windows": 10,
         "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
@@ -393,7 +414,7 @@
     "all_native_windows_original_G1_reference": true,
     "global_native_VAE_decode": true,
     "both_case_common_color_review": {
-      "21": false,
+      "21": true,
       "41": false
     },
     "old_failed_outputs_counted_as_fixed": false,
