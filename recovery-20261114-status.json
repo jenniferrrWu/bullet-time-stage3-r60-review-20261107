@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T13:13:32.712821+00:00",
+  "updated_at": "2026-11-14T13:16:10.860841+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验、4项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
+  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、0项已生成待独立整段核验、5项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -103,11 +103,11 @@
       ],
       "real_frames": 389,
       "stage2_angle_label": "左转35°（原页标注）",
-      "endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+      "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
       "input_status": "case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。 当前状态：原生 Stage2 已生成，待画面检查",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
-      "endpoint_preview": "./media/case12-dd-replay-20261113/stage2-endpoint.jpg",
+      "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
         "PID": 1526309,
         "GPU": 0,
@@ -121,7 +121,11 @@
         "native_first_latent_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_endpoint_audit.json",
         "JPEG_preview_used_as_input": false,
         "completed_unix": 1794661153.3993506
-      }
+      },
+      "original_endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+      "endpoint_kind": "new_native",
+      "stage2_video": "./media/recovery-20261114/case12_new_native_stage2.mp4",
+      "current_native_endpoint_ready": true
     }
   },
   "jobs": {
@@ -147,6 +151,27 @@
         "note": "f945起出现大片彩色噪声，f985至EOF1091主体与场景完全失效。"
       },
       "wanmove_0p35_21win": {
+        "status": "verified_eof",
+        "quality": "pending",
+        "windows_completed": 13,
+        "total_windows": 13,
+        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
+        "native_zero_control_passed": true,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true
+        },
+        "video": "./media/recovery-20261114/wanmove_0p35_21win__case13_full247.mp4"
+      },
+      "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
         "windows_completed": 12,
@@ -154,18 +179,10 @@
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
       },
-      "wanmove_0p1_21win": {
-        "status": "running",
-        "quality": "pending",
-        "windows_completed": 11,
-        "total_windows": 13,
-        "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
-        "native_zero_control_passed": true
-      },
       "motion_i2v_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "total_windows": 13,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "native_zero_control_passed": true
@@ -276,74 +293,88 @@
     },
     "case12": {
       "dd_21win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "wanmove_0p35_21win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "wanmove_0p1_21win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "motion_i2v_0p35_21win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "wanmove_0p35_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "wanmove_0p1_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "motion_i2v_0p35_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_videox_hed_0p2_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_videox_canny_0p2_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_videox_tile_0p2_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_pose_0p5_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       },
       "dd_nlf_flashmotion_0p3_41win": {
-        "status": "waiting_original_endpoint",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "windows_completed": 0
+        "windows_completed": 0,
+        "note": "新原生Stage2及完整389帧条件已准备，待按本方案核对接口。"
       }
     }
   },
