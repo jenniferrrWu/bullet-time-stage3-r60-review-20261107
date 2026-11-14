@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T15:06:52.780776+00:00",
+  "updated_at": "2026-11-14T15:17:46.951341+00:00",
   "phase": "original_methods_fulltail_rerunning",
   "summary": "原14方案完整重跑：复杂case13有2项运行、0项待整段核验、12项核对完整247帧；简单case12有6项运行、0项待核验、2项核对完整389帧。完整性和画质分别验收。",
   "historical_round": {
@@ -424,7 +424,7 @@
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 12,
+        "windows_completed": 14,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 20,
         "native_zero_control_passed": true
@@ -432,7 +432,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 20,
         "native_zero_control_passed": true
@@ -440,7 +440,7 @@
       "motion_i2v_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 2,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "total_windows": 20,
         "native_zero_control_passed": true
@@ -469,7 +469,7 @@
       "wanmove_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 10,
         "native_zero_control_passed": true
@@ -477,7 +477,7 @@
       "wanmove_0p1_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "total_windows": 10,
         "native_zero_control_passed": true
@@ -485,7 +485,7 @@
       "motion_i2v_0p35_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
         "total_windows": 10,
         "native_zero_control_passed": true
