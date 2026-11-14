@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T20:39:00.463911+00:00",
+  "updated_at": "2026-11-14T20:49:05.318507+00:00",
   "phase": "per_window_independent_noise_full_EOF_qualification",
   "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有0项完整链运行、2项核对247帧；简单case12有0项完整链运行、2项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
   "historical_round": {
@@ -132,8 +132,8 @@
     "case13": {
       "dd_21win": {
         "status": "verified_eof",
-        "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "quality": "failed",
+        "note": "EOF 仍严重破坏人物和场景，独立窗口种子未通过完整画质验证。",
         "windows_completed": 13,
         "total_windows": 13,
         "audit": {
@@ -184,8 +184,8 @@
       },
       "dd_41win": {
         "status": "verified_eof",
-        "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "quality": "failed",
+        "note": "EOF 仍严重破坏人物和场景，独立窗口种子未通过完整画质验证。",
         "windows_completed": 7,
         "total_windows": 7,
         "audit": {
@@ -242,10 +242,10 @@
         "total_windows": 7
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "pending_input_audit",
+        "status": "waiting_core_fulltail_gate",
         "quality": "pending",
-        "note": "正在核对后台进程，暂不声称推理在运行。",
-        "windows_completed": 2,
+        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "windows_completed": 3,
         "total_windows": 7
       },
       "dd_videox_canny_0p2_41win": {
@@ -280,8 +280,8 @@
     "case12": {
       "dd_21win": {
         "status": "verified_eof",
-        "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "quality": "failed",
+        "note": "完整389帧末尾仍出现大面积彩色块化和场景失效。",
         "windows_completed": 20,
         "total_windows": 20,
         "audit": {
@@ -332,8 +332,8 @@
       },
       "dd_41win": {
         "status": "verified_eof",
-        "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
+        "quality": "failed",
+        "note": "人物末尾俯身接近画面与原视频动作相关，但固定视角下的背景和家具明显漂移；完整画质未通过。",
         "windows_completed": 10,
         "total_windows": 10,
         "audit": {
