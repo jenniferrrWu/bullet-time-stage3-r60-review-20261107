@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T20:28:55.864687+00:00",
+  "updated_at": "2026-11-14T20:39:00.463911+00:00",
   "phase": "per_window_independent_noise_full_EOF_qualification",
   "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有0项完整链运行、2项核对247帧；简单case12有0项完整链运行、2项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
   "historical_round": {
@@ -242,10 +242,10 @@
         "total_windows": 7
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "initial_diagnostic_complete",
+        "status": "pending_input_audit",
         "quality": "pending",
-        "note": "真实正强度首窗接口检查已完成；等待共同修复完整尾段通过，再继续本方案。",
-        "windows_completed": 1,
+        "note": "正在核对后台进程，暂不声称推理在运行。",
+        "windows_completed": 2,
         "total_windows": 7
       },
       "dd_videox_canny_0p2_41win": {
