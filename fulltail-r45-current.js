@@ -11,6 +11,7 @@
   let requiresFixedBackgroundAudit = false;
   let requiresIndependentNoiseAudit = false;
   let requiresJointAudit = false;
+  let requiresReferenceAudit = false;
   let lastPayload = null;
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
@@ -29,6 +30,19 @@
   }
   function complete(job, spec, method) {
     const audit = job.audit || {};
+    if (requiresReferenceAudit) return job.status === 'verified_eof' && audit.passed === true &&
+      audit.output_frames === spec.real_frames && Array.isArray(audit.source_range) && audit.source_range.length === 2 &&
+      audit.source_range.every((frame, index) => frame === spec.source_range[index]) && audit.stage2_endpoint_sha256 === spec.endpoint_sha256 &&
+      audit.actual_original_method === method.key && audit.native_context_frames === method.window_frames &&
+      audit.all_actual_native_window_calls_and_inputs_verified === true &&
+      audit.all_original_source_and_condition_PIL_hashes_verified === true &&
+      audit.all_native_windows_original_G1_target_source_and_camera_first_latents_aligned === true &&
+      audit.all_actual_sampled_latents_verified_and_assembled_without_RGB_recurrence === true &&
+      audit.only_later_reference_latents_discarded_output_source_order_once === true &&
+      audit.all_lossless_global_native_RGB_hashes_verified === true &&
+      audit.method_binding_verified === true &&
+      audit.native_denoise_body_unchanged_only_decode_tail_skipped === true &&
+      audit.source_time_offset_training21_verified === true;
     if (requiresJointAudit) return job.status === 'verified_eof' && audit.passed === true &&
       audit.output_frames === spec.real_frames && Array.isArray(audit.source_range) && audit.source_range.length === 2 &&
       audit.source_range.every((frame, index) => frame === spec.source_range[index]) && audit.stage2_endpoint_sha256 === spec.endpoint_sha256 &&
@@ -67,6 +81,7 @@
       requiresFixedBackgroundAudit = data.repair_campaign?.version === 'fixed_target_background_depth_v3';
       requiresIndependentNoiseAudit = data.repair_campaign?.version === 'per_window_noise_lossless_v6';
       requiresJointAudit = data.repair_campaign?.version === 'joint_method_denoising_v11';
+      requiresReferenceAudit = data.repair_campaign?.version === 'reference_owned_latents_v13';
       const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis, data.repair_campaign]);
       if (payload === lastPayload) return;
       if (repairNode && data.repair_diagnosis) {

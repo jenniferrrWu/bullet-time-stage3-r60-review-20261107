@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T21:40:50.373020+00:00",
-  "phase": "joint_global_latent_full_EOF_repair_qualification",
-  "summary": "整段联合去噪：保留原14方案的21/41帧计算窗口和强度。当前0项执行，0/28项完成独立帧数与输入核验，0/28项画质通过。共同修复仍在完整尾段验证中，未放行的方案继续等待。",
+  "updated_at": "2026-11-14T22:46:12.281528+00:00",
+  "phase": "reference_owned_native_latents_v13",
+  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。0/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -91,7 +91,7 @@
       "stage2_angle_label": "+45°",
       "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
       "original_lossless_endpoint_recovered": true,
-      "input_status": "原+45度Stage2无损末帧，原片f845–f1091完整247帧；本轮验证21/41帧窗口的整段联合去噪，完整性与画质分别验收。",
+      "input_status": "原+45度无损Stage2末帧；原片f845–f1091完整247帧。技术核验、彩噪检查、动作及画质分别记录。",
       "source_video": "./media/case13-f845-to-end-247f-source-preview.mp4",
       "endpoint_preview": "./media/case13-f845-previous-cycle-stage2-endpoint.png"
     },
@@ -105,7 +105,7 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "本轮统一使用新原生+35度Stage2末帧；历史无损末帧仍缺失。完整原片f171–f559共389帧，Pose/NLF后段采用同一当前帧预测的明确2D回退。",
+      "input_status": "统一使用本轮新原生+35度Stage2末帧；历史原始末帧仍缺失。原片f171–f559完整389帧；Pose/NLF后段为同一当前帧预测的2D回退。",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
       "endpoint_preview": "./media/recovery-20261114/case12_new_native_stage2_endpoint.png",
       "new_native_stage2_preparation": {
@@ -133,256 +133,200 @@
       "dd_21win": {
         "status": "generated",
         "quality": "pending",
-        "note": "整段NN已完成，等待独立源帧、方法绑定及无损EOF核验。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 50,
-        "model_windows_per_step": 13,
-        "total_windows": 13
+        "windows_completed": 13,
+        "total_windows": 13,
+        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
       },
       "wanmove_0p35_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 13,
-        "total_windows": 13
+        "windows_completed": 0,
+        "total_windows": 13,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 13,
-        "total_windows": 13
+        "windows_completed": 0,
+        "total_windows": 13,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "motion_i2v_0p35_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 13,
-        "total_windows": 13
+        "windows_completed": 0,
+        "total_windows": 13,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_41win": {
         "status": "generated",
         "quality": "pending",
-        "note": "整段NN已完成，等待独立源帧、方法绑定及无损EOF核验。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 50,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 7,
+        "total_windows": 7,
+        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
       },
       "wanmove_0p35_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "motion_i2v_0p35_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_hed_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_canny_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_tile_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_pose_0p5_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_nlf_flashmotion_0p3_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 7,
-        "total_windows": 7
+        "windows_completed": 0,
+        "total_windows": 7,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       }
     },
     "case12": {
       "dd_21win": {
-        "status": "failed",
+        "status": "generated",
         "quality": "pending",
-        "note": "实际执行失败，保留全部NN尝试与输入审计；尚未重试。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 48,
-        "model_windows_per_step": 20,
-        "total_windows": 20
+        "windows_completed": 20,
+        "total_windows": 20,
+        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
       },
       "wanmove_0p35_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 20,
-        "total_windows": 20
+        "windows_completed": 0,
+        "total_windows": 20,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 20,
-        "total_windows": 20
+        "windows_completed": 0,
+        "total_windows": 20,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "motion_i2v_0p35_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 20,
-        "total_windows": 20
+        "windows_completed": 0,
+        "total_windows": 20,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_41win": {
-        "status": "failed",
+        "status": "generated",
         "quality": "pending",
-        "note": "实际执行失败，保留全部NN尝试与输入审计；尚未重试。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 43,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 10,
+        "total_windows": 10,
+        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
       },
       "wanmove_0p35_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "motion_i2v_0p35_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_hed_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_hed_0p5_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_canny_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_videox_tile_0p2_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "queued",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_pose_0p5_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "dd_nlf_flashmotion_0p3_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "running",
         "quality": "pending",
-        "note": "等待相同21/41帧窗口在两个case完整EOF画质验证通过，再执行本方案。",
-        "joint_global_trajectory": true,
-        "global_steps_completed": 0,
-        "model_windows_per_step": 10,
-        "total_windows": 10
+        "windows_completed": 0,
+        "total_windows": 10,
+        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       }
     }
   },
@@ -418,30 +362,32 @@
     "complete_solution_not_yet_proven": true
   },
   "repair_campaign": {
-    "version": "joint_method_denoising_v11",
+    "version": "reference_owned_latents_v13",
     "native_window_frames": [
       21,
       41
     ],
-    "shared_global_noise_and_latent_trajectory": true,
     "original14_method_strengths_retained": true,
-    "no_autoregressive_RGB_handoff": true,
-    "both_case_visual_gates_by_context": {
+    "generated_RGB_feedback_removed": true,
+    "all_native_windows_original_G1_reference": true,
+    "global_native_VAE_decode": true,
+    "both_case_common_color_review": {
       "21": false,
       "41": false
     },
-    "common_repair_all4_full_EOF_visual_passed": false,
-    "old_failed_outputs_counted_as_fixed": false
+    "old_failed_outputs_counted_as_fixed": false,
+    "color_review_does_not_imply_motion_or_quality_pass": true
   },
   "repair_diagnosis": {
     "findings": [
-      "彩噪在模型原始输出中已存在；同一坏窗口重跑可逐字节复现。纯VAE反复20次未复现大面积彩噪。",
-      "连续回灌生成末帧时，I2V潜变量高频误差持续增加；独立种子、无损RGB、短窗位置和背景深度修正均不足以单独解决完整崩坏。",
-      "背景潜变量约束也在中后段出现人物破碎和场景切块，已停止该分支；旧失败结果全部归档，不计本轮完成。",
-      "当前整段共用一条噪声与潜变量轨迹：每步按原21/41帧窗计算，源视频与相机条件一起切片，仅真正的全片首潜变量固定为Stage2。原生81与21帧参考计算已逐字节核对。",
-      "每个窗口组须先通过两个case的完整EOF及人物、动作、场景检查，才启动相应原方案。所有结果仍分别记录技术完成与画质结论。"
+      "旧批彩噪在模型原始输出中存在，同一坏窗重跑可逐字节复现；网页播放不是该故障来源。",
+      "已确认短窗源视频时间位置偏离作者训练时的21偏移；生成末帧连续回灌时I2V潜变量高频误差增加。无损RGB、独立种子及背景修正均不能单独消除完整尾段崩坏。",
+      "当前修正让每个原生窗都对齐同一真实Stage2参考及其源视频/相机首潜变量；后续窗的参考只参与条件，不插入输出时间线。实际采样潜变量合并后用原生VAE整段解码，消除生成RGB反复回灌。",
+      "首个21/41帧窗口已与原生参考实际最终潜变量逐字节核对；每窗仍为原21/41帧、50步和原方案强度。",
+      "最新完整样例已恢复可辨认画面，但部分人物动作、重影和窗口衔接仍存在偏差；画质未通过的结果明确标记，不以完整EOF代替通过验收。",
+      "独立核验器曾使用不同OpenCV/FFmpeg版本而导致RGB哈希差异，已改回生成时的同一解码环境；保留原严格逐帧哈希检查。"
     ],
     "evidence": [],
-    "prior_bad_campaign": "./recovery-before-joint-latent-repair-20261115.json"
+    "prior_bad_campaign": "./recovery-before-reference-owned-repair-20261115.json"
   }
 }
