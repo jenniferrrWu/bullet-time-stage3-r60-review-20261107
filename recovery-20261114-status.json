@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T21:20:40.184245+00:00",
+  "updated_at": "2026-11-14T21:30:45.469221+00:00",
   "phase": "joint_global_latent_full_EOF_repair_qualification",
   "summary": "整段联合去噪：保留原14方案的21/41帧计算窗口和强度。当前4项执行，0/28项完成独立帧数与输入核验，0/28项画质通过。共同修复仍在完整尾段验证中，未放行的方案继续等待。",
   "historical_round": {
@@ -135,7 +135,7 @@
         "quality": "pending",
         "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 26,
+        "global_steps_completed": 50,
         "model_windows_per_step": 13,
         "total_windows": 13
       },
@@ -171,7 +171,7 @@
         "quality": "pending",
         "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 21,
+        "global_steps_completed": 43,
         "model_windows_per_step": 7,
         "total_windows": 7
       },
@@ -263,7 +263,7 @@
         "quality": "pending",
         "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 17,
+        "global_steps_completed": 34,
         "model_windows_per_step": 20,
         "total_windows": 20
       },
@@ -299,7 +299,7 @@
         "quality": "pending",
         "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 15,
+        "global_steps_completed": 30,
         "model_windows_per_step": 10,
         "total_windows": 10
       },
