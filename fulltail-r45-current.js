@@ -51,13 +51,18 @@
         const card = element('article');
         if (mediaPath(spec.endpoint_preview)) {
           const image = element('img'); image.src = spec.endpoint_preview;
-          image.alt = spec.original_lossless_endpoint_recovered ? spec.label + '原始 Stage2 末帧' : spec.label + '历史缩略图，仅供辨认';
+          image.alt = spec.endpoint_kind === 'new_native' ? spec.label + '本轮新生成的原生 Stage2 末帧' : spec.original_lossless_endpoint_recovered ? spec.label + '原始 Stage2 末帧' : spec.label + '历史缩略图，仅供辨认';
           card.append(image);
         }
         card.append(element('h3', spec.label));
         card.append(element('p', `源帧 f${spec.source_range[0]}–f${spec.source_range[1]}，共 ${spec.real_frames} 帧；${spec.stage2_angle_label}。`));
         card.append(element('p', spec.input_status, 'state'));
-        card.append(element('code', '原始末帧 SHA256：' + spec.endpoint_sha256));
+        card.append(element('code', (spec.endpoint_kind === 'new_native' ? '本轮新原生末帧 SHA256：' : '原始末帧 SHA256：') + spec.endpoint_sha256));
+        if (spec.original_endpoint_sha256) card.append(element('p', '历史末帧仍缺失，本轮输入与历史文件不同；14 个方案统一使用上述新原生末帧。'));
+        if (mediaPath(spec.stage2_video)) {
+          const detail = element('details'); detail.append(element('summary', '查看本轮原生 Stage2'));
+          detail.append(video(spec.stage2_video)); card.append(detail);
+        }
         if (mediaPath(spec.source_video)) {
           const detail = element('details'); detail.append(element('summary', '查看完整源动作范围'));
           detail.append(video(spec.source_video)); card.append(detail);
