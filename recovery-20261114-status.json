@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T23:12:52.950132+00:00",
+  "updated_at": "2026-11-14T23:16:00.291329+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。6/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
@@ -238,7 +238,7 @@
       "dd_videox_hed_0p5_41win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 4,
+        "windows_completed": 5,
         "total_windows": 7,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
