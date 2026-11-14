@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T20:00:00.091721+00:00",
+  "updated_at": "2026-11-14T20:10:06.645892+00:00",
   "phase": "per_window_independent_noise_full_EOF_qualification",
   "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有0项完整链运行、2项核对247帧；简单case12有2项完整链运行、0项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
   "historical_round": {
@@ -175,9 +175,12 @@
         "native_zero_control_passed": true
       },
       "motion_i2v_0p35_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 13,
+        "native_zero_control_passed": true
       },
       "dd_41win": {
         "status": "verified_eof",
@@ -208,25 +211,28 @@
         "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_41win__case13_full247.mp4"
       },
       "wanmove_0p35_41win": {
-        "status": "initial_diagnostic_running",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
         "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
         "native_zero_control_passed": true
       },
       "wanmove_0p1_41win": {
-        "status": "initial_diagnostic_running",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
         "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 7,
         "native_zero_control_passed": true
       },
       "motion_i2v_0p35_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 7,
+        "native_zero_control_passed": true
       },
       "dd_videox_hed_0p2_41win": {
         "status": "waiting_core_fulltail_gate",
@@ -249,9 +255,11 @@
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
       },
       "dd_pose_0p5_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_running",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "首窗真实接口检查中，不计完整结果。",
+        "windows_completed": 0,
+        "total_windows": 7
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "waiting_core_fulltail_gate",
@@ -264,7 +272,7 @@
         "status": "running",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 15,
+        "windows_completed": 18,
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
@@ -284,34 +292,43 @@
         "native_zero_control_passed": true
       },
       "motion_i2v_0p35_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 1,
+        "total_windows": 20,
+        "native_zero_control_passed": true
       },
       "dd_41win": {
         "status": "running",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 6,
+        "windows_completed": 8,
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
-        "status": "initial_diagnostic_running",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
         "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
-        "windows_completed": 0,
+        "windows_completed": 1,
         "total_windows": 10,
         "native_zero_control_passed": true
       },
       "wanmove_0p1_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_complete",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 10,
+        "native_zero_control_passed": true
       },
       "motion_i2v_0p35_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_running",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧和当前画幅恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "windows_completed": 0,
+        "total_windows": 10,
+        "native_zero_control_passed": true
       },
       "dd_videox_hed_0p2_41win": {
         "status": "waiting_core_fulltail_gate",
@@ -334,9 +351,11 @@
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
       },
       "dd_pose_0p5_41win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_running",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "首窗真实接口检查中，不计完整结果。",
+        "windows_completed": 0,
+        "total_windows": 10
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "waiting_core_fulltail_gate",
