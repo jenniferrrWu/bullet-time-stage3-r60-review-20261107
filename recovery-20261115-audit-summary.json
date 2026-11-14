@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-14T23:42:42.560740+00:00",
+  "updated_at": "2026-11-14T23:48:49.774929+00:00",
   "campaign": "reference_owned_latents_v13",
   "original_methods": 14,
   "cases": 2,
   "actual_native_window_jobs": 302,
   "required_results": 28,
-  "independently_verified_source_EOF_results": 12,
-  "common_noise_absent_reviewed_results": 7,
+  "independently_verified_source_EOF_results": 13,
+  "common_noise_absent_reviewed_results": 11,
   "overall_visual_quality_passed_results": 0,
-  "overall_visual_quality_failed_results": 8,
+  "overall_visual_quality_failed_results": 12,
   "all28_EOF_verified": false,
   "all28_common_noise_absent_reviewed": false,
   "all28_overall_visual_quality_passed": false,
@@ -135,11 +135,11 @@
       "sampled_native_windows": 10,
       "required_native_windows": 10,
       "original_source_EOF_independently_verified": true,
-      "common_fullscreen_noise_review": "pending",
-      "overall_visual_quality": "pending",
+      "common_fullscreen_noise_review": "absent",
+      "overall_visual_quality": "failed",
       "selected_Stage2_SHA256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "public_video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case12_full389.mp4",
-      "review_note": ""
+      "review_note": "完整尾段未见整屏彩噪；中后段仍有机位/场景跳变及人体形变，画质未通过。"
     },
     {
       "method": "dd_pose_0p5_41win",
@@ -152,11 +152,11 @@
       "sampled_native_windows": 7,
       "required_native_windows": 7,
       "original_source_EOF_independently_verified": true,
-      "common_fullscreen_noise_review": "pending",
-      "overall_visual_quality": "pending",
+      "common_fullscreen_noise_review": "absent",
+      "overall_visual_quality": "failed",
       "selected_Stage2_SHA256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
       "public_video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case13_full247.mp4",
-      "review_note": ""
+      "review_note": "完整尾段未见整屏彩噪；仍有窗边重影和机位跳变，EOF举臂与源片垂臂不符，画质未通过。"
     },
     {
       "method": "dd_videox_canny_0p2_41win",
@@ -169,11 +169,11 @@
       "sampled_native_windows": 10,
       "required_native_windows": 10,
       "original_source_EOF_independently_verified": true,
-      "common_fullscreen_noise_review": "pending",
-      "overall_visual_quality": "pending",
+      "common_fullscreen_noise_review": "absent",
+      "overall_visual_quality": "failed",
       "selected_Stage2_SHA256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "public_video": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case12_full389.mp4",
-      "review_note": ""
+      "review_note": "完整尾段未见整屏彩噪；中后段仍有机位/场景跳变及人体形变，画质未通过。"
     },
     {
       "method": "dd_videox_canny_0p2_41win",
@@ -186,11 +186,11 @@
       "sampled_native_windows": 7,
       "required_native_windows": 7,
       "original_source_EOF_independently_verified": true,
-      "common_fullscreen_noise_review": "pending",
-      "overall_visual_quality": "pending",
+      "common_fullscreen_noise_review": "absent",
+      "overall_visual_quality": "failed",
       "selected_Stage2_SHA256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
       "public_video": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case13_full247.mp4",
-      "review_note": ""
+      "review_note": "完整尾段未见整屏彩噪；仍有窗边重影和机位跳变，EOF举臂与源片垂臂不符，画质未通过。"
     },
     {
       "method": "dd_videox_hed_0p2_41win",
@@ -202,11 +202,11 @@
       "original_strength": 0.2,
       "sampled_native_windows": 10,
       "required_native_windows": 10,
-      "original_source_EOF_independently_verified": false,
+      "original_source_EOF_independently_verified": true,
       "common_fullscreen_noise_review": "pending",
       "overall_visual_quality": "pending",
       "selected_Stage2_SHA256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
-      "public_video": "",
+      "public_video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case12_full389.mp4",
       "review_note": ""
     },
     {
@@ -217,7 +217,7 @@
       "required_source_frames": 247,
       "native_window_frames": 41,
       "original_strength": 0.2,
-      "sampled_native_windows": 2,
+      "sampled_native_windows": 7,
       "required_native_windows": 7,
       "original_source_EOF_independently_verified": false,
       "common_fullscreen_noise_review": "pending",
@@ -268,7 +268,7 @@
       "required_source_frames": 389,
       "native_window_frames": 41,
       "original_strength": 0.2,
-      "sampled_native_windows": 0,
+      "sampled_native_windows": 1,
       "required_native_windows": 10,
       "original_source_EOF_independently_verified": false,
       "common_fullscreen_noise_review": "pending",
