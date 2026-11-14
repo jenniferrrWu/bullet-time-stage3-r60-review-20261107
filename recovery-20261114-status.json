@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T12:53:48.110638+00:00",
+  "updated_at": "2026-11-14T13:00:53.592260+00:00",
   "phase": "original_methods_fulltail_rerunning",
-  "summary": "已切回原14方案。case13 当前6项完整尾段任务运行、0项已生成待独立整段核验、2项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12仍在恢复原始无损末帧。",
+  "summary": "已切回原14方案。case13 当前5项完整尾段任务运行、1项已生成待独立整段核验、2项已核对完整247帧；画质另行验收。另有81帧窗及零强度对照。case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -105,9 +105,23 @@
       "stage2_angle_label": "左转35°（原页标注）",
       "endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
       "original_lossless_endpoint_recovered": false,
-      "input_status": "已找到原始源视频及33帧历史回归记录；无损 Stage2 原末帧尚待找回。网页JPEG缩略图不冒充原生输入。完整范围应为389帧。",
+      "input_status": "case12原无损末帧仍缺失，正在重新生成真正的DD Stage2；明确作为新输入，不替代或冒充原始文件。 当前状态：原生 Stage2 已生成，待画面检查",
       "source_video": "./media/recovery-20261114/case12-f171-to-f559-source-preview.mp4",
-      "endpoint_preview": "./media/case12-dd-replay-20261113/stage2-endpoint.jpg"
+      "endpoint_preview": "./media/case12-dd-replay-20261113/stage2-endpoint.jpg",
+      "new_native_stage2_preparation": {
+        "PID": 1526309,
+        "GPU": 0,
+        "status": "new_native_stage2_complete_pending_visual_review",
+        "created_unix": 1794660336.2537417,
+        "native_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/result/depthdirector.mp4",
+        "endpoint": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_last.png",
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "original_missing_endpoint_sha256": "1156f216fa6ae8dded7be193f6c5b8bbc365192d8ba444c5029f82fcc9eae9f5",
+        "identical_to_missing_original": false,
+        "native_first_latent_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/stage2/case12_f171_left35_new_native/native_endpoint_audit.json",
+        "JPEG_preview_used_as_input": false,
+        "completed_unix": 1794661153.3993506
+      }
     }
   },
   "jobs": {
@@ -129,12 +143,13 @@
           "first_latent_pinning_verified": true,
           "original_source_frame_order_verified": true
         },
-        "video": "./media/recovery-20261114/dd_21win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/dd_21win__case13_full247.mp4",
+        "note": "f945起出现大片彩色噪声，f985至EOF1091主体与场景完全失效。"
       },
       "wanmove_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 9,
+        "windows_completed": 10,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -142,7 +157,7 @@
       "wanmove_0p1_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 8,
+        "windows_completed": 9,
         "total_windows": 13,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -150,8 +165,10 @@
       "motion_i2v_0p35_21win": {
         "status": "running",
         "quality": "pending",
-        "windows_completed": 2,
-        "total_windows": 13
+        "windows_completed": 3,
+        "total_windows": 13,
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "native_zero_control_passed": true
       },
       "dd_41win": {
         "status": "verified_eof",
@@ -170,12 +187,13 @@
           "first_latent_pinning_verified": true,
           "original_source_frame_order_verified": true
         },
-        "video": "./media/recovery-20261114/dd_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/dd_41win__case13_full247.mp4",
+        "note": "f945之后场景明显扭曲，f1025至EOF1091出现大面积雾化、人物缺失和重建错误。"
       },
       "wanmove_0p35_41win": {
-        "status": "running",
+        "status": "generated",
         "quality": "pending",
-        "windows_completed": 6,
+        "windows_completed": 7,
         "total_windows": 7,
         "note": "已按21/41帧和横屏参数接回作者函数；排除越界首点及冲突写入。",
         "native_zero_control_passed": true
@@ -192,7 +210,9 @@
         "status": "running",
         "quality": "pending",
         "windows_completed": 2,
-        "total_windows": 7
+        "total_windows": 7,
+        "note": "已修正原适配器横纵位移接反，并按实际21/41帧、横屏尺寸恢复作者Gaussian splat；原生零强度逐帧一致。",
+        "native_zero_control_passed": true
       },
       "dd_videox_hed_0p2_41win": {
         "status": "pending_input_audit",
