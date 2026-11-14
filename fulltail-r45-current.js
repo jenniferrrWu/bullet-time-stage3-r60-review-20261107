@@ -9,7 +9,7 @@
   const labels = {
     pending_input_audit: '输入及执行代码恢复中',
     waiting_original_endpoint: '等待原始无损 Stage2 末帧',
-    queued: '排队中', running: '整段生成中', failed: '执行失败，待修复',
+    held_for_diagnosis: '暂缓扩展，先查共同故障', queued: '排队中', running: '整段生成中', failed: '执行失败，待修复',
     generated: '原生输出已生成，完整核验待完成'
   };
   function element(tag, text, className) {
@@ -80,8 +80,8 @@
           let message = labels[job.status] || '等待执行';
           if (finished) {
             verified++;
-            if (job.quality === 'passed') {passed++; message = '完整 EOF 核验通过；画质通过';}
-            else message = '完整 EOF 核验通过；' + (job.quality === 'failed' ? '画质未通过' : '画质待审');
+            if (job.quality === 'passed') {passed++; message = '画质通过；帧数与输入已核对';}
+            else message = (job.quality === 'failed' ? '画质未通过' : '画质待审，尚未通过验收') + '；帧数与输入已核对';
           } else if (job.status === 'verified_eof') message = '完整审计证据不齐，尚不能计为完成';
           if (job.status === 'running') message += ` ${job.windows_completed || 0}/${job.total_windows || '?'} 窗`;
           cell.append(element('p', message, finished && job.quality === 'passed' ? 'ready' : job.quality === 'failed' ? 'failed' : 'state'));
@@ -95,7 +95,7 @@
         rows.append(row);
       }
       summary.textContent = data.summary;
-      count.textContent = `本轮完整 EOF 核验：${verified} / ${data.methods.length * ids.length}；画质通过：${passed} / ${data.methods.length * ids.length}。`;
+      count.textContent = `本轮帧数与输入核对：${verified} / ${data.methods.length * ids.length}；画质通过：${passed} / ${data.methods.length * ids.length}。`;
       casesNode.replaceChildren(caseCards); methodsNode.replaceChildren(rows);
       lastPayload = payload;
     } catch (error) {

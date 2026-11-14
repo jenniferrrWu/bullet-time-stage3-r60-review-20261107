@@ -20,10 +20,10 @@
 <h1>DD Stage3 · 两个 case 原方案完整重跑验收</h1>
 <section class="recovery" id="current-rerun" aria-labelledby="current-title">
 <h2 id="current-title">2026-11-14 · 原方案完整重跑</h2>
-<p id="current-summary">正在恢复原始输入与执行代码。本轮尚无完整重跑结果。</p>
-<p><strong id="current-count">本轮完整 EOF 核验：0 / 28；画质通过：0 / 28。</strong> <small id="current-updated"></small></p>
+<p id="current-summary">正在恢复原始输入与执行代码。当前正在排查 DD 基础链路共同故障，现有输出不代表画质通过。</p>
+<p><strong id="current-count">本轮帧数与输入核对：0 / 28；画质通过：0 / 28。</strong> <small id="current-updated"></small></p>
 <div class="case-grid" id="current-cases"></div>
-<p>验收分别检查：真实 Stage2 末帧、全部源帧直到原片结尾、窗口续接、原生首潜变量约束及实际调用参数。完整核验与画质结论分开显示。下面仅统计本轮新结果，历史视频保留在后半页。</p>
+<p>验收分别检查：真实 Stage2 末帧、全部源帧直到原片结尾、窗口续接、原生首潜变量约束及实际调用参数。帧数与输入核对完成，仅表示文件与输入链对应；彩色噪声、人物丢失或动作不符均不能通过验收。下面仅统计本轮新结果，历史视频保留在后半页。</p>
 <div class="wrap"><table><thead><tr><th class="method">原14方案</th><th>复杂 case13：247 帧</th><th>简单 case12：389 帧</th></tr></thead><tbody id="current-methods"></tbody></table></div>
 <p><a href="./recovery-20261114-status.json">本轮状态与输入审计范围</a> · <a href="#history-20261113">查看11月13日历史结果</a></p>
 </section>
@@ -51,5 +51,5 @@
 </tbody></table></div>
 <p>完整实验记录和时间估算见项目进度文档；“待验收”表示生成与输入审计完成，最终画质由整段目视决定。</p>
 <script defer src="./fulltail-r45-corrected.js?v=20261114-history"></script>
-<script defer src="./fulltail-r45-current.js?v=20261114-method-audit-recovery"></script>
+<script defer src="./fulltail-r45-current.js?v=20261114-common-noise-diagnosis"></script>
 </main></body></html>
