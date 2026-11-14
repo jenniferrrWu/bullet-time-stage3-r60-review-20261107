@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T19:50:50.872651+00:00",
+  "updated_at": "2026-11-14T19:55:24.462747+00:00",
   "phase": "per_window_independent_noise_full_EOF_qualification",
-  "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有2项完整链运行、0项核对247帧；简单case12有2项完整链运行、0项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
+  "summary": "共性彩噪修复复测：每窗使用可复现的不同噪声（主种子42＋窗号），并以模型原始RGB无损续接。复杂case13有1项完整链运行、1项核对247帧；简单case12有2项完整链运行、0项核对389帧。首窗接口检查不计完整结果，人物/动作/机位仍单独验收。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -131,11 +131,32 @@
   "jobs": {
     "case13": {
       "dd_21win": {
-        "status": "running",
+        "status": "verified_eof",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 12,
-        "total_windows": 13
+        "windows_completed": 13,
+        "total_windows": 13,
+        "audit": {
+          "passed": true,
+          "output_frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "stage2_endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+          "window_chain_verified": true,
+          "first_latent_pinning_verified": true,
+          "original_source_frame_order_verified": true,
+          "core_time_position_repair_verified": true,
+          "fixed_observed_target_background_depth_verified": true,
+          "per_window_noise_schedule_verified": true,
+          "distinct_window_noise_tensors_verified": true,
+          "native_RGB_lossless_handoff_verified": true,
+          "kept_native_output_endpoint_chain_verified": true,
+          "discarded_context_predictions_not_counted_as_output": true,
+          "method_binding_verified": true
+        },
+        "video": "./media/recovery-20261114/repair_per_window_noise_lossless_v6__dd_21win__case13_full247.mp4"
       },
       "wanmove_0p35_21win": {
         "status": "initial_diagnostic_complete",
@@ -146,9 +167,12 @@
         "native_zero_control_passed": true
       },
       "wanmove_0p1_21win": {
-        "status": "waiting_core_fulltail_gate",
+        "status": "initial_diagnostic_running",
         "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 0,
+        "total_windows": 13,
+        "native_zero_control_passed": true
       },
       "motion_i2v_0p35_21win": {
         "status": "waiting_core_fulltail_gate",
@@ -159,7 +183,7 @@
         "status": "running",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "total_windows": 7
       },
       "wanmove_0p35_41win": {
@@ -213,21 +237,24 @@
         "status": "running",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 12,
+        "windows_completed": 14,
         "total_windows": 20
       },
       "wanmove_0p35_21win": {
+        "status": "initial_diagnostic_complete",
+        "quality": "pending",
+        "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
+        "windows_completed": 1,
+        "total_windows": 20,
+        "native_zero_control_passed": true
+      },
+      "wanmove_0p1_21win": {
         "status": "initial_diagnostic_running",
         "quality": "pending",
         "note": "已按当前21/41帧和横竖画幅接回作者函数；排除越界首点及冲突写入。",
         "windows_completed": 0,
         "total_windows": 20,
         "native_zero_control_passed": true
-      },
-      "wanmove_0p1_21win": {
-        "status": "waiting_core_fulltail_gate",
-        "quality": "pending",
-        "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。"
       },
       "motion_i2v_0p35_21win": {
         "status": "waiting_core_fulltail_gate",
@@ -238,7 +265,7 @@
         "status": "running",
         "quality": "pending",
         "note": "先验证共同彩噪修复，完整尾段确认后再扩展本方案。",
-        "windows_completed": 5,
+        "windows_completed": 6,
         "total_windows": 10
       },
       "wanmove_0p35_41win": {
