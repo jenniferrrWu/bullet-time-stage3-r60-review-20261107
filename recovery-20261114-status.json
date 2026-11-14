@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T21:30:45.469221+00:00",
+  "updated_at": "2026-11-14T21:40:50.373020+00:00",
   "phase": "joint_global_latent_full_EOF_repair_qualification",
-  "summary": "整段联合去噪：保留原14方案的21/41帧计算窗口和强度。当前4项执行，0/28项完成独立帧数与输入核验，0/28项画质通过。共同修复仍在完整尾段验证中，未放行的方案继续等待。",
+  "summary": "整段联合去噪：保留原14方案的21/41帧计算窗口和强度。当前0项执行，0/28项完成独立帧数与输入核验，0/28项画质通过。共同修复仍在完整尾段验证中，未放行的方案继续等待。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -131,9 +131,9 @@
   "jobs": {
     "case13": {
       "dd_21win": {
-        "status": "running",
+        "status": "generated",
         "quality": "pending",
-        "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
+        "note": "整段NN已完成，等待独立源帧、方法绑定及无损EOF核验。",
         "joint_global_trajectory": true,
         "global_steps_completed": 50,
         "model_windows_per_step": 13,
@@ -167,11 +167,11 @@
         "total_windows": 13
       },
       "dd_41win": {
-        "status": "running",
+        "status": "generated",
         "quality": "pending",
-        "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
+        "note": "整段NN已完成，等待独立源帧、方法绑定及无损EOF核验。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 43,
+        "global_steps_completed": 50,
         "model_windows_per_step": 7,
         "total_windows": 7
       },
@@ -259,11 +259,11 @@
     },
     "case12": {
       "dd_21win": {
-        "status": "running",
+        "status": "failed",
         "quality": "pending",
-        "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
+        "note": "实际执行失败，保留全部NN尝试与输入审计；尚未重试。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 34,
+        "global_steps_completed": 48,
         "model_windows_per_step": 20,
         "total_windows": 20
       },
@@ -295,11 +295,11 @@
         "total_windows": 20
       },
       "dd_41win": {
-        "status": "running",
+        "status": "failed",
         "quality": "pending",
-        "note": "整段共用潜变量，在每个噪声层级按原21/41帧窗口计算；保留逐帧动作条件。",
+        "note": "实际执行失败，保留全部NN尝试与输入审计；尚未重试。",
         "joint_global_trajectory": true,
-        "global_steps_completed": 30,
+        "global_steps_completed": 43,
         "model_windows_per_step": 10,
         "total_windows": 10
       },
