@@ -166,6 +166,18 @@
       "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。"
     },
     {
+      "label": "DD21 去噪强度诊断 0.015",
+      "video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE.mp4",
+      "audit": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。"
+    },
+    {
       "label": "DD21 去噪强度诊断 0.03",
       "video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE.mp4",
       "audit": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE_actual_NN_audit.json",
@@ -210,6 +222,22 @@
       "method": "dd_41win",
       "native_decoder_corrected": true,
       "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win_allframes.jpg"
+    },
+    {
+      "label": "复杂屋顶舞蹈 · dd_nlf_flashmotion_0p3_41win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "case13",
+      "method": "dd_nlf_flashmotion_0p3_41win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win_allframes.jpg"
     },
     {
       "label": "复杂屋顶舞蹈 · dd_pose_0p5_41win · 原窗口VAE解码修正版",
@@ -322,6 +350,54 @@
       "method": "motion_i2v_0p35_41win",
       "native_decoder_corrected": true,
       "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_41win_allframes.jpg"
+    },
+    {
+      "label": "复杂屋顶舞蹈 · wanmove_0p1_21win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "case13",
+      "method": "wanmove_0p1_21win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win_allframes.jpg"
+    },
+    {
+      "label": "复杂屋顶舞蹈 · wanmove_0p1_41win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "case13",
+      "method": "wanmove_0p1_41win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win_allframes.jpg"
+    },
+    {
+      "label": "复杂屋顶舞蹈 · wanmove_0p35_21win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "case13",
+      "method": "wanmove_0p35_21win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win_allframes.jpg"
     },
     {
       "label": "复杂屋顶舞蹈 · wanmove_0p35_41win · 原窗口VAE解码修正版",
@@ -564,7 +640,31 @@
       "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_41win_allframes.jpg"
     }
   ],
-  "native_decoder_corrected_count": 24,
+  "native_decoder_corrected_count": 28,
+  "source_action_references": [
+    {
+      "case": "case13",
+      "label": "复杂屋顶舞蹈 · 原片动作参考",
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "video": "./media/correct-simpleD-v152/case13_original_source_actions.mp4",
+      "role": "原始输入动作参考，不是DD输出，不计生成方案数量；仅显示压缩，无插帧。"
+    },
+    {
+      "case": "simpleD",
+      "label": "正确D半身 · 原片动作参考",
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "video": "./media/correct-simpleD-v152/simpleD_original_source_actions.mp4",
+      "role": "原始输入动作参考，不是DD输出，不计生成方案数量；仅显示压缩，无插帧。"
+    }
+  ],
   "original14_results": [
     {
       "label": "DD 21帧窗口 · 正确D完整尾段",
@@ -766,15 +866,15 @@
   "additional_complex_results": [
     {
       "label": "DD + Enhance-A-Video α0.25",
-      "video": "./media/correct-simpleD-v152/EAV_a0p25_case13_full247.mp4",
-      "audit": "./media/correct-simpleD-v152/EAV_a0p25_case13_full247_actual_NN_audit.json",
+      "video": "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247_actual_NN_audit.json",
       "frames": 247,
       "source_range": [
         845,
         1091
       ],
       "quality_passed": false,
-      "note": "此卡保留此前跨窗口latent统一解码输出，原窗口VAE校正版完成后会更新到此处。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。合法的零增强窗口单独记录，未强迫修改输出。"
+      "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。合法的零增强窗口单独记录，未强迫修改输出。"
     },
     {
       "label": "DD + Enhance-A-Video α0.5",
@@ -802,27 +902,27 @@
     },
     {
       "label": "DD + FreeNoise 噪声重排 · 41帧窗口",
-      "video": "./media/correct-simpleD-v152/FreeNoise41_case13_full247.mp4",
-      "audit": "./media/correct-simpleD-v152/FreeNoise41_case13_full247_actual_NN_audit.json",
+      "video": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247_actual_NN_audit.json",
       "frames": 247,
       "source_range": [
         845,
         1091
       ],
       "quality_passed": false,
-      "note": "此卡保留此前跨窗口latent统一解码输出，原窗口VAE校正版完成后会更新到此处。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。"
+      "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。"
     },
     {
       "label": "DD + FreeLong 频谱时序注意力 α0.25",
-      "video": "./media/correct-simpleD-v152/FreeLong_a0p25_case13_full247.mp4",
-      "audit": "./media/correct-simpleD-v152/FreeLong_a0p25_case13_full247_actual_NN_audit.json",
+      "video": "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247_actual_NN_audit.json",
       "frames": 247,
       "source_range": [
         845,
         1091
       ],
       "quality_passed": false,
-      "note": "此卡保留此前跨窗口latent统一解码输出，原窗口VAE校正版完成后会更新到此处。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。FreeLong全局/局部频谱融合移植到DD双流联合时空注意力，非上游原管线。"
+      "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。FreeLong全局/局部频谱融合移植到DD双流联合时空注意力，非上游原管线。"
     },
     {
       "label": "DD + FreeLong 频谱时序注意力 α0.5",
@@ -989,5 +1089,5 @@
   ],
   "original14_complete_count": 14,
   "quality_passed_count": 0,
-  "updated_unix": 1794777120.7442436
+  "updated_unix": 1794777555.3621452
 }

@@ -1,6 +1,6 @@
 {
   "version": 141,
-  "created_unix": 1794777137.9179218,
+  "created_unix": 1794777574.7168097,
   "originals_preserved": true,
   "display_only_lossy_compression": true,
   "all_frames_and_original_timing_preserved": true,
@@ -849,18 +849,6 @@
       "width": 640,
       "height": 352
     },
-    "./media/correct-simpleD-v152/FreeNoise41_case13_full247.mp4": {
-      "preview": "./media/display-previews-v141/a696347df32129fe706466df.mp4",
-      "original": "./media/correct-simpleD-v152/FreeNoise41_case13_full247.mp4",
-      "source_sha256": "a696347df32129fe706466dfeeb881e1552587df45f7e00a288e38a336379d8e",
-      "source_bytes": 4509352,
-      "preview_bytes": 303536,
-      "frames": 247,
-      "frame_rate": "30000/1001",
-      "duration": "8.241567",
-      "width": 640,
-      "height": 352
-    },
     "./media/correct-simpleD-v152/original_DD21_full81.mp4": {
       "preview": "./media/display-previews-v141/5b29c86e1c6da162b0a84f51.mp4",
       "original": "./media/correct-simpleD-v152/original_DD21_full81.mp4",
@@ -882,18 +870,6 @@
       "frames": 81,
       "frame_rate": "25/1",
       "duration": "3.240000",
-      "width": 640,
-      "height": 352
-    },
-    "./media/correct-simpleD-v152/EAV_a0p25_case13_full247.mp4": {
-      "preview": "./media/display-previews-v141/d52a77b3af7e658dfd6eb48b.mp4",
-      "original": "./media/correct-simpleD-v152/EAV_a0p25_case13_full247.mp4",
-      "source_sha256": "d52a77b3af7e658dfd6eb48bbcfb0751896bd03b4ac8b8de2d862fb7b500a727",
-      "source_bytes": 4511532,
-      "preview_bytes": 304147,
-      "frames": 247,
-      "frame_rate": "30000/1001",
-      "duration": "8.241567",
       "width": 640,
       "height": 352
     },
@@ -942,18 +918,6 @@
       "frames": 81,
       "frame_rate": "25/1",
       "duration": "3.240000",
-      "width": 640,
-      "height": 352
-    },
-    "./media/correct-simpleD-v152/FreeLong_a0p25_case13_full247.mp4": {
-      "preview": "./media/display-previews-v141/139fb8e100967a0314d7356a.mp4",
-      "original": "./media/correct-simpleD-v152/FreeLong_a0p25_case13_full247.mp4",
-      "source_sha256": "139fb8e100967a0314d7356a8ad6fff4e767ffdd6a5e396e12d40ac5c1e39457",
-      "source_bytes": 4543589,
-      "preview_bytes": 305215,
-      "frames": 247,
-      "frame_rate": "30000/1001",
-      "duration": "8.241567",
       "width": 640,
       "height": 352
     },
@@ -1556,8 +1520,128 @@
       "duration": "8.241567",
       "width": 640,
       "height": 352
+    },
+    "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247.mp4": {
+      "preview": "./media/display-previews-v141/e7aabe3a4e47883e8f127cae.mp4",
+      "original": "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247.mp4",
+      "source_sha256": "e7aabe3a4e47883e8f127cae33b36f4ce177ea028d99cc5bce9271af85c9380c",
+      "source_bytes": 4202692,
+      "preview_bytes": 290450,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247.mp4": {
+      "preview": "./media/display-previews-v141/d0f8871b3ba88588bc5da744.mp4",
+      "original": "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247.mp4",
+      "source_sha256": "d0f8871b3ba88588bc5da744bf6c1bb67f7db401daeb3efa1e06fb8c635cb12b",
+      "source_bytes": 4230193,
+      "preview_bytes": 290640,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4": {
+      "preview": "./media/display-previews-v141/0b41dc542b89f679a47a3f82.mp4",
+      "original": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4",
+      "source_sha256": "0b41dc542b89f679a47a3f82bbacd382e2d31d9494bb61a61161d427ef79cd4c",
+      "source_bytes": 4156180,
+      "preview_bytes": 285516,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/case13_original_source_actions.mp4": {
+      "preview": "./media/display-previews-v141/bfe9adc4a5278d0f99a46d8e.mp4",
+      "original": "./media/correct-simpleD-v152/case13_original_source_actions.mp4",
+      "source_sha256": "bfe9adc4a5278d0f99a46d8e44597dcce573cdef8086a854e851e28956b1976c",
+      "source_bytes": 514190,
+      "preview_bytes": 475617,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 360
+    },
+    "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE.mp4": {
+      "preview": "./media/display-previews-v141/3e19aff8ae6b0feffb831da2.mp4",
+      "original": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE.mp4",
+      "source_sha256": "3e19aff8ae6b0feffb831da27b97ad71d99618750a129d5b61993d3be15ffd22",
+      "source_bytes": 801092,
+      "preview_bytes": 60602,
+      "frames": 81,
+      "frame_rate": "25/1",
+      "duration": "3.240000",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win.mp4": {
+      "preview": "./media/display-previews-v141/28742bb14455b60ec821a027.mp4",
+      "original": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win.mp4",
+      "source_sha256": "28742bb14455b60ec821a0276fb1d549489c7065bf5706931589b8323c473753",
+      "source_bytes": 4200268,
+      "preview_bytes": 291569,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win.mp4": {
+      "preview": "./media/display-previews-v141/d62daa5cc0cafd0c4032335c.mp4",
+      "original": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win.mp4",
+      "source_sha256": "d62daa5cc0cafd0c4032335c2108adcb261131d66e614497225058c19796dc9b",
+      "source_bytes": 4276546,
+      "preview_bytes": 296470,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win.mp4": {
+      "preview": "./media/display-previews-v141/d0ed08eb7f6b3aff52e942bf.mp4",
+      "original": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win.mp4",
+      "source_sha256": "d0ed08eb7f6b3aff52e942bf162a786ec6fec321eb1f250e62aa7d264a382d81",
+      "source_bytes": 4205578,
+      "preview_bytes": 291120,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win.mp4": {
+      "preview": "./media/display-previews-v141/6cef42e2a7189f9066c515d0.mp4",
+      "original": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win.mp4",
+      "source_sha256": "6cef42e2a7189f9066c515d059e57f79becb61d95f92eb617953c229a316a650",
+      "source_bytes": 4280715,
+      "preview_bytes": 296870,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/simpleD_original_source_actions.mp4": {
+      "preview": "./media/display-previews-v141/0714b70be5371b2e02ab3911.mp4",
+      "original": "./media/correct-simpleD-v152/simpleD_original_source_actions.mp4",
+      "source_sha256": "0714b70be5371b2e02ab3911b1eb6706d05618df95211882082fa6238203489a",
+      "source_bytes": 76501,
+      "preview_bytes": 71207,
+      "frames": 81,
+      "frame_rate": "25/1",
+      "duration": "3.240000",
+      "width": 640,
+      "height": 360
     }
   },
-  "source_bytes": 291096986,
-  "preview_bytes": 37952828
+  "source_bytes": 308476468,
+  "preview_bytes": 39689991
 }
