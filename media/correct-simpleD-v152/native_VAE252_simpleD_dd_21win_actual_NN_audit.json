@@ -168,5 +168,23 @@
     "pending_all81_visual_and_seam_motion_review": true,
     "time": 1794768509.138558
   },
+  "separate_color_only_visual_review": {
+    "case": "simpleD",
+    "method": "dd_21win",
+    "source_range": [
+      259,
+      339
+    ],
+    "widespread_full_frame_confetti_seen": false,
+    "color_only_screen_passed": true,
+    "all_true_source_frame_contact_sheets_screened": true,
+    "whole_real_EOF_scene_montage_screened": true,
+    "actual_NN_and_raw_RGB_hash_verification_unchanged": true,
+    "bound_native_stream_proof_SHA256": "81e1c6c6a018609364a17e94c9f9164279b86853513c921ae32569396b778925",
+    "not_a_full_resolution_fine_artifact_or_motion_fidelity_or_flicker_acceptance": true,
+    "overall_quality_passed": false,
+    "review_manifest": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/original28_native_color_screen_v269/manifest.json",
+    "time": 1794777521.6771827
+  },
   "display_only_original_source_FPS_PTS_no_interpolation": true
 }
