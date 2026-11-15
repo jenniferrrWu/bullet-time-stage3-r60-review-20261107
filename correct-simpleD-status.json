@@ -938,15 +938,15 @@
     },
     {
       "label": "DD + STG 跳层引导 0.5 · 50步/100次DD推理",
-      "video": "./media/correct-simpleD-v152/STG_s0p5_case13_full247.mp4",
-      "audit": "./media/correct-simpleD-v152/STG_s0p5_case13_full247_actual_NN_audit.json",
+      "video": "./media/correct-simpleD-v152/STG_s0p5_nativeVAE_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/STG_s0p5_nativeVAE_case13_full247_actual_NN_audit.json",
       "frames": 247,
       "source_range": [
         845,
         1091
       ],
       "quality_passed": false,
-      "note": "此卡保留此前跨窗口latent统一解码输出，原窗口VAE校正版完成后会更新到此处。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。"
+      "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。"
     },
     {
       "label": "DD + STG 跳层引导 1.0 · 50步/100次DD推理",
@@ -1089,5 +1089,5 @@
   ],
   "original14_complete_count": 14,
   "quality_passed_count": 0,
-  "updated_unix": 1794777555.3621452
+  "updated_unix": 1794777832.317857
 }
