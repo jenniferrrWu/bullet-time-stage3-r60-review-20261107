@@ -84,14 +84,18 @@
       requiresReferenceAudit = data.repair_campaign?.version === 'reference_owned_latents_v13';
       const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis, data.repair_campaign]);
       if (payload === lastPayload) return;
+      let latestByCase = {case13: 0, case12: 0};
       if (repairNode && data.repair_diagnosis) {
         const fragment = document.createDocumentFragment();
-        for (const finding of data.repair_diagnosis.findings || []) fragment.append(element('p', finding));
+        const diagnostics = element('details'); diagnostics.append(element('summary', '问题原因、对照实验及未通过记录'));
+        fragment.append(diagnostics);
+        const latestGrid = element('div', undefined, 'candidate-grid'); fragment.append(latestGrid);
+        for (const finding of data.repair_diagnosis.findings || []) diagnostics.append(element('p', finding));
         for (const evidence of data.repair_diagnosis.evidence || []) if (mediaPath(evidence.image)) {
           const detail = element('details'); detail.append(element('summary', evidence.label));
           const image = element('img'); image.src = evidence.image; image.alt = evidence.label;
           image.style.width = '100%'; image.style.maxWidth = '1280px'; image.style.maxHeight = 'none'; image.style.float = 'none';
-          detail.append(image); fragment.append(detail);
+          detail.append(image); diagnostics.append(detail);
         }
         for (const candidate of [...(data.repair_diagnosis.latest_full_DD_candidates || []), ...(data.repair_diagnosis.video_prior_full_qualifications || [])]) {
           const hed = candidate.protocol === 'official_DD_current_I2V_prior_current_HED_full_v62';
@@ -106,6 +110,7 @@
               !candidate.source_range.every((v, i) => v === spec.source_range[i]) ||
               ![21, 41].includes(candidate.native_context_frames) ||
               !methodValid || candidate.denoising_strength !== 0.06 || !mediaPath(candidate.video)) continue;
+          if (latest) latestByCase[candidate.case]++;
           const detail = element(latest ? 'article' : 'details');
           detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.native_context_frames}帧窗${hed ? ' · HED ' + candidate.adapter_strength : cannyTile ? ' · ' + (candidate.method.includes('canny') ? 'Canny' : 'Tile') + ' ' + candidate.adapter_strength : ''} · 完整${candidate.frames}帧 · ${latest ? '整体待验收' : '画质未通过'}`));
           detail.append(element('p', latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
@@ -117,8 +122,10 @@
             const page = element('details'); page.append(element('summary', `实际逐帧缩略图 第${index + 1}页`));
             const image = element('img'); image.src = path; image.loading = 'lazy'; image.alt = '实际输出帧'; image.style.width = '100%'; image.style.maxHeight = 'none'; page.append(image); detail.append(page);
           }
-          fragment.append(detail);
+          if (latest) latestGrid.append(detail); else fragment.append(detail);
         }
+        const latestCount = document.getElementById('latest-count');
+        if (latestCount) latestCount.textContent = `最新流程完整候选：复杂 case13 ${latestByCase.case13} / 14 条，简单 case12 ${latestByCase.case12} / 14 条；整体画质待验收。`;
         const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = data.repair_diagnosis.prior_bad_campaign || './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
         repairNode.replaceChildren(fragment);
       }
@@ -180,8 +187,9 @@
         }
         rows.append(row);
       }
-      summary.textContent = data.summary;
-      count.textContent = `本轮帧数与输入核对：${verified} / ${data.methods.length * ids.length}；画质通过：${passed} / ${data.methods.length * ids.length}。`;
+      const archiveSummary = document.getElementById('archive-summary'); if (archiveSummary) archiveSummary.textContent = data.summary;
+      summary.textContent = `最新完整候选已按原始源帧和实际DD输出核验；复杂案例 ${latestByCase.case13} 条、简单案例 ${latestByCase.case12} 条可审查。新流程含独立目标视频先验，原14方案的窗口与强度保持不变，整批尚未修复完成。`;
+      count.textContent = `上一修复批次技术核验：${verified} / ${data.methods.length * ids.length}；画质通过：${passed} / ${data.methods.length * ids.length}。`;
       casesNode.replaceChildren(caseCards); methodsNode.replaceChildren(rows);
       lastPayload = payload;
     } catch (error) {

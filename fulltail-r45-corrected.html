@@ -12,8 +12,8 @@
 .recovery h2{margin-top:0}.recovery .case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .recovery article{background:#192f3b;padding:16px;border-radius:9px;min-width:0}.recovery img{width:150px;max-height:160px;object-fit:contain;float:right;margin-left:12px}
 .recovery code{overflow-wrap:anywhere;font-size:12px}.recovery table{min-width:900px}.recovery video{max-width:350px}
-.recovery .state{font-size:14px;color:#e8c975}.recovery .method{width:32%}.round-note{padding:13px;background:#263846;border-radius:8px}
-@media(max-width:800px){.recovery .case-grid{grid-template-columns:1fr}.recovery{padding:13px}main{padding:14px}}
+.candidate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}.candidate-grid article video{max-width:100%;max-height:420px}.recovery details>summary{cursor:pointer;padding:10px 0}#reference-v13-archive{margin-top:18px;border-top:1px solid #426b7a;padding-top:10px}.recovery .state{font-size:14px;color:#e8c975}.recovery .method{width:32%}.round-note{padding:13px;background:#263846;border-radius:8px}
+@media(max-width:800px){.candidate-grid{grid-template-columns:1fr}.recovery .case-grid{grid-template-columns:1fr}.recovery{padding:13px}main{padding:14px}}
 </style>
 </head>
 <body><main>
@@ -21,12 +21,13 @@
 <section class="recovery" id="current-rerun" aria-labelledby="current-title">
 <h2 id="current-title">2026-11-15 · 彩噪修复完整验证</h2>
 <p id="current-summary">正在恢复原始输入与执行代码。当前正在排查 DD 基础链路共同故障，现有输出不代表画质通过。</p>
-<p><strong id="current-count">本轮帧数与输入核对：0 / 28；画质通过：0 / 28。</strong> <small id="current-updated"></small></p>
+<p><strong id="latest-count">正在读取最新完整候选结果。</strong> <small id="current-updated"></small></p>
 <div id="current-repair"></div>
 <div class="case-grid" id="current-cases"></div>
-<p>验收分别检查：真实 Stage2 末帧、全部源帧直到原片结尾、窗口续接、原生首潜变量约束及实际调用参数。帧数与输入核对完成，仅表示文件与输入链对应；彩色噪声、人物丢失或动作不符均不能通过验收。下面仅统计本轮新结果，历史视频保留在后半页。</p>
+<details id="reference-v13-archive"><summary>上一修复批次完整失败记录：原14方案 × 两例（28项整体画质未通过）</summary><p id="archive-summary"></p><p><strong id="current-count">上一修复批次技术核验：0 / 28；画质通过：0 / 28。</strong></p><p>以下保留参考对齐修复批次的输出、逐帧图和审计记录。最新流程的完整候选位于上方；彩噪、人物丢失或动作不符均不能通过整体验收。</p>
 <div class="wrap"><table><thead><tr><th class="method">原14方案</th><th>复杂 case13：247 帧</th><th>简单 case12：389 帧</th></tr></thead><tbody id="current-methods"></tbody></table></div>
 <p><a href="./recovery-20261114-status.json">本轮状态与输入审计范围</a> · <a href="./recovery-20261115-results.csv">全部28项结果表（CSV）</a> · <a href="./recovery-20261115-audit-summary.json">审计汇总</a> · <a href="#history-20261113">查看11月13日历史结果</a></p>
+</details>
 </section>
 <h2 id="history-20261113">2026-11-13 · 历史整段结果（14项画质未通过）</h2>
 <p class="round-note">以下保留原验收视频和当时记录，供比较。它们不计入上面的本轮进度。</p>
@@ -52,5 +53,5 @@
 </tbody></table></div>
 <p>完整实验记录和时间估算见项目进度文档；“待验收”表示生成与输入审计完成，最终画质由整段目视决定。</p>
 <script defer src="./fulltail-r45-corrected.js?v=20261114-history"></script>
-<script defer src="./fulltail-r45-current.js?v=reference-owned-v13-20261115-latest-v78"></script>
+<script defer src="./fulltail-r45-current.js?v=reference-owned-v13-20261115-latest-v79"></script>
 </main></body></html>
