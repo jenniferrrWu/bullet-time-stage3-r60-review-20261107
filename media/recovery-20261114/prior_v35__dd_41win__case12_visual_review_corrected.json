@@ -1,0 +1,51 @@
+{
+  "method": "dd_41win",
+  "case": "case12",
+  "frames": 389,
+  "source_range": [
+    171,
+    559
+  ],
+  "all_actual_source_frame_contact_sheets_visually_inspected": true,
+  "review_scope": "Every real output frame visible on the actual decoded RGB contact sheets; not an assertion that every frame passed full-resolution motion/anatomy review.",
+  "common_fullscreen_colored_confetti_observed": false,
+  "overall_quality_passed": false,
+  "protocol_materially_changed": "Official DD video-to-video initialization denoising_strength0.06 with an independent estimated target-view NN video prior; not the original pure-noise recipe.",
+  "remaining_defects": [
+    "Abrupt body view/position change at source269->270 matching old 3D-to-2D conditioning fallback",
+    "Independent teacher window scene changes around251/331/411",
+    "Late lens flare and local ghosting inherited from target prior"
+  ],
+  "reviewed_actual_sheet_SHA256": [
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_00.jpg",
+      "SHA256": "432d7a9dc94880e187624daf764f02c2ab258bda1e4a3fc6a5837388606e11c0"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_01.jpg",
+      "SHA256": "d9afaf6760e04d02b453e0abb200b3f2366b1b862e905a42344c5b36efb4ae6b"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_02.jpg",
+      "SHA256": "396560ada59918ee5d8524b844bfeabac6a5a35907bc8d52df010f309af06f7b"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_03.jpg",
+      "SHA256": "34937c15879dec60c1e60ccc547150c104b82aee160a9f37b7366a406fce03b2"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_04.jpg",
+      "SHA256": "840df80a1191473619563a26bc0f502a95bdda0ddb8a75c829a17e9a6821d759"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_05.jpg",
+      "SHA256": "1462965327267012fbb7618333f4345f8e652e6a7203c6264a68cab181602af6"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_41win/case12/full_color_review/all_real_frames_page_06.jpg",
+      "SHA256": "1ab422174f96bfc66c64eba1be5118ff0fcc83b475ce311944c02350d5e4baac"
+    }
+  ],
+  "time": 1794718281.0550249,
+  "footwear_source_correction": "Real original source visibly wears heels. New Stage2G1 and early generated frames show bare feet. Later heels must not automatically be called hallucination; footwear consistency is separate from motion/camera quality."
+}

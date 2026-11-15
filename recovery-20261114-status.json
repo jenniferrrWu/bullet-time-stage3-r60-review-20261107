@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T04:57:44.998741+00:00",
+  "updated_at": "2026-11-15T05:02:51.482347+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
@@ -1065,7 +1065,8 @@
       "同模型、同种子只替换动作辅助条件的尾段对照：前241帧原生RGB逐字节一致，最后6帧的人物与动作有所恢复，但仍有旧抬腿残影，不能视为247帧整段修好。",
       "最新两例局部对照保持当前源视频、相机及除首潜变量以外的全部噪声逐字节一致，只把旧时刻首图换成独立生成的同一当前源时刻首图；画面与动作明显改善。复杂舞蹈仍有动作偏差，室内案例也尚待完整389帧复验。独立首图是近似目标视角的模型输出，不是真值。",
       "仅替换当前时刻首图的4条完整基线已完成，仍有场景/人物异常，未通过。最新另测DD官方视频先验流程：独立目标视角模型视频作输入，denoising_strength=0.06，保留21/41帧原生窗口及实际50步；这与原纯噪声起步流程不同。",
-      "新流程4条完整基线已逐帧检查全部247/389帧缩略图，未见原满屏彩噪，4条均未通过整体验收：复杂舞蹈有分段镜头/动作跳变；室内有第270帧姿态切换、鞋子及后段眩光。下方供查看完整视频，不计原28项画质通过。",
+      "新流程4条完整基线已逐帧检查全部247/389帧缩略图，未见原满屏彩噪，4条均未通过整体验收：复杂舞蹈有分段镜头/动作跳变；室内有第270帧姿态切换及后段眩光。下方供查看完整视频，不计原28项画质通过。",
+      "补充更正：实际室内源片穿有高跟鞋，新Stage2首图呈赤脚；后段出现鞋子不能一概判为幻觉。此前该条评价已撤回，镜头/姿态突跳与眩光仍未通过。",
       "室内案例确认旧64帧独立几何分段存在相机不连续，第270帧还切换为二维姿态控制。整段389帧联合几何与重新估计的人体已完成；连续性有所改善，但后段目标投影仍偏出视野，尚未用于整批放行。"
     ],
     "evidence": [
@@ -1171,7 +1172,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v35__dd_21win__case12_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_21win__case12_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_21win__case12_visual_review_corrected.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_01.jpg",
@@ -1184,7 +1185,6 @@
         "remaining_defects": [
           "Abrupt body view/position change at source269->270 matching old 3D-to-2D conditioning fallback",
           "Independent teacher window scene changes around251/331/411",
-          "Bare feet become shoes from270 onward",
           "Late lens flare and local ghosting inherited from target prior"
         ]
       },
@@ -1239,7 +1239,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v35__dd_41win__case12_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_41win__case12_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_41win__case12_visual_review_corrected.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_01.jpg",
@@ -1252,7 +1252,6 @@
         "remaining_defects": [
           "Abrupt body view/position change at source269->270 matching old 3D-to-2D conditioning fallback",
           "Independent teacher window scene changes around251/331/411",
-          "Bare feet become shoes from270 onward",
           "Late lens flare and local ghosting inherited from target prior"
         ]
       }
