@@ -57,7 +57,7 @@
         339
       ],
       "quality_passed": false,
-      "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。"
+      "note": "完整81帧；未见满屏彩噪，但出现背景绿植漂移、场景一致性变差，画质未通过，不接受为原生DD81的改进。原生81帧额外对照，不冒充原21/41帧方案。"
     }
   ],
   "original14_results": [
@@ -115,6 +115,18 @@
       "label": "dd_videox_hed_0p2_41win · DD81固定参考修复协议",
       "video": "./media/correct-simpleD-v152/correctD_adapter_dd_videox_hed_0p2_41win.mp4",
       "audit": "./media/correct-simpleD-v152/correctD_adapter_dd_videox_hed_0p2_41win_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "正确D全部81个真实源帧；沿用原适配强度，增加同一DD81固定参考修复协议。保留原HED/Canny/Tile训练控制网络；每窗50次DD及40次控制网络推理分别核验。控制图和参考来自固定DD81生成，非VideoX教师或真值。无最终RGB修改，动作与闪动待验收。"
+    },
+    {
+      "label": "dd_videox_hed_0p5_41win · DD81固定参考修复协议",
+      "video": "./media/correct-simpleD-v152/correctD_adapter_dd_videox_hed_0p5_41win.mp4",
+      "audit": "./media/correct-simpleD-v152/correctD_adapter_dd_videox_hed_0p5_41win_actual_NN_audit.json",
       "frames": 81,
       "source_range": [
         259,
@@ -322,7 +334,7 @@
     {
       "key": "dd_videox_hed_0p5_41win",
       "label": "DD + VideoX HED 0.5 · 41 帧窗",
-      "complete": false,
+      "complete": true,
       "pure_original_complete": false,
       "protocol": "固定DD81生成参考的修复协议；非原始纯DD重放",
       "quality_passed": false
@@ -360,7 +372,7 @@
       "quality_passed": false
     }
   ],
-  "original14_complete_count": 7,
+  "original14_complete_count": 8,
   "quality_passed_count": 0,
-  "updated_unix": 1794771693.2407913
+  "updated_unix": 1794772023.3952737
 }

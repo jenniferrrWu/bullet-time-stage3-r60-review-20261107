@@ -1,0 +1,44 @@
+{
+  "physical_GPU": 3,
+  "controller_preNN_rescheduled_to_GPU3_without_resampling": true,
+  "method": "dd_videox_hed_0p5_41win",
+  "control_kind": "hed",
+  "alpha": 0.5,
+  "source_range": [
+    259,
+    339
+  ],
+  "frames": 81,
+  "native_context_frames": 41,
+  "explicit_frozen_DD81_teacher_protocol_not_pure_DD_replay": true,
+  "target_prior_and_control_input_teacher_is_DD_not_VideoX_not_GT": true,
+  "original_trained_control_network_and_strength_retained": true,
+  "actual50_DD_forwards_and40_auxiliary_network_forwards_per_context_verified": true,
+  "actual_neural_target_source_camera_and_control_RGB_ownership_verified": true,
+  "actual_global_decode_all81_RGB_independently_rechecked": true,
+  "actual_native_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correctD_current_control_comparisons_v191/dd_videox_hed_0p5_41win/complete/global_native_RGB.mkv",
+  "actual_native_video_SHA256": "c8475b442c4cf723379a6ebb5cc14cf926766f84d52dca205915efff20270ed4",
+  "no_final_RGB_edits_or_interpolation": true,
+  "overall_quality_passed": false,
+  "detailed_source_motion_and_flicker_review_pending": true,
+  "window_audits": [
+    {
+      "index": 0,
+      "actual50_DD_forwards": true,
+      "actual40_trained_control_network_forwards": true,
+      "actual_initial_target_source_camera_exact_C176": true,
+      "actual_control_RGB_from_declared_current_DD_teacher_verified": true,
+      "first_reference_control_timestep_zero": true
+    },
+    {
+      "index": 1,
+      "actual50_DD_forwards": true,
+      "actual40_trained_control_network_forwards": true,
+      "actual_initial_target_source_camera_exact_C176": true,
+      "actual_control_RGB_from_declared_current_DD_teacher_verified": true,
+      "first_reference_control_timestep_zero": true
+    }
+  ],
+  "time": 1794771986.9226322,
+  "display_only_original_source_FPS_PTS_no_interpolation": true
+}
