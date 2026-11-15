@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T08:41:41.438401+00:00",
+  "updated_at": "2026-11-15T08:52:15.181619+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
@@ -817,8 +817,8 @@
       "dd_videox_hed_0p2_41win": {
         "status": "verified_eof",
         "quality": "failed",
-        "windows_completed": 0,
-        "total_windows": 0,
+        "windows_completed": 10,
+        "total_windows": 10,
         "note": "全帧图中段机位跳变、人体变形、交界重影；末帧照片质感但不能代表全段通过。",
         "audit": {
           "passed": true,
