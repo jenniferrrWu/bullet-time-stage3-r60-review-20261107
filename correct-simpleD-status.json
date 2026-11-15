@@ -172,6 +172,18 @@
       ],
       "quality_passed": false,
       "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。"
+    },
+    {
+      "label": "DD + FreeLong 频谱时序注意力 α0.25",
+      "video": "./media/correct-simpleD-v152/FreeLong_a0p25_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/FreeLong_a0p25_case13_full247_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。FreeLong全局/局部频谱融合移植到DD双流联合时空注意力，非上游原管线。"
     }
   ],
   "original14_status": [
@@ -290,5 +302,5 @@
   ],
   "original14_complete_count": 3,
   "quality_passed_count": 0,
-  "updated_unix": 1794770128.825068
+  "updated_unix": 1794770379.4221683
 }
