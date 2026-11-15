@@ -154,6 +154,18 @@
       "note": "正确D全部81个真实源帧；沿用原适配强度，增加同一DD81固定参考修复协议。保留原HED/Canny/Tile训练控制网络；每窗50次DD及40次控制网络推理分别核验。控制图和参考来自固定DD81生成，非VideoX教师或真值。无最终RGB修改，动作与闪动待验收。"
     },
     {
+      "label": "dd_videox_tile_0p2_41win · DD81固定参考修复协议",
+      "video": "./media/correct-simpleD-v152/correctD_adapter_dd_videox_tile_0p2_41win.mp4",
+      "audit": "./media/correct-simpleD-v152/correctD_adapter_dd_videox_tile_0p2_41win_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "正确D全部81个真实源帧；沿用原适配强度，增加同一DD81固定参考修复协议。保留原HED/Canny/Tile训练控制网络；每窗50次DD及40次控制网络推理分别核验。控制图和参考来自固定DD81生成，非VideoX教师或真值。无最终RGB修改，动作与闪动待验收。"
+    },
+    {
       "label": "motion_i2v_0p35_21win · DD81固定参考修复协议",
       "video": "./media/correct-simpleD-v152/correctD_adapter_motion_i2v_0p35_21win.mp4",
       "audit": "./media/correct-simpleD-v152/correctD_adapter_motion_i2v_0p35_21win_actual_NN_audit.json",
@@ -416,7 +428,7 @@
     {
       "key": "dd_videox_tile_0p2_41win",
       "label": "DD + VideoX Tile 0.2 · 41 帧窗",
-      "complete": false,
+      "complete": true,
       "pure_original_complete": false,
       "protocol": "固定DD81生成参考的修复协议；非原始纯DD重放",
       "quality_passed": false
@@ -438,7 +450,7 @@
       "quality_passed": false
     }
   ],
-  "original14_complete_count": 11,
+  "original14_complete_count": 12,
   "quality_passed_count": 0,
-  "updated_unix": 1794773132.0701237
+  "updated_unix": 1794773263.2230318
 }
