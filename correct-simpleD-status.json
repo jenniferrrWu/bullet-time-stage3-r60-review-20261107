@@ -256,6 +256,18 @@
       ],
       "quality_passed": false,
       "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。FreeLong全局/局部频谱融合移植到DD双流联合时空注意力，非上游原管线。"
+    },
+    {
+      "label": "DD + STG 跳层引导 0.5 · 50步/100次DD推理",
+      "video": "./media/correct-simpleD-v152/STG_s0p5_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/STG_s0p5_case13_full247_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。"
     }
   ],
   "original14_status": [
@@ -310,7 +322,7 @@
     {
       "key": "wanmove_0p1_41win",
       "label": "Wan-Move α0.1 · 41 帧窗",
-      "complete": false,
+      "complete": true,
       "pure_original_complete": false,
       "protocol": "固定DD81生成参考的修复协议；非原始纯DD重放",
       "quality_passed": false
@@ -372,7 +384,7 @@
       "quality_passed": false
     }
   ],
-  "original14_complete_count": 8,
+  "original14_complete_count": 9,
   "quality_passed_count": 0,
-  "updated_unix": 1794772023.3952737
+  "updated_unix": 1794772211.4234276
 }
