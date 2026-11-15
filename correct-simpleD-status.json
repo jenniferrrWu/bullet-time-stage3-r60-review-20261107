@@ -123,19 +123,21 @@
         339
       ],
       "quality_passed": false,
-      "note": "正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。使用作者SAN双AR噪声初始化，实际进入模型的噪声单独核验；本行只测试SAN噪声初始化，无SG梯度。50次DD推理。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。"
+      "note": "新增SAGA SAN噪声组件在DD移植设置下产生满屏彩噪，画质失败；已停止继续扩展，仅保留失败对照。正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。使用作者SAN双AR噪声初始化，实际进入模型的噪声单独核验；本行只测试SAN噪声初始化，无SG梯度。50次DD推理。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。",
+      "quality_status": "failed",
+      "failure_kind": "widespread_confetti"
     },
     {
       "label": "DD41 去噪强度诊断 0.015",
-      "video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015.mp4",
-      "audit": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_actual_NN_audit.json",
+      "video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE.mp4",
+      "audit": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE_actual_NN_audit.json",
       "frames": 81,
       "source_range": [
         259,
         339
       ],
       "quality_passed": false,
-      "note": "保留此前跨窗口统一解码对照，原窗口解码修正版随后替换；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。"
+      "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。"
     },
     {
       "label": "DD41 去噪强度诊断 0.03",
@@ -148,9 +150,37 @@
       ],
       "quality_passed": false,
       "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。"
+    },
+    {
+      "label": "DD21 去噪强度诊断 0.03",
+      "video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE.mp4",
+      "audit": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。"
     }
   ],
   "native_decoder_corrected_results": [
+    {
+      "label": "复杂屋顶舞蹈 · dd_21win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "case13",
+      "method": "dd_21win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win_allframes.jpg"
+    },
     {
       "label": "复杂屋顶舞蹈 · dd_41win · 原窗口VAE解码修正版",
       "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win.mp4",
@@ -166,6 +196,22 @@
       "method": "dd_41win",
       "native_decoder_corrected": true,
       "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win_allframes.jpg"
+    },
+    {
+      "label": "复杂屋顶舞蹈 · dd_pose_0p5_41win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "case13",
+      "method": "dd_pose_0p5_41win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win_allframes.jpg"
     },
     {
       "label": "复杂屋顶舞蹈 · dd_videox_hed_0p2_41win · 原窗口VAE解码修正版",
@@ -456,7 +502,7 @@
       "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_41win_allframes.jpg"
     }
   ],
-  "native_decoder_corrected_count": 19,
+  "native_decoder_corrected_count": 21,
   "original14_results": [
     {
       "label": "DD 21帧窗口 · 正确D完整尾段",
@@ -881,5 +927,5 @@
   ],
   "original14_complete_count": 14,
   "quality_passed_count": 0,
-  "updated_unix": 1794776585.6269436
+  "updated_unix": 1794776774.574236
 }

@@ -1,6 +1,6 @@
 {
   "version": 141,
-  "created_unix": 1794776596.3301406,
+  "created_unix": 1794776783.8585994,
   "originals_preserved": true,
   "display_only_lossy_compression": true,
   "all_frames_and_original_timing_preserved": true,
@@ -1149,18 +1149,6 @@
       "width": 640,
       "height": 352
     },
-    "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015.mp4": {
-      "preview": "./media/display-previews-v141/e588060629aadecfc8158787.mp4",
-      "original": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015.mp4",
-      "source_sha256": "e588060629aadecfc8158787967f2019f26221ce3085c0bbd8e7de0de912aac1",
-      "source_bytes": 799398,
-      "preview_bytes": 64327,
-      "frames": 81,
-      "frame_rate": "25/1",
-      "duration": "3.240000",
-      "width": 640,
-      "height": 352
-    },
     "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_21win.mp4": {
       "preview": "./media/display-previews-v141/a95216dccf2e7c09fbb0dc2d.mp4",
       "original": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_21win.mp4",
@@ -1472,8 +1460,56 @@
       "duration": "3.240000",
       "width": 640,
       "height": 352
+    },
+    "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE.mp4": {
+      "preview": "./media/display-previews-v141/5e5a4e75d38217892806ccbe.mp4",
+      "original": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE.mp4",
+      "source_sha256": "5e5a4e75d38217892806ccbe55856fbd1d00024ddf055f6cf2ac605fe53e869f",
+      "source_bytes": 691265,
+      "preview_bytes": 58742,
+      "frames": 81,
+      "frame_rate": "25/1",
+      "duration": "3.240000",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE.mp4": {
+      "preview": "./media/display-previews-v141/f9d455e300599bd36fa01bcf.mp4",
+      "original": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE.mp4",
+      "source_sha256": "f9d455e300599bd36fa01bcf4828b8177271b5d86f2d4ae4cb4ec3dd5ce777d8",
+      "source_bytes": 772833,
+      "preview_bytes": 59162,
+      "frames": 81,
+      "frame_rate": "25/1",
+      "duration": "3.240000",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win.mp4": {
+      "preview": "./media/display-previews-v141/8c29206ad364b0bb8b54379a.mp4",
+      "original": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win.mp4",
+      "source_sha256": "8c29206ad364b0bb8b54379adc6d9036a89a426742b2f181bc44e6cbfa007bd1",
+      "source_bytes": 4271374,
+      "preview_bytes": 296820,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
+    },
+    "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win.mp4": {
+      "preview": "./media/display-previews-v141/f4126a73cc04628797c134b4.mp4",
+      "original": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win.mp4",
+      "source_sha256": "f4126a73cc04628797c134b4cd9eb10eb718efbec07c0e6c3c34555e412182fe",
+      "source_bytes": 4201525,
+      "preview_bytes": 290388,
+      "frames": 247,
+      "frame_rate": "30000/1001",
+      "duration": "8.241567",
+      "width": 640,
+      "height": 352
     }
   },
-  "source_bytes": 266936521,
-  "preview_bytes": 36197653
+  "source_bytes": 276074120,
+  "preview_bytes": 36838438
 }
