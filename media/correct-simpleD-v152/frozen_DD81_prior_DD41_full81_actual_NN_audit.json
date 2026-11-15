@@ -1,0 +1,22 @@
+{
+  "protocol": "DD short-window refinement of frozen full81 DD NN teacher, same-current reference",
+  "correct_user_case": "D",
+  "source_range": [
+    259,
+    339
+  ],
+  "frames": 81,
+  "native_context_frames": 41,
+  "actual_all_windows_each50DDcalls_CFG1_LoRA1_verified": true,
+  "explicit_frozen_DD81_teacher_not_ground_truth_or_VideoX": true,
+  "no_recursive_previous_short_window_DD_RGB_feedback": true,
+  "actual_source_camera_exact_current_canonical": true,
+  "actual_global_decode_all81_RGB_independently_rechecked": true,
+  "actual_native_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correct_simpleD_frozen_DD81_prior_v176/native41/complete/global_native_RGB.mkv",
+  "actual_native_video_SHA256": "8856663bd05aee31893bf153a9ec7c29cc04ad5633fa1863ff8f99cfe2f8f213",
+  "no_final_RGB_edits_or_interpolation": true,
+  "overall_quality_passed": false,
+  "pending_all81_visual_and_seam_motion_review": true,
+  "time": 1794769086.3757844,
+  "display_only_original_source_FPS_PTS_no_interpolation": true
+}

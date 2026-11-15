@@ -86,6 +86,18 @@
       ],
       "quality_passed": false,
       "note": "完整81帧；固定参考来自同一案例的DD81实际生成，非真值、非VideoX；短窗口结果不递归反馈。动作与接缝待验收，属于额外修复协议。"
+    },
+    {
+      "label": "DD41 + 固定DD81参考 · 接缝修复实验",
+      "video": "./media/correct-simpleD-v152/frozen_DD81_prior_DD41_full81.mp4",
+      "audit": "./media/correct-simpleD-v152/frozen_DD81_prior_DD41_full81_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "完整81帧；固定参考来自同一案例的DD81实际生成，非真值、非VideoX；短窗口结果不递归反馈。动作与接缝待验收，属于额外修复协议。"
     }
   ],
   "additional_complex_results": [
@@ -212,5 +224,5 @@
   ],
   "original14_complete_count": 2,
   "quality_passed_count": 0,
-  "updated_unix": 1794768542.4137628
+  "updated_unix": 1794769101.3026407
 }
