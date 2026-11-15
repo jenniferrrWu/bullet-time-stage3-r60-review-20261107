@@ -21,6 +21,7 @@ function load(row) {
   }
 }
 function unload(row) {
+  if (window.ReviewPlayback?.isPlaying) return;
   for (const v of row.querySelectorAll('video')) {
     v.pause(); v.removeAttribute('src'); v.load();
   }
