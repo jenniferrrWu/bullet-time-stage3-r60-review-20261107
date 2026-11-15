@@ -121,8 +121,8 @@
               !methodValid || candidate.denoising_strength !== 0.06 || !mediaPath(candidate.video)) continue;
           if (latest) latestByCase[candidate.case]++;
           const detail = element(latest ? 'article' : 'details');
-          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${case12Baseline ? '背景漂移未通过' : latest ? '整体待验收' : '画质未通过'}`));
-          detail.append(element('p', case12Baseline ? '已核验完整389帧实际DD输出，全部帧总览及真实末帧均未见满屏彩噪；但背景/相机仍有位移，整体画质未通过。其余12个方案尚未放行。含独立近似NN视频先验，DD每窗50步。' : latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
+          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${case12Baseline ? '背景漂移未通过，人物一致性亦有偏差' : latest ? '整体待验收' : '画质未通过'}`));
+          detail.append(element('p', case12Baseline ? '已核验完整389帧实际DD输出，全部帧总览及真实末帧均未见满屏彩噪；但背景/相机仍有位移，人物朝向、发型亦有偏差，整体画质未通过。其余12个方案尚未放行。含独立近似NN视频先验，DD每窗50步。' : latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
           detail.append(video(candidate.video));
           for (const [path, label] of [[candidate.audit_file, '查看实际输出核验记录'], [candidate.visual_review_file, '查看画质缺陷记录'], [candidate.overview_file, '全部实际源帧彩噪总览']]) if (mediaPath(path)) {
             const link = element('a', label); link.href = path; detail.append(link, element('br'));
