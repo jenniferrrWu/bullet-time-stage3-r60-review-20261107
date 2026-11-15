@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T08:52:15.181619+00:00",
+  "updated_at": "2026-11-15T09:13:11.282984+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
@@ -1074,7 +1074,7 @@
       "较新Canny/Tile原强度0.2两条也已完成原片f845–1091全部247帧，通过完整实际DD输出及EOF核验并检查全部帧；未见满屏彩噪，整体动作与背景细节待验收，不计原28项通过数。",
       "室内仅用原始外观参考的另一条完整389帧对照，在f411后出现双人残影及窗口突跳，已拒绝用于最终DD；当前连续首帧加独立外观参考的完整链正在检查后段。",
       "复杂case13的原14方案已按新视频先验流程全部完成真实247帧、原强度/原生窗口/每窗50步及独立实际NN输出核验；全部源帧总览与真实EOF彩噪检查均未见原满屏彩噪。较小总览仅用于整屏彩噪检查，详细动作、面部、背景与解剖一致性仍待验收，不能计为整体画质通过。",
-      "简单case12的完整389帧连续辅助输入未见满屏彩噪/双人残影，但背景仍有位移。当前只做DD21/41两条完整基线实验，测量DD固定视角条件的实际响应；其余方法尚未放行。"
+      "简单case12的DD21/41两条已完成真实389帧实际NN采样、完整源帧和EOF核验，全部帧总览与真实末帧均未见满屏彩噪。但背景/相机仍有位移，整体画质未通过；其余12个方案尚未放行。"
     ],
     "evidence": [
       {
@@ -1775,6 +1775,80 @@
           "Independent target-video prior .06 recipe; original NLF/FlashMotion strength .3, native41 and actual50DD calls retained."
         ],
         "overview_file": "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case12",
+        "method": "dd_21win",
+        "method_label": "DepthDirector完整基线",
+        "adapter_kind": null,
+        "adapter_strength": null,
+        "video": "./media/recovery-20261114/prior_v82__dd_21win__case12_full389.mp4",
+        "frames": 389,
+        "source_range": [
+          171,
+          559
+        ],
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "protocol": "official_DD_case12_sequential_I2V_separate_appearance_prior_full_v82",
+        "native_context_frames": 21,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "failed_background_camera_drift",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v82__dd_21win__case12_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v82__dd_21win__case12_actual_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_05.jpg",
+          "./media/recovery-20261114/prior_v82__dd_21win__case12_all_real_frames_page_06.jpg"
+        ],
+        "remaining_defects": [
+          "背景/相机位移尚未修复，整体画质未通过；不能作为其余12个方案放行依据。",
+          "辅助输入仍为近似NN生成的新视角视频，不是新视角真值。"
+        ]
+      },
+      {
+        "case": "case12",
+        "method": "dd_41win",
+        "method_label": "DepthDirector完整基线",
+        "adapter_kind": null,
+        "adapter_strength": null,
+        "video": "./media/recovery-20261114/prior_v82__dd_41win__case12_full389.mp4",
+        "frames": 389,
+        "source_range": [
+          171,
+          559
+        ],
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "protocol": "official_DD_case12_sequential_I2V_separate_appearance_prior_full_v82",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "failed_background_camera_drift",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v82__dd_41win__case12_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v82__dd_41win__case12_actual_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_05.jpg",
+          "./media/recovery-20261114/prior_v82__dd_41win__case12_all_real_frames_page_06.jpg"
+        ],
+        "remaining_defects": [
+          "背景/相机位移尚未修复，整体画质未通过；不能作为其余12个方案放行依据。",
+          "辅助输入仍为近似NN生成的新视角视频，不是新视角真值。"
+        ]
       }
     ]
   }

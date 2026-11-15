@@ -109,7 +109,8 @@
           const protocols = {53: 'official_DD_target_video_prior_current_I2V_tailfixed_v53', 62: 'official_DD_current_I2V_prior_current_HED_full_v62', 67: 'official_DD_current_I2V_prior_current_Canny_Tile_full_v67', 70: 'official_DD_current_I2V_prior_original_track_methods_full_v70', 72: 'official_DD_current_I2V_prior_current_pose_NLF_full_v72'};
           const old = candidate.protocol === 'official_DD_target_video_prior_strength006_v35';
           const latest = !old;
-          const methodValid = old ? candidate.method === `dd_${candidate.native_context_frames}win` : candidate.case === 'case13' && original && candidate.protocol === protocols[original[0]] && candidate.native_context_frames === original[1] && candidate.adapter_kind === original[2] && (candidate.adapter_strength ?? null) === original[3];
+          const case12Baseline = candidate.case === 'case12' && candidate.protocol === 'official_DD_case12_sequential_I2V_separate_appearance_prior_full_v82' && candidate.method === `dd_${candidate.native_context_frames}win` && candidate.adapter_kind === null && candidate.adapter_strength === null && candidate.overall_quality_state === 'failed_background_camera_drift' && candidate.common_fullscreen_confetti_observed === false;
+          const methodValid = old ? candidate.method === `dd_${candidate.native_context_frames}win` : case12Baseline || (candidate.case === 'case13' && original && candidate.protocol === protocols[original[0]] && candidate.native_context_frames === original[1] && candidate.adapter_kind === original[2] && (candidate.adapter_strength ?? null) === original[3]);
           const spec = data.cases[candidate.case];
           if (!spec || !methodValid ||
               candidate.source_and_actual_NN_output_audit_verified !== true || candidate.overall_quality_passed !== false ||
@@ -120,8 +121,8 @@
               !methodValid || candidate.denoising_strength !== 0.06 || !mediaPath(candidate.video)) continue;
           if (latest) latestByCase[candidate.case]++;
           const detail = element(latest ? 'article' : 'details');
-          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${latest ? '整体待验收' : '画质未通过'}`));
-          detail.append(element('p', latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
+          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${case12Baseline ? '背景漂移未通过' : latest ? '整体待验收' : '画质未通过'}`));
+          detail.append(element('p', case12Baseline ? '已核验完整389帧实际DD输出，全部帧总览及真实末帧均未见满屏彩噪；但背景/相机仍有位移，整体画质未通过。其余12个方案尚未放行。含独立近似NN视频先验，DD每窗50步。' : latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
           detail.append(video(candidate.video));
           for (const [path, label] of [[candidate.audit_file, '查看实际输出核验记录'], [candidate.visual_review_file, '查看画质缺陷记录'], [candidate.overview_file, '全部实际源帧彩噪总览']]) if (mediaPath(path)) {
             const link = element('a', label); link.href = path; detail.append(link, element('br'));
@@ -133,7 +134,7 @@
           if (latest) latestGrid.append(detail); else fragment.append(detail);
         }
         const latestCount = document.getElementById('latest-count');
-        if (latestCount) latestCount.textContent = `最新流程完整候选：复杂 case13 ${latestByCase.case13} / 14 条，简单 case12 ${latestByCase.case12} / 14 条；整体画质待验收。`;
+        if (latestCount) latestCount.textContent = `最新流程完整结果：复杂 case13 ${latestByCase.case13} / 14 条，简单 case12 ${latestByCase.case12} / 14 条；复杂case待验收，简单case两条背景漂移未通过。`;
         const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = data.repair_diagnosis.prior_bad_campaign || './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
         repairNode.replaceChildren(fragment);
       }
