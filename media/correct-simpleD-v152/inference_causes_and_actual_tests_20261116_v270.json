@@ -1,0 +1,682 @@
+{
+  "更新日期": "2026-11-16",
+  "本批对象": [
+    {
+      "案例": "复杂屋顶女性舞蹈",
+      "原片范围": [
+        845,
+        1091
+      ],
+      "真实帧数": 247,
+      "Stage2角度": 45
+    },
+    {
+      "案例": "原候选D：白衬衣绿植背景的女性半身说话",
+      "原片范围": [
+        259,
+        339
+      ],
+      "真实帧数": 81,
+      "Stage2角度": 30
+    }
+  ],
+  "实际模型": "Wan-AI/Wan2.2-TI2V-5B + DepthDirector step-10000；实际加载LoRA600键、300层，scale1；通常每窗50次DD推理、CFG1。STG另计100次DD推理/50采样步。",
+  "原28项状态": {
+    "完整真实源帧和NN输入输出校验": 28,
+    "按原窗口因果VAE解码修正": 28,
+    "满屏彩噪筛查通过": 28,
+    "整体画质通过": 0
+  },
+  "已确认的推理问题": [
+    {
+      "问题": "旧短窗口把源视频时间位置编码起点放在6或11，训练原生81帧对应起点应为21。",
+      "修正": "21/41帧窗显式恢复源起点21；原生81帧目标21潜帧+源21潜帧自然满足，不重复打补丁。",
+      "限度": "单独修正该项不足以证明所有历史彩噪已解决。"
+    },
+    {
+      "问题": "异常生成帧继续作下一窗口参考，会累积并放大异常。",
+      "修正": "本批短窗改为固定、同源时间的视频参考，避免把这些短窗的坏RGB递归反馈。",
+      "限度": "复杂舞蹈使用独立VideoX当前视频先验；D使用同例DD81固定生成参考，均非真值。稳定结果是明确改变后的推理协议，不能归结成单一一行修复。"
+    },
+    {
+      "问题": "独立窗口的latent拼接后统一VAE解码，改变了各窗原有的因果上下文，引入额外闪动和重影。",
+      "修正": "保持同一份DD采样结果，按各原窗口独立使用官方VAE解码；完整原生帧按源时间排列，仅去重参考帧与EOF条件占位。",
+      "证据": "D21静态背景帧间变化1.0710→0.3812；D41为0.6058→0.3639；原28项逐项对照数据随附。没有重新采样、平滑、插帧或最终像素修补。",
+      "限度": "这些ROI指标不替代动作、细节、几何和剩余闪动验收。"
+    }
+  ],
+  "输入执行校验": [
+    "固定正确案例、原片帧号、Stage2首帧和文件哈希；错选室内舞蹈case12归档不计数。",
+    "实际送入模型的RGB和源/相机张量核对；解码环境产生的RGB不一致已在模型调用前拦截，并用原生环境重建。",
+    "检查实际调用而非只看命令参数：CFG1、LoRA1、50步/50次DD；控制网络和STG额外调用单独记录。",
+    "保存实际初始/最终latent、采样轨迹和代码快照；输出逐帧无损哈希检查，覆盖247/81个真实源帧和EOF。",
+    "关闭新适配时须实际NN张量及全部RGB与基线一致；新增方法首个正样本须先全帧及EOF检查，再允许扩大强度/组合/案例。",
+    "后续候选按原窗口VAE上下文解码后再比较；新增方法失败不得混入已修复原批。"
+  ],
+  "研究方法来源": [
+    {
+      "方法": "Enhance-A-Video",
+      "作者代码": "https://github.com/NUS-HPC-AI-Lab/Enhance-A-Video",
+      "落地": "DD双流适配；BF16及作者clamp产生的合法零效果窗口保留，不强行改输出。"
+    },
+    {
+      "方法": "FreeNoise",
+      "作者代码": "https://github.com/AILab-CVC/FreeNoise",
+      "落地": "移植作者噪声重排组件，未声称完整时序注意力融合管线。"
+    },
+    {
+      "方法": "FreeLong",
+      "作者代码": "https://github.com/aniki-ly/FreeLong",
+      "落地": "将全局/局部频谱注意力适配到DD联合时空双流，非原管线；D原生81帧试验造成绿植漂移，已标失败。"
+    },
+    {
+      "方法": "STG",
+      "作者代码": "https://github.com/junhahyung/STGuidance",
+      "落地": "DD目标流跳层双分支，同DD条件；50采样步实际100次DD调用，非等算力比较。"
+    },
+    {
+      "方法": "SAGA",
+      "作者代码": "https://github.com/thanhnhan29/SAGA",
+      "落地": "SG：对预测干净目标latent做作者时间加速度引导，50次DD+50次潜变量梯度，无网络反向传播；SAN：作者结构化噪声初始化组件DD移植。"
+    }
+  ],
+  "新增研究失败记录": [
+    "SAGA SAN单例以及检查时已启动的SAN+SG3均出现满屏彩噪。实际噪声独立重建并验证进入模型；原素材、相机和首帧不变。已停止扩展并单独归档，原28项未使用该噪声初始化。",
+    "SAN失败归于当前整个噪声初始化移植设置，尚未把FP32生成/布局和时间相关性逐因子拆开；不据此声称所有历史彩噪同因。",
+    "SAN+SG3检查前已经实际启动，保留真实50次DD运行结果及失败证据，没有虚称“模型调用前取消”。"
+  ],
+  "目前结论": "最明确的闪动改善来自修正VAE解码上下文。新增方法多数变化较小，不能仅凭低背景变化分数宣称普遍改进；整体画质仍交由验收。",
+  "显示说明": "原片动作参考不计NN结果数量；展示视频仅压缩和按原片FPS调整显示PTS，保留全部帧，不插帧。",
+  "图表": "./same_DD_samples_native_VAE_background_comparison_v270.png",
+  "原28项配对诊断数据": [
+    {
+      "case": "case13",
+      "method": "dd_21win",
+      "native_frames": 21,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.9384082630882418,
+      "after": 2.6711691650675564,
+      "change_percent": -9.094689168203585,
+      "proof_SHA256": "b23c132be918e092f7f7d8eea429619c0e3e161b52dd50c1de12b609bdd1572e"
+    },
+    {
+      "case": "case13",
+      "method": "dd_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7972400857181086,
+      "after": 2.682814178306882,
+      "change_percent": -4.090671658662826,
+      "proof_SHA256": "99ad8cc0084b5692f739f73cb27ef807322627e5426a9373e1bee0546b34b1e0"
+    },
+    {
+      "case": "case13",
+      "method": "dd_nlf_flashmotion_0p3_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7899638695445486,
+      "after": 2.6750126333256077,
+      "change_percent": -4.120169349637715,
+      "proof_SHA256": "0c3f4a406065fa343f103b98523cfb38fb99b103ed42e8cf2a0aa5b397fc76b1"
+    },
+    {
+      "case": "case13",
+      "method": "dd_pose_0p5_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7973158269878327,
+      "after": 2.6827655609061076,
+      "change_percent": -4.095006540790691,
+      "proof_SHA256": "7f011f04a9eac018b90ccc55b4c9cbf4fed0a951d2edb912d7fefe4f91d71599"
+    },
+    {
+      "case": "case13",
+      "method": "dd_videox_canny_0p2_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7913904606811397,
+      "after": 2.676792351089842,
+      "change_percent": -4.105413098077804,
+      "proof_SHA256": "bbb54c4a2c9f9052b3c3ff0517c3c16d5a68c964563d6194527b8a3ef24e807f"
+    },
+    {
+      "case": "case13",
+      "method": "dd_videox_hed_0p2_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.791792325857209,
+      "after": 2.6767637805967794,
+      "change_percent": -4.120240040602241,
+      "proof_SHA256": "4dac9a0e4c8c31cdeee98c433b6291c40f6f325a6e90a352df3ea15ddafeb958"
+    },
+    {
+      "case": "case13",
+      "method": "dd_videox_hed_0p5_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.784273104696739,
+      "after": 2.6689055931519685,
+      "change_percent": -4.1435414992214366,
+      "proof_SHA256": "6382d83339aa9007072abd05c77a9400fd04225f32cb3fc04dc566626d82514d"
+    },
+    {
+      "case": "case13",
+      "method": "dd_videox_tile_0p2_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.78999880440836,
+      "after": 2.676219089002144,
+      "change_percent": -4.078127747812566,
+      "proof_SHA256": "cfaa734d0c7d9a904fd4c2be43e439ec711ef9822ac9dda0248de1a34f657daa"
+    },
+    {
+      "case": "case13",
+      "method": "motion_i2v_0p35_21win",
+      "native_frames": 21,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.9431971905192706,
+      "after": 2.6742134454046806,
+      "change_percent": -9.13916831604249,
+      "proof_SHA256": "82a5fd6d1d72829c297470839acadb892b6c00e46403d4970b2bc8351eeffa84"
+    },
+    {
+      "case": "case13",
+      "method": "motion_i2v_0p35_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7995226434091243,
+      "after": 2.6849677087814827,
+      "change_percent": -4.091945278504417,
+      "proof_SHA256": "0d023693efcea1155059c94c8a4d13eaff543b74ea49e0ebf5f5e2c0a73ef318"
+    },
+    {
+      "case": "case13",
+      "method": "wanmove_0p1_21win",
+      "native_frames": 21,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.9390649841568335,
+      "after": 2.671795524959642,
+      "change_percent": -9.093690021755895,
+      "proof_SHA256": "2190d692e47f7edf0ecb262991436f380f7f21315aae6961097fd15c8b6f90c8"
+    },
+    {
+      "case": "case13",
+      "method": "wanmove_0p1_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7977901634162032,
+      "after": 2.6833224435889624,
+      "change_percent": -4.091361865661558,
+      "proof_SHA256": "78c8b0365a87dcce8d7dbd0aea5e5e9adf7a8c53b8e36ec4b9fcff6f4e135f1a"
+    },
+    {
+      "case": "case13",
+      "method": "wanmove_0p35_21win",
+      "native_frames": 21,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.940874891794794,
+      "after": 2.6733589466752075,
+      "change_percent": -9.096474857396043,
+      "proof_SHA256": "d697b28b096fd2e15a71a18b385f60f8d106331ca6974d0aefc79f7a761f4f9f"
+    },
+    {
+      "case": "case13",
+      "method": "wanmove_0p35_41win",
+      "native_frames": 41,
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "fixed_background_ROI": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "same_actual_DD_samples": true,
+      "before": 2.7983065547981885,
+      "after": 2.683875110575823,
+      "change_percent": -4.089310516253208,
+      "proof_SHA256": "60b58fc5f9721e6e8148c18dd929b699125d0906f926b58e41c5026f02314e13"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_21win",
+      "native_frames": 21,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 1.071003295481205,
+      "after": 0.3812044508755207,
+      "change_percent": -64.40679011129986,
+      "proof_SHA256": "81e1c6c6a018609364a17e94c9f9164279b86853513c921ae32569396b778925"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6058246782049537,
+      "after": 0.3639423917979002,
+      "change_percent": -39.92611973545643,
+      "proof_SHA256": "d19a80ec774f3a19dcaeddd07d2c9131d18158c2532d90a44ca2570696f4496c"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_nlf_flashmotion_0p3_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6033799344673753,
+      "after": 0.3611779361963272,
+      "change_percent": -40.14087715476457,
+      "proof_SHA256": "8ae8fb24f3f064396cc52f8251fe246dc5d3d4c4c7c7c7aee136b752837f620e"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_pose_0p5_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6051361357793212,
+      "after": 0.36372376419603825,
+      "change_percent": -39.89389449902564,
+      "proof_SHA256": "c62ef2327ee3fcf0f40f74cd713ce3e70779485398d7794f785b9c86eea0ed04"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_videox_canny_0p2_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6037292040884494,
+      "after": 0.3620527595281601,
+      "change_percent": -40.03060360897872,
+      "proof_SHA256": "7903683ca599fd3675b554b9f88ecc0394344830e2834356648c6b49543b1c20"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_videox_hed_0p2_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6033980887383222,
+      "after": 0.3611583821475506,
+      "change_percent": -40.14591877433416,
+      "proof_SHA256": "7f5efb86c4b9fefa6bd6af91aa12be55c56ada9dffd991eb3c149e16dd5fa7a6"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_videox_hed_0p5_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.5996428914368153,
+      "after": 0.3580744190141559,
+      "change_percent": -40.285389166180686,
+      "proof_SHA256": "fdc325e65dbd65e8a0af1f65dbaed926fa7108cdf20c427ad3478320d16860b0"
+    },
+    {
+      "case": "simpleD",
+      "method": "dd_videox_tile_0p2_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6032853931188583,
+      "after": 0.36164880972355606,
+      "change_percent": -40.05344504465656,
+      "proof_SHA256": "ade5e5d7170167db0dbc9aac99d4984bf206afa3060d9e0e01900778b38707e2"
+    },
+    {
+      "case": "simpleD",
+      "method": "motion_i2v_0p35_21win",
+      "native_frames": 21,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 1.0758823471143841,
+      "after": 0.38454044461250303,
+      "change_percent": -64.25813234654552,
+      "proof_SHA256": "4263a44b99ca32d764bf3395aa5b774a45005fc16394ae7105791113bbccc808"
+    },
+    {
+      "case": "simpleD",
+      "method": "motion_i2v_0p35_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6089045539498329,
+      "after": 0.36775259505957364,
+      "change_percent": -39.604229813352255,
+      "proof_SHA256": "68c6d13f9cb5a6a94bd89f00475c51c1caf0d32a212ece9cafaa5c1a5bc5b1d1"
+    },
+    {
+      "case": "simpleD",
+      "method": "wanmove_0p1_21win",
+      "native_frames": 21,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 1.0715805236250162,
+      "after": 0.38182658832520244,
+      "change_percent": -64.36790517304914,
+      "proof_SHA256": "6c39fe2dfeca627c2ab7ba5b06860388d2b8a2511f7dee2084cfb4c735ef1635"
+    },
+    {
+      "case": "simpleD",
+      "method": "wanmove_0p1_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6057447411119938,
+      "after": 0.36405369117856023,
+      "change_percent": -39.89981811311314,
+      "proof_SHA256": "e3a0b361cb812ad8d62972761459ddeadbb147792bc0ac8dd680848e4593b0c1"
+    },
+    {
+      "case": "simpleD",
+      "method": "wanmove_0p35_21win",
+      "native_frames": 21,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 1.072176885791123,
+      "after": 0.38200643565505743,
+      "change_percent": -64.37095028651099,
+      "proof_SHA256": "4b0fadd4a685e1d9cc64c3a25badc9daf773f356bd7ddbb610a0c5b1710389b1"
+    },
+    {
+      "case": "simpleD",
+      "method": "wanmove_0p35_41win",
+      "native_frames": 41,
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "fixed_background_ROI": [
+        38,
+        155,
+        166,
+        458
+      ],
+      "same_actual_DD_samples": true,
+      "before": 0.6052851520478726,
+      "after": 0.3641418932005763,
+      "change_percent": -39.83961245892647,
+      "proof_SHA256": "7e67a20509dae354682947ede7af4941e08645e39ca3a2afc9d18cdedeeb0638"
+    }
+  ],
+  "timestamp": 1794778630.1200967
+}
