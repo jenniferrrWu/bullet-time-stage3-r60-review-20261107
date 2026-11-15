@@ -77,6 +77,18 @@
       "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。STG实际100次DD网络推理、50采样步，算力是50次基线的两倍；不依赖视频参考或递归DD末帧。原生81帧额外对照，不冒充原21/41帧方案。"
     },
     {
+      "label": "DD81 + SAGA SG 时间加速度引导 3",
+      "video": "./media/correct-simpleD-v152/native81_v240_scale3.mp4",
+      "audit": "./media/correct-simpleD-v152/native81_v240_scale3_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。保留基线初始噪声；SG在去噪中对预测干净潜变量施加时间加速度梯度，固定首帧作上下文；50次DD推理及50次潜变量梯度，不对网络反向传播。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。"
+    },
+    {
       "label": "DD41 去噪强度诊断 0.015",
       "video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015.mp4",
       "audit": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_actual_NN_audit.json",
@@ -548,5 +560,5 @@
   ],
   "original14_complete_count": 14,
   "quality_passed_count": 0,
-  "updated_unix": 1794775325.9987252
+  "updated_unix": 1794775488.6426995
 }
