@@ -218,9 +218,25 @@
       "method": "motion_i2v_0p35_41win",
       "native_decoder_corrected": true,
       "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_41win_allframes.jpg"
+    },
+    {
+      "label": "正确D半身 · wanmove_0p1_21win · 原窗口VAE解码修正版",
+      "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win.mp4",
+      "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+      "case": "simpleD",
+      "method": "wanmove_0p1_21win",
+      "native_decoder_corrected": true,
+      "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win_allframes.jpg"
     }
   ],
-  "native_decoder_corrected_count": 5,
+  "native_decoder_corrected_count": 6,
   "original14_results": [
     {
       "label": "DD 21帧窗口 · 正确D完整尾段",
@@ -633,5 +649,5 @@
   ],
   "original14_complete_count": 14,
   "quality_passed_count": 0,
-  "updated_unix": 1794775889.490837
+  "updated_unix": 1794775947.1220214
 }
