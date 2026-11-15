@@ -46,6 +46,18 @@
       ],
       "quality_passed": false,
       "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。"
+    },
+    {
+      "label": "DD81 + FreeLong 频谱时序注意力 α0.25",
+      "video": "./media/correct-simpleD-v152/gpu3_freelong.mp4",
+      "audit": "./media/correct-simpleD-v152/gpu3_freelong_actual_NN_audit.json",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "quality_passed": false,
+      "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。"
     }
   ],
   "original14_results": [
@@ -278,5 +290,5 @@
   ],
   "original14_complete_count": 3,
   "quality_passed_count": 0,
-  "updated_unix": 1794769835.3353724
+  "updated_unix": 1794770128.825068
 }
