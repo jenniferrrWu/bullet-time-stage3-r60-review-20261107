@@ -77,6 +77,42 @@
   "additional_simple_repair_results": [],
   "additional_complex_results": [
     {
+      "label": "DD + Enhance-A-Video α0.25",
+      "video": "./media/correct-simpleD-v152/EAV_a0p25_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/EAV_a0p25_case13_full247_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。合法的零增强窗口单独记录，未强迫修改输出。"
+    },
+    {
+      "label": "DD + Enhance-A-Video α0.5",
+      "video": "./media/correct-simpleD-v152/EAV_a0p5_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/EAV_a0p5_case13_full247_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。合法的零增强窗口单独记录，未强迫修改输出。"
+    },
+    {
+      "label": "DD + FreeNoise 噪声重排 · 21帧窗口",
+      "video": "./media/correct-simpleD-v152/FreeNoise21_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/FreeNoise21_case13_full247_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。"
+    },
+    {
       "label": "DD + FreeNoise 噪声重排 · 41帧窗口",
       "video": "./media/correct-simpleD-v152/FreeNoise41_case13_full247.mp4",
       "audit": "./media/correct-simpleD-v152/FreeNoise41_case13_full247_actual_NN_audit.json",
@@ -163,5 +199,5 @@
   ],
   "original14_complete_count": 2,
   "quality_passed_count": 0,
-  "updated_unix": 1794767799.6594698
+  "updated_unix": 1794767970.114998
 }
