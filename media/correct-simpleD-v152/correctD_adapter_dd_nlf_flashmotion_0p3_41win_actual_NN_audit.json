@@ -1,0 +1,45 @@
+{
+  "method": "dd_nlf_flashmotion_0p3_41win",
+  "kind": "flashmotion",
+  "alpha": 0.3,
+  "source_range": [
+    259,
+    339
+  ],
+  "frames": 81,
+  "native_context_frames": 41,
+  "explicit_frozen_DD81_teacher_protocol_not_pure_DD_replay": true,
+  "actual_source_DWPose_NLF_same_frame_auxiliary_owned": true,
+  "approximate_calibration_not_exact_legacy_projection": "Saved first DD frame intrinsic calibration held constant across all81 frames. Original per-frame Pi3X K/pose tensors not retained; this is explicitly an approximate pose auxiliary, NOT asserted identical to historical DD geometry.",
+  "actual50_DD_forwards_per_context": true,
+  "actual_global_decode_all81_RGB_independently_rechecked": true,
+  "actual_native_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correctD_pose_NLF_comparisons_v214/dd_nlf_flashmotion_0p3_41win/complete/global_native_RGB.mkv",
+  "actual_native_video_SHA256": "1e75a4323dfc0fee853fb4441619b55efbd2d23922d65db48dfe95f0ac07d51a",
+  "no_final_RGB_edits_or_interpolation": true,
+  "overall_quality_passed": false,
+  "detailed_source_motion_and_flicker_review_pending": true,
+  "window_audits": [
+    {
+      "index": 0,
+      "actual50_DD_forwards": true,
+      "actual_target_prior_and_source_input_exact_C176": true,
+      "source_owned_approximate_3D_auxiliary": true,
+      "actual_SlowAdapter_forward_calls": 1,
+      "control_VAE_encode_calls": 1,
+      "actual_DD_hidden_state_injections": 1500,
+      "static_adapter_states_reused_across50steps_not50_aux_network_forwards": true
+    },
+    {
+      "index": 1,
+      "actual50_DD_forwards": true,
+      "actual_target_prior_and_source_input_exact_C176": true,
+      "source_owned_approximate_3D_auxiliary": true,
+      "actual_SlowAdapter_forward_calls": 1,
+      "control_VAE_encode_calls": 1,
+      "actual_DD_hidden_state_injections": 1500,
+      "static_adapter_states_reused_across50steps_not50_aux_network_forwards": true
+    }
+  ],
+  "time": 1794773968.742679,
+  "display_only_original_source_FPS_PTS_no_interpolation": true
+}
