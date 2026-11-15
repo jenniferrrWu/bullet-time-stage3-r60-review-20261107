@@ -26,7 +26,7 @@
         [...table.querySelectorAll('tbody tr')].forEach((row,i)=>{const job=data.original14_status[i];if(job)text(row.lastElementChild,job.complete?'固定DD81参考的完整修复版已生成，动作与闪动待验收':'该适配组合的完整修复版尚未生成；正在按修正输入测试');});
       }
     }
-    text(document.getElementById('latest-count'),`原28项中的原窗口VAE解码修正版：${data.native_decoder_corrected_count||0}/28，使用相同DD采样结果、不重复计数；复杂舞蹈原14方案：14条完整候选，新增${(data.additional_complex_results||[]).length}条完整研究方案；正确D原14适配组合的固定DD81参考修复版：${data.original14_complete_count}/14；D原生81帧额外对照${data.additional_native81_results.length}条。下方还保留原纯DD分段基线及修复版对照，修复版不重复计数。选错的室内舞蹈结果不计数。整体通过仍为0。`);
+    text(document.getElementById('latest-count'),`原28项中的原窗口VAE解码修正版：${data.native_decoder_corrected_count||0}/28，使用相同DD采样结果、不重复计数；复杂舞蹈原14方案：14条完整候选，新增${(data.additional_complex_results||[]).length}条完整研究方案；正确D原14适配组合的固定DD81参考修复版：${data.original14_complete_count}/14；D额外完整对照／强度诊断${data.additional_native81_results.length}条。下方还保留原纯DD分段基线及修复版对照，修复版不重复计数。选错的室内舞蹈结果不计数。整体通过仍为0。`);
     text(document.getElementById('current-title'),'正确两例的完整结果与修复进度');
     text(document.getElementById('current-summary'),'当前验收对象：原屋顶女性复杂舞蹈，以及选项D白衬衣绿植背景的女性半身。此前室内舞蹈case12选错，已归为故障研究记录。完整生成、彩噪消除、动作一致与闪动验收分别记录。');
     const cards=document.querySelectorAll('#current-cases article');if(cards[1])cards[1].hidden=true;
