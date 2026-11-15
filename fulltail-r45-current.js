@@ -98,12 +98,20 @@
           detail.append(image); diagnostics.append(detail);
         }
         for (const candidate of [...(data.repair_diagnosis.latest_full_DD_candidates || []), ...(data.repair_diagnosis.video_prior_full_qualifications || [])]) {
-          const hed = candidate.protocol === 'official_DD_current_I2V_prior_current_HED_full_v62';
-          const cannyTile = candidate.protocol === 'official_DD_current_I2V_prior_current_Canny_Tile_full_v67';
-          const latest = hed || cannyTile || candidate.protocol === 'official_DD_target_video_prior_current_I2V_tailfixed_v53';
-          const methodValid = hed ? candidate.native_context_frames === 41 && ((candidate.method === 'dd_videox_hed_0p2_41win' && candidate.adapter_strength === 0.2) || (candidate.method === 'dd_videox_hed_0p5_41win' && candidate.adapter_strength === 0.5)) : cannyTile ? candidate.native_context_frames === 41 && ['dd_videox_canny_0p2_41win', 'dd_videox_tile_0p2_41win'].includes(candidate.method) && candidate.adapter_strength === 0.2 : candidate.method === `dd_${candidate.native_context_frames}win`;
+          const original = {
+            dd_21win: [53, 21, null, null], dd_41win: [53, 41, null, null],
+            wanmove_0p35_21win: [70, 21, 'wanmove', 0.35], wanmove_0p1_21win: [70, 21, 'wanmove', 0.1], motion_i2v_0p35_21win: [70, 21, 'motion', 0.35],
+            wanmove_0p35_41win: [70, 41, 'wanmove', 0.35], wanmove_0p1_41win: [70, 41, 'wanmove', 0.1], motion_i2v_0p35_41win: [70, 41, 'motion', 0.35],
+            dd_videox_hed_0p2_41win: [62, 41, 'controlnet', 0.2], dd_videox_hed_0p5_41win: [62, 41, 'controlnet', 0.5],
+            dd_videox_canny_0p2_41win: [67, 41, 'controlnet', 0.2], dd_videox_tile_0p2_41win: [67, 41, 'controlnet', 0.2],
+            dd_pose_0p5_41win: [72, 41, 'pose', 0.5], dd_nlf_flashmotion_0p3_41win: [72, 41, 'flashmotion', 0.3]
+          }[candidate.method];
+          const protocols = {53: 'official_DD_target_video_prior_current_I2V_tailfixed_v53', 62: 'official_DD_current_I2V_prior_current_HED_full_v62', 67: 'official_DD_current_I2V_prior_current_Canny_Tile_full_v67', 70: 'official_DD_current_I2V_prior_original_track_methods_full_v70', 72: 'official_DD_current_I2V_prior_current_pose_NLF_full_v72'};
+          const old = candidate.protocol === 'official_DD_target_video_prior_strength006_v35';
+          const latest = !old;
+          const methodValid = old ? candidate.method === `dd_${candidate.native_context_frames}win` : candidate.case === 'case13' && original && candidate.protocol === protocols[original[0]] && candidate.native_context_frames === original[1] && candidate.adapter_kind === original[2] && (candidate.adapter_strength ?? null) === original[3];
           const spec = data.cases[candidate.case];
-          if (!spec || !['official_DD_target_video_prior_strength006_v35', 'official_DD_target_video_prior_current_I2V_tailfixed_v53', 'official_DD_current_I2V_prior_current_HED_full_v62', 'official_DD_current_I2V_prior_current_Canny_Tile_full_v67'].includes(candidate.protocol) ||
+          if (!spec || !methodValid ||
               candidate.source_and_actual_NN_output_audit_verified !== true || candidate.overall_quality_passed !== false ||
               candidate.frames !== spec.real_frames || candidate.endpoint_sha256 !== spec.endpoint_sha256 ||
               !Array.isArray(candidate.source_range) || candidate.source_range.length !== 2 ||
@@ -112,10 +120,10 @@
               !methodValid || candidate.denoising_strength !== 0.06 || !mediaPath(candidate.video)) continue;
           if (latest) latestByCase[candidate.case]++;
           const detail = element(latest ? 'article' : 'details');
-          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.native_context_frames}帧窗${hed ? ' · HED ' + candidate.adapter_strength : cannyTile ? ' · ' + (candidate.method.includes('canny') ? 'Canny' : 'Tile') + ' ' + candidate.adapter_strength : ''} · 完整${candidate.frames}帧 · ${latest ? '整体待验收' : '画质未通过'}`));
+          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${latest ? '整体待验收' : '画质未通过'}`));
           detail.append(element('p', latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
           detail.append(video(candidate.video));
-          for (const [path, label] of [[candidate.audit_file, '查看实际输出核验记录'], [candidate.visual_review_file, '查看画质缺陷记录']]) if (mediaPath(path)) {
+          for (const [path, label] of [[candidate.audit_file, '查看实际输出核验记录'], [candidate.visual_review_file, '查看画质缺陷记录'], [candidate.overview_file, '全部实际源帧彩噪总览']]) if (mediaPath(path)) {
             const link = element('a', label); link.href = path; detail.append(link, element('br'));
           }
           for (const [index, path] of (candidate.frame_pages || []).entries()) if (mediaPath(path)) {

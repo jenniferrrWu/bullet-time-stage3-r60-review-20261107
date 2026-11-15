@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T07:29:08.956822+00:00",
+  "updated_at": "2026-11-15T08:24:36.847282+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
@@ -1072,7 +1072,9 @@
       "较新HED 0.2/0.5两条也已完成原片f845–1091全部247帧，保持原强度及每窗50步，并通过逐帧源索引/实际NN潜变量/当前控制条件/EOF核验。已检查全部输出帧，未见旧满屏彩噪；背景、曝光及详细动作一致性仍待验收。含新视频先验，不计原28项通过数。",
       "室内389帧连续辅助输入仍有背景放大，未用于整批放行；静态HED与姿态混合条件导致服装及人体错误，已拒绝。正在验证当前首帧与独立原始外观参考共同输入的完整389帧连续链。",
       "较新Canny/Tile原强度0.2两条也已完成原片f845–1091全部247帧，通过完整实际DD输出及EOF核验并检查全部帧；未见满屏彩噪，整体动作与背景细节待验收，不计原28项通过数。",
-      "室内仅用原始外观参考的另一条完整389帧对照，在f411后出现双人残影及窗口突跳，已拒绝用于最终DD；当前连续首帧加独立外观参考的完整链正在检查后段。"
+      "室内仅用原始外观参考的另一条完整389帧对照，在f411后出现双人残影及窗口突跳，已拒绝用于最终DD；当前连续首帧加独立外观参考的完整链正在检查后段。",
+      "复杂case13的原14方案已按新视频先验流程全部完成真实247帧、原强度/原生窗口/每窗50步及独立实际NN输出核验；全部源帧总览与真实EOF彩噪检查均未见原满屏彩噪。较小总览仅用于整屏彩噪检查，详细动作、面部、背景与解剖一致性仍待验收，不能计为整体画质通过。",
+      "简单case12的完整389帧连续辅助输入未见满屏彩噪/双人残影，但背景仍有位移。当前只做DD21/41两条完整基线实验，测量DD固定视角条件的实际响应；其余方法尚未放行。"
     ],
     "evidence": [
       {
@@ -1265,6 +1267,9 @@
       {
         "case": "case13",
         "method": "dd_21win",
+        "method_label": "DD · 21 帧窗",
+        "adapter_kind": null,
+        "adapter_strength": null,
         "video": "./media/recovery-20261114/prior_v53__dd_21win__case13_full247.mp4",
         "frames": 247,
         "source_range": [
@@ -1281,7 +1286,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v53__dd_21win__case13_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v53__dd_21win__case13_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v53__dd_21win__case13_color_review_v89.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v53__dd_21win__case13_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v53__dd_21win__case13_all_real_frames_page_01.jpg",
@@ -1297,7 +1302,121 @@
       },
       {
         "case": "case13",
+        "method": "wanmove_0p35_21win",
+        "method_label": "Wan-Move 官方轨迹函数 α0.35 · 21 帧窗",
+        "adapter_kind": "wanmove",
+        "adapter_strength": 0.35,
+        "video": "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+        "native_context_frames": 21,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Background/exposure/texture drift remain and anatomical side semantics during body rotation still require fidelity review.",
+          "Independent target-video prior and official DD input-video denoising .06 recipe; original Wan-Move inference feature functions, not retrained Wan-Move model."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
+        "method": "wanmove_0p1_21win",
+        "method_label": "Wan-Move α0.1 · 21 帧窗",
+        "adapter_kind": "wanmove",
+        "adapter_strength": 0.1,
+        "video": "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+        "native_context_frames": 21,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains.",
+          "New independent target-video prior and denoising .06 recipe; original method strengths/native budgets retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v70__wanmove_0p1_21win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
+        "method": "motion_i2v_0p35_21win",
+        "method_label": "Motion-I2V ForwardWarp α0.35 · 21 帧窗",
+        "adapter_kind": "motion",
+        "adapter_strength": 0.35,
+        "video": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+        "native_context_frames": 21,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains.",
+          "New independent target-video prior and denoising .06 recipe; original method strengths/native budgets retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_21win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
         "method": "dd_41win",
+        "method_label": "DD · 41 帧窗",
+        "adapter_kind": null,
+        "adapter_strength": null,
         "video": "./media/recovery-20261114/prior_v53__dd_41win__case13_full247.mp4",
         "frames": 247,
         "source_range": [
@@ -1314,7 +1433,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v53__dd_41win__case13_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v53__dd_41win__case13_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v53__dd_41win__case13_color_review_v89.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v53__dd_41win__case13_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v53__dd_41win__case13_all_real_frames_page_01.jpg",
@@ -1330,7 +1449,120 @@
       },
       {
         "case": "case13",
+        "method": "wanmove_0p35_41win",
+        "method_label": "Wan-Move α0.35 · 41 帧窗",
+        "adapter_kind": "wanmove",
+        "adapter_strength": 0.35,
+        "video": "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains.",
+          "New independent target-video prior and denoising .06 recipe; original method strengths/native budgets retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v70__wanmove_0p35_41win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
+        "method": "wanmove_0p1_41win",
+        "method_label": "Wan-Move α0.1 · 41 帧窗",
+        "adapter_kind": "wanmove",
+        "adapter_strength": 0.1,
+        "video": "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains.",
+          "New independent target-video prior and denoising .06 recipe; original method strengths/native budgets retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
+        "method": "motion_i2v_0p35_41win",
+        "method_label": "Motion-I2V ForwardWarp α0.35 · 41 帧窗",
+        "adapter_kind": "motion",
+        "adapter_strength": 0.35,
+        "video": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains.",
+          "New independent target-video prior and denoising .06 recipe; original method strengths/native budgets retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v70__motion_i2v_0p35_41win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
         "method": "dd_videox_hed_0p2_41win",
+        "method_label": "DD + VideoX HED 0.2 · 41 帧窗",
+        "adapter_kind": "controlnet",
         "adapter_strength": 0.2,
         "video": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_full247.mp4",
         "frames": 247,
@@ -1348,7 +1580,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_color_review_v89.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_01.jpg",
@@ -1365,6 +1597,8 @@
       {
         "case": "case13",
         "method": "dd_videox_hed_0p5_41win",
+        "method_label": "DD + VideoX HED 0.5 · 41 帧窗",
+        "adapter_kind": "controlnet",
         "adapter_strength": 0.5,
         "video": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_full247.mp4",
         "frames": 247,
@@ -1382,7 +1616,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_color_review_v89.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_01.jpg",
@@ -1399,6 +1633,8 @@
       {
         "case": "case13",
         "method": "dd_videox_canny_0p2_41win",
+        "method_label": "DD + VideoX Canny 0.2 · 41 帧窗",
+        "adapter_kind": "controlnet",
         "adapter_strength": 0.2,
         "video": "./media/recovery-20261114/prior_v67__dd_videox_canny_0p2_41win__case13_full247.mp4",
         "frames": 247,
@@ -1416,7 +1652,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v67__dd_videox_canny_0p2_41win__case13_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v67__dd_videox_canny_0p2_41win__case13_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v67__dd_videox_canny_0p2_41win__case13_color_review_v89.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v67__dd_videox_canny_0p2_41win__case13_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v67__dd_videox_canny_0p2_41win__case13_all_real_frames_page_01.jpg",
@@ -1433,6 +1669,8 @@
       {
         "case": "case13",
         "method": "dd_videox_tile_0p2_41win",
+        "method_label": "DD + VideoX Tile 0.2 · 41 帧窗",
+        "adapter_kind": "controlnet",
         "adapter_strength": 0.2,
         "video": "./media/recovery-20261114/prior_v67__dd_videox_tile_0p2_41win__case13_full247.mp4",
         "frames": 247,
@@ -1450,7 +1688,7 @@
         "common_fullscreen_confetti_observed": false,
         "all_real_frame_contact_sheets_reviewed": true,
         "audit_file": "./media/recovery-20261114/prior_v67__dd_videox_tile_0p2_41win__case13_verified_audit.json",
-        "visual_review_file": "./media/recovery-20261114/prior_v67__dd_videox_tile_0p2_41win__case13_visual_review.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v67__dd_videox_tile_0p2_41win__case13_color_review_v89.json",
         "frame_pages": [
           "./media/recovery-20261114/prior_v67__dd_videox_tile_0p2_41win__case13_all_real_frames_page_00.jpg",
           "./media/recovery-20261114/prior_v67__dd_videox_tile_0p2_41win__case13_all_real_frames_page_01.jpg",
@@ -1463,6 +1701,80 @@
           "Background/texture and exposure drift remain; detailed action and fixed-view fidelity pending.",
           "New independent target-video prior and official denoising .06 recipe, not original pure-noise DD."
         ]
+      },
+      {
+        "case": "case13",
+        "method": "dd_pose_0p5_41win",
+        "method_label": "DD + 投影关节残差 β0.5 · 41 帧窗",
+        "adapter_kind": "pose",
+        "adapter_strength": 0.5,
+        "video": "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_current_pose_NLF_full_v72",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains.",
+          "New independent target-video prior and denoising .06 recipe; original method strengths/native budgets retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v72__dd_pose_0p5_41win__case13_all247_overview.jpg"
+      },
+      {
+        "case": "case13",
+        "method": "dd_nlf_flashmotion_0p3_41win",
+        "method_label": "DD + NLF 轮廓 + FlashMotion 0.3 · 41 帧窗",
+        "adapter_kind": "flashmotion",
+        "adapter_strength": 0.3,
+        "video": "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_current_pose_NLF_full_v72",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_color_review_v89.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Small background/exposure/texture drift remains; detailed fidelity pending.",
+          "Independent target-video prior .06 recipe; original NLF/FlashMotion strength .3, native41 and actual50DD calls retained."
+        ],
+        "overview_file": "./media/recovery-20261114/prior_v72__dd_nlf_flashmotion_0p3_41win__case13_all247_overview.jpg"
       }
     ]
   }

@@ -1,0 +1,229 @@
+{
+  "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+  "complete_source_eof": true,
+  "frames": 247,
+  "source_range": [
+    845,
+    1091
+  ],
+  "actual_selected_Stage2_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+  "method": "wanmove_0p35_21win",
+  "native_context_frames": 21,
+  "official_video_to_video_denoising_strength": 0.06,
+  "original_Stage2_chain_start_preserved": true,
+  "all_actual_DD_native_calls_CFG1_LoRA1_300layers_seed_and50steps_verified": true,
+  "all_original_source_and_condition_PIL_hashes_verified": true,
+  "all_current_camera_NN_tensors_exactly_canonical": true,
+  "all_actual_source_NN_features_exact_original_track_adapter_reconstructed": true,
+  "all_actual_target_noise_and_prior_inputs_exact_paired_plain_DD": true,
+  "original_nonzero_adapter_actual_final_NN_effect_verified": true,
+  "all_target_prior_RGB_source_times_and_exact_initial_noise_ownership_verified": true,
+  "all_final_DD_latents_differ_from_teacher_prior_and_are_actual_NN_outputs": true,
+  "actual_global_latent_assembly_and_all_lossless_RGB_hashes_verified": true,
+  "all_actual_source_frames_unskipped_through_EOF": true,
+  "native_denoise_body_unchanged_official_video_prior_API_used": true,
+  "source_time_offset_training21_verified": true,
+  "no_postdecode_RGB_edits_or_interpolation": true,
+  "independent_target_video_prior_approximate_not_ground_truth": true,
+  "window_audits": [
+    {
+      "index": 0,
+      "source_range": [
+        845,
+        865
+      ],
+      "actual_seed": 42,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "99be4f0f6e9e4719c74ab42ed6d864296baf2d46aec2fa101d373ca0b57f1507",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.16370129585266113,
+      "current_anchor_source_index": 845
+    },
+    {
+      "index": 1,
+      "source_range": [
+        865,
+        885
+      ],
+      "actual_seed": 43,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "85459fdf465d9b99c6f3963676e187773dedda6d5310f01bd23843d5376a5194",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1565396636724472,
+      "current_anchor_source_index": 865
+    },
+    {
+      "index": 2,
+      "source_range": [
+        885,
+        905
+      ],
+      "actual_seed": 44,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "2cc6eb7b9cab12f6670d3df3cebf64cf38d38e4c7c8bccba39909f3a89d3686f",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1540418416261673,
+      "current_anchor_source_index": 885
+    },
+    {
+      "index": 3,
+      "source_range": [
+        905,
+        925
+      ],
+      "actual_seed": 45,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "a8793e9ae12bf7ba768ca7eeb8e23af748bd7249e5631930563433acf38d3c09",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1602633148431778,
+      "current_anchor_source_index": 905
+    },
+    {
+      "index": 4,
+      "source_range": [
+        925,
+        945
+      ],
+      "actual_seed": 46,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "883e6615b329118d95ed05cc70bba8bfb561340c1a6d716902cb4b60c1a4aaad",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1696399450302124,
+      "current_anchor_source_index": 925
+    },
+    {
+      "index": 5,
+      "source_range": [
+        945,
+        965
+      ],
+      "actual_seed": 47,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "97b23913067c129ed7ab6e904b006820d74efbf0efbce9342f7195452705b8f0",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15991182625293732,
+      "current_anchor_source_index": 945
+    },
+    {
+      "index": 6,
+      "source_range": [
+        965,
+        985
+      ],
+      "actual_seed": 48,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "4b4ed6d8e53f872f5a99eb6e99a66004f9085840f62a22ef1add4b852c70ed12",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15904104709625244,
+      "current_anchor_source_index": 965
+    },
+    {
+      "index": 7,
+      "source_range": [
+        985,
+        1005
+      ],
+      "actual_seed": 49,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "ea8ea882af8f28f3d3f9ad3e610055f7a7f789e1f71b704b1c6f26f6b9c7b8c7",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15927377343177795,
+      "current_anchor_source_index": 985
+    },
+    {
+      "index": 8,
+      "source_range": [
+        1005,
+        1025
+      ],
+      "actual_seed": 50,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "8aac55324039e93d96f7bc2ba5869f9120e47ac23937c82240683b9ffc3401aa",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1578141748905182,
+      "current_anchor_source_index": 1005
+    },
+    {
+      "index": 9,
+      "source_range": [
+        1025,
+        1045
+      ],
+      "actual_seed": 51,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "3a9202c5aa50a1baaea622f8200a1ec0a3a685e359d722e59c1bf2389959ae74",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15353213250637054,
+      "current_anchor_source_index": 1025
+    },
+    {
+      "index": 10,
+      "source_range": [
+        1045,
+        1065
+      ],
+      "actual_seed": 52,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "b28d50558b875589022071bd9411e2849dcedb665a10d3c200a9aaef38771173",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15314683318138123,
+      "current_anchor_source_index": 1045
+    },
+    {
+      "index": 11,
+      "source_range": [
+        1065,
+        1085
+      ],
+      "actual_seed": 53,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "9eea6610fb9e9d30acf98278c8d2fae5dbdf72823447e5637dd01c374cfe758c",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1578049659729004,
+      "current_anchor_source_index": 1065
+    },
+    {
+      "index": 12,
+      "source_range": [
+        1085,
+        1091
+      ],
+      "actual_seed": 54,
+      "actual_DD_calls": 50,
+      "native_frames": 21,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "9c064b0a301cbe8798f57d6bc945435a4e3d58b293e8379dde368be93e701ace",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.1301943063735962,
+      "current_anchor_source_index": 1085
+    }
+  ],
+  "padded_frames_not_counted_as_source_outputs": 14,
+  "public_video": "./media/recovery-20261114/prior_v70__wanmove_0p35_21win__case13_full247.mp4",
+  "quality": "pending",
+  "verified_unix": 1794727411.7202663
+}

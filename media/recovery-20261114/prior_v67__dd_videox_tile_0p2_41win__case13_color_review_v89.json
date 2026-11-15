@@ -1,0 +1,48 @@
+{
+  "method": "dd_videox_tile_0p2_41win",
+  "case": "case13",
+  "frames": 247,
+  "source_range": [
+    845,
+    1091
+  ],
+  "all_actual_source_frame_contact_sheets_visually_inspected": true,
+  "actual_source_EOF1091_full_resolution_visually_inspected": true,
+  "all_source_RGB_latent_ownership_and_full_EOF_strict_verified": true,
+  "common_fullscreen_colored_confetti_observed": false,
+  "overall_quality_passed": false,
+  "overall_quality_state": "pending_fidelity_review",
+  "remaining_defects_or_limits": [
+    "Background/texture and exposure drift remain; detailed action and fixed-view fidelity pending.",
+    "New independent target-video prior and official denoising .06 recipe, not original pure-noise DD."
+  ],
+  "protocol": "official_DD_current_I2V_prior_current_Canny_Tile_full_v67",
+  "no_final_DD_RGB_edits_or_interpolation": true,
+  "all_reviewed_page_SHA256": [
+    {
+      "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/current_Canny_Tile_full_case13_v67/runs/dd_videox_tile_0p2_41win/case13/full_color_review/all_real_frames_page_00.jpg",
+      "SHA256": "83af2aa279a61d8bdbf8695210baf761d10a7837480bfbdfff27c2db507bb922"
+    },
+    {
+      "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/current_Canny_Tile_full_case13_v67/runs/dd_videox_tile_0p2_41win/case13/full_color_review/all_real_frames_page_01.jpg",
+      "SHA256": "5c01515767e3265fe4ff1bfb26a06d50cfc8c056261b87d3ba83e275209051a8"
+    },
+    {
+      "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/current_Canny_Tile_full_case13_v67/runs/dd_videox_tile_0p2_41win/case13/full_color_review/all_real_frames_page_02.jpg",
+      "SHA256": "cf3ed2aabd21d31dde4cdef243de472286285dba2116b4414b440bc898f66ac9"
+    },
+    {
+      "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/current_Canny_Tile_full_case13_v67/runs/dd_videox_tile_0p2_41win/case13/full_color_review/all_real_frames_page_03.jpg",
+      "SHA256": "ed6b2afd6455b5c4910698896883eff217fc0a3c29d6fa70f6413ebf1801f84f"
+    },
+    {
+      "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/current_Canny_Tile_full_case13_v67/runs/dd_videox_tile_0p2_41win/case13/full_color_review/all_real_frames_page_04.jpg",
+      "SHA256": "e650b8668a0ba20d966d37a79bf5378fc2ae1c64c88fe367b328f30f64741e8b"
+    },
+    {
+      "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/current_Canny_Tile_full_case13_v67/runs/dd_videox_tile_0p2_41win/case13/full_color_review/all_real_frames_page_05.jpg",
+      "SHA256": "f71d0c2784f1e02b3be38bd6f386b920b4737d9716ae32f3ed5e1b0c8cd09469"
+    }
+  ],
+  "review_recorded_unix": 1794726831.7824554
+}

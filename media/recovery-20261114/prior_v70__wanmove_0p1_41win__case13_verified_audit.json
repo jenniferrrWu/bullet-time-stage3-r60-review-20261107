@@ -1,0 +1,139 @@
+{
+  "protocol": "official_DD_current_I2V_prior_original_track_methods_full_v70",
+  "complete_source_eof": true,
+  "frames": 247,
+  "source_range": [
+    845,
+    1091
+  ],
+  "actual_selected_Stage2_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+  "method": "wanmove_0p1_41win",
+  "native_context_frames": 41,
+  "official_video_to_video_denoising_strength": 0.06,
+  "original_Stage2_chain_start_preserved": true,
+  "all_actual_DD_native_calls_CFG1_LoRA1_300layers_seed_and50steps_verified": true,
+  "all_original_source_and_condition_PIL_hashes_verified": true,
+  "all_current_camera_NN_tensors_exactly_canonical": true,
+  "all_actual_source_NN_features_exact_original_track_adapter_reconstructed": true,
+  "all_actual_target_noise_and_prior_inputs_exact_paired_plain_DD": true,
+  "original_nonzero_adapter_actual_final_NN_effect_verified": true,
+  "all_target_prior_RGB_source_times_and_exact_initial_noise_ownership_verified": true,
+  "all_final_DD_latents_differ_from_teacher_prior_and_are_actual_NN_outputs": true,
+  "actual_global_latent_assembly_and_all_lossless_RGB_hashes_verified": true,
+  "all_actual_source_frames_unskipped_through_EOF": true,
+  "native_denoise_body_unchanged_official_video_prior_API_used": true,
+  "source_time_offset_training21_verified": true,
+  "no_postdecode_RGB_edits_or_interpolation": true,
+  "independent_target_video_prior_approximate_not_ground_truth": true,
+  "window_audits": [
+    {
+      "index": 0,
+      "source_range": [
+        845,
+        885
+      ],
+      "actual_seed": 42,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "7314817dc56ff4905b5276699e2473714bf4d310eed854e8cbe616032acad672",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15914803743362427,
+      "current_anchor_source_index": 845
+    },
+    {
+      "index": 1,
+      "source_range": [
+        885,
+        925
+      ],
+      "actual_seed": 43,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "6c13552caf8661d94b1ee6c6e76ed67671af8cba410cf7f59bf0c47537c7fb37",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15627165138721466,
+      "current_anchor_source_index": 885
+    },
+    {
+      "index": 2,
+      "source_range": [
+        925,
+        965
+      ],
+      "actual_seed": 44,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "211fbc0deaac1277ce2bf1ef664e5c61e14e67cf6699d4f79051a2c302bd669a",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.16402733325958252,
+      "current_anchor_source_index": 925
+    },
+    {
+      "index": 3,
+      "source_range": [
+        965,
+        1005
+      ],
+      "actual_seed": 45,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "25196ee2266cd9c4f0994c7e168c21acd63f061cb7701286ef4bf2a5fdef3e4b",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15729941427707672,
+      "current_anchor_source_index": 965
+    },
+    {
+      "index": 4,
+      "source_range": [
+        1005,
+        1045
+      ],
+      "actual_seed": 46,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "183391bc343b8678ac1f2d0edbdcf8ea22eb6957980640ddce872c0407fad602",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.155516117811203,
+      "current_anchor_source_index": 1005
+    },
+    {
+      "index": 5,
+      "source_range": [
+        1045,
+        1085
+      ],
+      "actual_seed": 47,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "354c7496eb37d203043eabd40d1eb73205fa0b40709475387d12ef8d6fa7d0ce",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.15493489801883698,
+      "current_anchor_source_index": 1045
+    },
+    {
+      "index": 6,
+      "source_range": [
+        1085,
+        1091
+      ],
+      "actual_seed": 48,
+      "actual_DD_calls": 50,
+      "native_frames": 41,
+      "first_sigma": 0.24193546175956726,
+      "actual_target_prior_noise_ownership_exact": true,
+      "final_latents_SHA256": "7d0115ea59e1fa10a1ad5e275b41f9bd31eec7a2d6978e12c239b9cd4c09f329",
+      "final_DD_vs_encoded_teacher_prior_nonfirst_RMS": 0.10746940225362778,
+      "current_anchor_source_index": 1085
+    }
+  ],
+  "padded_frames_not_counted_as_source_outputs": 34,
+  "public_video": "./media/recovery-20261114/prior_v70__wanmove_0p1_41win__case13_full247.mp4",
+  "quality": "pending",
+  "verified_unix": 1794728949.3050992
+}
