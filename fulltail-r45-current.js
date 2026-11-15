@@ -85,6 +85,7 @@
       const payload = JSON.stringify([data.summary, data.cases, data.methods, data.jobs, data.repair_diagnosis, data.repair_campaign]);
       if (payload === lastPayload) return;
       let latestByCase = {case13: 0, case12: 0};
+      const latestMethods = new Map();
       if (repairNode && data.repair_diagnosis) {
         const fragment = document.createDocumentFragment();
         const diagnostics = element('details'); diagnostics.append(element('summary', '问题原因、对照实验及未通过记录'));
@@ -119,9 +120,10 @@
               !candidate.source_range.every((v, i) => v === spec.source_range[i]) ||
               ![21, 41].includes(candidate.native_context_frames) ||
               !methodValid || candidate.denoising_strength !== 0.06 || !mediaPath(candidate.video)) continue;
-          if (latest) latestByCase[candidate.case]++;
+          if (latest) { latestByCase[candidate.case]++; latestMethods.set(candidate.case + ':' + candidate.method, candidate); }
           const detail = element(latest ? 'article' : 'details');
-          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '较新尾段续接修复候选' : '新视频先验流程'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${case12Baseline ? '背景漂移未通过，人物一致性亦有偏差' : latest ? '整体待验收' : '画质未通过'}`));
+          if (latest) detail.id = 'latest-' + candidate.case + '-' + candidate.method;
+          detail.append(element(latest ? 'h3' : 'summary', `${spec.label} · ${latest ? '新版完整视频已生成' : '较早视频先验试验'} · ${candidate.method_label || candidate.method} · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · ${case12Baseline ? '背景漂移未通过，人物一致性亦有偏差' : latest ? '整体待验收' : '画质未通过'}`));
           detail.append(element('p', case12Baseline ? '已核验完整389帧实际DD输出，全部帧总览及真实末帧均未见满屏彩噪；但背景/相机仍有位移，人物朝向、发型亦有偏差，整体画质未通过。其余12个方案尚未放行。含独立近似NN视频先验，DD每窗50步。' : latest ? '已核验完整247帧实际DD输出并检查全部帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。仍有轻微背景/纹理漂移。含独立目标视角视频先验，DD每窗50步；整体待验收，不计原14方案通过数。' : '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
           detail.append(video(candidate.video));
           for (const [path, label] of [[candidate.audit_file, '查看实际输出核验记录'], [candidate.visual_review_file, '查看画质缺陷记录'], [candidate.overview_file, '全部实际源帧彩噪总览']]) if (mediaPath(path)) {
@@ -134,7 +136,25 @@
           if (latest) latestGrid.append(detail); else fragment.append(detail);
         }
         const latestCount = document.getElementById('latest-count');
-        if (latestCount) latestCount.textContent = `最新流程完整结果：复杂 case13 ${latestByCase.case13} / 14 条，简单 case12 ${latestByCase.case12} / 14 条；复杂case待验收，简单case两条背景漂移未通过。`;
+        if (latestCount) latestCount.textContent = `新版完整视频已生成 ${latestByCase.case13 + latestByCase.case12} / 28 条：复杂 case13 ${latestByCase.case13} / 14 条，简单 case12 ${latestByCase.case12} / 14 条；整体画质通过 0 / 28。`;
+        const statusWrap = element('div', undefined, 'wrap');
+        const statusTable = element('table'); statusTable.id = 'latest-method-status';
+        const head = element('thead'); const header = element('tr');
+        for (const label of ['原14方案', '复杂舞蹈 case13 · 247帧', '简单 case12 · 389帧']) header.append(element('th', label));
+        head.append(header); const body = element('tbody');
+        for (const method of data.methods) {
+          const row = element('tr'); row.append(element('th', method.label));
+          for (const id of ['case13', 'case12']) {
+            const cell = element('td'); const candidate = latestMethods.get(id + ':' + method.key);
+            if (candidate) {
+              cell.append(element('p', `已生成完整${candidate.frames}帧；` + (id === 'case12' ? '画质未通过' : '画质待验收'), id === 'case12' ? 'failed' : 'state'));
+              const link = element('a', '查看已生成视频'); link.href = '#latest-' + id + '-' + method.key; cell.append(link);
+            } else cell.append(element('p', '尚未生成新版完整视频；待基础修复验证后再跑', 'state'));
+            row.append(cell);
+          }
+          body.append(row);
+        }
+        statusTable.append(head, body); statusWrap.append(statusTable); fragment.insertBefore(statusWrap, latestGrid);
         const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = data.repair_diagnosis.prior_bad_campaign || './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
         repairNode.replaceChildren(fragment);
       }
@@ -202,7 +222,7 @@
       casesNode.replaceChildren(caseCards); methodsNode.replaceChildren(rows);
       lastPayload = payload;
     } catch (error) {
-      summary.textContent = '读取本轮状态失败：' + error.message + '。以下历史结果不代表本轮进度。';
+      summary.textContent = '实时状态刷新失败：' + error.message + '。下方保留发布时的完整结果快照，可直接查看已生成视频；更新时间见上方。';
     }
   }
   refresh(); setInterval(refresh, 60000);
