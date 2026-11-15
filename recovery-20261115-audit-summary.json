@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-15T01:21:15.253675+00:00",
+  "updated_at": "2026-11-15T01:29:38.409427+00:00",
   "campaign": "reference_owned_latents_v13",
   "original_methods": 14,
   "cases": 2,
   "actual_native_window_jobs": 302,
   "required_results": 28,
   "independently_verified_source_EOF_results": 28,
-  "common_noise_absent_reviewed_results": 24,
+  "common_noise_absent_reviewed_results": 26,
   "overall_visual_quality_passed_results": 0,
-  "overall_visual_quality_failed_results": 26,
+  "overall_visual_quality_failed_results": 28,
   "all28_EOF_verified": true,
   "all28_common_noise_absent_reviewed": false,
   "all28_overall_visual_quality_passed": false,
@@ -475,11 +475,11 @@
       "sampled_native_windows": 10,
       "required_native_windows": 10,
       "original_source_EOF_independently_verified": true,
-      "common_fullscreen_noise_review": "pending",
-      "overall_visual_quality": "pending",
+      "common_fullscreen_noise_review": "absent",
+      "overall_visual_quality": "failed",
       "selected_Stage2_SHA256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
       "public_video": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case12_full389.mp4",
-      "review_note": ""
+      "review_note": "全部389帧缩略图未见旧整屏彩噪；中后段房间/机位跳变和重影，实际末帧头部缺失、腿部畸变。"
     },
     {
       "method": "wanmove_0p35_41win",
@@ -492,11 +492,11 @@
       "sampled_native_windows": 7,
       "required_native_windows": 7,
       "original_source_EOF_independently_verified": true,
-      "common_fullscreen_noise_review": "pending",
-      "overall_visual_quality": "pending",
+      "common_fullscreen_noise_review": "absent",
+      "overall_visual_quality": "failed",
       "selected_Stage2_SHA256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
       "public_video": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case13_full247.mp4",
-      "review_note": ""
+      "review_note": "全部247帧缩略图未见旧整屏彩噪；窗口交界重影，实际末帧仍抬手且腿/地垫关系异常，源末帧动作不符。"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T01:21:15.154544+00:00",
+  "updated_at": "2026-11-15T01:29:38.270814+00:00",
   "phase": "reference_owned_native_latents_v13",
-  "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。28/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
+  "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
     "date": "2026-11-13",
     "complete_case13_videos": 14,
@@ -156,7 +156,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_21win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_21win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_21win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_21win__case13__actual_source_EOF.png"
       },
       "wanmove_0p35_21win": {
         "status": "verified_eof",
@@ -184,7 +187,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case13__actual_source_EOF.png"
       },
       "wanmove_0p1_21win": {
         "status": "verified_eof",
@@ -212,7 +218,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case13__actual_source_EOF.png"
       },
       "motion_i2v_0p35_21win": {
         "status": "verified_eof",
@@ -240,7 +249,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case13__actual_source_EOF.png"
       },
       "dd_41win": {
         "status": "verified_eof",
@@ -268,14 +280,17 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_41win__case13__actual_source_EOF.png"
       },
       "wanmove_0p35_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 7,
         "total_windows": 7,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全部247帧缩略图未见旧整屏彩噪；窗口交界重影，实际末帧仍抬手且腿/地垫关系异常，源末帧动作不符。",
         "audit": {
           "passed": true,
           "output_frames": 247,
@@ -296,7 +311,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case13__actual_source_EOF.png"
       },
       "wanmove_0p1_41win": {
         "status": "verified_eof",
@@ -324,7 +342,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case13__actual_source_EOF.png"
       },
       "motion_i2v_0p35_41win": {
         "status": "verified_eof",
@@ -352,7 +373,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case13__actual_source_EOF.png"
       },
       "dd_videox_hed_0p2_41win": {
         "status": "verified_eof",
@@ -380,7 +404,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case13_full247.mp4",
+        "common_color_regression_absent": false,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case13__actual_source_EOF.png"
       },
       "dd_videox_hed_0p5_41win": {
         "status": "verified_eof",
@@ -408,7 +435,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case13_full247.mp4",
+        "common_color_regression_absent": false,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case13__actual_source_EOF.png"
       },
       "dd_videox_canny_0p2_41win": {
         "status": "verified_eof",
@@ -436,7 +466,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case13__actual_source_EOF.png"
       },
       "dd_videox_tile_0p2_41win": {
         "status": "verified_eof",
@@ -464,7 +497,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case13__actual_source_EOF.png"
       },
       "dd_pose_0p5_41win": {
         "status": "verified_eof",
@@ -492,7 +528,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case13__actual_source_EOF.png"
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "verified_eof",
@@ -520,7 +559,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case13_full247.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case13_full247.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case13__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case13__actual_source_EOF.png"
       }
     },
     "case12": {
@@ -550,7 +592,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_21win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_21win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_21win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_21win__case12__actual_source_EOF.png"
       },
       "wanmove_0p35_21win": {
         "status": "verified_eof",
@@ -578,7 +623,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_21win__case12__actual_source_EOF.png"
       },
       "wanmove_0p1_21win": {
         "status": "verified_eof",
@@ -606,7 +654,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_21win__case12__actual_source_EOF.png"
       },
       "motion_i2v_0p35_21win": {
         "status": "verified_eof",
@@ -634,7 +685,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_21win__case12__actual_source_EOF.png"
       },
       "dd_41win": {
         "status": "verified_eof",
@@ -662,14 +716,17 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_41win__case12__actual_source_EOF.png"
       },
       "wanmove_0p35_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 10,
         "total_windows": 10,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全部389帧缩略图未见旧整屏彩噪；中后段房间/机位跳变和重影，实际末帧头部缺失、腿部畸变。",
         "audit": {
           "passed": true,
           "output_frames": 389,
@@ -690,7 +747,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p35_41win__case12__actual_source_EOF.png"
       },
       "wanmove_0p1_41win": {
         "status": "verified_eof",
@@ -718,7 +778,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__wanmove_0p1_41win__case12__actual_source_EOF.png"
       },
       "motion_i2v_0p35_41win": {
         "status": "verified_eof",
@@ -746,7 +809,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__motion_i2v_0p35_41win__case12__actual_source_EOF.png"
       },
       "dd_videox_hed_0p2_41win": {
         "status": "verified_eof",
@@ -774,7 +840,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p2_41win__case12__actual_source_EOF.png"
       },
       "dd_videox_hed_0p5_41win": {
         "status": "verified_eof",
@@ -802,7 +871,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_hed_0p5_41win__case12__actual_source_EOF.png"
       },
       "dd_videox_canny_0p2_41win": {
         "status": "verified_eof",
@@ -830,7 +902,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_canny_0p2_41win__case12__actual_source_EOF.png"
       },
       "dd_videox_tile_0p2_41win": {
         "status": "verified_eof",
@@ -858,7 +933,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_videox_tile_0p2_41win__case12__actual_source_EOF.png"
       },
       "dd_pose_0p5_41win": {
         "status": "verified_eof",
@@ -886,7 +964,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_pose_0p5_41win__case12__actual_source_EOF.png"
       },
       "dd_nlf_flashmotion_0p3_41win": {
         "status": "verified_eof",
@@ -914,7 +995,10 @@
           "native_denoise_body_unchanged_only_decode_tail_skipped": true,
           "source_time_offset_training21_verified": true
         },
-        "video": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case12_full389.mp4"
+        "video": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case12_full389.mp4",
+        "common_color_regression_absent": true,
+        "evidence_image": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case12__all_actual_frames.jpg",
+        "eof_image": "./media/recovery-20261114/reference_v13__dd_nlf_flashmotion_0p3_41win__case12__actual_source_EOF.png"
       }
     }
   },
@@ -976,7 +1060,8 @@
       "独立核验器曾使用不同OpenCV/FFmpeg版本而导致RGB哈希差异，已改回生成时的同一解码环境；保留原严格逐帧哈希检查。",
       "复杂舞蹈的旧VideoX辅助视频本身已有衣着变化、机位漂移、肢体异常；HED等引导方案的尾段仍出现噪声/重影。这是额外的条件质量问题，不能解释纯DD全部故障。",
       "直接传递上一窗末潜变量的对照在第二窗再次出现彩噪；四帧重叠预热上下文的完整247帧实验也未解决场景和人物重影，均已拒绝用于整批放行。",
-      "另已定位ControlNet时间步适配差异：DD干净参考首帧为0，旧适配调用却将同一含噪时间步传给所有位置。作者逐位置时间步的实际权重前向测试已通过，完整采样对照尚在运行，尚不宣称它解决尾段噪声。"
+      "ControlNet首参考时间步差异已做实际权重前向及原生41帧零强度逐字节核验，但原强度/同种子完整尾段对照仍有头部与场景异常；修正时间步单独不足以解决问题。",
+      "后续修正正在单独核验：共享整段去噪轨迹、将参考计入每次41帧预算；以及用逐帧真实源动作的NLF三维关节重做尾段辅助条件。两者均未计入原28项通过结果。"
     ],
     "evidence": [
       {

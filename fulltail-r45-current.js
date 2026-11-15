@@ -142,6 +142,14 @@
             if (!finished) cell.append(element('small', '局部输出／待完整核验，不能作为整段完成。'));
             cell.append(video(job.video));
           }
+          if (finished) {
+            if (typeof job.common_color_regression_absent === 'boolean') cell.append(element('p', job.common_color_regression_absent ? '彩噪检查：未见原整屏彩噪；动作和画质另行判定。' : '彩噪检查：仍有明显噪声／重影。', 'state'));
+            const links = element('p');
+            for (const [field, label] of [['evidence_image', `全部 ${spec.real_frames} 帧缩略图`], ['eof_image', `实际末帧 f${spec.source_range[1]}`]]) if (mediaPath(job[field])) {
+              const link = element('a', label); link.href = job[field]; link.target = '_blank'; link.rel = 'noopener'; link.style.marginRight = '16px'; links.append(link);
+            }
+            if (links.childNodes.length) cell.append(links);
+          }
           row.append(cell);
         }
         rows.append(row);
