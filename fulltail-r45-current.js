@@ -93,6 +93,28 @@
           image.style.width = '100%'; image.style.maxWidth = '1280px'; image.style.maxHeight = 'none'; image.style.float = 'none';
           detail.append(image); fragment.append(detail);
         }
+        for (const candidate of data.repair_diagnosis.video_prior_full_qualifications || []) {
+          const spec = data.cases[candidate.case];
+          if (!spec || candidate.protocol !== 'official_DD_target_video_prior_strength006_v35' ||
+              candidate.source_and_actual_NN_output_audit_verified !== true || candidate.overall_quality_passed !== false ||
+              candidate.frames !== spec.real_frames || candidate.endpoint_sha256 !== spec.endpoint_sha256 ||
+              !Array.isArray(candidate.source_range) || candidate.source_range.length !== 2 ||
+              !candidate.source_range.every((v, i) => v === spec.source_range[i]) ||
+              ![21, 41].includes(candidate.native_context_frames) ||
+              candidate.method !== `dd_${candidate.native_context_frames}win` || candidate.denoising_strength !== 0.06 || !mediaPath(candidate.video)) continue;
+          const detail = element('details');
+          detail.append(element('summary', `${spec.label} · 新视频先验流程 · ${candidate.native_context_frames}帧窗 · 完整${candidate.frames}帧 · 画质未通过`));
+          detail.append(element('p', '已完成真实源片EOF及实际神经网络输出核验；满屏彩噪未见，动作/衔接仍有缺陷。不计入原14方案验收通过数。'));
+          detail.append(video(candidate.video));
+          for (const [path, label] of [[candidate.audit_file, '查看实际输出核验记录'], [candidate.visual_review_file, '查看画质缺陷记录']]) if (mediaPath(path)) {
+            const link = element('a', label); link.href = path; detail.append(link, element('br'));
+          }
+          for (const [index, path] of (candidate.frame_pages || []).entries()) if (mediaPath(path)) {
+            const page = element('details'); page.append(element('summary', `实际逐帧缩略图 第${index + 1}页`));
+            const image = element('img'); image.src = path; image.loading = 'lazy'; image.alt = '实际输出帧'; image.style.width = '100%'; image.style.maxHeight = 'none'; page.append(image); detail.append(page);
+          }
+          fragment.append(detail);
+        }
         const archive = element('a', '查看修复前失败记录（不计入修复版）'); archive.href = data.repair_diagnosis.prior_bad_campaign || './recovery-before-time-position-repair-20261115.json';fragment.append(archive);
         repairNode.replaceChildren(fragment);
       }

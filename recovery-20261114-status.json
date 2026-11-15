@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T02:51:18.243292+00:00",
+  "updated_at": "2026-11-15T04:57:44.998741+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
@@ -1064,7 +1064,9 @@
       "共享整段去噪轨迹的41帧预算实验虽通过六卡原生潜变量一致性检查，完整末帧仍有人物消失/重影，已拒绝用于整批放行；改写旧参考的历史时间位置也未解决场景破碎。",
       "同模型、同种子只替换动作辅助条件的尾段对照：前241帧原生RGB逐字节一致，最后6帧的人物与动作有所恢复，但仍有旧抬腿残影，不能视为247帧整段修好。",
       "最新两例局部对照保持当前源视频、相机及除首潜变量以外的全部噪声逐字节一致，只把旧时刻首图换成独立生成的同一当前源时刻首图；画面与动作明显改善。复杂舞蹈仍有动作偏差，室内案例也尚待完整389帧复验。独立首图是近似目标视角的模型输出，不是真值。",
-      "两例的21/41帧窗完整段正在按当前时刻首图复验；这批局部对照未计入原28项画质通过数量。"
+      "仅替换当前时刻首图的4条完整基线已完成，仍有场景/人物异常，未通过。最新另测DD官方视频先验流程：独立目标视角模型视频作输入，denoising_strength=0.06，保留21/41帧原生窗口及实际50步；这与原纯噪声起步流程不同。",
+      "新流程4条完整基线已逐帧检查全部247/389帧缩略图，未见原满屏彩噪，4条均未通过整体验收：复杂舞蹈有分段镜头/动作跳变；室内有第270帧姿态切换、鞋子及后段眩光。下方供查看完整视频，不计原28项画质通过。",
+      "室内案例确认旧64帧独立几何分段存在相机不连续，第270帧还切换为二维姿态控制。整段389帧联合几何与重新估计的人体已完成；连续性有所改善，但后段目标投影仍偏出视野，尚未用于整批放行。"
     ],
     "evidence": [
       {
@@ -1116,6 +1118,144 @@
         "label": "case12：旧V6原生输出与本轮同源帧对照；本轮仍有动作/衔接缺陷，画质未通过"
       }
     ],
-    "prior_bad_campaign": "./recovery-before-reference-owned-repair-20261115.json"
+    "prior_bad_campaign": "./recovery-before-reference-owned-repair-20261115.json",
+    "video_prior_full_qualifications": [
+      {
+        "case": "case13",
+        "method": "dd_21win",
+        "video": "./media/recovery-20261114/prior_v35__dd_21win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_target_video_prior_strength006_v35",
+        "native_context_frames": 21,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v35__dd_21win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_21win__case13_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v35__dd_21win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Camera/body and lighting jumps at925->926 and1005->1006 matching independent teacher boundaries",
+          "Local estimated background cleanup blur/stripe late in sequence",
+          "Not yet verified target-view action and anatomy fidelity throughout at full resolution"
+        ]
+      },
+      {
+        "case": "case12",
+        "method": "dd_21win",
+        "video": "./media/recovery-20261114/prior_v35__dd_21win__case12_full389.mp4",
+        "frames": 389,
+        "source_range": [
+          171,
+          559
+        ],
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "protocol": "official_DD_target_video_prior_strength006_v35",
+        "native_context_frames": 21,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v35__dd_21win__case12_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_21win__case12_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_05.jpg",
+          "./media/recovery-20261114/prior_v35__dd_21win__case12_all_real_frames_page_06.jpg"
+        ],
+        "remaining_defects": [
+          "Abrupt body view/position change at source269->270 matching old 3D-to-2D conditioning fallback",
+          "Independent teacher window scene changes around251/331/411",
+          "Bare feet become shoes from270 onward",
+          "Late lens flare and local ghosting inherited from target prior"
+        ]
+      },
+      {
+        "case": "case13",
+        "method": "dd_41win",
+        "video": "./media/recovery-20261114/prior_v35__dd_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_target_video_prior_strength006_v35",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v35__dd_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_41win__case13_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v35__dd_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Camera/body and lighting jumps at925->926 and1005->1006 matching independent teacher boundaries",
+          "Local estimated background cleanup blur/stripe late in sequence",
+          "Not yet verified target-view action and anatomy fidelity throughout at full resolution"
+        ]
+      },
+      {
+        "case": "case12",
+        "method": "dd_41win",
+        "video": "./media/recovery-20261114/prior_v35__dd_41win__case12_full389.mp4",
+        "frames": 389,
+        "source_range": [
+          171,
+          559
+        ],
+        "endpoint_sha256": "9b631f834b7b90a7f9f44ae66a9d25c81f0af5ae340e20fe57fbf820333ecbd3",
+        "protocol": "official_DD_target_video_prior_strength006_v35",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v35__dd_41win__case12_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v35__dd_41win__case12_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_05.jpg",
+          "./media/recovery-20261114/prior_v35__dd_41win__case12_all_real_frames_page_06.jpg"
+        ],
+        "remaining_defects": [
+          "Abrupt body view/position change at source269->270 matching old 3D-to-2D conditioning fallback",
+          "Independent teacher window scene changes around251/331/411",
+          "Bare feet become shoes from270 onward",
+          "Late lens flare and local ghosting inherited from target prior"
+        ]
+      }
+    ]
   }
 }

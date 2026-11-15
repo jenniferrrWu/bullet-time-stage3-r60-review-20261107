@@ -1,0 +1,46 @@
+{
+  "method": "dd_21win",
+  "case": "case13",
+  "frames": 247,
+  "source_range": [
+    845,
+    1091
+  ],
+  "all_actual_source_frame_contact_sheets_visually_inspected": true,
+  "review_scope": "Every real output frame visible on the actual decoded RGB contact sheets; not an assertion that every frame passed full-resolution motion/anatomy review.",
+  "common_fullscreen_colored_confetti_observed": false,
+  "overall_quality_passed": false,
+  "protocol_materially_changed": "Official DD video-to-video initialization denoising_strength0.06 with an independent estimated target-view NN video prior; not the original pure-noise recipe.",
+  "remaining_defects": [
+    "Camera/body and lighting jumps at925->926 and1005->1006 matching independent teacher boundaries",
+    "Local estimated background cleanup blur/stripe late in sequence",
+    "Not yet verified target-view action and anatomy fidelity throughout at full resolution"
+  ],
+  "reviewed_actual_sheet_SHA256": [
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_21win/case13/full_color_review/all_real_frames_page_00.jpg",
+      "SHA256": "e77bf25e47511902952a2d961a00aac033642c68c9258336ac9d59a3f680fd67"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_21win/case13/full_color_review/all_real_frames_page_01.jpg",
+      "SHA256": "251deae0dc4dd2bc7f040c8e39fac2cb38a05afaace3ccaf28385fa5495fff53"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_21win/case13/full_color_review/all_real_frames_page_02.jpg",
+      "SHA256": "7156fdce5495cf474f867240b64748af312a1017f6d23cc2cf8e4f9754375082"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_21win/case13/full_color_review/all_real_frames_page_03.jpg",
+      "SHA256": "efd5845c9d0482de1cb38c712e41e1e55f5f413489d478ed17ffa20e1ad4c6d8"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_21win/case13/full_color_review/all_real_frames_page_04.jpg",
+      "SHA256": "d72d17c4b1d88953a010bbbe43655e2a8743d9b4ca02ded0c9db4ce70a05f0b8"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/official_video_prior_full_qualification_v35/runs/dd_21win/case13/full_color_review/all_real_frames_page_05.jpg",
+      "SHA256": "fb76d507f9effd669de4dfdd512c5683728639515989b751a5d1be5c4724d071"
+    }
+  ],
+  "time": 1794718281.0343127
+}
