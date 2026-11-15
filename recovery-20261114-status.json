@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T00:27:45.674690+00:00",
+  "updated_at": "2026-11-15T00:37:54.882051+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "参考与潜变量交接修正：原14方案、两例、21/41帧原生窗口。20/28项通过独立完整EOF及输入核验，0/28项画质通过；其余结果生成或核验中。彩噪、人物动作、场景稳定性分别审查。",
   "historical_round": {
@@ -166,18 +166,18 @@
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_21win": {
-        "status": "queued",
+        "status": "running",
         "quality": "pending",
-        "windows_completed": 0,
+        "windows_completed": 13,
         "total_windows": 13,
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "motion_i2v_0p35_21win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 13,
         "total_windows": 13,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图有周期性交界重影；末帧手臂高举、身体与地垫连接异常。",
         "audit": {
           "passed": true,
           "output_frames": 247,
@@ -244,10 +244,10 @@
       },
       "motion_i2v_0p35_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 7,
         "total_windows": 7,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图在窗口交界有明显重影；末帧手臂高举，与真实源末帧动作不符。",
         "audit": {
           "passed": true,
           "output_frames": 247,
@@ -272,10 +272,10 @@
       },
       "dd_videox_hed_0p2_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 7,
         "total_windows": 7,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图尾段重影；末帧大面积颗粒、重影及绿色异常色块。",
         "audit": {
           "passed": true,
           "output_frames": 247,
@@ -356,10 +356,10 @@
       },
       "dd_videox_tile_0p2_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 7,
         "total_windows": 7,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图有周期性交界重影；末帧腿部缺失及地垫形变，细节有颗粒。",
         "audit": {
           "passed": true,
           "output_frames": 247,
@@ -476,18 +476,18 @@
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_21win": {
-        "status": "running",
-        "quality": "pending",
-        "windows_completed": 11,
-        "total_windows": 20,
-        "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
-      },
-      "motion_i2v_0p35_21win": {
-        "status": "verified_eof",
+        "status": "generated",
         "quality": "pending",
         "windows_completed": 20,
         "total_windows": 20,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "完整原生画面已解码；等待独立源帧、方法绑定和无损EOF核验。"
+      },
+      "motion_i2v_0p35_21win": {
+        "status": "verified_eof",
+        "quality": "failed",
+        "windows_completed": 20,
+        "total_windows": 20,
+        "note": "全帧图有机位跳变和重影；末帧头部及腿部明显形变。",
         "audit": {
           "passed": true,
           "output_frames": 389,
@@ -546,7 +546,7 @@
         "note": "各窗使用同一原生Stage2参考，动作条件按原源帧索引读取；实际采样潜变量合并后整段解码。"
       },
       "wanmove_0p1_41win": {
-        "status": "queued",
+        "status": "running",
         "quality": "pending",
         "windows_completed": 0,
         "total_windows": 10,
@@ -554,10 +554,10 @@
       },
       "motion_i2v_0p35_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 10,
         "total_windows": 10,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图后段场景变化、人物形变严重；末帧人物上半身消失。",
         "audit": {
           "passed": true,
           "output_frames": 389,
@@ -582,10 +582,10 @@
       },
       "dd_videox_hed_0p2_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 10,
         "total_windows": 10,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图中段机位跳变、人体变形、交界重影；末帧照片质感但不能代表全段通过。",
         "audit": {
           "passed": true,
           "output_frames": 389,
@@ -666,10 +666,10 @@
       },
       "dd_videox_tile_0p2_41win": {
         "status": "verified_eof",
-        "quality": "pending",
+        "quality": "failed",
         "windows_completed": 10,
         "total_windows": 10,
-        "note": "源帧和模型输出完整性已通过；画质与动作尚待审查。",
+        "note": "全帧图中后段机位跳变与人体形变；末帧一侧膝腿畸变。",
         "audit": {
           "passed": true,
           "output_frames": 389,
