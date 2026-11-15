@@ -21,6 +21,7 @@
         339
       ],
       "quality_passed": false,
+      "quality_status": "pending",
       "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。"
     },
     {
@@ -33,6 +34,7 @@
         339
       ],
       "quality_passed": false,
+      "quality_status": "pending",
       "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。"
     },
     {
@@ -45,6 +47,7 @@
         339
       ],
       "quality_passed": false,
+      "quality_status": "pending",
       "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。"
     },
     {
@@ -57,6 +60,7 @@
         339
       ],
       "quality_passed": false,
+      "quality_status": "failed",
       "note": "完整81帧；未见满屏彩噪，但出现背景绿植漂移、场景一致性变差，画质未通过，不接受为原生DD81的改进。原生81帧额外对照，不冒充原21/41帧方案。"
     }
   ],
@@ -71,7 +75,8 @@
         339
       ],
       "quality_passed": false,
-      "note": "完整81个真实源帧；接缝处存在短暂模糊（f280,f300,f320），画质未通过。同一原始G1参考，无DD生成RGB递归。"
+      "note": "完整81个真实源帧；接缝处存在短暂模糊（f280,f300,f320），画质未通过。同一原始G1参考，无DD生成RGB递归。",
+      "quality_status": "failed"
     },
     {
       "label": "DD 41帧窗口 · 正确D完整尾段",
@@ -83,7 +88,8 @@
         339
       ],
       "quality_passed": false,
-      "note": "完整81个真实源帧；接缝处存在短暂模糊（f300），画质未通过。同一原始G1参考，无DD生成RGB递归。"
+      "note": "完整81个真实源帧；接缝处存在短暂模糊（f300），画质未通过。同一原始G1参考，无DD生成RGB递归。",
+      "quality_status": "failed"
     }
   ],
   "additional_simple_repair_results": [
@@ -304,6 +310,18 @@
       ],
       "quality_passed": false,
       "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。"
+    },
+    {
+      "label": "DD + STG 跳层引导 1.0 · 50步/100次DD推理",
+      "video": "./media/correct-simpleD-v152/STG_s1p0_case13_full247.mp4",
+      "audit": "./media/correct-simpleD-v152/STG_s1p0_case13_full247_actual_NN_audit.json",
+      "frames": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "quality_passed": false,
+      "note": "实际DD采样并整段解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。"
     }
   ],
   "original14_status": [
@@ -422,5 +440,5 @@
   ],
   "original14_complete_count": 11,
   "quality_passed_count": 0,
-  "updated_unix": 1794772796.9797237
+  "updated_unix": 1794773132.0701237
 }
