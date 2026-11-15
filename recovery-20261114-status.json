@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T06:16:18.240600+00:00",
+  "updated_at": "2026-11-15T06:54:03.443358+00:00",
   "phase": "reference_owned_native_latents_v13",
   "summary": "原14方案×两例，28项完整结果已生成并通过独立源帧/方法/EOF核验；26/28项未见原整屏彩噪，0/28项画质通过。当前仍未达到全部修复完成要求。",
   "historical_round": {
@@ -1069,7 +1069,8 @@
       "补充更正：实际室内源片穿有高跟鞋，新Stage2首图呈赤脚；后段出现鞋子不能一概判为幻觉。此前该条评价已撤回，镜头/姿态突跳与眩光仍未通过。",
       "室内案例确认旧64帧独立几何分段存在相机不连续，第270帧还切换为二维姿态控制。整段389帧联合几何与重新估计的人体已完成；连续性有所改善，但后段目标投影仍偏出视野，尚未用于整批放行。",
       "较新完整修复候选：复杂舞蹈21/41帧窗两条均已完成真实247帧、原始源帧/当前首图/相机/实际50步/潜变量及EOF核验，并检查全部实际帧；未见满屏彩噪，旧抬腿残影和末6帧明显跳机位已改善。下方直接展示完整视频。仍有轻微背景/纹理漂移，整体画质待进一步验收，不计原28项通过数。",
-      "室内连续389帧的辅助输入已重新生成并完整检查；彩噪和第270帧突跳未见，但后段背景放大仍不符合固定背景要求，正做静态背景边缘与当前三维姿态的联合条件测试。辅助输入不冒充最终DD结果。"
+      "较新HED 0.2/0.5两条也已完成原片f845–1091全部247帧，保持原强度及每窗50步，并通过逐帧源索引/实际NN潜变量/当前控制条件/EOF核验。已检查全部输出帧，未见旧满屏彩噪；背景、曝光及详细动作一致性仍待验收。含新视频先验，不计原28项通过数。",
+      "室内389帧连续辅助输入仍有背景放大，未用于整批放行；静态HED与姿态混合条件导致服装及人体错误，已拒绝。正在验证当前首帧与独立原始外观参考共同输入的完整389帧连续链。"
     ],
     "evidence": [
       {
@@ -1323,6 +1324,74 @@
         "remaining_defects": [
           "Small background/texture drift and native81 teacher seam exposure changes remain. Native41 EOF similarity registration to originalG1: translation about14x22px, scale1.0086 and rotation about0.34deg; registration is an approximate diagnostic, not physical camera ground truth.",
           "Detailed action/view fidelity has not passed full-resolution all-frame assessment. New shared independentNN video-prior recipe, not original pure-noise DD."
+        ]
+      },
+      {
+        "case": "case13",
+        "method": "dd_videox_hed_0p2_41win",
+        "adapter_strength": 0.2,
+        "video": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_current_HED_full_v62",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p2_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Background and exposure drift remain; detailed action and fixed-view fidelity not accepted.",
+          "Independent target-video prior and denoising_strength .06 change the original pure-noise DD recipe. This is not an all14 quality release."
+        ]
+      },
+      {
+        "case": "case13",
+        "method": "dd_videox_hed_0p5_41win",
+        "adapter_strength": 0.5,
+        "video": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_full247.mp4",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "endpoint_sha256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+        "protocol": "official_DD_current_I2V_prior_current_HED_full_v62",
+        "native_context_frames": 41,
+        "denoising_strength": 0.06,
+        "source_and_actual_NN_output_audit_verified": true,
+        "overall_quality_passed": false,
+        "overall_quality_state": "pending_fidelity_review",
+        "common_fullscreen_confetti_observed": false,
+        "all_real_frame_contact_sheets_reviewed": true,
+        "audit_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_verified_audit.json",
+        "visual_review_file": "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_visual_review.json",
+        "frame_pages": [
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_00.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_01.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_02.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_03.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_04.jpg",
+          "./media/recovery-20261114/prior_v62__dd_videox_hed_0p5_41win__case13_all_real_frames_page_05.jpg"
+        ],
+        "remaining_defects": [
+          "Background and exposure drift remain; detailed action and fixed-view fidelity not accepted.",
+          "Independent target-video prior and denoising_strength .06 change the original pure-noise DD recipe. This is not an all14 quality release."
         ]
       }
     ]
