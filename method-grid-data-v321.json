@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794851699.0813687,
-  "total_complete_comparisons": 94,
+  "updated_unix": 1794853042.9334283,
+  "total_complete_comparisons": 97,
   "method_rows": 51,
   "rows": [
     {
@@ -643,7 +643,38 @@
         "overall_quality_accepted": false
       },
       "review_number": 10,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD + TST · 论文查询温度 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/research_tst_paper_clear.mp4",
+        "clear_video": "./media/hard-case-v425/research_tst_paper_clear.mp4",
+        "preview": "./media/hard-case-v425/research_tst_paper_preview.mp4",
+        "preview_bytes": 43748,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/research_tst_paper_audit.json",
+        "contact_sheet": "./media/hard-case-v425/research_tst_paper_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": true,
+          "EOF321_full_resolution_viewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "clear_improvement_over_matched_baseline_demonstrated": false,
+          "review_scope": "All81 native contactframes and full-resolutionEOF321 viewed. Photographic dancer/backdrop maintained. MatchedDD41 remains visually similar; no clear action/flicker improvement accepted. Generatedtargetprior is not groundtruth.",
+          "note": "全81帧未见满屏彩噪或场景崩坏；与同条件DD41整体相近，尚未确认动作或闪动改善。",
+          "time": 1794852272.9485917
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。全81帧未见满屏彩噪或场景崩坏；与同条件DD41整体相近，尚未确认动作或闪动改善。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -1949,7 +1980,38 @@
         "preview_proof": "./media/method-grid-v321/c396604945624dea.json"
       },
       "review_number": 34,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD + STG · 引导0.5 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/stg_0.5_clear.mp4",
+        "clear_video": "./media/hard-case-v425/stg_0.5_clear.mp4",
+        "preview": "./media/hard-case-v425/stg_0.5_preview.mp4",
+        "preview_bytes": 43718,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 200,
+        "audit": "./media/hard-case-v425/stg_0.5_audit.json",
+        "contact_sheet": "./media/hard-case-v425/stg_0.5_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": true,
+          "EOF321_full_resolution_viewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "clear_improvement_over_matched_baseline_demonstrated": false,
+          "review_scope": "All81 native contactframes and full-resolutionEOF321 viewed. Photographic person/scene; broad action sequence maintained, no clear action or detail improvement accepted over matchedDD41. STGuses100 actualDDcalls perwindow.",
+          "note": "全81帧未见满屏彩噪或场景崩坏；尚未确认动作或细节改善。每窗100次DD调用，不能视为与50次基线等算力。",
+          "time": 1794852848.8706596
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。全81帧未见满屏彩噪或场景崩坏；尚未确认动作或细节改善。每窗100次DD调用，不能视为与50次基线等算力。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -2100,7 +2162,44 @@
         "preview_proof": "./media/method-grid-v321/e986ddcb861b564e.json"
       },
       "review_number": 37,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD81 + SAGA SG 时间加速度引导 3 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/simple_e986ddcb86_clear.mp4",
+        "clear_video": "./media/hard-case-v425/simple_e986ddcb86_clear.mp4",
+        "preview": "./media/hard-case-v425/simple_e986ddcb86_preview.mp4",
+        "preview_bytes": 42751,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 50,
+        "audit": "./media/hard-case-v425/simple_e986ddcb86_audit.json",
+        "contact_sheet": "./media/hard-case-v425/simple_e986ddcb86_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": true,
+          "EOF321_full_resolution_viewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "clear_improvement_over_matched_baseline_demonstrated": false,
+          "actual_effect_observed": {
+            "matching_baseline_RGB_frames": 1,
+            "total_frames": 81,
+            "different_final_latent_elements": 2616290,
+            "comparison": "Native81 no targetvideo prior; SG3 noSAN, same initial source/camera/GG/noise protocol"
+          },
+          "review_scope": "All81 native contactframes and full-resolutionEOF321 viewed. Photographicperson/backdrop and broad actionsequence; handdetail blur persists. No fullbody motion/flicker win accepted. Actual SG effect verified in final latents and80 nativeRGB frames, not just enableflag.",
+          "note": "无整段目标先验、无SAN；全81帧未见满屏彩噪或场景崩坏。引导确实改变潜变量和80帧RGB，但尚未确认可感知的动作或闪动改善。",
+          "time": 1794852921.664566
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。无整段目标先验、无SAN；全81帧未见满屏彩噪或场景崩坏。引导确实改变潜变量和80帧RGB，但尚未确认可感知的动作或闪动改善。 本行不使用整段目标视频先验，是原生81帧噪声／引导对照。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -3272,7 +3371,7 @@
       "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 97,
+  "total_video_players": 100,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -3350,11 +3449,6 @@
       "total_windows": 1
     },
     "research_tst_public|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
-    "research_tst_paper|hardH": {
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
       "total_windows": 2
@@ -3464,22 +3558,12 @@
       "verified_windows": 0,
       "total_windows": 2
     },
-    "stg_0.5|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
     "stg_1.0|hardH": {
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
       "total_windows": 2
     },
     "native81_prior|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 1
-    },
-    "simple_e986ddcb86|hardH": {
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
       "total_windows": 1
@@ -3571,7 +3655,7 @@
     }
   },
   "total_planned_comparisons": 141,
-  "comparison_completion_fraction": "94/141",
+  "comparison_completion_fraction": "97/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
