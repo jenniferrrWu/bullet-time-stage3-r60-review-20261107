@@ -1,0 +1,93 @@
+{
+  "base_current_comparisons": 52,
+  "new_full_comparisons": 2,
+  "new_paper_methods": 2,
+  "rows": [
+    {
+      "key": "correctD_FreeInit_RF_sigma_scaled_v296_frequency",
+      "label": "DD + FreeInit 频域重新初始化",
+      "paper": "https://github.com/TianxingWu/FreeInit",
+      "note": "作者频域混合组件适配到 DD 的中间 sigma 重启；新高频噪声按实际 RF sigma 缩放。使用同一 DD 已生成的原生 latent，保留 Stage2、源视频、相机与权重。额外50次 DD 推理，含初轮共100次；不是原始 DDPM 管线复现。",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "video": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency.mp4",
+      "contact_sheet": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency_all81.jpg",
+      "audit": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency_audit.json",
+      "preview_bytes": 39674,
+      "actual_DD_calls": 50,
+      "visual_review": {
+        "all81_contact_sheet_reviewed": true,
+        "source_range": [
+          259,
+          339
+        ],
+        "widespread_confetti": false,
+        "quality_failed": true,
+        "failure_kind": "severe_fine_detail_loss_blur",
+        "failure_description": "全片脸部及衣服细节明显变糊，画质未通过",
+        "all81_subject_scene_present": true,
+        "failure_source_frames": [
+          261,
+          339
+        ],
+        "native_baseline_static_background_MAE": 0.43212462589144707,
+        "current_static_background_MAE": 0.513396143913269,
+        "relative_change": 0.18807425717560933,
+        "overall_quality_accepted": false,
+        "no_parameter_or_complex_case_expansion_for_this_method": true,
+        "needs_matched_restart_control_to_attribute_blur": true,
+        "note": "Corrected RF noise scale removes first-port strong colored noise; author frequency initialization still severely loses detail. Do not claim all earlier degradation was solely scale mismatch. Full same-sigma ordinary restart comparator queued.",
+        "time": 1794802547.0535572
+      },
+      "temporal_proxy": {
+        "uncompensated_static_background_temporal_MAE": 0.513396143913269,
+        "only_comparable_with_same_exact_source_case_and_timeline": true,
+        "not_overall_quality_acceptance": true
+      }
+    },
+    {
+      "key": "correctD_SelfRefine_PnP_v287_pnp",
+      "label": "DD + Self-Refining Video Sampling",
+      "paper": "https://agwmon.github.io/self-refine-video/",
+      "note": "采用作者 I2V 的预测—扰动—再预测更新公式及默认计划，50采样步、73次实际 DD 推理。使用原 DD 条件和权重，保留首帧锚点；适配对象为 TI2V-5B + DD，不是作者的 A14B 模型。",
+      "frames": 81,
+      "source_range": [
+        259,
+        339
+      ],
+      "video": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp.mp4",
+      "contact_sheet": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp_all81.jpg",
+      "audit": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp_audit.json",
+      "preview_bytes": 54648,
+      "actual_DD_calls": 73,
+      "visual_review": {
+        "all81_contact_sheet_reviewed": true,
+        "source_range": [
+          259,
+          339
+        ],
+        "widespread_confetti": false,
+        "large_scene_or_subject_collapse": false,
+        "first_middle_and_real_EOF_subject_scene_checked": true,
+        "overall_quality_accepted": false,
+        "native_baseline_static_background_MAE": 0.43212462589144707,
+        "current_static_background_MAE": 0.43411216139793396,
+        "relative_static_background_change": 0.004599449759167706,
+        "clear_flicker_improvement_demonstrated": false,
+        "note": "Entire81 maintains person, blouse, foliage and coherent expression/hand movement. Static-background proxy0.434 vs0.432 baseline: essentially unchanged, no demonstrated flicker gain. Screen permits one full complex247 experiment, no parameter sweep or overall acceptance.",
+        "allow_one_full_complex247_same_method_experiment": true
+      },
+      "temporal_proxy": {
+        "uncompensated_static_background_temporal_MAE": 0.43411216139793396,
+        "only_comparable_with_same_exact_source_case_and_timeline": true,
+        "not_overall_quality_acceptance": true
+      }
+    }
+  ],
+  "all_case": "Original option D white blouse green plants, full source259..339 native81 and originalStage2+30",
+  "overall_user_quality_accepted": 0,
+  "updated_unix": 1794802647.7446048
+}
