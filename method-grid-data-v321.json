@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794835147.351076,
-  "total_complete_comparisons": 97,
-  "method_rows": 54,
+  "updated_unix": 1794844536.1255178,
+  "total_complete_comparisons": 91,
+  "method_rows": 51,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -53,7 +53,16 @@
         "preview": "./media/method-grid-v321/f18da1e018fdcb51.mp4",
         "preview_bytes": 30720,
         "preview_proof": "./media/method-grid-v321/f18da1e018fdcb51.json"
-      }
+      },
+      "review_number": 1,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "native81_scene_repair",
@@ -63,7 +72,8 @@
         "case13"
       ],
       "case_notes": {
-        "simpleD": "此项修复针对复杂案例后续窗口的场景崩坏。简单案例是单窗81帧，未改动；结果见上方原生 DD 基线。"
+        "simpleD": "此项修复针对复杂案例后续窗口的场景崩坏。简单案例是单窗81帧，未改动；结果见上方原生 DD 基线。",
+        "hardH": "此项专门修复屋顶复杂例的中段失稳；新增hard案例先独立测试原生DD与参考初始化，不复用该case修复结果。"
       },
       "case13": {
         "label": "DD81 中段参考初始化修复 · 完整247帧",
@@ -108,7 +118,11 @@
         "overall_quality_accepted": false,
         "note": "完整 f845–f1091 共247帧。按完整窗口采用初始化强度 [1,0.06,0.06,1]：首81帧与末6帧保留原原生DD结果，中段160帧采用已实际完成的参考初始化DD窗口。每窗81帧、50步/50次DD，CFG1、LoRA1，四窗共200次已有真实推理复用，本次不计新增模型采样。中段源视频、相机、首帧锚、源/相机特征和生成噪声均与失败对照相同，仅使用官方InputVideoEmbedder和对应RF去噪日程初始化；强度0.06实际首sigma约0.242。参考来自既有独立VideoX V52生成，为近似视频，不是真值。明确属于条件初始化修复，原始完整噪声基线仍保留失败。每窗使用自己的原生因果VAE解码，全部247帧原生RGB及源帧顺序核验；没有输出RGB混合、贴图、平滑或插帧。场景及大面积人物崩坏已消除，动作一致性、细节与闪动尚未通过完整验收。"
       },
-      "simpleD": null
+      "simpleD": null,
+      "review_number": 2,
+      "hardH": null,
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_21win",
@@ -155,7 +169,16 @@
         "preview": "./media/method-grid-v321/4f28c43098100323.mp4",
         "preview_bytes": 31779,
         "preview_proof": "./media/method-grid-v321/4f28c43098100323.json"
-      }
+      },
+      "review_number": 3,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_41win",
@@ -202,7 +225,16 @@
         "preview": "./media/method-grid-v321/577d7d1b323ea0b8.mp4",
         "preview_bytes": 31605,
         "preview_proof": "./media/method-grid-v321/577d7d1b323ea0b8.json"
-      }
+      },
+      "review_number": 4,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_pag10",
@@ -252,57 +284,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
-    },
-    {
-      "key": "research_pag025",
-      "title": "DD + PAG · 引导0.25",
-      "principle": "沿用同一目标注意力扰动，仅降低引导强度，与0.5版作参数对照。",
-      "paper": "https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/",
-      "case13": {
-        "label": "DD + PAG · 引导0.25",
-        "case": "case13",
-        "frames": 247,
-        "source_range": [
-          845,
-          1091
-        ],
-        "video": "./media/fill-DD-v336/case13_research_pag025_clear.mp4",
-        "clear_video": "./media/fill-DD-v336/case13_research_pag025_clear.mp4",
-        "preview": "./media/fill-DD-v336/case13_research_pag025_preview.mp4",
-        "preview_bytes": 141945,
-        "contact_sheet": "./media/fill-DD-v336/case13_research_pag025_allframes.jpg",
-        "audit": "./media/fill-DD-v336/case13_research_pag025_audit.json",
-        "visual_review": {
-          "overall_quality_accepted": false,
-          "visual_review_pending": true
-        },
-        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
-        "export_verified": true,
-        "overall_quality_accepted": false
       },
-      "simpleD": {
-        "label": "DD + PAG · 引导0.25",
-        "case": "simpleD",
-        "frames": 81,
-        "source_range": [
-          259,
-          339
-        ],
-        "video": "./media/fill-DD-v336/simpleD_research_pag025_clear.mp4",
-        "clear_video": "./media/fill-DD-v336/simpleD_research_pag025_clear.mp4",
-        "preview": "./media/fill-DD-v336/simpleD_research_pag025_preview.mp4",
-        "preview_bytes": 32670,
-        "contact_sheet": "./media/fill-DD-v336/simpleD_research_pag025_allframes.jpg",
-        "audit": "./media/fill-DD-v336/simpleD_research_pag025_audit.json",
-        "visual_review": {
-          "overall_quality_accepted": false,
-          "visual_review_pending": true
-        },
-        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
-        "export_verified": true,
-        "overall_quality_accepted": false
-      }
+      "review_number": 5,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_frameinit_control",
@@ -357,7 +348,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
+      },
+      "review_number": 7,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_frameinit",
@@ -419,7 +419,16 @@
             "href": "#FrameInit-color-repair"
           }
         ]
-      }
+      },
+      "review_number": 8,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_tst_public",
@@ -474,7 +483,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
+      },
+      "review_number": 9,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_tst_paper",
@@ -529,7 +547,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
+      },
+      "review_number": 10,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_pag",
@@ -579,109 +606,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
-    },
-    {
-      "key": "research_selfrefine",
-      "title": "DD + Self-Refining",
-      "principle": "在部分采样步中对预测的干净 latent 加噪并重新预测，用额外推理细化生成轨迹。",
-      "case13": {
-        "key": "complex247_SelfRefine_DD41_nativeVAE_v299",
-        "label": "DD41 + Self-Refining · 复杂舞蹈完整247帧",
-        "paper": "https://agwmon.github.io/self-refine-video/",
-        "note": "与现有 DD41 使用完全相同的原 Stage2 +45°、源视频、相机、初始噪声及固定当前时刻 VideoX 先验0.06。7窗各50采样步／73次 DD 推理，共511次；保留作者 I2V 的 P&P 计划。每窗独立原生因果 VAE 解码后只按时间拼接整帧 RGB，去除重叠参考帧与 EOF 补帧。",
-        "case": "case13",
-        "role": "paper_component",
-        "frames": 247,
-        "source_range": [
-          845,
-          1091
-        ],
-        "video": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299.mp4",
-        "contact_sheet": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299_all247.jpg",
-        "audit": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299_audit.json",
-        "preview_bytes": 135256,
-        "actual_DD_calls": 511,
-        "visual_review": {
-          "frames": 247,
-          "source_range": [
-            845,
-            1091
-          ],
-          "all247_contact_sheet_frames_visually_screened": true,
-          "EOF1091_full_resolution_visually_inspected": true,
-          "widespread_confetti": false,
-          "whole_scene_collapse": false,
-          "overall_quality_accepted": false,
-          "quality_failed": false,
-          "review_scope": "All247 frame contact sheets plus full-resolution EOF; screening excludes widespread confetti or whole-scene collapse, not a claim of smooth motion or fine geometry acceptance. Existing hand/body ghosting and scene detail errors remain. Temporal ROI metrics show no improvement over baseline.",
-          "temporal_and_detail_metrics": {
-            "label": "SelfRefine",
-            "frames": 247,
-            "source_range": [
-              845,
-              1091
-            ],
-            "static_ROI_mean_absolute_temporal_change": 5.3205602447676466,
-            "static_ROI_boundary_mean_change": 7.309339205423991,
-            "static_ROI_within_window_mean_change": 5.270840770751238,
-            "static_ROI_mean_brightness_temporal_change": 0.9166500975446004,
-            "garage_vent_Laplacian_variance_proxy": 547.8341039642086,
-            "all247_assembled_RGB_SHA256_independently_redecoded_and_matched": true,
-            "relative_static_ROI_change_to_baseline": 0.12453858684803643,
-            "relative_static_ROI_detail_to_baseline": 0.10147065357273233
-          },
-          "metric_report": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/complex_full247_temporal_and_detail_comparison_v315.json",
-          "updated_unix": 1794810900.6921737
-        },
-        "clear_video": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299.mp4",
-        "preview": "./media/method-grid-v321/e34caab8bb9ecb47.mp4",
-        "preview_proof": "./media/method-grid-v321/e34caab8bb9ecb47.json"
       },
-      "simpleD": {
-        "key": "correctD_SelfRefine_PnP_v287_pnp",
-        "label": "DD + Self-Refining Video Sampling",
-        "paper": "https://agwmon.github.io/self-refine-video/",
-        "note": "采用作者 I2V 的预测—扰动—再预测更新公式及默认计划，50采样步、73次实际 DD 推理。使用原 DD 条件和权重，保留首帧锚点；适配对象为 TI2V-5B + DD，不是作者的 A14B 模型。",
-        "case": "simpleD",
-        "role": "paper_component",
-        "frames": 81,
-        "source_range": [
-          259,
-          339
-        ],
-        "video": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp.mp4",
-        "contact_sheet": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp_all81.jpg",
-        "audit": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp_audit.json",
-        "preview_bytes": 30262,
-        "actual_DD_calls": 73,
-        "visual_review": {
-          "all81_contact_sheet_reviewed": true,
-          "source_range": [
-            259,
-            339
-          ],
-          "widespread_confetti": false,
-          "large_scene_or_subject_collapse": false,
-          "first_middle_and_real_EOF_subject_scene_checked": true,
-          "overall_quality_accepted": false,
-          "native_baseline_static_background_MAE": 0.43212462589144707,
-          "current_static_background_MAE": 0.43411216139793396,
-          "relative_static_background_change": 0.004599449759167706,
-          "clear_flicker_improvement_demonstrated": false,
-          "note": "Entire81 maintains person, blouse, foliage and coherent expression/hand movement. Static-background proxy0.434 vs0.432 baseline: essentially unchanged, no demonstrated flicker gain. Screen permits one full complex247 experiment, no parameter sweep or overall acceptance.",
-          "allow_one_full_complex247_same_method_experiment": true
-        },
-        "temporal_proxy": {
-          "uncompensated_static_background_temporal_MAE": 0.43411216139793396,
-          "only_comparable_with_same_exact_source_case_and_timeline": true,
-          "not_overall_quality_acceptance": true
-        },
-        "clear_video": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp.mp4",
-        "preview": "./media/method-grid-v321/4e38c840860efdee.mp4",
-        "preview_proof": "./media/method-grid-v321/4e38c840860efdee.json"
-      },
-      "paper": "https://agwmon.github.io/self-refine-video/"
+      "review_number": 11,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_fresca",
@@ -787,7 +721,16 @@
         "preview": "./media/method-grid-v321/974e784506df8584.mp4",
         "preview_proof": "./media/method-grid-v321/974e784506df8584.json"
       },
-      "paper": "https://wikichao.github.io/FreSca/"
+      "paper": "https://wikichao.github.io/FreSca/",
+      "review_number": 13,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_freeinit",
@@ -865,7 +808,16 @@
         "preview": "./media/method-grid-v321/b9ed568d3ccd4268.mp4",
         "preview_proof": "./media/method-grid-v321/b9ed568d3ccd4268.json"
       },
-      "paper": "https://github.com/TianxingWu/FreeInit"
+      "paper": "https://github.com/TianxingWu/FreeInit",
+      "review_number": 14,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "research_restart_control",
@@ -937,7 +889,16 @@
         "preview": "./media/method-grid-v321/0e93d60f5de464af.mp4",
         "preview_proof": "./media/method-grid-v321/0e93d60f5de464af.json"
       },
-      "paper": "https://github.com/TianxingWu/FreeInit"
+      "paper": "https://github.com/TianxingWu/FreeInit",
+      "review_number": 15,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_wanmove_0p35_21win",
@@ -984,7 +945,16 @@
         "preview": "./media/method-grid-v321/18d6985cc092b36b.mp4",
         "preview_bytes": 31876,
         "preview_proof": "./media/method-grid-v321/18d6985cc092b36b.json"
-      }
+      },
+      "review_number": 16,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_wanmove_0p1_21win",
@@ -1031,7 +1001,16 @@
         "preview": "./media/method-grid-v321/7fcbd70f108f70c5.mp4",
         "preview_bytes": 31751,
         "preview_proof": "./media/method-grid-v321/7fcbd70f108f70c5.json"
-      }
+      },
+      "review_number": 17,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_motion_i2v_0p35_21win",
@@ -1078,7 +1057,16 @@
         "preview": "./media/method-grid-v321/d224bb848bcda1d3.mp4",
         "preview_bytes": 31814,
         "preview_proof": "./media/method-grid-v321/d224bb848bcda1d3.json"
-      }
+      },
+      "review_number": 18,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_wanmove_0p35_41win",
@@ -1125,7 +1113,16 @@
         "preview": "./media/method-grid-v321/bba20dd0d6a7e113.mp4",
         "preview_bytes": 31562,
         "preview_proof": "./media/method-grid-v321/bba20dd0d6a7e113.json"
-      }
+      },
+      "review_number": 19,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_wanmove_0p1_41win",
@@ -1172,7 +1169,16 @@
         "preview": "./media/method-grid-v321/dab2d67cba2f1892.mp4",
         "preview_bytes": 31709,
         "preview_proof": "./media/method-grid-v321/dab2d67cba2f1892.json"
-      }
+      },
+      "review_number": 20,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_motion_i2v_0p35_41win",
@@ -1219,7 +1225,16 @@
         "preview": "./media/method-grid-v321/2af8c1179843a420.mp4",
         "preview_bytes": 31598,
         "preview_proof": "./media/method-grid-v321/2af8c1179843a420.json"
-      }
+      },
+      "review_number": 21,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_videox_hed_0p2_41win",
@@ -1266,7 +1281,16 @@
         "preview": "./media/method-grid-v321/be0fdba53f6dd8c0.mp4",
         "preview_bytes": 31409,
         "preview_proof": "./media/method-grid-v321/be0fdba53f6dd8c0.json"
-      }
+      },
+      "review_number": 22,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "参考／背景条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_videox_hed_0p5_41win",
@@ -1313,7 +1337,16 @@
         "preview": "./media/method-grid-v321/a938a78491774952.mp4",
         "preview_bytes": 31344,
         "preview_proof": "./media/method-grid-v321/a938a78491774952.json"
-      }
+      },
+      "review_number": 23,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "参考／背景条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_videox_canny_0p2_41win",
@@ -1360,7 +1393,16 @@
         "preview": "./media/method-grid-v321/24021fef0683a204.mp4",
         "preview_bytes": 31698,
         "preview_proof": "./media/method-grid-v321/24021fef0683a204.json"
-      }
+      },
+      "review_number": 24,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "参考／背景条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_videox_tile_0p2_41win",
@@ -1407,7 +1449,16 @@
         "preview": "./media/method-grid-v321/02dafcd5e7470663.mp4",
         "preview_bytes": 31543,
         "preview_proof": "./media/method-grid-v321/02dafcd5e7470663.json"
-      }
+      },
+      "review_number": 25,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "参考／背景条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_pose_0p5_41win",
@@ -1454,7 +1505,16 @@
         "preview": "./media/method-grid-v321/d1c3d4a0935021a8.mp4",
         "preview_bytes": 31760,
         "preview_proof": "./media/method-grid-v321/d1c3d4a0935021a8.json"
-      }
+      },
+      "review_number": 26,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "original_dd_nlf_flashmotion_0p3_41win",
@@ -1501,7 +1561,16 @@
         "preview": "./media/method-grid-v321/ca05d5c5a7d626a4.mp4",
         "preview_bytes": 31596,
         "preview_proof": "./media/method-grid-v321/ca05d5c5a7d626a4.json"
-      }
+      },
+      "review_number": 27,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "运动／人体条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "eav_0.25",
@@ -1539,7 +1608,16 @@
         "preview": "./media/method-grid-v321/c130ab2316143a48.mp4",
         "preview_bytes": 30473,
         "preview_proof": "./media/method-grid-v321/c130ab2316143a48.json"
-      }
+      },
+      "review_number": 28,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "eav_0.5",
@@ -1577,7 +1655,16 @@
         "preview": "./media/method-grid-v321/a313155a5b797812.mp4",
         "preview_bytes": 30564,
         "preview_proof": "./media/method-grid-v321/a313155a5b797812.json"
-      }
+      },
+      "review_number": 29,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "freenoise_21",
@@ -1620,50 +1707,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
-    },
-    {
-      "key": "freenoise_41",
-      "title": "DD + FreeNoise · 41帧窗",
-      "principle": "在采样前重排相邻窗口的随机噪声，使窗口之间共享部分噪声结构。",
-      "case13": {
-        "label": "DD + FreeNoise 噪声重排 · 41帧窗口",
-        "video": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4",
-        "audit": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247_actual_NN_audit.json",
-        "frames": 247,
-        "source_range": [
-          845,
-          1091
-        ],
-        "quality_passed": false,
-        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。",
-        "clear_video": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4",
-        "preview": "./media/method-grid-v321/97ab9546f4f56f7d.mp4",
-        "preview_bytes": 141050,
-        "preview_proof": "./media/method-grid-v321/97ab9546f4f56f7d.json"
       },
-      "simpleD": {
-        "label": "freenoise_41",
-        "case": "simpleD",
-        "frames": 81,
-        "source_range": [
-          259,
-          339
-        ],
-        "video": "./media/fill-DD-v336/simpleD_freenoise_41_clear.mp4",
-        "clear_video": "./media/fill-DD-v336/simpleD_freenoise_41_clear.mp4",
-        "preview": "./media/fill-DD-v336/simpleD_freenoise_41_preview.mp4",
-        "preview_bytes": 31582,
-        "contact_sheet": "./media/fill-DD-v336/simpleD_freenoise_41_allframes.jpg",
-        "audit": "./media/fill-DD-v336/simpleD_freenoise_41_audit.json",
-        "visual_review": {
-          "overall_quality_accepted": false,
-          "visual_review_pending": true
-        },
-        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
-        "export_verified": true,
-        "overall_quality_accepted": false
-      }
+      "review_number": 30,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "freelong_025",
@@ -1701,7 +1754,16 @@
         "preview": "./media/method-grid-v321/7018d9f92c20d248.mp4",
         "preview_bytes": 46437,
         "preview_proof": "./media/method-grid-v321/7018d9f92c20d248.json"
-      }
+      },
+      "review_number": 32,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "freelong_05",
@@ -1744,7 +1806,16 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
+      },
+      "review_number": 33,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "stg_0.5",
@@ -1782,7 +1853,16 @@
         "preview": "./media/method-grid-v321/c396604945624dea.mp4",
         "preview_bytes": 30668,
         "preview_proof": "./media/method-grid-v321/c396604945624dea.json"
-      }
+      },
+      "review_number": 34,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "stg_1.0",
@@ -1820,7 +1900,16 @@
         "preview": "./media/method-grid-v321/2226e8ce19fcdb2a.mp4",
         "preview_bytes": 31505,
         "preview_proof": "./media/method-grid-v321/2226e8ce19fcdb2a.json"
-      }
+      },
+      "review_number": 35,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "native81_prior",
@@ -1863,7 +1952,16 @@
         "note": "正确D完整81帧，使用冻结的同一 DD 原生81帧生成参考，强度0.06。该参考来自 DD C144，复杂案例的固定当前参考来自原有 VideoX 协议。原源视频、Stage2、相机、权重保留；官方 InputVideoEmbedder/add_noise 实际核验，逐帧原生 RGB 保留。",
         "export_verified": true,
         "overall_quality_accepted": false
-      }
+      },
+      "review_number": 36,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_e986ddcb86",
@@ -1906,7 +2004,16 @@
         "preview": "./media/method-grid-v321/e986ddcb861b564e.mp4",
         "preview_bytes": 30239,
         "preview_proof": "./media/method-grid-v321/e986ddcb861b564e.json"
-      }
+      },
+      "review_number": 37,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_0dde2c3391",
@@ -1949,7 +2056,16 @@
         "preview": "./media/method-grid-v321/0dde2c339120ef28.mp4",
         "preview_bytes": 29791,
         "preview_proof": "./media/method-grid-v321/0dde2c339120ef28.json"
-      }
+      },
+      "review_number": 38,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_c95b011a9c",
@@ -2000,7 +2116,16 @@
             "href": "#SAN-correlation-repair"
           }
         ]
-      }
+      },
+      "review_number": 39,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_71e3f8c725",
@@ -2051,7 +2176,16 @@
             "href": "#SAN-SG-color-repair"
           }
         ]
-      }
+      },
+      "review_number": 40,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_48322cb3ff",
@@ -2094,7 +2228,16 @@
         "preview": "./media/method-grid-v321/48322cb3ffb12ef8.mp4",
         "preview_bytes": 31318,
         "preview_proof": "./media/method-grid-v321/48322cb3ffb12ef8.json"
-      }
+      },
+      "review_number": 41,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_d381e88ce1",
@@ -2137,7 +2280,16 @@
         "preview": "./media/method-grid-v321/d381e88ce16f7104.mp4",
         "preview_bytes": 30895,
         "preview_proof": "./media/method-grid-v321/d381e88ce16f7104.json"
-      }
+      },
+      "review_number": 42,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_8afe63f12a",
@@ -2180,7 +2332,16 @@
         "preview": "./media/method-grid-v321/8afe63f12af62a64.mp4",
         "preview_bytes": 31420,
         "preview_proof": "./media/method-grid-v321/8afe63f12af62a64.json"
-      }
+      },
+      "review_number": 43,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "simple_ee370fe4d8",
@@ -2223,7 +2384,16 @@
         "preview": "./media/method-grid-v321/ee370fe4d808731d.mp4",
         "preview_bytes": 31298,
         "preview_proof": "./media/method-grid-v321/ee370fe4d808731d.json"
-      }
+      },
+      "review_number": 44,
+      "hardH": null,
+      "applicable_cases": [
+        "case13",
+        "simpleD",
+        "hardH"
+      ],
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "prompt_static_compact",
@@ -2277,11 +2447,16 @@
       },
       "simpleD": null,
       "applicable_cases": [
-        "case13"
+        "case13",
+        "hardH"
       ],
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
-      }
+      },
+      "review_number": 45,
+      "hardH": null,
+      "change_kind": "文本条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "prompt_static_detailed",
@@ -2335,11 +2510,16 @@
       },
       "simpleD": null,
       "applicable_cases": [
-        "case13"
+        "case13",
+        "hardH"
       ],
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
-      }
+      },
+      "review_number": 46,
+      "hardH": null,
+      "change_kind": "文本条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "prompt_static_tst",
@@ -2393,11 +2573,16 @@
       },
       "simpleD": null,
       "applicable_cases": [
-        "case13"
+        "case13",
+        "hardH"
       ],
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
-      }
+      },
+      "review_number": 47,
+      "hardH": null,
+      "change_kind": "注意力／引导",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "stage2_static_background_prior",
@@ -2527,11 +2712,16 @@
       },
       "simpleD": null,
       "applicable_cases": [
-        "case13"
+        "case13",
+        "hardH"
       ],
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
-      }
+      },
+      "review_number": 48,
+      "hardH": null,
+      "change_kind": "参考／背景条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "san_rho0",
@@ -2573,11 +2763,16 @@
         "overall_quality_accepted": false
       },
       "applicable_cases": [
-        "simpleD"
+        "simpleD",
+        "hardH"
       ],
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
-      }
+      },
+      "review_number": 49,
+      "hardH": null,
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "san_rho03",
@@ -2619,11 +2814,16 @@
         "overall_quality_accepted": false
       },
       "applicable_cases": [
-        "simpleD"
+        "simpleD",
+        "hardH"
       ],
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
-      }
+      },
+      "review_number": 50,
+      "hardH": null,
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "san_rho01",
@@ -2665,11 +2865,16 @@
         "overall_quality_accepted": false
       },
       "applicable_cases": [
-        "simpleD"
+        "simpleD",
+        "hardH"
       ],
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
-      }
+      },
+      "review_number": 51,
+      "hardH": null,
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "san_rho03_sg3",
@@ -2711,11 +2916,16 @@
         "overall_quality_accepted": false
       },
       "applicable_cases": [
-        "simpleD"
+        "simpleD",
+        "hardH"
       ],
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
-      }
+      },
+      "review_number": 52,
+      "hardH": null,
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "frameinit_carrier099",
@@ -2757,11 +2967,16 @@
         "overall_quality_accepted": false
       },
       "applicable_cases": [
-        "simpleD"
+        "simpleD",
+        "hardH"
       ],
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
-      }
+      },
+      "review_number": 53,
+      "hardH": null,
+      "change_kind": "采样／初始化",
+      "training_mode": "本轮仅推理，未训练新权重"
     },
     {
       "key": "consistent_Stage2_background_anchors",
@@ -2904,11 +3119,16 @@
       },
       "simpleD": null,
       "applicable_cases": [
-        "case13"
+        "case13",
+        "hardH"
       ],
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
-      }
+      },
+      "review_number": 54,
+      "hardH": null,
+      "change_kind": "参考／背景条件",
+      "training_mode": "本轮仅推理，未训练新权重"
     }
   ],
   "inputs": {
@@ -2943,7 +3163,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 99,
+  "total_video_players": 93,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2987,9 +3207,260 @@
     "current_total_preview_bytes": 8989438,
     "current_video_players": 99
   },
-  "pending": {},
-  "total_planned_comparisons": 97,
-  "comparison_completion_fraction": "97/97",
+  "pending": {
+    "native81_no_prior|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "original_dd_21win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 4
+    },
+    "original_dd_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "research_pag10|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_frameinit_control|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_frameinit|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_tst_public|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_tst_paper|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_pag|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_fresca|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_freeinit|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_restart_control|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "original_wanmove_0p35_21win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 4
+    },
+    "original_wanmove_0p1_21win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 4
+    },
+    "original_motion_i2v_0p35_21win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 4
+    },
+    "original_wanmove_0p35_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_wanmove_0p1_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_motion_i2v_0p35_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_dd_videox_hed_0p2_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_dd_videox_hed_0p5_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_dd_videox_canny_0p2_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_dd_videox_tile_0p2_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_dd_pose_0p5_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "original_dd_nlf_flashmotion_0p3_41win|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "eav_0.25|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "eav_0.5|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "freenoise_21|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 4
+    },
+    "freelong_025|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "freelong_05|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "stg_0.5|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "stg_1.0|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "native81_prior|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_e986ddcb86|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_0dde2c3391|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_c95b011a9c|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_71e3f8c725|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_48322cb3ff|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_d381e88ce1|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_8afe63f12a|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "simple_ee370fe4d8|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "prompt_static_compact|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "prompt_static_detailed|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "prompt_static_tst|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "stage2_static_background_prior|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "san_rho0|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "san_rho03|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "san_rho01|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "san_rho03_sg3|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "frameinit_carrier099|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "consistent_Stage2_background_anchors|hardH": {
+      "label": "新增hard案例：准备独立Stage2和源条件",
+      "verified_windows": 0,
+      "total_windows": 2
+    }
+  },
+  "total_planned_comparisons": 141,
+  "comparison_completion_fraction": "91/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
@@ -3023,5 +3494,27 @@
       845,
       1091
     ]
+  },
+  "excluded_review_numbers": [
+    6,
+    12,
+    31
+  ],
+  "excluded_archive": "./fulltail-r45-before-exclusions-hardcase-20261116-v425.html",
+  "excluded_rows_record": "./excluded-methods-v425.json",
+  "case_order": [
+    "case13",
+    "simpleD",
+    "hardH"
+  ],
+  "case_labels": {
+    "case13": "复杂案例 · 屋顶舞蹈",
+    "simpleD": "简单案例 · D 女生半身",
+    "hardH": "Hard案例 · 男生转身踢腿"
+  },
+  "case_short_labels": {
+    "case13": "复杂舞蹈",
+    "simpleD": "简单半身",
+    "hardH": "新增Hard案例"
   }
 }
