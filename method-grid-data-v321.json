@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794833937.4471328,
-  "total_complete_comparisons": 94,
-  "method_rows": 51,
+  "updated_unix": 1794834509.2329388,
+  "total_complete_comparisons": 96,
+  "method_rows": 53,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -413,7 +413,12 @@
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
         "overall_quality_accepted": false,
-        "additional_links": []
+        "additional_links": [
+          {
+            "label": "查看首帧低频强度修复对照",
+            "href": "#FrameInit-color-repair"
+          }
+        ]
       }
     },
     {
@@ -2039,7 +2044,13 @@
         "clear_video": "./media/correct-simpleD-v152/native81_v245_SAN_SG3.mp4",
         "preview": "./media/method-grid-v321/71e3f8c725e448e6.mp4",
         "preview_bytes": 140297,
-        "preview_proof": "./media/method-grid-v321/71e3f8c725e448e6.json"
+        "preview_proof": "./media/method-grid-v321/71e3f8c725e448e6.json",
+        "additional_links": [
+          {
+            "label": "查看对应低相关性修复对照",
+            "href": "#SAN-SG-color-repair"
+          }
+        ]
       }
     },
     {
@@ -2655,6 +2666,98 @@
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
       }
+    },
+    {
+      "key": "san_rho03_sg3",
+      "title": "DD81 SAN相关性修复 rho=0.3 SG=3.0",
+      "principle": "低相关SAN rho±0.3加SG3，对照旧rho±0.9组合；SG只改潜变量，不训练网络。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 SAN相关性修复 rho=0.3 SG=3.0",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/background-SAN-v385/san_rho03_sg3_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/san_rho03_sg3_clear.mp4",
+        "preview": "./media/background-SAN-v385/san_rho03_sg3_preview.mp4",
+        "preview_bytes": 51544,
+        "contact_sheet": "./media/background-SAN-v385/san_rho03_sg3_allframes.jpg",
+        "audit": "./media/background-SAN-v385/san_rho03_sg3_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项专门修复D的初始化异常，完整源视频、首帧、相机及权重不变；参数调整与旧失败版分列，不能声称原失败参数已通过。",
+        "visual_review": {
+          "all81_native_frames_contact_sheet_actually_viewed": true,
+          "frames_reviewed": 81,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "confetti_resolved": true,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "scope": "Compared to old SANrho±.9+SG3, use rho±.3 and retain same SG3/source/camera/firstGG/prompt/native50DD calls. All81 frames viewed photographic person and background, no widespread noise. No overall action/flicker quality pass, no model training, no final RGB edits.",
+          "time": 1794834072.7827532
+        },
+        "overall_quality_accepted": false
+      },
+      "applicable_cases": [
+        "simpleD"
+      ],
+      "case_notes": {
+        "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
+      }
+    },
+    {
+      "key": "frameinit_carrier099",
+      "title": "DD81 FrameInit 低信号修复 carrier0.99",
+      "principle": "将首帧低频注入载体sigma从0.85改为0.99，减弱色彩偏置；不改变最终视频像素。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 FrameInit 低信号修复 carrier0.99",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/background-SAN-v385/frameinit_carrier099_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/frameinit_carrier099_clear.mp4",
+        "preview": "./media/background-SAN-v385/frameinit_carrier099_preview.mp4",
+        "preview_bytes": 30101,
+        "contact_sheet": "./media/background-SAN-v385/frameinit_carrier099_allframes.jpg",
+        "audit": "./media/background-SAN-v385/frameinit_carrier099_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项专门修复D的初始化异常，完整源视频、首帧、相机及权重不变；参数调整与旧失败版分列，不能声称原失败参数已通过。",
+        "visual_review": {
+          "all81_native_frames_contact_sheet_actually_viewed": true,
+          "frames_reviewed": 81,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "orange_cast_resolved": true,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "scope": "Original carrier_sigma.85 injected15% first-frame low-frequency clean signal; carrier.99 lowers it to1%, with original native sigma1/no-prior DD sampling. All81 frames viewed: normal photographic skin/clothing/background, old severe orange exposure artifact absent. Does not establish overall detail/action/flicker improvement or full ConsistI2V pipeline reproduction. No network training or finalRGB edits.",
+          "time": 1794834452.248984
+        },
+        "overall_quality_accepted": false
+      },
+      "applicable_cases": [
+        "simpleD"
+      ],
+      "case_notes": {
+        "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
+      }
     }
   ],
   "inputs": {
@@ -2689,7 +2792,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 96,
+  "total_video_players": 98,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2730,12 +2833,12 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 8818151,
-    "current_video_players": 96
+    "current_total_preview_bytes": 8899796,
+    "current_video_players": 98
   },
   "pending": {},
-  "total_planned_comparisons": 94,
-  "comparison_completion_fraction": "94/94",
+  "total_planned_comparisons": 96,
+  "comparison_completion_fraction": "96/96",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
