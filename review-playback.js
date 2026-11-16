@@ -29,7 +29,8 @@
     if (preview) {
       video.dataset.originalSrc = original;
       if (video.hasAttribute('data-src')) video.dataset.src = preview;
-      if (video.getAttribute('src') !== preview) video.setAttribute('src', preview);
+      video.dataset.src = preview;
+      if (video.hasAttribute('src') && video.getAttribute('src') !== preview) video.setAttribute('src', preview);
       if (!video.nextElementSibling?.classList.contains('original-video-link')) {
         const link = document.createElement('a');
         link.className = 'original-video-link';
