@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794811709.216931,
-  "total_complete_comparisons": 58,
-  "method_rows": 36,
+  "updated_unix": 1794815057.9976223,
+  "total_complete_comparisons": 64,
+  "method_rows": 41,
   "rows": [
     {
       "key": "original_dd_21win",
@@ -96,6 +96,151 @@
         "preview": "./media/method-grid-v321/577d7d1b323ea0b8.mp4",
         "preview_bytes": 31605,
         "preview_proof": "./media/method-grid-v321/577d7d1b323ea0b8.json"
+      }
+    },
+    {
+      "key": "research_pag",
+      "title": "DD + PAG · 目标注意力引导0.5",
+      "principle": "比较正常预测与注意力被扰动的预测，用二者差异引导 DD，尝试强化结构。",
+      "paper": "https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/",
+      "case13": null,
+      "simpleD": null
+    },
+    {
+      "key": "research_frameinit_control",
+      "title": "DD + FrameInit · 去首帧信号对照",
+      "principle": "保留相同的频域噪声处理，去掉首帧信号，定位变化来源。",
+      "paper": "https://github.com/TIGER-AI-Lab/ConsistI2V",
+      "case13": null,
+      "simpleD": {
+        "label": "DD + FrameInit · 去首帧信号对照",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_research_frameinit_control_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_research_frameinit_control_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_research_frameinit_control_preview.mp4",
+        "preview_bytes": 30149,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_research_frameinit_control_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_research_frameinit_control_audit.json",
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "scope": "All81 contact-sheet frames actually viewed; complete face, clothing and scene checked, not a claim of flicker improvement.",
+          "time": 1794814515.7050686
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
+    },
+    {
+      "key": "research_frameinit",
+      "title": "DD + FrameInit · RF 适配",
+      "principle": "把首帧的低频结构加入初始噪声，尝试稳定人物和布局。",
+      "paper": "https://github.com/TIGER-AI-Lab/ConsistI2V",
+      "case13": null,
+      "simpleD": {
+        "label": "DD + FrameInit · RF 适配",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_research_frameinit_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_research_frameinit_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_research_frameinit_preview.mp4",
+        "preview_bytes": 28997,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_research_frameinit_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_research_frameinit_audit.json",
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": true,
+          "overall_quality_accepted": false,
+          "scope": "All81 contact-sheet frames actually viewed; complete face, clothing and scene checked, not a claim of flicker improvement.",
+          "time": 1794814515.6968522,
+          "failure_description": "首帧之后明显偏橙、过曝，脸部与衣服细节变糊"
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
+    },
+    {
+      "key": "research_tst_public",
+      "title": "DD + TST · 公开代码对照",
+      "principle": "按作者当前公开代码缩放时序注意力输出，与论文的查询温度版本分别测试。",
+      "paper": "https://github.com/lytang63/temporal-state-transport",
+      "case13": null,
+      "simpleD": {
+        "label": "DD + TST · 公开代码对照",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_research_tst_public_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_research_tst_public_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_research_tst_public_preview.mp4",
+        "preview_bytes": 30980,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_research_tst_public_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_research_tst_public_audit.json",
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "scope": "All81 contact-sheet frames actually viewed; complete face, clothing and scene checked, not a claim of flicker improvement.",
+          "time": 1794814515.6930828
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
+    },
+    {
+      "key": "research_tst_paper",
+      "title": "DD + TST · 论文查询温度",
+      "principle": "根据跨帧注意力的分散程度调整查询强度，尝试减少时序不稳定。",
+      "paper": "https://arxiv.org/abs/2609.08505",
+      "case13": null,
+      "simpleD": {
+        "label": "DD + TST · 论文查询温度",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_research_tst_paper_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_research_tst_paper_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_research_tst_paper_preview.mp4",
+        "preview_bytes": 29841,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_research_tst_paper_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_research_tst_paper_audit.json",
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "scope": "All81 contact-sheet frames actually viewed; complete face, clothing and scene checked, not a claim of flicker improvement.",
+          "time": 1794814515.6888208
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
       }
     },
     {
@@ -1156,7 +1301,28 @@
         "preview_bytes": 143550,
         "preview_proof": "./media/method-grid-v321/c94270d1222a021d.json"
       },
-      "simpleD": null
+      "simpleD": {
+        "label": "freelong_05",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_freelong_05_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_freelong_05_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_freelong_05_preview.mp4",
+        "preview_bytes": 56369,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_freelong_05_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_freelong_05_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
     },
     {
       "key": "stg_0.5",
@@ -1294,7 +1460,28 @@
         "preview_bytes": 157594,
         "preview_proof": "./media/method-grid-v321/e9f1d4f2a8110c39.json"
       },
-      "simpleD": null
+      "simpleD": {
+        "label": "native81_prior",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_native81_prior_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_native81_prior_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_native81_prior_preview.mp4",
+        "preview_bytes": 34989,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_native81_prior_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_native81_prior_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "正确D完整81帧，使用冻结的同一 DD 原生81帧生成参考，强度0.06。该参考来自 DD C144，复杂案例的固定当前参考来自原有 VideoX 协议。原源视频、Stage2、相机、权重保留；官方 InputVideoEmbedder/add_noise 实际核验，逐帧原生 RGB 保留。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
     },
     {
       "key": "simple_e986ddcb86",
@@ -1509,7 +1696,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 60,
+  "total_video_players": 66,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -1549,6 +1736,102 @@
     "all_original_media_unchanged": true,
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
-    "reduction_from_previous_display": 0.5055535329801607
-  }
+    "reduction_from_previous_display": 0.5055535329801607,
+    "current_total_preview_bytes": 5429269,
+    "current_video_players": 66
+  },
+  "pending": {
+    "freenoise_41|simpleD": {
+      "label": "推理检查阻断，等待修复",
+      "verified_windows": 0,
+      "total_windows": 2
+    },
+    "freenoise_21|simpleD": {
+      "label": "推理检查阻断，等待修复",
+      "verified_windows": 0,
+      "total_windows": 4
+    },
+    "research_tst_paper|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "research_tst_public|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "research_pag|simpleD": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 1
+    },
+    "research_pag|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "research_freeinit|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "research_restart_control|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_e986ddcb86|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_0dde2c3391|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_c95b011a9c|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_71e3f8c725|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_48322cb3ff|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_d381e88ce1|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "simple_8afe63f12a|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 13
+    },
+    "simple_ee370fe4d8|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 13
+    },
+    "research_frameinit|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    },
+    "research_frameinit_control|case13": {
+      "label": "排队补测",
+      "verified_windows": 0,
+      "total_windows": 7
+    }
+  },
+  "total_planned_comparisons": 82,
+  "comparison_completion_fraction": "64/82"
 }

@@ -1,0 +1,22 @@
+{
+  "label": "native81_prior",
+  "case": "simpleD",
+  "frames": 81,
+  "source_range": [
+    259,
+    339
+  ],
+  "video": "./media/fill-DD-v336/simpleD_native81_prior_clear.mp4",
+  "clear_video": "./media/fill-DD-v336/simpleD_native81_prior_clear.mp4",
+  "preview": "./media/fill-DD-v336/simpleD_native81_prior_preview.mp4",
+  "preview_bytes": 34989,
+  "contact_sheet": "./media/fill-DD-v336/simpleD_native81_prior_allframes.jpg",
+  "audit": "./media/fill-DD-v336/simpleD_native81_prior_audit.json",
+  "visual_review": {
+    "overall_quality_accepted": false,
+    "visual_review_pending": true
+  },
+  "note": "正确D完整81帧，使用冻结的同一 DD 原生81帧生成参考，强度0.06。该参考来自 DD C144，复杂案例的固定当前参考来自原有 VideoX 协议。原源视频、Stage2、相机、权重保留；官方 InputVideoEmbedder/add_noise 实际核验，逐帧原生 RGB 保留。",
+  "export_verified": true,
+  "overall_quality_accepted": false
+}
