@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794834509.2329388,
-  "total_complete_comparisons": 96,
-  "method_rows": 53,
+  "updated_unix": 1794835147.351076,
+  "total_complete_comparisons": 97,
+  "method_rows": 54,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -2518,6 +2518,10 @@
           {
             "label": "背景约束参考（生成输入）",
             "href": "./media/background-SAN-v385/Stage2_background_target_input_input_only_preview.mp4"
+          },
+          {
+            "label": "查看后续锚帧背景一致版",
+            "href": "#Stage2-consistent-background-anchors"
           }
         ]
       },
@@ -2758,6 +2762,153 @@
       "case_notes": {
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
       }
+    },
+    {
+      "key": "consistent_Stage2_background_anchors",
+      "title": "DD41 + Stage2背景与后续锚帧一致",
+      "principle": "在上一项静态背景输入基础上，进一步统一后续窗口锚帧的背景；保留原时间匹配的人物区域，检验窗接缝闪动。首窗条件相同，复用其已核验DD结果。",
+      "case13": {
+        "label": "DD41 + Stage2背景与后续锚帧一致",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/background-SAN-v385/consistent_Stage2_background_anchors_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/consistent_Stage2_background_anchors_clear.mp4",
+        "preview": "./media/background-SAN-v385/consistent_Stage2_background_anchors_preview.mp4",
+        "preview_bytes": 89642,
+        "contact_sheet": "./media/background-SAN-v385/consistent_Stage2_background_anchors_allframes.jpg",
+        "audit": "./media/background-SAN-v385/consistent_Stage2_background_anchors_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 在上一项静态背景初始化基础上，只进一步统一后续输入锚帧的背景；源/相机/噪声/prompt及人物保留区不变。首41帧条件相同，直接复用上一项已核验DD输出；后6窗新增300次DD调用。保守运动包络内及新显露背景未硬锁；未修改DD成片像素。",
+        "visual_review": {
+          "all247_native_frame_contact_parts_actually_viewed": [
+            "full247_review_part0_v417.jpg",
+            "full247_review_part1_v417.jpg",
+            "full247_review_part2_v417.jpg",
+            "full247_review_part3_v417.jpg"
+          ],
+          "frames_reviewed": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "background_variation_reduced": true,
+          "background_static_goal_met": false,
+          "residual_window_seam_flicker": true,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "failure_description": "三个预先指定的非遮挡背景ROI帧差比原DD41降低约87%/91%/93%；六处接缝跳变均减轻但仍有残余。人物和衣发继续运动；运动包络内背景、细节和源动作保真仍待验收，不宣称全画面静止。",
+          "three_background_regions": {
+            "right_wall": {
+              "ROI_xyxy": [
+                896,
+                200,
+                1254,
+                493
+              ],
+              "RGB_abs_step_mean": 0.3577234226513684,
+              "RGB_difference_from_first_mean": 1.203704350390415,
+              "relative_to_DD41_baseline": -0.8666611256404173
+            },
+            "left_building": {
+              "ROI_xyxy": [
+                40,
+                190,
+                320,
+                500
+              ],
+              "RGB_abs_step_mean": 0.4682789308026554,
+              "RGB_difference_from_first_mean": 1.881800841223373,
+              "relative_to_DD41_baseline": -0.9104513980099727
+            },
+            "upper_background": {
+              "ROI_xyxy": [
+                900,
+                20,
+                1250,
+                150
+              ],
+              "RGB_abs_step_mean": 0.5764113576189289,
+              "RGB_difference_from_first_mean": 2.4842654567981057,
+              "relative_to_DD41_baseline": -0.9286913436176335
+            }
+          },
+          "scope": "All247 native frame contact sheets viewed. Metrics inspect static background ROIs and foreground sharpness/activity proxies, not frame-accurate action correspondence. First41 exactly reuse previous DD output; six later input anchor backgrounds corrected before generation; no native output pixel edits.",
+          "time": 1794835030.9961357,
+          "full_native_diagnostics": {
+            "frames": 247,
+            "background_ROI_xyxy": [
+              896,
+              200,
+              1254,
+              493
+            ],
+            "foreground_ROI_xyxy": [
+              400,
+              100,
+              900,
+              690
+            ],
+            "background_RGB_abs_step_mean": 0.3577234148979187,
+            "background_RGB_abs_step_p95": 0.754189133644104,
+            "background_high_frequency_second_difference_mean": 0.6681175827980042,
+            "background_difference_from_first_frame_mean": 1.2037043571472168,
+            "background_flow_median_magnitude_mean": 0.002880401361347517,
+            "foreground_sharpness_Laplacian_var_median": 166.09925842285156,
+            "foreground_activity_mean": 6.893273414877372,
+            "background_seam_steps": [
+              {
+                "source_frame": 886,
+                "value": 1.2242931127548218
+              },
+              {
+                "source_frame": 926,
+                "value": 1.2189003229141235
+              },
+              {
+                "source_frame": 966,
+                "value": 1.2219860553741455
+              },
+              {
+                "source_frame": 1006,
+                "value": 1.2458577156066895
+              },
+              {
+                "source_frame": 1046,
+                "value": 1.279752254486084
+              },
+              {
+                "source_frame": 1086,
+                "value": 1.2892316579818726
+              }
+            ],
+            "limitations": "No overall quality pass: lower differences may mean blur/freeze. Flow includes texture noise. Person/action/fine detail need visual checks. No RGB edits or stabilization.",
+            "matched_baseline": "stage2_static_background_prior",
+            "relative_background_change": -0.42151467731309433,
+            "relative_foreground_sharpness_change": -6.75165732518801e-05,
+            "relative_foreground_activity_change": -0.002097911580947631
+          },
+          "temporal_and_detail_metrics": {
+            "relative_static_ROI_change_to_baseline": -0.42151467731309433,
+            "foreground_sharpness_relative_change": -6.75165732518801e-05,
+            "foreground_activity_relative_change": -0.002097911580947631
+          }
+        },
+        "overall_quality_accepted": false
+      },
+      "simpleD": null,
+      "applicable_cases": [
+        "case13"
+      ],
+      "case_notes": {
+        "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
+      }
     }
   ],
   "inputs": {
@@ -2792,7 +2943,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 98,
+  "total_video_players": 99,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2833,12 +2984,12 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 8899796,
-    "current_video_players": 98
+    "current_total_preview_bytes": 8989438,
+    "current_video_players": 99
   },
   "pending": {},
-  "total_planned_comparisons": 96,
-  "comparison_completion_fraction": "96/96",
+  "total_planned_comparisons": 97,
+  "comparison_completion_fraction": "97/97",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
