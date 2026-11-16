@@ -1,0 +1,1554 @@
+{
+  "version": "method-grid-v321",
+  "updated_unix": 1794811709.216931,
+  "total_complete_comparisons": 58,
+  "method_rows": 36,
+  "rows": [
+    {
+      "key": "original_dd_21win",
+      "title": "DD · 21 帧窗",
+      "principle": "DD 每次处理21帧，用源视频和深度相机条件生成目标视角，再按原窗口解码拼接。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_21win.mp4",
+        "preview": "./media/method-grid-v321/f19972ef383f97e2.mp4",
+        "preview_bytes": 143689,
+        "preview_proof": "./media/method-grid-v321/f19972ef383f97e2.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_21win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_21win.mp4",
+        "preview": "./media/method-grid-v321/4f28c43098100323.mp4",
+        "preview_bytes": 31779,
+        "preview_proof": "./media/method-grid-v321/4f28c43098100323.json"
+      }
+    },
+    {
+      "key": "original_dd_41win",
+      "title": "DD · 41 帧窗",
+      "principle": "把 DD 的处理窗口扩至41帧，在同一窗口内保留更多时间上下文。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_41win.mp4",
+        "preview": "./media/method-grid-v321/0ddc45d581fdf64b.mp4",
+        "preview_bytes": 141852,
+        "preview_proof": "./media/method-grid-v321/0ddc45d581fdf64b.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_41win.mp4",
+        "preview": "./media/method-grid-v321/577d7d1b323ea0b8.mp4",
+        "preview_bytes": 31605,
+        "preview_proof": "./media/method-grid-v321/577d7d1b323ea0b8.json"
+      }
+    },
+    {
+      "key": "research_selfrefine",
+      "title": "DD + Self-Refining",
+      "principle": "在部分采样步中对预测的干净 latent 加噪并重新预测，用额外推理细化生成轨迹。",
+      "case13": {
+        "key": "complex247_SelfRefine_DD41_nativeVAE_v299",
+        "label": "DD41 + Self-Refining · 复杂舞蹈完整247帧",
+        "paper": "https://agwmon.github.io/self-refine-video/",
+        "note": "与现有 DD41 使用完全相同的原 Stage2 +45°、源视频、相机、初始噪声及固定当前时刻 VideoX 先验0.06。7窗各50采样步／73次 DD 推理，共511次；保留作者 I2V 的 P&P 计划。每窗独立原生因果 VAE 解码后只按时间拼接整帧 RGB，去除重叠参考帧与 EOF 补帧。",
+        "case": "case13",
+        "role": "paper_component",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299.mp4",
+        "contact_sheet": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299_all247.jpg",
+        "audit": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299_audit.json",
+        "preview_bytes": 135256,
+        "actual_DD_calls": 511,
+        "visual_review": {
+          "frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "all247_contact_sheet_frames_visually_screened": true,
+          "EOF1091_full_resolution_visually_inspected": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "overall_quality_accepted": false,
+          "quality_failed": false,
+          "review_scope": "All247 frame contact sheets plus full-resolution EOF; screening excludes widespread confetti or whole-scene collapse, not a claim of smooth motion or fine geometry acceptance. Existing hand/body ghosting and scene detail errors remain. Temporal ROI metrics show no improvement over baseline.",
+          "temporal_and_detail_metrics": {
+            "label": "SelfRefine",
+            "frames": 247,
+            "source_range": [
+              845,
+              1091
+            ],
+            "static_ROI_mean_absolute_temporal_change": 5.3205602447676466,
+            "static_ROI_boundary_mean_change": 7.309339205423991,
+            "static_ROI_within_window_mean_change": 5.270840770751238,
+            "static_ROI_mean_brightness_temporal_change": 0.9166500975446004,
+            "garage_vent_Laplacian_variance_proxy": 547.8341039642086,
+            "all247_assembled_RGB_SHA256_independently_redecoded_and_matched": true,
+            "relative_static_ROI_change_to_baseline": 0.12453858684803643,
+            "relative_static_ROI_detail_to_baseline": 0.10147065357273233
+          },
+          "metric_report": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/complex_full247_temporal_and_detail_comparison_v315.json",
+          "updated_unix": 1794810900.6921737
+        },
+        "clear_video": "./media/new-DD-research-v293/complex247_SelfRefine_DD41_nativeVAE_v299.mp4",
+        "preview": "./media/method-grid-v321/e34caab8bb9ecb47.mp4",
+        "preview_proof": "./media/method-grid-v321/e34caab8bb9ecb47.json"
+      },
+      "simpleD": {
+        "key": "correctD_SelfRefine_PnP_v287_pnp",
+        "label": "DD + Self-Refining Video Sampling",
+        "paper": "https://agwmon.github.io/self-refine-video/",
+        "note": "采用作者 I2V 的预测—扰动—再预测更新公式及默认计划，50采样步、73次实际 DD 推理。使用原 DD 条件和权重，保留首帧锚点；适配对象为 TI2V-5B + DD，不是作者的 A14B 模型。",
+        "case": "simpleD",
+        "role": "paper_component",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp.mp4",
+        "contact_sheet": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp_all81.jpg",
+        "audit": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp_audit.json",
+        "preview_bytes": 30262,
+        "actual_DD_calls": 73,
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "large_scene_or_subject_collapse": false,
+          "first_middle_and_real_EOF_subject_scene_checked": true,
+          "overall_quality_accepted": false,
+          "native_baseline_static_background_MAE": 0.43212462589144707,
+          "current_static_background_MAE": 0.43411216139793396,
+          "relative_static_background_change": 0.004599449759167706,
+          "clear_flicker_improvement_demonstrated": false,
+          "note": "Entire81 maintains person, blouse, foliage and coherent expression/hand movement. Static-background proxy0.434 vs0.432 baseline: essentially unchanged, no demonstrated flicker gain. Screen permits one full complex247 experiment, no parameter sweep or overall acceptance.",
+          "allow_one_full_complex247_same_method_experiment": true
+        },
+        "temporal_proxy": {
+          "uncompensated_static_background_temporal_MAE": 0.43411216139793396,
+          "only_comparable_with_same_exact_source_case_and_timeline": true,
+          "not_overall_quality_acceptance": true
+        },
+        "clear_video": "./media/new-DD-research-v293/correctD_SelfRefine_PnP_v287_pnp.mp4",
+        "preview": "./media/method-grid-v321/4e38c840860efdee.mp4",
+        "preview_proof": "./media/method-grid-v321/4e38c840860efdee.json"
+      },
+      "paper": "https://agwmon.github.io/self-refine-video/"
+    },
+    {
+      "key": "research_fresca",
+      "title": "DD + FreSca",
+      "principle": "在 DD 的速度预测中轻微提高空间高频分量，观察细节与稳定性的变化。",
+      "case13": {
+        "key": "complex247_FreSca_DD41_nativeVAE_v310",
+        "label": "DD41 + FreSca · 复杂舞蹈完整247帧",
+        "paper": "https://wikichao.github.io/FreSca/",
+        "note": "与现有 DD41 使用相同原 Stage2 +45°、源视频、相机、初始噪声及固定当前时刻 VideoX 先验0.06。作者空间 frequency_filter 适配到 DD 速度预测，高频×1.05、低频×1；7窗各50次 DD 推理，共350次。每窗独立原生因果 VAE 解码后仅按时间拼接完整 RGB 帧。",
+        "case": "case13",
+        "role": "paper_component",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/new-DD-research-v293/complex247_FreSca_DD41_nativeVAE_v310.mp4",
+        "contact_sheet": "./media/new-DD-research-v293/complex247_FreSca_DD41_nativeVAE_v310_all247.jpg",
+        "audit": "./media/new-DD-research-v293/complex247_FreSca_DD41_nativeVAE_v310_audit.json",
+        "preview_bytes": 136284,
+        "actual_DD_calls": 350,
+        "visual_review": {
+          "frames": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "all247_contact_sheet_frames_visually_screened": true,
+          "EOF1091_full_resolution_visually_inspected": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "overall_quality_accepted": false,
+          "quality_failed": false,
+          "review_scope": "All247 frame contact sheets plus full-resolution EOF; screening excludes widespread confetti or whole-scene collapse, not a claim of smooth motion or fine geometry acceptance. Existing hand/body ghosting and scene detail errors remain. Temporal ROI metrics show no improvement over baseline.",
+          "temporal_and_detail_metrics": {
+            "label": "FreSca",
+            "frames": 247,
+            "source_range": [
+              845,
+              1091
+            ],
+            "static_ROI_mean_absolute_temporal_change": 4.755983958762836,
+            "static_ROI_boundary_mean_change": 5.540356834729512,
+            "static_ROI_within_window_mean_change": 4.736374636863669,
+            "static_ROI_mean_brightness_temporal_change": 0.8187627249616918,
+            "garage_vent_Laplacian_variance_proxy": 502.37176240750443,
+            "all247_assembled_RGB_SHA256_independently_redecoded_and_matched": true,
+            "relative_static_ROI_change_to_baseline": 0.0052113375313642685,
+            "relative_static_ROI_detail_to_baseline": 0.010064451028830135
+          },
+          "metric_report": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/complex_full247_temporal_and_detail_comparison_v315.json",
+          "updated_unix": 1794810900.6964152
+        },
+        "clear_video": "./media/new-DD-research-v293/complex247_FreSca_DD41_nativeVAE_v310.mp4",
+        "preview": "./media/method-grid-v321/c5640dd2a1a9548d.mp4",
+        "preview_proof": "./media/method-grid-v321/c5640dd2a1a9548d.json"
+      },
+      "simpleD": {
+        "key": "correctD_FreSca_velocity_v292_high1p05",
+        "label": "DD + FreSca 空间频率缩放",
+        "paper": "https://wikichao.github.io/FreSca/",
+        "note": "作者空间频率过滤组件适配到 DD 的条件速度预测，CFG1，低频×1、高频×1.05，自适应阈值0.5。50次实际 DD 推理；保留相机、源视频、初始噪声及首帧。采用作者 frequency_filter，不是论文的 CFG 差值管线。",
+        "case": "simpleD",
+        "role": "paper_component",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/new-DD-research-v293/correctD_FreSca_velocity_v292_high1p05.mp4",
+        "contact_sheet": "./media/new-DD-research-v293/correctD_FreSca_velocity_v292_high1p05_all81.jpg",
+        "audit": "./media/new-DD-research-v293/correctD_FreSca_velocity_v292_high1p05_audit.json",
+        "preview_bytes": 30335,
+        "actual_DD_calls": 50,
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "quality_failed": false,
+          "large_scene_or_subject_collapse": false,
+          "first_middle_and_real_EOF_subject_scene_checked": true,
+          "overall_quality_accepted": false,
+          "native_baseline_static_background_MAE": 0.43212462589144707,
+          "current_static_background_MAE": 0.41903185844421387,
+          "relative_change": -0.030298591338606573,
+          "clear_flicker_improvement_demonstrated": false,
+          "note": "Full81 FreSca stream preserves face/blouse/foliage and action. Pixel-change proxy is about3percent lower; small difference, not proof of perceptible flicker improvement. Need sharpness tradeoff check.",
+          "time": 1794803461.8012824,
+          "allow_one_full_complex247_same_method_experiment": true,
+          "face_sharpness_Laplacian_proxy_relative_to_native": 0.06999948659891997,
+          "sharpness_proxy_report": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/new_DD_native_face_sharpness_tradeoff_v309.json"
+        },
+        "temporal_proxy": {
+          "uncompensated_static_background_temporal_MAE": 0.41903185844421387,
+          "only_comparable_with_same_exact_source_case_and_timeline": true,
+          "not_overall_quality_acceptance": true
+        },
+        "clear_video": "./media/new-DD-research-v293/correctD_FreSca_velocity_v292_high1p05.mp4",
+        "preview": "./media/method-grid-v321/974e784506df8584.mp4",
+        "preview_proof": "./media/method-grid-v321/974e784506df8584.json"
+      },
+      "paper": "https://wikichao.github.io/FreSca/"
+    },
+    {
+      "key": "research_freeinit",
+      "title": "DD + FreeInit · RF 适配",
+      "principle": "将已有 DD latent 的低频与新噪声的高频组合，再按实际 RF sigma 重启采样。",
+      "case13": null,
+      "simpleD": {
+        "key": "correctD_FreeInit_RF_sigma_scaled_v296_frequency",
+        "label": "DD + FreeInit 频域重新初始化",
+        "paper": "https://github.com/TianxingWu/FreeInit",
+        "note": "作者频域混合组件适配到 DD 的中间 sigma 重启；新高频噪声按实际 RF sigma 缩放。使用同一 DD 已生成的原生 latent，保留 Stage2、源视频、相机与权重。额外50次 DD 推理，含初轮共100次；不是原始 DDPM 管线复现。",
+        "case": "simpleD",
+        "role": "paper_component",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency.mp4",
+        "contact_sheet": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency_all81.jpg",
+        "audit": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency_audit.json",
+        "preview_bytes": 21565,
+        "actual_DD_calls": 50,
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "quality_failed": true,
+          "failure_kind": "severe_fine_detail_loss_blur",
+          "failure_description": "全片脸部及衣服细节明显变糊，画质未通过",
+          "all81_subject_scene_present": true,
+          "failure_source_frames": [
+            261,
+            339
+          ],
+          "native_baseline_static_background_MAE": 0.43212462589144707,
+          "current_static_background_MAE": 0.513396143913269,
+          "relative_change": 0.18807425717560933,
+          "overall_quality_accepted": false,
+          "no_parameter_or_complex_case_expansion_for_this_method": true,
+          "needs_matched_restart_control_to_attribute_blur": true,
+          "note": "Corrected RF noise scale removes first-port strong colored noise; author frequency initialization still severely loses detail. Do not claim all earlier degradation was solely scale mismatch. Full same-sigma ordinary restart comparator queued.",
+          "time": 1794802547.0535572
+        },
+        "temporal_proxy": {
+          "uncompensated_static_background_temporal_MAE": 0.513396143913269,
+          "only_comparable_with_same_exact_source_case_and_timeline": true,
+          "not_overall_quality_acceptance": true
+        },
+        "clear_video": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_frequency.mp4",
+        "preview": "./media/method-grid-v321/b9ed568d3ccd4268.mp4",
+        "preview_proof": "./media/method-grid-v321/b9ed568d3ccd4268.json"
+      },
+      "paper": "https://github.com/TianxingWu/FreeInit"
+    },
+    {
+      "key": "research_restart_control",
+      "title": "DD 普通重启 · FreeInit 匹配对照",
+      "principle": "使用相同 DD latent、噪声和重启日程，关闭频域混合，用于定位变化来自哪一部分。",
+      "case13": null,
+      "simpleD": {
+        "key": "correctD_FreeInit_RF_sigma_scaled_v296_restart_control",
+        "label": "DD 普通重启 · FreeInit 的匹配对照",
+        "paper": "https://github.com/TianxingWu/FreeInit",
+        "note": "与 FreeInit 使用同一已生成 latent、相同初始噪声及 sigma 日程，关闭频域混合。用于区分普通重启与频域初始化的影响，不计作另一项论文方法。",
+        "case": "simpleD",
+        "role": "control",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_restart_control.mp4",
+        "contact_sheet": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_restart_control_all81.jpg",
+        "audit": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_restart_control_audit.json",
+        "preview_bytes": 37719,
+        "actual_DD_calls": 50,
+        "visual_review": {
+          "all81_contact_sheet_reviewed": true,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "quality_failed": false,
+          "large_scene_or_subject_collapse": false,
+          "first_middle_and_real_EOF_subject_scene_checked": true,
+          "overall_quality_accepted": false,
+          "native_baseline_static_background_MAE": 0.43212462589144707,
+          "current_static_background_MAE": 0.6557095646858215,
+          "relative_change": 0.5174084636651572,
+          "clear_flicker_improvement_demonstrated": false,
+          "note": "Ordinary same-sigma restart keeps fine face and blouse details while frequency-mixed initialization blurs them. Distinguishes frequency initialization detail loss from ordinary RF restart under these settings; does not isolate each filter/noise/teacher mechanism. Background temporal change is worse than baseline; no quality improvement claimed.",
+          "time": 1794803461.8047724
+        },
+        "temporal_proxy": {
+          "uncompensated_static_background_temporal_MAE": 0.6557095646858215,
+          "only_comparable_with_same_exact_source_case_and_timeline": true,
+          "not_overall_quality_acceptance": true
+        },
+        "clear_video": "./media/new-DD-research-v293/correctD_FreeInit_RF_sigma_scaled_v296_restart_control.mp4",
+        "preview": "./media/method-grid-v321/0e93d60f5de464af.mp4",
+        "preview_proof": "./media/method-grid-v321/0e93d60f5de464af.json"
+      },
+      "paper": "https://github.com/TianxingWu/FreeInit"
+    },
+    {
+      "key": "original_wanmove_0p35_21win",
+      "title": "Wan-Move 官方轨迹函数 α0.35 · 21 帧窗",
+      "principle": "将追踪到的运动轨迹传播到 DD 条件特征，帮助模型保持动作对应关系。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · wanmove_0p35_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "wanmove_0p35_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_21win.mp4",
+        "preview": "./media/method-grid-v321/65023901bcc614cc.mp4",
+        "preview_bytes": 143776,
+        "preview_proof": "./media/method-grid-v321/65023901bcc614cc.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · wanmove_0p35_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_21win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "wanmove_0p35_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_21win.mp4",
+        "preview": "./media/method-grid-v321/18d6985cc092b36b.mp4",
+        "preview_bytes": 31876,
+        "preview_proof": "./media/method-grid-v321/18d6985cc092b36b.json"
+      }
+    },
+    {
+      "key": "original_wanmove_0p1_21win",
+      "title": "Wan-Move α0.1 · 21 帧窗",
+      "principle": "将追踪到的运动轨迹传播到 DD 条件特征，帮助模型保持动作对应关系。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · wanmove_0p1_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "wanmove_0p1_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_21win.mp4",
+        "preview": "./media/method-grid-v321/a281e8814b28895e.mp4",
+        "preview_bytes": 144116,
+        "preview_proof": "./media/method-grid-v321/a281e8814b28895e.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · wanmove_0p1_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "wanmove_0p1_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_21win.mp4",
+        "preview": "./media/method-grid-v321/7fcbd70f108f70c5.mp4",
+        "preview_bytes": 31751,
+        "preview_proof": "./media/method-grid-v321/7fcbd70f108f70c5.json"
+      }
+    },
+    {
+      "key": "original_motion_i2v_0p35_21win",
+      "title": "Motion-I2V ForwardWarp α0.35 · 21 帧窗",
+      "principle": "通过前向投影传播源视频的运动信息，再交给 DD 生成目标视角。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · motion_i2v_0p35_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_21win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "motion_i2v_0p35_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_21win.mp4",
+        "preview": "./media/method-grid-v321/de3471c64dfb0c89.mp4",
+        "preview_bytes": 144437,
+        "preview_proof": "./media/method-grid-v321/de3471c64dfb0c89.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · motion_i2v_0p35_21win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_21win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_21win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "motion_i2v_0p35_21win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_21win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_21win.mp4",
+        "preview": "./media/method-grid-v321/d224bb848bcda1d3.mp4",
+        "preview_bytes": 31814,
+        "preview_proof": "./media/method-grid-v321/d224bb848bcda1d3.json"
+      }
+    },
+    {
+      "key": "original_wanmove_0p35_41win",
+      "title": "Wan-Move α0.35 · 41 帧窗",
+      "principle": "将追踪到的运动轨迹传播到 DD 条件特征，帮助模型保持动作对应关系。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · wanmove_0p35_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "wanmove_0p35_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p35_41win.mp4",
+        "preview": "./media/method-grid-v321/73b141cf977912c2.mp4",
+        "preview_bytes": 141696,
+        "preview_proof": "./media/method-grid-v321/73b141cf977912c2.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · wanmove_0p35_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "wanmove_0p35_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p35_41win.mp4",
+        "preview": "./media/method-grid-v321/bba20dd0d6a7e113.mp4",
+        "preview_bytes": 31562,
+        "preview_proof": "./media/method-grid-v321/bba20dd0d6a7e113.json"
+      }
+    },
+    {
+      "key": "original_wanmove_0p1_41win",
+      "title": "Wan-Move α0.1 · 41 帧窗",
+      "principle": "将追踪到的运动轨迹传播到 DD 条件特征，帮助模型保持动作对应关系。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · wanmove_0p1_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "wanmove_0p1_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_wanmove_0p1_41win.mp4",
+        "preview": "./media/method-grid-v321/851babdce47e3994.mp4",
+        "preview_bytes": 141588,
+        "preview_proof": "./media/method-grid-v321/851babdce47e3994.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · wanmove_0p1_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "wanmove_0p1_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_wanmove_0p1_41win.mp4",
+        "preview": "./media/method-grid-v321/dab2d67cba2f1892.mp4",
+        "preview_bytes": 31709,
+        "preview_proof": "./media/method-grid-v321/dab2d67cba2f1892.json"
+      }
+    },
+    {
+      "key": "original_motion_i2v_0p35_41win",
+      "title": "Motion-I2V ForwardWarp α0.35 · 41 帧窗",
+      "principle": "通过前向投影传播源视频的运动信息，再交给 DD 生成目标视角。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · motion_i2v_0p35_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "motion_i2v_0p35_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_motion_i2v_0p35_41win.mp4",
+        "preview": "./media/method-grid-v321/8fb2a3d5674bc929.mp4",
+        "preview_bytes": 142045,
+        "preview_proof": "./media/method-grid-v321/8fb2a3d5674bc929.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · motion_i2v_0p35_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "motion_i2v_0p35_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_motion_i2v_0p35_41win.mp4",
+        "preview": "./media/method-grid-v321/2af8c1179843a420.mp4",
+        "preview_bytes": 31598,
+        "preview_proof": "./media/method-grid-v321/2af8c1179843a420.json"
+      }
+    },
+    {
+      "key": "original_dd_videox_hed_0p2_41win",
+      "title": "DD + VideoX HED 0.2 · 41 帧窗",
+      "principle": "用 HED 提取较柔和的轮廓，生成参考以约束 DD 的目标视角布局。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_videox_hed_0p2_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p2_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p2_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_videox_hed_0p2_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p2_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p2_41win.mp4",
+        "preview": "./media/method-grid-v321/1e8cd9b9d015f43a.mp4",
+        "preview_bytes": 140935,
+        "preview_proof": "./media/method-grid-v321/1e8cd9b9d015f43a.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_videox_hed_0p2_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p2_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p2_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_videox_hed_0p2_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p2_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p2_41win.mp4",
+        "preview": "./media/method-grid-v321/be0fdba53f6dd8c0.mp4",
+        "preview_bytes": 31409,
+        "preview_proof": "./media/method-grid-v321/be0fdba53f6dd8c0.json"
+      }
+    },
+    {
+      "key": "original_dd_videox_hed_0p5_41win",
+      "title": "DD + VideoX HED 0.5 · 41 帧窗",
+      "principle": "用 HED 提取较柔和的轮廓，生成参考以约束 DD 的目标视角布局。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_videox_hed_0p5_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p5_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p5_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_videox_hed_0p5_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p5_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_hed_0p5_41win.mp4",
+        "preview": "./media/method-grid-v321/2ee7116aeec748ed.mp4",
+        "preview_bytes": 141370,
+        "preview_proof": "./media/method-grid-v321/2ee7116aeec748ed.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_videox_hed_0p5_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p5_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p5_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_videox_hed_0p5_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p5_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_hed_0p5_41win.mp4",
+        "preview": "./media/method-grid-v321/a938a78491774952.mp4",
+        "preview_bytes": 31344,
+        "preview_proof": "./media/method-grid-v321/a938a78491774952.json"
+      }
+    },
+    {
+      "key": "original_dd_videox_canny_0p2_41win",
+      "title": "DD + VideoX Canny 0.2 · 41 帧窗",
+      "principle": "先利用 Canny 边缘生成目标视角参考，再用参考引导 DD 的场景轮廓。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_videox_canny_0p2_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_canny_0p2_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_canny_0p2_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_videox_canny_0p2_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_canny_0p2_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_canny_0p2_41win.mp4",
+        "preview": "./media/method-grid-v321/b8cc584aee99a039.mp4",
+        "preview_bytes": 141105,
+        "preview_proof": "./media/method-grid-v321/b8cc584aee99a039.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_videox_canny_0p2_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_canny_0p2_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_canny_0p2_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_videox_canny_0p2_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_canny_0p2_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_canny_0p2_41win.mp4",
+        "preview": "./media/method-grid-v321/24021fef0683a204.mp4",
+        "preview_bytes": 31698,
+        "preview_proof": "./media/method-grid-v321/24021fef0683a204.json"
+      }
+    },
+    {
+      "key": "original_dd_videox_tile_0p2_41win",
+      "title": "DD + VideoX Tile 0.2 · 41 帧窗",
+      "principle": "以图像局部结构和纹理生成参考，再送入 DD 作为目标视角约束。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_videox_tile_0p2_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_tile_0p2_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_tile_0p2_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_videox_tile_0p2_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_tile_0p2_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_videox_tile_0p2_41win.mp4",
+        "preview": "./media/method-grid-v321/56b65e1d964636e1.mp4",
+        "preview_bytes": 141535,
+        "preview_proof": "./media/method-grid-v321/56b65e1d964636e1.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_videox_tile_0p2_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_tile_0p2_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_tile_0p2_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_videox_tile_0p2_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_tile_0p2_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_videox_tile_0p2_41win.mp4",
+        "preview": "./media/method-grid-v321/02dafcd5e7470663.mp4",
+        "preview_bytes": 31543,
+        "preview_proof": "./media/method-grid-v321/02dafcd5e7470663.json"
+      }
+    },
+    {
+      "key": "original_dd_pose_0p5_41win",
+      "title": "DD + 投影关节残差 β0.5 · 41 帧窗",
+      "principle": "把投影后的人体关节信息加入 DD 的相机条件，增强人体动作位置约束。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_pose_0p5_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_pose_0p5_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_pose_0p5_41win.mp4",
+        "preview": "./media/method-grid-v321/7a73fbbafe45452f.mp4",
+        "preview_bytes": 141514,
+        "preview_proof": "./media/method-grid-v321/7a73fbbafe45452f.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_pose_0p5_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_pose_0p5_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_pose_0p5_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_pose_0p5_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_pose_0p5_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_pose_0p5_41win.mp4",
+        "preview": "./media/method-grid-v321/d1c3d4a0935021a8.mp4",
+        "preview_bytes": 31760,
+        "preview_proof": "./media/method-grid-v321/d1c3d4a0935021a8.json"
+      }
+    },
+    {
+      "key": "original_dd_nlf_flashmotion_0p3_41win",
+      "title": "DD + NLF 轮廓 + FlashMotion 0.3 · 41 帧窗",
+      "principle": "把人体轮廓和运动信息加入 DD 条件，帮助保持主体轮廓与运动。",
+      "case13": {
+        "label": "复杂屋顶舞蹈 · dd_nlf_flashmotion_0p3_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用同一独立目标视频先验修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "case13",
+        "method": "dd_nlf_flashmotion_0p3_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_case13_dd_nlf_flashmotion_0p3_41win.mp4",
+        "preview": "./media/method-grid-v321/980cdcaa392ba97c.mp4",
+        "preview_bytes": 142253,
+        "preview_proof": "./media/method-grid-v321/980cdcaa392ba97c.json"
+      },
+      "simpleD": {
+        "label": "正确D半身 · dd_nlf_flashmotion_0p3_41win · 原窗口VAE解码修正版",
+        "video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_nlf_flashmotion_0p3_41win.mp4",
+        "audit": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_nlf_flashmotion_0p3_41win_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用同一份已核验DD采样结果，恢复每个原窗口自己的因果VAE上下文；完整原生RGB帧按源时间排列，仅去掉重复参考帧与EOF占位，不混合、不平滑、不插帧。没有新增DD采样，不重复计为新论文方法。沿用固定DD81生成参考修复协议。画质、动作和剩余闪动仍待验收。",
+        "case": "simpleD",
+        "method": "dd_nlf_flashmotion_0p3_41win",
+        "native_decoder_corrected": true,
+        "color_only_screen_passed": true,
+        "all_frames_image": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_nlf_flashmotion_0p3_41win_allframes.jpg",
+        "clear_video": "./media/correct-simpleD-v152/native_VAE252_simpleD_dd_nlf_flashmotion_0p3_41win.mp4",
+        "preview": "./media/method-grid-v321/ca05d5c5a7d626a4.mp4",
+        "preview_bytes": 31596,
+        "preview_proof": "./media/method-grid-v321/ca05d5c5a7d626a4.json"
+      }
+    },
+    {
+      "key": "eav_0.25",
+      "title": "DD + Enhance-A-Video · α0.25",
+      "principle": "利用跨帧注意力增强时序联系，帮助前后帧保留一致的信息。",
+      "case13": {
+        "label": "DD + Enhance-A-Video α0.25",
+        "video": "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。合法的零增强窗口单独记录，未强迫修改输出。",
+        "clear_video": "./media/correct-simpleD-v152/EAV_a0p25_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/8450d884b14de5cc.mp4",
+        "preview_bytes": 141383,
+        "preview_proof": "./media/method-grid-v321/8450d884b14de5cc.json"
+      },
+      "simpleD": {
+        "label": "DD81 + Enhance-A-Video α0.25",
+        "video": "./media/correct-simpleD-v152/gpu5_eav.mp4",
+        "audit": "./media/correct-simpleD-v152/gpu5_eav_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "pending",
+        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/gpu5_eav.mp4",
+        "preview": "./media/method-grid-v321/c130ab2316143a48.mp4",
+        "preview_bytes": 30473,
+        "preview_proof": "./media/method-grid-v321/c130ab2316143a48.json"
+      }
+    },
+    {
+      "key": "eav_0.5",
+      "title": "DD + Enhance-A-Video · α0.5",
+      "principle": "利用跨帧注意力增强时序联系，帮助前后帧保留一致的信息。",
+      "case13": {
+        "label": "DD + Enhance-A-Video α0.5",
+        "video": "./media/correct-simpleD-v152/EAV_a0p5_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/EAV_a0p5_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。合法的零增强窗口单独记录，未强迫修改输出。",
+        "clear_video": "./media/correct-simpleD-v152/EAV_a0p5_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/32e722eaad7577f8.mp4",
+        "preview_bytes": 142190,
+        "preview_proof": "./media/method-grid-v321/32e722eaad7577f8.json"
+      },
+      "simpleD": {
+        "label": "DD81 + Enhance-A-Video α0.5",
+        "video": "./media/correct-simpleD-v152/gpu6_eav.mp4",
+        "audit": "./media/correct-simpleD-v152/gpu6_eav_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "pending",
+        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/gpu6_eav.mp4",
+        "preview": "./media/method-grid-v321/a313155a5b797812.mp4",
+        "preview_bytes": 30564,
+        "preview_proof": "./media/method-grid-v321/a313155a5b797812.json"
+      }
+    },
+    {
+      "key": "freenoise_21",
+      "title": "DD + FreeNoise · 21帧窗",
+      "principle": "在采样前重排相邻窗口的随机噪声，使窗口之间共享部分噪声结构。",
+      "case13": {
+        "label": "DD + FreeNoise 噪声重排 · 21帧窗口",
+        "video": "./media/correct-simpleD-v152/FreeNoise21_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/FreeNoise21_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。",
+        "clear_video": "./media/correct-simpleD-v152/FreeNoise21_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/6d9034ad7bbd4267.mp4",
+        "preview_bytes": 144722,
+        "preview_proof": "./media/method-grid-v321/6d9034ad7bbd4267.json"
+      },
+      "simpleD": null
+    },
+    {
+      "key": "freenoise_41",
+      "title": "DD + FreeNoise · 41帧窗",
+      "principle": "在采样前重排相邻窗口的随机噪声，使窗口之间共享部分噪声结构。",
+      "case13": {
+        "label": "DD + FreeNoise 噪声重排 · 41帧窗口",
+        "video": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。仅移植FreeNoise噪声重排组件，未移植上游时序注意力融合。",
+        "clear_video": "./media/correct-simpleD-v152/FreeNoise41_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/97ab9546f4f56f7d.mp4",
+        "preview_bytes": 141050,
+        "preview_proof": "./media/method-grid-v321/97ab9546f4f56f7d.json"
+      },
+      "simpleD": null
+    },
+    {
+      "key": "freelong_025",
+      "title": "DD + FreeLong · α0.25",
+      "principle": "组合长程和局部时间注意力的频谱信息，在全局一致性与局部运动之间折中。",
+      "case13": {
+        "label": "DD + FreeLong 频谱时序注意力 α0.25",
+        "video": "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。FreeLong全局/局部频谱融合移植到DD双流联合时空注意力，非上游原管线。",
+        "clear_video": "./media/correct-simpleD-v152/FreeLong_a0p25_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/03213748c0fdb169.mp4",
+        "preview_bytes": 142048,
+        "preview_proof": "./media/method-grid-v321/03213748c0fdb169.json"
+      },
+      "simpleD": {
+        "label": "DD81 + FreeLong 频谱时序注意力 α0.25",
+        "video": "./media/correct-simpleD-v152/gpu3_freelong.mp4",
+        "audit": "./media/correct-simpleD-v152/gpu3_freelong_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "failed",
+        "note": "完整81帧；未见满屏彩噪，但出现背景绿植漂移、场景一致性变差，画质未通过，不接受为原生DD81的改进。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/gpu3_freelong.mp4",
+        "preview": "./media/method-grid-v321/7018d9f92c20d248.mp4",
+        "preview_bytes": 46437,
+        "preview_proof": "./media/method-grid-v321/7018d9f92c20d248.json"
+      }
+    },
+    {
+      "key": "freelong_05",
+      "title": "DD + FreeLong · α0.5",
+      "principle": "增加长程时序注意力的融合比例，观察一致性与细节、运动的取舍。",
+      "case13": {
+        "label": "DD + FreeLong 频谱时序注意力 α0.5",
+        "video": "./media/correct-simpleD-v152/FreeLong_a0p5_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/FreeLong_a0p5_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。FreeLong全局/局部频谱融合移植到DD双流联合时空注意力，非上游原管线。",
+        "clear_video": "./media/correct-simpleD-v152/FreeLong_a0p5_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/c94270d1222a021d.mp4",
+        "preview_bytes": 143550,
+        "preview_proof": "./media/method-grid-v321/c94270d1222a021d.json"
+      },
+      "simpleD": null
+    },
+    {
+      "key": "stg_0.5",
+      "title": "DD + STG · 引导0.5",
+      "principle": "比较正常推理与跳过选定层的预测，用二者差异引导 DD；每步需要两次模型推理。",
+      "case13": {
+        "label": "DD + STG 跳层引导 0.5 · 50步/100次DD推理",
+        "video": "./media/correct-simpleD-v152/STG_s0p5_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/STG_s0p5_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。",
+        "clear_video": "./media/correct-simpleD-v152/STG_s0p5_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/5fa60da19424b3c6.mp4",
+        "preview_bytes": 139938,
+        "preview_proof": "./media/method-grid-v321/5fa60da19424b3c6.json"
+      },
+      "simpleD": {
+        "label": "DD81 + STG 0.5 · 50步/100次DD推理",
+        "video": "./media/correct-simpleD-v152/gpu4_stg.mp4",
+        "audit": "./media/correct-simpleD-v152/gpu4_stg_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "pending",
+        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。STG实际100次DD网络推理、50采样步，算力是50次基线的两倍；不依赖视频参考或递归DD末帧。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/gpu4_stg.mp4",
+        "preview": "./media/method-grid-v321/c396604945624dea.mp4",
+        "preview_bytes": 30668,
+        "preview_proof": "./media/method-grid-v321/c396604945624dea.json"
+      }
+    },
+    {
+      "key": "stg_1.0",
+      "title": "DD + STG · 引导1.0",
+      "principle": "比较正常推理与跳过选定层的预测，用二者差异引导 DD；每步需要两次模型推理。",
+      "case13": {
+        "label": "DD + STG 跳层引导 1.0 · 50步/100次DD推理",
+        "video": "./media/correct-simpleD-v152/STG_s1p0_nativeVAE_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/STG_s1p0_nativeVAE_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。STG双分支实际100次DD推理/50采样步；比基线多一倍DD推理，非等算力对照。采用DD双流目标块跳层适配，两分支共用DD条件。",
+        "clear_video": "./media/correct-simpleD-v152/STG_s1p0_nativeVAE_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/ef4ee93a7aee2567.mp4",
+        "preview_bytes": 138615,
+        "preview_proof": "./media/method-grid-v321/ef4ee93a7aee2567.json"
+      },
+      "simpleD": {
+        "label": "DD81 + STG 1.0 · 50步/100次DD推理",
+        "video": "./media/correct-simpleD-v152/gpu4_stg1.mp4",
+        "audit": "./media/correct-simpleD-v152/gpu4_stg1_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "pending",
+        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。STG实际100次DD网络推理、50采样步，算力是50次基线的两倍；不依赖视频参考或递归DD末帧。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/gpu4_stg1.mp4",
+        "preview": "./media/method-grid-v321/2226e8ce19fcdb2a.mp4",
+        "preview_bytes": 31505,
+        "preview_proof": "./media/method-grid-v321/2226e8ce19fcdb2a.json"
+      }
+    },
+    {
+      "key": "native81_no_prior",
+      "title": "DD 原生81帧 · 无整段目标参考",
+      "principle": "以完整81帧上下文从噪声开始采样，作为更长上下文的原生 DD 对照。",
+      "case13": {
+        "label": "DD + 原生81帧完整噪声采样 · 无整段目标视频先验",
+        "video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "无整段目标视频先验对照失败：中段出现大面积场景丢失、白雾和重建失稳；首尾正常不能代表整段通过。完整失败输出保留，不作为改进候选。已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。原生81帧目标21/源21潜帧，天然匹配训练源时间偏移21，无短窗位置补丁。4窗各50次DD推理；上下文和相应VAE编码、随机噪声尺寸随之改变。未使用整段目标视频先验；首窗沿用原Stage2，后续首帧仍来自同一独立固定当前NN参考图，不是真值或本轮DD递归反馈。",
+        "quality_status": "failed",
+        "failure_kind": "scene_collapse_without_full_video_prior",
+        "clear_video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/0dba6f7d065ca360.mp4",
+        "preview_bytes": 158027,
+        "preview_proof": "./media/method-grid-v321/0dba6f7d065ca360.json"
+      },
+      "simpleD": {
+        "label": "DD 原生81帧完整基线",
+        "video": "./media/correct-simpleD-v152/baseline.mp4",
+        "audit": "./media/correct-simpleD-v152/baseline_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "pending",
+        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/baseline.mp4",
+        "preview": "./media/method-grid-v321/f18da1e018fdcb51.mp4",
+        "preview_bytes": 30720,
+        "preview_proof": "./media/method-grid-v321/f18da1e018fdcb51.json"
+      }
+    },
+    {
+      "key": "native81_prior",
+      "title": "DD 原生81帧 · 固定当前目标参考",
+      "principle": "扩大时间上下文，同时保留与短窗实验相同的固定当前时刻目标视频参考。",
+      "case13": {
+        "label": "DD + 原生81帧上下文 · 同一固定当前视频参考 · 原窗口VAE解码",
+        "video": "./media/correct-simpleD-v152/native81_current_prior_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_current_prior_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。原生81帧目标21/源21潜帧，天然匹配训练源时间偏移21，无短窗位置补丁。4窗各50次DD推理；上下文和相应VAE编码、随机噪声尺寸随之改变。",
+        "clear_video": "./media/correct-simpleD-v152/native81_current_prior_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/e9f1d4f2a8110c39.mp4",
+        "preview_bytes": 157594,
+        "preview_proof": "./media/method-grid-v321/e9f1d4f2a8110c39.json"
+      },
+      "simpleD": null
+    },
+    {
+      "key": "simple_e986ddcb86",
+      "title": "DD81 + SAGA SG 时间加速度引导 3",
+      "principle": "利用预测的时间加速度调整 DD 的采样更新，尝试抑制不稳定的运动变化。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 + SAGA SG 时间加速度引导 3",
+        "video": "./media/correct-simpleD-v152/native81_v240_scale3.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_v240_scale3_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。保留基线初始噪声；SG在去噪中对预测干净潜变量施加时间加速度梯度，固定首帧作上下文；50次DD推理及50次潜变量梯度，不对网络反向传播。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。",
+        "clear_video": "./media/correct-simpleD-v152/native81_v240_scale3.mp4",
+        "preview": "./media/method-grid-v321/e986ddcb861b564e.mp4",
+        "preview_bytes": 30239,
+        "preview_proof": "./media/method-grid-v321/e986ddcb861b564e.json"
+      }
+    },
+    {
+      "key": "simple_0dde2c3391",
+      "title": "DD81 + SAGA SG 时间加速度引导 10",
+      "principle": "利用预测的时间加速度调整 DD 的采样更新，尝试抑制不稳定的运动变化。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 + SAGA SG 时间加速度引导 10",
+        "video": "./media/correct-simpleD-v152/native81_v240_scale10.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_v240_scale10_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。保留基线初始噪声；SG在去噪中对预测干净潜变量施加时间加速度梯度，固定首帧作上下文；50次DD推理及50次潜变量梯度，不对网络反向传播。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。",
+        "clear_video": "./media/correct-simpleD-v152/native81_v240_scale10.mp4",
+        "preview": "./media/method-grid-v321/0dde2c339120ef28.mp4",
+        "preview_bytes": 29791,
+        "preview_proof": "./media/method-grid-v321/0dde2c339120ef28.json"
+      }
+    },
+    {
+      "key": "simple_c95b011a9c",
+      "title": "DD81 + SAGA SAN 结构化噪声 · 单独对照",
+      "principle": "在初始化中引入结构化时间噪声，尝试让相邻时刻的生成更连贯。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 + SAGA SAN 结构化噪声 · 单独对照",
+        "video": "./media/correct-simpleD-v152/native81_v245_SANonly.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_v245_SANonly_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "新增SAGA SAN噪声组件在DD移植设置下产生满屏彩噪，画质失败；已停止继续扩展，仅保留失败对照。正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。使用作者SAN双AR噪声初始化，实际进入模型的噪声单独核验；本行只测试SAN噪声初始化，无SG梯度。50次DD推理。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。",
+        "quality_status": "failed",
+        "failure_kind": "widespread_confetti",
+        "clear_video": "./media/correct-simpleD-v152/native81_v245_SANonly.mp4",
+        "preview": "./media/method-grid-v321/c95b011a9cf6a270.mp4",
+        "preview_bytes": 141849,
+        "preview_proof": "./media/method-grid-v321/c95b011a9cf6a270.json"
+      }
+    },
+    {
+      "key": "simple_71e3f8c725",
+      "title": "DD81 + SAGA SAN + SG 时间加速度引导 3",
+      "principle": "同时使用结构化时间噪声与时间加速度引导，观察两项约束的联合影响。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 + SAGA SAN + SG 时间加速度引导 3",
+        "video": "./media/correct-simpleD-v152/native81_v245_SAN_SG3.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_v245_SAN_SG3_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "新增SAGA SAN噪声组件在DD移植设置下产生满屏彩噪，画质失败；已停止继续扩展，仅保留失败对照。正确D完整81帧；SAGA作者代码组件移植到DD，保留原素材、相机与首帧。使用作者SAN双AR噪声初始化，实际进入模型的噪声单独核验；SG在去噪中对预测干净潜变量施加时间加速度梯度，固定首帧作上下文；50次DD推理及50次潜变量梯度，不对网络反向传播。不是作者原自回归管线；不修改最终视频帧。闪动、动作和场景质量待验收。",
+        "quality_status": "failed",
+        "failure_kind": "widespread_confetti",
+        "clear_video": "./media/correct-simpleD-v152/native81_v245_SAN_SG3.mp4",
+        "preview": "./media/method-grid-v321/71e3f8c725e448e6.mp4",
+        "preview_bytes": 140297,
+        "preview_proof": "./media/method-grid-v321/71e3f8c725e448e6.json"
+      }
+    },
+    {
+      "key": "simple_48322cb3ff",
+      "title": "DD41 去噪强度诊断 0.015",
+      "principle": "降低从参考视频出发的去噪幅度，诊断闪动是否随采样改动量变化。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD41 去噪强度诊断 0.015",
+        "video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE.mp4",
+        "audit": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。",
+        "clear_video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p015_nativeVAE.mp4",
+        "preview": "./media/method-grid-v321/48322cb3ffb12ef8.mp4",
+        "preview_bytes": 31318,
+        "preview_proof": "./media/method-grid-v321/48322cb3ffb12ef8.json"
+      }
+    },
+    {
+      "key": "simple_d381e88ce1",
+      "title": "DD41 去噪强度诊断 0.03",
+      "principle": "降低从参考视频出发的去噪幅度，诊断闪动是否随采样改动量变化。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD41 去噪强度诊断 0.03",
+        "video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p03_nativeVAE.mp4",
+        "audit": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p03_nativeVAE_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。",
+        "clear_video": "./media/correct-simpleD-v152/denoise_strength_DD41_s0p03_nativeVAE.mp4",
+        "preview": "./media/method-grid-v321/d381e88ce16f7104.mp4",
+        "preview_bytes": 30895,
+        "preview_proof": "./media/method-grid-v321/d381e88ce16f7104.json"
+      }
+    },
+    {
+      "key": "simple_8afe63f12a",
+      "title": "DD21 去噪强度诊断 0.015",
+      "principle": "降低从参考视频出发的去噪幅度，诊断闪动是否随采样改动量变化。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD21 去噪强度诊断 0.015",
+        "video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE.mp4",
+        "audit": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。",
+        "clear_video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE.mp4",
+        "preview": "./media/method-grid-v321/8afe63f12af62a64.mp4",
+        "preview_bytes": 31420,
+        "preview_proof": "./media/method-grid-v321/8afe63f12af62a64.json"
+      }
+    },
+    {
+      "key": "simple_ee370fe4d8",
+      "title": "DD21 去噪强度诊断 0.03",
+      "principle": "降低从参考视频出发的去噪幅度，诊断闪动是否随采样改动量变化。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD21 去噪强度诊断 0.03",
+        "video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE.mp4",
+        "audit": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "note": "使用原窗口因果VAE解码；正确D完整81帧；保持固定DD81参考、源素材、相机和噪声一致，只改变去噪强度，每窗仍50次DD推理。用于定位闪动，不计作新的论文方法；不是零DD调用的VAE单独诊断。画质待验收。",
+        "clear_video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p03_nativeVAE.mp4",
+        "preview": "./media/method-grid-v321/ee370fe4d808731d.mp4",
+        "preview_bytes": 31298,
+        "preview_proof": "./media/method-grid-v321/ee370fe4d808731d.json"
+      }
+    }
+  ],
+  "inputs": {
+    "case13": {
+      "case": "case13",
+      "label": "复杂屋顶舞蹈 · 原片动作参考",
+      "source_range": [
+        845,
+        1091
+      ],
+      "frames": 247,
+      "video": "./media/correct-simpleD-v152/case13_original_source_actions.mp4",
+      "role": "原始输入动作参考，不是DD输出，不计生成方案数量；仅显示压缩，无插帧。",
+      "clear_video": "./media/correct-simpleD-v152/case13_original_source_actions.mp4",
+      "preview": "./media/method-grid-v321/e0958457298de33e.mp4",
+      "preview_bytes": 237826,
+      "preview_proof": "./media/method-grid-v321/e0958457298de33e.json"
+    },
+    "simpleD": {
+      "case": "simpleD",
+      "label": "正确D半身 · 原片动作参考",
+      "source_range": [
+        259,
+        339
+      ],
+      "frames": 81,
+      "video": "./media/correct-simpleD-v152/simpleD_original_source_actions.mp4",
+      "role": "原始输入动作参考，不是DD输出，不计生成方案数量；仅显示压缩，无插帧。",
+      "clear_video": "./media/correct-simpleD-v152/simpleD_original_source_actions.mp4",
+      "preview": "./media/method-grid-v321/daee9a0b2cdd06bb.mp4",
+      "preview_bytes": 37151,
+      "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
+    }
+  },
+  "total_video_players": 60,
+  "overall_quality_accepted": 0,
+  "stage2": {
+    "case13": {
+      "angle": 45,
+      "source_range": [
+        845,
+        1091
+      ],
+      "original_PNG_SHA256": "5dd314f61edea5605a57a75a12440f9b974b922d680d3c1b65e7ba25cbd7ccab",
+      "image": "./media/method-grid-v321/case13_original_Stage2_endpoint.webp",
+      "bytes": 22938,
+      "width": 640,
+      "height": 352,
+      "original_image": "./media/method-grid-v321/case13_Stage2_original.png"
+    },
+    "simpleD": {
+      "angle": 30,
+      "source_range": [
+        259,
+        339
+      ],
+      "original_PNG_SHA256": "7f57f50af71e5fed050357b55e1427ae520414db89f20b5f378739e4463e2c1e",
+      "image": "./media/method-grid-v321/simpleD_original_Stage2_endpoint.webp",
+      "bytes": 16378,
+      "width": 640,
+      "height": 352,
+      "original_image": "./media/method-grid-v321/simpleD_Stage2_original.png"
+    }
+  },
+  "compression": {
+    "previews": 60,
+    "width": 480,
+    "crf": 30,
+    "all_frame_counts_and_original_FPS_independently_probed": true,
+    "original_total_bytes": 128435161,
+    "preview_total_bytes": 5217944,
+    "all_original_media_unchanged": true,
+    "time": 1794811940.7541199,
+    "previous_display_preview_total_bytes": 10553102,
+    "reduction_from_previous_display": 0.5055535329801607
+  }
+}
