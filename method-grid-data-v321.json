@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794830553.9734898,
-  "total_complete_comparisons": 87,
-  "method_rows": 44,
+  "updated_unix": 1794832038.2266982,
+  "total_complete_comparisons": 90,
+  "method_rows": 47,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -412,7 +412,8 @@
         },
         "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
         "export_verified": true,
-        "overall_quality_accepted": false
+        "overall_quality_accepted": false,
+        "additional_links": []
       }
     },
     {
@@ -2206,6 +2207,180 @@
         "preview_bytes": 31298,
         "preview_proof": "./media/method-grid-v321/ee370fe4d808731d.json"
       }
+    },
+    {
+      "key": "prompt_static_compact",
+      "title": "DD41 + 静止背景简洁prompt",
+      "principle": "只在原prompt后增加静止屋顶、固定背景纹理和照明要求，其他输入与DD41匹配基线相同。",
+      "case13": {
+        "label": "DD41 + 静止背景简洁prompt",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/background-SAN-v385/prompt_static_compact_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/prompt_static_compact_clear.mp4",
+        "preview": "./media/background-SAN-v385/prompt_static_compact_preview.mp4",
+        "preview_bytes": 141722,
+        "contact_sheet": "./media/background-SAN-v385/prompt_static_compact_allframes.jpg",
+        "audit": "./media/background-SAN-v385/prompt_static_compact_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项仅改prompt；相应基线的完整初始非文本张量、随机噪声及目标参考潜变量均逐字节相同。首窗为原Stage2，后续窗口仍采用原匹配基线的近似锚帧，文字不能硬锁全片Stage2背景。",
+        "visual_review": {
+          "all247_native_frame_contact_parts_actually_viewed": [
+            "full247_review_part0_v396.jpg",
+            "full247_review_part1_v396.jpg",
+            "full247_review_part2_v396.jpg",
+            "full247_review_part3_v396.jpg"
+          ],
+          "frames_reviewed": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "background_static_goal_met": false,
+          "quality_failed": true,
+          "failure_description": "强化prompt未明显改善背景闪动；静态ROI帧间变化仅下降0.13%。",
+          "failure_kind": "static_background_goal_not_met_by_prompt_only",
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "temporal_and_detail_metrics": {
+            "relative_static_ROI_change_to_baseline": -0.0012970407209467183,
+            "foreground_sharpness_relative_change": 0.0020902148531669607,
+            "foreground_activity_relative_change": -0.00047745107662544584
+          },
+          "scope": "All247 contact-sheet frames viewed; raw RGB diagnostics supplement global appearance. Does not establish action fidelity or perceptual flicker improvement. No RGB edits.",
+          "time": 1794830451.6187258
+        },
+        "overall_quality_accepted": false
+      },
+      "simpleD": null,
+      "applicable_cases": [
+        "case13"
+      ],
+      "case_notes": {
+        "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
+      }
+    },
+    {
+      "key": "prompt_static_detailed",
+      "title": "DD41 + 静止背景详细prompt",
+      "principle": "用详细prompt强调建筑、地面、树木及曝光固定，同时保留完整舞蹈动作；对照原DD41。",
+      "case13": {
+        "label": "DD41 + 静止背景详细prompt",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/background-SAN-v385/prompt_static_detailed_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/prompt_static_detailed_clear.mp4",
+        "preview": "./media/background-SAN-v385/prompt_static_detailed_preview.mp4",
+        "preview_bytes": 141666,
+        "contact_sheet": "./media/background-SAN-v385/prompt_static_detailed_allframes.jpg",
+        "audit": "./media/background-SAN-v385/prompt_static_detailed_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项仅改prompt；相应基线的完整初始非文本张量、随机噪声及目标参考潜变量均逐字节相同。首窗为原Stage2，后续窗口仍采用原匹配基线的近似锚帧，文字不能硬锁全片Stage2背景。",
+        "visual_review": {
+          "all247_native_frame_contact_parts_actually_viewed": [
+            "full247_review_part0_v400.jpg",
+            "full247_review_part1_v400.jpg",
+            "full247_review_part2_v400.jpg",
+            "full247_review_part3_v400.jpg"
+          ],
+          "frames_reviewed": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "background_static_goal_met": false,
+          "quality_failed": true,
+          "failure_description": "详细静止背景prompt未改善闪动；静态ROI帧间变化约增加0.01%，基本不变。",
+          "failure_kind": "static_background_goal_not_met_by_prompt_only",
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "temporal_and_detail_metrics": {
+            "relative_static_ROI_change_to_baseline": 0.00011606270514263883,
+            "foreground_sharpness_relative_change": 0.0012571685742186478,
+            "foreground_activity_relative_change": -0.00019626562278052262
+          },
+          "scope": "All247 contact-sheet frames viewed; rawRGB metrics supplement global appearance, not proof of action fidelity or perceptual flicker improvement. No RGB edits.",
+          "time": 1794831322.2873318
+        },
+        "overall_quality_accepted": false
+      },
+      "simpleD": null,
+      "applicable_cases": [
+        "case13"
+      ],
+      "case_notes": {
+        "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
+      }
+    },
+    {
+      "key": "prompt_static_tst",
+      "title": "DD41 + TST + 静止背景详细prompt",
+      "principle": "保持同一TST方法及所有非文本条件，仅替换为详细静止背景prompt。",
+      "case13": {
+        "label": "DD41 + TST + 静止背景详细prompt",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/background-SAN-v385/prompt_static_tst_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/prompt_static_tst_clear.mp4",
+        "preview": "./media/background-SAN-v385/prompt_static_tst_preview.mp4",
+        "preview_bytes": 141053,
+        "contact_sheet": "./media/background-SAN-v385/prompt_static_tst_allframes.jpg",
+        "audit": "./media/background-SAN-v385/prompt_static_tst_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项仅改prompt；相应基线的完整初始非文本张量、随机噪声及目标参考潜变量均逐字节相同。首窗为原Stage2，后续窗口仍采用原匹配基线的近似锚帧，文字不能硬锁全片Stage2背景。",
+        "visual_review": {
+          "all247_native_frame_contact_parts_actually_viewed": [
+            "full247_review_part0_v404.jpg",
+            "full247_review_part1_v404.jpg",
+            "full247_review_part2_v404.jpg",
+            "full247_review_part3_v404.jpg"
+          ],
+          "frames_reviewed": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "background_static_goal_met": false,
+          "quality_failed": true,
+          "failure_description": "TST配合详细静止背景prompt未改善闪动；相对同一TST旧prompt基线，静态ROI帧间变化约增加0.02%，基本不变。",
+          "failure_kind": "static_background_goal_not_met_by_prompt_only",
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "temporal_and_detail_metrics": {
+            "relative_static_ROI_change_to_baseline": 0.00017538849132781031,
+            "foreground_sharpness_relative_change": -0.000838796381100293,
+            "foreground_activity_relative_change": -0.00020495331994141441
+          },
+          "scope": "All247 contact-sheet frames viewed; rawRGB diagnostics do not prove action fidelity or perceptual flicker improvement. No RGB edits.",
+          "time": 1794831799.5117557
+        },
+        "overall_quality_accepted": false
+      },
+      "simpleD": null,
+      "applicable_cases": [
+        "case13"
+      ],
+      "case_notes": {
+        "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
+      }
     }
   ],
   "inputs": {
@@ -2240,7 +2415,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 89,
+  "total_video_players": 92,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2281,12 +2456,12 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 8137136,
-    "current_video_players": 89
+    "current_total_preview_bytes": 8561577,
+    "current_video_players": 92
   },
   "pending": {},
-  "total_planned_comparisons": 87,
-  "comparison_completion_fraction": "87/87",
+  "total_planned_comparisons": 90,
+  "comparison_completion_fraction": "90/90",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
