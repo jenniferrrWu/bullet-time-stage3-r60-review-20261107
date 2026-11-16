@@ -1,12 +1,52 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794815057.9976223,
-  "total_complete_comparisons": 64,
+  "updated_unix": 1794815934.4930832,
+  "total_complete_comparisons": 65,
   "method_rows": 41,
   "rows": [
     {
+      "key": "native81_no_prior",
+      "title": "原本 DD · 原生81帧基线",
+      "principle": "保留 DD 原生去噪，不叠加实验增强。复杂案例分窗运行，窗口锚帧沿用既有对照设置；简单案例为单窗81帧。",
+      "case13": {
+        "label": "DD + 原生81帧完整噪声采样 · 无整段目标视频先验",
+        "video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
+        "audit": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247_actual_NN_audit.json",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "quality_passed": false,
+        "note": "无整段目标视频先验对照失败：中段出现大面积场景丢失、白雾和重建失稳；首尾正常不能代表整段通过。完整失败输出保留，不作为改进候选。已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。原生81帧目标21/源21潜帧，天然匹配训练源时间偏移21，无短窗位置补丁。4窗各50次DD推理；上下文和相应VAE编码、随机噪声尺寸随之改变。未使用整段目标视频先验；首窗沿用原Stage2，后续首帧仍来自同一独立固定当前NN参考图，不是真值或本轮DD递归反馈。",
+        "quality_status": "failed",
+        "failure_kind": "scene_collapse_without_full_video_prior",
+        "clear_video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
+        "preview": "./media/method-grid-v321/0dba6f7d065ca360.mp4",
+        "preview_bytes": 158027,
+        "preview_proof": "./media/method-grid-v321/0dba6f7d065ca360.json"
+      },
+      "simpleD": {
+        "label": "DD 原生81帧完整基线",
+        "video": "./media/correct-simpleD-v152/baseline.mp4",
+        "audit": "./media/correct-simpleD-v152/baseline_actual_NN_audit.json",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "quality_passed": false,
+        "quality_status": "pending",
+        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。",
+        "clear_video": "./media/correct-simpleD-v152/baseline.mp4",
+        "preview": "./media/method-grid-v321/f18da1e018fdcb51.mp4",
+        "preview_bytes": 30720,
+        "preview_proof": "./media/method-grid-v321/f18da1e018fdcb51.json"
+      }
+    },
+    {
       "key": "original_dd_21win",
-      "title": "DD · 21 帧窗",
+      "title": "DD 修复协议 · 21帧窗",
       "principle": "DD 每次处理21帧，用源视频和深度相机条件生成目标视角，再按原窗口解码拼接。",
       "case13": {
         "label": "复杂屋顶舞蹈 · dd_21win · 原窗口VAE解码修正版",
@@ -53,7 +93,7 @@
     },
     {
       "key": "original_dd_41win",
-      "title": "DD · 41 帧窗",
+      "title": "DD 修复协议 · 41帧窗",
       "principle": "把 DD 的处理窗口扩至41帧，在同一窗口内保留更多时间上下文。",
       "case13": {
         "label": "复杂屋顶舞蹈 · dd_41win · 原窗口VAE解码修正版",
@@ -97,14 +137,6 @@
         "preview_bytes": 31605,
         "preview_proof": "./media/method-grid-v321/577d7d1b323ea0b8.json"
       }
-    },
-    {
-      "key": "research_pag",
-      "title": "DD + PAG · 目标注意力引导0.5",
-      "principle": "比较正常预测与注意力被扰动的预测，用二者差异引导 DD，尝试强化结构。",
-      "paper": "https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/",
-      "case13": null,
-      "simpleD": null
     },
     {
       "key": "research_frameinit_control",
@@ -1241,7 +1273,28 @@
         "preview_bytes": 141050,
         "preview_proof": "./media/method-grid-v321/97ab9546f4f56f7d.json"
       },
-      "simpleD": null
+      "simpleD": {
+        "label": "freenoise_41",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_freenoise_41_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_freenoise_41_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_freenoise_41_preview.mp4",
+        "preview_bytes": 31582,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_freenoise_41_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_freenoise_41_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
     },
     {
       "key": "freelong_025",
@@ -1398,46 +1451,6 @@
         "preview": "./media/method-grid-v321/2226e8ce19fcdb2a.mp4",
         "preview_bytes": 31505,
         "preview_proof": "./media/method-grid-v321/2226e8ce19fcdb2a.json"
-      }
-    },
-    {
-      "key": "native81_no_prior",
-      "title": "DD 原生81帧 · 无整段目标参考",
-      "principle": "以完整81帧上下文从噪声开始采样，作为更长上下文的原生 DD 对照。",
-      "case13": {
-        "label": "DD + 原生81帧完整噪声采样 · 无整段目标视频先验",
-        "video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
-        "audit": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247_actual_NN_audit.json",
-        "frames": 247,
-        "source_range": [
-          845,
-          1091
-        ],
-        "quality_passed": false,
-        "note": "无整段目标视频先验对照失败：中段出现大面积场景丢失、白雾和重建失稳；首尾正常不能代表整段通过。完整失败输出保留，不作为改进候选。已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。原生81帧目标21/源21潜帧，天然匹配训练源时间偏移21，无短窗位置补丁。4窗各50次DD推理；上下文和相应VAE编码、随机噪声尺寸随之改变。未使用整段目标视频先验；首窗沿用原Stage2，后续首帧仍来自同一独立固定当前NN参考图，不是真值或本轮DD递归反馈。",
-        "quality_status": "failed",
-        "failure_kind": "scene_collapse_without_full_video_prior",
-        "clear_video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
-        "preview": "./media/method-grid-v321/0dba6f7d065ca360.mp4",
-        "preview_bytes": 158027,
-        "preview_proof": "./media/method-grid-v321/0dba6f7d065ca360.json"
-      },
-      "simpleD": {
-        "label": "DD 原生81帧完整基线",
-        "video": "./media/correct-simpleD-v152/baseline.mp4",
-        "audit": "./media/correct-simpleD-v152/baseline_actual_NN_audit.json",
-        "frames": 81,
-        "source_range": [
-          259,
-          339
-        ],
-        "quality_passed": false,
-        "quality_status": "pending",
-        "note": "完整81帧实际DD输出；彩噪、动作与闪动仍分别验收。原生81帧额外对照，不冒充原21/41帧方案。",
-        "clear_video": "./media/correct-simpleD-v152/baseline.mp4",
-        "preview": "./media/method-grid-v321/f18da1e018fdcb51.mp4",
-        "preview_bytes": 30720,
-        "preview_proof": "./media/method-grid-v321/f18da1e018fdcb51.json"
       }
     },
     {
@@ -1662,6 +1675,14 @@
         "preview_bytes": 31298,
         "preview_proof": "./media/method-grid-v321/ee370fe4d808731d.json"
       }
+    },
+    {
+      "key": "research_pag",
+      "title": "DD + PAG · 目标注意力引导0.5",
+      "principle": "比较正常预测与注意力被扰动的预测，用二者差异引导 DD，尝试强化结构。",
+      "paper": "https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/",
+      "case13": null,
+      "simpleD": null
     }
   ],
   "inputs": {
@@ -1696,7 +1717,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 66,
+  "total_video_players": 67,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -1737,22 +1758,17 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 5429269,
-    "current_video_players": 66
+    "current_total_preview_bytes": 5460851,
+    "current_video_players": 67
   },
   "pending": {
-    "freenoise_41|simpleD": {
-      "label": "推理检查阻断，等待修复",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
     "freenoise_21|simpleD": {
       "label": "推理检查阻断，等待修复",
-      "verified_windows": 0,
+      "verified_windows": 1,
       "total_windows": 4
     },
     "research_tst_paper|case13": {
-      "label": "排队补测",
+      "label": "正在补测",
       "verified_windows": 0,
       "total_windows": 7
     },
@@ -1833,5 +1849,5 @@
     }
   },
   "total_planned_comparisons": 82,
-  "comparison_completion_fraction": "64/82"
+  "comparison_completion_fraction": "65/82"
 }
