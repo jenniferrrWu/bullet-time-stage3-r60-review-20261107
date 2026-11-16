@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794815934.4930832,
-  "total_complete_comparisons": 65,
+  "updated_unix": 1794816377.4327219,
+  "total_complete_comparisons": 66,
   "method_rows": 41,
   "rows": [
     {
@@ -1251,7 +1251,28 @@
         "preview_bytes": 144722,
         "preview_proof": "./media/method-grid-v321/6d9034ad7bbd4267.json"
       },
-      "simpleD": null
+      "simpleD": {
+        "label": "freenoise_21",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_freenoise_21_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_freenoise_21_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_freenoise_21_preview.mp4",
+        "preview_bytes": 31728,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_freenoise_21_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_freenoise_21_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
     },
     {
       "key": "freenoise_41",
@@ -1717,7 +1738,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 67,
+  "total_video_players": 68,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -1758,22 +1779,17 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 5460851,
-    "current_video_players": 67
+    "current_total_preview_bytes": 5492579,
+    "current_video_players": 68
   },
   "pending": {
-    "freenoise_21|simpleD": {
-      "label": "推理检查阻断，等待修复",
-      "verified_windows": 1,
-      "total_windows": 4
-    },
     "research_tst_paper|case13": {
       "label": "正在补测",
-      "verified_windows": 0,
+      "verified_windows": 3,
       "total_windows": 7
     },
     "research_tst_public|case13": {
-      "label": "排队补测",
+      "label": "正在补测",
       "verified_windows": 0,
       "total_windows": 7
     },
@@ -1849,5 +1865,5 @@
     }
   },
   "total_planned_comparisons": 82,
-  "comparison_completion_fraction": "65/82"
+  "comparison_completion_fraction": "66/82"
 }
