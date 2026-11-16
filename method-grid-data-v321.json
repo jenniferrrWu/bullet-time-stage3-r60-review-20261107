@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794825223.0168245,
-  "total_complete_comparisons": 79,
+  "updated_unix": 1794825506.5269418,
+  "total_complete_comparisons": 80,
   "method_rows": 42,
   "rows": [
     {
@@ -1983,7 +1983,28 @@
       "key": "simple_8afe63f12a",
       "title": "DD21 去噪强度诊断 0.015",
       "principle": "降低从参考视频出发的去噪幅度，诊断闪动是否随采样改动量变化。",
-      "case13": null,
+      "case13": {
+        "label": "simple_8afe63f12a",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/fill-DD-v336/case13_simple_8afe63f12a_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/case13_simple_8afe63f12a_clear.mp4",
+        "preview": "./media/fill-DD-v336/case13_simple_8afe63f12a_preview.mp4",
+        "preview_bytes": 135270,
+        "contact_sheet": "./media/fill-DD-v336/case13_simple_8afe63f12a_allframes.jpg",
+        "audit": "./media/fill-DD-v336/case13_simple_8afe63f12a_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      },
       "simpleD": {
         "label": "DD21 去噪强度诊断 0.015",
         "video": "./media/correct-simpleD-v152/denoise_strength_DD21_s0p015_nativeVAE.mp4",
@@ -2056,7 +2077,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 81,
+  "total_video_players": 82,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2097,18 +2118,13 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 7219596,
-    "current_video_players": 81
+    "current_total_preview_bytes": 7354866,
+    "current_video_players": 82
   },
   "pending": {
-    "simple_8afe63f12a|case13": {
-      "label": "正在核验完整片段",
-      "verified_windows": 13,
-      "total_windows": 13
-    },
     "simple_ee370fe4d8|case13": {
       "label": "正在补测",
-      "verified_windows": 0,
+      "verified_windows": 6,
       "total_windows": 13
     },
     "research_frameinit|case13": {
@@ -2123,7 +2139,7 @@
     }
   },
   "total_planned_comparisons": 83,
-  "comparison_completion_fraction": "79/83",
+  "comparison_completion_fraction": "80/83",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
