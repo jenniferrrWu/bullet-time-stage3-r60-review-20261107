@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794853042.9334283,
-  "total_complete_comparisons": 97,
+  "updated_unix": 1794853678.2251422,
+  "total_complete_comparisons": 99,
   "method_rows": 51,
   "rows": [
     {
@@ -1240,7 +1240,39 @@
         "preview_proof": "./media/method-grid-v321/bba20dd0d6a7e113.json"
       },
       "review_number": 19,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "Wan-Move α0.35 · 41 帧窗 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/original_wanmove_0p35_41win_clear.mp4",
+        "clear_video": "./media/hard-case-v425/original_wanmove_0p35_41win_clear.mp4",
+        "preview": "./media/hard-case-v425/original_wanmove_0p35_41win_preview.mp4",
+        "preview_bytes": 43754,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/original_wanmove_0p35_41win_audit.json",
+        "contact_sheet": "./media/hard-case-v425/original_wanmove_0p35_41win_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": true,
+          "EOF321_full_resolution_viewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "clear_improvement_over_matched_baseline_demonstrated": false,
+          "exact_RGB_frames_equal_to_DD41_baseline": 1,
+          "review_scope": "实际查看全部81帧接触表与末窗原生EOF全尺寸图；不能据静帧接触表判定闪动已通过。",
+          "note": "全部81帧及EOF保持人物／影子／墙面，无普遍彩噪或全场景崩坏。动作总体顺序保留，但与匹配DD41基线视觉接近，未证明改善手脚细节或背景闪动。轨迹来自真实原片，迁移的是WanMove推理组件，未加载训练好的WanMove模型。",
+          "time": 1794853571.601948
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。全部81帧及EOF保持人物／影子／墙面，无普遍彩噪或全场景崩坏。动作总体顺序保留，但与匹配DD41基线视觉接近，未证明改善手脚细节或背景闪动。轨迹来自真实原片，迁移的是WanMove推理组件，未加载训练好的WanMove模型。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -1632,7 +1664,39 @@
         "preview_proof": "./media/method-grid-v321/d1c3d4a0935021a8.json"
       },
       "review_number": 26,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD + 投影关节残差 β0.5 · 41 帧窗 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/original_dd_pose_0p5_41win_clear.mp4",
+        "clear_video": "./media/hard-case-v425/original_dd_pose_0p5_41win_clear.mp4",
+        "preview": "./media/hard-case-v425/original_dd_pose_0p5_41win_preview.mp4",
+        "preview_bytes": 44033,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/original_dd_pose_0p5_41win_audit.json",
+        "contact_sheet": "./media/hard-case-v425/original_dd_pose_0p5_41win_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": true,
+          "EOF321_full_resolution_viewed": true,
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "clear_improvement_over_matched_baseline_demonstrated": false,
+          "exact_RGB_frames_equal_to_DD41_baseline": 1,
+          "review_scope": "实际查看全部81帧接触表与末窗原生EOF全尺寸图；不能据静帧接触表判定闪动已通过。",
+          "note": "全部81帧及EOF保持人物／影子／墙面，无普遍彩噪或全场景崩坏。动作总体顺序保留，但与匹配DD41基线视觉接近，未证明改善手脚细节或背景闪动。源骨架已明确选择真实舞者，未使用墙影骨架。",
+          "time": 1794853571.5969222
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。全部81帧及EOF保持人物／影子／墙面，无普遍彩噪或全场景崩坏。动作总体顺序保留，但与匹配DD41基线视觉接近，未证明改善手脚细节或背景闪动。源骨架已明确选择真实舞者，未使用墙影骨架。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -3371,7 +3435,7 @@
       "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 100,
+  "total_video_players": 102,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -3488,11 +3552,6 @@
       "verified_windows": 0,
       "total_windows": 4
     },
-    "original_wanmove_0p35_41win|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
     "original_wanmove_0p1_41win|hardH": {
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
@@ -3519,11 +3578,6 @@
       "total_windows": 2
     },
     "original_dd_videox_tile_0p2_41win|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
-    "original_dd_pose_0p5_41win|hardH": {
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
       "total_windows": 2
@@ -3655,7 +3709,7 @@
     }
   },
   "total_planned_comparisons": 141,
-  "comparison_completion_fraction": "97/141",
+  "comparison_completion_fraction": "99/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
