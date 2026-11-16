@@ -1,13 +1,13 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794819571.3074763,
-  "total_complete_comparisons": 70,
-  "method_rows": 41,
+  "updated_unix": 1794819615.124689,
+  "total_complete_comparisons": 71,
+  "method_rows": 42,
   "rows": [
     {
       "key": "native81_no_prior",
       "title": "原本 DD · 原生81帧基线",
-      "principle": "保留 DD 原生去噪，不叠加实验增强。复杂案例分窗运行，窗口锚帧沿用既有对照设置；简单案例为单窗81帧。",
+      "principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
       "case13": {
         "label": "DD + 原生81帧完整噪声采样 · 无整段目标视频先验",
         "video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
@@ -18,13 +18,24 @@
           1091
         ],
         "quality_passed": false,
-        "note": "无整段目标视频先验对照失败：中段出现大面积场景丢失、白雾和重建失稳；首尾正常不能代表整段通过。完整失败输出保留，不作为改进候选。已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。原生81帧目标21/源21潜帧，天然匹配训练源时间偏移21，无短窗位置补丁。4窗各50次DD推理；上下文和相应VAE编码、随机噪声尺寸随之改变。未使用整段目标视频先验；首窗沿用原Stage2，后续首帧仍来自同一独立固定当前NN参考图，不是真值或本轮DD递归反馈。",
+        "note": "无整段目标视频先验对照失败：中段出现大面积场景丢失、白雾和重建失稳；首尾正常不能代表整段通过。完整失败输出保留，不作为改进候选。已恢复每个原窗口的因果VAE解码上下文，完整原生帧按源时间排列；未重新采样或平滑视频。实际DD采样，完整源帧已解码，独立核对模型输入和全部无损帧；247个真实源帧，末尾占位不计数。动作与闪动待验收，额外研究方案不计原14方案通过。原生81帧目标21/源21潜帧，天然匹配训练源时间偏移21，无短窗位置补丁。4窗各50次DD推理；上下文和相应VAE编码、随机噪声尺寸随之改变。未使用整段目标视频先验；首窗沿用原Stage2，后续首帧仍来自同一独立固定当前NN参考图，不是真值或本轮DD递归反馈。 本次原条件重放的初始输入、最终潜变量与全部81帧原生RGB逐字节相同；仅统一原始源帧/Stage2配对的完整247帧仍失败。中段参考初始化修复结果在下一行，未覆盖或改名这条失败基线。",
         "quality_status": "failed",
         "failure_kind": "scene_collapse_without_full_video_prior",
         "clear_video": "./media/correct-simpleD-v152/native81_no_video_prior_case13_full247.mp4",
         "preview": "./media/method-grid-v321/0dba6f7d065ca360.mp4",
         "preview_bytes": 158027,
-        "preview_proof": "./media/method-grid-v321/0dba6f7d065ca360.json"
+        "preview_proof": "./media/method-grid-v321/0dba6f7d065ca360.json",
+        "repair_result_anchor": "#native81-scene-repair",
+        "additional_links": [
+          {
+            "label": "原因与复跑对照",
+            "href": "./media/native81-scene-repair-v353/diagnosis.json"
+          },
+          {
+            "label": "仅修正参考配对（仍失败）",
+            "href": "./media/native81-scene-repair-v353/reference_pair_failed_clear.mp4"
+          }
+        ]
       },
       "simpleD": {
         "label": "DD 原生81帧完整基线",
@@ -43,6 +54,61 @@
         "preview_bytes": 30720,
         "preview_proof": "./media/method-grid-v321/f18da1e018fdcb51.json"
       }
+    },
+    {
+      "key": "native81_scene_repair",
+      "title": "DD81 场景修复 · 中段参考初始化",
+      "principle": "仅中段两个失稳窗口使用已有近似目标视频参考来初始化 DD；首段与尾段保留原生完整噪声采样。",
+      "applicable_cases": [
+        "case13"
+      ],
+      "case_notes": {
+        "simpleD": "此项修复针对复杂案例后续窗口的场景崩坏。简单案例是单窗81帧，未改动；结果见上方原生 DD 基线。"
+      },
+      "case13": {
+        "label": "DD81 中段参考初始化修复 · 完整247帧",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/native81-scene-repair-v353/selective_init_clear.mp4",
+        "clear_video": "./media/native81-scene-repair-v353/selective_init_clear.mp4",
+        "preview": "./media/native81-scene-repair-v353/selective_init_preview.mp4",
+        "preview_bytes": 118207,
+        "contact_sheet": "./media/native81-scene-repair-v353/selective_init_all247.jpg",
+        "audit": "./media/native81-scene-repair-v353/selective_init_audit.json",
+        "visual_review": {
+          "frames_reviewed": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "reviewed_all_native_frame_contact_parts": [
+            "full247_part0_v356.jpg",
+            "full247_part1_v356.jpg",
+            "full247_part2_v356.jpg",
+            "full247_part3_v356.jpg"
+          ],
+          "scene_collapse_resolved": true,
+          "widespread_scene_loss_absent": true,
+          "widespread_white_fog_absent": true,
+          "gross_person_reconstruction_collapse_absent": true,
+          "person_visible_all_real_output_frames": true,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_motion_faithfulness_not_accepted": true,
+          "motion_and_flicker_review_pending": true,
+          "boundary_pose_and_detail_quality_not_accepted": true,
+          "scope": "Only gross scene/person collapse repaired and all247 real frames retained. Does not accept original source action fidelity, fine detail, or flicker. Per-window conditioning initializer changed; untouched original baseline remains failed.",
+          "time": 1794819526.2036242
+        },
+        "quality_passed": false,
+        "overall_quality_accepted": false,
+        "note": "完整 f845–f1091 共247帧。按完整窗口采用初始化强度 [1,0.06,0.06,1]：首81帧与末6帧保留原原生DD结果，中段160帧采用已实际完成的参考初始化DD窗口。每窗81帧、50步/50次DD，CFG1、LoRA1，四窗共200次已有真实推理复用，本次不计新增模型采样。中段源视频、相机、首帧锚、源/相机特征和生成噪声均与失败对照相同，仅使用官方InputVideoEmbedder和对应RF去噪日程初始化；强度0.06实际首sigma约0.242。参考来自既有独立VideoX V52生成，为近似视频，不是真值。明确属于条件初始化修复，原始完整噪声基线仍保留失败。每窗使用自己的原生因果VAE解码，全部247帧原生RGB及源帧顺序核验；没有输出RGB混合、贴图、平滑或插帧。场景及大面积人物崩坏已消除，动作一致性、细节与闪动尚未通过完整验收。"
+      },
+      "simpleD": null
     },
     {
       "key": "original_dd_21win",
@@ -1822,7 +1888,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 72,
+  "total_video_players": 73,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -1863,8 +1929,8 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 5953017,
-    "current_video_players": 72
+    "current_total_preview_bytes": 6071224,
+    "current_video_players": 73
   },
   "pending": {
     "research_freeinit|case13": {
@@ -1928,6 +1994,40 @@
       "total_windows": 7
     }
   },
-  "total_planned_comparisons": 82,
-  "comparison_completion_fraction": "70/82"
+  "total_planned_comparisons": 83,
+  "comparison_completion_fraction": "71/83",
+  "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
+  "scene_repair_review_scope": {
+    "original_failed_baseline_preserved": true,
+    "repair_is_explicit_enhancement": true,
+    "full247_review": {
+      "frames_reviewed": 247,
+      "source_range": [
+        845,
+        1091
+      ],
+      "reviewed_all_native_frame_contact_parts": [
+        "full247_part0_v356.jpg",
+        "full247_part1_v356.jpg",
+        "full247_part2_v356.jpg",
+        "full247_part3_v356.jpg"
+      ],
+      "scene_collapse_resolved": true,
+      "widespread_scene_loss_absent": true,
+      "widespread_white_fog_absent": true,
+      "gross_person_reconstruction_collapse_absent": true,
+      "person_visible_all_real_output_frames": true,
+      "quality_failed": false,
+      "overall_quality_accepted": false,
+      "source_motion_faithfulness_not_accepted": true,
+      "motion_and_flicker_review_pending": true,
+      "boundary_pose_and_detail_quality_not_accepted": true,
+      "scope": "Only gross scene/person collapse repaired and all247 real frames retained. Does not accept original source action fidelity, fine detail, or flicker. Per-window conditioning initializer changed; untouched original baseline remains failed.",
+      "time": 1794819526.2036242
+    },
+    "source_range": [
+      845,
+      1091
+    ]
+  }
 }
