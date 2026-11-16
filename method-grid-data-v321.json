@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794833000.5683527,
-  "total_complete_comparisons": 91,
-  "method_rows": 48,
+  "updated_unix": 1794833937.4471328,
+  "total_complete_comparisons": 94,
+  "method_rows": 51,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -1988,7 +1988,13 @@
         "clear_video": "./media/correct-simpleD-v152/native81_v245_SANonly.mp4",
         "preview": "./media/method-grid-v321/c95b011a9cf6a270.mp4",
         "preview_bytes": 141849,
-        "preview_proof": "./media/method-grid-v321/c95b011a9cf6a270.json"
+        "preview_proof": "./media/method-grid-v321/c95b011a9cf6a270.json",
+        "additional_links": [
+          {
+            "label": "查看对应低相关性修复对照",
+            "href": "#SAN-correlation-repair"
+          }
+        ]
       }
     },
     {
@@ -2511,6 +2517,144 @@
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       }
+    },
+    {
+      "key": "san_rho0",
+      "title": "DD81 SAN相关性修复 rho=0.0 SG=0.0",
+      "principle": "作者SAN噪声生成器的rho降至0，作为CPU随机数与布局的独立噪声对照，不声称保留结构化相关性。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 SAN相关性修复 rho=0.0 SG=0.0",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/background-SAN-v385/san_rho0_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/san_rho0_clear.mp4",
+        "preview": "./media/background-SAN-v385/san_rho0_preview.mp4",
+        "preview_bytes": 45743,
+        "contact_sheet": "./media/background-SAN-v385/san_rho0_allframes.jpg",
+        "audit": "./media/background-SAN-v385/san_rho0_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项专门修复D的初始化异常，完整源视频、首帧、相机及权重不变；参数调整与旧失败版分列，不能声称原失败参数已通过。",
+        "visual_review": {
+          "all81_native_frames_contact_sheet_actually_viewed": true,
+          "frames_reviewed": 81,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "confetti_resolved": true,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "scope": "rho0 is independent-noise control using same authorCPU FP32->nativeBF16/layout/seed; all81 display photographic person/background. This confirms the CPU/backend/layout pipeline can work. It does NOT establish nonzero SAN compatibility or flicker improvement. No output RGB edits.",
+          "time": 1794833463.91021
+        },
+        "overall_quality_accepted": false
+      },
+      "applicable_cases": [
+        "simpleD"
+      ],
+      "case_notes": {
+        "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
+      }
+    },
+    {
+      "key": "san_rho03",
+      "title": "DD81 SAN相关性修复 rho=0.3 SG=0.0",
+      "principle": "保留作者双AR噪声形式，将正负相关系数从±0.9降至±0.3；只改相关性参数。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 SAN相关性修复 rho=0.3 SG=0.0",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/background-SAN-v385/san_rho03_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/san_rho03_clear.mp4",
+        "preview": "./media/background-SAN-v385/san_rho03_preview.mp4",
+        "preview_bytes": 51412,
+        "contact_sheet": "./media/background-SAN-v385/san_rho03_allframes.jpg",
+        "audit": "./media/background-SAN-v385/san_rho03_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项专门修复D的初始化异常，完整源视频、首帧、相机及权重不变；参数调整与旧失败版分列，不能声称原失败参数已通过。",
+        "visual_review": {
+          "all81_native_frames_contact_sheet_actually_viewed": true,
+          "frames_reviewed": 81,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "confetti_resolved": true,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "scope": "Same author dualAR noise form, CPUFP32->nativeBF16/layout/seed, only rho reduced from±.9 to±.3 or±.1. All81 native frames viewed: photographic person/background, no widespread colored noise. No claim of full AR SAGA reproduction, overall action/flicker improvement, training or finalRGB edit.",
+          "time": 1794833800.124627
+        },
+        "overall_quality_accepted": false
+      },
+      "applicable_cases": [
+        "simpleD"
+      ],
+      "case_notes": {
+        "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
+      }
+    },
+    {
+      "key": "san_rho01",
+      "title": "DD81 SAN相关性修复 rho=0.1 SG=0.0",
+      "principle": "保留作者双AR噪声形式，将正负相关系数从±0.9降至±0.1，检查彩噪与时间相关的关系。",
+      "case13": null,
+      "simpleD": {
+        "label": "DD81 SAN相关性修复 rho=0.1 SG=0.0",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/background-SAN-v385/san_rho01_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/san_rho01_clear.mp4",
+        "preview": "./media/background-SAN-v385/san_rho01_preview.mp4",
+        "preview_bytes": 47425,
+        "contact_sheet": "./media/background-SAN-v385/san_rho01_allframes.jpg",
+        "audit": "./media/background-SAN-v385/san_rho01_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 此项专门修复D的初始化异常，完整源视频、首帧、相机及权重不变；参数调整与旧失败版分列，不能声称原失败参数已通过。",
+        "visual_review": {
+          "all81_native_frames_contact_sheet_actually_viewed": true,
+          "frames_reviewed": 81,
+          "source_range": [
+            259,
+            339
+          ],
+          "widespread_confetti": false,
+          "confetti_resolved": true,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "scope": "Same author dualAR noise form, CPUFP32->nativeBF16/layout/seed, only rho reduced from±.9 to±.3 or±.1. All81 native frames viewed: photographic person/background, no widespread colored noise. No claim of full AR SAGA reproduction, overall action/flicker improvement, training or finalRGB edit.",
+          "time": 1794833800.128821
+        },
+        "overall_quality_accepted": false
+      },
+      "applicable_cases": [
+        "simpleD"
+      ],
+      "case_notes": {
+        "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
+      }
     }
   ],
   "inputs": {
@@ -2545,7 +2689,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 93,
+  "total_video_players": 96,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2586,12 +2730,12 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 8673571,
-    "current_video_players": 93
+    "current_total_preview_bytes": 8818151,
+    "current_video_players": 96
   },
   "pending": {},
-  "total_planned_comparisons": 91,
-  "comparison_completion_fraction": "91/91",
+  "total_planned_comparisons": 94,
+  "comparison_completion_fraction": "94/94",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
