@@ -1,6 +1,6 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794844536.1255178,
+  "updated_unix": 1794848441.3788974,
   "total_complete_comparisons": 91,
   "method_rows": 51,
   "rows": [
@@ -3161,9 +3161,24 @@
       "preview": "./media/method-grid-v321/daee9a0b2cdd06bb.mp4",
       "preview_bytes": 37151,
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
+    },
+    "hardH": {
+      "case": "hardH",
+      "label": "Hard男舞者 · 原片动作参考",
+      "source_range": [
+        241,
+        321
+      ],
+      "frames": 81,
+      "video": "./media/hard-case-v425/hardH_original_source_clear.mp4",
+      "clear_video": "./media/hard-case-v425/hardH_original_source_clear.mp4",
+      "preview": "./media/hard-case-v425/hardH_original_source_preview.mp4",
+      "preview_bytes": 45444,
+      "role": "原视频f241到真实EOF321，25fps，非DD生成结果；显示压缩不计生成数量。",
+      "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 93,
+  "total_video_players": 94,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -3191,6 +3206,23 @@
       "width": 640,
       "height": 352,
       "original_image": "./media/method-grid-v321/simpleD_Stage2_original.png"
+    },
+    "hardH": {
+      "angle": 13.5,
+      "source_range": [
+        241,
+        321
+      ],
+      "image": "./media/hard-case-v425/hardH_Stage2_preview.webp",
+      "width": 640,
+      "height": 352,
+      "original_image": "./media/hard-case-v425/hardH_Stage2_native_original.png",
+      "DD_input_image": "./media/hard-case-v425/hardH_Stage2_DD_input.png",
+      "original_PNG_SHA256": "dd30b310ac8a3db5c34cecc8704d62266cb9679e882824af1474200a87b4d0f5",
+      "DD_input_SHA256": "46ea6e298fa747936c2ea92db7109835fa8648c6746fda30d8a911658c6d00e5",
+      "provider": "ReCamMaster step20000_aria, exact native frame24/81",
+      "input_transform": "Full-field PIL bilinear contain832x480 into1280x704 with black side padding; original nativePNG preserved. Input preprocessing only.",
+      "actual_visual_angle_groundtruth": false
     }
   },
   "compression": {
@@ -3209,7 +3241,7 @@
   },
   "pending": {
     "native81_no_prior|hardH": {
-      "label": "新增hard案例：准备独立Stage2和源条件",
+      "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
       "total_windows": 1
     },
@@ -3510,7 +3542,7 @@
   "case_labels": {
     "case13": "复杂案例 · 屋顶舞蹈",
     "simpleD": "简单案例 · D 女生半身",
-    "hardH": "Hard案例 · 男生转身踢腿"
+    "hardH": "Hard动作案例 · 男舞者（13.5°）"
   },
   "case_short_labels": {
     "case13": "复杂舞蹈",
