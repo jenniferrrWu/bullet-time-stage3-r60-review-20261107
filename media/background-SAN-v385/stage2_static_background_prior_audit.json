@@ -1,0 +1,583 @@
+{
+  "complete_native_RGB_proof": {
+    "method_key": "stage2_static_background_prior",
+    "case": "case13",
+    "frames": 247,
+    "source_range": [
+      845,
+      1091
+    ],
+    "actual_NN_windows": [
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_000",
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_001",
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_002",
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_003",
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_004",
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_005",
+      "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/window_006"
+    ],
+    "actual_DD_calls": 350,
+    "output_video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/stage2_static_background_prior_v388/stage2_static_background_prior/full_native_window_RGB.mkv",
+    "output_SHA256": "11f77b107527e7cc9b2f4c3d2bea12f0ad34bdbbf622068e33646287a1e5484d",
+    "all_final_RGB_SHA256": [
+      "5dd8e0b71958d902d48f267ac7c5c541b436f7b6c5e811ebd6c84bcf80b6c23c",
+      "9f005dbde49c2eff30dcc274452dfcd074b58da8229137d34d587bb72a255cf3",
+      "4d9a3de6aa6775db812e8bda775b86b289f7014ce439d91edf37c879ea287c43",
+      "0b14e8868fa69ca6d904ebb0c4dfc4e73c232041e834736dc0c0ef2a223c9a25",
+      "d3874a95622e258d0b2def3780bb1e70afb839a61889853628e047e49eda7645",
+      "d39cd7248729dba2e4a85e335c3624c5407220cde48a2d6f4fa7949f07655a13",
+      "59c54378576277201e44088972b50e460d203d5449248fcc1f62f2e2b8132aa9",
+      "267ae47144915674f439276b43e13fe4c757b3a393ddb5735b1999fc141a8460",
+      "926595c6ce336452efecbc44c6910a0941d117bef5204ca84f644cc9718c43a9",
+      "44eb4eecc169ab2e5994954181ec66a250d36965c2694ffea2d364a326e5d8ad",
+      "a31b070292c22eac944058a778ba198428f1b20d5bb84a39082b3c40cc7d649a",
+      "0c6367e9dc6d278d019f4bb7f1c820b5283df98a74a1c34f0f157ea430bb80a6",
+      "df51a370a727d3cce29a8fbd66b868eeb2935648f57c790132ee446d0f98837b",
+      "41b2295bd824ec76a24923139d83d9bd03995fc3fa815f12b29ba360568081e9",
+      "125bd76f02c118d9a5879ecae409be2efa9d99b8cda0a2986fc3913c2fae3b33",
+      "5d73740faf1bcaeebc8578f0be400fac2337da50dc8c1c9ae5c30ebe80f2017d",
+      "b5b8b56a174faebd7ff280630b3292b54a175a7dd668a612f4c30aa6568745e2",
+      "7c47c6186abc7a8b7fffa7b2e13f5c97476b3406e311d6c05de64011e860d9d4",
+      "c0c84a506ec8691ddaaab08fde7c59a4ac9f33a00ed76a06713d8122f95e6c51",
+      "eb168509e4edc485141b0b517ee5f58f6f9dc8482e0fda4b380789caa104dff0",
+      "ea8ef3b95c74bd79bcf41de77240bd945ddc81f279960a593f3aa6a936922c60",
+      "32d9023b543700564752d8aec96bd5521c2b2f54732510245c7ab4bd4617b3ee",
+      "dcf4e7e604599bdd228162fbb9698d3e6c52b1dd3d9f9feec86bb0055463f1c1",
+      "60c4674c52ab16595e53cdde73cda90beba08af6e079b4d9d5adafb661c8721c",
+      "c8318eac10ade644df4d2f29caef700bfaa35ba38efa200bd441e35106198794",
+      "c4d4bf2c9eaf33e2b86096beebf09601367afbfdf2c1c7e52dadddc226169de0",
+      "f8b2401b8b2dc22c3ab3c312ed671f13c5d5d6b510f6a24cdda2ab9f1d97e7e8",
+      "f38ff51f7264ddaf1655316806c3861545c0ca9e558f6d123fbb48957b0af12b",
+      "ab3f85b5b772ee194598c9986f16136d8821fac018bcdfab571a2adb01f1bd5b",
+      "dd3a2bff549440ccebd338edac8c2fee05aa091c326997de65290fa9e3d06fa2",
+      "3f71a0f8ce279d10e95997f97f9bf5131c5d3b9bb8cf76ba1f816fe4acbc067a",
+      "27aa2352630d2fc413ac83cc1be6decd8c9210f8505cae8a264e8b4f0a9a9949",
+      "b132bb16f405d9e4aaf396bfb5b38f5bca7f90b9e59aaf94afd2518da01ba7ff",
+      "ea435b11baed67f1b67892a149beaca0c6b9b55ce0422a075061b60c20599f08",
+      "d1f7fad230ca461b4416d24e019948adff09cc99488fac04005a03f1f8f2d2bb",
+      "917c3fa1f86617b62cb39031824747d40ed5c1323fe1f7cbba268d925a779e93",
+      "f1aa495ca0746e67fabd102f014bec1355b22b7035e2a710ee21fcdf8bbde195",
+      "1071f84b545dcf68661912d0139efcaf0e54e64f6fd7dd82fdba606d58d8e9f7",
+      "119cf3f510867d59200ebe50c9bf2cef9f96d434110a698a034b3a2829fa297a",
+      "59f218cad428af20e560cac1e32e1d3fa1348a542f9edf55730871ea2fab472d",
+      "6940d39137f7ef860d314edfc008d1e06d37f643c6829835e55d28f11e2e2f7c",
+      "329b307817b95347f78687ae5b94e9c07e9c8fc8ebe0048e2c057019a5df486f",
+      "74cfbbcdc7b760e59da57014a3991d38795f0c4b40aff80bdb336e620d4fe417",
+      "7c6149c0f905e44c8644e08e8730d8b3422659edb32a6b5f527f920dd5cbdb56",
+      "ca9bb6e292cf8099d448cbc819b13aee96120f94b9082e9b1ba635b2cc3bd49d",
+      "11526f8172a63d22d3080a923fa2cb5b8fb9756bf181165fbe69b74ca0354e94",
+      "39c307d271508a3bb59396a669f50ec1c37a41e193c5fa230c7eb0784d51578d",
+      "a1813ed09f5e0292d3627a0ce214826b769e3341ff0aba3c7271f621d333b26f",
+      "beeaea368f03065426bacd152f943e2882679dd53441ffe07dc676d648710c0c",
+      "765c01a964bfa3c198de540d7fac0926a7056d9510dfd6935884594275ea5524",
+      "f3363dfee420c264bf0a7c8df2af793ad0fc682e3d86a0e9ba24fb4b0f5f20db",
+      "b6d9086a32c20dcd465fe8ba3d2975abc3237e5af2b7ab8e7d9d529654687e74",
+      "9d0088b027060818f54cd0c2ce698cb3eb37dc238abcddf9db0670fdd71dab8f",
+      "84622d7bb7e1bb9a6f4b77f3a1e8b338e68c8223880026f9a531230418020f76",
+      "dcd406fc667406ee4fe230dadc422917e2b5a6cffa33d60337ef12671311a5e1",
+      "76fe88a35b9493e7abef497fe5e92175cdbc0532fbbcf3fda778c61ab1131f39",
+      "2a82dfcdd24656959cc9540d3a9b4d5b75cb140badaeb86548d178d87732a020",
+      "d1147d6325c89b431392aa73167fa827fcdbb94dbeb02c4fc3da4e97c711a469",
+      "038df7f9bd47b2e90099600815d001dcfa8fcac4f66967112185d963d694fea6",
+      "a3a6e856e106ec53abb87e70ef391d2b8b1d3168dcf02dbb1ee2abf187943838",
+      "e94ab41bc234cc6d667ea7f69fbf45037905585a64b8c414ff136aa7513f87c6",
+      "3a3c9369d14460e60e40d27365a5b66b82636bdfb1c36f6567d6bc6653481be3",
+      "6de18d153f147909184751c589142c8c7965bf7c85125b2c7e58017eed35e428",
+      "fde235f264f06ce18e71a0817355b47abd42626b8cfe04030766384505358696",
+      "ec4df7a1b9f26d55bf663a94dbc41f2501e1235f8843f4e1be744520564abf9e",
+      "eaaafd6ae5734e0156bc1ded8be41eed5a628ee2e7b61ffb5eaf017dadc8b43c",
+      "7fc52e30cabd83255aef54694fc2edd2812ab750c2399585daed94ae9ca055c0",
+      "888914b6d66f7d879f5d9b6e18c9c547ab27595308387fa24f8ada6449b09863",
+      "4e97a223c127c5814978dbaec5574c323657d997dbd6b2b6003b3450d48ee9bc",
+      "927ed12ce869158c48427ab56ce9184dcca8a5244e466976e0b140f155bf35e1",
+      "e826e40953079498fba039ff24b634effdce27e024141fea3754a5a6192a1c01",
+      "8730ffc4178a798a03ba1a387d1243f3de1e8f946d547acf1ae1e6862ede52b8",
+      "c736169d8b9db6272d7ef509d0e40f5e9f44a75a6091b24bd8823502d2f43b94",
+      "a05726b7f5a03ab693574b4b2616dfeef6743bf61daf88a1a10b8860364f05b3",
+      "09d9e96136f633951e829b7743c084d259ab6f344c32b510d7c171abad6e17b8",
+      "08629f94d6a6b7885f94a37701a618e8af5e52c72efbc52ce3346e7844fc0310",
+      "aa57278d7af4b8d74dcd6c4cb30e85a2625410cf4d5b8bc6ebbc56c5f1d892bc",
+      "8dda88a1d35734937eee13aca8fa8885a01c5a6b78a2e6ed57c0f061425c9920",
+      "94d52e08fb1060d16aac013812d20d6323fd73a622f307fb1a5b2b04f3ce70de",
+      "591eb5bd24bb4a93fae2c78c73611fb3eabea4e6bd8375f4480e26d42ba2a015",
+      "11c5a012aaf94c093ac02029b007a71ad24d84720adfac9e8cb45794f8753f79",
+      "07abb8774c32e158243b2b4c00ed6ffb5707733519eb1821ba6d5d79ff6836f6",
+      "c7c4f840f42bed48e942d6433fa1449bfdf47266e28675e91da8ba1b7b991220",
+      "12d0a067f9221eaa88ebe9fbd950d47b63ac8d867d3b4ff80312343006f2600a",
+      "630cb2e364da63d1b2972bf00bb11a2870480e3d3b709e32642b53e00eed9c18",
+      "92a4502b269a522540365fe20ed9b1fd88bb840ac7e03be12c6195c77468a4f0",
+      "23b0141abced3395bf9a3f395533fff1dab4280e798fcf8719d880de7e925ce5",
+      "73421012d495fb124052117f536ece75643b4904ced4a9dc8d0e1c7029f40be4",
+      "13d9ebe461d9077908c880fbafa8a5a2fe765c20b729972b3a8a774a3f2423bb",
+      "4a8bb9665cc484b73761b50d3dce32bf42f8cbfa30a606d36f1f5e2974c7f28c",
+      "10ba116cba3727c501ce40b1fc1c46a711d129d9db5c6ac8bc23b99901f9c2ba",
+      "0edcacd8a274f9305a97c7c3011ff1ebea97ca90b02828264136740af89589c5",
+      "3b64dca3b0d2bc889be0e924222a2c937304533432a5352dc78115f0948c6a9a",
+      "ec027f1cfb5b7162a806264aa8439f8657e5486a2eb75a6ae3ce4747380ae0eb",
+      "542d1bae3ffe2a7ac12c799a0541c8e6c3be2995bbde620119d61a106377ac39",
+      "7b5f736333f5e032aa331d82720680c1b78a23858884ffbc1cc675b81a50c8f7",
+      "7d7508da4ab74ed5726df30cb0097e38c24c57ef6eb5d796492bfa41ace0a77f",
+      "1a41c92225680285ce7578d6a3ce3b87707b4da6ed5d9c663328adaad678199e",
+      "0a7e7d3c0fe92afb3c302817273323d00f49bd3eaeead651ddf4c2445951cf87",
+      "0de809f92112e45132ddb6761be10a0872b3b4da201c61cdf4910489dad6dfa5",
+      "9ab4deeba7fda98ab1764e47331ef7096a69be66e21f25cc8b96d71313f258da",
+      "11ea81263f0e3cf961ded0677ec97f2668e6ccafd808e10bd616f863d7a5bf21",
+      "a3350200ea893302605809ba84759ead69a6cd09c7ef483d3eab4121645ec723",
+      "5261605facbe4e0b434d89fa1c7b1445efe9a8170820c76839ba3ca08529f67c",
+      "c8b184555e3615b933f73d77e8b68d4e7673f8e0ce7750f3cae6c52a6a47be9c",
+      "1cef2e6cfbddc9d1a94d9cab9f703c5cfc1e3c010273785303cf8033bee2cc9a",
+      "f1b059a36490b532b4f30731c03d678f1402d6c7497315282d04334a3f031300",
+      "377c1f6f70e499573e88fd34b864ba4f87d3b07d73d330a168872153d4230f49",
+      "c070a0e549325f9c316fb3e574b3f4785878cd990cf1121eff0d57d622c44fb5",
+      "cac5c0a0a84528104a2c149b740492e33d4f64b1a1e5474ed2465a671b32b69a",
+      "765288c26b86946243dcd5b5d031fd71ec1d12ee9aa7a53f2bc38774a9a1398e",
+      "6e6e19e809643685e9fbf8edaa4503898a2d29daed902dc67a71ab0961ce7bcd",
+      "76d9d7ca08226d2cdd1db4877d727df3ebed5e929b5fec8261fbb97f260ae345",
+      "f03d5b6ea7892ad941243f46908549ff4fbe1264931e8c08bf68901c1f3e5330",
+      "4ab0fc1f0957668851cac7ae0a702b8d5bdc829a4272b47fadfffe99505da688",
+      "29f06d695921d3774ec7e1995685e6f98136d622fa6c7303179df709d86fac31",
+      "d06c16b6fa154123e671fce2e9de5a6616c54127074dad2df874f4448655107a",
+      "485323a0b7a89a2cc781876a4f9ee1e4c2aec5312612f46aaad83319aff13ae5",
+      "8cfb3f355f84ca662a48cf15bfe8b140ed3e6062e7e56312f9e1248e7cb9e7fd",
+      "0acd9689e7e400715479a27efcc9382afef39024b5f88e104d341aa73b9d4ea0",
+      "c942778d65c97372e1c41ef781444f2e70fabe29e4547c426c1fb4d1566cdff9",
+      "f130aae61fa2572980732b8e23ccd891f28baaa4db44615af34ed8a6fe774ce2",
+      "9b4b62c10874fc8c18ae1c6d548fb8f332d24156ec84f153a79d6b8242064519",
+      "200816a3b8efd73b44bc68fa410195b3af8741377987e97393e39ed6e17644d4",
+      "1bd8e5156bfca92ae4dc2777b29fb5f7221ac310081e06bb71bd482a05c729a8",
+      "c166596c9dcf721f33f037f954905630fdffebb00613d20608678d41d7ba18f8",
+      "746a8c47a0d2b7ccc2a94d2a4e6807b5143cebe8bfd44b8ec0d80cadcc399d81",
+      "aa0c814fbc49b102b7083eab1c87e86f81372d617d9f46bb8b571f41840ebbe4",
+      "6c065b76cd286995e0c1541b5819ffcc2c567278391d5ee9eb7cda97e498e4c8",
+      "957a51519b0571ba5dd4fd87cd6bdb321ac6d44dad46b45c36815f11fd591c36",
+      "23b8da669857df67059efdd4bca9c19ed7005a5e003b7e8f7538c71e808eb289",
+      "23af081b9be9243d58622cae2a3a7560f7b61858fa04ab04ea3168b286f6e913",
+      "00567928781873ef9e0da517323378e9217550ef76924a171afb7b4709ce902d",
+      "7cde02eda0195b191725cdff667ed370c0e9d62ccddc41753553f98a7b13ddbf",
+      "20b683f6d9ede05db33ea8cb5437a1065a5acaef419bb4971f292ff4005c0a56",
+      "fde5f7aaa2a39693a89f1c63b859a05bea5c629fe18082cf293dc3b38af630bd",
+      "a8985966f03d83cadecc0f29efa947666dc4357fe7707d2f07f779baa9906676",
+      "5ebc0a9a09c3bb30290e475a6882bc80136b4f28821ce568405a3834ef2bf744",
+      "1ce712dc012cbbe676c6cf9744d2e80a37aa494c12bb295d23568976db80a19e",
+      "1d77ab32beb134b57d4649659963cb2a1d3e75cc761191678d1e86111633efef",
+      "3f2f5c1d43160c79ff01be5e742d0620e5e8f1f53e604b383df7c4dd58f5166d",
+      "1f67747157e28716db0c76749425d3c707aff1954a37471802c438b27d824714",
+      "4dc9eedd35b1262ade14d7c3da4f134bb3588bdb0fc92db8539dd25703cc016d",
+      "52a3a8f91d8db048d15e53665380282ee4cf4d7b5a39921f8c7304831956b6d1",
+      "bbdfbffea96bf688e11378406564ffb4ceb3473ffc3b2f1989ee66ffa25bbd9d",
+      "3b5d802f1a508c3e1f93bc3e7279538c561fe68c8c291ea217bbfdc50e62bbbf",
+      "cea9458b23de32637f0bd07c8ef6058eb08f988ae88605eb863a384ab02d8d9d",
+      "ccfbc4579af45257ee52f8e8dfb38dc20f88ed7dedb756b11902ba6a8cff7868",
+      "bdc9db915d1a17f3f0a8b7af8df6835a2510c66b640a9eb21158360d19e38c47",
+      "7a43dc2e3e754e5c782ccac43932c48e416e8815873108d7ccbc389f61a49a1c",
+      "4fd9defa020acb96b704a90f2675e2eda095da85208dfe7591b8838dcc76fc3a",
+      "25684e16d403e1285fe2b7c1342405301303e01c4781e53c0fb437db46983ed4",
+      "4a5030bd040b95a423e4875633655bce801b3344b4bf4cc573306a2c73d51db5",
+      "919a3c997deefb29c3c567c4d9cf22ffa9363c3eb5b88a1b7423719d6c9a70a5",
+      "f92f418ef7d6f2c2b9d5eda0d50f7a284264a589814939ccec1672c1e7ad1f7f",
+      "b64070c9a1cb27fc572ae7ed6e0976cfbf3754cca9e9c3d2bdf6bb037550f60d",
+      "b589f5b42c7897b4225f36a159e95623c3a3af7fb3e24a714ab37f4164e006e3",
+      "f3b993e869c6e6235cd4ea90571989e18588b4ffc27cb6f65a74d913b97ea7cf",
+      "81334eff60e3a6fd64d1a382802d9524207d560ee112f28a8e59c79908fbb4b1",
+      "8345d9004438a710adb8388fef746ca0f5ab797e4013b6970e3a1b7f4507fab1",
+      "a251b4251de1494a2070292a7a1ac5dd8c88f98eca59c9b6ab19c04e4ad26ea0",
+      "5a266dc5078821d445a8101e546841f41bcd81c266ee2c0b1fa2620578add8b7",
+      "2beef89f21e8bcb847b1ea665ad5b3d8b26cb51da44adcdaf7b96c38e6172463",
+      "d4b9789a8e7d721c55458209db64a054e2e12d1a02f0883f788b24a8fd9f2a69",
+      "2dcafb1366cf803641f700e3af76f0bd7933f5ce6aaa1cc66581a159d6753b9a",
+      "71d34642aa4c291505272ef884be56d1be8cbe776cd7bf80663b771564c5db8a",
+      "0c8387efa92a38df163fdcc22198f5c11cbb8165171d6bb4cb71b2c73bfec368",
+      "9d4183e9e70a7c0a0e9bca1140156962fb18c09c58741ddc83cf7e42bfc60ac8",
+      "84c5bffc5f921081431f05e070ff1f4a937ddee6abee7e1ddeac273043cc267d",
+      "55968582294b880ebdfe75bde2a472842c548cdd74384532accf97bbb63cf8c8",
+      "95c04fb36aceab8c23bdc93246ee1815295dd6efa982ada7dcd49e130530c79d",
+      "b0b6a75e2d1f9e8124ad658ecc539b292e91d9fc9626b81993dd0bf61eab8b83",
+      "7f58d6589c31a83632e7c2daabaa2f6fe6cfa40f3d72649d35fdb675f010421d",
+      "538d8525dde56307fa709d2f2ce8a412d132edc9336251cd3a7ab4398525efc7",
+      "3dd3bb802d950606a38e31ae476c7602d1f00bbc585f9e6a1c522edb667a5be0",
+      "f7aaf1308c7129280541efdbff6c114cd7b6796075935722aa4840a646ea3bc3",
+      "b53a2dd217c55776196ffed5ea39df26adb32942fe59b1c490458bc4f3833ea7",
+      "fb69dd535c95e3886466813a71273b9236c7099f0694a2d281c7631f42074e37",
+      "0bb8ba3e63abcb166601adb46bc0c1a79e8d41f3d9620538b7d4a6feafbc061c",
+      "4ce64443d509fd72a2d24a3a970c9ca6a7c40cb31ac7c09c7c33263b52f691fc",
+      "eb8f01387d368aa4236567a115b8e701be13763ca1c7de21d07d051a7b8b4f70",
+      "62dcf57856e3b4e95152d3c80c3b0d250c10e512a9fcff48184b033a64c2fe9a",
+      "5cc2271dc5367da916ef623386965ebaa90a10148620fa59fe8f0af2a6e2667a",
+      "de41864f467922ca71d8bedd286a51066d8e42a4a70acc46102fa46ccd0f5569",
+      "0b605ebf219c91567e6d72c4f44b06e2e26be5ffeb0dcaa684a9f05b7646b441",
+      "f8b12f936c0ae3dbe6749d4658ddb7d823c7eaf7ab02b03e200d1e2d696480ab",
+      "67f5eb9f34bf966ca0032b94ce02eb41e54b9631d0e0466a0f52c4a667ea371c",
+      "58d4c425c6a1218059fe0d82498cac6b36df51e08170810c6037a211feaea3eb",
+      "519fab39a0aa640c5ac33d1ddf8e9d764ff9d6b2fd6951dfcabbf595aa2ef397",
+      "4cc511b1e3d6b1075cac6147314daeefaabeb047c37f4855884825252fe88cc3",
+      "e1cabada25bf9c5dc69f14c61dffcbc40bc49f861d16aa34a76d9d4809e17c78",
+      "5f1f4bd34510de72edf5c3cd3f1360004d20a19912b84e2c9553c1e3e03ec58c",
+      "b3e4fc7d5c322ec3651d5d7436d90c197cf2750b74180e463f98f59360a767eb",
+      "05fbf1134d0f1a213ca70870be509908d4291df5a5a98251b95d439b8af29208",
+      "3c1b64592836fce4fb3bbc3b9bfd3490d414ccf1f4ba1d94298aafabbb6cc553",
+      "8497bca266fc1f238aea8ce29daeb44ca9bd1cab28c50c35cce43e08624850eb",
+      "0b1c085f99f41ca8e331cb503ef26fb21184ffb20277b0c2178147ab416e7bd2",
+      "a05b6565dec4260eacc9f5cc182b5ebf629fa645a0f096060661bfa373c2734e",
+      "16d435a0072564c1fdbd0a84f4d9f148018c5e183d76f61a1d05062966968c20",
+      "456a5ef25bb545e73a199d26930544710eca83187ccdd7cf3327d9529da5738d",
+      "49af4bcb7f114062f53e7da3f64e3d6ca4b8e7b3d0892f23684ddda544012125",
+      "a1ceaff7dfadabe32fc2256d8c4952e71214758a45ef3f5bb419ca3596908309",
+      "5d10f22b9315b5368055878e380348bd19351e392475197f7d54ee1541fb23cc",
+      "b4ae5c8eec6dc3cc50c563e08793faac1477c27e08c6be5796224459604afa3f",
+      "55403cf4b5cb70f408ad255efda9c1840f9983a45c9d154e5947df34c5a3319b",
+      "f144aa09eccb275fd6d6a78b3ade03485425ca0bef8eb70aca5e05b79d7a490f",
+      "156634a33ccf1de9951be0d95958d96f8f23d6e3ae2df1f4ec2b486f66d11a8c",
+      "b5979fcbe3164917662de150e13ef26ff085092cb4c657a67d1c5dfb521049f6",
+      "ec0919e14051e587e28dc162436ec146f11cd05e2469ba6d8def841ea5fbcafa",
+      "8517446e9a615cd5495fc3b53e6c2b3f7730c5765fed94a16553cf7192ddce02",
+      "55b82ab1748afeb121eea759e5775cc44b4297fc5619d44dd2a44543b6bdecaf",
+      "c30bb6cda7b92dfa5f3e83392a268b188a6381e5a6286ae5a765db062dc44a95",
+      "48fab9e3b2569cae6c70c9fab86b6908aab2fadb1e972c521d5699e8513614e7",
+      "b72076c9db4c5a9d1f9bf8f6d9ec8ffb587fdfb3275bee25796f31667d1aec60",
+      "8f6f48a98b66d18f9fa1169980132ebb2ef8070ed99ab66ce649c06406aa5455",
+      "9811ca460c4935b1f653a3261f4cd9fb8df915b9ea5ef97508d56acb1d21dc8b",
+      "945049a5b0539ec847e6cb99b604bf11346151687916b3dd27575ebcba9616c6",
+      "8664a43406ce8a7e89630ec6faee6f15b6d31cff28e806e1fa2d0392cca465b6",
+      "23be30c0ba2647c8327a2a10b77f65835d90be64340ad4a1c88ca3835a53e534",
+      "81fca399711ffe210ab3c4b483fb3eff451e8f088cd0939a4bd929062c7457b6",
+      "de76c5f054785aeb4fb65c2f3ff307dc89f5659d364a751551bc5212bd22fc0b",
+      "3098846924f7a1d77abc7472fb2306d1df6d961123af02e31254677160cae726",
+      "4fa1d89af0be5df7e8d8b9c4693b0b3a772a051b32057e8788c35180f8a1a797",
+      "4f4c7b02b65db6320a95b53f78ca5d7ea7819c9688b1272997edc28f87fe574e",
+      "10b5d24ae963bab854020067fbc30de412aea15494e9ca2c50d984babdc1c2a3",
+      "060e26652c39b3b75cf8ed8368f0336666335c4ea345cc012220bd289ad9293d",
+      "7e33c21e20cd197e2c7dd5f8386a19b6ae826ecca06850e5f4f7b2c4494fffd6",
+      "d17daefea1fab826a81e729e2094e5a6e283a2ca88def1e6ab9c9fd3d1fb86e0",
+      "e2f29729053a87b59104847ae01c9d654e83d7aa6d78181d12f875b4acff8680",
+      "c664ae3db04a08bb89959e7f8aae1c50109cb09945ae3f2bebd1f35397853ab0",
+      "5a03c32ca2dc5a377f4684272d9c80d20db06b2e5f39c0112066ca298565e5c9",
+      "90646dda62f9d3b67fb3101d5c6c6b158b47cc4f59711287bf78076bf8b95f0f",
+      "31235a8d2244d36f2d425f336326c0c5d7766dc5362707598fa0b7582e64e8ef",
+      "d945c9c70e8a0ef4edd2157b56753556f053acff2accd44530ba15ae25d11287",
+      "e965d4fa3ecfcc39e8483a7656217d32f0c2f5a5a0a59759b05854d9fc2c3f16",
+      "9a1757ae38f33aaf04016e649fcdfb597c23e49e341c68a84644c213d7c58207",
+      "2f0f09912a8e730924fc729daddacd5f2498bded2c7e710d5983d2953c85fbed",
+      "e4dad42cee43236b30a639f59cff660805664133fe2aade40a9f92db2b047585",
+      "ee36cf79d6c7c860b15be1cf25a4b94542447a1bebda51f976e218ddb80e1136",
+      "5db6e8af0edb460766491107bc7586bad908ddb14fdd5995e1dc22b0fce60fae",
+      "72a791c83283b5bb949564f86053ed1310891aa8e8b34b216f7f91733df5b35b",
+      "19e2bf75260007d8381acdacaf3c9259cfa8d84f2216fab08725b3ba6fc06801",
+      "2d6e657d956d2e400c505d7b907c8a891b5828e08ee6d5b9ad503e5a34a92ad3",
+      "f39fe331cba1df7a85ce4ffba45720383eed1e0e2f7ed5ae5d3cc9d3b6f1e769",
+      "34623d899bf379e217fa5577ab06597259c785e9e31121800826cf84d802412a",
+      "e07e7d84a62bd0587d2733b13f14b1bbabf8738d4c7f8879b9718d9fb7c517c1",
+      "5326cdb5d34f219bfa109eaf963f02adf0333cbe0eb7335980d186dfb092da72"
+    ],
+    "every_final_RGB_frame_exact_native_owned_window_output": true,
+    "native_per_window_causal_VAE_preserved": true,
+    "EOF_explicitly_verified": true,
+    "overall_quality_accepted": false,
+    "visual_review_pending": true,
+    "time": 1794832326.421776
+  },
+  "visual_review": {
+    "all247_native_frame_contact_parts_actually_viewed": [
+      "full247_review_part0_v409.jpg",
+      "full247_review_part1_v409.jpg",
+      "full247_review_part2_v409.jpg",
+      "full247_review_part3_v409.jpg"
+    ],
+    "frames_reviewed": 247,
+    "source_range": [
+      845,
+      1091
+    ],
+    "widespread_confetti": false,
+    "whole_scene_collapse": false,
+    "gross_person_reconstruction_collapse": false,
+    "background_variation_reduced": true,
+    "background_static_goal_met": false,
+    "residual_window_seam_flicker": true,
+    "quality_failed": false,
+    "overall_quality_accepted": false,
+    "source_action_faithfulness_not_accepted": true,
+    "failure_description": "三个非遮挡背景区域变化降低约77%/82%/86%；窗接缝仍有跳变，运动包络内背景及动作保真未通过。",
+    "temporal_and_detail_metrics": {
+      "relative_static_ROI_change_to_baseline": -0.7695034444673726,
+      "foreground_sharpness_relative_change": -0.026752336271047783,
+      "foreground_activity_relative_change": -0.02829479042812688
+    },
+    "three_background_regions": {
+      "right_wall": {
+        "ROI_xyxy": [
+          896,
+          200,
+          1254,
+          493
+        ],
+        "RGB_abs_step_mean": 0.6183793364865023,
+        "RGB_difference_from_first_mean": 1.819647929929046,
+        "relative_to_DD41_baseline": -0.7695034782927977
+      },
+      "left_building": {
+        "ROI_xyxy": [
+          40,
+          190,
+          320,
+          500
+        ],
+        "RGB_abs_step_mean": 0.9510489751895269,
+        "RGB_difference_from_first_mean": 2.9227282064646363,
+        "relative_to_DD41_baseline": -0.818131672064996
+      },
+      "upper_background": {
+        "ROI_xyxy": [
+          900,
+          20,
+          1250,
+          150
+        ],
+        "RGB_abs_step_mean": 1.1446417744566755,
+        "RGB_difference_from_first_mean": 3.803180670448643,
+        "relative_to_DD41_baseline": -0.8583947628776687
+      }
+    },
+    "remaining_background_seam_steps": [
+      {
+        "source_frame": 886,
+        "value": 5.113949775695801
+      },
+      {
+        "source_frame": 926,
+        "value": 2.641164779663086
+      },
+      {
+        "source_frame": 966,
+        "value": 6.331750869750977
+      },
+      {
+        "source_frame": 1006,
+        "value": 5.789193630218506
+      },
+      {
+        "source_frame": 1046,
+        "value": 6.196563720703125
+      },
+      {
+        "source_frame": 1086,
+        "value": 9.070293426513672
+      }
+    ],
+    "scope": "Review of all247 native frame contact sheets plus three backgroundROIs. Background initializer changed before DD; no final pixel edits. Later input anchors still have old approximate background, further consistent-anchor experiment queued. No full static background/action acceptance.",
+    "time": 1794832917.7009087
+  },
+  "original_native_video_untouched": true,
+  "compressed_preview_frame_count_and_source_FPS_verified": true,
+  "preview_SHA256": "d65649cb5b0c4d83739b708fabd1b5de391ba1c0274581bbb8b09e9809882360",
+  "clear_SHA256": "b1bd38908474854ad53f36ffa3e3b95d02bc7eadabcf850a9d0c388335ff2bf7",
+  "actual_prompts_and_conditions": [
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 42,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 43,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 44,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 45,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 46,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 47,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "seed": 48,
+      "cfg": 1,
+      "lora": 1,
+      "frames": 41,
+      "actual_native_model_calls": 50,
+      "target_prior_images_consumed": true
+    }
+  ],
+  "additional_actual_execution_audits": [
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    },
+    {
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "context_shape": [
+        1,
+        512,
+        4096
+      ],
+      "context_SHA256": "84f5a4a89ad68a18beadac5aa65a59307eee72f1c5b02667f5eef336a6d4871b",
+      "cfg": 1,
+      "actual_context_passed_into_model": true,
+      "not_only_CSV_or_declared_prompt": true
+    }
+  ],
+  "prompt_isolation_and_background_diagnostics": {
+    "all_initial_nontext_tensors_and_noise_and_reference_prior_exact_matched_baseline": false,
+    "static_prior_single_factor_nontext_conditions_and_noise_matched": true,
+    "actual_prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+    "metrics": {
+      "frames": 247,
+      "background_ROI_xyxy": [
+        896,
+        200,
+        1254,
+        493
+      ],
+      "foreground_ROI_xyxy": [
+        400,
+        100,
+        900,
+        690
+      ],
+      "background_RGB_abs_step_mean": 0.6183794140815735,
+      "background_RGB_abs_step_p95": 1.8036565780639648,
+      "background_high_frequency_second_difference_mean": 1.0777450799942017,
+      "background_difference_from_first_frame_mean": 1.8196479082107544,
+      "background_flow_median_magnitude_mean": 0.00355225537593166,
+      "foreground_sharpness_Laplacian_var_median": 166.1104736328125,
+      "foreground_activity_mean": 6.907765295689668,
+      "background_seam_steps": [
+        {
+          "source_frame": 886,
+          "value": 5.113949775695801
+        },
+        {
+          "source_frame": 926,
+          "value": 2.641164779663086
+        },
+        {
+          "source_frame": 966,
+          "value": 6.331750869750977
+        },
+        {
+          "source_frame": 1006,
+          "value": 5.789193630218506
+        },
+        {
+          "source_frame": 1046,
+          "value": 6.196563720703125
+        },
+        {
+          "source_frame": 1086,
+          "value": 9.070293426513672
+        }
+      ],
+      "limitations": "No overall quality pass: lower differences may mean blur/freeze. Flow includes texture noise. Person/action/fine detail need visual checks. No RGB edits or stabilization.",
+      "matched_baseline": "original_dd_41win",
+      "relative_background_change": -0.7695034444673726,
+      "relative_foreground_sharpness_change": -0.026752336271047783,
+      "relative_foreground_activity_change": -0.02829479042812688
+    },
+    "overall_quality_accepted": false
+  }
+}

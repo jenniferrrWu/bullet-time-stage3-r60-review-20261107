@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794832038.2266982,
-  "total_complete_comparisons": 90,
-  "method_rows": 47,
+  "updated_unix": 1794833000.5683527,
+  "total_complete_comparisons": 91,
+  "method_rows": 48,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -2381,6 +2381,136 @@
       "case_notes": {
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       }
+    },
+    {
+      "key": "stage2_static_background_prior",
+      "title": "DD41 + Stage2背景输入约束",
+      "principle": "原prompt不变，只把生成前参考视频中可确认的静态背景改为Stage2末帧背景，保留保守人物运动区域；最终全部像素仍由DD原生输出。",
+      "case13": {
+        "label": "DD41 + Stage2背景输入约束",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/background-SAN-v385/stage2_static_background_prior_clear.mp4",
+        "clear_video": "./media/background-SAN-v385/stage2_static_background_prior_clear.mp4",
+        "preview": "./media/background-SAN-v385/stage2_static_background_prior_preview.mp4",
+        "preview_bytes": 111994,
+        "contact_sheet": "./media/background-SAN-v385/stage2_static_background_prior_allframes.jpg",
+        "audit": "./media/background-SAN-v385/stage2_static_background_prior_audit.json",
+        "note": "实际 DD 推理，原生窗口因果 VAE 解码；完整真实源帧及 EOF 逐帧核验；没有最终RGB贴图、稳定化、插帧或平滑。 只改变生成前的目标视频初始化背景，原Stage2背景用于保守运动包络外侧，原prompt及源/相机/噪声保留。运动包络内及新显露背景未硬锁；并非把Stage2贴到DD成片上。",
+        "visual_review": {
+          "all247_native_frame_contact_parts_actually_viewed": [
+            "full247_review_part0_v409.jpg",
+            "full247_review_part1_v409.jpg",
+            "full247_review_part2_v409.jpg",
+            "full247_review_part3_v409.jpg"
+          ],
+          "frames_reviewed": 247,
+          "source_range": [
+            845,
+            1091
+          ],
+          "widespread_confetti": false,
+          "whole_scene_collapse": false,
+          "gross_person_reconstruction_collapse": false,
+          "background_variation_reduced": true,
+          "background_static_goal_met": false,
+          "residual_window_seam_flicker": true,
+          "quality_failed": false,
+          "overall_quality_accepted": false,
+          "source_action_faithfulness_not_accepted": true,
+          "failure_description": "三个非遮挡背景区域变化降低约77%/82%/86%；窗接缝仍有跳变，运动包络内背景及动作保真未通过。",
+          "temporal_and_detail_metrics": {
+            "relative_static_ROI_change_to_baseline": -0.7695034444673726,
+            "foreground_sharpness_relative_change": -0.026752336271047783,
+            "foreground_activity_relative_change": -0.02829479042812688
+          },
+          "three_background_regions": {
+            "right_wall": {
+              "ROI_xyxy": [
+                896,
+                200,
+                1254,
+                493
+              ],
+              "RGB_abs_step_mean": 0.6183793364865023,
+              "RGB_difference_from_first_mean": 1.819647929929046,
+              "relative_to_DD41_baseline": -0.7695034782927977
+            },
+            "left_building": {
+              "ROI_xyxy": [
+                40,
+                190,
+                320,
+                500
+              ],
+              "RGB_abs_step_mean": 0.9510489751895269,
+              "RGB_difference_from_first_mean": 2.9227282064646363,
+              "relative_to_DD41_baseline": -0.818131672064996
+            },
+            "upper_background": {
+              "ROI_xyxy": [
+                900,
+                20,
+                1250,
+                150
+              ],
+              "RGB_abs_step_mean": 1.1446417744566755,
+              "RGB_difference_from_first_mean": 3.803180670448643,
+              "relative_to_DD41_baseline": -0.8583947628776687
+            }
+          },
+          "remaining_background_seam_steps": [
+            {
+              "source_frame": 886,
+              "value": 5.113949775695801
+            },
+            {
+              "source_frame": 926,
+              "value": 2.641164779663086
+            },
+            {
+              "source_frame": 966,
+              "value": 6.331750869750977
+            },
+            {
+              "source_frame": 1006,
+              "value": 5.789193630218506
+            },
+            {
+              "source_frame": 1046,
+              "value": 6.196563720703125
+            },
+            {
+              "source_frame": 1086,
+              "value": 9.070293426513672
+            }
+          ],
+          "scope": "Review of all247 native frame contact sheets plus three backgroundROIs. Background initializer changed before DD; no final pixel edits. Later input anchors still have old approximate background, further consistent-anchor experiment queued. No full static background/action acceptance.",
+          "time": 1794832917.7009087
+        },
+        "overall_quality_accepted": false,
+        "additional_links": [
+          {
+            "label": "原初始化参考（生成输入）",
+            "href": "./media/background-SAN-v385/original_target_input_input_only_preview.mp4"
+          },
+          {
+            "label": "背景约束参考（生成输入）",
+            "href": "./media/background-SAN-v385/Stage2_background_target_input_input_only_preview.mp4"
+          }
+        ]
+      },
+      "simpleD": null,
+      "applicable_cases": [
+        "case13"
+      ],
+      "case_notes": {
+        "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
+      }
     }
   ],
   "inputs": {
@@ -2415,7 +2545,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 92,
+  "total_video_players": 93,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2456,12 +2586,12 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 8561577,
-    "current_video_players": 92
+    "current_total_preview_bytes": 8673571,
+    "current_video_players": 93
   },
   "pending": {},
-  "total_planned_comparisons": 90,
-  "comparison_completion_fraction": "90/90",
+  "total_planned_comparisons": 91,
+  "comparison_completion_fraction": "91/91",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
