@@ -1,8 +1,8 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794826960.9695048,
-  "total_complete_comparisons": 83,
-  "method_rows": 42,
+  "updated_unix": 1794830553.9734898,
+  "total_complete_comparisons": 87,
+  "method_rows": 44,
   "rows": [
     {
       "key": "native81_no_prior",
@@ -202,6 +202,106 @@
         "preview": "./media/method-grid-v321/577d7d1b323ea0b8.mp4",
         "preview_bytes": 31605,
         "preview_proof": "./media/method-grid-v321/577d7d1b323ea0b8.json"
+      }
+    },
+    {
+      "key": "research_pag10",
+      "title": "DD + PAG · 引导1.0",
+      "principle": "沿用同一目标注意力扰动，仅提高引导强度，与0.5版作参数对照。",
+      "paper": "https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/",
+      "case13": {
+        "label": "DD + PAG · 引导1.0",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/fill-DD-v336/case13_research_pag10_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/case13_research_pag10_clear.mp4",
+        "preview": "./media/fill-DD-v336/case13_research_pag10_preview.mp4",
+        "preview_bytes": 146127,
+        "contact_sheet": "./media/fill-DD-v336/case13_research_pag10_allframes.jpg",
+        "audit": "./media/fill-DD-v336/case13_research_pag10_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      },
+      "simpleD": {
+        "label": "DD + PAG · 引导1.0",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_research_pag10_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_research_pag10_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_research_pag10_preview.mp4",
+        "preview_bytes": 36520,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_research_pag10_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_research_pag10_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      }
+    },
+    {
+      "key": "research_pag025",
+      "title": "DD + PAG · 引导0.25",
+      "principle": "沿用同一目标注意力扰动，仅降低引导强度，与0.5版作参数对照。",
+      "paper": "https://cvlab-kaist.github.io/Perturbed-Attention-Guidance/",
+      "case13": {
+        "label": "DD + PAG · 引导0.25",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/fill-DD-v336/case13_research_pag025_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/case13_research_pag025_clear.mp4",
+        "preview": "./media/fill-DD-v336/case13_research_pag025_preview.mp4",
+        "preview_bytes": 141945,
+        "contact_sheet": "./media/fill-DD-v336/case13_research_pag025_allframes.jpg",
+        "audit": "./media/fill-DD-v336/case13_research_pag025_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      },
+      "simpleD": {
+        "label": "DD + PAG · 引导0.25",
+        "case": "simpleD",
+        "frames": 81,
+        "source_range": [
+          259,
+          339
+        ],
+        "video": "./media/fill-DD-v336/simpleD_research_pag025_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/simpleD_research_pag025_clear.mp4",
+        "preview": "./media/fill-DD-v336/simpleD_research_pag025_preview.mp4",
+        "preview_bytes": 32670,
+        "contact_sheet": "./media/fill-DD-v336/simpleD_research_pag025_allframes.jpg",
+        "audit": "./media/fill-DD-v336/simpleD_research_pag025_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
       }
     },
     {
@@ -2140,7 +2240,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 85,
+  "total_video_players": 89,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -2181,12 +2281,12 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 7779874,
-    "current_video_players": 85
+    "current_total_preview_bytes": 8137136,
+    "current_video_players": 89
   },
   "pending": {},
-  "total_planned_comparisons": 83,
-  "comparison_completion_fraction": "83/83",
+  "total_planned_comparisons": 87,
+  "comparison_completion_fraction": "87/87",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
