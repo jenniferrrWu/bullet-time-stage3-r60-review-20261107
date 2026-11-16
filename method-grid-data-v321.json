@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794854690.0675566,
-  "total_complete_comparisons": 101,
+  "updated_unix": 1794855431.1026614,
+  "total_complete_comparisons": 102,
   "method_rows": 51,
   "rows": [
     {
@@ -541,7 +541,33 @@
         ]
       },
       "review_number": 8,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD + FrameInit · RF 适配 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/research_frameinit_clear.mp4",
+        "clear_video": "./media/hard-case-v425/research_frameinit_clear.mp4",
+        "preview": "./media/hard-case-v425/research_frameinit_preview.mp4",
+        "preview_bytes": 15459,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 50,
+        "audit": "./media/hard-case-v425/research_frameinit_audit.json",
+        "contact_sheet": "./media/hard-case-v425/research_frameinit_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 本行不使用整段目标视频先验，是原生81帧噪声／引导对照。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -3493,7 +3519,7 @@
       "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 104,
+  "total_video_players": 105,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -3560,19 +3586,14 @@
       "verified_windows": 1,
       "total_windows": 2
     },
-    "research_frameinit|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 1
-    },
     "research_tst_public|hardH": {
       "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
+      "verified_windows": 1,
       "total_windows": 2
     },
     "research_pag|hardH": {
       "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
+      "verified_windows": 1,
       "total_windows": 2
     },
     "research_fresca|hardH": {
@@ -3757,7 +3778,7 @@
     }
   },
   "total_planned_comparisons": 141,
-  "comparison_completion_fraction": "101/141",
+  "comparison_completion_fraction": "102/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
@@ -3815,5 +3836,5 @@
     "hardH": "新增Hard案例"
   },
   "hard_visual_screened_results": 9,
-  "hard_visual_screening_pending_results": 1
+  "hard_visual_screening_pending_results": 2
 }
