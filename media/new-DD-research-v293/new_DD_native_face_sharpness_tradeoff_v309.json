@@ -1,0 +1,41 @@
+{
+  "scope": "Same native1280x704 face/hair ROI x500..899 y40..479, dynamic80frames excluding shared anchor. Laplacian variance proxy, depends on motion/texture and not an overall quality score. Used to flag blur confound in temporal pixel-change comparisons.",
+  "rows": [
+    {
+      "label": "native_DD81",
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correct_simpleD_native81_v144/baseline",
+      "frames": 81,
+      "mean_face_region_Laplacian_variance_excluding_anchor": 47.16071181297302,
+      "relative_face_sharpness_proxy_to_native": 0.0
+    },
+    {
+      "label": "SelfRefine",
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correctD_SelfRefine_PnP_v287/pnp",
+      "frames": 81,
+      "mean_face_region_Laplacian_variance_excluding_anchor": 51.9627676486969,
+      "relative_face_sharpness_proxy_to_native": 0.10182322639165342
+    },
+    {
+      "label": "FreeInit_RF_sigma_scaled_FAILEDblur",
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correctD_FreeInit_RF_sigma_scaled_v296/frequency",
+      "frames": 81,
+      "mean_face_region_Laplacian_variance_excluding_anchor": 18.676296412944794,
+      "relative_face_sharpness_proxy_to_native": -0.6039861211804844
+    },
+    {
+      "label": "ordinary_restart_control",
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correctD_FreeInit_RF_sigma_scaled_v296/restart_control",
+      "frames": 81,
+      "mean_face_region_Laplacian_variance_excluding_anchor": 51.50419778823853,
+      "relative_face_sharpness_proxy_to_native": 0.09209966958282201
+    },
+    {
+      "label": "FreSca_high1p05",
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/correctD_FreSca_velocity_v292/high1p05",
+      "frames": 81,
+      "mean_face_region_Laplacian_variance_excluding_anchor": 50.46193742752075,
+      "relative_face_sharpness_proxy_to_native": 0.06999948659891997
+    }
+  ],
+  "time": 1794803773.457724
+}
