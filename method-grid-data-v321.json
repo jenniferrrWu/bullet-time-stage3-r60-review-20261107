@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794816377.4327219,
-  "total_complete_comparisons": 66,
+  "updated_unix": 1794816642.7211626,
+  "total_complete_comparisons": 67,
   "method_rows": 41,
   "rows": [
     {
@@ -246,7 +246,28 @@
       "title": "DD + TST · 论文查询温度",
       "principle": "根据跨帧注意力的分散程度调整查询强度，尝试减少时序不稳定。",
       "paper": "https://arxiv.org/abs/2609.08505",
-      "case13": null,
+      "case13": {
+        "label": "DD + TST · 论文查询温度",
+        "case": "case13",
+        "frames": 247,
+        "source_range": [
+          845,
+          1091
+        ],
+        "video": "./media/fill-DD-v336/case13_research_tst_paper_clear.mp4",
+        "clear_video": "./media/fill-DD-v336/case13_research_tst_paper_clear.mp4",
+        "preview": "./media/fill-DD-v336/case13_research_tst_paper_preview.mp4",
+        "preview_bytes": 140950,
+        "contact_sheet": "./media/fill-DD-v336/case13_research_tst_paper_allframes.jpg",
+        "audit": "./media/fill-DD-v336/case13_research_tst_paper_audit.json",
+        "visual_review": {
+          "overall_quality_accepted": false,
+          "visual_review_pending": true
+        },
+        "note": "完整源片段，保留每个 DD 窗口自己的原生因果 VAE 解码；只移除重叠参考帧与明确的 EOF 占位。首窗沿用原 Stage2，后续锚帧和源／相机条件与对应基线协议一致。DD 权重与 LoRA 保留，未平滑、插帧或替换输出像素。复杂案例通常为41帧窗固定当前参考协议，半身案例通常为原生81帧无整段参考；各项推理核验保留实际条件。",
+        "export_verified": true,
+        "overall_quality_accepted": false
+      },
       "simpleD": {
         "label": "DD + TST · 论文查询温度",
         "case": "simpleD",
@@ -1738,7 +1759,7 @@
       "preview_proof": "./media/method-grid-v321/daee9a0b2cdd06bb.json"
     }
   },
-  "total_video_players": 68,
+  "total_video_players": 69,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -1779,18 +1800,13 @@
     "time": 1794811940.7541199,
     "previous_display_preview_total_bytes": 10553102,
     "reduction_from_previous_display": 0.5055535329801607,
-    "current_total_preview_bytes": 5492579,
-    "current_video_players": 68
+    "current_total_preview_bytes": 5633529,
+    "current_video_players": 69
   },
   "pending": {
-    "research_tst_paper|case13": {
-      "label": "正在补测",
-      "verified_windows": 3,
-      "total_windows": 7
-    },
     "research_tst_public|case13": {
       "label": "正在补测",
-      "verified_windows": 0,
+      "verified_windows": 1,
       "total_windows": 7
     },
     "research_pag|simpleD": {
@@ -1865,5 +1881,5 @@
     }
   },
   "total_planned_comparisons": 82,
-  "comparison_completion_fraction": "66/82"
+  "comparison_completion_fraction": "67/82"
 }
