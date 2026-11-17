@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794856350.7279134,
-  "total_complete_comparisons": 103,
+  "updated_unix": 1794880650.11571,
+  "total_complete_comparisons": 104,
   "method_rows": 51,
   "rows": [
     {
@@ -1380,7 +1380,33 @@
         "preview_proof": "./media/method-grid-v321/dab2d67cba2f1892.json"
       },
       "review_number": 20,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "Wan-Move α0.1 · 41 帧窗 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/original_wanmove_0p1_41win_clear.mp4",
+        "clear_video": "./media/hard-case-v425/original_wanmove_0p1_41win_clear.mp4",
+        "preview": "./media/hard-case-v425/original_wanmove_0p1_41win_preview.mp4",
+        "preview_bytes": 44448,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/original_wanmove_0p1_41win_audit.json",
+        "contact_sheet": "./media/hard-case-v425/original_wanmove_0p1_41win_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "applicable_cases": [
         "case13",
         "simpleD",
@@ -3545,7 +3571,7 @@
       "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 106,
+  "total_video_players": 107,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -3639,27 +3665,22 @@
     },
     "original_wanmove_0p35_21win|hardH": {
       "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
+      "verified_windows": 3,
       "total_windows": 4
     },
     "original_wanmove_0p1_21win|hardH": {
       "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
+      "verified_windows": 3,
       "total_windows": 4
     },
     "original_motion_i2v_0p35_21win|hardH": {
       "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
+      "verified_windows": 3,
       "total_windows": 4
-    },
-    "original_wanmove_0p1_41win|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
-      "total_windows": 2
     },
     "original_motion_i2v_0p35_41win|hardH": {
       "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
+      "verified_windows": 1,
       "total_windows": 2
     },
     "original_dd_videox_hed_0p2_41win|hardH": {
@@ -3799,7 +3820,7 @@
     }
   },
   "total_planned_comparisons": 141,
-  "comparison_completion_fraction": "103/141",
+  "comparison_completion_fraction": "104/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
@@ -3857,5 +3878,5 @@
     "hardH": "新增Hard案例"
   },
   "hard_visual_screened_results": 9,
-  "hard_visual_screening_pending_results": 3
+  "hard_visual_screening_pending_results": 4
 }
