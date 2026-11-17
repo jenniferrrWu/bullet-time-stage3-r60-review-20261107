@@ -1,0 +1,47 @@
+{
+  "previous_case": {
+    "key": "case13",
+    "title": "复杂 · 屋顶女舞者",
+    "inputs": {
+      "video": "./media/method-grid-v321/e0958457298de33e.mp4",
+      "image": "./media/method-grid-v321/case13_original_Stage2_endpoint.webp",
+      "native_image": "./media/method-grid-v321/case13_Stage2_original.png"
+    },
+    "baseline": {
+      "frames": 247,
+      "fps": "15/1",
+      "source_video_SHA256": "77dedbfdde4eae7717f46cddd71e4bed714303bfe8243d69f96f08e8eebcd0aa",
+      "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/case13_native81_current_prior_native_decode_v257/case13/native81_current_prior/verified_native81_full247_v259.json",
+      "preview": "./media/three-case-background-v683/case13_baseline_f247_77dedbfdde_preview.mp4",
+      "preview_bytes": 163064,
+      "clear": "./media/three-case-background-v683/case13_baseline_f247_77dedbfdde_clear.mp4",
+      "clear_bytes": 2285684
+    },
+    "result": {
+      "frames": 247,
+      "fps": "15/1",
+      "source_video_SHA256": "6b325e9cf4731575fcd858a23e2467d7d80d9a6f86960e82e2e1862ec6e1e1d9",
+      "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/Case13_full247_consistent_prior_DD_v747/complete247/verified_full_case_native_RGB_v331.json",
+      "preview": "./media/three-case-background-v683/case13_context_repair_f247_6b325e9cf4_preview.mp4",
+      "preview_bytes": 58540,
+      "clear": "./media/three-case-background-v683/case13_context_repair_f247_6b325e9cf4_clear.mp4",
+      "clear_bytes": 626222
+    },
+    "scope": "f845–1091 · 247帧 · 15fps",
+    "partial": false,
+    "verdict": "完整247帧已核验并查看：中后段带状重影明显减轻；仍有人物黑边、脚接地与接缝细节问题，画质未通过。",
+    "protocol": "原生 DD81，保留既有目标视频初始化0.06；Stage2 +45°。",
+    "evidence": [
+      "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_all247_untouched_native_DD_contact.jpg",
+      "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_native_real_EOF1091.png",
+      "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_all3_seams_and_real_EOF_native_context.jpg"
+    ],
+    "audit": "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_full_audit.json",
+    "diagnostic": "右门全247帧平均相邻RGB变化：2.671 → 0.290，包含接缝。仅是远处背景诊断，不代表人物附近或全片画质通过。",
+    "result_protocol": "保留同帧V52动作前景；输入背景统一到Stage2，并修正约束的随机噪声来源。原生去噪强度0.06，最终为原生DD/VAE输出。",
+    "previous_complete_result_archive": "./media/three-case-background-v683/case13_previous_complete_background_result_before_v766.json",
+    "whole_scene_quality_pass": false
+  },
+  "original_Hard_and_simpleD_unchanged": true,
+  "time": 1794946520.1051965
+}
