@@ -881,7 +881,44 @@
       "visual_review_pending": true,
       "time": 1794930261.14684
     },
-    "input_protocol": "原生 DD81，保留既有目标视频初始化0.06；Stage2 +45°。"
+    "input_protocol": "原生 DD81，保留既有目标视频初始化0.06；Stage2 +45°。",
+    "later_person_support_measurement_correction_v713": {
+      "previous_visual_scale_jump_claim_not_established": true,
+      "actually_viewed_all8_native_output_person_support_overlays": true,
+      "measured_boundary_heights_px": [
+        [
+          445,
+          448
+        ],
+        [
+          357,
+          354
+        ],
+        [
+          291,
+          291
+        ]
+      ],
+      "boundary_source_pairs": [
+        [
+          925,
+          926
+        ],
+        [
+          1005,
+          1006
+        ],
+        [
+          1085,
+          1086
+        ]
+      ],
+      "body_bbox_and_masks_are_estimates_not_GT": true,
+      "known_remaining_issue": "Visible near-person background displacement and ghosting",
+      "conclusion_scope": "No evidence for an independent abrupt body scale jump at the three sampled seams; do not claim all motion has been certified.",
+      "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/Case13_actual_person_support_v710/support_metrics_v710.json",
+      "time": 1794936229.285093
+    }
   },
   "new_training_steps": 0,
   "final_RGB_compositing_smoothing_or_interpolation": false
