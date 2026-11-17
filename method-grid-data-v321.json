@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794886070.3215046,
-  "total_complete_comparisons": 136,
+  "updated_unix": 1794886694.149438,
+  "total_complete_comparisons": 139,
   "method_rows": 51,
   "rows": [
     {
@@ -3911,7 +3911,33 @@
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
       },
       "review_number": 49,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD81 SAN相关性修复 rho=0.0 SG=0.0 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/san_rho0_clear.mp4",
+        "clear_video": "./media/hard-case-v425/san_rho0_clear.mp4",
+        "preview": "./media/hard-case-v425/san_rho0_preview.mp4",
+        "preview_bytes": 43747,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 50,
+        "audit": "./media/hard-case-v425/san_rho0_audit.json",
+        "contact_sheet": "./media/hard-case-v425/san_rho0_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 本行不使用整段目标视频先验，是原生81帧噪声／引导对照。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "采样／初始化",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -3962,7 +3988,33 @@
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
       },
       "review_number": 50,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD81 SAN相关性修复 rho=0.3 SG=0.0 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/san_rho03_clear.mp4",
+        "clear_video": "./media/hard-case-v425/san_rho03_clear.mp4",
+        "preview": "./media/hard-case-v425/san_rho03_preview.mp4",
+        "preview_bytes": 42288,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 50,
+        "audit": "./media/hard-case-v425/san_rho03_audit.json",
+        "contact_sheet": "./media/hard-case-v425/san_rho03_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 本行不使用整段目标视频先验，是原生81帧噪声／引导对照。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "采样／初始化",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -4173,7 +4225,33 @@
         "case13": "此项仅针对简单D初始化异常，复杂例不计重复测试。"
       },
       "review_number": 53,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD81 FrameInit 低信号修复 carrier0.99 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/frameinit_carrier099_clear.mp4",
+        "clear_video": "./media/hard-case-v425/frameinit_carrier099_clear.mp4",
+        "preview": "./media/hard-case-v425/frameinit_carrier099_preview.mp4",
+        "preview_bytes": 41246,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 50,
+        "audit": "./media/hard-case-v425/frameinit_carrier099_audit.json",
+        "contact_sheet": "./media/hard-case-v425/frameinit_carrier099_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 本行不使用整段目标视频先验，是原生81帧噪声／引导对照。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "采样／初始化",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -4403,7 +4481,7 @@
       "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 139,
+  "total_video_players": 142,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -4474,25 +4552,10 @@
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 4,
       "total_windows": 4
-    },
-    "san_rho0|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 1
-    },
-    "san_rho03|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 1
-    },
-    "frameinit_carrier099|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 1
     }
   },
   "total_planned_comparisons": 141,
-  "comparison_completion_fraction": "136/141",
+  "comparison_completion_fraction": "139/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
@@ -4550,5 +4613,5 @@
     "hardH": "新增Hard案例"
   },
   "hard_visual_screened_results": 9,
-  "hard_visual_screening_pending_results": 36
+  "hard_visual_screening_pending_results": 39
 }
