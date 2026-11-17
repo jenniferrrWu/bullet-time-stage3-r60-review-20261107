@@ -1,5 +1,5 @@
 {
-  "version": 695,
+  "version": 766,
   "cases": [
     {
       "key": "case13",
@@ -22,24 +22,27 @@
       "result": {
         "frames": 247,
         "fps": "15/1",
-        "source_video_SHA256": "17a12cb2e97cc795172eb05186745cbd863eaa8a3e463c569c3ab0bb330c46b6",
-        "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/three_case_background_transfer_v683/case13/target_visible_foreground_guard/verified_full_case_native_RGB_v331.json",
-        "preview": "./media/three-case-background-v683/case13_repair_f247_17a12cb2e9_preview.mp4",
-        "preview_bytes": 75783,
-        "clear": "./media/three-case-background-v683/case13_repair_f247_17a12cb2e9_clear.mp4",
-        "clear_bytes": 821250
+        "source_video_SHA256": "6b325e9cf4731575fcd858a23e2467d7d80d9a6f86960e82e2e1862ec6e1e1d9",
+        "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/Case13_full247_consistent_prior_DD_v747/complete247/verified_full_case_native_RGB_v331.json",
+        "preview": "./media/three-case-background-v683/case13_context_repair_f247_6b325e9cf4_preview.mp4",
+        "preview_bytes": 58540,
+        "clear": "./media/three-case-background-v683/case13_context_repair_f247_6b325e9cf4_clear.mp4",
+        "clear_bytes": 626222
       },
       "scope": "f845–1091 · 247帧 · 15fps",
       "partial": false,
-      "verdict": "完整247帧已核验；人物周围仍有竖向重影/形变，未证实独立的人物尺度跳变，画质未通过。",
+      "verdict": "完整247帧已核验并查看：中后段带状重影明显减轻；仍有人物黑边、脚接地与接缝细节问题，画质未通过。",
       "protocol": "原生 DD81，保留既有目标视频初始化0.06；Stage2 +45°。",
       "evidence": [
-        "./media/three-case-background-v683/case13_full_all247_native_DD_contact.jpg",
-        "./media/three-case-background-v683/case13_full_native_EOF1091.png",
-        "./media/three-case-background-v683/case13_full_window_boundary_native_context_v694.jpg"
+        "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_all247_untouched_native_DD_contact.jpg",
+        "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_native_real_EOF1091.png",
+        "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_all3_seams_and_real_EOF_native_context.jpg"
       ],
-      "audit": "./media/three-case-background-v683/case13_full_audit.json",
-      "diagnostic": "首81帧右门平均相邻帧RGB变化：1.853 → 0.303。这是局部诊断，不能当作画质提升比例。"
+      "audit": "./media/three-case-background-v683/case13_context_repair_6b325e9cf4_full_audit.json",
+      "diagnostic": "右门全247帧平均相邻RGB变化：2.671 → 0.290，包含接缝。仅是远处背景诊断，不代表人物附近或全片画质通过。",
+      "result_protocol": "保留同帧V52动作前景；输入背景统一到Stage2，并修正约束的随机噪声来源。原生去噪强度0.06，最终为原生DD/VAE输出。",
+      "previous_complete_result_archive": "./media/three-case-background-v683/case13_previous_complete_background_result_before_v766.json",
+      "whole_scene_quality_pass": false
     },
     {
       "key": "simpleD",
@@ -124,5 +127,10 @@
   "new_training_steps": 0,
   "case13_prior_explicit": true,
   "foreground_estimator_differs_between_Hard_and_other_cases_explicit": true,
-  "time": 1794936234.9705222
+  "time": 1794943576.7048342,
+  "reviewed_case13_native_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/Case13_full247_consistent_prior_DD_v747/complete247/verified_full_case_native_RGB_v331.json",
+  "reviewed_case13_visual_gate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/Case13_full247_consistent_prior_DD_v747/complete247/actual_full247_native_visual_review_v766.json",
+  "case13_result_updated_only": true,
+  "simpleD_and_Hard_completed_results_reused": true,
+  "Hard_pure_current_protocol_regression": "./media/three-case-background-v683/hardH_pure_DD_current_protocol_regression_v753.json"
 }
