@@ -1,0 +1,596 @@
+{
+  "version": "actual_limb_trials_v496_v501",
+  "configurations": 3,
+  "positive_native_windows": 5,
+  "source_range": [
+    241,
+    321
+  ],
+  "frames": 81,
+  "fps": "25/1",
+  "DD_weights_and_author_LoRA_frozen": true,
+  "new_training_steps": 0,
+  "estimated_joint_conditions_not_GT": true,
+  "source_module": "dd_joint_correspondence_v496.py",
+  "input_gate": {
+    "passed": true,
+    "NN_qualification_still_required": true,
+    "old_joint_latent_samples_accepted": 241,
+    "new_accepted_before_collision": 206,
+    "paired_rejections": 55,
+    "windows": [
+      {
+        "window": "window_000",
+        "mode": "joint_source",
+        "info": {
+          "mode": "joint_source",
+          "frames": 41,
+          "latent_frames": 11,
+          "feature_grid_hw": [
+            22,
+            40
+          ],
+          "target_queries": 471,
+          "max_corresponding_keys": 9,
+          "crossing_ambiguous_joint_frames_rejected": 32,
+          "valid_joint_latent_frames": 70,
+          "semantic_joint_ids_not_nearest_limb_identity": true,
+          "true_occlusion_visibility_not_claimed": true,
+          "first_target_frame_never_directly_modified": true,
+          "source_stream_never_directly_modified": true
+        },
+        "arm_target_query_counts": {
+          "16": 41,
+          "17": 43,
+          "18": 40,
+          "19": 45,
+          "20": 49,
+          "21": 49
+        }
+      },
+      {
+        "window": "window_000",
+        "mode": "joint_temporal",
+        "info": {
+          "mode": "joint_temporal",
+          "frames": 41,
+          "latent_frames": 11,
+          "feature_grid_hw": [
+            22,
+            40
+          ],
+          "target_queries": 471,
+          "max_corresponding_keys": 36,
+          "crossing_ambiguous_joint_frames_rejected": 32,
+          "valid_joint_latent_frames": 70,
+          "semantic_joint_ids_not_nearest_limb_identity": true,
+          "true_occlusion_visibility_not_claimed": true,
+          "first_target_frame_never_directly_modified": true,
+          "source_stream_never_directly_modified": true
+        },
+        "arm_target_query_counts": {
+          "16": 41,
+          "17": 43,
+          "18": 40,
+          "19": 45,
+          "20": 49,
+          "21": 49
+        }
+      },
+      {
+        "window": "window_001",
+        "mode": "joint_source",
+        "info": {
+          "mode": "joint_source",
+          "frames": 41,
+          "latent_frames": 11,
+          "feature_grid_hw": [
+            22,
+            40
+          ],
+          "target_queries": 595,
+          "max_corresponding_keys": 9,
+          "crossing_ambiguous_joint_frames_rejected": 26,
+          "valid_joint_latent_frames": 80,
+          "semantic_joint_ids_not_nearest_limb_identity": true,
+          "true_occlusion_visibility_not_claimed": true,
+          "first_target_frame_never_directly_modified": true,
+          "source_stream_never_directly_modified": true
+        },
+        "arm_target_query_counts": {
+          "16": 50,
+          "17": 54,
+          "18": 45,
+          "19": 43,
+          "20": 31,
+          "21": 38
+        }
+      },
+      {
+        "window": "window_001",
+        "mode": "joint_temporal",
+        "info": {
+          "mode": "joint_temporal",
+          "frames": 41,
+          "latent_frames": 11,
+          "feature_grid_hw": [
+            22,
+            40
+          ],
+          "target_queries": 583,
+          "max_corresponding_keys": 36,
+          "crossing_ambiguous_joint_frames_rejected": 26,
+          "valid_joint_latent_frames": 80,
+          "semantic_joint_ids_not_nearest_limb_identity": true,
+          "true_occlusion_visibility_not_claimed": true,
+          "first_target_frame_never_directly_modified": true,
+          "source_stream_never_directly_modified": true
+        },
+        "arm_target_query_counts": {
+          "16": 50,
+          "17": 54,
+          "18": 45,
+          "19": 43,
+          "20": 31,
+          "21": 38
+        }
+      },
+      {
+        "window": "native81",
+        "mode": "joint_source",
+        "info": {
+          "mode": "joint_source",
+          "frames": 81,
+          "latent_frames": 21,
+          "feature_grid_hw": [
+            22,
+            40
+          ],
+          "target_queries": 1066,
+          "max_corresponding_keys": 9,
+          "crossing_ambiguous_joint_frames_rejected": 56,
+          "valid_joint_latent_frames": 150,
+          "semantic_joint_ids_not_nearest_limb_identity": true,
+          "true_occlusion_visibility_not_claimed": true,
+          "first_target_frame_never_directly_modified": true,
+          "source_stream_never_directly_modified": true
+        },
+        "arm_target_query_counts": {
+          "16": 91,
+          "17": 97,
+          "18": 85,
+          "19": 88,
+          "20": 80,
+          "21": 87
+        }
+      }
+    ],
+    "source_and_target_joint_positions_not_changed_only_low_reliability_gated": true,
+    "metadata_arrays_SHA256": "a193d893589d5c3e05557e37b3f6b9a874383fdf7a597825f5c2832fbabe7b78",
+    "source_module_SHA256": "1c71432f6d421e720da95bd7e699e0b68e702ca904a6bd3ce758dcbc93a67b20",
+    "new_training_steps": 0,
+    "time": 1794895927.4410946
+  },
+  "routing_representation_check": {
+    "passed": true,
+    "source_module_SHA256": "1c71432f6d421e720da95bd7e699e0b68e702ca904a6bd3ce758dcbc93a67b20",
+    "records": [
+      {
+        "window": "window_000",
+        "mode": "joint_source",
+        "target_only_LR_correspondence_swap_changes_actual_directed_rows": true,
+        "simultaneous_source_and_target_label_rename_is_equivalent": true,
+        "ordinary_target_queries": 471,
+        "NN_counterfactual_NOT_run": true,
+        "not_manual_correct_vs_incorrect_GT": true,
+        "route_representability_not_proof_DD_understands_anatomy": true
+      },
+      {
+        "window": "window_000",
+        "mode": "joint_temporal",
+        "one_sampled_time_LR_identity_break_changes_temporal_rows": true,
+        "example": {
+          "local_latent_time": 1,
+          "source_frame": 245,
+          "joint_pair": [
+            7,
+            8
+          ]
+        },
+        "consistent_global_label_rename_does_not_establish_absolute_anatomical_side": true,
+        "NN_counterfactual_NOT_run": true,
+        "not_manual_correct_vs_incorrect_GT": true,
+        "route_representability_not_proof_DD_understands_anatomy": true
+      },
+      {
+        "window": "window_001",
+        "mode": "joint_source",
+        "target_only_LR_correspondence_swap_changes_actual_directed_rows": true,
+        "simultaneous_source_and_target_label_rename_is_equivalent": true,
+        "ordinary_target_queries": 595,
+        "NN_counterfactual_NOT_run": true,
+        "not_manual_correct_vs_incorrect_GT": true,
+        "route_representability_not_proof_DD_understands_anatomy": true
+      },
+      {
+        "window": "window_001",
+        "mode": "joint_temporal",
+        "one_sampled_time_LR_identity_break_changes_temporal_rows": true,
+        "example": {
+          "local_latent_time": 1,
+          "source_frame": 285,
+          "joint_pair": [
+            4,
+            5
+          ]
+        },
+        "consistent_global_label_rename_does_not_establish_absolute_anatomical_side": true,
+        "NN_counterfactual_NOT_run": true,
+        "not_manual_correct_vs_incorrect_GT": true,
+        "route_representability_not_proof_DD_understands_anatomy": true
+      },
+      {
+        "window": "native81",
+        "mode": "joint_source",
+        "target_only_LR_correspondence_swap_changes_actual_directed_rows": true,
+        "simultaneous_source_and_target_label_rename_is_equivalent": true,
+        "ordinary_target_queries": 1066,
+        "NN_counterfactual_NOT_run": true,
+        "not_manual_correct_vs_incorrect_GT": true,
+        "route_representability_not_proof_DD_understands_anatomy": true
+      }
+    ],
+    "new_DD_calls": 0,
+    "new_training_steps": 0,
+    "time": 1794896705.4919465
+  },
+  "overall_quality_accepted": false,
+  "rows": [
+    {
+      "key": "joint_source_41_gated_a015",
+      "title": "源关节对应 · DD41",
+      "principle": "目标关节附近读取原片同一时刻、同一关节的特征，尝试改善动作与部位对应。",
+      "baseline": "original_dd_41win",
+      "baseline_media": {
+        "preview": "./media/motion-following-v475/limb496_baseline_original_dd_41win_preview.mp4",
+        "preview_bytes": 44146,
+        "clear": "./media/motion-following-v475/limb496_baseline_original_dd_41win_clear.mp4",
+        "clear_bytes": 365390
+      },
+      "result_media": {
+        "preview": "./media/motion-following-v475/limb496_joint_source_41_gated_a015_preview.mp4",
+        "preview_bytes": 43956,
+        "clear": "./media/motion-following-v475/limb496_joint_source_41_gated_a015_clear.mp4",
+        "clear_bytes": 365533
+      },
+      "visual_review": {
+        "all81_native_contact_frames_actually_viewed": true,
+        "EOF321_full_resolution_viewed": true,
+        "source_baseline_candidate_local_comparison_frames": [
+          [
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          [
+            298,
+            299,
+            300,
+            301,
+            302
+          ],
+          [
+            317,
+            318,
+            319,
+            320,
+            321
+          ]
+        ],
+        "widespread_confetti": false,
+        "whole_scene_collapse": false,
+        "gross_source_action_order_preserved": true,
+        "hand_ghosting_clear_improvement": false,
+        "crossed_arm_or_occlusion_correspondence_clear_improvement": false,
+        "window_seam_clear_improvement_NOT_demonstrated": true,
+        "overall_quality_accepted": false,
+        "first_unambiguous_LR_error_NOT_required_or_claimed": true,
+        "all81_original_RGB_exactly_matched_baseline_qualification": true,
+        "actual_attention_effect_and_all80_nonfirst_native_RGB_changes_verified": true,
+        "verdict_zh": "未见稳定肢体改善；手部重影仍在",
+        "review_limits": "Actual all81 contact images and native full-resolution EOF viewed, with local matched comparisons on listed frames. No independent novel-view joint GT, no full-speed flicker pass, no inference that a changed tensor means quality improvement.",
+        "source_is_already_motion_blurred": true,
+        "no_new_training": true,
+        "time": 1794897634.4958305
+      },
+      "audit": "./media/motion-following-v475/limb496_joint_source_41_gated_a015_audit.json",
+      "evidence": [
+        "./media/motion-following-v475/limb496_joint_source_41_gated_a015_f249_f253.jpg",
+        "./media/motion-following-v475/limb496_joint_source_41_gated_a015_f281_f285.jpg",
+        "./media/motion-following-v475/limb496_joint_source_41_gated_a015_f298_f302.jpg"
+      ]
+    },
+    {
+      "key": "joint_temporal_41_gated_a015",
+      "title": "关节轨迹时序 · DD41",
+      "principle": "沿同一关节连接相邻时间的特征，尝试减轻局部重影与形变。",
+      "baseline": "original_dd_41win",
+      "baseline_media": {
+        "preview": "./media/motion-following-v475/limb496_baseline_original_dd_41win_preview.mp4",
+        "preview_bytes": 44146,
+        "clear": "./media/motion-following-v475/limb496_baseline_original_dd_41win_clear.mp4",
+        "clear_bytes": 365390
+      },
+      "result_media": {
+        "preview": "./media/motion-following-v475/limb496_joint_temporal_41_gated_a015_preview.mp4",
+        "preview_bytes": 44227,
+        "clear": "./media/motion-following-v475/limb496_joint_temporal_41_gated_a015_clear.mp4",
+        "clear_bytes": 364683
+      },
+      "visual_review": {
+        "all81_native_contact_frames_actually_viewed": true,
+        "EOF321_full_resolution_viewed": true,
+        "source_baseline_candidate_local_comparison_frames": [
+          [
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          [
+            298,
+            299,
+            300,
+            301,
+            302
+          ],
+          [
+            317,
+            318,
+            319,
+            320,
+            321
+          ]
+        ],
+        "widespread_confetti": false,
+        "whole_scene_collapse": false,
+        "gross_source_action_order_preserved": true,
+        "hand_ghosting_clear_improvement": false,
+        "crossed_arm_or_occlusion_correspondence_clear_improvement": false,
+        "window_seam_clear_improvement_NOT_demonstrated": true,
+        "overall_quality_accepted": false,
+        "first_unambiguous_LR_error_NOT_required_or_claimed": true,
+        "all81_original_RGB_exactly_matched_baseline_qualification": true,
+        "actual_attention_effect_and_all80_nonfirst_native_RGB_changes_verified": true,
+        "verdict_zh": "未见稳定肢体改善；手部重影仍在",
+        "review_limits": "Actual all81 contact images and native full-resolution EOF viewed, with local matched comparisons on listed frames. No independent novel-view joint GT, no full-speed flicker pass, no inference that a changed tensor means quality improvement.",
+        "source_is_already_motion_blurred": true,
+        "no_new_training": true,
+        "time": 1794897634.5432694
+      },
+      "audit": "./media/motion-following-v475/limb496_joint_temporal_41_gated_a015_audit.json",
+      "evidence": [
+        "./media/motion-following-v475/limb496_joint_temporal_41_gated_a015_f249_f253.jpg",
+        "./media/motion-following-v475/limb496_joint_temporal_41_gated_a015_f281_f285.jpg",
+        "./media/motion-following-v475/limb496_joint_temporal_41_gated_a015_f298_f302.jpg"
+      ]
+    },
+    {
+      "key": "joint_source_native81_gated_a015",
+      "title": "源关节对应 · 原生 DD81",
+      "principle": "在无目标参考视频初始化的原生 DD81 上测试源关节特征对应，检验无先验原生协议下是否有效。",
+      "baseline": "native81_no_prior",
+      "baseline_media": {
+        "preview": "./media/motion-following-v475/limb496_baseline_native81_no_prior_preview.mp4",
+        "preview_bytes": 43316,
+        "clear": "./media/motion-following-v475/limb496_baseline_native81_no_prior_clear.mp4",
+        "clear_bytes": 343889
+      },
+      "result_media": {
+        "preview": "./media/motion-following-v475/limb496_joint_source_native81_gated_a015_preview.mp4",
+        "preview_bytes": 42680,
+        "clear": "./media/motion-following-v475/limb496_joint_source_native81_gated_a015_clear.mp4",
+        "clear_bytes": 342181
+      },
+      "visual_review": {
+        "all81_native_contact_frames_actually_viewed": true,
+        "EOF321_full_resolution_viewed": true,
+        "source_baseline_candidate_local_comparison_frames": [
+          [
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          [
+            281,
+            282,
+            283,
+            284,
+            285
+          ],
+          [
+            298,
+            299,
+            300,
+            301,
+            302
+          ],
+          [
+            317,
+            318,
+            319,
+            320,
+            321
+          ]
+        ],
+        "widespread_confetti": false,
+        "whole_scene_collapse": false,
+        "gross_source_action_order_preserved": true,
+        "hand_ghosting_clear_improvement": false,
+        "crossed_arm_or_occlusion_correspondence_clear_improvement": false,
+        "window_seam_clear_improvement_NOT_demonstrated": true,
+        "overall_quality_accepted": false,
+        "first_unambiguous_LR_error_NOT_required_or_claimed": true,
+        "all81_original_RGB_exactly_matched_baseline_qualification": true,
+        "actual_attention_effect_and_all80_nonfirst_native_RGB_changes_verified": true,
+        "verdict_zh": "未见稳定肢体改善；手部重影仍在",
+        "review_limits": "Actual all81 contact images and native full-resolution EOF viewed, with local matched comparisons on listed frames. No independent novel-view joint GT, no full-speed flicker pass, no inference that a changed tensor means quality improvement.",
+        "source_is_already_motion_blurred": true,
+        "no_new_training": true,
+        "time": 1794897634.5759726
+      },
+      "audit": "./media/motion-following-v475/limb496_joint_source_native81_gated_a015_audit.json",
+      "evidence": [
+        "./media/motion-following-v475/limb496_joint_source_native81_gated_a015_f249_f253.jpg",
+        "./media/motion-following-v475/limb496_joint_source_native81_gated_a015_f281_f285.jpg",
+        "./media/motion-following-v475/limb496_joint_source_native81_gated_a015_f298_f302.jpg"
+      ]
+    }
+  ],
+  "time": 1794897876.1473994,
+  "actual_source_VAE_condition_diagnostic": {
+    "actual_DD_calls": 0,
+    "only_native_VAE_loaded": true,
+    "DD_DiT_or_text_encoder_NOT_loaded": true,
+    "all81_final_DD_latent_decode_RGB_exact_qualified": true,
+    "all81_actual_source_RGB_verified": true,
+    "actual_source_VAE_encode_all_latents_byte_exact": true,
+    "actual_consumed_source_latent_file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/hard_case_third_column_v425/native81_no_prior/window_000/actual_initial_model_tensors.pt",
+    "source_reconstruction": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/limb_quality_trials_v496/actual_source_condition_VAE_v503/actual_consumed_source_VAE_reconstruction_NOT_Stage3_candidate.mkv",
+    "all81_source_reconstruction_RGB_SHA256": [
+      "08cdb028db2ffdb386f7b744032c4e9dfd5b09d3793448adbdfa75fb62253d43",
+      "3430bc3acd8934cea8b7fad3149d5b3f40fa74fb27f42721fb6b169ee0642b45",
+      "7c4f92f3ec80bfbe9d6bc8f7cdb32771e7967f855064b0c9c644ae1571d0e0c6",
+      "b64328d389e0b73d12e68d46a15362ab1ecf1fc6c334d2e37d26c6eb90243d2d",
+      "2a2843a4ac5ca7fa7ae785a38708fb7adc217a994d794aab77bc95e68d8e3880",
+      "c6dff12529d81d145e2561f895eef8a5e99d3c0ce0a3163908a9da1aa85069e7",
+      "5f28ac18aa3b20bcb083dd40c48b4aba9bbc63101f78a54754909091eea08648",
+      "1b873840a23cb7e8d2b0a2bf7fdaa9170c2fa3bd0c99d799ffb7ccbb74f26cb7",
+      "f64aa40308d6ce84ae00eddd626a651596a4ade7905cc6845297d6cd3a6e402e",
+      "123c108401547891fed3307d70bb0809bbd17a1afef8deb2b9f4bdfbf08c14ae",
+      "e5492e02d6bbfb8cec2623fdea2e42633e9216c0eefda7a78076a10efe33acc7",
+      "0bc42c57574dae6126e12cc685a39320eb08bd9aa9758d3f50f71f8eeb7c9813",
+      "4a35f23a567babd7374cb6be9028d244ea0253055113f64edea4437940f7b6bd",
+      "3173b0581a441a015e6dcacc270612cf9b42effabdb36336deb2a6d8438daaa6",
+      "f4774f7193a08bd2d8332c07ba8a446d3ad1eb3b06fd003e89dd1045ec084780",
+      "84d7a3d9a4443be7f43b22dc95b84180ae76048c34a5953a519af4d7c501d1d8",
+      "8c5d4b0ac7cb1db772fbbab32fb6901d6aa0e8007c319c8b1cc1b1637a887130",
+      "1bff6e95e15b59ba56be3c11323a05b4c1c347b3aaac15b7dadee0fbb171f096",
+      "7bbcc47948fa9911e42d38b50cb72640e8258b6ad4de2eaf43f07d8258708dc7",
+      "fd1bd55de3e77ca945768113b6e99f2df4e0d80f455835fc1fab5bb90b4f53a3",
+      "72c97cb00d1bebad4759202924cf984643619951743329e2de643fa872190472",
+      "483852f209e5c2f2bae0c06b6c9964c550e574ccc8db4cd81a7bb6caafb52d31",
+      "39ff261583e2fc36bc0100be939e83330d662d4aec543c63566d08792cbd5e82",
+      "aac0f38008f4a225fca7d523732dec0041c7f8d7aa424f1c2213e6bae4111beb",
+      "6582d4be4d6d32dd5d46ba3e78255f944b130a93c6ee94b472582e170dd5d55e",
+      "4a08fb2dd7cc927940654add8612bc3169395c84bf6676c4865fe1a43f6c0717",
+      "1a52bae58ddabb462d9592f17948243a6287b3f0a612c750b340f5ad1d585911",
+      "942281cd3bbf3fdd0010078c5c0d435af81563ce1b7c39c62d3e2207d442dc91",
+      "4345c90cf90f2c28ebc1a64d16ddc1f03d3a5bed2955992f3dec367546d62c89",
+      "53d0f9cfc1b5d702bd08fa7b2f0ce24fdc4ea6d2950fe07e66dcd61686ddc241",
+      "a489bf77f9e1725476a8f97fd6636e16a120c009e5da6dddb228c0583a55e10a",
+      "0c1e96c11adf44bfcba62d2f11f363e2ec723de7f399a91f37344834064b3319",
+      "80b99d0259c11267eb1e2a8522763e4bf1a1aecbec439e16083874d8639fcbda",
+      "2f7735e970f268376011de161a1ed344f59e0547bb2692f143ab80c20252b11a",
+      "d6f8e0f0c5679f36d0feec79cc9300aaa3b4ac6ff94f516afe9f3c71974740fe",
+      "e7b43d1f31ca041b3d82ebbff8ee664c38ef75c2fe4e27b5ddebb627b4e7b3af",
+      "3b5fb2e032eaf1fd429aa24228d59e912cdbc0a693b2e5f2e7f6d9bc62d30308",
+      "8fd336790c0a22aa1f3f702d19b339ccc067586f332084faaaf3b60606201be9",
+      "6ba550380c0d8a414bc782d162e933248585c5962a52bd1d5d7111ca18f11640",
+      "f97ac0680ecbf75ceca8aacc66d1ec9f8a34eb99f3f41ad1da2caff99600d4d2",
+      "9f4dde2f43718dcaec2bcfe643e9edc6dc923e33b65f5769a68ec33935d9198b",
+      "4eb07d467f645184ef2b29801e0f1b69541c8523cfbd1e539f064e478eeb3138",
+      "bc8543529eb6e0b44196693b3d74ec53481497333be41248f0f46b41b4c3a756",
+      "fdfa8e8988563b1ab82562238507a22a590b7700d71e989eec3740d9b83bffd0",
+      "e245e3dcf4e4e18698143410d8a2b3ff9616e7731ddfcfaeed81c2a893d28086",
+      "9732fed45a7f54a71fe4fac8eb295e2c3998cf2a327058defcddcf37afe7d88f",
+      "6682ead73790017877c2c590b064a55e0c81b9748513fa0bea7a4e47781f05aa",
+      "0bdb011b6062b9658630c6be984207a318a82ed8dae4b32b87d3159b0e960a21",
+      "9887e78eaecc7b39ac3281d7530b0515988a11baf4e43a0c4dbdb9acdc207f05",
+      "90516dd8447c79b8dcb4679cdbc2da34f95b3c09e43caa4da06ed00c4dabd840",
+      "9cac420ee879aa875ff296165c6202aa2b5e6a3e70b1db742def01c1609aa6b0",
+      "b94792d4beb76be539bc9f8359f1bdd2af23fd71ba352dbb845f530f1a0e83ac",
+      "d72f3f035d81e5bccbf9269f10bc1e4b431532efad03803792c9462295e4029c",
+      "6af5acbcaf717eb5a31c179355945c208941be1072eac437ab0a99e419573c1c",
+      "931c5d8c0322e8dd70bcf8b253a5ed51ff8afd621d06d6e6c896979319f2e010",
+      "b5f781f84146c148e7529c2e66500722bfaf1171ceaded3c0c56e1817f082167",
+      "20a1abb4354908c4c5ef8ba4a7ec8b795ffc477056b76c635a43f2801f34a622",
+      "32fad0b446b372bc16a4170637208c0c82b53a8d0cefa1ebada9930c96f3812a",
+      "f90e73a0909fb00e0de0047b613fed119727efceb40ca5e20003038086699c6b",
+      "bb51b2344d9d1e394a7b45b4c38c3f6671614d8defc3b6ecc8cf1682951e0e75",
+      "d5a6315330a6c84a965703a87bb44bdc551ae508624659962da6177b2d057e3c",
+      "d249c05f98da230650168cdc3f466d23dbb5edad8041c0ce70bf62eced5a33bc",
+      "e4b85241197dd0762270736e7755168ca3a92005255ab54d18154f80867125d4",
+      "66825da84dac9ce1d4d3a730194687a5d89785ec8a73086fe9dfff6bc3a93b3b",
+      "fd0451c2eae56a05b45638ed5722c4b1f91e9947df358fa0bc49d88f37f18440",
+      "15412d8e52a88220c1de3f7af8e1a45b88c60c657f13b7a3cd716bf58062373f",
+      "b9eed43947d0a08a9a3f6c6b0c1b11850a9c1f543a50f4ac443b59c832e8cb97",
+      "09d4043d90c305e45d6789654f9408f0220aa16f1aa8307c1149eca487738e21",
+      "dd7d315bcbf815827470cb34869dca72669f9a3174d4118bc0fe039874066dff",
+      "03c10b77d34c4f4607e62cfde7ac78e98034970505da1d02b4cf1e3310ff56c0",
+      "4ddf01e24990d46b607626ab7dd05535126e6f2c8c53714b90e5dcf053aeda4c",
+      "7a1309fdb3708faa6be46ff83ab2c59bcfe2fa2d7544a878b9731d60050cfd09",
+      "190b2ce9673b907683b4aaa037919fbdd76dab9cec65b9347d8787c9051173c6",
+      "a2acee64470755f63ff8d37b4a808ead3a4903af81390dbaa74b274576b28b14",
+      "f7e4f043281e3e05f114bf16d6ebdd841e988f5418b4552feb806d2b084bef50",
+      "92ddd57fe7acc7bf0715392797386ff56bded6e1fb812f93acd6f7a2014b095a",
+      "e56f8bebde2520772fa80d2b674dda48adb7d895b2f14e086e592e2dd045b8cb",
+      "1d94bfb7afc13afc99a9b400514c1ca32de7fc88e40de70e470d3c6514dc7d9a",
+      "181d2e4d84a0601c8c2f682843349fca00b24528638d4ebd110338bf7ba47f1a",
+      "a23c1430aeae64059fe440fa5cf9d5ae9297a0349baf69756f9fdbfe663a514b",
+      "5e54c8051b3bf01d848844672f6807c2d3182ecaadbd471343691e478d8d3f88"
+    ],
+    "not_a_Stage3_candidate": true,
+    "no_final_DD_RGB_modified": true,
+    "manual_hand_quality_causal_review_pending": false,
+    "time": 1794897841.3559651,
+    "reviewed_source_roundtrip_and_native_DD_frames": [
+      [
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      [
+        298,
+        299,
+        300,
+        301,
+        302
+      ],
+      [
+        317,
+        318,
+        319,
+        320,
+        321
+      ]
+    ],
+    "source_roundtrip_preserves_gross_motion_and_arm_structure": true,
+    "same_degree_added_DD_hand_ghosting_NOT_reproduced_in_viewed_source_roundtrip": true,
+    "raw_source_itself_has_motion_blur": true,
+    "RGB_source_branch_only_NOT_proof_all_motion_conditions_are_correct": true,
+    "target_geometry_or_denoiser_or_target_latent_decode_NOT_separated": true,
+    "interpretation": "Source RGB VAE compression alone is not a sufficient explanation of additional target hand ghosting seen in these frames; the result does not prove all geometry conditions correct or identify a particular failing generation module."
+  }
+}
