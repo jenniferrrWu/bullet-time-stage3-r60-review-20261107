@@ -1,7 +1,7 @@
 {
   "version": "method-grid-v321",
-  "updated_unix": 1794885280.2999427,
-  "total_complete_comparisons": 131,
+  "updated_unix": 1794886070.3215046,
+  "total_complete_comparisons": 136,
   "method_rows": 51,
   "rows": [
     {
@@ -3491,7 +3491,33 @@
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       },
       "review_number": 45,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD41 + 静止背景简洁prompt · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/prompt_static_compact_clear.mp4",
+        "clear_video": "./media/hard-case-v425/prompt_static_compact_clear.mp4",
+        "preview": "./media/hard-case-v425/prompt_static_compact_preview.mp4",
+        "preview_bytes": 43394,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/prompt_static_compact_audit.json",
+        "contact_sheet": "./media/hard-case-v425/prompt_static_compact_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "文本条件",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -3554,7 +3580,33 @@
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       },
       "review_number": 46,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD41 + 静止背景详细prompt · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/prompt_static_detailed_clear.mp4",
+        "clear_video": "./media/hard-case-v425/prompt_static_detailed_clear.mp4",
+        "preview": "./media/hard-case-v425/prompt_static_detailed_preview.mp4",
+        "preview_bytes": 43898,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/prompt_static_detailed_audit.json",
+        "contact_sheet": "./media/hard-case-v425/prompt_static_detailed_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "文本条件",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -3617,7 +3669,33 @@
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       },
       "review_number": 47,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD41 + TST + 静止背景详细prompt · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/prompt_static_tst_clear.mp4",
+        "clear_video": "./media/hard-case-v425/prompt_static_tst_clear.mp4",
+        "preview": "./media/hard-case-v425/prompt_static_tst_preview.mp4",
+        "preview_bytes": 43821,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/prompt_static_tst_audit.json",
+        "contact_sheet": "./media/hard-case-v425/prompt_static_tst_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "注意力／引导",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -3756,7 +3834,33 @@
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       },
       "review_number": 48,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD41 + Stage2背景输入约束 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/stage2_static_background_prior_clear.mp4",
+        "clear_video": "./media/hard-case-v425/stage2_static_background_prior_clear.mp4",
+        "preview": "./media/hard-case-v425/stage2_static_background_prior_preview.mp4",
+        "preview_bytes": 42787,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/stage2_static_background_prior_audit.json",
+        "contact_sheet": "./media/hard-case-v425/stage2_static_background_prior_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 本例背景限制仅在左侧边缘，完整保留大范围舞蹈和投影；不能据此声称整面背景已稳定。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "参考／背景条件",
       "training_mode": "本轮仅推理，未训练新权重"
     },
@@ -4221,7 +4325,33 @@
         "simpleD": "此项仅针对复杂例背景约束，简单D不计重复测试。"
       },
       "review_number": 54,
-      "hardH": null,
+      "hardH": {
+        "case": "hardH",
+        "label": "DD41 + Stage2背景与后续锚帧一致 · 新Hard完整81帧",
+        "video": "./media/hard-case-v425/consistent_Stage2_background_anchors_clear.mp4",
+        "clear_video": "./media/hard-case-v425/consistent_Stage2_background_anchors_clear.mp4",
+        "preview": "./media/hard-case-v425/consistent_Stage2_background_anchors_preview.mp4",
+        "preview_bytes": 42602,
+        "frames": 81,
+        "source_range": [
+          241,
+          321
+        ],
+        "actual_DD_calls": 100,
+        "audit": "./media/hard-case-v425/consistent_Stage2_background_anchors_audit.json",
+        "contact_sheet": "./media/hard-case-v425/consistent_Stage2_background_anchors_all81.jpg",
+        "visual_review": {
+          "all81_native_frames_visually_screened": false,
+          "visual_screening_pending": true,
+          "overall_quality_accepted": false,
+          "fine_motion_and_limb_correspondence_accepted": false,
+          "flicker_accepted": false,
+          "review_scope": "仅完成实际推理调用、全部原生RGB和真实EOF数据核验；未进行逐帧视觉检查。",
+          "note": "此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。"
+        },
+        "quality_status": "pending",
+        "note": "独立新Hard：f241–f321至真实EOF，81帧@25fps；各方案共用同一已检查Stage2末帧和新case源条件。此结果已完成完整81帧/EOF数据核验，尚未逐帧视觉检查；不代表彩噪、动作、肢体或闪动已通过。 目标视频初始化使用独立DD81近似参考；短窗后续锚帧取其对应时刻。每窗源／相机特征与本窗起点配对。该生成参考不是动作或新视角真值。 本例背景限制仅在左侧边缘，完整保留大范围舞蹈和投影；不能据此声称整面背景已稳定。 未使用旧case视频。最终RGB未做拼贴、平滑、插帧或稳定化，仅作网页显示压缩。"
+      },
       "change_kind": "参考／背景条件",
       "training_mode": "本轮仅推理，未训练新权重"
     }
@@ -4273,7 +4403,7 @@
       "condition_note": "新Hard用13.5°停点测试复杂动作；45°参考未通过，不能视为45°测试成功。Stage2来自原生81帧轨道的第24帧。"
     }
   },
-  "total_video_players": 134,
+  "total_video_players": 139,
   "overall_quality_accepted": 0,
   "stage2": {
     "case13": {
@@ -4345,26 +4475,6 @@
       "verified_windows": 4,
       "total_windows": 4
     },
-    "prompt_static_compact|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
-      "total_windows": 2
-    },
-    "prompt_static_detailed|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
-      "total_windows": 2
-    },
-    "prompt_static_tst|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
-    "stage2_static_background_prior|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 0,
-      "total_windows": 2
-    },
     "san_rho0|hardH": {
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
@@ -4379,15 +4489,10 @@
       "label": "新Hard实际DD推理补测中",
       "verified_windows": 0,
       "total_windows": 1
-    },
-    "consistent_Stage2_background_anchors|hardH": {
-      "label": "新Hard实际DD推理补测中",
-      "verified_windows": 1,
-      "total_windows": 2
     }
   },
   "total_planned_comparisons": 141,
-  "comparison_completion_fraction": "131/141",
+  "comparison_completion_fraction": "136/141",
   "original_DD_baseline_principle": "DD 原生去噪，无整段目标视频先验。复杂案例分四窗，后续含既有近似锚帧；原失败结果保留，场景修复版另列。简单案例为单窗81帧。",
   "scene_repair_review_scope": {
     "original_failed_baseline_preserved": true,
@@ -4445,5 +4550,5 @@
     "hardH": "新增Hard案例"
   },
   "hard_visual_screened_results": 9,
-  "hard_visual_screening_pending_results": 31
+  "hard_visual_screening_pending_results": 36
 }
