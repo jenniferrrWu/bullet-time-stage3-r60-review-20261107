@@ -170,15 +170,19 @@
     {
       "case": "hardJ",
       "method": "decoder-features",
-      "preview": "./media/six-case-background-v971/hardJ_scaled320_420_lossless_vp9_deb940e6a13f.webm",
-      "preview_SHA256": "ab74ee75ff206b0b7e862ed8952d30303584743f3d37ad3a4e1caa5038cae0c9",
-      "bytes": 261056,
-      "source_output_SHA256": "deb940e6a13fc7c95f5784b6afdaf509d9c086a72f4f4efc7cde25c7132656b6",
+      "preview": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_exact_a4db3e5d985c.webm",
+      "preview_SHA256": "03050d4d3d3f917f557750bf581ea3809ec4a8cfcd343b85eb84527e2da4fdc2",
+      "bytes": 255672,
+      "source_output_SHA256": "a4db3e5d985ca8c6e8652e24a09349a40d6acfe47dcbd6cf5e8393ed7a17a7c7",
       "reuse_single_window_prefill": false,
-      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json",
-      "light_compatibility_preview": "./media/six-case-background-v971/hardJ_target_video_mask_features_deb940e6a13f.mp4",
+      "verified_cohort": null,
+      "light_compatibility_preview": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_light_a4db3e5d985c.mp4",
       "lossless_after_scaling_and_YUV420": true,
-      "all_scaled_YUV_frames_exact": true
+      "all_scaled_YUV_frames_exact": true,
+      "clear": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_clear_a4db3e5d985c.mp4",
+      "independent_correction_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ_corrected_RGB_anchor_feature_controls_v1052/independent_same_sample_corrected_masks_comparison_v1055.json",
+      "public_correction_proof": "./media/six-case-background-v971/hardJ_corrected_RGB_anchor_audit_a4db3e5d985c.json",
+      "corrected_actual_RGB_anchor": true
     },
     {
       "case": "hardK",
@@ -197,9 +201,30 @@
   "local_export_time": 1795015660.6532059,
   "whole_quality_accepted": false,
   "exact_preview_cases": 6,
-  "exact_preview_total_bytes": 3067274,
+  "exact_preview_total_bytes": 3061890,
   "scaled_preview_exact_YUV_frames": 652,
   "lossy_compatibility_fallback": true,
-  "preview_source_original_DD_outputs_unchanged": true,
-  "preview_update_time": 1795018229.520068
+  "preview_source_original_DD_outputs_unchanged": false,
+  "preview_update_time": 1795029415.3065977,
+  "superseded_results": [
+    {
+      "result": {
+        "case": "hardJ",
+        "method": "decoder-features",
+        "preview": "./media/six-case-background-v971/hardJ_scaled320_420_lossless_vp9_deb940e6a13f.webm",
+        "preview_SHA256": "ab74ee75ff206b0b7e862ed8952d30303584743f3d37ad3a4e1caa5038cae0c9",
+        "bytes": 261056,
+        "source_output_SHA256": "deb940e6a13fc7c95f5784b6afdaf509d9c086a72f4f4efc7cde25c7132656b6",
+        "reuse_single_window_prefill": false,
+        "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json",
+        "light_compatibility_preview": "./media/six-case-background-v971/hardJ_target_video_mask_features_deb940e6a13f.mp4",
+        "lossless_after_scaling_and_YUV420": true,
+        "all_scaled_YUV_frames_exact": true
+      },
+      "reason": "inherited source projection false foreground anchor removed",
+      "replaced_unix": 1795029415.2565951
+    }
+  ],
+  "DD_final_latents_unchanged": true,
+  "hardJ_actual_RGB_only_anchor_corrected": true
 }
