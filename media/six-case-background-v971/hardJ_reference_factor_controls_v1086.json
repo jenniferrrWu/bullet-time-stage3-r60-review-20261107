@@ -1,0 +1,588 @@
+{
+  "cause_zh": "旧人物保护遮罩继承了错误源投影区域；旧空背景参考在移除人物时留下淡人形补全边界及脚形画布缺口。分别修正目标实际RGB遮罩、背景输入参考及推理保护范围。",
+  "new_I2V_Stage2_endpoint_RGB_NOT_changed": true,
+  "same_original_model_input_tensor_proof": {
+    "old_raw": {
+      "all_original_initial_target_source_camera_tensors_elementwise_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "same_prompt": true,
+      "CFG": 1,
+      "author_LoRA_scale": 1,
+      "seed": 42,
+      "steps": 50,
+      "frames": 81,
+      "latent_frames": 21,
+      "actual_native_model_calls": 50,
+      "pinned_first_latent_each_call": true,
+      "no_DD_RGB_target_video_prior": true,
+      "all_original_source_metadata_and_camera_SHA256_exact": true,
+      "actual_call_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/prefill_background_v970/window_000/actual_call.json",
+      "actual_call_proof_SHA256": "d5ae167a24be90b26bdeb1cea9e7df21e313241f44e3ad36dd93df27d43190a1"
+    },
+    "new_reference_raw": {
+      "all_original_initial_target_source_camera_tensors_elementwise_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "same_prompt": true,
+      "CFG": 1,
+      "author_LoRA_scale": 1,
+      "seed": 42,
+      "steps": 50,
+      "frames": 81,
+      "latent_frames": 21,
+      "actual_native_model_calls": 50,
+      "pinned_first_latent_each_call": true,
+      "no_DD_RGB_target_video_prior": true,
+      "all_original_source_metadata_and_camera_SHA256_exact": true,
+      "actual_call_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/reference_only/window_000/actual_call.json",
+      "actual_call_proof_SHA256": "d736e5a96b311fd7b5c0f90fa3b40c9316f2275670ece0331faac5744cab17cc"
+    },
+    "new_reference_and_mask_raw": {
+      "all_original_initial_target_source_camera_tensors_elementwise_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "same_prompt": true,
+      "CFG": 1,
+      "author_LoRA_scale": 1,
+      "seed": 42,
+      "steps": 50,
+      "frames": 81,
+      "latent_frames": 21,
+      "actual_native_model_calls": 50,
+      "pinned_first_latent_each_call": true,
+      "no_DD_RGB_target_video_prior": true,
+      "all_original_source_metadata_and_camera_SHA256_exact": true,
+      "actual_call_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/reference_and_RGB_mask/window_000/actual_call.json",
+      "actual_call_proof_SHA256": "f97a51213b6a0f71814637fe69683ace290a52ac218b3e2372247e0f91542f59"
+    }
+  },
+  "metrics": {
+    "old_raw": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 1229549,
+          "max_delta_from_first": 8
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 1873357,
+          "max_delta_from_first": 3
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 104843,
+          "max_delta_from_first": 4
+        }
+      },
+      "persistent_background_changed": 22844567,
+      "causal_clear_max": 87,
+      "causal_clear_mean_step": 0.11671360509903839,
+      "prespecified_border_t2_t3_delta": 17,
+      "all_fixed_ROIs_constant": false,
+      "near_background": {
+        "4": {
+          "mean_step": 0.12890696455517356,
+          "max_step": 124,
+          "changes_over8": 8329
+        },
+        "8": {
+          "mean_step": 0.12476399736312942,
+          "max_step": 124,
+          "changes_over8": 5478
+        },
+        "12": {
+          "mean_step": 0.12158912673964668,
+          "max_step": 124,
+          "changes_over8": 4008
+        },
+        "20": {
+          "mean_step": 0.11696305674468196,
+          "max_step": 124,
+          "changes_over8": 2748
+        }
+      }
+    },
+    "new_reference_raw": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 1236291,
+          "max_delta_from_first": 8
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 1876202,
+          "max_delta_from_first": 2
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 104320,
+          "max_delta_from_first": 4
+        }
+      },
+      "persistent_background_changed": 22712124,
+      "causal_clear_max": 17,
+      "causal_clear_mean_step": 0.11579971232710302,
+      "prespecified_border_t2_t3_delta": 4,
+      "all_fixed_ROIs_constant": false,
+      "near_background": {
+        "4": {
+          "mean_step": 0.1272431883657324,
+          "max_step": 34,
+          "changes_over8": 1370
+        },
+        "8": {
+          "mean_step": 0.12342406211166486,
+          "max_step": 27,
+          "changes_over8": 629
+        },
+        "12": {
+          "mean_step": 0.12049305070923219,
+          "max_step": 27,
+          "changes_over8": 382
+        },
+        "20": {
+          "mean_step": 0.11607396292366105,
+          "max_step": 27,
+          "changes_over8": 157
+        }
+      }
+    },
+    "new_reference_and_mask_raw": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 1222894,
+          "max_delta_from_first": 2
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 1879723,
+          "max_delta_from_first": 2
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 104167,
+          "max_delta_from_first": 4
+        }
+      },
+      "persistent_background_changed": 22657990,
+      "causal_clear_max": 20,
+      "causal_clear_mean_step": 0.1142660874024165,
+      "prespecified_border_t2_t3_delta": 4,
+      "all_fixed_ROIs_constant": false,
+      "near_background": {
+        "4": {
+          "mean_step": 0.12537229729419214,
+          "max_step": 29,
+          "changes_over8": 1469
+        },
+        "8": {
+          "mean_step": 0.12164432949925508,
+          "max_step": 26,
+          "changes_over8": 773
+        },
+        "12": {
+          "mean_step": 0.1188173467538769,
+          "max_step": 26,
+          "changes_over8": 548
+        },
+        "20": {
+          "mean_step": 0.11465882680365577,
+          "max_step": 26,
+          "changes_over8": 293
+        }
+      }
+    },
+    "current_live_features": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        }
+      },
+      "persistent_background_changed": 0,
+      "causal_clear_max": 0,
+      "causal_clear_mean_step": 0.0,
+      "prespecified_border_t2_t3_delta": 142,
+      "all_fixed_ROIs_constant": true,
+      "near_background": {
+        "4": {
+          "mean_step": 0.008927548103768959,
+          "max_step": 142,
+          "changes_over8": 5107
+        },
+        "8": {
+          "mean_step": 0.004638050915720742,
+          "max_step": 142,
+          "changes_over8": 1708
+        },
+        "12": {
+          "mean_step": 0.0022766537725802394,
+          "max_step": 132,
+          "changes_over8": 351
+        },
+        "20": {
+          "mean_step": 0.0005386018557732694,
+          "max_step": 7,
+          "changes_over8": 0
+        }
+      }
+    },
+    "same_old_sample_new_reference_bank": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        }
+      },
+      "persistent_background_changed": 0,
+      "causal_clear_max": 0,
+      "causal_clear_mean_step": 0.0,
+      "prespecified_border_t2_t3_delta": 8,
+      "all_fixed_ROIs_constant": true,
+      "near_background": {
+        "4": {
+          "mean_step": 0.008755461980684236,
+          "max_step": 53,
+          "changes_over8": 3956
+        },
+        "8": {
+          "mean_step": 0.004581918688784185,
+          "max_step": 53,
+          "changes_over8": 1536
+        },
+        "12": {
+          "mean_step": 0.002347549022016771,
+          "max_step": 53,
+          "changes_over8": 573
+        },
+        "20": {
+          "mean_step": 0.0005787204572707731,
+          "max_step": 8,
+          "changes_over8": 0
+        }
+      }
+    },
+    "new_reference_features": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        }
+      },
+      "persistent_background_changed": 0,
+      "causal_clear_max": 0,
+      "causal_clear_mean_step": 0.0,
+      "prespecified_border_t2_t3_delta": 9,
+      "all_fixed_ROIs_constant": true,
+      "near_background": {
+        "4": {
+          "mean_step": 0.008045162768777309,
+          "max_step": 35,
+          "changes_over8": 1348
+        },
+        "8": {
+          "mean_step": 0.004220064078256797,
+          "max_step": 21,
+          "changes_over8": 542
+        },
+        "12": {
+          "mean_step": 0.002169544881491171,
+          "max_step": 20,
+          "changes_over8": 222
+        },
+        "20": {
+          "mean_step": 0.0005442632996387673,
+          "max_step": 7,
+          "changes_over8": 0
+        }
+      }
+    },
+    "new_reference_and_mask_features": {
+      "protected_RGB_changed_against_own_parent": 0,
+      "fixed_rois": {
+        "empty_wall": {
+          "pixels": 42000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "upper_wall": {
+          "pixels": 56000,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        },
+        "bottom_canvas": {
+          "pixels": 3014,
+          "changed_from_first": 0,
+          "max_delta_from_first": 0
+        }
+      },
+      "persistent_background_changed": 0,
+      "causal_clear_max": 0,
+      "causal_clear_mean_step": 0.0,
+      "prespecified_border_t2_t3_delta": 9,
+      "all_fixed_ROIs_constant": true,
+      "near_background": {
+        "4": {
+          "mean_step": 0.007936777021403035,
+          "max_step": 34,
+          "changes_over8": 1328
+        },
+        "8": {
+          "mean_step": 0.004175528285912994,
+          "max_step": 21,
+          "changes_over8": 533
+        },
+        "12": {
+          "mean_step": 0.0021582597539798534,
+          "max_step": 18,
+          "changes_over8": 224
+        },
+        "20": {
+          "mean_step": 0.0005440723725522493,
+          "max_step": 7,
+          "changes_over8": 0
+        }
+      }
+    }
+  },
+  "all7_times81_RGB_hashes_verified": true,
+  "selected_variant": "new_reference_and_mask_features",
+  "selected_feature_preserves_own_matching_DD_person_RGB": true,
+  "new_vs_old_DD_sampling_body_RGB_identity_NOT_claimed": true,
+  "all_foreground_masks_and_occluded_background_estimates_NOT_GT": true,
+  "source_conditioning_recipe_zh": "保护范围来自此前相同输入DD画面的二值分割；这是显式衍生条件。DD输出RGB没有用作目标视角视频初始化或背景图补全。",
+  "sampling_calls_this_two_new_control_batch": 100,
+  "feature_diagnostics_extra_DD_calls": 0,
+  "new_training_steps": 0,
+  "previews": {
+    "new_reference_and_mask_features": {
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/qualified_fresh_reference_feature_controls_v1084/reference_and_RGB_mask/guard4/DD_same_sample_decoder_background_features.mkv",
+      "source_SHA256": "5a2f57e1872f0c2d10bdb83c73113095ab2c8da5440ca280c9f2242d362e0755",
+      "frames": 81,
+      "fps": 25,
+      "files": {
+        "exact": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_features_exact_5a2f57e1872f.webm",
+          "SHA256": "ebdb8905fbf50668b3c3916799c7b27e53052c32a7d8cf851c25b1eaa358bd6a",
+          "bytes": 253973
+        },
+        "light": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_features_light_5a2f57e1872f.mp4",
+          "SHA256": "0772834b8826e671a2c4eb561ecc47650bec9c53ee4ac644c687907a4afce4a7",
+          "bytes": 11287
+        },
+        "clear": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_features_clear_5a2f57e1872f.mp4",
+          "SHA256": "2531488416caf055640bef8b1d77a9243aef84a94ceea3ba41bd09c88e374380",
+          "bytes": 142538
+        }
+      },
+      "all81_scaled_YUV420_frames_exact": true,
+      "all_scaled_YUV420_frame_MD5": [
+        "cb5b88b7fe41dee74093aa24ebe110a5",
+        "12ed5d6f360ed1d55b551d4b66b6f4e4",
+        "a59cc7c47e363d006b3b5305b2fadf15",
+        "edf744f10508fe39af52e2ac31344481",
+        "127332e9fed0bf75a08b94fc2d86a614",
+        "44247fd3617ae781a0a0268033da33bb",
+        "08113df0a98a3766bf935bb35563682f",
+        "697c9492cf126790934b4db9b06d3ed0",
+        "b6b8778c41979b7a7f14ae88aaf5eedd",
+        "3692bf49133b073197a6ae271911c3ca",
+        "a1f3def356b4de70218ae5567e320294",
+        "33dd99d08609d426be6bb8821018e37c",
+        "2dfdd979a98f51dba4ea1fc66651b999",
+        "513a2ca2d6923253f99a2cb0de9477a5",
+        "8ad4f3986f9ff1d6b8f97c3673d287e1",
+        "2a30db2e61d655a43caeaeba6b2c3b52",
+        "e3180683e4d843a1c57d77a79b196e0d",
+        "b2ce6f922164cfd74399e14ae3f03d12",
+        "6a868cd3f87f9ba9bb696cc6539e0c99",
+        "b10b6d3f727ec31f27b0ec7df4a4a2ef",
+        "97c27b087062a29a311e840499fc184f",
+        "fc7cfb5530c485ec924739ecde033ec5",
+        "e44555c0b90116089706828b14ee484a",
+        "dbb69dc32dad33835f94dc573f7eb5df",
+        "5aef5095c241a20a97888b72d1f589c7",
+        "c554f0ec1fd460f0b732d1a374c8aecc",
+        "9c42b05792ac6e82263014fa4e6681fb",
+        "03b67297517dfa08e5cba8b816839bce",
+        "272c51cf5f74784a2faab7dbd37852c2",
+        "ad2134afc8ec9fed44128f1647bdc6f8",
+        "0001a933767b3314718712f63b2aea97",
+        "73c6d721a817af6d7ded91318866fc32",
+        "087ab3bfa85333dd168e5b274e7c4755",
+        "b5d016fbc763dd03c235f0fe8639c639",
+        "613cbf90418a3eedd5c22cb3fff36be2",
+        "dc96e962af9ee92c9bf2bf28295b5201",
+        "a1336ac959dba5006ce64c92f4a03a48",
+        "f2dc15b5d372437bd8bd75f24fd42ec7",
+        "290b6ef84370dec7d2ba479e80d26501",
+        "6dd12427cb67f888f73bd914d9ac1e96",
+        "e75d55e5df6fb93e39e328202aaa9d97",
+        "c6d34a8a795bd9b4b6e98339f17bac11",
+        "de687a2b79e9cf7289a4f6d0938977b3",
+        "e063494a21fe64ee2f6b522c49f9be99",
+        "9956bcd9b4b18cf56dbe3793e6fbbddd",
+        "c8767b35a57b624988fbd25c3b50d753",
+        "b61e5d390fe576532b269f5b2624c417",
+        "61c86c9aa95f77e67eb14bea91e1e533",
+        "23b521d42db183ff1c986c6cb783bf41",
+        "52fecdd2d5c0005917b736d82e298101",
+        "d873649fa5d515ca75dd374008fd6d4b",
+        "315f861193f9640ff9b81aaa84e2249c",
+        "90b2855309045f453327ff1c52bd33db",
+        "4e16a9577ef6b5565400c80717d21417",
+        "5ed6cbbd66502487fa9a15f995e6dad9",
+        "3a88e01b3b649c85c5eb5b04ebbf4ecc",
+        "77585dc17a6c3c76bf9b713b9dec39b6",
+        "4f75a19a7c70f317870e0a08dc9692c9",
+        "292bc9822d18da82a83e4e27e7035ec4",
+        "20309c794b8e0405d8ae7cf2f4dcbcc5",
+        "da4b47cf8937af6401ba8619552f099f",
+        "b2f36b69128378c87ba8adfe563b0244",
+        "2f4bd681c39c2219834a86a5307f6098",
+        "34760e7d8143f93877d691eeff44fb29",
+        "163fb9841fcec91b394d9309da86b5f1",
+        "ca46e17f24ac0e7aba8ef27c12460430",
+        "e819f8cd4694e65059926f94bc294a19",
+        "e0d1956f7d8c1c5fc5ca6a7a066b6bdd",
+        "19b2048096800cf10b4a3fed80b0c90d",
+        "f8164aa63508e2403283e041752a9de2",
+        "6206c92255c8046e017b0152fb8d5273",
+        "2f63798162651525b6d25b748c503a6c",
+        "0fa416c3eb70d689ce369e1864f64132",
+        "3ff30bc9929dbbfcca95c0120c145ec5",
+        "9b79b7abbb14a1e065e6ac20960da7b3",
+        "6f55c73f88da900925b647b726a3ad08",
+        "2424822d815e7b606bde99dcb0c49c3c",
+        "9302c59fab4749e04562a6ca8e571449",
+        "f92d4122b3b5b8d0ba370868485e3a84",
+        "3f02fb73825ba76bbd2429ab52579910",
+        "c0cb16b3f568f00217ae850fd7645697"
+      ],
+      "lossless_after_resize_and_chroma_subsampling": true,
+      "native_RGB_lossless_preview_NOT_claimed": true
+    },
+    "new_reference_and_mask_raw": {
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/reference_and_RGB_mask/window_000/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "33e2b3ec006af59d5703ae0953d1e42754f9c8ffefb36a6cd6abf5a5a6ef7cda",
+      "frames": 81,
+      "fps": 25,
+      "files": {
+        "light": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_raw_light_33e2b3ec006a.mp4",
+          "SHA256": "f7e058a7ccc83b8b4d7ea006720ea55d0b325ecbe1bc6ab4e74d304437ecd233",
+          "bytes": 10988
+        },
+        "clear": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_raw_clear_33e2b3ec006a.mp4",
+          "SHA256": "75b5c5d0c603eed7d2d5414ba4c4f5a6b9ee5a7ca31b31c50ee61b0908496f50",
+          "bytes": 161344
+        }
+      }
+    },
+    "same_old_sample_new_reference_bank": {
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_reference_bank_only_control_v1077/decoder_reference_only/DD_same_sample_decoder_background_features.mkv",
+      "source_SHA256": "877d76e73e9604783f1284cd88a450a85904e5bb16909fae54311721337683e2",
+      "frames": 81,
+      "fps": 25,
+      "files": {
+        "light": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_same_old_sample_new_reference_bank_light_877d76e73e96.mp4",
+          "SHA256": "98bd846b6af0badbae4e524018c7b5bc2226a4ad47b29b947f4e4dd7174f2766",
+          "bytes": 11316
+        }
+      }
+    },
+    "new_reference_raw": {
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/reference_only/window_000/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "3a44ded0ea81431edc82955dc23feb80ef34a7d9c64f0fab37cc037f89527b26",
+      "frames": 81,
+      "fps": 25,
+      "files": {
+        "light": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_raw_light_3a44ded0ea81.mp4",
+          "SHA256": "bc253fdf6edc40e2191f95af89a8101f19b429bc9437c426cb5936ae0bb475a7",
+          "bytes": 11080
+        }
+      }
+    },
+    "new_reference_features": {
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/qualified_fresh_reference_feature_controls_v1084/reference_only/guard4/DD_same_sample_decoder_background_features.mkv",
+      "source_SHA256": "ccec2a6dc86fd1eaf90e5c6752674875ef44742606fae1c9914bb91b200d7537",
+      "frames": 81,
+      "fps": 25,
+      "files": {
+        "light": {
+          "file": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_features_light_ccec2a6dc86f.mp4",
+          "SHA256": "2fae286f6093b62e9456c8ae6714d25286eb4e251664a5b04a451c152ff058b6",
+          "bytes": 11282
+        }
+      }
+    }
+  },
+  "visual_review": {
+    "both_fresh_raw81_first_last_and_full_frame_mask_contacts_actually_viewed": true,
+    "both_fresh_feature81_before_after_full_contacts_actually_viewed": true,
+    "old_sample_new_reference_bank81_contact_actually_viewed": true,
+    "old_and_new_known_maximum_border_residual_crops_actually_viewed": true,
+    "no_gross_missing_body_or_confetti_seen": true,
+    "selected_feature_body_RGB_exact_its_own_fresh_DD_sample": true,
+    "old_DD_body_RGB_identity_across_new_sampling_NOT_claimed": true,
+    "whole_quality_accepted": false,
+    "time": 1795037156.8064249
+  },
+  "RGB_output_paste_smoothing_or_interpolation": false,
+  "whole_quality_accepted": false,
+  "time": 1795037260.5663588
+}

@@ -55,20 +55,36 @@
     {
       "case": "hardJ",
       "method": "mature-context",
-      "preview": "./media/six-case-background-v971/hardJ_prefill_1af76d0acb78.mp4",
-      "preview_SHA256": "470f375a7600acfea416b09de9484670910f6bbcbb9a8e2fca62ec38adc7086b",
-      "bytes": 11653,
-      "source_output_SHA256": "1af76d0acb78828a25a3d1dbd265c6da46a47025024c1e6fda3bd76586fa30fd",
-      "reuse_single_window_prefill": true
+      "preview": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_raw_light_33e2b3ec006a.mp4",
+      "preview_SHA256": "f7e058a7ccc83b8b4d7ea006720ea55d0b325ecbe1bc6ab4e74d304437ecd233",
+      "bytes": 10988,
+      "source_output_SHA256": "33e2b3ec006af59d5703ae0953d1e42754f9c8ffefb36a6cd6abf5a5a6ef7cda",
+      "reuse_single_window_prefill": true,
+      "clear": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_raw_clear_33e2b3ec006a.mp4",
+      "verified_cohort": null,
+      "matching_reference_factor_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/matched_factor_audit_v1085/verified_reference_factor_controls_all81_v1085.json",
+      "reference_input_correction": true,
+      "derived_previous_DD_binary_mask": true,
+      "DD_RGB_target_video_or_reference_feedback": false,
+      "new_model_training_steps": 0,
+      "whole_quality_accepted": false
     },
     {
       "case": "hardJ",
       "method": "repaired",
-      "preview": "./media/six-case-background-v971/hardJ_prefill_1af76d0acb78.mp4",
-      "preview_SHA256": "470f375a7600acfea416b09de9484670910f6bbcbb9a8e2fca62ec38adc7086b",
-      "bytes": 11653,
-      "source_output_SHA256": "1af76d0acb78828a25a3d1dbd265c6da46a47025024c1e6fda3bd76586fa30fd",
-      "reuse_single_window_prefill": false
+      "preview": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_raw_light_33e2b3ec006a.mp4",
+      "preview_SHA256": "f7e058a7ccc83b8b4d7ea006720ea55d0b325ecbe1bc6ab4e74d304437ecd233",
+      "bytes": 10988,
+      "source_output_SHA256": "33e2b3ec006af59d5703ae0953d1e42754f9c8ffefb36a6cd6abf5a5a6ef7cda",
+      "reuse_single_window_prefill": false,
+      "clear": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_raw_clear_33e2b3ec006a.mp4",
+      "verified_cohort": null,
+      "matching_reference_factor_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/matched_factor_audit_v1085/verified_reference_factor_controls_all81_v1085.json",
+      "reference_input_correction": true,
+      "derived_previous_DD_binary_mask": true,
+      "DD_RGB_target_video_or_reference_feedback": false,
+      "new_model_training_steps": 0,
+      "whole_quality_accepted": false
     },
     {
       "case": "hardJ",
@@ -185,21 +201,28 @@
     {
       "case": "hardJ",
       "method": "decoder-features",
-      "preview": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_exact_a4db3e5d985c.webm",
-      "preview_SHA256": "03050d4d3d3f917f557750bf581ea3809ec4a8cfcd343b85eb84527e2da4fdc2",
-      "bytes": 255672,
-      "source_output_SHA256": "a4db3e5d985ca8c6e8652e24a09349a40d6acfe47dcbd6cf5e8393ed7a17a7c7",
+      "preview": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_features_exact_5a2f57e1872f.webm",
+      "preview_SHA256": "ebdb8905fbf50668b3c3916799c7b27e53052c32a7d8cf851c25b1eaa358bd6a",
+      "bytes": 253973,
+      "source_output_SHA256": "5a2f57e1872f0c2d10bdb83c73113095ab2c8da5440ca280c9f2242d362e0755",
       "reuse_single_window_prefill": false,
-      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/complete_six_cases_v1058/verified_complete_six_case_feature_outputs_v1058.json",
-      "light_compatibility_preview": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_light_a4db3e5d985c.mp4",
+      "verified_cohort": null,
+      "light_compatibility_preview": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_features_light_5a2f57e1872f.mp4",
       "lossless_after_scaling_and_YUV420": true,
       "all_scaled_YUV_frames_exact": true,
-      "clear": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_clear_a4db3e5d985c.mp4",
+      "clear": "./media/six-case-background-v971/hardJ_reference_fix_new_reference_and_mask_features_clear_5a2f57e1872f.mp4",
       "independent_correction_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ_corrected_RGB_anchor_feature_controls_v1052/independent_same_sample_corrected_masks_comparison_v1055.json",
       "public_correction_proof": "./media/six-case-background-v971/hardJ_corrected_RGB_anchor_audit_a4db3e5d985c.json",
       "corrected_actual_RGB_anchor": true,
       "independent_full_sequence_correction_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/full_matched_audit_v1063/six_case_matched_RGB_only_mask_correction_summary_v1063.json",
-      "whole_quality_accepted": false
+      "whole_quality_accepted": false,
+      "matching_raw_DD_method": "repaired",
+      "matching_raw_DD_parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/reference_and_RGB_mask/window_000",
+      "matching_reference_factor_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/canvas_aware_reference_DD_controls_v1076/matched_factor_audit_v1085/verified_reference_factor_controls_all81_v1085.json",
+      "reference_input_correction": true,
+      "derived_previous_DD_binary_mask": true,
+      "DD_RGB_target_video_or_reference_feedback": false,
+      "new_model_training_steps": 0
     },
     {
       "case": "hardK",
@@ -222,11 +245,11 @@
   "local_export_time": 1795015660.6532059,
   "whole_quality_accepted": false,
   "exact_preview_cases": 6,
-  "exact_preview_total_bytes": 3038543,
+  "exact_preview_total_bytes": 3036844,
   "scaled_preview_exact_YUV_frames": 652,
   "lossy_compatibility_fallback": true,
   "preview_source_original_DD_outputs_unchanged": false,
-  "preview_update_time": 1795032168.6369596,
+  "preview_update_time": 1795037260.5816894,
   "superseded_results": [
     {
       "result": {
@@ -312,6 +335,55 @@
       },
       "reason": "complete actual RGB-only video anchor correction; no forced source projection",
       "replaced_unix": 1795032168.6125512
+    },
+    {
+      "result": {
+        "case": "hardJ",
+        "method": "decoder-features",
+        "preview": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_exact_a4db3e5d985c.webm",
+        "preview_SHA256": "03050d4d3d3f917f557750bf581ea3809ec4a8cfcd343b85eb84527e2da4fdc2",
+        "bytes": 255672,
+        "source_output_SHA256": "a4db3e5d985ca8c6e8652e24a09349a40d6acfe47dcbd6cf5e8393ed7a17a7c7",
+        "reuse_single_window_prefill": false,
+        "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/complete_six_cases_v1058/verified_complete_six_case_feature_outputs_v1058.json",
+        "light_compatibility_preview": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_light_a4db3e5d985c.mp4",
+        "lossless_after_scaling_and_YUV420": true,
+        "all_scaled_YUV_frames_exact": true,
+        "clear": "./media/six-case-background-v971/hardJ_actual_RGB_anchor_clear_a4db3e5d985c.mp4",
+        "independent_correction_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ_corrected_RGB_anchor_feature_controls_v1052/independent_same_sample_corrected_masks_comparison_v1055.json",
+        "public_correction_proof": "./media/six-case-background-v971/hardJ_corrected_RGB_anchor_audit_a4db3e5d985c.json",
+        "corrected_actual_RGB_anchor": true,
+        "independent_full_sequence_correction_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/full_matched_audit_v1063/six_case_matched_RGB_only_mask_correction_summary_v1063.json",
+        "whole_quality_accepted": false
+      },
+      "reason": "corrected actual Stage2 empty-background reference and estimated binary protection mask; matched DD raw control updated",
+      "replaced_unix": 1795037260.5051851
+    },
+    {
+      "result": {
+        "case": "hardJ",
+        "method": "repaired",
+        "preview": "./media/six-case-background-v971/hardJ_prefill_1af76d0acb78.mp4",
+        "preview_SHA256": "470f375a7600acfea416b09de9484670910f6bbcbb9a8e2fca62ec38adc7086b",
+        "bytes": 11653,
+        "source_output_SHA256": "1af76d0acb78828a25a3d1dbd265c6da46a47025024c1e6fda3bd76586fa30fd",
+        "reuse_single_window_prefill": false
+      },
+      "reason": "corrected actual Stage2 empty-background reference and estimated binary protection mask; matched DD raw control updated",
+      "replaced_unix": 1795037260.5161471
+    },
+    {
+      "result": {
+        "case": "hardJ",
+        "method": "mature-context",
+        "preview": "./media/six-case-background-v971/hardJ_prefill_1af76d0acb78.mp4",
+        "preview_SHA256": "470f375a7600acfea416b09de9484670910f6bbcbb9a8e2fca62ec38adc7086b",
+        "bytes": 11653,
+        "source_output_SHA256": "1af76d0acb78828a25a3d1dbd265c6da46a47025024c1e6fda3bd76586fa30fd",
+        "reuse_single_window_prefill": true
+      },
+      "reason": "corrected actual Stage2 empty-background reference and estimated binary protection mask; matched DD raw control updated",
+      "replaced_unix": 1795037260.5180202
     }
   ],
   "DD_final_latents_unchanged": true,
@@ -320,5 +392,10 @@
   "all_six_actual_RGB_only_anchor_corrected": true,
   "full_six_matched_background_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/full_matched_audit_v1063/six_case_matched_RGB_only_mask_correction_summary_v1063.json",
   "public_full_correction_proof": "./media/six-case-background-v971/complete_six_actual_RGB_mask_audit_v1064.json",
-  "known_hardJ_black_border_transition_issue": true
+  "known_hardJ_black_border_transition_issue": "substantially_reduced_142_to9_at_locked_point; remaining fine edges pending visual acceptance",
+  "hardJ_reference_fix_v1086": true,
+  "hardJ_matching_sample_and_reference_updated": true,
+  "selected_hardJ_reference_factor_variant": "new_reference_and_mask_features",
+  "public_hardJ_reference_factor_audit": "./media/six-case-background-v971/hardJ_reference_factor_controls_v1086.json",
+  "old_vs_new_hardJ_sample_not_claimed_pixel_identical": true
 }
