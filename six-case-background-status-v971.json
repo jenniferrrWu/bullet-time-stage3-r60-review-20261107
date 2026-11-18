@@ -2,9 +2,9 @@
   "six_case_columns": true,
   "columns_including_method": 7,
   "method_rows": 5,
-  "completed_video_cells": 25,
-  "pending_cells": 5,
-  "actual_players": 31,
+  "completed_video_cells": 28,
+  "pending_cells": 2,
+  "actual_players": 34,
   "all_new_native_cases_81_frames_50_calls": true,
   "new_results": [
     {
@@ -14,6 +14,15 @@
       "preview_SHA256": "2a83d7da27fd0f75449dfee02e0fcb42fb6301a0e28b87e909b893f0000dc4c0",
       "bytes": 24545,
       "source_output_SHA256": "901d9408fd8b04c4df88fdf2683bc7043a058ab882ef4a2a099cf0ab7e33b6ac",
+      "reuse_single_window_prefill": false
+    },
+    {
+      "case": "hardI",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/hardI_decoder-features.mp4",
+      "preview_SHA256": "9c88c520fde8526835a04951ce1313709567ad83d3e7bdd5958c124724fa1b3a",
+      "bytes": 23380,
+      "source_output_SHA256": "30e5e9c597ddf06133c6b30fd956addb71d2d6bb5c9b27bbe3617b75bc04d63f",
       "reuse_single_window_prefill": false
     },
     {
@@ -90,6 +99,24 @@
     },
     {
       "case": "hardK",
+      "method": "mature-context",
+      "preview": "./media/six-case-background-v971/hardK_prefill.mp4",
+      "preview_SHA256": "9597d394a5c7d1dcac6c1974a4570779cb0ee9c2e9562d0747dea1da74874c90",
+      "bytes": 11332,
+      "source_output_SHA256": "1d894e96dc25536f7f1797ec353331897ed0f071884ccbde42feb05a4c98d78b",
+      "reuse_single_window_prefill": true
+    },
+    {
+      "case": "hardK",
+      "method": "repaired",
+      "preview": "./media/six-case-background-v971/hardK_prefill.mp4",
+      "preview_SHA256": "9597d394a5c7d1dcac6c1974a4570779cb0ee9c2e9562d0747dea1da74874c90",
+      "bytes": 11332,
+      "source_output_SHA256": "1d894e96dc25536f7f1797ec353331897ed0f071884ccbde42feb05a4c98d78b",
+      "reuse_single_window_prefill": false
+    },
+    {
+      "case": "hardK",
       "method": "previous-repaired",
       "preview": "./media/six-case-background-v971/hardK_previous-repaired.mp4",
       "preview_SHA256": "c43df33a63f0e36005b1526340c7471650c50705d445158dd13519703404838c",
@@ -98,6 +125,6 @@
       "reuse_single_window_prefill": false
     }
   ],
-  "local_export_time": 1794998753.4313898,
+  "local_export_time": 1794998928.6058047,
   "whole_quality_accepted": false
 }
