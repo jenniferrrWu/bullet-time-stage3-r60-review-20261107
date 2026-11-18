@@ -2,9 +2,9 @@
   "six_case_columns": true,
   "columns_including_method": 7,
   "method_rows": 5,
-  "completed_video_cells": 18,
-  "pending_cells": 12,
-  "actual_players": 24,
+  "completed_video_cells": 20,
+  "pending_cells": 10,
+  "actual_players": 26,
   "all_new_native_cases_81_frames_50_calls": true,
   "new_results": [
     {
@@ -14,6 +14,24 @@
       "preview_SHA256": "2a83d7da27fd0f75449dfee02e0fcb42fb6301a0e28b87e909b893f0000dc4c0",
       "bytes": 24545,
       "source_output_SHA256": "901d9408fd8b04c4df88fdf2683bc7043a058ab882ef4a2a099cf0ab7e33b6ac",
+      "reuse_single_window_prefill": false
+    },
+    {
+      "case": "hardI",
+      "method": "mature-context",
+      "preview": "./media/six-case-background-v971/hardI_prefill.mp4",
+      "preview_SHA256": "3cccaeb201d7118fa7b649e100a5a4df2545a548286bb578429e06a62832f3af",
+      "bytes": 22651,
+      "source_output_SHA256": "b11009659f181e04bd05015c872ce999356a8bdc38a9342f0aa16862ad54326c",
+      "reuse_single_window_prefill": true
+    },
+    {
+      "case": "hardI",
+      "method": "repaired",
+      "preview": "./media/six-case-background-v971/hardI_prefill.mp4",
+      "preview_SHA256": "3cccaeb201d7118fa7b649e100a5a4df2545a548286bb578429e06a62832f3af",
+      "bytes": 22651,
+      "source_output_SHA256": "b11009659f181e04bd05015c872ce999356a8bdc38a9342f0aa16862ad54326c",
       "reuse_single_window_prefill": false
     },
     {
@@ -35,6 +53,6 @@
       "reuse_single_window_prefill": false
     }
   ],
-  "local_export_time": 1794996175.8030682,
+  "local_export_time": 1794996986.4978359,
   "whole_quality_accepted": false
 }
