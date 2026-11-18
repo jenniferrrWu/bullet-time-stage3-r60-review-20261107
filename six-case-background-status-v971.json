@@ -2,9 +2,9 @@
   "six_case_columns": true,
   "columns_including_method": 7,
   "method_rows": 5,
-  "completed_video_cells": 20,
-  "pending_cells": 10,
-  "actual_players": 26,
+  "completed_video_cells": 21,
+  "pending_cells": 9,
+  "actual_players": 27,
   "all_new_native_cases_81_frames_50_calls": true,
   "new_results": [
     {
@@ -35,6 +35,15 @@
       "reuse_single_window_prefill": false
     },
     {
+      "case": "hardI",
+      "method": "previous-repaired",
+      "preview": "./media/six-case-background-v971/hardI_previous-repaired.mp4",
+      "preview_SHA256": "50ebceddc2191e1d6d3968a50a910d2113677e99fb74c33186ff3719be4f5547",
+      "bytes": 22777,
+      "source_output_SHA256": "c2cf26b9e166630ac71ec059ce643b3c8d83a41fba36f1030d23fea51fd73792",
+      "reuse_single_window_prefill": false
+    },
+    {
       "case": "hardJ",
       "method": "baseline",
       "preview": "./media/six-case-background-v971/hardJ_baseline.mp4",
@@ -53,6 +62,6 @@
       "reuse_single_window_prefill": false
     }
   ],
-  "local_export_time": 1794996986.4978359,
+  "local_export_time": 1794997134.9587083,
   "whole_quality_accepted": false
 }
