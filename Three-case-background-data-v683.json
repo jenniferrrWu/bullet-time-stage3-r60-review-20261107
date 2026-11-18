@@ -1,5 +1,5 @@
 {
-  "version": 834,
+  "version": 894,
   "cases": [
     {
       "key": "case13",
@@ -22,27 +22,27 @@
       "result": {
         "frames": 247,
         "fps": "15/1",
-        "source_video_SHA256": "fc2fc98bf7b5919241f6522d8836bae34e5eacf11c4ad304e7ba621304f1cf52",
-        "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/consistent_reference_prefill_actual_DD_v808/complete247/verified_full_case_native_RGB_v331.json",
-        "preview": "./media/three-case-background-v683/case13_prefill_f247_fc2fc98bf7_preview.mp4",
-        "preview_bytes": 57562,
-        "preview_SHA256": "b62301ef07880d44c5a30a5403e453faf7c5e025fde534a0eb0b846ce5b40b9c",
-        "clear": "./media/three-case-background-v683/case13_prefill_f247_fc2fc98bf7_clear.mp4",
-        "clear_bytes": 485021,
-        "clear_SHA256": "275ab253208a6a6f147557a806c2c70c628ecb391ae185e420b6117fe41c2996"
+        "source_video_SHA256": "b3421a341ca1e08fd530c2cf5fecc30770104a3c7dab928354354f4c240d9716",
+        "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/native81_mature_overlap60_v859/complete247_mature_context_v884/verified_full_case_native_RGB_v884.json",
+        "preview": "./media/three-case-background-v683/case13_mature_context_prefill_f247_b3421a341c_preview.mp4",
+        "preview_bytes": 57266,
+        "preview_SHA256": "341db75fac557b167da36fb61834a5668c2e8f01a3edfb45b5a594a8775135ec",
+        "clear": "./media/three-case-background-v683/case13_mature_context_prefill_f247_b3421a341c_clear.mp4",
+        "clear_bytes": 474704,
+        "clear_SHA256": "ad588a390c319eefeac97166a40362d282f4a974c415ea38b00e1681c84b60ab"
       },
       "scope": "f845–1091 · 247帧 · 15fps",
       "partial": false,
-      "verdict": "完整247帧已核验并查看：树叶接缝闪动减轻，但人物附近仍有局部纹理变化；新版并非各处都优于上一版，全片画质待验收。",
+      "verdict": "完整247帧已核验；全背景波动小幅下降，人物附近改善；尚未判定彻底解决。",
       "protocol": "原生 DD81，保留既有目标视频初始化0.06；Stage2 +45°。",
       "evidence": [
-        "./media/three-case-background-v683/case13_prefill_fc2fc98bf7_all247_untouched_native_DD_contact.jpg",
-        "./media/three-case-background-v683/case13_prefill_fc2fc98bf7_native_real_EOF1091.png",
-        "./media/three-case-background-v683/case13_prefill_fc2fc98bf7_all3_seams_and_real_EOF_native_context.jpg"
+        "./media/three-case-background-v683/case13_mature_b3421a341c_all247_real_native_frames_contact.jpg",
+        "./media/three-case-background-v683/case13_mature_b3421a341c_all9_new_native_seams_before_after.jpg",
+        "./media/three-case-background-v683/case13_mature_b3421a341c_actual_native_true_EOF_source1091.png"
       ],
-      "audit": "./media/three-case-background-v683/case13_prefill_fc2fc98bf7_audit.json",
-      "diagnostic": "树叶三处接缝最大相邻RGB变化约10.73→2.17；但近身估计背景均值0.556→0.713，并非各处都更好。请对照下方上一版，局部指标不是画质提升比例。",
-      "result_protocol": "原DD输入、prompt、相机与初始噪声沿用匹配父结果；背景参考采用一致编码与原生VAE参考预热。64张预热参考不计真实结果；首输出也由同一GG参考重新解码。简单D另保留Stage2已可见背景。未训练新权重，最终RGB无拼贴或稳定化。",
+      "audit": "./media/three-case-background-v683/case13_mature_b3421a341c_audit.json",
+      "diagnostic": "完整247真实帧、246对相邻帧及9处新接缝已核验，检查覆盖地面；原目标视频初始化0.06保留。固定建筑/地面测量区域的几何位移范围约0.05–0.13像素，人物附近仍有纹理变化。",
+      "result_protocol": "原生81帧DD、60帧重叠、保留成熟后文。复杂例目标视频初始化0.06不变；源帧组对应的高斯噪声和原背景掩码显式对齐，seed参数单独不能复现噪声包。每窗独立原生VAE解码，无跨DD窗口全局潜变量解码；最终RGB不拼贴。",
       "previous_complete_result_archive": "./media/three-case-background-v683/case13_previous_complete_background_result_before_v779.json",
       "whole_scene_quality_pass": false,
       "previous_full_result": {
@@ -54,6 +54,18 @@
         "preview_bytes": 56734,
         "clear": "./media/three-case-background-v683/case13_context_repair_f247_7ec703e17f_clear.mp4",
         "clear_bytes": 610375
+      },
+      "previous_prefill_result": {
+        "frames": 247,
+        "fps": "15/1",
+        "source_video_SHA256": "fc2fc98bf7b5919241f6522d8836bae34e5eacf11c4ad304e7ba621304f1cf52",
+        "source_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/consistent_reference_prefill_actual_DD_v808/complete247/verified_full_case_native_RGB_v331.json",
+        "preview": "./media/three-case-background-v683/case13_prefill_f247_fc2fc98bf7_preview.mp4",
+        "preview_bytes": 57562,
+        "preview_SHA256": "b62301ef07880d44c5a30a5403e453faf7c5e025fde534a0eb0b846ce5b40b9c",
+        "clear": "./media/three-case-background-v683/case13_prefill_f247_fc2fc98bf7_clear.mp4",
+        "clear_bytes": 485021,
+        "clear_SHA256": "275ab253208a6a6f147557a806c2c70c628ecb391ae185e420b6117fe41c2996"
       }
     },
     {
@@ -108,7 +120,8 @@
         "clear_bytes": 231310
       },
       "whole_scene_quality_pass": false,
-      "result_protocol": "原DD输入、prompt、相机与初始噪声沿用匹配父结果；背景参考采用一致编码与原生VAE参考预热。64张预热参考不计真实结果；首输出也由同一GG参考重新解码。简单D另保留Stage2已可见背景。未训练新权重，最终RGB无拼贴或稳定化。"
+      "result_protocol": "原DD输入、prompt、相机与初始噪声沿用匹配父结果；背景参考采用一致编码与原生VAE参考预热。64张预热参考不计真实结果；首输出也由同一GG参考重新解码。简单D另保留Stage2已可见背景。未训练新权重，最终RGB无拼贴或稳定化。",
+      "mature_context_result_reused_exact": true
     },
     {
       "key": "hardH",
@@ -158,28 +171,30 @@
         "fps": "25/1"
       },
       "whole_scene_quality_pass": false,
-      "result_protocol": "原DD输入、prompt、相机与初始噪声沿用匹配父结果；背景参考采用一致编码与原生VAE参考预热。64张预热参考不计真实结果；首输出也由同一GG参考重新解码。简单D另保留Stage2已可见背景。未训练新权重，最终RGB无拼贴或稳定化。"
+      "result_protocol": "原DD输入、prompt、相机与初始噪声沿用匹配父结果；背景参考采用一致编码与原生VAE参考预热。64张预热参考不计真实结果；首输出也由同一GG参考重新解码。简单D另保留Stage2已可见背景。未训练新权重，最终RGB无拼贴或稳定化。",
+      "mature_context_result_reused_exact": true
     }
   ],
-  "method_rows": 3,
+  "method_rows": 4,
   "video_cases": 3,
-  "main_players": 12,
+  "main_players": 15,
   "original_Hard_history_rows": 8,
   "new_training_steps": 0,
   "case13_prior_explicit": true,
   "foreground_estimator_differs_between_Hard_and_other_cases_explicit": true,
-  "time": 1794958250.5216901,
-  "reviewed_case13_native_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/consistent_reference_prefill_actual_DD_v808/complete247/verified_full_case_native_RGB_v331.json",
-  "reviewed_case13_visual_gate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/consistent_reference_prefill_actual_DD_v808/complete247/actual_full247_native_visual_review_v834.json",
+  "time": 1794976492.8896008,
+  "reviewed_case13_native_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/native81_mature_overlap60_v859/complete247_mature_context_v884/verified_full_case_native_RGB_v884.json",
+  "reviewed_case13_visual_gate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/native81_mature_overlap60_v859/complete247_mature_context_v884/actual_full247_native_visual_review_v894.json",
   "case13_result_updated_only": false,
-  "simpleD_and_Hard_completed_results_reused": false,
+  "simpleD_and_Hard_completed_results_reused": true,
   "Hard_pure_current_protocol_regression": "./media/three-case-background-v683/hardH_pure_DD_current_protocol_regression_v753.json",
   "new_candidate_and_previous_repair_both_live": true,
-  "all_three_cases_fresh_actual_DD_recomputed": true,
+  "all_three_cases_fresh_actual_DD_recomputed": false,
   "source_frames": [
     247,
     81,
     81
   ],
-  "first_output_redecoded_reference_prefill_disclosed": true
+  "first_output_redecoded_reference_prefill_disclosed": true,
+  "whole_background_fixed": false
 }
