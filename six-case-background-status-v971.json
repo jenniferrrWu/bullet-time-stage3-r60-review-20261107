@@ -18,15 +18,6 @@
     },
     {
       "case": "hardI",
-      "method": "decoder-features",
-      "preview": "./media/six-case-background-v971/hardI_decoder-features_a244d713377a.mp4",
-      "preview_SHA256": "136f9491efd482bcf9a141f450d3040f6e7a2616e39ce47b17064371cf253bd9",
-      "bytes": 21838,
-      "source_output_SHA256": "a244d713377ad5a128c7ae541b91a72109712c988ad26fa347ac16b7ca21348b",
-      "reuse_single_window_prefill": false
-    },
-    {
-      "case": "hardI",
       "method": "mature-context",
       "preview": "./media/six-case-background-v971/hardI_prefill_c9e0594cbb2d.mp4",
       "preview_SHA256": "9884f404d6bd6843cab7a02efd3b18e4109e4fab39e0dd69dfe718c47e0b04fe",
@@ -59,15 +50,6 @@
       "preview_SHA256": "74406e4156837d5a662a5d91d88ecc22365cbb40d864f157bb8a476f4fd659e3",
       "bytes": 21707,
       "source_output_SHA256": "1af4bd411923772f42c32b508ac77067da2270c811db2ef625864ccea64298ce",
-      "reuse_single_window_prefill": false
-    },
-    {
-      "case": "hardJ",
-      "method": "decoder-features",
-      "preview": "./media/six-case-background-v971/hardJ_decoder-features_f0a57b45fb96.mp4",
-      "preview_SHA256": "e15d6b2212baa4275009dcd6eeb6e68ae05dfa377ec3852888bdbfe030607cee",
-      "bytes": 12200,
-      "source_output_SHA256": "f0a57b45fb96ca2809deb4ff2013bc171853aa0404d40919f998dcbe510402f0",
       "reuse_single_window_prefill": false
     },
     {
@@ -108,15 +90,6 @@
     },
     {
       "case": "hardK",
-      "method": "decoder-features",
-      "preview": "./media/six-case-background-v971/hardK_decoder-features_422078ee3411.mp4",
-      "preview_SHA256": "05439a6192c41f6c2fe0f47e44a134156d37b650e77d55505ae22743ff779c75",
-      "bytes": 11592,
-      "source_output_SHA256": "422078ee341138605a0859b20c0985384a7ae5d4dcc7f13f1c8ab262d736ea9c",
-      "reuse_single_window_prefill": false
-    },
-    {
-      "case": "hardK",
       "method": "mature-context",
       "preview": "./media/six-case-background-v971/hardK_prefill_1d894e96dc25.mp4",
       "preview_SHA256": "9597d394a5c7d1dcac6c1974a4570779cb0ee9c2e9562d0747dea1da74874c90",
@@ -141,8 +114,68 @@
       "bytes": 11137,
       "source_output_SHA256": "e069dcb8d9b8cb1e390bcada130282477ba29a57cd730985e65a72a63d0d073f",
       "reuse_single_window_prefill": false
+    },
+    {
+      "case": "case13",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/case13_target_video_mask_features_0828f91f82a3.mp4",
+      "preview_SHA256": "27645be22d1d7e57d0e4c6ce605476f1ab362dcf22bdf366b11f222760b46f38",
+      "bytes": 59658,
+      "source_output_SHA256": "0828f91f82a38507923eae57ab7bfe9c1aecfe22b268d3e15c86525bd3beac99",
+      "reuse_single_window_prefill": false,
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json"
+    },
+    {
+      "case": "simpleD",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/simpleD_target_video_mask_features_e5ba46d592f2.mp4",
+      "preview_SHA256": "052287f727ac511dd85d4ebc54a2ebe4a43d982dbf0fe4277c7174eb49756d37",
+      "bytes": 29463,
+      "source_output_SHA256": "e5ba46d592f22ee572b8724b8320ac89acbda2212e740431fc991641542bee28",
+      "reuse_single_window_prefill": false,
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json"
+    },
+    {
+      "case": "hardH",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/hardH_target_video_mask_features_d2e7d28ebbb4.mp4",
+      "preview_SHA256": "6a32a0a63d64355d8f7f8dfb978673004bf326c3b939098201e58dd3253430d9",
+      "bytes": 37036,
+      "source_output_SHA256": "d2e7d28ebbb47d94b3a9d51c2c1bcf92c433732dc3e1908c935b43122861f3de",
+      "reuse_single_window_prefill": false,
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json"
+    },
+    {
+      "case": "hardI",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/hardI_target_video_mask_features_4f85c42c7f14.mp4",
+      "preview_SHA256": "ee3e5dbd9ce4c525014d6d6bd1a28a5f44ce767e02c975a3880e4a947ce44311",
+      "bytes": 21371,
+      "source_output_SHA256": "4f85c42c7f14f379a12cff05e32f1a2937900799d740e75d8d38c4685a827e6a",
+      "reuse_single_window_prefill": false,
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json"
+    },
+    {
+      "case": "hardJ",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/hardJ_target_video_mask_features_deb940e6a13f.mp4",
+      "preview_SHA256": "f521530c7d0f9177967adabc1f29286d41233b19a235d9a4daf53fac86e8aa7c",
+      "bytes": 11903,
+      "source_output_SHA256": "deb940e6a13fc7c95f5784b6afdaf509d9c086a72f4f4efc7cde25c7132656b6",
+      "reuse_single_window_prefill": false,
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json"
+    },
+    {
+      "case": "hardK",
+      "method": "decoder-features",
+      "preview": "./media/six-case-background-v971/hardK_target_video_mask_features_de6bdeee04bb.mp4",
+      "preview_SHA256": "cbb04a14c72c57e43c8eb7dc077d7e911c4a8e198b5f0cc8680b5dd902330f7b",
+      "bytes": 11554,
+      "source_output_SHA256": "de6bdeee04bb69f03e20eef177f4b153058a9e211d1985ac43033a54921a9b4d",
+      "reuse_single_window_prefill": false,
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_target_video_masks_v1017/complete_six_cases_v1018/verified_complete_six_case_feature_outputs_v1018.json"
     }
   ],
-  "local_export_time": 1795000740.3630722,
+  "local_export_time": 1795015660.6532059,
   "whole_quality_accepted": false
 }
