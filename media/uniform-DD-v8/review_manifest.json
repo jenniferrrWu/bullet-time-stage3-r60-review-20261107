@@ -1,0 +1,3532 @@
+{
+  "page": "/root/bullet_time_original_review_20261114/repository/Stage3-DD-unified-v8.html",
+  "page_SHA256": "802d89f92fa8e6f565a028387dd157ec6b3327f59da698b4eb703d74fa2e13d7",
+  "same_defaults_SHA256": "b04571aaff276628f697a5fbab693c2fa883ad45f7dea50b2d72c4b971f8cc19",
+  "six_video_columns": true,
+  "existing_cases": 6,
+  "discovery_regression_cases": 1,
+  "new_heldout_cases": 1,
+  "frames_each": 81,
+  "main_method_rows": 4,
+  "completed_main_cells": 24,
+  "actual_players": 37,
+  "all6_RGB_exact_previous": true,
+  "all_preview_scaled_YUV_and_timestamps_verified": true,
+  "roof_full247_still_pending": true,
+  "whole_quality_passed": false,
+  "new_training_steps": 0,
+  "data": {
+    "heldout_chalkboard": {
+      "label": "携带物回归 · 手持板",
+      "fps": 25,
+      "frames": 81,
+      "review": {
+        "summary_zh": "携带物回归：全81帧缩略图中粉色板面完整，已修正上一版漏保护造成的板面改色；背景更稳，细节和实时播放仍待验收。",
+        "review_mode": "actual_all81_output_contact_and_midclip_source_native_RF_comparison",
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/heldout_chalkboard/matched_evaluation/all81_full_only.jpg",
+        "comparison": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/heldout_chalkboard/matched_evaluation/full_scene_page_1.jpg",
+        "all81_thumbnail_visual_screen": true,
+        "full_resolution_all81_visual_review": false,
+        "realtime_playback_review": false,
+        "whole_quality_passed": false,
+        "time": 1795084714.6335223
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 0.24849727861583232,
+            "first_two_pairs": [
+              0.596925675868988,
+              0.3012453019618988
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.596925675868988
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.31987906601279975,
+            "first_two_pairs": [
+              0.640860915184021,
+              0.3635578453540802
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.640860915184021
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.24437264483422041,
+            "first_two_pairs": [
+              0.594436764717102,
+              0.2976530194282532
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.594436764717102
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.20426933094859123,
+            "first_two_pairs": [
+              0.2781125009059906,
+              0.20080600678920746
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.2781125009059906
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.37966221645474435,
+            "first_two_pairs": [
+              1.5852969884872437,
+              0.6359341740608215
+            ],
+            "worst_pair": 1,
+            "worst_mean": 1.5852969884872437
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.19401744045317174,
+            "first_two_pairs": [
+              0.20143605768680573,
+              0.17537406086921692
+            ],
+            "worst_pair": 41,
+            "worst_mean": 0.21111580729484558
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.0006359218128636712,
+            "first_two_pairs": [
+              0.001135222497396171,
+              0.0009500382002443075
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.001135222497396171
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.011775430425768719,
+            "first_two_pairs": [
+              0.02089681103825569,
+              0.01749974675476551
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.02089681103825569
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.29687342260294824,
+            "first_two_pairs": [
+              16.00188636779785,
+              7.705225944519043
+            ],
+            "worst_pair": 1,
+            "worst_mean": 16.00188636779785
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.30256800953648055,
+            "first_two_pairs": [
+              15.796303749084473,
+              7.616749286651611
+            ],
+            "worst_pair": 1,
+            "worst_mean": 15.796303749084473
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.29658660888671873,
+            "first_two_pairs": [
+              16.015644073486328,
+              7.711284637451172
+            ],
+            "worst_pair": 1,
+            "worst_mean": 16.015644073486328
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.0005754505364166107,
+            "first_two_pairs": [
+              0.001072231330908835,
+              0.0008093939395621419
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.001072231330908835
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.010656512499554082,
+            "first_two_pairs": [
+              0.01973728835582733,
+              0.014909072779119015
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.01973728835582733
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": false,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/stage23_simple_routes_20261020/raw/route_a/depthdirector/stage3/simple02_woman_presenting_chalkboard/attempt03_right_w2c_fix/preprocess/Rotate,0,30,0,0,0/input.mp4",
+          "source_SHA256": "d6f9b3648047b52ce68447f8f27c3894c411f738c611144b42a034033aeba637",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_source_d6f9b3648047.webm",
+              "SHA256": "f73be24a74cbfb116ad017299865b85aab18575996fc53367ba6506dca052fd0",
+              "bytes": 885593,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_source_d6f9b3648047.mp4",
+              "SHA256": "06bca69df588323d0131e6a6b2f2f5b496e04832b56e50c59e20407b3d988d57",
+              "bytes": 8458,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_source_d6f9b3648047_clear.mp4",
+              "SHA256": "b98ce14400e094ff35c93bfffe9aee1c8aca98d85a62364a73e48af17e99a988",
+              "bytes": 197154,
+              "probe": {
+                "width": 1024,
+                "height": 576,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073963.9271703
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_native_969f8c40c9d4.webm",
+              "SHA256": "f0e0dd65acc4773e3ca6d8d30d2df4f0f9a4f185a6e1ebae72cb31f4f7c6b6a6",
+              "bytes": 911418,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_native_969f8c40c9d4.mp4",
+              "SHA256": "a9026c290f9a7eaa9dcfe4e078b6baa312629d7678bf5f5c61dedffabb4c7abd",
+              "bytes": 6072,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_native_969f8c40c9d4_clear.mp4",
+              "SHA256": "db88797e6cff7742205bee50d900e40342e0ba2556c27c363be6951118838b3d",
+              "bytes": 120514,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795074015.2284827
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/heldout_chalkboard/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "dd52cd6b0e873a7daafdbfce9193dcd21a2a0ab06872c710b57d97fc02aada52",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_chalkboard_full_dd52cd6b0e87.webm",
+              "SHA256": "763ae24cbc0738c2dc5d5d340eaf840088e7366437bfca6dc78f96f363dcecc2",
+              "bytes": 307690,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_chalkboard_full_dd52cd6b0e87.mp4",
+              "SHA256": "b94e4617ea386af3708863cfd5ed44319c5a2a90c8055f7c76255f1b69169825",
+              "bytes": 6373,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_chalkboard_full_dd52cd6b0e87_clear.mp4",
+              "SHA256": "8302023cb91155089c8d7c43e28e942c6d337d21d2e28ff5c5289edf0ee12a1c",
+              "bytes": 115206,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795084776.4762769
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/heldout_chalkboard/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "f2ed2430ba8975efab22acbf23b3a2d7f10e3d4aca4dfecf5f6bf0bd9f2107b7",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_chalkboard_RF_f2ed2430ba89.webm",
+              "SHA256": "073aeb2850bd1cb3ad5b2915bc4d70de98df8e425dac1d1618dac32fdd6af775",
+              "bytes": 875942,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_chalkboard_RF_f2ed2430ba89.mp4",
+              "SHA256": "b808db7e9ffbe3a64f6c81a9bab3c950610ef2ca362753a33fbf75e4d79bcf44",
+              "bytes": 6305,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_chalkboard_RF_f2ed2430ba89_clear.mp4",
+              "SHA256": "d86c32b1189ad31e794b6e9b57c8c42590a436b5f2ff185ef4a28307f95246e2",
+              "bytes": 101575,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795084776.5105605
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/heldout_chalkboard/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "da6af9e8abca3920a7ea181345c5cb28226eff7dd4f776a09265cb1e7e9a9199",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_full_da6af9e8abca.webm",
+              "SHA256": "f9b9e5095c606f1d338b346fb32cddb8e0ffe79ad4691ebbbd7d140d7aa3cefc",
+              "bytes": 174975,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_full_da6af9e8abca.mp4",
+              "SHA256": "80b0ebb189cabc405348eb8938e7e870ccd1ed2c6f7b1324d1657eca54aa9bb1",
+              "bytes": 6084,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_full_da6af9e8abca_clear.mp4",
+              "SHA256": "815f94a6d31780fecb8f0b81377be56a4877691e23f7d558a518028771168fb0",
+              "bytes": 90823,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795074032.693287
+        }
+      },
+      "feature_proof_SHA256": "98e55a9f51aeb7d9591850b25f2be8a371839fc96bcd08c74c323eb303ee1efc",
+      "actual_new_DD_calls": 50
+    },
+    "hardI": {
+      "label": "HardI · 室内女舞者",
+      "fps": 25,
+      "frames": 81,
+      "review": {
+        "case": "hardI",
+        "summary_zh": "固定背景更稳，但地板／钢琴遮挡补全仍不自然；人物后段靠近画边，保留失败项继续查通用规则。 本轮81帧RGB与上一版完全一致。",
+        "all81_output_contact_actually_viewed": true,
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/matched_evaluation/uniform_full_all81_compact.jpg",
+        "additional_matched_full_scene_viewed": [
+          "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/matched_evaluation/full_scene_page_1.jpg"
+        ],
+        "source_action_and_background_not_claimed_ground_truth": true,
+        "whole_quality_passed": false,
+        "time": 1795081129.74626,
+        "review_mode": "reuse_actual_previous_visual_review_after_all81_RGB_exact_comparison",
+        "previous_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "current_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardI/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "all81_RGB_exact_previous": true
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 0.25334478430449964,
+            "first_two_pairs": [
+              0.6719943284988403,
+              0.4174940586090088
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.6719943284988403
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.3528602451086045,
+            "first_two_pairs": [
+              2.753052234649658,
+              2.5531699657440186
+            ],
+            "worst_pair": 3,
+            "worst_mean": 3.1177749633789062
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.09683941844850778,
+            "first_two_pairs": [
+              0.4198608696460724,
+              0.1871059685945511
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.4198608696460724
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.12087565409019589,
+            "first_two_pairs": [
+              0.8171176910400391,
+              0.36090007424354553
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.8171176910400391
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.9735798552632332,
+            "first_two_pairs": [
+              8.617307662963867,
+              3.7931671142578125
+            ],
+            "worst_pair": 1,
+            "worst_mean": 8.617307662963867
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.03423740491271019,
+            "first_two_pairs": [
+              0.08412401378154755,
+              0.03601284325122833
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.08412401378154755
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.05331039088778198,
+            "first_two_pairs": [
+              0.11282214522361755,
+              0.15745732188224792
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.30038365721702576
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.8949956754222512,
+            "first_two_pairs": [
+              1.2755759954452515,
+              2.031860589981079
+            ],
+            "worst_pair": 5,
+            "worst_mean": 3.624178171157837
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.604255645815283,
+            "first_two_pairs": [
+              26.526159286499023,
+              11.492218971252441
+            ],
+            "worst_pair": 1,
+            "worst_mean": 26.526159286499023
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 2.3077154643833637,
+            "first_two_pairs": [
+              10.159716606140137,
+              4.069468021392822
+            ],
+            "worst_pair": 1,
+            "worst_mean": 10.159716606140137
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.5072785973548889,
+            "first_two_pairs": [
+              28.34855842590332,
+              12.233729362487793
+            ],
+            "worst_pair": 1,
+            "worst_mean": 28.34855842590332
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.05331039088778198,
+            "first_two_pairs": [
+              0.11282214522361755,
+              0.15745732188224792
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.30038365721702576
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.8949956754222512,
+            "first_two_pairs": [
+              1.2755759954452515,
+              2.031860589981079
+            ],
+            "worst_pair": 5,
+            "worst_mean": 3.624178171157837
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "old_per_case_comparison": {
+          "background_outside8": {
+            "mean_all80": 0.08622225464787334,
+            "first_two_pairs": [
+              0.18134094774723053,
+              0.2574710547924042
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.328227698802948
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.3437725257128477,
+            "first_two_pairs": [
+              2.241093397140503,
+              3.4377686977386475
+            ],
+            "worst_pair": 5,
+            "worst_mean": 4.046887397766113
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.007718946325667275,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 42,
+            "worst_mean": 0.03887148201465607
+          }
+        }
+      },
+      "all81_RGB_exact_previous": true,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardI/DD_inputs_v951/source81_native_canvas.mkv",
+          "source_SHA256": "0e6ea4c97d7901bf02867fc1a71dff40e36443c6277893dd2a707216637f148f",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_source_0e6ea4c97d79.webm",
+              "SHA256": "3173f1358dc6dffd7dac16513c0084c4c8900be71b24f9ccee94c9d4b2d51d3d",
+              "bytes": 793393,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_source_0e6ea4c97d79.mp4",
+              "SHA256": "5b2d3dc09387a1947a58c0c6bc39f7ca92558f15abca13d54b5e6993693e5eab",
+              "bytes": 16547,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_source_0e6ea4c97d79_clear.mp4",
+              "SHA256": "7162bf76c83a7c2066d48c112a9ddeac323f096473f3ae16689612f51d455132",
+              "bytes": 259208,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073625.4225342
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_native_547b21a1290b.webm",
+              "SHA256": "b4dc32428842fe3109c6eed1c1613c852c6a08dcdb56f16747868a88432db780",
+              "bytes": 695933,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_native_547b21a1290b.mp4",
+              "SHA256": "40e732b1cf6093d69b4b404268a2a357218eabe714b54f487aef2a145342362e",
+              "bytes": 15086,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_native_547b21a1290b_clear.mp4",
+              "SHA256": "67ace2f54ad9423c8f8438c6a601a048dc277a18a06fe654372e3c809975cd74",
+              "bytes": 254945,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073632.1765635
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "be2459e984f6752fc6ccf6b5bdda042eebd6772e259e0f7c5b28886c8cbe7288",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_full_be2459e984f6.webm",
+              "SHA256": "e091f215d81de894496ef38fcda45b4c47cb8bb64b0529c0078a65940fc8ce1b",
+              "bytes": 382927,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_full_be2459e984f6.mp4",
+              "SHA256": "f74dcc4f5839714d291f8db50da8e93b58c1fa7e96863302a1521b0cac4b20d4",
+              "bytes": 13174,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_full_be2459e984f6_clear.mp4",
+              "SHA256": "d3f8ba7f1831e627d8314d8afab81b90fa67a1ab38df8e84bd5d1e6d867bbde7",
+              "bytes": 193616,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073631.8864098,
+          "new_output_source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardI/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "new_output_source_SHA256": "772de72434fce5c3616fae81420cbe68e8ba0b8c63db6cf7eb4f88a91a093350",
+          "all81_new_output_RGB_exact_preview_original": true,
+          "old_and_new_feature_proofs": [
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardI/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json"
+          ]
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "52ee57fde06af12ce1600572f23ca67d31d42ea7f01cc9a17c3e7793f1b9f810",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_RF_52ee57fde06a.webm",
+              "SHA256": "e7ff113f2b592e29f6f2d1b609a56f585a6953777430696856dff3113461b6e3",
+              "bytes": 609057,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_RF_52ee57fde06a.mp4",
+              "SHA256": "14fa17436edb5782b75e81a4872b388adb117515e6507583ce7c78887b1821a5",
+              "bytes": 13116,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_RF_52ee57fde06a_clear.mp4",
+              "SHA256": "4e28332bf44c211cf1a551a6f371ddf1db462d553250335f0dbca7d28a8c6051",
+              "bytes": 199623,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073631.7671196
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "be2459e984f6752fc6ccf6b5bdda042eebd6772e259e0f7c5b28886c8cbe7288",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_full_be2459e984f6.webm",
+              "SHA256": "e091f215d81de894496ef38fcda45b4c47cb8bb64b0529c0078a65940fc8ce1b",
+              "bytes": 382927,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_full_be2459e984f6.mp4",
+              "SHA256": "f74dcc4f5839714d291f8db50da8e93b58c1fa7e96863302a1521b0cac4b20d4",
+              "bytes": 13174,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_full_be2459e984f6_clear.mp4",
+              "SHA256": "d3f8ba7f1831e627d8314d8afab81b90fa67a1ab38df8e84bd5d1e6d867bbde7",
+              "bytes": 193616,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073631.8864098
+        }
+      },
+      "feature_proof_SHA256": "32986dc13a1e6fd730cf6881f8255e2f9bc8909319a2fae6f1170acf56fbd81d",
+      "actual_new_DD_calls": 0
+    },
+    "hardH": {
+      "label": "HardH · 男舞者",
+      "fps": 25,
+      "frames": 81,
+      "review": {
+        "case": "hardH",
+        "summary_zh": "统一方案明显减轻整面墙漂移，运动投影保留；手臂快速运动处仍有原生成模糊，阴影边缘待验收。 本轮81帧RGB与上一版完全一致。",
+        "all81_output_contact_actually_viewed": true,
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/matched_evaluation/uniform_full_all81_compact.jpg",
+        "additional_matched_full_scene_viewed": [],
+        "source_action_and_background_not_claimed_ground_truth": true,
+        "whole_quality_passed": false,
+        "time": 1795081129.7379534,
+        "review_mode": "reuse_actual_previous_visual_review_after_all81_RGB_exact_comparison",
+        "previous_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "current_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardH/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "all81_RGB_exact_previous": true
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 1.0071034200489521,
+            "first_two_pairs": [
+              5.565830230712891,
+              3.849832534790039
+            ],
+            "worst_pair": 1,
+            "worst_mean": 5.565830230712891
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.9998915277421474,
+            "first_two_pairs": [
+              1.0551871061325073,
+              1.1156136989593506
+            ],
+            "worst_pair": 18,
+            "worst_mean": 1.7128722667694092
+          },
+          "far_entire_clip32": {
+            "mean_all80": 1.3140707969665528,
+            "first_two_pairs": [
+              9.368852615356445,
+              6.7917633056640625
+            ],
+            "worst_pair": 1,
+            "worst_mean": 9.368852615356445
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.2416225289925933,
+            "first_two_pairs": [
+              0.5744171738624573,
+              0.3978957533836365
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.5744171738624573
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.8053522560745477,
+            "first_two_pairs": [
+              2.9743330478668213,
+              2.45257830619812
+            ],
+            "worst_pair": 5,
+            "worst_mean": 2.9987590312957764
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.137975755892694,
+            "first_two_pairs": [
+              0.14842680096626282,
+              0.1302502304315567
+            ],
+            "worst_pair": 9,
+            "worst_mean": 0.14869578182697296
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.09477547788992524,
+            "first_two_pairs": [
+              0.07633563876152039,
+              0.10357757657766342
+            ],
+            "worst_pair": 25,
+            "worst_mean": 0.1631436049938202
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.7719974853098392,
+            "first_two_pairs": [
+              0.8523681163787842,
+              1.1376197338104248
+            ],
+            "worst_pair": 5,
+            "worst_mean": 1.6737016439437866
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.47691919896751644,
+            "first_two_pairs": [
+              10.491473197937012,
+              4.202134132385254
+            ],
+            "worst_pair": 1,
+            "worst_mean": 10.491473197937012
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 2.140937639772892,
+            "first_two_pairs": [
+              10.74038314819336,
+              3.972827911376953
+            ],
+            "worst_pair": 1,
+            "worst_mean": 10.74038314819336
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.19485589861869812,
+            "first_two_pairs": [
+              10.929129600524902,
+              4.659342288970947
+            ],
+            "worst_pair": 1,
+            "worst_mean": 10.929129600524902
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.09477547788992524,
+            "first_two_pairs": [
+              0.07633563876152039,
+              0.10357757657766342
+            ],
+            "worst_pair": 25,
+            "worst_mean": 0.1631436049938202
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.7719974853098392,
+            "first_two_pairs": [
+              0.8523681163787842,
+              1.1376197338104248
+            ],
+            "worst_pair": 5,
+            "worst_mean": 1.6737016439437866
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "old_per_case_comparison": {
+          "background_outside8": {
+            "mean_all80": 0.09865894299000502,
+            "first_two_pairs": [
+              0.09395436942577362,
+              0.11525814235210419
+            ],
+            "worst_pair": 25,
+            "worst_mean": 0.1736648678779602
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.794919115677476,
+            "first_two_pairs": [
+              1.020558476448059,
+              1.303759217262268
+            ],
+            "worst_pair": 5,
+            "worst_mean": 1.7662792205810547
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": true,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/hard_case_third_column_v425/inputs/source81_native_canvas.mkv",
+          "source_SHA256": "e20395ade34465af34702c5b79ea00a102e48e8b3329e3c97274474bcd39cad7",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_source_e20395ade344.webm",
+              "SHA256": "543090fd15f650b1dd658167deb3d01086d334a4ad3d148dd7d0730623c05315",
+              "bytes": 1733704,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_source_e20395ade344.mp4",
+              "SHA256": "bb009a23beea4017abf518ddc7d6031cc75dd3e026f806d6294bbbb232f92ab7",
+              "bytes": 27680,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_source_e20395ade344_clear.mp4",
+              "SHA256": "973f93a62fd15f6a213e6569ce46a7facd2be0fb4142ad92337b9e395e7624c6",
+              "bytes": 563148,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073676.2926311
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_native_ca12e1c6000c.webm",
+              "SHA256": "55461c16c91dbded86c988f9b0018169f79bb95568b155454920c1709a390abb",
+              "bytes": 1570606,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_native_ca12e1c6000c.mp4",
+              "SHA256": "30c9d4431a41595b024bf68b2973513f0d2a3b8a687acb2611e4234bb077bcca",
+              "bytes": 26905,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_native_ca12e1c6000c_clear.mp4",
+              "SHA256": "8f0134b61d5807576c94f3e3e705b7eacc5909421d71b7223c8400670d89d86b",
+              "bytes": 552903,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073687.9046223
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "359caca1e18e2acba5ac43f72ca28bce17cec3237c218838ee4b2b5efd547f57",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_full_359caca1e18e.webm",
+              "SHA256": "083400576983523864bc9f2c48c5147254a168cc9fc7a97c75ea639c1f32ca5d",
+              "bytes": 684494,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_full_359caca1e18e.mp4",
+              "SHA256": "a1fff1aef7b0036dea138d0ac64ee4284d6a4238de5a9513c064ba4e36696b71",
+              "bytes": 23116,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_full_359caca1e18e_clear.mp4",
+              "SHA256": "b40500bdd38a9837ff8b4ab0a30a0cf46778d691a944377b40b8a0c3f74f62d8",
+              "bytes": 390901,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073710.1713836,
+          "new_output_source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardH/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "new_output_source_SHA256": "5661c47e2bbb700fbcac27a876bbaed163de6e81e5e12043109c5b66740be55d",
+          "all81_new_output_RGB_exact_preview_original": true,
+          "old_and_new_feature_proofs": [
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardH/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json"
+          ]
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "4d890d39d9944a4931d4176cd2ea682ac7a096eed487cf8256d79181e665ef47",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_RF_4d890d39d994.webm",
+              "SHA256": "ca09f3e69a258006c4ed0238f6583a15b2d41a513e3778203a9942a7b6e5a149",
+              "bytes": 1282279,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_RF_4d890d39d994.mp4",
+              "SHA256": "33ca7e09d2a5b22cd0a9bba7b04305962dba49f55009fdb311b98239ddeff004",
+              "bytes": 23272,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_RF_4d890d39d994_clear.mp4",
+              "SHA256": "090d3f52d14ea106078e3d88dfdaaf8167c74658bcbb3f9cb19bf95ceb7ec084",
+              "bytes": 397834,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073716.3498104
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "359caca1e18e2acba5ac43f72ca28bce17cec3237c218838ee4b2b5efd547f57",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_full_359caca1e18e.webm",
+              "SHA256": "083400576983523864bc9f2c48c5147254a168cc9fc7a97c75ea639c1f32ca5d",
+              "bytes": 684494,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_full_359caca1e18e.mp4",
+              "SHA256": "a1fff1aef7b0036dea138d0ac64ee4284d6a4238de5a9513c064ba4e36696b71",
+              "bytes": 23116,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_full_359caca1e18e_clear.mp4",
+              "SHA256": "b40500bdd38a9837ff8b4ab0a30a0cf46778d691a944377b40b8a0c3f74f62d8",
+              "bytes": 390901,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073710.1713836
+        }
+      },
+      "feature_proof_SHA256": "fd1d33fc19aa98d985b35225fff1a80966b384d06c12cc1d015d74ea8c158360",
+      "actual_new_DD_calls": 0
+    },
+    "simpleD": {
+      "label": "简单 D · 半身",
+      "fps": 15,
+      "frames": 81,
+      "review": {
+        "case": "simpleD",
+        "summary_zh": "背景与表情动作保留，未见大面积白衣残影；人物附近变化指标弱于历史修复版，不宣称无退步。 本轮81帧RGB与上一版完全一致。",
+        "all81_output_contact_actually_viewed": true,
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/matched_evaluation/uniform_full_all81_compact.jpg",
+        "additional_matched_full_scene_viewed": [
+          "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/matched_evaluation/full_scene_page_1.jpg"
+        ],
+        "source_action_and_background_not_claimed_ground_truth": true,
+        "whole_quality_passed": false,
+        "time": 1795081129.7292128,
+        "review_mode": "reuse_actual_previous_visual_review_after_all81_RGB_exact_comparison",
+        "previous_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "current_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/simpleD/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "all81_RGB_exact_previous": true
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 0.37524092607200144,
+            "first_two_pairs": [
+              0.8112591505050659,
+              0.4544503688812256
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.8112591505050659
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.6439257111400366,
+            "first_two_pairs": [
+              0.9838584065437317,
+              0.6394018530845642
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.9838584065437317
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.3524411875754595,
+            "first_two_pairs": [
+              0.7910736799240112,
+              0.4352165758609772
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.7910736799240112
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.2760002087801695,
+            "first_two_pairs": [
+              0.8323366045951843,
+              0.32345879077911377
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.8323366045951843
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.696181158721447,
+            "first_two_pairs": [
+              4.485411643981934,
+              1.4682108163833618
+            ],
+            "worst_pair": 1,
+            "worst_mean": 4.485411643981934
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.23914148192852736,
+            "first_two_pairs": [
+              0.47167590260505676,
+              0.22779829800128937
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.47167590260505676
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.011723515366611537,
+            "first_two_pairs": [
+              0.010357038117945194,
+              0.011054418981075287
+            ],
+            "worst_pair": 11,
+            "worst_mean": 0.04523259401321411
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.16382060607429594,
+            "first_two_pairs": [
+              0.1452586054801941,
+              0.1548307090997696
+            ],
+            "worst_pair": 11,
+            "worst_mean": 0.6362705230712891
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.42415854464343283,
+            "first_two_pairs": [
+              22.46505355834961,
+              10.400116920471191
+            ],
+            "worst_pair": 1,
+            "worst_mean": 22.46505355834961
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.6413829398807138,
+            "first_two_pairs": [
+              24.96542739868164,
+              11.476136207580566
+            ],
+            "worst_pair": 1,
+            "worst_mean": 24.96542739868164
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.40694757699966433,
+            "first_two_pairs": [
+              22.24928092956543,
+              10.306525230407715
+            ],
+            "worst_pair": 1,
+            "worst_mean": 22.24928092956543
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.011723515366611537,
+            "first_two_pairs": [
+              0.010357038117945194,
+              0.011054418981075287
+            ],
+            "worst_pair": 11,
+            "worst_mean": 0.04523259401321411
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.16382060607429594,
+            "first_two_pairs": [
+              0.1452586054801941,
+              0.1548307090997696
+            ],
+            "worst_pair": 11,
+            "worst_mean": 0.6362705230712891
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "old_per_case_comparison": {
+          "background_outside8": {
+            "mean_all80": 0.006481930412701331,
+            "first_two_pairs": [
+              0.005250872112810612,
+              0.0074025425128638744
+            ],
+            "worst_pair": 28,
+            "worst_mean": 0.03087499737739563
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.09079618094256148,
+            "first_two_pairs": [
+              0.07364404946565628,
+              0.10368169099092484
+            ],
+            "worst_pair": 28,
+            "worst_mean": 0.441663533449173
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": true,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/stage23_simple_routes_20261020/inputs/simple01_woman_talking_plants/source_post_tstar_to_end_lossless.mp4",
+          "source_SHA256": "c3f3b22b0bb44e1f2046209d7f9553e845df6ee1136eadbb6fb60dc2b8cbb400",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_source_c3f3b22b0bb4.webm",
+              "SHA256": "999a77fca2f6352b17101b834ba9fb15722dede825d83782c2e7ae37f728ac0d",
+              "bytes": 1866153,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_source_c3f3b22b0bb4.mp4",
+              "SHA256": "08c35fde7abfeb8f2f15c1d36170e6e6e457cfd33862589b0e5b5f1971ae5277",
+              "bytes": 22353,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_source_c3f3b22b0bb4_clear.mp4",
+              "SHA256": "d354ba9d1ea5e3e80dd70774765b1e75dcb1abc4e88b7b8230682796897a0ee3",
+              "bytes": 1430549,
+              "probe": {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073733.9437914
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_native_d2aacef508fc.webm",
+              "SHA256": "73de9234b841ad37979a4f490b6a164edab2089fe604c775f95fdfef86e42252",
+              "bytes": 1531498,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_native_d2aacef508fc.mp4",
+              "SHA256": "4f9b5730b7c7011fc28f9c2027538f582008a9bce444b4ce0df4f16b48f3fc45",
+              "bytes": 16635,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_native_d2aacef508fc_clear.mp4",
+              "SHA256": "cbd99038ba81799634758e78e17a08c9c33bf06743deec04881e1814f48c98ba",
+              "bytes": 399294,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073771.4091728
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "b72a303a31fdda754c954d315bad3d333876eab8dbd983b556fcc101a6a81461",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_full_b72a303a31fd.webm",
+              "SHA256": "2d4cf618e642606fbd1653e6ee1e62505652de29a2fb9e42c85e7d161d0e4c99",
+              "bytes": 878659,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_full_b72a303a31fd.mp4",
+              "SHA256": "b7b77c4eb50dbbc53de1b9700860a777ff7fb1e45ff6586a4f46bc81fd7ccb18",
+              "bytes": 16627,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_full_b72a303a31fd_clear.mp4",
+              "SHA256": "094729559eab3f9ca3327f02ebcdfa1abb25b89b800e19927dcc6c3f32ac083e",
+              "bytes": 353412,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073781.6810281,
+          "new_output_source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/simpleD/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "new_output_source_SHA256": "70912bbf0855d10b59414874198050baa5228a058cf35470c96c89d14cec2ed4",
+          "all81_new_output_RGB_exact_preview_original": true,
+          "old_and_new_feature_proofs": [
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/simpleD/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json"
+          ]
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "831528fa05cd31cad93ad8caf18b786a64f567e17133ba6552dcb54853f3d2db",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_RF_831528fa05cd.webm",
+              "SHA256": "e6a4872e847fae3fcc9e7488bc3a080cc3e1bc75465f0aae321ab80f23179d25",
+              "bytes": 1475987,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_RF_831528fa05cd.mp4",
+              "SHA256": "6e0ac1b27617bb44abf1fa8d02518150de6296967d3f2bad9033ac1f503f029a",
+              "bytes": 16621,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_RF_831528fa05cd_clear.mp4",
+              "SHA256": "77eb70f9e52c6175aa44752e3b5b06da02026929b59373c11d2c1cdc151d5a7f",
+              "bytes": 361757,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073790.503923
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/simpleD/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "b72a303a31fdda754c954d315bad3d333876eab8dbd983b556fcc101a6a81461",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_full_b72a303a31fd.webm",
+              "SHA256": "2d4cf618e642606fbd1653e6ee1e62505652de29a2fb9e42c85e7d161d0e4c99",
+              "bytes": 878659,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_full_b72a303a31fd.mp4",
+              "SHA256": "b7b77c4eb50dbbc53de1b9700860a777ff7fb1e45ff6586a4f46bc81fd7ccb18",
+              "bytes": 16627,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_full_b72a303a31fd_clear.mp4",
+              "SHA256": "094729559eab3f9ca3327f02ebcdfa1abb25b89b800e19927dcc6c3f32ac083e",
+              "bytes": 353412,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073781.6810281
+        }
+      },
+      "feature_proof_SHA256": "e24d5e2c379844e36c62111e259c1516b72ff3d74cfb77f7a186ca1d94cd08fe",
+      "actual_new_DD_calls": 0
+    },
+    "hardK": {
+      "label": "HardK · 交叉摆臂",
+      "fps": 25,
+      "frames": 81,
+      "review": {
+        "case": "hardK",
+        "summary_zh": "背景稳定，未见新增的大面积破坏；肩颈与衣物边缘仍需视频验收。 本轮81帧RGB与上一版完全一致。",
+        "all81_output_contact_actually_viewed": true,
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/matched_evaluation/uniform_full_all81_compact.jpg",
+        "additional_matched_full_scene_viewed": [],
+        "source_action_and_background_not_claimed_ground_truth": true,
+        "whole_quality_passed": false,
+        "time": 1795081129.7694118,
+        "review_mode": "reuse_actual_previous_visual_review_after_all81_RGB_exact_comparison",
+        "previous_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "current_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardK/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "all81_RGB_exact_previous": true
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 0.23699771706014872,
+            "first_two_pairs": [
+              0.5180200338363647,
+              0.38219767808914185
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.5180200338363647
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.39810302667319775,
+            "first_two_pairs": [
+              0.7446513175964355,
+              0.5890443325042725
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.7446513175964355
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.21385251879692077,
+            "first_two_pairs": [
+              0.48142847418785095,
+              0.34361982345581055
+            ],
+            "worst_pair": 64,
+            "worst_mean": 0.5078720450401306
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.05624718675389886,
+            "first_two_pairs": [
+              0.14770258963108063,
+              0.09885431081056595
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.14891329407691956
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.3691896960139275,
+            "first_two_pairs": [
+              2.379613161087036,
+              1.4366271495819092
+            ],
+            "worst_pair": 5,
+            "worst_mean": 2.4585883617401123
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.03450764464214444,
+            "first_two_pairs": [
+              0.03688657283782959,
+              0.032329391688108444
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.03694665804505348
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.005263804650167003,
+            "first_two_pairs": [
+              0.01180906593799591,
+              0.014584784395992756
+            ],
+            "worst_pair": 4,
+            "worst_mean": 0.019854752346873283
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.133579305652529,
+            "first_two_pairs": [
+              0.3478738069534302,
+              0.4345239996910095
+            ],
+            "worst_pair": 4,
+            "worst_mean": 0.5909128189086914
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.4233411940454971,
+            "first_two_pairs": [
+              23.1451358795166,
+              9.753195762634277
+            ],
+            "worst_pair": 1,
+            "worst_mean": 23.1451358795166
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.4111478041857481,
+            "first_two_pairs": [
+              7.530727863311768,
+              2.206587791442871
+            ],
+            "worst_pair": 1,
+            "worst_mean": 7.530727863311768
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.451916766166687,
+            "first_two_pairs": [
+              25.342105865478516,
+              10.811235427856445
+            ],
+            "worst_pair": 1,
+            "worst_mean": 25.342105865478516
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.005263804650167003,
+            "first_two_pairs": [
+              0.01180906593799591,
+              0.014584784395992756
+            ],
+            "worst_pair": 4,
+            "worst_mean": 0.019854752346873283
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.133579305652529,
+            "first_two_pairs": [
+              0.3478738069534302,
+              0.4345239996910095
+            ],
+            "worst_pair": 4,
+            "worst_mean": 0.5909128189086914
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "old_per_case_comparison": {
+          "background_outside8": {
+            "mean_all80": 0.0051458272151649,
+            "first_two_pairs": [
+              0.012211634777486324,
+              0.014137283898890018
+            ],
+            "worst_pair": 4,
+            "worst_mean": 0.01971178501844406
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.13076979406177996,
+            "first_two_pairs": [
+              0.3597327470779419,
+              0.42119163274765015
+            ],
+            "worst_pair": 4,
+            "worst_mean": 0.5866320133209229
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": true,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardK/DD_inputs_v951/source81_native_canvas.mkv",
+          "source_SHA256": "bfca58ebf542dc756a23bf00a359b9d467cb3e6ab59998882c43bc8bbcee4582",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_source_bfca58ebf542.webm",
+              "SHA256": "73516159cbfebc0fe35696d3d49dd67b730045826392b3bc6e73339986bf6bd7",
+              "bytes": 276722,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_source_bfca58ebf542.mp4",
+              "SHA256": "4554829972d519a824b9cd40769680611adaf18760016361b2efdcc1e3cd0bf8",
+              "bytes": 7227,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_source_bfca58ebf542_clear.mp4",
+              "SHA256": "26d246edcb6fb3a0b96a1627e2e355525fecc974a098655da191ae2de4fe6b1d",
+              "bytes": 111591,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073796.8043432
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_native_a35a6f60a74d.webm",
+              "SHA256": "663368e4a701aecda75a010e4923da0076bdbc01f3a2820cbee4434bb4edca13",
+              "bytes": 504088,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_native_a35a6f60a74d.mp4",
+              "SHA256": "f1623704cfafc4f89db993feb046c030ec17df20ebb56da90f7881ee5e1dd6a5",
+              "bytes": 8666,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_native_a35a6f60a74d_clear.mp4",
+              "SHA256": "d7d056b312e4e0c232df72934645f30d2f9007594cb1ea33d449c1b28ff0cba3",
+              "bytes": 154683,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073823.3339741
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "ff39afb6a6ce1aa9f5c65e895094666057d903648252f28d462c7c71c8ca5217",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_full_ff39afb6a6ce.webm",
+              "SHA256": "d8bbda77ee923ca96a692db8c56e19ba536c008678e5904cf35c4cd1f9ad881a",
+              "bytes": 222279,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_full_ff39afb6a6ce.mp4",
+              "SHA256": "4564e667cbce9491b041e73ce8393ab9f0cb3e860789072805b11db004c21e77",
+              "bytes": 7514,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_full_ff39afb6a6ce_clear.mp4",
+              "SHA256": "5c8303f78748a7a4ec4348fdd1b6888373c3b0be0c638d6b39833958b965a1df",
+              "bytes": 113554,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073824.2273734,
+          "new_output_source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardK/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "new_output_source_SHA256": "122deb7c5998572b0ec4a2161f294521dec3d4d5d17c66f8780a35c3ce2f0719",
+          "all81_new_output_RGB_exact_preview_original": true,
+          "old_and_new_feature_proofs": [
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardK/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json"
+          ]
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "7bcf590b192605e31ff454c0277c5b9f032fe0de7f128e4689bc87e71f963ba7",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_RF_7bcf590b1926.webm",
+              "SHA256": "309415e3300c46f37d4351350b7970e4bb8dd0252e3fddcb61e215a1acc00ee6",
+              "bytes": 467453,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_RF_7bcf590b1926.mp4",
+              "SHA256": "c70e9abf95ddd23a5a5303954a84ada56909af8518c2ce51d71fe08956bf5f9a",
+              "bytes": 7370,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_RF_7bcf590b1926_clear.mp4",
+              "SHA256": "24d27796ca91c18a3351d3bea2787a54444f0912ed31781c4c06f8ace7c6f566",
+              "bytes": 118155,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073828.7569187
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "ff39afb6a6ce1aa9f5c65e895094666057d903648252f28d462c7c71c8ca5217",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_full_ff39afb6a6ce.webm",
+              "SHA256": "d8bbda77ee923ca96a692db8c56e19ba536c008678e5904cf35c4cd1f9ad881a",
+              "bytes": 222279,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_full_ff39afb6a6ce.mp4",
+              "SHA256": "4564e667cbce9491b041e73ce8393ab9f0cb3e860789072805b11db004c21e77",
+              "bytes": 7514,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_full_ff39afb6a6ce_clear.mp4",
+              "SHA256": "5c8303f78748a7a4ec4348fdd1b6888373c3b0be0c638d6b39833958b965a1df",
+              "bytes": 113554,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073824.2273734
+        }
+      },
+      "feature_proof_SHA256": "2838d6389e59ed25d253b281736ed3c23eb13f97f00531750b3ff4ed2e0c454f",
+      "actual_new_DD_calls": 0
+    },
+    "hardJ": {
+      "label": "HardJ · 抬膝转身",
+      "fps": 25,
+      "frames": 81,
+      "review": {
+        "case": "hardJ",
+        "summary_zh": "墙面稳定，未见新增的大面积人物破坏；脚部原始裁切与人物边缘不作为已修复。 本轮81帧RGB与上一版完全一致。",
+        "all81_output_contact_actually_viewed": true,
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardJ/matched_evaluation/uniform_full_all81_compact.jpg",
+        "source_action_and_background_not_claimed_ground_truth": true,
+        "whole_quality_passed": false,
+        "time": 1795081129.756605,
+        "review_mode": "reuse_actual_previous_visual_review_after_all81_RGB_exact_comparison",
+        "previous_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardJ/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "current_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardJ/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "all81_RGB_exact_previous": true
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 1.2570989206433296,
+            "first_two_pairs": [
+              3.759629487991333,
+              3.736253499984741
+            ],
+            "worst_pair": 1,
+            "worst_mean": 3.759629487991333
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.6224219743162394,
+            "first_two_pairs": [
+              1.4993151426315308,
+              1.5498332977294922
+            ],
+            "worst_pair": 69,
+            "worst_mean": 3.0611000061035156
+          },
+          "far_entire_clip32": {
+            "mean_all80": 1.3276849254965781,
+            "first_two_pairs": [
+              3.8476524353027344,
+              3.8203840255737305
+            ],
+            "worst_pair": 1,
+            "worst_mean": 3.8476524353027344
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.1275258676148951,
+            "first_two_pairs": [
+              0.36318016052246094,
+              0.21083998680114746
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.36318016052246094
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.3712168136611581,
+            "first_two_pairs": [
+              3.011701822280884,
+              1.6366660594940186
+            ],
+            "worst_pair": 1,
+            "worst_mean": 3.011701822280884
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.10899346889927983,
+            "first_two_pairs": [
+              0.13729439675807953,
+              0.10581693053245544
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.13729439675807953
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.005990773040684872,
+            "first_two_pairs": [
+              0.026942266151309013,
+              0.028051745146512985
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.050418365746736526
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.12160402918234467,
+            "first_two_pairs": [
+              0.47208964824676514,
+              0.498348206281662
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.8814693689346313
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.2007468205236364,
+            "first_two_pairs": [
+              10.959281921386719,
+              3.8733489513397217
+            ],
+            "worst_pair": 1,
+            "worst_mean": 10.959281921386719
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.36268647825345396,
+            "first_two_pairs": [
+              9.750382423400879,
+              3.0778987407684326
+            ],
+            "worst_pair": 1,
+            "worst_mean": 9.750382423400879
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.18709963262081147,
+            "first_two_pairs": [
+              11.038066864013672,
+              3.929903745651245
+            ],
+            "worst_pair": 1,
+            "worst_mean": 11.038066864013672
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.005990773040684872,
+            "first_two_pairs": [
+              0.026942266151309013,
+              0.028051745146512985
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.050418365746736526
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.12160402918234467,
+            "first_two_pairs": [
+              0.47208964824676514,
+              0.498348206281662
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.8814693689346313
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "old_per_case_comparison": {
+          "background_outside8": {
+            "mean_all80": 0.0053902919185929935,
+            "first_two_pairs": [
+              0.027610506862401962,
+              0.028419462963938713
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.05679888650774956
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.10535782901570201,
+            "first_two_pairs": [
+              0.4837987720966339,
+              0.5048807859420776
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.9941113591194153
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": true,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/DD_inputs_v951/source81_native_canvas.mkv",
+          "source_SHA256": "c87a2e587b3e3ae3e8db218736e215467f9178299eb92ca8c8ba8b216299118e",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_source_c87a2e587b3e.webm",
+              "SHA256": "bd3f051b281019a526481addd90b80175b10798d3f457f9783290412b3ee7cc9",
+              "bytes": 628089,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_source_c87a2e587b3e.mp4",
+              "SHA256": "72701db43a9b0582935cf96f9000fb1573267cac87c3cd6cb8a9a863c7f9a72a",
+              "bytes": 8298,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_source_c87a2e587b3e_clear.mp4",
+              "SHA256": "2df9ef63a83d544f92740ac13e453a79b0fc8e087b2d3590b68b828ead812240",
+              "bytes": 171695,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073846.8687508
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_native_7b16f715a451.webm",
+              "SHA256": "3c5431dbac543eb6cc4f06626a5f2838e5dcf330d8723ba3f36bccec60a8ed97",
+              "bytes": 1194378,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_native_7b16f715a451.mp4",
+              "SHA256": "34452fd471ad491267380084ee362e40aac1f636c365209ba0a3a479182b900a",
+              "bytes": 12899,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_native_7b16f715a451_clear.mp4",
+              "SHA256": "0226cb998ca41333c088cf7051e05a66ea5caa4a1318dbe077c747e0a06007dc",
+              "bytes": 288651,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073882.7339501
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardJ/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "58436ae3eb12b42bc1f53406571b07e492aea1b428082329dde8bdbfe0b5d7d8",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_full_58436ae3eb12.webm",
+              "SHA256": "5f133b15169e7d6318d9c8e5b2fb2222e427ae9cabe3e88b175884deee8ef510",
+              "bytes": 265937,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_full_58436ae3eb12.mp4",
+              "SHA256": "905b78243ed83072c4fe0eb1aecdcc639c8b5270c040ae98fde8a33d8412c2c6",
+              "bytes": 7676,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_full_58436ae3eb12_clear.mp4",
+              "SHA256": "159cc20e6489084462ae21085ce6d2fadebe4a3228d091ee8664d3c7d847ed87",
+              "bytes": 118326,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073894.6473022,
+          "new_output_source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardJ/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "new_output_source_SHA256": "a45648c6597c635c000b3f087b8c80287fea84e732251ff848731d76f6b00c2a",
+          "all81_new_output_RGB_exact_preview_original": true,
+          "old_and_new_feature_proofs": [
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardJ/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardJ/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json"
+          ]
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardJ/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "1c182dff2372c348b11afd6eb0312dca86d47d56022c669f8378008593a5ad39",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_RF_1c182dff2372.webm",
+              "SHA256": "493ee9158f9c1a9dc42ecd156d7feabc83f56f6e46d4f6ae1378bc9213058752",
+              "bytes": 878623,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_RF_1c182dff2372.mp4",
+              "SHA256": "7069655b42e83de0245710bd24ec05648dd232bf6bd0bffca7c5fd8943777cdc",
+              "bytes": 7457,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_RF_1c182dff2372_clear.mp4",
+              "SHA256": "13c946e7182dc370b060a169e017401f261630c7ed4bb5eb3b91346e42fc1638",
+              "bytes": 126183,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073902.914117
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardJ/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "58436ae3eb12b42bc1f53406571b07e492aea1b428082329dde8bdbfe0b5d7d8",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_full_58436ae3eb12.webm",
+              "SHA256": "5f133b15169e7d6318d9c8e5b2fb2222e427ae9cabe3e88b175884deee8ef510",
+              "bytes": 265937,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_full_58436ae3eb12.mp4",
+              "SHA256": "905b78243ed83072c4fe0eb1aecdcc639c8b5270c040ae98fde8a33d8412c2c6",
+              "bytes": 7676,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_full_58436ae3eb12_clear.mp4",
+              "SHA256": "159cc20e6489084462ae21085ce6d2fadebe4a3228d091ee8664d3c7d847ed87",
+              "bytes": 118326,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073894.6473022
+        }
+      },
+      "feature_proof_SHA256": "0969955bdf342a214894bd0f91a857eae6124265164477d8efd7059d72605f29",
+      "actual_new_DD_calls": 0
+    },
+    "case13": {
+      "label": "屋顶女舞者",
+      "fps": 15,
+      "frames": 81,
+      "review": {
+        "case": "case13",
+        "summary_zh": "前81帧建筑背景更稳，动作持续变化；尚未覆盖原完整247帧，Stage2已有的淡残影和近身边缘仍保留待查。 本轮81帧RGB与上一版完全一致。",
+        "all81_output_contact_actually_viewed": true,
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/case13/matched_evaluation/uniform_full_all81_compact.jpg",
+        "source_action_and_background_not_claimed_ground_truth": true,
+        "whole_quality_passed": false,
+        "time": 1795081129.7208993,
+        "review_mode": "reuse_actual_previous_visual_review_after_all81_RGB_exact_comparison",
+        "previous_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/case13/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "current_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/case13/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+        "all81_RGB_exact_previous": true
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 0.4767683956772089,
+            "first_two_pairs": [
+              1.1731020212173462,
+              0.7095180153846741
+            ],
+            "worst_pair": 1,
+            "worst_mean": 1.1731020212173462
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.0013965420424937,
+            "first_two_pairs": [
+              2.23817777633667,
+              2.048354387283325
+            ],
+            "worst_pair": 5,
+            "worst_mean": 2.42971134185791
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.44418946616351607,
+            "first_two_pairs": [
+              1.1169952154159546,
+              0.6479732990264893
+            ],
+            "worst_pair": 1,
+            "worst_mean": 1.1169952154159546
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.417326008901,
+            "first_two_pairs": [
+              0.5789220333099365,
+              0.4606098532676697
+            ],
+            "worst_pair": 5,
+            "worst_mean": 0.5933871865272522
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.2311242893338203,
+            "first_two_pairs": [
+              4.343599796295166,
+              3.2373647689819336
+            ],
+            "worst_pair": 5,
+            "worst_mean": 4.3788628578186035
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.36800406202673913,
+            "first_two_pairs": [
+              0.39685872197151184,
+              0.33467036485671997
+            ],
+            "worst_pair": 69,
+            "worst_mean": 0.4160473942756653
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.03984327259240672,
+            "first_two_pairs": [
+              0.033577676862478256,
+              0.039628349244594574
+            ],
+            "worst_pair": 17,
+            "worst_mean": 0.09716129302978516
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.1083365434780716,
+            "first_two_pairs": [
+              0.9808828234672546,
+              1.147999882698059
+            ],
+            "worst_pair": 17,
+            "worst_mean": 2.354721784591675
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "post_only_ablation": {
+          "background_outside8": {
+            "mean_all80": 0.2884192349505611,
+            "first_two_pairs": [
+              13.365507125854492,
+              5.668941497802734
+            ],
+            "worst_pair": 1,
+            "worst_mean": 13.365507125854492
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.5912931755185127,
+            "first_two_pairs": [
+              11.028375625610352,
+              4.969326019287109
+            ],
+            "worst_pair": 1,
+            "worst_mean": 11.028375625610352
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.2427004396915436,
+            "first_two_pairs": [
+              13.656144142150879,
+              5.759891033172607
+            ],
+            "worst_pair": 1,
+            "worst_mean": 13.656144142150879
+          }
+        },
+        "previous_uniform_v7": {
+          "background_outside8": {
+            "mean_all80": 0.03984327259240672,
+            "first_two_pairs": [
+              0.033577676862478256,
+              0.039628349244594574
+            ],
+            "worst_pair": 17,
+            "worst_mean": 0.09716129302978516
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.1083365434780716,
+            "first_two_pairs": [
+              0.9808828234672546,
+              1.147999882698059
+            ],
+            "worst_pair": 17,
+            "worst_mean": 2.354721784591675
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        },
+        "old_per_case_comparison": {
+          "background_outside8": {
+            "mean_all80": 0.09176741879200563,
+            "first_two_pairs": [
+              0.23390619456768036,
+              0.05868108570575714
+            ],
+            "worst_pair": 66,
+            "worst_mean": 0.444237619638443
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 1.9618053570389749,
+            "first_two_pairs": [
+              6.849555015563965,
+              1.699639081954956
+            ],
+            "worst_pair": 76,
+            "worst_mean": 8.075786590576172
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": true,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/case13_native81_current_prior_v213/canonical/native81/window_000/input.mkv",
+          "source_SHA256": "6e672b605a7a08a8d9479b889dca82cf54fd6340171a89fc1075aafc172f8d54",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_source_6e672b605a7a.webm",
+              "SHA256": "c0730ed0869880b53f23aad084fba3a215f6d40493220f4168e9072ec35e48f7",
+              "bytes": 2384076,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_source_6e672b605a7a.mp4",
+              "SHA256": "7edc9ec02253cc90f96ffe3f9dcee2d980d8599739f5092aee35eb047d5f8c81",
+              "bytes": 41488,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_source_6e672b605a7a_clear.mp4",
+              "SHA256": "d151e7cc80f23c8b0c4b8e73fe613e916f5b80d56960d68d608ca6756e844124",
+              "bytes": 1211656,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073943.072103
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_native_91b3298a8316.webm",
+              "SHA256": "e41c64b48e5e0311ef3c87fd14c2459c1a49618f98b2048a41a8127b025d2685",
+              "bytes": 1176509,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_native_91b3298a8316.mp4",
+              "SHA256": "1e5b9e3e0311b8622591efce6a5cf42fc26bb95e46fd90ce86c5e56cf4f540fb",
+              "bytes": 15267,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_native_91b3298a8316_clear.mp4",
+              "SHA256": "558b08c35112f9aa43d92d12612b3a342a92df50dc3874f39955c3eef34ead24",
+              "bytes": 466072,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073958.6249342
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "4b679f8829219f62cd00f813858e32365bda4ba0bf1e8a8f055ac09dd9146322",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_full_4b679f882921.webm",
+              "SHA256": "9da1f24b2ff08479133c65a22a44ac0fe4642887a01258cd425925ca89957914",
+              "bytes": 256318,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_full_4b679f882921.mp4",
+              "SHA256": "9fe027be6055caca9eb74fed3f30a91f7567de4bf8cd47ee15501bc9bc5af991",
+              "bytes": 15052,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_full_4b679f882921_clear.mp4",
+              "SHA256": "6030094b9cfb5fdcc0c22219fe997dba941d44b8ae4f95365724d95633b00c83",
+              "bytes": 253882,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073957.288065,
+          "new_output_source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "new_output_source_SHA256": "1c3fc9651075763f90696b89a602fbfda93e45923fdd99c4ae2be370b177ea45",
+          "all81_new_output_RGB_exact_preview_original": true,
+          "old_and_new_feature_proofs": [
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/case13/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json",
+            "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/case13/uniform_feature_output/output/decoder_background_feature_control_proof_v903.json"
+          ]
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/case13/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "b008ecabbe4f73bb83bc87e28ac62bb33ffbc708605d2e1a1729cdbf32582345",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_RF_b008ecabbe4f.webm",
+              "SHA256": "3f3316728416ea54a0619fd8d96c1877dbb3eadc12b86f394b2e65b2757acc88",
+              "bytes": 1149576,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_RF_b008ecabbe4f.mp4",
+              "SHA256": "037c272c0240d50cb015bd528c7a1b6a328c76b58268a59c72c51fc5283c7a98",
+              "bytes": 13668,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_RF_b008ecabbe4f_clear.mp4",
+              "SHA256": "175face9af802bac848f8934bd05d7977ef4a4a72a9404921d7a504f2d99c53b",
+              "bytes": 268546,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073980.5767126
+        },
+        "previous": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "4b679f8829219f62cd00f813858e32365bda4ba0bf1e8a8f055ac09dd9146322",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_full_4b679f882921.webm",
+              "SHA256": "9da1f24b2ff08479133c65a22a44ac0fe4642887a01258cd425925ca89957914",
+              "bytes": 256318,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_full_4b679f882921.mp4",
+              "SHA256": "9fe027be6055caca9eb74fed3f30a91f7567de4bf8cd47ee15501bc9bc5af991",
+              "bytes": 15052,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_full_4b679f882921_clear.mp4",
+              "SHA256": "6030094b9cfb5fdcc0c22219fe997dba941d44b8ae4f95365724d95633b00c83",
+              "bytes": 253882,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073957.288065
+        }
+      },
+      "feature_proof_SHA256": "a99cd95d3e3c97f9afbacc6eb8f06c53bf226846943022b4e133b31e4f0a180b",
+      "actual_new_DD_calls": 0
+    },
+    "heldout_slow_expression": {
+      "label": "未调参新例 · 慢表情",
+      "fps": 25,
+      "frames": 81,
+      "review": {
+        "summary_zh": "未调参简单新例：全81帧缩略图无场景崩坏或彩噪，表情与眨眼持续变化；背景更稳，不代表复杂动作泛化已通过。",
+        "review_mode": "actual_all81_output_contact_and_midclip_source_native_RF_comparison",
+        "contact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/heldout_slow_expression/cases/heldout_slow_expression/matched_evaluation/all81_full_only.jpg",
+        "comparison": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/heldout_slow_expression/cases/heldout_slow_expression/matched_evaluation/full_scene_page_1.jpg",
+        "all81_thumbnail_visual_screen": true,
+        "full_resolution_all81_visual_review": false,
+        "realtime_playback_review": false,
+        "whole_quality_passed": false,
+        "time": 1795084714.6367965
+      },
+      "summary": {
+        "native_DD": {
+          "background_outside8": {
+            "mean_all80": 0.4483993541449308,
+            "first_two_pairs": [
+              0.8967643976211548,
+              0.5473869442939758
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.8967643976211548
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.5303481005132198,
+            "first_two_pairs": [
+              0.8961501717567444,
+              0.6450934410095215
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.8961501717567444
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.4412607029080391,
+            "first_two_pairs": [
+              0.8957613110542297,
+              0.5352053642272949
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.8957613110542297
+          }
+        },
+        "uniform_RF_and_warmup": {
+          "background_outside8": {
+            "mean_all80": 0.35468012392520903,
+            "first_two_pairs": [
+              1.4696283340454102,
+              0.4490683972835541
+            ],
+            "worst_pair": 1,
+            "worst_mean": 1.4696283340454102
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.6566201254725457,
+            "first_two_pairs": [
+              7.721192836761475,
+              1.682998538017273
+            ],
+            "worst_pair": 1,
+            "worst_mean": 7.721192836761475
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.32196200229227545,
+            "first_two_pairs": [
+              0.6322753429412842,
+              0.31163838505744934
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.6322753429412842
+          }
+        },
+        "uniform_full": {
+          "background_outside8": {
+            "mean_all80": 0.006901853616000153,
+            "first_two_pairs": [
+              0.012287640012800694,
+              0.012410752475261688
+            ],
+            "worst_pair": 9,
+            "worst_mean": 0.019673652946949005
+          },
+          "near_foreground_8to32": {
+            "mean_all80": 0.07803436988033355,
+            "first_two_pairs": [
+              0.13780851662158966,
+              0.13982005417346954
+            ],
+            "worst_pair": 9,
+            "worst_mean": 0.22123679518699646
+          },
+          "far_entire_clip32": {
+            "mean_all80": 0.0,
+            "first_two_pairs": [
+              0.0,
+              0.0
+            ],
+            "worst_pair": 1,
+            "worst_mean": 0.0
+          }
+        }
+      },
+      "all81_RGB_exact_previous": false,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/stage23_simple_routes_20261020/raw/route_a/depthdirector/stage3/simple03_woman_slow_expression/attempt03_right_w2c_fix/preprocess/Rotate,0,30,0,0,0/input.mp4",
+          "source_SHA256": "bfe2286e59d380a3825e2e17c7060b04b21137b4e27dda54e74104972e780882",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_source_bfe2286e59d3.webm",
+              "SHA256": "4d5681ab925988da5b44441d09df364a0a5beb2de8952eb47c5ab10a5ac8481d",
+              "bytes": 1162465,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_source_bfe2286e59d3.mp4",
+              "SHA256": "8ebd4bae972bb4038666490f84fe1105514776a8ac151fe15202b2830cb5742d",
+              "bytes": 12256,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_source_bfe2286e59d3_clear.mp4",
+              "SHA256": "e4d331bee0848b89361d7602bdd62ecf5a239ec18a90a0642ad75a0b3e6772d3",
+              "bytes": 195864,
+              "probe": {
+                "width": 1024,
+                "height": 576,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795084730.0928414
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/heldout_slow_expression/cases/heldout_slow_expression/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "83e9b166df5db667bbace836eec5c7ec3a7b1b4f7f2aa658167eb4b733bad7a1",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_native_83e9b166df5d.webm",
+              "SHA256": "73c3d9beed54e9c4e4f2bc63f85284f0c60b7831e7c8b6fbf6950f8735aa7f80",
+              "bytes": 1316173,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_native_83e9b166df5d.mp4",
+              "SHA256": "adb21ab46c4da079ea66ba34b78779864ed0be806a5ba9b3b72fc07fff82f689",
+              "bytes": 11427,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_native_83e9b166df5d_clear.mp4",
+              "SHA256": "f8944966ff4ff79eb97064bad44efe67a0248ad1f680b9e6fb35a11b5958b6cf",
+              "bytes": 244222,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795084776.0195577
+        },
+        "full": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/heldout_slow_expression/cases/heldout_slow_expression/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_SHA256": "c7b6af68b9d1b2f58b7cdc1443e940b315761cdb7f5987fdb48e915d93c9af2b",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_full_c7b6af68b9d1.webm",
+              "SHA256": "c40ab797eed5ad38dfe5e0873209467c114ba80227d582182c55989dd0896faf",
+              "bytes": 680880,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_full_c7b6af68b9d1.mp4",
+              "SHA256": "f399deb13baf0e5765cdae40558a25c8cb51f7228546755678c3af17b3a1c72c",
+              "bytes": 11473,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_full_c7b6af68b9d1_clear.mp4",
+              "SHA256": "4f05c033239b9884729602e2121f12ae11ada2527b3da1b9ab3b0b450231dd41",
+              "bytes": 221134,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795084780.388434
+        },
+        "RF": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/heldout_slow_expression/cases/heldout_slow_expression/uniform_RF_native/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "f99d3655a26f2104ec3c5ac3e83feded53e4efef99f015e913737c9501b095f6",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_RF_f99d3655a26f.webm",
+              "SHA256": "942771e48067838e4275a4f234a861970670c8335b92985cd2ef5eacffb99a1c",
+              "bytes": 1257449,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_RF_f99d3655a26f.mp4",
+              "SHA256": "9616d8beba8b0fcbca6405a4d10722c82c14ad0d5f066d2215f2fcfa71f26a05",
+              "bytes": 11613,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v8/heldout_slow_expression_RF_f99d3655a26f_clear.mp4",
+              "SHA256": "c1d6719ea344268b942fe2dfa5d8a1dd5561d94606d7e016cbe9da89ebbb5f94",
+              "bytes": 222442,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795084829.5675533
+        }
+      },
+      "feature_proof_SHA256": "9cfc52ea5db3bf57c6077cb182d0823077a1e01e520fb270b3e93025d337bdb3",
+      "actual_new_DD_calls": 50
+    }
+  },
+  "time": 1795084829.5857189
+}
