@@ -1,0 +1,1584 @@
+{
+  "status": "condition_only_RF_conflict_diagnostic_NOT_output_quality",
+  "mask1_means_static_empty_background": true,
+  "frame_to_latent": "Diagnostic mapping: latent ceil(f/4), f1..80; native VAE receptive fields overlap and this is not an anatomical oracle",
+  "joint_sampling": "bilinear, pixel-center coordinates",
+  "same_original_RF_mask_before_after": true,
+  "cases": [
+    {
+      "case": "hardI",
+      "original_static_mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_RF_inputs/background_masks.npz",
+      "rows": [
+        {
+          "variant": "raw",
+          "valid_joint_observations": 892,
+          "all80_mean_static_anchor_strength": 0.037016942290559976,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0257847533632287,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                927.1199951171875,
+                285.5299987792969
+              ],
+              "wrist9_xy": [
+                885.4400024414062,
+                193.9199981689453
+              ],
+              "elbow7_static_strength": 1.0,
+              "wrist9_static_strength": 0.998347818851471,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                949.3400268554688,
+                290.5299987792969
+              ],
+              "wrist9_xy": [
+                889.4600219726562,
+                205.94000244140625
+              ],
+              "elbow7_static_strength": 1.0,
+              "wrist9_static_strength": 0.9949043989181519,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                970.1400146484375,
+                296.6000061035156
+              ],
+              "wrist9_xy": [
+                895.0499877929688,
+                223.0800018310547
+              ],
+              "elbow7_static_strength": 1.0,
+              "wrist9_static_strength": 0.98822420835495,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                973.1599731445312,
+                312.7200012207031
+              ],
+              "wrist9_xy": [
+                898.7000122070312,
+                244.8000030517578
+              ],
+              "elbow7_static_strength": 1.0,
+              "wrist9_static_strength": 0.9902442693710327,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                969.9500122070312,
+                325.9100036621094
+              ],
+              "wrist9_xy": [
+                898.3200073242188,
+                261.3500061035156
+              ],
+              "elbow7_static_strength": 1.0,
+              "wrist9_static_strength": 0.980659544467926,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                970.6199951171875,
+                339.2099914550781
+              ],
+              "wrist9_xy": [
+                898.4299926757812,
+                276.5
+              ],
+              "elbow7_static_strength": 1.0,
+              "wrist9_static_strength": 0.9884044528007507,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                960.5999755859375,
+                352.1199951171875
+              ],
+              "wrist9_xy": [
+                888.5999755859375,
+                292.6499938964844
+              ],
+              "elbow7_static_strength": 0.9999644160270691,
+              "wrist9_static_strength": 0.9795709252357483,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                946.3200073242188,
+                364.5
+              ],
+              "wrist9_xy": [
+                876.7100219726562,
+                308.3800048828125
+              ],
+              "elbow7_static_strength": 0.9862505793571472,
+              "wrist9_static_strength": 0.39049914479255676,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        },
+        {
+          "variant": "registered",
+          "valid_joint_observations": 886,
+          "all80_mean_static_anchor_strength": 0.5280233233514464,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.46952595936794583,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                756.780029296875,
+                280.9100036621094
+              ],
+              "wrist9_xy": [
+                713.0800170898438,
+                184.83999633789062
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                780.0800170898438,
+                286.1600036621094
+              ],
+              "wrist9_xy": [
+                717.2899780273438,
+                197.4499969482422
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                801.9000244140625,
+                292.5199890136719
+              ],
+              "wrist9_xy": [
+                723.1500244140625,
+                215.4199981689453
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                805.0599975585938,
+                309.42999267578125
+              ],
+              "wrist9_xy": [
+                726.97998046875,
+                238.1999969482422
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                801.7000122070312,
+                323.25
+              ],
+              "wrist9_xy": [
+                726.5800170898438,
+                255.55999755859375
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                802.4099731445312,
+                337.20001220703125
+              ],
+              "wrist9_xy": [
+                726.7000122070312,
+                271.44000244140625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                791.8900146484375,
+                350.739990234375
+              ],
+              "wrist9_xy": [
+                716.3800048828125,
+                288.3699951171875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                776.9199829101562,
+                363.7200012207031
+              ],
+              "wrist9_xy": [
+                703.9199829101562,
+                304.8800048828125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "hardL",
+      "original_static_mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/new_hardL_uniform_v8/cases/hardL/uniform_RF_inputs/background_masks.npz",
+      "rows": [
+        {
+          "variant": "raw",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.0,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                1109.52001953125,
+                218.13999938964844
+              ],
+              "wrist9_xy": [
+                1144.6199951171875,
+                272.8900146484375
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                1112.8199462890625,
+                211.80999755859375
+              ],
+              "wrist9_xy": [
+                1147.5,
+                264.07000732421875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                1114.1600341796875,
+                203.94000244140625
+              ],
+              "wrist9_xy": [
+                1145.8900146484375,
+                252.6199951171875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                1106.300048828125,
+                195.16000366210938
+              ],
+              "wrist9_xy": [
+                1136.530029296875,
+                245.6199951171875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                1090.6300048828125,
+                189.9199981689453
+              ],
+              "wrist9_xy": [
+                1113.5799560546875,
+                242.91000366210938
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                1071.3399658203125,
+                189.35000610351562
+              ],
+              "wrist9_xy": [
+                1091.75,
+                245.17999267578125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                1035.699951171875,
+                188.4499969482422
+              ],
+              "wrist9_xy": [
+                1053.31005859375,
+                256.7900085449219
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                1011.1799926757812,
+                188.16000366210938
+              ],
+              "wrist9_xy": [
+                1027.1099853515625,
+                263.44000244140625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        },
+        {
+          "variant": "registered",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.0,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                1125.5799560546875,
+                224.10000610351562
+              ],
+              "wrist9_xy": [
+                1160.9200439453125,
+                279.2099914550781
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                1128.9100341796875,
+                217.72999572753906
+              ],
+              "wrist9_xy": [
+                1163.81005859375,
+                270.3299865722656
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                1130.260009765625,
+                209.80999755859375
+              ],
+              "wrist9_xy": [
+                1162.18994140625,
+                258.80999755859375
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                1122.3499755859375,
+                200.97999572753906
+              ],
+              "wrist9_xy": [
+                1152.77001953125,
+                251.75999450683594
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                1106.5799560546875,
+                195.6999969482422
+              ],
+              "wrist9_xy": [
+                1129.6800537109375,
+                249.0399932861328
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                1087.1600341796875,
+                195.1199951171875
+              ],
+              "wrist9_xy": [
+                1107.699951171875,
+                251.32000732421875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                1051.2900390625,
+                194.22000122070312
+              ],
+              "wrist9_xy": [
+                1069.010009765625,
+                263.0
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                1026.6099853515625,
+                193.92999267578125
+              ],
+              "wrist9_xy": [
+                1042.6400146484375,
+                269.70001220703125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "hardM",
+      "original_static_mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/new_hardM_uniform_v8/cases/hardM/uniform_RF_inputs/background_masks.npz",
+      "rows": [
+        {
+          "variant": "raw",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.008677261439152062,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.005208333333333333,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                789.22998046875,
+                434.7300109863281
+              ],
+              "wrist9_xy": [
+                812.760009765625,
+                461.42999267578125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                797.1099853515625,
+                442.760009765625
+              ],
+              "wrist9_xy": [
+                820.2100219726562,
+                472.6300048828125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                803.3800048828125,
+                450.7699890136719
+              ],
+              "wrist9_xy": [
+                823.0499877929688,
+                482.9700012207031
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                809.2000122070312,
+                455.94000244140625
+              ],
+              "wrist9_xy": [
+                825.27001953125,
+                490.5799865722656
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                814.6699829101562,
+                459.9700012207031
+              ],
+              "wrist9_xy": [
+                827.6400146484375,
+                496.3399963378906
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                819.239990234375,
+                466.2300109863281
+              ],
+              "wrist9_xy": [
+                830.4600219726562,
+                503.8999938964844
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                823.3499755859375,
+                470.82000732421875
+              ],
+              "wrist9_xy": [
+                831.280029296875,
+                509.0299987792969
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                825.0399780273438,
+                474.1099853515625
+              ],
+              "wrist9_xy": [
+                831.010009765625,
+                512.0900268554688
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        },
+        {
+          "variant": "registered",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.009971042413963006,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.00625,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                782.8099975585938,
+                425.57000732421875
+              ],
+              "wrist9_xy": [
+                807.8099975585938,
+                453.95001220703125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                791.1799926757812,
+                434.1099853515625
+              ],
+              "wrist9_xy": [
+                815.72998046875,
+                465.8599853515625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                797.8400268554688,
+                442.6199951171875
+              ],
+              "wrist9_xy": [
+                818.75,
+                476.8399963378906
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                804.030029296875,
+                448.1199951171875
+              ],
+              "wrist9_xy": [
+                821.1099853515625,
+                484.92999267578125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                809.8400268554688,
+                452.3999938964844
+              ],
+              "wrist9_xy": [
+                823.6300048828125,
+                491.04998779296875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                814.7000122070312,
+                459.04998779296875
+              ],
+              "wrist9_xy": [
+                826.6199951171875,
+                499.0899963378906
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                819.0700073242188,
+                463.92999267578125
+              ],
+              "wrist9_xy": [
+                827.5,
+                504.5400085449219
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                820.8599853515625,
+                467.42999267578125
+              ],
+              "wrist9_xy": [
+                827.2100219726562,
+                507.7799987792969
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "hardN",
+      "original_static_mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/new_hardN_uniform_v8/cases/hardN/uniform_RF_inputs/background_masks.npz",
+      "rows": [
+        {
+          "variant": "raw",
+          "valid_joint_observations": 609,
+          "all80_mean_static_anchor_strength": 0.013735697578718314,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                916.760009765625,
+                248.0800018310547
+              ],
+              "wrist9_xy": [
+                915.6099853515625,
+                139.19000244140625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                897.9600219726562,
+                241.72000122070312
+              ],
+              "wrist9_xy": [
+                880.7000122070312,
+                132.74000549316406
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                878.8200073242188,
+                234.61000061035156
+              ],
+              "wrist9_xy": [
+                854.1300048828125,
+                122.86000061035156
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                871.4299926757812,
+                224.10000610351562
+              ],
+              "wrist9_xy": [
+                847.719970703125,
+                104.86000061035156
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                860.969970703125,
+                217.10000610351562
+              ],
+              "wrist9_xy": [
+                844.2999877929688,
+                83.94999694824219
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                856.219970703125,
+                212.72000122070312
+              ],
+              "wrist9_xy": [
+                852.219970703125,
+                73.97000122070312
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                854.2999877929688,
+                211.17999267578125
+              ],
+              "wrist9_xy": [
+                863.0999755859375,
+                72.58999633789062
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                851.7100219726562,
+                215.49000549316406
+              ],
+              "wrist9_xy": [
+                874.4400024414062,
+                81.66999816894531
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        },
+        {
+          "variant": "registered",
+          "valid_joint_observations": 425,
+          "all80_mean_static_anchor_strength": 0.05636637654922464,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.03764705882352941,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                961.9299926757812,
+                190.1300048828125
+              ],
+              "wrist9_xy": [
+                960.4400024414062,
+                49.119998931884766
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                937.5900268554688,
+                181.88999938964844
+              ],
+              "wrist9_xy": [
+                915.22998046875,
+                40.779998779296875
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                912.7999877929688,
+                172.69000244140625
+              ],
+              "wrist9_xy": [
+                880.8300170898438,
+                27.979999542236328
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                903.22998046875,
+                159.07000732421875
+              ],
+              "wrist9_xy": [
+                872.530029296875,
+                4.670000076293945
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.17676299810409546,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                889.6900024414062,
+                150.00999450683594
+              ],
+              "wrist9_xy": [
+                868.0999755859375,
+                -22.399999618530273
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 1.0,
+              "elbow7_valid": true,
+              "wrist9_valid": false
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                883.5399780273438,
+                144.3300018310547
+              ],
+              "wrist9_xy": [
+                878.3599853515625,
+                -35.33000183105469
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 1.0,
+              "elbow7_valid": true,
+              "wrist9_valid": false
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                881.0499877929688,
+                142.33999633789062
+              ],
+              "wrist9_xy": [
+                892.4500122070312,
+                -37.11000061035156
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 1.0,
+              "elbow7_valid": true,
+              "wrist9_valid": false
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                877.7000122070312,
+                147.9199981689453
+              ],
+              "wrist9_xy": [
+                907.1300048828125,
+                -25.360000610351562
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 1.0,
+              "elbow7_valid": true,
+              "wrist9_valid": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "hardH",
+      "original_static_mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardH/uniform_RF_inputs/background_masks.npz",
+      "rows": [
+        {
+          "variant": "raw",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.0,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                836.27001953125,
+                338.7699890136719
+              ],
+              "wrist9_xy": [
+                903.1400146484375,
+                360.2200012207031
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                851.239990234375,
+                326.8999938964844
+              ],
+              "wrist9_xy": [
+                921.4600219726562,
+                334.8900146484375
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                861.25,
+                315.2900085449219
+              ],
+              "wrist9_xy": [
+                933.1300048828125,
+                306.1499938964844
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                873.4500122070312,
+                296.4100036621094
+              ],
+              "wrist9_xy": [
+                942.9600219726562,
+                271.0299987792969
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                884.72998046875,
+                279.2699890136719
+              ],
+              "wrist9_xy": [
+                940.9199829101562,
+                233.30999755859375
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                893.989990234375,
+                258.6600036621094
+              ],
+              "wrist9_xy": [
+                932.6699829101562,
+                198.10000610351562
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                888.4000244140625,
+                243.67999267578125
+              ],
+              "wrist9_xy": [
+                911.6400146484375,
+                173.52000427246094
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                882.9400024414062,
+                232.99000549316406
+              ],
+              "wrist9_xy": [
+                882.1500244140625,
+                157.89999389648438
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        },
+        {
+          "variant": "registered",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.0004994269809685647,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                810.6500244140625,
+                340.1400146484375
+              ],
+              "wrist9_xy": [
+                878.6500244140625,
+                361.95001220703125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                825.8699951171875,
+                328.07000732421875
+              ],
+              "wrist9_xy": [
+                897.280029296875,
+                336.19000244140625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                836.0499877929688,
+                316.260009765625
+              ],
+              "wrist9_xy": [
+                909.1400146484375,
+                306.9700012207031
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                848.4500122070312,
+                297.07000732421875
+              ],
+              "wrist9_xy": [
+                919.1300048828125,
+                271.25
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                859.9199829101562,
+                279.6300048828125
+              ],
+              "wrist9_xy": [
+                917.0599975585938,
+                232.89999389648438
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                869.3400268554688,
+                258.6700134277344
+              ],
+              "wrist9_xy": [
+                908.6699829101562,
+                197.08999633789062
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                863.6599731445312,
+                243.4499969482422
+              ],
+              "wrist9_xy": [
+                887.2899780273438,
+                172.10000610351562
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                858.1099853515625,
+                232.57000732421875
+              ],
+              "wrist9_xy": [
+                857.2999877929688,
+                156.2100067138672
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "hardK",
+      "original_static_mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardK/uniform_RF_inputs/background_masks.npz",
+      "rows": [
+        {
+          "variant": "raw",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.0,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                718.5700073242188,
+                323.19000244140625
+              ],
+              "wrist9_xy": [
+                736.989990234375,
+                371.25
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                711.989990234375,
+                336.9200134277344
+              ],
+              "wrist9_xy": [
+                728.5399780273438,
+                384.3500061035156
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                710.719970703125,
+                344.7300109863281
+              ],
+              "wrist9_xy": [
+                722.72998046875,
+                393.9700012207031
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                714.9299926757812,
+                353.3599853515625
+              ],
+              "wrist9_xy": [
+                720.4400024414062,
+                405.1300048828125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                720.3499755859375,
+                359.2699890136719
+              ],
+              "wrist9_xy": [
+                722.52001953125,
+                413.2699890136719
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                724.9199829101562,
+                365.4599914550781
+              ],
+              "wrist9_xy": [
+                724.9500122070312,
+                420.9700012207031
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                727.7999877929688,
+                369.67999267578125
+              ],
+              "wrist9_xy": [
+                725.2999877929688,
+                425.0799865722656
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                728.5800170898438,
+                374.69000244140625
+              ],
+              "wrist9_xy": [
+                724.4000244140625,
+                430.2300109863281
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        },
+        {
+          "variant": "registered",
+          "valid_joint_observations": 960,
+          "all80_mean_static_anchor_strength": 0.0,
+          "fraction_valid_body_joints_static_anchor_ge09": 0.0,
+          "first8_left_elbow_wrist": [
+            {
+              "frame": 1,
+              "elbow7_xy": [
+                709.5900268554688,
+                325.8999938964844
+              ],
+              "wrist9_xy": [
+                727.489990234375,
+                372.6099853515625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 2,
+              "elbow7_xy": [
+                703.1900024414062,
+                339.239990234375
+              ],
+              "wrist9_xy": [
+                719.280029296875,
+                385.3399963378906
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 3,
+              "elbow7_xy": [
+                701.9500122070312,
+                346.8399963378906
+              ],
+              "wrist9_xy": [
+                713.6300048828125,
+                394.69000244140625
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 4,
+              "elbow7_xy": [
+                706.0499877929688,
+                355.2200012207031
+              ],
+              "wrist9_xy": [
+                711.4000244140625,
+                405.5299987792969
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 5,
+              "elbow7_xy": [
+                711.3099975585938,
+                360.9700012207031
+              ],
+              "wrist9_xy": [
+                713.4299926757812,
+                413.45001220703125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 6,
+              "elbow7_xy": [
+                715.760009765625,
+                366.989990234375
+              ],
+              "wrist9_xy": [
+                715.7899780273438,
+                420.92999267578125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 7,
+              "elbow7_xy": [
+                718.5499877929688,
+                371.0899963378906
+              ],
+              "wrist9_xy": [
+                716.1199951171875,
+                424.9200134277344
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            },
+            {
+              "frame": 8,
+              "elbow7_xy": [
+                719.3099975585938,
+                375.95001220703125
+              ],
+              "wrist9_xy": [
+                715.25,
+                429.92999267578125
+              ],
+              "elbow7_static_strength": 0.0,
+              "wrist9_static_strength": 0.0,
+              "elbow7_valid": true,
+              "wrist9_valid": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actual_DD_calls": 0,
+  "new_training_steps": 0,
+  "time": 1795106499.86715
+}
