@@ -1,0 +1,23 @@
+{
+  "case": "hardN",
+  "all81_reviewed": true,
+  "contact_pages_reviewed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "only_native_face_subset_changes_actual_input_verified": true,
+  "large_striped_artifact_fixed": false,
+  "whole_quality_passed": false,
+  "accepted_as_default": false,
+  "description": "完整81帧已检查：有效面筛选改变了遮挡区域的深度及输出纹理，但约20帧后开始的大块条纹伪影和后段主体遮挡依旧存在。输入几何筛选不足以解决该例，不推广为统一修复。此结果也不能证明其余几何条件已经正确。",
+  "next_causal_question": "Investigate reference-noise/body-protection and temporal view-content conflicts; do not attribute remaining artifact to final decoder or declare geometry fully correct.",
+  "new_training_steps": 0,
+  "time": 1795124593.1850138
+}
