@@ -1,0 +1,73 @@
+{
+  "version": "unified_stage3_dd_v7",
+  "canvas": [
+    1280,
+    704
+  ],
+  "DD": {
+    "frames": 81,
+    "seed": 42,
+    "steps": 50,
+    "cfg": 1,
+    "author_lora_scale": 1,
+    "initial_sigma": 1,
+    "target_video_initialization": false,
+    "extra_denoising_background_constraint": true,
+    "background_reference_strength": 1.0,
+    "foreground_dilation_diameter": 33,
+    "foreground_soft_kernel": 65,
+    "reference_noise": "actual_sampler_epsilon"
+  },
+  "segmentation": {
+    "detector_threshold": 0.25,
+    "detector_rotations": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "detector_box_margin": 8,
+    "multimask": true,
+    "clip_to_detector_box": true,
+    "min_component_pixels": 32,
+    "stage2_close_diameter": 9,
+    "stage2_fill_enclosed_holes": true
+  },
+  "reference": {
+    "method": "frozen_official_big_lama",
+    "person_dilation_diameter": 25,
+    "canvas_brightness_threshold": 16,
+    "canvas_edge_sigma": 1.2,
+    "preserve_known_pixels_outside_occluder": true,
+    "canvas_padding_edge_black_fraction_min": 0.75,
+    "per_detected_instance_convex_hull_occluder": true
+  },
+  "feature": {
+    "temporal_union_radius": 2,
+    "guard_pixels": 4,
+    "feather_pixels": 4,
+    "static_reference_frames": 145,
+    "hook": "decoder.head[1]",
+    "native_target_decode_without_extra_prefill": false,
+    "reference_prefill_frames": 64,
+    "reference_encoding": "same_GG65_then_empty_background80_aligned_at64"
+  },
+  "defaults_identical_for_all_inputs": true,
+  "manual_masks_or_reference_files_allowed": false,
+  "case_specific_parameter_overrides_allowed": false,
+  "heldout_must_use_same_code_and_config_before_inspection": true,
+  "shadow": {
+    "enabled": true,
+    "linear_luma_ratio_min": 0.15,
+    "linear_luma_ratio_max": 0.85,
+    "max_chromaticity_delta": 0.08,
+    "reference_linear_luma_min": 0.08,
+    "opening_diameter": 9,
+    "min_component_pixels": 256,
+    "min_pixels_outside_person": 256,
+    "body_exclusion_dilation": 9,
+    "min_centroid_std_pixels": 2.0,
+    "min_relative_body_centroid_std": 0.1,
+    "min_area_CV": 0.15
+  }
+}
