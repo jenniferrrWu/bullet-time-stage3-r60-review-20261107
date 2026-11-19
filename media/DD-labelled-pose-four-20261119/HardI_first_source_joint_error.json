@@ -1,0 +1,38 @@
+{
+  "status": "source_joint_semantic_errors_visually_identified_before_projection",
+  "scope": "Only the newly tested DWPose skeleton condition; original common DD baseline does not use this skeleton.",
+  "first_source_local_frame": 0,
+  "original_source_frame": 300,
+  "observed_source_RGB_verified": true,
+  "visual_artifact": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/HardI_3D_vs_2D_labelled_condition_audit/source_joints_and_target_conditions.jpg",
+  "findings": [
+    {
+      "COCO_joint": 9,
+      "name": "left_wrist",
+      "source_xy": [
+        721.3436601426866,
+        626.0330471197764
+      ],
+      "score": 0.38669341802597046,
+      "finding": "Estimated wrist lies near a foot in the source image"
+    },
+    {
+      "COCO_joint": 16,
+      "name": "right_ankle",
+      "source_xy": [
+        545.1531596713596,
+        332.7049142519634
+      ],
+      "score": 0.46052905917167664,
+      "finding": "Estimated ankle lies near the bent arm/hand in the source image"
+    }
+  ],
+  "confidence_threshold_03_did_not_reject_these_points": true,
+  "cause_in_source_pose_estimation_NOT_first_introduced_by_camera_projection": true,
+  "NLF_estimates_are_NOT_GT": true,
+  "NLF_source_first0_1_5_more_coherent_leg_and_arm_locations_visually": true,
+  "full_output_causal_improvement_NOT_yet_verified": true,
+  "implication": "Use body-coherent 3D joints as an explicit same-noise condition-producer comparison. Do not attribute native DD failure to an unused skeleton.",
+  "new_training_steps": 0,
+  "time": 1795100021.181719
+}
