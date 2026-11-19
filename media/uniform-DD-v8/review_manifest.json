@@ -1,6 +1,6 @@
 {
   "page": "/root/bullet_time_original_review_20261114/repository/Stage3-DD-unified-v8.html",
-  "page_SHA256": "802d89f92fa8e6f565a028387dd157ec6b3327f59da698b4eb703d74fa2e13d7",
+  "page_SHA256": "15cae2200537e2d69dbdc54719f78d336141cb6dce18367c76089486fc6e727d",
   "same_defaults_SHA256": "b04571aaff276628f697a5fbab693c2fa883ad45f7dea50b2d72c4b971f8cc19",
   "six_video_columns": true,
   "existing_cases": 6,
@@ -12,7 +12,7 @@
   "actual_players": 37,
   "all6_RGB_exact_previous": true,
   "all_preview_scaled_YUV_and_timestamps_verified": true,
-  "roof_full247_still_pending": true,
+  "roof_full247_still_pending": false,
   "whole_quality_passed": false,
   "new_training_steps": 0,
   "data": {
@@ -3528,5 +3528,10 @@
       "actual_new_DD_calls": 50
     }
   },
-  "time": 1795084829.5857189
+  "time": 1795084829.5857189,
+  "roof_full247_generated_RGB_verified": true,
+  "roof_full247_quality_passed": false,
+  "full247_page": "Stage3-DD-common-full247-20261119.html",
+  "motion_six_page": "Stage3-DD-motion-six-20261119.html",
+  "last_page_navigation_update": 1795097490.3366137
 }
