@@ -1,0 +1,58 @@
+{
+  "updated_zh": "2026-11-19 10:49 北京时间",
+  "completed_method_case_cells": 30,
+  "total_method_case_cells": 30,
+  "real_frames_in_current_six_selected_outputs": 652,
+  "new_three_case_campaign_DD_runs_including_followups": 14,
+  "new_three_case_campaign_actual_DD_calls_including_followups": 700,
+  "counts_exclude_VAE_only_and_segmentation_diagnostics": true,
+  "new_training_steps": 0,
+  "whole_background_fixed": false,
+  "whole_quality_accepted": false,
+  "cases": {
+    "case13": {
+      "label": "屋顶女舞者",
+      "status_zh": "已完成完整247帧及9处接缝核查，实际画面人物遮罩已修正。头部和抬臂附近的建筑边缘仍有局部残留，继续排查。",
+      "all_current_native_RGB_hashes_verified": true,
+      "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
+    },
+    "simpleD": {
+      "label": "简单 D 半身",
+      "status_zh": "发现右下白衬衫旁有原始DD中不存在的白色残影；旧背景参考保留人物。已生成只用Stage2估计的空背景参考，同一DD采样、只换解码参考的修复对照正在运行；尚无新视频结论。",
+      "all_current_native_RGB_hashes_verified": true,
+      "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
+    },
+    "hardH": {
+      "label": "Hard 男舞者",
+      "status_zh": "实际画面遮罩已修正，远处墙面稳定性已改善。脚边变化需与真实运动阴影分开核查，尚未判全片通过。",
+      "all_current_native_RGB_hashes_verified": true,
+      "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
+    },
+    "hardI": {
+      "label": "室内女舞者",
+      "status_zh": "已换用估计空背景参考，减轻地板与钢琴的人形补全痕迹。头发下方与黑色画布交界仍有变化，继续排查。",
+      "all_current_native_RGB_hashes_verified": true,
+      "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
+    },
+    "hardJ": {
+      "label": "高机位男舞者",
+      "status_zh": "最新已上线：修正背景参考中的脚形缺口、淡人形补全边界，以及错误继承的源投影保护范围；重新采样并同步更新匹配对照。锁定脚边像素的相邻RGB跳变142降至9，仍有轻微边缘变化。",
+      "all_current_native_RGB_hashes_verified": true,
+      "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
+    },
+    "hardK": {
+      "label": "交叉摆臂女舞者",
+      "status_zh": "实际画面遮罩已修正，远处背景稳定性已改善。肩颈附近仍有细微变化，继续区分人物边缘与背景；待验收。",
+      "all_current_native_RGB_hashes_verified": true,
+      "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
+    }
+  },
+  "all_foreground_and_occluded_background_estimates_NOT_GT": true,
+  "simpleD_new_reference_control": {
+    "status": "running",
+    "same_DD_sample": true,
+    "only_decoder_reference_bank_changed": true,
+    "new_DD_calls": 0,
+    "no_new_video_quality_claim": true
+  }
+}
