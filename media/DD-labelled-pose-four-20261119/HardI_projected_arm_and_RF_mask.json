@@ -1,0 +1,487 @@
+{
+  "mask": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v7/cases/hardI/uniform_RF_inputs/background_masks.npz",
+  "mask_semantics": "1 anchors static empty background,0 protects dynamic target",
+  "frame_to_latent": "first frame0; then grouped1..4 etc; diagnostic not anatomicalGT",
+  "rows": [
+    {
+      "frame": 0,
+      "latent": 0,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            897.0999755859375,
+            393.8999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            763.5,
+            434.70001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            911.5,
+            278.5
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            674.0,
+            384.6000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            885.9000244140625,
+            179.0
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 10,
+          "xy": [
+            708.5,
+            345.79998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 1,
+      "latent": 1,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            896.0999755859375,
+            399.1000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            760.5999755859375,
+            437.0
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            927.0999755859375,
+            285.5
+          ],
+          "valid": true,
+          "static_background_strength": 1.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            674.9000244140625,
+            378.29998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            885.4000244140625,
+            193.89999389648438
+          ],
+          "valid": true,
+          "static_background_strength": 0.9991
+        },
+        {
+          "id": 10,
+          "xy": [
+            710.7000122070312,
+            346.70001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "latent": 1,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            898.2999877929688,
+            400.1000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            760.2999877929688,
+            435.70001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            949.2999877929688,
+            290.5
+          ],
+          "valid": true,
+          "static_background_strength": 1.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            678.4000244140625,
+            369.5
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            889.5,
+            205.89999389648438
+          ],
+          "valid": true,
+          "static_background_strength": 0.9991
+        },
+        {
+          "id": 10,
+          "xy": [
+            715.2000122070312,
+            340.79998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "latent": 1,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            899.5,
+            398.6000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            759.9000244140625,
+            420.70001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            973.2000122070312,
+            312.70001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 1.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            679.5,
+            354.29998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            898.7000122070312,
+            244.8000030517578
+          ],
+          "valid": true,
+          "static_background_strength": 1.0
+        },
+        {
+          "id": 10,
+          "xy": [
+            723.7999877929688,
+            331.29998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "latent": 2,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            898.2000122070312,
+            397.6000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            761.7999877929688,
+            413.79998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            969.9000244140625,
+            325.8999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 1.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            687.2000122070312,
+            344.8999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            898.2999877929688,
+            261.3999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 0.9996
+        },
+        {
+          "id": 10,
+          "xy": [
+            722.5,
+            329.6000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "latent": 2,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            892.2000122070312,
+            403.6000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            774.0999755859375,
+            391.0
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            946.2999877929688,
+            364.5
+          ],
+          "valid": true,
+          "static_background_strength": 0.9999
+        },
+        {
+          "id": 8,
+          "xy": [
+            718.7000122070312,
+            305.70001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            876.7000122070312,
+            308.3999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 10,
+          "xy": [
+            737.9000244140625,
+            311.79998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "latent": 3,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            887.5999755859375,
+            410.20001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            783.9000244140625,
+            367.20001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            922.7000122070312,
+            382.1000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            764.5999755859375,
+            265.3999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            849.2000122070312,
+            331.5
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 10,
+          "xy": [
+            764.7000122070312,
+            239.6999969482422
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "latent": 4,
+      "joints": [
+        {
+          "id": 5,
+          "xy": [
+            840.2999877929688,
+            422.1000061035156
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 6,
+          "xy": [
+            840.0999755859375,
+            294.29998779296875
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 7,
+          "xy": [
+            792.2999877929688,
+            467.3999938964844
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 8,
+          "xy": [
+            887.0,
+            214.8000030517578
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 9,
+          "xy": [
+            723.4000244140625,
+            514.5
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        },
+        {
+          "id": 10,
+          "xy": [
+            798.2999877929688,
+            264.20001220703125
+          ],
+          "valid": true,
+          "static_background_strength": 0.0
+        }
+      ]
+    }
+  ]
+}

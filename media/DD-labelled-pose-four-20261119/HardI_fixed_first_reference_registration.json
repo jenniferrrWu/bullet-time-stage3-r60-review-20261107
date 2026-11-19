@@ -1,0 +1,80 @@
+{
+  "case": "hardI",
+  "status": "registered_auxiliary_condition_prepared_NOT_DD_result",
+  "source_record": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/NLF3D_body_labelled_six/hardI/record.json",
+  "source_record_SHA256": "e553f1fc7d152cabf37b770b5eca62256d161e04661e5e1f7376b1f2abfd4bc8",
+  "actual_Stage2_record": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/actual_Stage2_reference_NLF_six/hardI/record.json",
+  "actual_Stage2_record_SHA256": "b2549969ad0171bf7d3d726bcf05e0ba849c8bdbaa6eb7989248ae496c7e29c7",
+  "actual_Stage2_SHA256": "2585104cd8de07300a617a1e7fddc641fac10a446617028d6d074456a627aa83",
+  "fit_COCO_SMPL_pairs": [
+    [
+      5,
+      16
+    ],
+    [
+      6,
+      17
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      2
+    ]
+  ],
+  "fixed_scale": 1.0486826541188796,
+  "fixed_translation_xy": [
+    -215.4702831682281,
+    -18.518308114987576
+  ],
+  "first_torso_RMS_pixels_before": 176.36526360779294,
+  "first_torso_RMS_pixels_after": 13.257145651793945,
+  "first_target_xy_before": [
+    [
+      897.0787963867188,
+      393.9465637207031
+    ],
+    [
+      763.5474243164062,
+      434.7178039550781
+    ],
+    [
+      817.9965209960938,
+      367.4845886230469
+    ],
+    [
+      777.3883056640625,
+      374.1767272949219
+    ]
+  ],
+  "first_actual_Stage2_xy": [
+    [
+      716.5226440429688,
+      387.5877685546875
+    ],
+    [
+      569.9373168945312,
+      444.1361389160156
+    ],
+    [
+      656.2316284179688,
+      366.6690979003906
+    ],
+    [
+      609.9495849609375,
+      374.30706787109375
+    ]
+  ],
+  "all81_same_transform": true,
+  "per_frame_fitting": false,
+  "manual_boxes_or_joint_edits": false,
+  "labels_and_bone_topology_unchanged": true,
+  "facial_points_omitted": true,
+  "pose_estimates_NOT_GT": true,
+  "original_DD_source_camera_reference_unchanged": true,
+  "new_training_steps": 0,
+  "actual_DD_calls": 0,
+  "time": 1795104965.6659167
+}

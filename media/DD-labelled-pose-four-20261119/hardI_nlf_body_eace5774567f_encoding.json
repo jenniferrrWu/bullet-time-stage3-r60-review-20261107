@@ -1,0 +1,51 @@
+{
+  "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/trained_pose_delta_HardI_NLF3D_body_only_alpha05/cases/hardI/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+  "source_SHA256": "eace5774567f6d7256f10d85fa261aa2d81cd7a6f3238ff373d1b1eaa10644ef",
+  "frames": 81,
+  "fps": 25,
+  "explicit_frame_timestamp_assignment": true,
+  "scaled320_YUV420_all_frames_exact": true,
+  "not_original1280_RGB_lossless": true,
+  "files": {
+    "precise": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-labelled-pose-four-20261119/hardI_nlf_body_eace5774567f.webm",
+      "SHA256": "50377a932abaf2ed7a5c4647b686ff1ea17a7e17d15bf3e6380dfd3be1ac2cae",
+      "bytes": 363549,
+      "probe": {
+        "width": 320,
+        "height": 176,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    },
+    "light": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-labelled-pose-four-20261119/hardI_nlf_body_eace5774567f.mp4",
+      "SHA256": "d0d1a9224c3b012620a4d0e2d710140a7e656ac869b10f1362d1b203b8f42b19",
+      "bytes": 13409,
+      "probe": {
+        "width": 320,
+        "height": 176,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    },
+    "clear": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-labelled-pose-four-20261119/hardI_nlf_body_eace5774567f_clear.mp4",
+      "SHA256": "4dedc61f57e20e01ce492aabb0cac8aa422c387bca00ee1ff2acb42e010c0b91",
+      "bytes": 187080,
+      "probe": {
+        "width": 1280,
+        "height": 704,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    }
+  },
+  "time": 1795106160.541722
+}
