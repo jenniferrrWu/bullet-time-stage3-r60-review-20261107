@@ -1,0 +1,140 @@
+{
+  "observed_China": "2026-11-20T05:18:28.452643+08:00",
+  "scope": "this round source diagnosis and conditional fixed-frame camera study; no new training",
+  "source_first_failure_rows": [
+    {
+      "case": "complex_rooftop",
+      "first_verified_stage": "第三候选的同动作加密选帧",
+      "first_verified_failure": "native_output_contract_failure",
+      "evidence": "第三候选加密回答建议f919，但缺少顶层evidence字段，原样拒收；有效候选只剩f285、f420。随后先选f420、再尝试f285，两次均因重复摘要的标点未逐字复制而未交付。",
+      "terminal": "未交付；两个保留候选均在最终规划的逐字拼接检查失败",
+      "human_semantic_highlight_ground_truth_pending": true
+    },
+    {
+      "case": "simple_D_upperbody",
+      "first_verified_stage": "正确双拇指动作内的邻帧核实",
+      "first_verified_failure": "native_frame_identifier_type_failure",
+      "evidence": "粗定位覆盖末尾双拇指动作，局部f330、加密f327，单候选资格通过。邻帧回答把selected_frame、equivalent_frames和neighbor_checks的帧号写成source_frame=327等字符串，接口要求整数；没有证据表明它选到了不存在的帧。",
+      "terminal": "未交付；邻帧回答把整数帧号输出成字符串",
+      "human_semantic_highlight_ground_truth_pending": true
+    },
+    {
+      "case": "newdiag_source_01",
+      "first_verified_stage": "第一动作段内的加密姿态/可见性判断",
+      "first_verified_failure": "correct_event_frame_quality_grounding_error",
+      "evidence": "正确定位到旋转动作，却把f83选择理由写成女方眼神清晰、直视男方、面部表情清楚。原始f83与邻帧主要是背/侧后视角，眼睛被朝向和头发遮住，不能支持该选择理由。这是同动作内帧证据失真，不是已证明所有背向舞蹈都不合格。",
+      "terminal": "原生排序未支持任何候选，未强制选帧；拒绝是否正确尚无人工真值",
+      "human_semantic_highlight_ground_truth_pending": true
+    },
+    {
+      "case": "newdiag_source_02",
+      "first_verified_stage": "第一候选动作段局部细化",
+      "first_verified_failure": "native_output_contract_failure",
+      "evidence": "第一、第二候选的局部回答缺顶层evidence；第三候选得到f164并通过单候选资格。随后邻帧回答因重复JSON键失效。更早的高光是否被漏掉，没有人工区间真值，不能直接断言。",
+      "terminal": "未交付；保留f164后，邻帧回答出现重复JSON键",
+      "human_semantic_highlight_ground_truth_pending": true
+    },
+    {
+      "case": "newdiag_source_03",
+      "first_verified_stage": "第二候选动作段局部细化",
+      "first_verified_failure": "native_duplicate_JSON_key_failure",
+      "evidence": "第一候选产生f17；第二候选局部回答重复JSON键，第三候选又违反选帧与等价集合一致性。f17随后通过单候选与邻帧核实，最后摘要用了英文分号和空格，未满足逐字中文分号拼接约束。",
+      "terminal": "未交付；f17经过邻帧核实后，最终规划分隔符未逐字复制",
+      "human_semantic_highlight_ground_truth_pending": true
+    }
+  ],
+  "source_summary": {
+    "cases": 5,
+    "terminal_interface_blocks": 4,
+    "terminal_absolute_rejection": 1,
+    "visually_verified_source_evidence_mismatch_cases": 2,
+    "mismatch_counts_overlap_interface_failures": true,
+    "no_proven_complete_video_event_recall_or_optimal_frame_accuracy": true
+  },
+  "AB_summary": {
+    "answered_pairs": 18,
+    "unanswered_pairs_unscored": 2,
+    "strict_both_order_correct_original_prompt": {
+      "pre_RL_SFT": 1,
+      "GRPO": 1,
+      "signed_GRPO_control": 1
+    },
+    "strict_both_order_correct_event_prompt": {
+      "pre_RL_SFT": 3,
+      "GRPO": 2,
+      "signed_GRPO_control": 3
+    },
+    "stable_RL_improvement_demonstrated": false,
+    "fixed_candidate_judgment_not_full_video_localization": true
+  },
+  "camera_benefit": {
+    "simple_D_upperbody": {
+      "visible_benefit": "no_clear_overall_benefit",
+      "finding": "两组短尾段人脸和双拇指可辨；较紧构图头顶裁切，不能确认总体收益。真实尾段仅0.52秒，不能证明长时稳定。"
+    },
+    "complex_rooftop": {
+      "visible_benefit": "local_foreground_readability_only_not_successful_full_motion_recovery",
+      "finding": "较紧构图在部分早期帧中人物更易辨认，但两组均严重重影、变形；后段姿态不能可靠跟随原片，至EOF均不通过完整动作恢复。"
+    }
+  },
+  "annotation_priorities": [
+    {
+      "priority": 0,
+      "task": "修正整数/必需字段/重复文字接口",
+      "human_annotation_needed": false,
+      "reason": "这些故障已有原生回答可复现，不依赖新高光标签"
+    },
+    {
+      "priority": 1,
+      "task": "从新短片确认哪个动作段更值得突出，允许都不适合",
+      "human_annotation_needed": "下一轮少量",
+      "reason": "补上现有图片对比训练没有直接监督的动作实例选择"
+    },
+    {
+      "priority": 2,
+      "task": "同一动作的邻帧先标各自是否合格，再标偏好/并列/不清楚",
+      "human_annotation_needed": "下一轮少量",
+      "reason": "覆盖姿态、表情、模糊遮挡和绝对资格，避免把相对较好当必然合格"
+    },
+    {
+      "priority": 3,
+      "task": "只有在动作恢复画质足以比较时，再收少量匿名镜头偏好和关键部位可见性判断",
+      "human_annotation_needed": "本页可选复核；暂不扩充大批镜头训练标签",
+      "reason": "严重崩坏会混淆镜头规划与生成器限制"
+    }
+  ],
+  "frame_confirmations_pending": [
+    "simple_D_upperbody:f327",
+    "complex_rooftop:f869"
+  ],
+  "native_camera_replies_both_uncertain_with_controls": true,
+  "autonomous_native_VLM_success_claimed": false,
+  "geometry_metric_accuracy_certified": false,
+  "complete": true,
+  "complete_scope": "requested experiment execution, diagnosis, review artifacts and findings; not model task success or human acceptance",
+  "execution": {
+    "actual_Stage2_Stage3_branches_completed": 4,
+    "actual_native_sampling_windows": 12,
+    "actual_unique_denoising_model_calls": 600,
+    "source_tail_frames_each_arm": {
+      "simple_D_upperbody": 13,
+      "complex_rooftop": 223
+    },
+    "own_actual_Stage2_final_image_used": true,
+    "same_frozen_DD_snapshot_and_weights": true,
+    "geometry_metric_accuracy_certified": false,
+    "exact_MP4_timestamp_only_recoveries": 2,
+    "one_original_latent_native_VAE_only_recovery": true,
+    "one_verified_zero_forward_metadata_failure": true,
+    "new_training_steps": 0
+  },
+  "interpretation_limits": [
+    "五条V5自主尝试最终可执行交付为0/5；镜头实验是独立的固定帧条件性执行。",
+    "两个VLM镜头原答均为uncertain却附参数，原生协议不合格；不能改称自主规划成功。",
+    "两帧高光资格待用户确认；普通f327，复杂f869。",
+    "固定参考保留源内参，VLM景别经过固定构图规则转换；不能把两组效果差异全部归因于模型学会规划。",
+    "共享Pi3X几何静态重投影检查未全部通过；固定控制矩阵不等于生成画面的物理相机位姿获认证。",
+    "视觉结论为知晓侧别的代理复核，不是人工盲评；复杂片抽样覆盖接缝和EOF，不冒充每帧质量评分。"
+  ],
+  "review_status": "实验与复核材料齐备，用户帧资格和匿名评分尚未收到；网站发布状态另行核验"
+}

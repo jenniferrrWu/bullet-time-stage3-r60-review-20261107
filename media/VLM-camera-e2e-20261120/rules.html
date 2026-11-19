@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>任务与标注规则</title><style>body{font:14px/1.5 system-ui;max-width:900px;margin:22px auto;color:#182332;padding:0 14px}h1{font-size:21px}h2{font-size:16px;margin:12px 0 5px}p{margin:6px 0}table{border-collapse:collapse;width:100%}td,th{border:1px solid #b8c2ce;padding:6px;text-align:left}pre{white-space:pre-wrap;background:#f1f4f8;padding:8px;font-size:12px}@media print{body{margin:0;font-size:11px}h1{font-size:17px}h2{font-size:13px}a{color:inherit}}</style>
+<h1>子弹时刻：任务与标注规则（本轮冻结）</h1>
+<h2>输入与最终输出</h2><p><b>输入：</b>原视频、校验哈希、逐帧编号及真实时间戳。Stage1 用VLM理解场景→提出动作区间→比较动作实例→选具体帧→核对邻帧，再给绕拍计划。不给模型看DD生成结果来倒选高光。</p><p><b>输出：</b>高光源帧（从0编号）及真实PTS；或拒绝/不确定。合格方案还需DD可执行的方向、角度、时长、半径倍率、俯仰变化、景别。绕拍以真实重建几何编译成相机矩阵；不支持的参数需显式拒绝，不能偷偷截断/改值。</p><p><b>三阶段：</b>Stage2冻结同一时刻绕主体；Stage3以该次Stage2实际生成末帧为I2V输入，在对应末端新视角按原片顺序恢复动作至EOF，不再运镜。格式/运行失败与语义拒绝单列。没有可靠方案就不伪造成功。</p>
+<h2>标注顺序：先可用性，再偏好</h2><table><tr><th>先分别看A、B</th><th>再比较</th></tr><tr><td>每张选合格 / 不合格 / 判断不清。合格：在本视频中值得强调，姿态/表情自然，动作关键部位足以看清。</td><td>A更好 / B更好 / 并列 / 判断不清。两张都合格完全允许；并列不表示两张都合格；优胜也不表示另一张必不合格。</td></tr><tr><td>模糊、遮挡、残影、眨眼需结合邻帧；半身、背身或表现性的闭眼不能一律判坏。</td><td>若两张都不好，可记两张不合格，偏好不适用；愿意可选主要原因：动作普通、姿态表情、模糊遮挡。</td></tr></table><p>选帧价值与DD生成难易分开。不能因尾段短、容易生成而选帧；不把模型自述当人工标签。现有18对答案继续独立验收，不混入训练。</p>
+<h2>本轮绕拍对照</h2><p>每例两组固定同一源帧、DD快照、seed42、CFG1、作者LoRA1、50步与1280×704；Stage2原生81帧，Stage3按同一真实尾段使用相同窗口。普通例原生21帧只导出13个真实源帧，内部8帧补齐不当作后续动作；复杂例完整导出223帧。只改镜头。固定参考绕拍为统一顺时针45°、2.5秒、半径1、俯仰0、保留源构图，是项目对照策略，不宣称DD作者唯一默认。VLM镜头先冻结再渲染。普通D f327与复杂屋顶f869均待你确认高光资格；这是条件性镜头试验，不冒充V5自主选帧成功。</p>
+<p><b>离线实验例外：</b>模型写“不确定”却附参数，仍判原生输出不合格。本次用户授权的镜头对照可单独检验其有界参数建议，必须保留“不确定/待确认”，不能改判为自动执行成功。</p><h2>真实输入/输出例：半身D</h2><pre>输入：原片8048249.mp4，340帧，25fps；自主选高光并规划绕拍。
+原始邻帧回答：selected_frame="source_frame=327, source_seconds=13.080000"。
+真实流水线返回：candidate_frames=[327]，selected_frame=null，
+source_verified_execution_packet=false，DD_calls=0。
+按本页任务接口归纳：decision=uncertain，stage2=null（帧号类型错误）。
+候选不等于最终成功；未把原始字符串改成整数冒充有效选帧。</pre><p><a href="actual_input_output_example.json">实际输入输出与原始证据路径</a> · <a href="task_contract.json">结构化任务规则</a></p></html>
