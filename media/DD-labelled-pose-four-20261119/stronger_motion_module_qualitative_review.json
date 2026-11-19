@@ -1,0 +1,18 @@
+{
+  "case": "hardI",
+  "reviewed_all81": true,
+  "comparisons": {
+    "pose15_vs_no_module": {
+      "all9_contact_pages_reviewed": true,
+      "clear_additional_motion_or_limb_gain": false,
+      "description": "全81帧已检查：姿态和后仰过程与修正条件无模块版本接近，首段抬臂／头发手臂歧义仍见；无足够证据支持新增模块带来明显肢体收益。"
+    },
+    "Flash09_vs_no_module": {
+      "all9_contact_pages_reviewed": true,
+      "clear_additional_motion_or_limb_gain": false,
+      "description": "全81帧已检查：手臂、后仰与回身整体接近无模块版本；局部边缘与纹理变化，未见稳定的大幅肢体改善。"
+    }
+  },
+  "not_anatomical_ground_truth": true,
+  "whole_quality_passed": false
+}

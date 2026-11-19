@@ -1,0 +1,56 @@
+{
+  "PID": 3812503,
+  "status": "strength_and_full_video_LR_counterfactual_inputs_verified_NOT_quality_acceptance",
+  "pairs": [
+    {
+      "status": "actual_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_no_pose",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_pose15",
+      "same_initial_noise_source_camera_text_GG_prompt_and_RF_support": true,
+      "only_declared_added_module_strength_or_LR_label_variant_changes": true,
+      "actual_DD_calls_each": 50,
+      "new_DD_calls": 0,
+      "new_training_steps": 0,
+      "anatomical_improvement_verified": false,
+      "time": 1795117589.857257,
+      "actual_pose_auxiliary_sampling_predictions": 100,
+      "official_prediction_qualification_predictions": 2,
+      "actual_helper_variant": "normal"
+    },
+    {
+      "status": "actual_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_no_pose",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_Flash09",
+      "same_initial_noise_source_camera_text_GG_prompt_and_RF_support": true,
+      "only_declared_added_module_strength_or_LR_label_variant_changes": true,
+      "actual_DD_calls_each": 50,
+      "new_DD_calls": 0,
+      "new_training_steps": 0,
+      "anatomical_improvement_verified": false,
+      "time": 1795117599.9681559
+    },
+    {
+      "status": "actual_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_pose15",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_pose15_LRswap",
+      "same_initial_noise_source_camera_text_GG_prompt_and_RF_support": true,
+      "only_declared_added_module_strength_or_LR_label_variant_changes": true,
+      "actual_DD_calls_each": 50,
+      "new_DD_calls": 0,
+      "new_training_steps": 0,
+      "anatomical_improvement_verified": false,
+      "time": 1795118786.6828976,
+      "actual_pose_auxiliary_sampling_predictions": 100,
+      "official_prediction_qualification_predictions": 2,
+      "actual_helper_variant": "left_right_swapped",
+      "same_strength_same_estimated_geometry_only_LR_labels_swapped": true,
+      "all81_binary_pose_footprints_identical": true,
+      "manual_ground_truth_pose_NOT_available": true,
+      "native_DD_backbone_extra_pose_input": false,
+      "where_LR_is_read": "Frozen auxiliary WanFun expert; epsilon differential is added after native DD prediction"
+    }
+  ],
+  "new_DD_calls": 0,
+  "new_training_steps": 0,
+  "time": 1795118786.6857507
+}

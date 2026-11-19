@@ -1,0 +1,37 @@
+{
+  "status": "HardI_camera_and_RF_support_contributions_independently_supported_NOT_uniform_acceptance",
+  "same_producer_camera_pair": {
+    "qualification": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/paired_camera_actual_input_qualification.json",
+    "reviewed_contact_pages": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "all81_reviewed": true,
+    "baseline": "paired_conditions_hardI_original_K_no_pose",
+    "candidate": "consistent_conditions_HardI_no_pose",
+    "same_registered_RF_support": true,
+    "finding": "Original-K counterpart still has early arm/torso ghosts and large right displacement/crop later; fixed first-GG registration removes most of these large errors. Not a change in raster producer, weights, source or noise."
+  },
+  "same_actual_camera_RF_support_pair": {
+    "qualification": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/HardI_actual_RF_support_causal_qualification.json",
+    "reviewed_contact_pages": [
+      5,
+      8
+    ],
+    "all81_reviewed": false,
+    "baseline": "native_camera_Stage2_registered_HardI",
+    "candidate": "consistent_conditions_HardI_no_pose",
+    "finding": "At identical actual registered camera, source/text/noise and RF reference/strength, only target RF protection changes; old support makes the late actor almost transparent, union support retains the actor."
+  },
+  "scope": "Supports condition/constraint construction as major contributors for HardI. Does not prove every limb detail correct, native DD intrinsically incapable, or six-case universal effectiveness.",
+  "new_training_steps": 0,
+  "new_DD_calls_for_this_review": 0,
+  "time": 1795117205.3484993
+}

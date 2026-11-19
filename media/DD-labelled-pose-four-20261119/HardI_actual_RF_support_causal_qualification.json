@@ -1,0 +1,18 @@
+{
+  "status": "actual_same_camera_RF_support_causal_inputs_verified_NOT_quality_acceptance",
+  "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_camera_Stage2_registered_HardI",
+  "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_no_pose",
+  "same_source_GG_noise_prompt_actual_camera_and_text_all_values": true,
+  "same_original_camera_branch_mask_all_values": true,
+  "same_RF_strength_reference_and_prefill": true,
+  "same_decoder_defaults": true,
+  "only_RF_target_protection_mask_changes": true,
+  "RF_first_target_latent_mask_zero": true,
+  "extra_motion_generation_module_active": false,
+  "actual_DD_calls_each": 50,
+  "new_DD_calls": 0,
+  "new_training_steps": 0,
+  "changed_target_mask_cells": 6969,
+  "visual_causal_review_pending": true,
+  "time": 1795116102.8437765
+}

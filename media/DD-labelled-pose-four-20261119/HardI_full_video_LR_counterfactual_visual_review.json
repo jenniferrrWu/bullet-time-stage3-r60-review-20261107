@@ -1,0 +1,25 @@
+{
+  "case": "hardI",
+  "all81_frames_reviewed": true,
+  "contact_pages_reviewed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "same_alpha": 1.5,
+  "only_LR_label_identity_changed": true,
+  "normal_estimated_pose_NOT_manually_verified_GT": true,
+  "native_DD_extra_pose_input": false,
+  "LR_read_by": "Frozen WanFun auxiliary expert, then epsilon differential applied to native DD prediction",
+  "visible_semantic_left_right_limb_exchange_established": false,
+  "description": "完整81帧中，两组动作与可见手臂对应整体接近，主要是局部边缘、头发和纹理微变；未观察到可明确归因于左右标签的肢体语义交换。实际输入已证明辅助条件不同并影响预测，但不能据此声称生成器能可靠执行左右语义。",
+  "actual_full_video_protocol_qualification": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/extended_HardI_motion_actual_input_qualification.json",
+  "decision": "Do not adopt as proven anatomical LR control; retain negative counterfactual result.",
+  "whole_quality_passed": false
+}
