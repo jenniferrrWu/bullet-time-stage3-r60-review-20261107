@@ -151,19 +151,21 @@
     {
       "case": "simpleD",
       "method": "decoder-features",
-      "preview": "./media/six-case-background-v971/simpleD_actual_RGB_video_mask_exact_528af6cad1c2.webm",
-      "preview_SHA256": "4aedae62682c7e439bfefb577d07c341dd2b4261af5fc3629ce5ff17c33a27b3",
-      "bytes": 863086,
-      "source_output_SHA256": "528af6cad1c2646c7a6ded0a40834e813fe936b641ee972977d731efc027cba1",
+      "preview": "./media/six-case-background-v971/simpleD_clean_Stage2_reference_exact_3d15670d348b.webm",
+      "preview_SHA256": "86bd6f28ef8c07bcd892ecd93cd233ab69719a653c4772d2d70ce13363bc14a4",
+      "bytes": 856124,
+      "source_output_SHA256": "3d15670d348ba0f9497d30b175d16f8c55a8795e4b99bcf1be0ba0226a14add8",
       "reuse_single_window_prefill": false,
-      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/complete_six_cases_v1058/verified_complete_six_case_feature_outputs_v1058.json",
-      "light_compatibility_preview": "./media/six-case-background-v971/simpleD_actual_RGB_video_mask_light_528af6cad1c2.mp4",
+      "verified_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/current_six_case_reference_repair_outputs_v1094.json",
+      "light_compatibility_preview": "./media/six-case-background-v971/simpleD_clean_Stage2_reference_light_3d15670d348b.mp4",
       "lossless_after_scaling_and_YUV420": true,
       "all_scaled_YUV_frames_exact": true,
-      "clear": "./media/six-case-background-v971/simpleD_actual_RGB_video_mask_clear_528af6cad1c2.mp4",
+      "clear": "./media/six-case-background-v971/simpleD_clean_Stage2_reference_clear_3d15670d348b.mp4",
       "corrected_actual_RGB_anchor": true,
       "independent_full_sequence_correction_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/full_matched_audit_v1063/six_case_matched_RGB_only_mask_correction_summary_v1063.json",
-      "whole_quality_accepted": false
+      "whole_quality_accepted": false,
+      "only_decoder_reference_bank_changed": true,
+      "public_reference_repair_proof": "./media/six-case-background-v971/simpleD_clean_Stage2_reference_repair_v1094.json"
     },
     {
       "case": "hardH",
@@ -245,11 +247,11 @@
   "local_export_time": 1795015660.6532059,
   "whole_quality_accepted": false,
   "exact_preview_cases": 6,
-  "exact_preview_total_bytes": 3036844,
+  "exact_preview_total_bytes": 3029882,
   "scaled_preview_exact_YUV_frames": 652,
   "lossy_compatibility_fallback": true,
   "preview_source_original_DD_outputs_unchanged": false,
-  "preview_update_time": 1795037260.5816894,
+  "preview_update_time": 1795057208.3294644,
   "superseded_results": [
     {
       "result": {
@@ -384,9 +386,28 @@
       },
       "reason": "corrected actual Stage2 empty-background reference and estimated binary protection mask; matched DD raw control updated",
       "replaced_unix": 1795037260.5180202
+    },
+    {
+      "case": "simpleD",
+      "method": "decoder-features",
+      "old_video": {
+        "aria-label": "简单 · 原选项 D 半身 实际画面遮罩修正版",
+        "controls": "",
+        "data-case": "simpleD",
+        "data-exact-src": "./media/six-case-background-v971/simpleD_actual_RGB_video_mask_exact_528af6cad1c2.webm",
+        "data-light-src": "./media/six-case-background-v971/simpleD_actual_RGB_video_mask_light_528af6cad1c2.mp4",
+        "data-method": "decoder-features",
+        "data-src": "./media/six-case-background-v971/simpleD_actual_RGB_video_mask_exact_528af6cad1c2.webm",
+        "loop": "",
+        "muted": "",
+        "playsinline": "",
+        "preload": "none"
+      },
+      "reason": "remove white blouse ghost introduced by person-contaminated background reference",
+      "time": 1795057208.3257804
     }
   ],
-  "DD_final_latents_unchanged": true,
+  "DD_final_latents_unchanged": false,
   "hardJ_actual_RGB_only_anchor_corrected": true,
   "actual_RGB_only_foreground_cohort": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/complete_six_RGB_only_mask_correction_v1057/complete_six_cases_v1058/verified_complete_six_case_feature_outputs_v1058.json",
   "all_six_actual_RGB_only_anchor_corrected": true,
@@ -399,7 +420,7 @@
   "public_hardJ_reference_factor_audit": "./media/six-case-background-v971/hardJ_reference_factor_controls_v1086.json",
   "old_vs_new_hardJ_sample_not_claimed_pixel_identical": true,
   "latest_repair_progress_v1092": {
-    "updated_zh": "2026-11-19 10:49 北京时间",
+    "updated_zh": "2026-11-19 11:00 北京时间",
     "completed_method_case_cells": 30,
     "total_method_case_cells": 30,
     "real_frames_in_current_six_selected_outputs": 652,
@@ -418,7 +439,7 @@
       },
       "simpleD": {
         "label": "简单 D 半身",
-        "status_zh": "发现右下白衬衫旁有原始DD中不存在的白色残影；旧背景参考保留人物。已生成只用Stage2估计的空背景参考，同一DD采样、只换解码参考的修复对照正在运行；尚无新视频结论。",
+        "status_zh": "最新已上线：同一DD采样仅换背景参考，明显白衣残影减轻；两个锁定位置的跳变71、123均降至3。完整81帧与人物保护RGB已核验；人物附近仍有少量变化，整片画质待验收。",
         "all_current_native_RGB_hashes_verified": true,
         "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
       },
@@ -447,14 +468,18 @@
         "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
       }
     },
-    "all_foreground_and_occluded_background_estimates_NOT_GT": true,
     "simpleD_new_reference_control": {
-      "status": "running",
+      "status": "completed_verified_candidate_published",
       "same_DD_sample": true,
       "only_decoder_reference_bank_changed": true,
       "new_DD_calls": 0,
-      "no_new_video_quality_claim": true
-    }
+      "no_new_video_quality_claim": true,
+      "all81_RGB_and_visual_audit_complete": true
+    },
+    "all_foreground_and_occluded_background_estimates_NOT_GT": true
   },
-  "whole_background_fixed": false
+  "whole_background_fixed": false,
+  "simpleD_latest_bank_only_fix_DD_final_latents_unchanged_against_own_previous_sample": true,
+  "hardJ_reference_fix_includes_new_DD_sampling": true,
+  "simpleD_clean_reference_repair_v1094": true
 }

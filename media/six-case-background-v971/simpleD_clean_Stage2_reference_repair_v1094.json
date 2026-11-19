@@ -1,0 +1,103 @@
+{
+  "cause_zh": "旧背景参考保留完整人物及白衬衫；作为静态背景特征来源时，在人物移动边缘带入旧白衣轮廓。保持DD采样不变，仅换实际Stage2估计空背景的参考库后，两个已定位残影的跳变71和123均降至3，支持参考污染是此残影的成因。",
+  "metrics": {
+    "old_features": {
+      "all81_actual_RGB_hashes_exact": true,
+      "protected_RGB_changes": 0,
+      "fixed_max": 0,
+      "locked_t28_1127_699": 71,
+      "locked_t41_1126_703": 123,
+      "near_background": {
+        "4": {
+          "mean": 0.018773109600118427,
+          "maximum": 123
+        },
+        "8": {
+          "mean": 0.005121894109468683,
+          "maximum": 121
+        },
+        "12": {
+          "mean": 0.0008104882879949652,
+          "maximum": 71
+        },
+        "20": {
+          "mean": 4.8696996605394655e-05,
+          "maximum": 7
+        }
+      }
+    },
+    "clean_reference_features": {
+      "all81_actual_RGB_hashes_exact": true,
+      "protected_RGB_changes": 0,
+      "fixed_max": 0,
+      "locked_t28_1127_699": 3,
+      "locked_t41_1126_703": 3,
+      "near_background": {
+        "4": {
+          "mean": 0.0057850357101259815,
+          "maximum": 76
+        },
+        "8": {
+          "mean": 0.0011973385182247344,
+          "maximum": 37
+        },
+        "12": {
+          "mean": 0.00024381797912837082,
+          "maximum": 24
+        },
+        "20": {
+          "mean": 4.806903536715276e-05,
+          "maximum": 7
+        }
+      }
+    },
+    "raw": {
+      "all81_actual_RGB_hashes_exact": true,
+      "protected_RGB_changes": 0,
+      "fixed_max": 28,
+      "locked_t28_1127_699": 0,
+      "locked_t41_1126_703": 1,
+      "near_background": {
+        "4": {
+          "mean": 0.27802328213739463,
+          "maximum": 118
+        },
+        "8": {
+          "mean": 0.2684753338740411,
+          "maximum": 118
+        },
+        "12": {
+          "mean": 0.26181428925399963,
+          "maximum": 118
+        },
+        "20": {
+          "mean": 0.2516864152067919,
+          "maximum": 118
+        }
+      }
+    }
+  },
+  "same_DD_sampling": true,
+  "DD_sampling_reference_unchanged": true,
+  "DD_decode_prefill_unchanged": true,
+  "only_decoder_background_reference_bank_changed": true,
+  "new_reference_uses_original_Stage2_RGB_and_actual_Stage2_person_segmentation_only": true,
+  "DD_generated_RGB_not_used_to_fill_reference": true,
+  "occluded_background_estimate_not_GT": true,
+  "all243_native_RGB_hashes_verified": true,
+  "all81_estimated_protected_body_RGB_exact_parent": true,
+  "no_RGB_paste_smoothing_or_interpolation": true,
+  "new_DD_calls": 0,
+  "new_training_steps": 0,
+  "visual_review": {
+    "actual_complete81_frame_contact_viewed": true,
+    "actual_native_locked_white_ghost_crops_t28_t41_viewed": true,
+    "actual_Stage2_old_and_new_input_reference_images_viewed": true,
+    "no_gross_body_loss_or_confetti_seen": true,
+    "known_white_blouse_extension_visibly_reduced": true,
+    "entire_background_or_quality_not_accepted": true,
+    "time": 1795057156.049633
+  },
+  "whole_quality_accepted": false,
+  "time": 1795057208.2461524
+}

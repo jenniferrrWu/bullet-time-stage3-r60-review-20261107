@@ -1,5 +1,5 @@
 {
-  "updated_zh": "2026-11-19 10:49 北京时间",
+  "updated_zh": "2026-11-19 11:00 北京时间",
   "completed_method_case_cells": 30,
   "total_method_case_cells": 30,
   "real_frames_in_current_six_selected_outputs": 652,
@@ -18,7 +18,7 @@
     },
     "simpleD": {
       "label": "简单 D 半身",
-      "status_zh": "发现右下白衬衫旁有原始DD中不存在的白色残影；旧背景参考保留人物。已生成只用Stage2估计的空背景参考，同一DD采样、只换解码参考的修复对照正在运行；尚无新视频结论。",
+      "status_zh": "最新已上线：同一DD采样仅换背景参考，明显白衣残影减轻；两个锁定位置的跳变71、123均降至3。完整81帧与人物保护RGB已核验；人物附近仍有少量变化，整片画质待验收。",
       "all_current_native_RGB_hashes_verified": true,
       "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
     },
@@ -47,12 +47,13 @@
       "protected_estimated_body_RGB_changes_against_own_matched_DD": 0
     }
   },
-  "all_foreground_and_occluded_background_estimates_NOT_GT": true,
   "simpleD_new_reference_control": {
-    "status": "running",
+    "status": "completed_verified_candidate_published",
     "same_DD_sample": true,
     "only_decoder_reference_bank_changed": true,
     "new_DD_calls": 0,
-    "no_new_video_quality_claim": true
-  }
+    "no_new_video_quality_claim": true,
+    "all81_RGB_and_visual_audit_complete": true
+  },
+  "all_foreground_and_occluded_background_estimates_NOT_GT": true
 }
