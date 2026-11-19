@@ -1,0 +1,56 @@
+{
+  "input": {
+    "source_video": "8048249.mp4",
+    "source_SHA256": "454b3d7629212733451e33da62b13daa9272f3851fc9378ab4c2b5567b584902",
+    "frame_indexing": "zero_based",
+    "fps": 25,
+    "frames": 340,
+    "instruction": "从原片自主找值得定格环绕的高光，给DD执行参数；不清楚可拒绝或不确定。"
+  },
+  "output": {
+    "decision": "uncertain",
+    "source_frame": null,
+    "source_PTS_seconds": null,
+    "stage2": null,
+    "stage3": null,
+    "failure_kind": "native_output_contract",
+    "reason": "真实V5/SFT已定位双拇指动作并提出f327，但邻帧回答把整数帧号输出成字符串，未形成可执行最终方案。",
+    "diagnostic_candidate_only": {
+      "source_frame": 327,
+      "source_PTS_seconds": 13.08,
+      "is_final_selection": false
+    }
+  },
+  "provenance": {
+    "actual_run": "frozen_V5_SFT_two_old_plus_three_new_20261119",
+    "original_response_retained_in_project": true,
+    "native_output_was_not_repaired": true
+  },
+  "example_scope": "actual_frozen_V5_autonomous_source_attempt;not_separate_conditional_fixed_frame_camera_trial",
+  "output_representation": "task_contract_envelope_for_actual_failed_run;not_literal_native_model_reply",
+  "actual_pipeline_return_excerpt": {
+    "video_id": "simple_D_upperbody",
+    "candidate_frames": [
+      327
+    ],
+    "selected_frame": null,
+    "source_verified_execution_packet": false,
+    "selected_plan_folder": null,
+    "DD_calls": 0
+  },
+  "actual_native_reply_excerpt": {
+    "status": "highlight",
+    "selected_frame": "source_frame=327, source_seconds=13.080000",
+    "equivalent_frames": [
+      "source_frame=326",
+      "source_frame=327",
+      "source_frame=328",
+      "source_frame=329",
+      "source_frame=330",
+      "source_frame=331"
+    ]
+  },
+  "native_reply_excerpt_values_unmodified": true,
+  "original_native_reply_text_SHA256": "0a42f3fb1356cb80b7e90fff798f4d0e660d4153229a891238b4ff5da0c7d3e5",
+  "original_pipeline_result_file_SHA256": "b560c17a9326e75cf61b98256a6ea72b482dad1a94027b76de1a718007978433"
+}

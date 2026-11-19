@@ -1,0 +1,51 @@
+{
+  "input": "original_video_bytes_with_SHA256_and_actual_frame_PTS",
+  "outputs": {
+    "decision": [
+      "highlight",
+      "refuse",
+      "uncertain"
+    ],
+    "source_frame": "zero-based original frame integer or null",
+    "source_PTS_seconds": "actual source PTS or null",
+    "stage2": [
+      "direction",
+      "angle_degrees",
+      "duration_seconds",
+      "radius_scale",
+      "elevation_change_degrees",
+      "shot_scale"
+    ],
+    "stage3": {
+      "camera_policy": "hold_actual_Stage2_terminal_view",
+      "world_time_policy": "resume_original_source_in_order",
+      "end": "actual source EOF"
+    },
+    "failure_kind": [
+      "none",
+      "semantic",
+      "native_output_contract",
+      "runtime"
+    ]
+  },
+  "label_first_absolute_then_relative": true,
+  "candidate_qualification": [
+    "yes",
+    "no",
+    "uncertain"
+  ],
+  "pair_preference": [
+    "A",
+    "B",
+    "tie",
+    "uncertain",
+    "not_applicable"
+  ],
+  "both_candidates_may_qualify": true,
+  "tie_does_not_imply_both_qualify": true,
+  "relative_winner_does_not_imply_loser_unqualified": true,
+  "cropped_body_back_view_or_closed_eyes_not_automatic_rejection": true,
+  "camera_geometry": "explicit world-up azimuth convention, source-bound geometry, renderer receipt and actual terminal W2C/K required",
+  "human18_answers_evaluation_only": true,
+  "frame_confirmation_for_camera_trial": "both frames provisional; camera comparison conditional, never autonomous selection success"
+}
