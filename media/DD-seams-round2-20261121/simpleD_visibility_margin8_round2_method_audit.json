@@ -1,0 +1,26 @@
+{
+  "method": "visibility_margin8",
+  "settings": {
+    "method": "visibility_margin8",
+    "sigma_shift": 5,
+    "zero_prediction_steps": 0,
+    "frames": 21,
+    "tau": 0.2,
+    "visibility_margin_px": 8,
+    "module_SHA256": "6419fdad711cc91884228591f4bc8d600180598805441a1a9656fc3c5f03c470",
+    "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline"
+  },
+  "actual_full_DiT_predictions": 50,
+  "new_training_steps": 0,
+  "events": [],
+  "source_query_or_output_half_untouched_by_direct_hook": true,
+  "source_condition_tensors_unchanged": false,
+  "native_I2V_first_latent_preserved_by_worker": true,
+  "official_full_reproduction": false,
+  "adaptation_notes": [
+    "DD target half only; source concatenation excluded from temporal statistic and direct modification.",
+    "Actual outer sampler step drives schedule; released repository call counter resets inside model forward.",
+    "Paper exponential signed-tension Q scaling and released positive output scaling are separate candidates."
+  ],
+  "time": 1795201060.1978252
+}
