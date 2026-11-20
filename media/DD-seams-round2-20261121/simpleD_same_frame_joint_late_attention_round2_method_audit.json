@@ -1,0 +1,5249 @@
+{
+  "schedule": "zero at steps0..29, cosine increase steps30..49",
+  "method": "same_frame_joint_late_attention",
+  "settings": {
+    "method": "same_frame_joint_late_attention",
+    "frames": 21,
+    "sigma_shift": 5,
+    "zero_prediction_steps": 0,
+    "source_attention_alpha": 0.1,
+    "module_SHA256": "d79e9abbd2e55cec6f137a27c9fe1567fd64bb94490d61a5494c12709e34396f",
+    "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline"
+  },
+  "actual_full_DiT_predictions": 50,
+  "additional_batched_attention_evaluations": 580,
+  "additional_attentions_are_NOT_full_DiT_predictions": true,
+  "events": [
+    {
+      "step": 30,
+      "block": 1,
+      "blend_strength": 1.8042868733058504e-06,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.7016164866046068e-10,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 2,
+      "blend_strength": 7.195993879309105e-06,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 5.3240647446273215e-09,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 3,
+      "blend_strength": 1.6111908183049084e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.739934311714933e-08,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 4,
+      "blend_strength": 2.8447498841212675e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 8.413295660147924e-08,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 5,
+      "blend_strength": 4.405814233187092e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.4385656754711817e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 6,
+      "blend_strength": 6.27608181330434e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.6093464334262535e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 7,
+      "blend_strength": 8.433625447098088e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.838021360839775e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 8,
+      "blend_strength": 0.00010853149908123057,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 9.289324225392193e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 9,
+      "blend_strength": 0.00013506288484266052,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.944569703482557e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 10,
+      "blend_strength": 0.00016361935551509517,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.6776546090113698e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 11,
+      "blend_strength": 0.00019386611258933033,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.1425860268209362e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 12,
+      "blend_strength": 0.00022544854049354456,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.441995537898038e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 13,
+      "blend_strength": 0.00025799636413664995,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.494235549325822e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 14,
+      "blend_strength": 0.00029112799004518995,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.5731619542930275e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 15,
+      "blend_strength": 0.00032445498019792154,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.1769878256018274e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 16,
+      "blend_strength": 0.00035758660610646164,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.365194475511089e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 17,
+      "blend_strength": 0.000390134429749567,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.351687908230815e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 18,
+      "blend_strength": 0.00042171685765378104,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.4350933017558418e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 19,
+      "blend_strength": 0.00045196361472801637,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.042019670829177e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 20,
+      "blend_strength": 0.00048052008540045094,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.670558933459688e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 21,
+      "blend_strength": 0.0005070514711618808,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 5.020473327022046e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 22,
+      "blend_strength": 0.0005312467157721306,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.05029524397105e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 23,
+      "blend_strength": 0.000552822152110068,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.962963718455285e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 24,
+      "blend_strength": 0.0005715248279112406,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.142906280118041e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 25,
+      "blend_strength": 0.0005871354714018989,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.646142638695892e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 26,
+      "blend_strength": 0.0005994710620600625,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.6942460206337273e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 27,
+      "blend_strength": 0.0006083869763638025,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.8637996618053876e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 28,
+      "blend_strength": 0.0006137786833698057,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.6823467123904265e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 30,
+      "block": 29,
+      "blend_strength": 0.0006155829702431115,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.7670214219833724e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 1,
+      "blend_strength": 7.172719962317822e-06,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.6525075469407966e-09,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 2,
+      "blend_strength": 2.8606786265793488e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 8.401310225281122e-08,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 3,
+      "blend_strength": 6.405090408037239e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.410849320876878e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 4,
+      "blend_strength": 0.00011308952353154474,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.3240022553873132e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 5,
+      "blend_strength": 0.0001751477116426826,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.2503320451505715e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 6,
+      "blend_strength": 0.0002494978928985256,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.216482117655687e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 7,
+      "blend_strength": 0.00033526837940286796,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.2320751920924522e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 8,
+      "blend_strength": 0.00043145359062214976,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.4622156413679477e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 9,
+      "blend_strength": 0.0005369258428978024,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.0379955205717124e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 10,
+      "blend_strength": 0.0006504485705060937,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.6122766939806752e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 11,
+      "blend_strength": 0.0007706908232606358,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.328113962197676e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 12,
+      "blend_strength": 0.0008962428706864227,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 9.597194730304182e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 13,
+      "blend_strength": 0.0010256327298207178,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 9.848296031123027e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 14,
+      "blend_strength": 0.0011573434228674478,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 9.867300104815513e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 15,
+      "blend_strength": 0.0012898307623748755,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0001708910131128505,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 16,
+      "blend_strength": 0.001421541455421606,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0001950981968548149,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 17,
+      "blend_strength": 0.001550931314555901,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00031217915238812566,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 18,
+      "blend_strength": 0.0016764833619816871,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003084006893914193,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 19,
+      "blend_strength": 0.0017967256147362297,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00030666173552162945,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 20,
+      "blend_strength": 0.001910248342344521,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0002795857726596296,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 21,
+      "blend_strength": 0.0020157205946201738,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000484180316561833,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 22,
+      "blend_strength": 0.0021119058058394554,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0005122848669998348,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 23,
+      "blend_strength": 0.0021976762923437976,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0005715959705412388,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 24,
+      "blend_strength": 0.0022720264735996407,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003511579998303205,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 25,
+      "blend_strength": 0.0023340846617107788,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00028702084091491997,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 26,
+      "blend_strength": 0.0023831232811619514,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00022228984744288027,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 27,
+      "blend_strength": 0.00241856739897653,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00021121617464814335,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 28,
+      "blend_strength": 0.0024400014652800057,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003096058499068022,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 31,
+      "block": 29,
+      "blend_strength": 0.0024471741852423235,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00018499861471354961,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 1,
+      "blend_strength": 1.5973110627576457e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.2667579873948398e-08,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 2,
+      "blend_strength": 6.370517239255176e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.1211754364667286e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 3,
+      "blend_strength": 0.00014263657051257167,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.6190085666021332e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 4,
+      "blend_strength": 0.0002518419065123449,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.497403774119448e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 5,
+      "blend_strength": 0.0003900408476746643,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.103817794501083e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 6,
+      "blend_strength": 0.0005556131377708993,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.460951120359823e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 7,
+      "blend_strength": 0.0007466175930838598,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 5.9590285673039034e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 8,
+      "blend_strength": 0.0009608148610120399,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.015667506493628e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 9,
+      "blend_strength": 0.001195693674431412,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00014297987218014896,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 10,
+      "blend_strength": 0.0014485002940063804,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00012101477477699518,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 11,
+      "blend_strength": 0.001716270793265725,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00015285475819837302,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 12,
+      "blend_strength": 0.001995865807930534,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003915721899829805,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 13,
+      "blend_strength": 0.00228400734209002,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00041948724538087845,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 14,
+      "blend_strength": 0.002577317199706481,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0004142745165154338,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 15,
+      "blend_strength": 0.002872356590875124,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0006563676288351417,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 16,
+      "blend_strength": 0.003165666448491585,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007302299491129816,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 17,
+      "blend_strength": 0.0034538079826510713,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0010532388696447015,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 18,
+      "blend_strength": 0.003733402997315879,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0010031088022515178,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 19,
+      "blend_strength": 0.004001173496575225,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0009093582630157471,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 20,
+      "blend_strength": 0.004253980116150194,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0008284806390292943,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 21,
+      "blend_strength": 0.004488858929569565,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0013477886095643044,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 22,
+      "blend_strength": 0.0047030561974977445,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0012952768011018634,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 23,
+      "blend_strength": 0.004894060652810705,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001398405758664012,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 24,
+      "blend_strength": 0.005059632942906941,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0010165669955313206,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 25,
+      "blend_strength": 0.0051978318840692605,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0008509975741617382,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 26,
+      "blend_strength": 0.005307037220069034,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007125248666852713,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 27,
+      "blend_strength": 0.005385968618189053,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0006356475059874356,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 28,
+      "blend_strength": 0.005433700679954029,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0009194856975227594,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 32,
+      "block": 29,
+      "blend_strength": 0.005449673790581606,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0005329768755473197,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 1,
+      "blend_strength": 2.7988764044081004e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.775843282483038e-08,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 2,
+      "blend_strength": 0.00011162691350827807,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.242539610757376e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 3,
+      "blend_strength": 0.0002499338675612126,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.0800669770105742e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 4,
+      "blend_strength": 0.0004412881036218685,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.9502223949530162e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 5,
+      "blend_strength": 0.0006834461682292802,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.305041173007339e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 6,
+      "blend_strength": 0.0009735689794831567,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 9.895290713757277e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 7,
+      "blend_strength": 0.0013082551126833615,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00017040704551618546,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 8,
+      "blend_strength": 0.001683580678924572,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0001978889195015654,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 9,
+      "blend_strength": 0.002095145329106049,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003913498658221215,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 10,
+      "blend_strength": 0.002538123844001561,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003229094436392188,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 11,
+      "blend_strength": 0.003007322705543077,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000399778044084087,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 12,
+      "blend_strength": 0.003497240986071636,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000896069745067507,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 13,
+      "blend_strength": 0.004002134841684592,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0009892929811030626,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 14,
+      "blend_strength": 0.004516084853553738,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0009685708791948855,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 15,
+      "blend_strength": 0.005033065427698888,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0014039577217772603,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 16,
+      "blend_strength": 0.005547015439568036,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0015373504720628262,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 17,
+      "blend_strength": 0.006051909295180993,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0020729582756757736,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 18,
+      "blend_strength": 0.006541827575709549,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0019484038930386305,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 19,
+      "blend_strength": 0.007011026437251067,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0017375856405124068,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 20,
+      "blend_strength": 0.007454004952146579,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0015856443205848336,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 21,
+      "blend_strength": 0.007865569602328055,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0024831844493746758,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 22,
+      "blend_strength": 0.008240895168569266,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002342822030186653,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 23,
+      "blend_strength": 0.00857558130176947,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002506890567019582,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 24,
+      "blend_strength": 0.008865704113023348,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001882500946521759,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 25,
+      "blend_strength": 0.00910786217763076,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0016450078692287207,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 26,
+      "blend_strength": 0.009299216413691415,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0013862451305612922,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 27,
+      "blend_strength": 0.00943752336774435,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0012371467892080545,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 28,
+      "blend_strength": 0.009521161517208547,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001772385905496776,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 33,
+      "block": 29,
+      "blend_strength": 0.009549150281252628,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0010116901248693466,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 1,
+      "blend_strength": 4.29238149470497e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 8.56816129157778e-08,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 2,
+      "blend_strength": 0.00017119201730356274,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.8954971185157774e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 3,
+      "blend_strength": 0.0003833007796736445,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.4596303774160333e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 4,
+      "blend_strength": 0.0006767633207513976,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.466044993023388e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 5,
+      "blend_strength": 0.0010481390605580436,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.466994429705665e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 6,
+      "blend_strength": 0.0014930739580964287,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0002096229582093656,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 7,
+      "blend_strength": 0.002006351558500771,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00035765665234066546,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 8,
+      "blend_strength": 0.0025819541512005135,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0004068859270773828,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 9,
+      "blend_strength": 0.003213133322074723,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007767624920234084,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 10,
+      "blend_strength": 0.0038924890724375185,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0006225720280781388,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 11,
+      "blend_strength": 0.0046120565772567795,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007624707068316638,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 12,
+      "blend_strength": 0.005363399565445351,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0015340278623625636,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 13,
+      "blend_strength": 0.006137709227426159,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00171833171043545,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 14,
+      "blend_strength": 0.006925907490370556,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001667208387516439,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 15,
+      "blend_strength": 0.007718753450302065,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0023070762399584055,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 16,
+      "blend_strength": 0.008506951713246464,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00251861778087914,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 17,
+      "blend_strength": 0.009281261375227272,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003283273195847869,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 18,
+      "blend_strength": 0.01003260436341584,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003081708215177059,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 19,
+      "blend_strength": 0.010752171868235103,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0027447249740362167,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 20,
+      "blend_strength": 0.011431527618597899,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0025056658778339624,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 21,
+      "blend_strength": 0.012062706789472107,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003851860761642456,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 22,
+      "blend_strength": 0.01263830938217185,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003621703712269664,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 23,
+      "blend_strength": 0.013151586982576192,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003865738632157445,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 24,
+      "blend_strength": 0.013596521880114577,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0029302926268428564,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 25,
+      "blend_strength": 0.013967897619921225,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0026290579698979855,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 26,
+      "blend_strength": 0.014261360160998977,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0021930334623903036,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 27,
+      "blend_strength": 0.01447346892336906,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001970393816009164,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 28,
+      "blend_strength": 0.014601737125725572,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002815309213474393,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 34,
+      "block": 29,
+      "blend_strength": 0.014644660940672622,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0016044590156525373,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 1,
+      "blend_strength": 6.041051281665929e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.6446342954168358e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 2,
+      "blend_strength": 0.00024093379323772022,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 5.631892690871609e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 3,
+      "blend_strength": 0.0005394533708542546,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.6749912144150585e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 4,
+      "blend_strength": 0.0009524693765577627,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 8.522200369043276e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 5,
+      "blend_strength": 0.0014751395753055039,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00014065703726373613,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 6,
+      "blend_strength": 0.002101336136899083,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003639027418103069,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 7,
+      "blend_strength": 0.002823717479190791,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000612148956861347,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 8,
+      "blend_strength": 0.0036338143414218157,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0006853568484075367,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 9,
+      "blend_strength": 0.004522129078561125,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0012634422164410353,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 10,
+      "blend_strength": 0.005478247012509671,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000995598267763853,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 11,
+      "blend_strength": 0.006490958534678865,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0012063258327543736,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 12,
+      "blend_strength": 0.007548390528402258,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0022813277319073677,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 13,
+      "blend_strength": 0.008638145570372726,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0025680584367364645,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 14,
+      "blend_strength": 0.009747447279095704,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0024757608771324158,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 15,
+      "blend_strength": 0.01086329010628064,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003317207796499133,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 16,
+      "blend_strength": 0.01197259181500362,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0036280741915106773,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 17,
+      "blend_strength": 0.013062346856974086,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004656077362596989,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 18,
+      "blend_strength": 0.014119778850697474,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004373349715024233,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 19,
+      "blend_strength": 0.015132490372866673,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003912103828042746,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 20,
+      "blend_strength": 0.016088608306815216,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0035422847140580416,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 21,
+      "blend_strength": 0.016976923043954525,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0054624974727630615,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 22,
+      "blend_strength": 0.01778701990618555,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005128837656229734,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 23,
+      "blend_strength": 0.018509401248477258,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0054832156747579575,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 24,
+      "blend_strength": 0.01913559781007084,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00413380516692996,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 25,
+      "blend_strength": 0.019658268008818584,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0037578437477350235,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 26,
+      "blend_strength": 0.02007128401452209,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0031393002718687057,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 27,
+      "blend_strength": 0.02036980359213862,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002822881331667304,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 28,
+      "blend_strength": 0.020550326872559685,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004033256787806749,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 35,
+      "block": 29,
+      "blend_strength": 0.020610737385376346,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0023048934526741505,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 1,
+      "blend_strength": 8.001827711633704e-05,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.816109656578192e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 2,
+      "blend_strength": 0.00031913496732756733,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 9.69239499681862e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 3,
+      "blend_strength": 0.0007145466460674382,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.728537457296625e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 4,
+      "blend_strength": 0.0012616174729310722,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00014130881754681468,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 5,
+      "blend_strength": 0.001953933542665117,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000229793629841879,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 6,
+      "blend_strength": 0.0027833780823425633,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0005497083184309304,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 7,
+      "blend_strength": 0.0037402266131040664,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000910555652808398,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 8,
+      "blend_strength": 0.004813260960781401,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0010071350261569023,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 9,
+      "blend_strength": 0.005989900778732713,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0018024798482656479,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 10,
+      "blend_strength": 0.007256351040904567,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0014158484991639853,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 11,
+      "blend_strength": 0.008597763775899513,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0016983665991574526,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 12,
+      "blend_strength": 0.009998412145865103,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003082947339862585,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 13,
+      "blend_strength": 0.011441874829288497,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0034676785580813885,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 14,
+      "blend_strength": 0.012911228545977078,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0033423551358282566,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 15,
+      "blend_strength": 0.014389246467045584,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004432358779013157,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 16,
+      "blend_strength": 0.015858600183734167,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004819795023649931,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 17,
+      "blend_strength": 0.017302062867157565,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006162666715681553,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 18,
+      "blend_strength": 0.018702711237123148,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00578408595174551,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 19,
+      "blend_strength": 0.0200441239721181,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00522376736626029,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 20,
+      "blend_strength": 0.021310574234289947,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0046646809205412865,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 21,
+      "blend_strength": 0.02248721405224126,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007240613456815481,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 22,
+      "blend_strength": 0.023560248399918594,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00684302719309926,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 23,
+      "blend_strength": 0.024517096930680098,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0073379757814109325,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 24,
+      "blend_strength": 0.025346541470357545,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005491973366588354,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 25,
+      "blend_strength": 0.026038857540091595,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005000029690563679,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 26,
+      "blend_strength": 0.026585928366955225,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004156062845140696,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 27,
+      "blend_strength": 0.026981340045695097,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003767851274460554,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 28,
+      "blend_strength": 0.027220456735906326,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005379803944379091,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 36,
+      "block": 29,
+      "blend_strength": 0.027300475013022664,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003089441219344735,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 1,
+      "blend_strength": 0.00010126429961458606,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.321228743719985e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 2,
+      "blend_strength": 0.00040386996713219486,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.514552604930941e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 3,
+      "blend_strength": 0.0009042692277761819,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00011648026702459902,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 4,
+      "blend_strength": 0.001596595357734906,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0002121661091223359,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 5,
+      "blend_strength": 0.0024727314661344146,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003381492861080915,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 6,
+      "blend_strength": 0.00352240565816261,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007571093738079071,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 7,
+      "blend_strength": 0.004733311463644227,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001236028503626585,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 8,
+      "blend_strength": 0.006091252119151726,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001351541723124683,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 9,
+      "blend_strength": 0.007580307012076269,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0023807811085134745,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 10,
+      "blend_strength": 0.009183018335254185,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0018599409377202392,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 11,
+      "blend_strength": 0.010880595763794146,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0022370200604200363,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 12,
+      "blend_strength": 0.012653136754456376,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003957945853471756,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 13,
+      "blend_strength": 0.014479859884775036,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004435848910361528,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 14,
+      "blend_strength": 0.01633934849623602,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004255127161741257,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 15,
+      "blend_strength": 0.018209801785016605,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005602286197245121,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 16,
+      "blend_strength": 0.020069290396477597,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006104317959398031,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 17,
+      "blend_strength": 0.021896013526796255,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007757485378533602,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 18,
+      "blend_strength": 0.023668554517458477,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007262202445417643,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 19,
+      "blend_strength": 0.025366131945998446,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006598468869924545,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 20,
+      "blend_strength": 0.026968843269176358,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0058455755934119225,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 21,
+      "blend_strength": 0.028457898162100898,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009197594597935677,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 22,
+      "blend_strength": 0.0298158388176084,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008729188703000546,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 23,
+      "blend_strength": 0.031026744623090016,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00937869306653738,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 24,
+      "blend_strength": 0.03207641881511821,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006964869797229767,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 25,
+      "blend_strength": 0.03295255492351772,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006359990686178207,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 26,
+      "blend_strength": 0.03364488105347645,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0052436296828091145,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 27,
+      "blend_strength": 0.03414528031412044,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004797427915036678,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 28,
+      "blend_strength": 0.034447885981638046,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006841549649834633,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 37,
+      "block": 29,
+      "blend_strength": 0.034549150281252626,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0039265151135623455,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 1,
+      "blend_strength": 0.00012362543272599334,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.1537076589957e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 2,
+      "blend_strength": 0.0004930523357370716,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.1860447304788977e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 3,
+      "blend_strength": 0.0011039495163656676,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00016153711476363242,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 4,
+      "blend_strength": 0.0019491547637175326,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00029443282983265817,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 5,
+      "blend_strength": 0.0030187588190459884,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0004600870015565306,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 6,
+      "blend_strength": 0.004300221552750628,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0009707579738460481,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 7,
+      "blend_strength": 0.005778518985931312,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0015708858845755458,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 8,
+      "blend_strength": 0.00743631943280423,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0017119725234806538,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 9,
+      "blend_strength": 0.009254186698871202,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002945203799754381,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 10,
+      "blend_strength": 0.011210807952529484,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0023183489684015512,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 11,
+      "blend_strength": 0.0132832435985358,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002771514467895031,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 12,
+      "blend_strength": 0.01544719622378672,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004839584697037935,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 13,
+      "blend_strength": 0.017677295462271918,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005418573971837759,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 14,
+      "blend_strength": 0.01994739543941933,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005170293152332306,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 15,
+      "blend_strength": 0.02223088130856912,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006796298082917929,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 16,
+      "blend_strength": 0.02450098128571654,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007382988464087248,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 17,
+      "blend_strength": 0.026731080524201735,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009372670203447342,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 18,
+      "blend_strength": 0.028895033149452645,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008790369145572186,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 19,
+      "blend_strength": 0.03096746879545897,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008030065335333347,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 20,
+      "blend_strength": 0.03292409004911725,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007009235676378012,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 21,
+      "blend_strength": 0.03474195731518422,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011199867352843285,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 22,
+      "blend_strength": 0.03639975776205714,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010807845741510391,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 23,
+      "blend_strength": 0.03787805519523782,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0116462716832757,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 24,
+      "blend_strength": 0.03915951792894246,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008507313206791878,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 25,
+      "blend_strength": 0.04022912198427092,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007796606980264187,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 26,
+      "blend_strength": 0.04107432723162279,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006343756336718798,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 27,
+      "blend_strength": 0.041685224412251386,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005882974248379469,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 28,
+      "blend_strength": 0.04205465131526246,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008382837288081646,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 38,
+      "block": 29,
+      "blend_strength": 0.04217827674798846,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004817469976842403,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 1,
+      "blend_strength": 0.00014655107114101005,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 8.32893078950292e-07,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 2,
+      "blend_strength": 0.0005844861072478335,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.9950466341688298e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 3,
+      "blend_strength": 0.0013086707204299384,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00021069021022412926,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 4,
+      "blend_strength": 0.0023106145082260744,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003848926571663469,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 5,
+      "blend_strength": 0.0035785705958102675,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0005890358006581664,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 6,
+      "blend_strength": 0.005097673357358906,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0011898739030584693,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 7,
+      "blend_strength": 0.0068501127019217276,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0019181679235771298,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 8,
+      "blend_strength": 0.008815342880454307,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0020828067790716887,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 9,
+      "blend_strength": 0.01097032336594044,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003561458084732294,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 10,
+      "blend_strength": 0.013289788982505244,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0027858309913426638,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 11,
+      "blend_strength": 0.015746546116502134,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003320799907669425,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 12,
+      "blend_strength": 0.01831179153676948,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005777593702077866,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 13,
+      "blend_strength": 0.020955450086180882,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006467373576015234,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 14,
+      "blend_strength": 0.02364652728536456,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006127676926553249,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 15,
+      "blend_strength": 0.02635347271463543,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008066387847065926,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 16,
+      "blend_strength": 0.029044549913819113,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008724087849259377,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 17,
+      "blend_strength": 0.03168820846323052,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011092614382505417,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 18,
+      "blend_strength": 0.03425345388349785,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010373287834227085,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 19,
+      "blend_strength": 0.03671021101749475,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009527703747153282,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 20,
+      "blend_strength": 0.039029676634059554,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008181816898286343,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 21,
+      "blend_strength": 0.041184657119545685,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013298406265676022,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 22,
+      "blend_strength": 0.04314988729807826,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012936769984662533,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 23,
+      "blend_strength": 0.044902326642641086,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013981431722640991,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 24,
+      "blend_strength": 0.046421429404189724,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010111705400049686,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 25,
+      "blend_strength": 0.04768938549177393,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00927418377250433,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 26,
+      "blend_strength": 0.04869132927957006,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007493624463677406,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 27,
+      "blend_strength": 0.049415513892752165,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006966875866055489,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 28,
+      "blend_strength": 0.049853448928858984,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009931656531989574,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 39,
+      "block": 29,
+      "blend_strength": 0.049999999999999996,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005691409111022949,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 1,
+      "blend_strength": 0.00016947670955602676,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.0653440085661714e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 2,
+      "blend_strength": 0.0006759198787585953,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 3.863440724671818e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 3,
+      "blend_strength": 0.0015133919244942093,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00026009767316281796,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 4,
+      "blend_strength": 0.002672074252734616,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00047619533143006265,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 5,
+      "blend_strength": 0.004138382372574546,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007160542882047594,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 6,
+      "blend_strength": 0.005895125161967183,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0014063558774068952,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 7,
+      "blend_strength": 0.007921706417912143,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0022354843094944954,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 8,
+      "blend_strength": 0.010194366328104382,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0024253162555396557,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 9,
+      "blend_strength": 0.012686460033009675,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0041333031840622425,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 10,
+      "blend_strength": 0.015368770012481004,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003231169655919075,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 11,
+      "blend_strength": 0.018209848634468468,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0038403496146202087,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 12,
+      "blend_strength": 0.021176386849752236,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006662160623818636,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 13,
+      "blend_strength": 0.024233604710089847,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007452500052750111,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 14,
+      "blend_strength": 0.02734565913130978,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007051385473459959,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 15,
+      "blend_strength": 0.03047606412070174,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009219500236213207,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 16,
+      "blend_strength": 0.03358811854192169,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010000383481383324,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 17,
+      "blend_strength": 0.036645336402259296,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012687268666923046,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 18,
+      "blend_strength": 0.03961187461754305,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011832424439489841,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 19,
+      "blend_strength": 0.04245295323953052,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010968180373311043,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 20,
+      "blend_strength": 0.04513526321900185,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009212042205035686,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 21,
+      "blend_strength": 0.04762735692390714,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015335959382355213,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 22,
+      "blend_strength": 0.04990001683409938,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015075970441102982,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 23,
+      "blend_strength": 0.051926598090044344,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01634596474468708,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 24,
+      "blend_strength": 0.053683340879436985,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011695122346282005,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 25,
+      "blend_strength": 0.055149648999276914,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010660835541784763,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 26,
+      "blend_strength": 0.056308331327517315,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00860384851694107,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 27,
+      "blend_strength": 0.05714580337325294,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008089784532785416,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 28,
+      "blend_strength": 0.0576522465424555,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0115433344617486,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 40,
+      "block": 29,
+      "blend_strength": 0.05782172325201153,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0065738484263420105,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 1,
+      "blend_strength": 0.0001918378426674341,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.2928585420013405e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 2,
+      "blend_strength": 0.0007651022473634723,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 4.748828723677434e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 3,
+      "blend_strength": 0.0017130722130836954,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003078338340856135,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 4,
+      "blend_strength": 0.003024633658717244,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0005664011696353555,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 5,
+      "blend_strength": 0.004684409725486122,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0008369201677851379,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 6,
+      "blend_strength": 0.006672941056555203,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0016081969952210784,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 7,
+      "blend_strength": 0.008966913940199233,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0025496999733150005,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 8,
+      "blend_strength": 0.01153943364175689,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0027602349873632193,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 9,
+      "blend_strength": 0.014360339719804613,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0046847243793308735,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 10,
+      "blend_strength": 0.01739655962975631,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0036471376661211252,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 11,
+      "blend_strength": 0.020612496469210127,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004321931395679712,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 12,
+      "blend_strength": 0.023970446319082586,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007507537491619587,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 13,
+      "blend_strength": 0.027431040287586736,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008366590365767479,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 14,
+      "blend_strength": 0.030953706074493104,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.007898547686636448,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 15,
+      "blend_strength": 0.03449714364425426,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010337844491004944,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 16,
+      "blend_strength": 0.038019809431160644,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011184168048202991,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 17,
+      "blend_strength": 0.04148040339966479,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014203439466655254,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 18,
+      "blend_strength": 0.044838353249537236,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013204059563577175,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 19,
+      "blend_strength": 0.048054290088991064,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01228263322263956,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 20,
+      "blend_strength": 0.05109050999894276,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010182758793234825,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 21,
+      "blend_strength": 0.05391141607699047,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017331905663013458,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 22,
+      "blend_strength": 0.056483935778548135,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017339903861284256,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 23,
+      "blend_strength": 0.05877790866219216,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.018805647268891335,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 24,
+      "blend_strength": 0.06076643999326125,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013282484374940395,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 25,
+      "blend_strength": 0.06242621606003014,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012099976651370525,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 26,
+      "blend_strength": 0.06373777750566367,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009638340212404728,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 27,
+      "blend_strength": 0.0646857474713839,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009166276082396507,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 28,
+      "blend_strength": 0.06525901187607995,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013126032426953316,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 41,
+      "block": 29,
+      "blend_strength": 0.06545084971874737,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00741981714963913,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 1,
+      "blend_strength": 0.0002130838651656831,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.5058542430779198e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 2,
+      "blend_strength": 0.0008498372471680999,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 5.621164746116847e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 3,
+      "blend_strength": 0.0019027947947924393,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003509111993480474,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 4,
+      "blend_strength": 0.0033596115435210773,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000654194678645581,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 5,
+      "blend_strength": 0.005203207648955419,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0009494276018813252,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 6,
+      "blend_strength": 0.007411968632375249,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0017914718482643366,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 7,
+      "blend_strength": 0.009959998790739392,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002836379688233137,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 8,
+      "blend_strength": 0.012817424800127215,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0030696468893438578,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 9,
+      "blend_strength": 0.01595074595314817,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005202800035476685,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 10,
+      "blend_strength": 0.01932322692410593,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0040522608906030655,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 11,
+      "blend_strength": 0.022895328457104763,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004836258012801409,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 12,
+      "blend_strength": 0.026625170927673858,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008327031508088112,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 13,
+      "blend_strength": 0.030469025343073275,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009289287962019444,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 14,
+      "blend_strength": 0.034381826024752045,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008753020316362381,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 15,
+      "blend_strength": 0.03831769896222528,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011367649771273136,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 16,
+      "blend_strength": 0.042230499643904074,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012350172735750675,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 17,
+      "blend_strength": 0.046074354059303484,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015603947453200817,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 18,
+      "blend_strength": 0.049804196529872564,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014446618035435677,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 19,
+      "blend_strength": 0.05337629806287141,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01355538610368967,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 20,
+      "blend_strength": 0.05674877903382917,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011040281504392624,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 21,
+      "blend_strength": 0.05988210018685012,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.019200388342142105,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 22,
+      "blend_strength": 0.06273952619623795,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.019521912559866905,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 23,
+      "blend_strength": 0.06528755635460208,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02116844803094864,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 24,
+      "blend_strength": 0.06749631733802192,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01490661222487688,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 25,
+      "blend_strength": 0.06933991344345627,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013411506079137325,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 26,
+      "blend_strength": 0.0707967301921849,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010578704066574574,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 27,
+      "blend_strength": 0.07184968773980925,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010303338058292866,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 28,
+      "blend_strength": 0.07248644112181166,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014594514854252338,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 42,
+      "block": 29,
+      "blend_strength": 0.07269952498697733,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008190954104065895,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 1,
+      "blend_strength": 0.00023269162946536082,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.7187246612593299e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 2,
+      "blend_strength": 0.0009280384212579469,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.371857307385653e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 3,
+      "blend_strength": 0.0020778880700056224,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00038341982872225344,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 4,
+      "blend_strength": 0.0036687596398943868,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007264123996719718,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 5,
+      "blend_strength": 0.005682001616315033,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0010518067283555865,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 6,
+      "blend_strength": 0.008094010577818727,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0019461235497146845,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 7,
+      "blend_strength": 0.010876507924652667,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0030920945573598146,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 8,
+      "blend_strength": 0.013996871419486799,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003341139294207096,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 9,
+      "blend_strength": 0.017418517653319754,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005659616086632013,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 10,
+      "blend_strength": 0.02110133095250082,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004362265579402447,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 11,
+      "blend_strength": 0.025002133698325404,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005240136757493019,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 12,
+      "blend_strength": 0.029075192545136703,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009023834019899368,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 13,
+      "blend_strength": 0.033272754601989044,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010032687336206436,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 14,
+      "blend_strength": 0.03754560729163342,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009426494129002094,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 15,
+      "blend_strength": 0.041843655322990225,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012242170982062817,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 16,
+      "blend_strength": 0.046116508012634616,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013263152912259102,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 17,
+      "blend_strength": 0.05031407006948695,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016773322597146034,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 18,
+      "blend_strength": 0.054387128916298225,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015505454502999783,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 19,
+      "blend_strength": 0.05828793166212283,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014684951864182949,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 20,
+      "blend_strength": 0.06197074496130389,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011584230698645115,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 21,
+      "blend_strength": 0.06539239119513683,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.020832547917962074,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 22,
+      "blend_strength": 0.06851275468997096,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02160782366991043,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 23,
+      "blend_strength": 0.07129525203680491,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.023488471284508705,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 24,
+      "blend_strength": 0.07370726099830861,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01630634255707264,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 25,
+      "blend_strength": 0.07572050297472926,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014666823670268059,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 26,
+      "blend_strength": 0.07731137454461803,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011414512060582638,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 27,
+      "blend_strength": 0.07846122419336571,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01122272852808237,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 28,
+      "blend_strength": 0.07915657098515828,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015980368480086327,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 43,
+      "block": 29,
+      "blend_strength": 0.07938926261462365,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00885143131017685,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 1,
+      "blend_strength": 0.0002501783273349705,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.8944463135994738e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 2,
+      "blend_strength": 0.0009977801971921044,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.91065943101421e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 3,
+      "blend_strength": 0.0022340406611862326,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.000404000369599089,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 4,
+      "blend_strength": 0.003944465695700752,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007858884055167437,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 5,
+      "blend_strength": 0.006109002131062493,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0011274177813902497,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 6,
+      "blend_strength": 0.008702272756621384,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.002059896243736148,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 7,
+      "blend_strength": 0.011693873845342687,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0032839064951986074,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 8,
+      "blend_strength": 0.015048731609708103,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003543239552527666,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 9,
+      "blend_strength": 0.01872751340980616,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006028456147760153,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 10,
+      "blend_strength": 0.022687088892572975,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004589032847434282,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 11,
+      "blend_strength": 0.026881035655747496,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005518646910786629,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 12,
+      "blend_strength": 0.03126018350809361,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009626219049096107,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 13,
+      "blend_strength": 0.035773190944935605,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010717903263866901,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 14,
+      "blend_strength": 0.040367147080358566,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009960330091416836,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 15,
+      "blend_strength": 0.044988191978968806,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012901540845632553,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 16,
+      "blend_strength": 0.049582148114391766,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013991162180900574,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 17,
+      "blend_strength": 0.054095155551233766,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017761070281267166,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 18,
+      "blend_strength": 0.05847430340357987,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01637999527156353,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 19,
+      "blend_strength": 0.06266825016675441,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01563667692244053,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 20,
+      "blend_strength": 0.06662782564952122,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011927123181521893,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 21,
+      "blend_strength": 0.07030660744961927,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02209905907511711,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 22,
+      "blend_strength": 0.07366146521398469,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.023613866418600082,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 23,
+      "blend_strength": 0.07665306630270599,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02568412572145462,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 24,
+      "blend_strength": 0.07924633692826488,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017566895112395287,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 25,
+      "blend_strength": 0.08141087336362662,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015650445595383644,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 26,
+      "blend_strength": 0.08312129839814114,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012079973705112934,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 27,
+      "blend_strength": 0.08435755886213528,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012124192900955677,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 28,
+      "blend_strength": 0.08510516073199241,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017351865768432617,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 44,
+      "block": 29,
+      "blend_strength": 0.08535533905932738,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009434795007109642,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 1,
+      "blend_strength": 0.00026511337823793916,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.0417801351868547e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 2,
+      "blend_strength": 0.001057345300987389,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.217357051558793e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 3,
+      "blend_strength": 0.002367407573298665,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0004097970959264785,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 4,
+      "blend_strength": 0.004179940912830281,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0008238005102612078,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 5,
+      "blend_strength": 0.006473695023391256,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0011783936060965061,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 6,
+      "blend_strength": 0.009221777735234657,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0021257312037050724,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 7,
+      "blend_strength": 0.012391970291160098,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0034101130440831184,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 8,
+      "blend_strength": 0.015947105081984044,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0036742177326232195,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 9,
+      "blend_strength": 0.019845501402774832,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0062856911681592464,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 10,
+      "blend_strength": 0.024041454121008932,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004743657540529966,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 11,
+      "blend_strength": 0.028485769527461197,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005725477356463671,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 12,
+      "blend_strength": 0.03312634208746733,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009983982890844345,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 13,
+      "blend_strength": 0.037908765330677184,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01112173218280077,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 14,
+      "blend_strength": 0.04277696971717539,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010312717407941818,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 15,
+      "blend_strength": 0.04767388000157198,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013284101150929928,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 16,
+      "blend_strength": 0.052542084388070204,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014482819475233555,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 17,
+      "blend_strength": 0.05732450763128005,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01839623413980007,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 18,
+      "blend_strength": 0.06196508019128616,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016944468021392822,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 19,
+      "blend_strength": 0.06640939559773844,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016404176130890846,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 20,
+      "blend_strength": 0.07060534831597254,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011922188103199005,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 21,
+      "blend_strength": 0.07450374463676332,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02311146818101406,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 22,
+      "blend_strength": 0.07805887942758727,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.025936994701623917,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 23,
+      "blend_strength": 0.0812290719835127,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02818015031516552,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 24,
+      "blend_strength": 0.08397715469535612,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01876908540725708,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 25,
+      "blend_strength": 0.0862709088059171,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016611889004707336,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 26,
+      "blend_strength": 0.08808344214544872,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012628061696887016,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 27,
+      "blend_strength": 0.08939350441775999,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012841427698731422,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 28,
+      "blend_strength": 0.09018573634050944,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01848863810300827,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 45,
+      "block": 29,
+      "blend_strength": 0.09045084971874738,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009820183739066124,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 1,
+      "blend_strength": 0.00027712903165444364,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.123500053130556e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 2,
+      "blend_strength": 0.0011052670421031153,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 7.20648531569168e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 3,
+      "blend_strength": 0.002474704870347306,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00040000255103223026,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 4,
+      "blend_strength": 0.004369387109939805,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0008400023798458278,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 5,
+      "blend_strength": 0.006767100343945872,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0012123585911467671,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 6,
+      "blend_strength": 0.009639733576946913,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0021395657677203417,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 7,
+      "blend_strength": 0.012953607810759599,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0034682215191423893,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 8,
+      "blend_strength": 0.016669870899896574,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0037403919268399477,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 9,
+      "blend_strength": 0.02074495305744947,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.006422404665499926,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 10,
+      "blend_strength": 0.02513107767100411,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0047735851258039474,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 11,
+      "blend_strength": 0.029776821439738546,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005798841826617718,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 12,
+      "blend_strength": 0.034627717265608426,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010181554593145847,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 13,
+      "blend_strength": 0.03962689283027175,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011362602934241295,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 14,
+      "blend_strength": 0.044715737371022635,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010451512411236763,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 15,
+      "blend_strength": 0.04983458883839575,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013393774628639221,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 16,
+      "blend_strength": 0.05492343337914665,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014627430588006973,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 17,
+      "blend_strength": 0.05992260894380996,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01866544969379902,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 18,
+      "blend_strength": 0.06477350476967983,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017146192491054535,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 19,
+      "blend_strength": 0.06941924853841429,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016715308651328087,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 20,
+      "blend_strength": 0.07380537315196892,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011615615338087082,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 21,
+      "blend_strength": 0.07788045530952181,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.023437803611159325,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 22,
+      "blend_strength": 0.08159671839865879,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.027544613927602768,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 23,
+      "blend_strength": 0.08491059263247147,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.029776105657219887,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 24,
+      "blend_strength": 0.08778322586547252,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01957019977271557,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 25,
+      "blend_strength": 0.0901809390994786,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017130671069025993,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 26,
+      "blend_strength": 0.09207562133907109,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012866754084825516,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 27,
+      "blend_strength": 0.09344505916731527,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01334953773766756,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 28,
+      "blend_strength": 0.09427319717776395,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01940181665122509,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 46,
+      "block": 29,
+      "blend_strength": 0.09455032620941839,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01002028863877058,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 1,
+      "blend_strength": 0.00028592942231970235,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.143383653674391e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 2,
+      "blend_strength": 0.0011403654282298738,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.855488754808903e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 3,
+      "blend_strength": 0.002553290536779505,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00037230507587082684,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 4,
+      "blend_strength": 0.004508139492920605,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0008327819523401558,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 5,
+      "blend_strength": 0.006981993479977854,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.001214702962897718,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 6,
+      "blend_strength": 0.009945848821819288,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0020763680804520845,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 7,
+      "blend_strength": 0.013364957024440592,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0034392529632896185,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 8,
+      "blend_strength": 0.017199232170286467,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003675492014735937,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 9,
+      "blend_strength": 0.021403720888983083,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0064331223256886005,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 10,
+      "blend_strength": 0.025929129394504404,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004666987806558609,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 11,
+      "blend_strength": 0.030722401409743638,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005750630050897598,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 12,
+      "blend_strength": 0.035727340202852544,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010183860547840595,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 13,
+      "blend_strength": 0.04088526744254106,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011388884857296944,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 14,
+      "blend_strength": 0.04613571114786168,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01039800513535738,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 15,
+      "blend_strength": 0.051417114666896,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013248427771031857,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 16,
+      "blend_strength": 0.05666755837221663,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.014511237852275372,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 17,
+      "blend_strength": 0.06182548561190515,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.018565285950899124,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 18,
+      "blend_strength": 0.06683042440501402,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017021730542182922,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 19,
+      "blend_strength": 0.07162369642025328,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01676906645298004,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 20,
+      "blend_strength": 0.0761491049257746,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010888367891311646,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 21,
+      "blend_strength": 0.0803535936444712,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02319437637925148,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 22,
+      "blend_strength": 0.08418786879031709,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.028995811939239502,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 23,
+      "blend_strength": 0.08760697699293839,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.031000051647424698,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 24,
+      "blend_strength": 0.09057083233477983,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.020123502239584923,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 25,
+      "blend_strength": 0.09304468632183709,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01724252477288246,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 26,
+      "blend_strength": 0.09499953527797818,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012891384772956371,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 27,
+      "blend_strength": 0.09641246038652782,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013653040863573551,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 28,
+      "blend_strength": 0.09726689639243799,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.01991608925163746,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 47,
+      "block": 29,
+      "blend_strength": 0.09755282581475769,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009927949868142605,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 1,
+      "blend_strength": 0.00029129785540871433,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 2.068743015115615e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 2,
+      "blend_strength": 0.001161776220616358,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 6.160577322589234e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 3,
+      "blend_strength": 0.002601229532676828,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0003243215032853186,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 4,
+      "blend_strength": 0.0045927815176109365,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007920046336948872,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 5,
+      "blend_strength": 0.007113083049288666,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0011928381863981485,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 6,
+      "blend_strength": 0.01013258589658477,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0019345080945640802,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 7,
+      "blend_strength": 0.013615889149372477,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003306689439341426,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 8,
+      "blend_strength": 0.017522154261827388,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003524185623973608,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 9,
+      "blend_strength": 0.02180558384703822,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0062890248373150826,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 10,
+      "blend_strength": 0.026415958609495402,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.004430202767252922,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 11,
+      "blend_strength": 0.03129922612041494,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0055753192864358425,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 12,
+      "blend_strength": 0.03639813453304542,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009803349152207375,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 13,
+      "blend_strength": 0.041652903808225124,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011103274300694466,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 14,
+      "blend_strength": 0.04700192658068393,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010038977488875389,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 15,
+      "blend_strength": 0.05238249044907295,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012685848399996758,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 16,
+      "blend_strength": 0.05773151322153178,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013927401043474674,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 17,
+      "blend_strength": 0.06298628249671148,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017978597432374954,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 18,
+      "blend_strength": 0.06808519090934194,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016405845060944557,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 19,
+      "blend_strength": 0.07296845842026149,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016297191381454468,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 20,
+      "blend_strength": 0.07757883318271867,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009692773222923279,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 21,
+      "blend_strength": 0.0818622627679295,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.022007180377840996,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 22,
+      "blend_strength": 0.08576852788038442,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.030101992189884186,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 23,
+      "blend_strength": 0.08925183113317212,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.03137313202023506,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 24,
+      "blend_strength": 0.09227133398046822,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.02015623264014721,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 25,
+      "blend_strength": 0.09479163551214596,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.016964225098490715,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 26,
+      "blend_strength": 0.09678318749708006,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0125404242426157,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 27,
+      "blend_strength": 0.09822264080914053,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.013526877388358116,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 28,
+      "blend_strength": 0.09909311917434818,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.019723976030945778,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 48,
+      "block": 29,
+      "blend_strength": 0.0993844170297569,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009456617757678032,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 1,
+      "blend_strength": 0.00029310214228202015,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 1.874489839792659e-06,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 2,
+      "blend_strength": 0.0011689722144956672,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 5.193872129893862e-05,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 3,
+      "blend_strength": 0.0026173414408598773,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0002573047240730375,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 4,
+      "blend_strength": 0.00462122901645215,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0007104626856744289,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 5,
+      "blend_strength": 0.007157141191620537,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0011576785473152995,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 6,
+      "blend_strength": 0.010195346714717814,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0016838476294651628,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 7,
+      "blend_strength": 0.013700225403843459,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003038337454199791,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 8,
+      "blend_strength": 0.017630685760908617,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0032089550513774157,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 9,
+      "blend_strength": 0.021940646731880883,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.005906553473323584,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 10,
+      "blend_strength": 0.026579577965010495,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.003975389059633017,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 11,
+      "blend_strength": 0.031493092233004276,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.00520123029127717,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 12,
+      "blend_strength": 0.03662358307353896,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009026258252561092,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 13,
+      "blend_strength": 0.04191090017236177,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.010513831861317158,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 14,
+      "blend_strength": 0.047293054570729125,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.009336711838841438,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 15,
+      "blend_strength": 0.052706945429270874,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011557070538401604,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 16,
+      "blend_strength": 0.05808909982763824,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012851223349571228,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 17,
+      "blend_strength": 0.06337641692646105,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0167755838483572,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 18,
+      "blend_strength": 0.06850690776699571,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015262817032635212,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 19,
+      "blend_strength": 0.07342042203498951,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.0153124388307333,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 20,
+      "blend_strength": 0.07805935326811912,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008008896373212337,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 21,
+      "blend_strength": 0.08236931423909138,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.019564731046557426,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 22,
+      "blend_strength": 0.08629977459615654,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.030592631548643112,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 23,
+      "blend_strength": 0.08980465328528218,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.03040076047182083,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 24,
+      "blend_strength": 0.09284285880837946,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.019497815519571304,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 25,
+      "blend_strength": 0.09537877098354786,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.015822026878595352,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 26,
+      "blend_strength": 0.09738265855914013,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.011648515239357948,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 27,
+      "blend_strength": 0.09883102778550434,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.012745372951030731,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 28,
+      "blend_strength": 0.09970689785771798,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.017878588289022446,
+      "source_output_directly_unchanged": true
+    },
+    {
+      "step": 49,
+      "block": 29,
+      "blend_strength": 0.1,
+      "extra_batched_source_attention_passes": 1,
+      "extra_attention_batch_frames": 21,
+      "mean_target_feature_delta": 0.008389526978135109,
+      "source_output_directly_unchanged": true
+    }
+  ],
+  "new_training_steps": 0,
+  "new_weights": false,
+  "source_condition_tensors_modified": false,
+  "first_I2V_anchor_modified": false,
+  "RGB_pasting": false,
+  "own_method_hypothesis_not_paper_reproduction": true,
+  "risks": [
+    "Source viewpoint differs from target; verify target camera and geometry preserved.",
+    "Natural source motion blur must not be treated as an artifact by default."
+  ],
+  "time": 1795215573.358947
+}
