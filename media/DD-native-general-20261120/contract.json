@@ -102,9 +102,22 @@
       "convolution_output_rows": 64,
       "reason": "Full spatial standard Conv3d allocated 23GB workspace and OOM in first two cases; preserve full receptive fields by computing convolution output rows independently",
       "no_case_specific_parameters": true
+    },
+    "tedio_diagonal": {
+      "block_index": 1,
+      "active_steps": 5,
+      "iterations": 3,
+      "top_k": 1,
+      "max_coefficient_delta": 0.01,
+      "max_RMS_delta": 0.0005,
+      "reference": "https://arxiv.org/abs/2605.14136",
+      "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction"
     }
   },
   "generation_methods": "research_and_implementation_in_progress",
   "gate": "All81 baseline RGB exact before interventions",
-  "created": 1795166300.165695
+  "created": 1795166300.165695,
+  "extra_planned_tedio_results": 7,
+  "extra_planned_full_DiT_predictions": 700,
+  "extra_partial_prefix_evaluations_max": 210
 }

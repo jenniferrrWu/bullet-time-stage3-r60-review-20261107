@@ -1,10 +1,11 @@
 {
   "page": "Stage3-DD-native-general-seams-20261120.html",
-  "page_SHA256": "61bff51dd9f799902142fd993b6978cb05cb28b2675734468782e5877a29f81b",
-  "completed_new_results": 14,
-  "planned_new_results": 28,
-  "completed_actual_DiT_forwards": 0,
-  "planned_DiT_forwards": 1050,
+  "page_SHA256": "f41be73ef9c3da611bba4728aea4b8078fbe222943c4a254cc338c842b333fdf",
+  "completed_new_results": 18,
+  "planned_new_results": 35,
+  "completed_actual_DiT_forwards": 502,
+  "planned_DiT_forwards": 1750,
+  "completed_partial_prefix_evaluations": 0,
   "whole_quality_passed": false,
   "case_parameters_identical": true,
   "frames_each": 81,
@@ -218,6 +219,57 @@
             }
           },
           "time": 1795167209.439398
+        },
+        "zero_velocity_first2": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardI/zero_velocity_first2/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "8d85767e3f594eae2d2b53d3021c24f26607d47917f7b8a87833c01b66f6bce3",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_zero_velocity_first2_8d85767e3f59.webm",
+              "SHA256": "e57af55f4d5fd6d211f6efa034907cb58e8cc9c0cc1db135cfd5a35d8039e0d6",
+              "bytes": 1660965,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_zero_velocity_first2_8d85767e3f59.mp4",
+              "SHA256": "cc3115a6921925826f62c97deebedd7699a6951545866c986a40c1408a83074d",
+              "bytes": 21883,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_zero_velocity_first2_8d85767e3f59_clear.mp4",
+              "SHA256": "3ba1405a04e18d46733f1023eebad5254b02cb1878febb85a5f8b577a860788a",
+              "bytes": 537842,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795169924.473803
         }
       }
     },
@@ -428,6 +480,108 @@
             }
           },
           "time": 1795167808.6124272
+        },
+        "zero_velocity_first2": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/zero_velocity_first2/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "6425ad7a05c99284c808b957a416a567db1f219612531efa8f3ec783f4c094a1",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardH_zero_velocity_first2_6425ad7a05c9.webm",
+              "SHA256": "e1da89313ddd237c6bbe3a5f120e31bd72c116c01f4d30745ab41c2e1c36ff84",
+              "bytes": 1587551,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardH_zero_velocity_first2_6425ad7a05c9.mp4",
+              "SHA256": "7187990d4d46b238e1b8ee5a77e356c10eb86649a77b6d15b3ec6639e8407f2d",
+              "bytes": 27746,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardH_zero_velocity_first2_6425ad7a05c9_clear.mp4",
+              "SHA256": "07d5a4c69de7e4a5adc3c74860842bfe04b377a8c5caed445e56f6a588d31c74",
+              "bytes": 548397,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795169927.099533
+        },
+        "sigma_shift3": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/sigma_shift3/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "bc47d06dedd4b8b7c312a9a0d6e8a587960f883d3e052c9885474a0b80a602ac",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardH_sigma_shift3_bc47d06dedd4.webm",
+              "SHA256": "be48f3ba0e412496ded2a923b8cfbc1a350f2825bb3e7289b3c25fd07cb8ab92",
+              "bytes": 1604437,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardH_sigma_shift3_bc47d06dedd4.mp4",
+              "SHA256": "721f8dc78e4dc0e5f52aa778bb9ea53232a7e2e28341dc1414f0dcd88150b905",
+              "bytes": 26389,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardH_sigma_shift3_bc47d06dedd4_clear.mp4",
+              "SHA256": "33f5e63a9162111b637ad648c4a82ec8dba1eee71dfd9f8e5a49f94bf18fb410",
+              "bytes": 571833,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795169922.8457847
         }
       }
     },
@@ -638,6 +792,57 @@
             }
           },
           "time": 1795167808.8682911
+        },
+        "zero_velocity_first2": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/simpleD/zero_velocity_first2/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "893bb0af23fdd552197e464a3c104063b4ecc306845d8661a426305be5f22089",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/simpleD_zero_velocity_first2_893bb0af23fd.webm",
+              "SHA256": "f28bb9d8db02a76b99215c4f708324d36c296bb6349b38787119048381c4f626",
+              "bytes": 1561284,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/simpleD_zero_velocity_first2_893bb0af23fd.mp4",
+              "SHA256": "dcb77cd2676088135c6062fcdaf56afa2bb29855360fbd604d24135d8942f7a0",
+              "bytes": 17428,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/simpleD_zero_velocity_first2_893bb0af23fd_clear.mp4",
+              "SHA256": "89800ece534d48b0b7640d4dc65786e6906b48867423cf2672d328605b9948a1",
+              "bytes": 431137,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795169926.3337293
         }
       }
     },
@@ -1482,5 +1687,5 @@
       }
     }
   },
-  "time": 1795167860.8869774
+  "time": 1795169930.7618341
 }
