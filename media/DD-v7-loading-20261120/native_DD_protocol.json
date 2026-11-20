@@ -1,0 +1,186 @@
+{
+  "scope": "The native DD row on Stage3-DD-unified-v7.html, not the RF-before-feature row on the boundary campaign page.",
+  "actual_seven_case_records_verified": true,
+  "contains": [
+    "author DD weights and author LoRA strength1",
+    "actual Stage2 last frame as native I2V first-frame condition",
+    "source video, depth, visibility mask and camera conditions",
+    "our shared fixed-viewpoint motion-continuity task prompt",
+    "pure noise for generated later frames,81 output frames,50 steps,CFG1,seed42",
+    "native tiled VAE decode and display-only encoding"
+  ],
+  "does_not_contain": [
+    "background RF constraint",
+    "extra reference latent prefill/warmup",
+    "static-background decoder feature replacement",
+    "new skeleton/pose expert or trained adapter",
+    "target-view video initialization",
+    "postdecode RGB replacement"
+  ],
+  "not_claiming_all_original_author_default_text_or_untouched_upstream_geometry": true,
+  "no_fixed_background_compositing_interface_but_natural_generation_can_still_have_artifacts": true,
+  "cases": [
+    {
+      "case": "hardI",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline",
+      "native_video_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef",
+      "actual_call_SHA256": "830ec3b53c5c80f732b233c4944cc15dcad78df55a56a8646d8652e1a48ee21b",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    },
+    {
+      "case": "hardH",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline",
+      "native_video_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2",
+      "actual_call_SHA256": "4a1f87bf43b53c8718af342fdbcd20702da666ec219855fce88d8eeaf58142aa",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    },
+    {
+      "case": "simpleD",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline",
+      "native_video_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592",
+      "actual_call_SHA256": "71ddce9562eef70e792ff6335368f94a1a2f67366a4b5c2fa767ea7e5304e720",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    },
+    {
+      "case": "hardK",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline",
+      "native_video_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467",
+      "actual_call_SHA256": "360df6897d22c0403733ab4375f72d252cb718b85d8bd1b7b1af9e29a0691b6b",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    },
+    {
+      "case": "hardJ",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline",
+      "native_video_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38",
+      "actual_call_SHA256": "72c0e2cb6c4b609251efb2ac8a06786c0bfaa8685443a45a7373c924ad4c5b61",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    },
+    {
+      "case": "case13",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline",
+      "native_video_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd",
+      "actual_call_SHA256": "2c0a4cb41c909491dbbf1ce443f749b5851162b58a1802157b19a0e2042e28e3",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    },
+    {
+      "case": "heldout_chalkboard",
+      "raw_native_work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline",
+      "native_video_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06",
+      "actual_call_SHA256": "cde5e0c2a4d235990810d43f68355a5d5c156e6968529d4bcc89f9efe010487c",
+      "worker_SHA256": "38be3a1ddc56e7300c123b86f0d9848b216c4242c4cc58286516d1c1e593e474",
+      "settings": {
+        "frames": 81,
+        "latent_frames": 21,
+        "steps": 50,
+        "seed": 42,
+        "cfg": 1,
+        "lora": 1,
+        "VAE_tiled": true
+      },
+      "prompt": "At the fixed new camera viewpoint shown by the supplied first frame, continue the exact order of person and object actions from the supplied source video after the highlight frame. Maintain the same person's identity, clothing, pose continuity, background geometry and lighting. The camera must stay stationary at this new viewpoint. Do not keep the action frozen, invent different motion, change the person, move the camera, or rebuild the scene.",
+      "prompt_SHA256": "1cd6a57d2c10d975ccaf14169fa5f3dee47761280de6345ea9f8ce6c0faa5fa0",
+      "native_I2V_first_latent_constraint": "official native fused I2V first-time-latent constraint",
+      "all50_first_latent_pins_verified": true,
+      "no_background_RF_or_reference_warmup": true,
+      "no_static_feature_background_replacement": true,
+      "no_new_pose_adapter_or_training": true
+    }
+  ],
+  "time": 1795163139.931069
+}

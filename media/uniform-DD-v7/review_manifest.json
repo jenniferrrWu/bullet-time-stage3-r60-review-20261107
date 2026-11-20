@@ -1,6 +1,6 @@
 {
   "page": "/root/bullet_time_original_review_20261114/repository/Stage3-DD-unified-v7.html",
-  "page_SHA256": "aab655524974ed10f039335853f51b86503767d5bf1f38c44e9cbe844b9c4ed4",
+  "page_SHA256": "027c2b4d088683b595d2d131c041257cc9fe3f614483ffb1b2beb25b8acee527",
   "same_defaults_SHA256": "6a932eb3fa591f2d257228225f202bbec516065d70dcdf43187f10aa8aa14ced",
   "six_video_columns": true,
   "existing_cases": 6,
@@ -3231,5 +3231,13 @@
       }
     }
   },
-  "time": 1795074065.610353
+  "time": 1795074065.610353,
+  "loading_repair": {
+    "default_light": true,
+    "video_sources_assigned_only_on_user_play": true,
+    "start_concurrency": 4,
+    "small_posters_lazy": true,
+    "historical_media_unchanged": true,
+    "repair_record": "./media/DD-v7-loading-20261120/loading_manifest.json"
+  }
 }
