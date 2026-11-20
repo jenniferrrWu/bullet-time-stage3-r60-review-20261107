@@ -111,7 +111,22 @@
       "max_coefficient_delta": 0.01,
       "max_RMS_delta": 0.0005,
       "reference": "https://arxiv.org/abs/2605.14136",
-      "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction"
+      "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+      "trust_bounds_apply_before_bfloat16_quantization": true
+    },
+    "tedio_stronger": {
+      "block_index": 1,
+      "active_steps": 5,
+      "iterations": 3,
+      "top_k": 1,
+      "max_coefficient_delta": 0.05,
+      "max_RMS_delta": 0.0025,
+      "reference": "https://arxiv.org/abs/2605.14136",
+      "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+      "trust_bounds_apply_before_bfloat16_quantization": true,
+      "same_method_second_strength_not_new_paper": true,
+      "all7_same_parameters": true,
+      "matched_zero_controls_reused": "Same exact module enabled=False; limits unused; full81 per-case original gates still required"
     }
   },
   "generation_methods": "research_and_implementation_in_progress",
@@ -119,5 +134,8 @@
   "created": 1795166300.165695,
   "extra_planned_tedio_results": 7,
   "extra_planned_full_DiT_predictions": 700,
-  "extra_partial_prefix_evaluations_max": 210
+  "extra_partial_prefix_evaluations_max": 210,
+  "planned_new_configuration_outputs": 42,
+  "planned_full_DiT_predictions_including_duplicate_control": 2150,
+  "source_bound_scope": "TeDiO first-model wrapper captures initial state before the declared latent optimization; full denoiser inputs can intentionally differ after it. Source concat/camera/GG remain fixed."
 }
