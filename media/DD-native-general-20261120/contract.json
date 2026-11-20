@@ -137,5 +137,11 @@
   "extra_partial_prefix_evaluations_max": 210,
   "planned_new_configuration_outputs": 42,
   "planned_full_DiT_predictions_including_duplicate_control": 2150,
-  "source_bound_scope": "TeDiO first-model wrapper captures initial state before the declared latent optimization; full denoiser inputs can intentionally differ after it. Source concat/camera/GG remain fixed."
+  "source_bound_scope": "TeDiO first-model wrapper captures initial state before the declared latent optimization; full denoiser inputs can intentionally differ after it. Source concat/camera/GG remain fixed.",
+  "source_and_output_boundary_diagnostics": {
+    "stage2_to_native": "Same automatic native boundary rule for all7 cases,3 crops each, actual Stage2GG / nativef0 / nativef1, no resize",
+    "micro_band": "All80 temporal pairs, estimated-background distance0to2 and0to8 pixels, masks NOTGT",
+    "review_pixels": "f40,f80 and native worst0to8 pair; selected identical frames/boxes for every variant; 192px crop no resize PNG with exact RGB verification",
+    "scope": "81-frame excerpts only, not full247 roof tail"
+  }
 }
