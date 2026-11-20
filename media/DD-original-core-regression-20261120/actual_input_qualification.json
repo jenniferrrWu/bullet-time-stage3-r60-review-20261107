@@ -1,0 +1,91 @@
+{
+  "PID": 3961908,
+  "status": "three_original_core_regressions_actual_inputs_qualified_NOT_quality_acceptance",
+  "camera_pairs": {
+    "hardJ": {
+      "case": "hardJ",
+      "status": "actual_paired_camera_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "original": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_hardJ_original_K_no_pose",
+      "registered": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_hardJ_registered_K_no_pose",
+      "same_actual_noise_source_GG_text_RF_reference_and_masks": true,
+      "only_fixed_target_K_changes_in_condition_producer": true,
+      "both_actual_camera_tensors_match_selected_encoding": true,
+      "saved_raster_mismatch_not_hidden": true,
+      "all81_visual_review_pending": true,
+      "new_training_steps": 0,
+      "time": 1795134613.5515656
+    },
+    "case13": {
+      "case": "case13",
+      "status": "actual_paired_camera_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "original": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_original_K_no_pose",
+      "registered": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_registered_K_no_pose",
+      "same_actual_noise_source_GG_text_RF_reference_and_masks": true,
+      "only_fixed_target_K_changes_in_condition_producer": true,
+      "both_actual_camera_tensors_match_selected_encoding": true,
+      "saved_raster_mismatch_not_hidden": true,
+      "all81_visual_review_pending": true,
+      "new_training_steps": 0,
+      "time": 1795135663.8054495
+    }
+  },
+  "core_results": {
+    "simpleD": {
+      "case": "simpleD",
+      "status": "actual_common_core_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_same_joint82_common_v8",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_no_registration_support_core_v1",
+      "same_actual_initial_noise_source_GG_and_raw_camera_features": true,
+      "same_prompt_and_effective_native_sampling_settings": true,
+      "actual_cached_text_context_equality": true,
+      "text_limit": "Common baseline may not record a separate text tensor; actual prompt and unchanged official encoder configuration are matched. No unavailable tensor is claimed compared.",
+      "same_RF_reference_prefill_camera_mask_and_decoder_algorithm": true,
+      "RF_target_union_matches_actual_saved_masks": true,
+      "camera_registration_applied": false,
+      "insufficient_torso_noop_explicit": true,
+      "extra_motion_model": false,
+      "new_training_steps": 0,
+      "all81_visual_review_pending": true,
+      "time": 1795134236.1425004
+    },
+    "hardJ": {
+      "case": "hardJ",
+      "status": "actual_common_core_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_hardJ_registered_K_no_pose",
+      "same_actual_initial_noise_source_GG_and_raw_camera_features": true,
+      "same_prompt_and_effective_native_sampling_settings": true,
+      "actual_cached_text_context_equality": true,
+      "text_limit": "Common baseline may not record a separate text tensor; actual prompt and unchanged official encoder configuration are matched. No unavailable tensor is claimed compared.",
+      "same_RF_reference_prefill_camera_mask_and_decoder_algorithm": true,
+      "RF_target_union_matches_actual_saved_masks": true,
+      "camera_registration_applied": true,
+      "insufficient_torso_noop_explicit": false,
+      "extra_motion_model": false,
+      "new_training_steps": 0,
+      "all81_visual_review_pending": true,
+      "time": 1795134624.5284343
+    },
+    "case13": {
+      "case": "case13",
+      "status": "actual_common_core_inputs_verified_all81_comparison_ready_NOT_quality_acceptance",
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/case13_same_joint82_common_v8",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_registered_K_no_pose",
+      "same_actual_initial_noise_source_GG_and_raw_camera_features": true,
+      "same_prompt_and_effective_native_sampling_settings": true,
+      "actual_cached_text_context_equality": true,
+      "text_limit": "Common baseline may not record a separate text tensor; actual prompt and unchanged official encoder configuration are matched. No unavailable tensor is claimed compared.",
+      "same_RF_reference_prefill_camera_mask_and_decoder_algorithm": true,
+      "RF_target_union_matches_actual_saved_masks": true,
+      "camera_registration_applied": true,
+      "insufficient_torso_noop_explicit": false,
+      "extra_motion_model": false,
+      "new_training_steps": 0,
+      "all81_visual_review_pending": true,
+      "time": 1795135675.8511782
+    }
+  },
+  "new_NN_calls": 0,
+  "new_training_steps": 0,
+  "time": 1795135675.857504
+}

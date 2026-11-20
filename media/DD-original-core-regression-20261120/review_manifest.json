@@ -1,0 +1,641 @@
+{
+  "cases": [
+    "case13",
+    "simpleD",
+    "hardJ"
+  ],
+  "fps": {
+    "case13": 15,
+    "simpleD": 15,
+    "hardJ": 25
+  },
+  "frames_each": 81,
+  "method_rows": 4,
+  "completed_method_cells": 11,
+  "actual_players": 16,
+  "clips": [
+    {
+      "case": "case13",
+      "method": "native",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/case13_new_geometry_native81/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "0a2f7c8b7496702a266ff3bfc39c917180bdca6adb32da2b9110cb5202663622",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_native_0a2f7c8b7496.webm",
+            "SHA256": "52f7a47f39b3f15abd84ef1035fd53bce16b010800d7eecc6eb3b8b50a5cfe71",
+            "bytes": 1509385,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_native_0a2f7c8b7496.mp4",
+            "SHA256": "5c00305c0175eb1e0b48d6dbba8fd5165c816c15058e70efb4dab2afcb8b6d89",
+            "bytes": 21087,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_native_0a2f7c8b7496_clear.mp4",
+            "SHA256": "d2317d838e2591b85622f618af55fc12f03f2b63455e35f39f95e7c4d7678a82",
+            "bytes": 685371,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136789.1242325
+      }
+    },
+    {
+      "case": "case13",
+      "method": "common",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/case13_same_joint82_common_v8/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "1df1c5827268dec6bbc51a11b6f38272f11ce5b77b2743d49a451bc8df17ee76",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_common_1df1c5827268.webm",
+            "SHA256": "46c5c0657370846f5db5a1c503a0f58a9050295a8fdb2b030e2fe5c9d8214b74",
+            "bytes": 239688,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_common_1df1c5827268.mp4",
+            "SHA256": "0c7d11889936bf26811b0022cd45bd4f8d35aab8bc66f0516c63829630a7b524",
+            "bytes": 14593,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_common_1df1c5827268_clear.mp4",
+            "SHA256": "faa2f7f91af7d9acfa1bf65295ea5c410db8242625e16f1e7a446a6ad5f3c95a",
+            "bytes": 253228,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136788.5375564
+      }
+    },
+    {
+      "case": "case13",
+      "method": "core",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_registered_K_no_pose/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "1b7863076c5cef6e2b91310125d5e3fc8935a94d6612cc9ad0ce915f325da9c9",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_core_1b7863076c5c.webm",
+            "SHA256": "9dd753b7d150506abf70173e26e564257218550b2303378dd47afcea2cd89da5",
+            "bytes": 248311,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_core_1b7863076c5c.mp4",
+            "SHA256": "028d58d14f88c19f01f6c40277ab389f3487eee245fef00e129b3b2c4c6d17b8",
+            "bytes": 14717,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_core_1b7863076c5c_clear.mp4",
+            "SHA256": "f40f3fa2412ca02a9bde3498777b8cdfc3790c398b0c5a6988ab38e08a3f6467",
+            "bytes": 260921,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136787.3088558
+      }
+    },
+    {
+      "case": "case13",
+      "method": "support",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_original_K_no_pose/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "a7e249f8a9f9355a3a2481ecb88e504b7292fb43bf9955671792e93ebe082442",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_support_a7e249f8a9f9.webm",
+            "SHA256": "dd1cfcdb8307ebe893ba1a2d61037c9ebc5df556fbc03c05f96d6427d1bde4f1",
+            "bytes": 241595,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_support_a7e249f8a9f9.mp4",
+            "SHA256": "271d179203f8c019c4026a8df807800d6f74ceecdff306f3bad597b0c15af7f6",
+            "bytes": 14742,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/case13_support_a7e249f8a9f9_clear.mp4",
+            "SHA256": "22ac8237e6b42eb6fcd1147f282935dec78bb2b17deaa06d94d9313fc4f44a7b",
+            "bytes": 256728,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136841.9084647
+      }
+    },
+    {
+      "case": "simpleD",
+      "method": "native",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_new_geometry_native81/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "00a627c7215ed807a9db93bbff22bc407efc5f1ab2d687e760064a469b0b6eef",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_native_00a627c7215e.webm",
+            "SHA256": "3cd7bb553d0e374be32f25f8041dca09a14d59c80b7333bf1269e9119c5993e6",
+            "bytes": 1590924,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_native_00a627c7215e.mp4",
+            "SHA256": "b4ac0f0b3338fa4844b613f974f18ee421b4f1152284f2b6b1c453e694cdc95d",
+            "bytes": 17834,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_native_00a627c7215e_clear.mp4",
+            "SHA256": "a32e9728ceae6fa7486a6b4fdbed262236eae6d2f6a9d3786b2cf6d6eb95fbd0",
+            "bytes": 412137,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136840.1233923
+      }
+    },
+    {
+      "case": "simpleD",
+      "method": "common",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_same_joint82_common_v8/cases/simpleD/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "20182b86c5fb90a3494fde5cb14a1d93753317dc8c934b04a4bed86062a5d045",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_common_20182b86c5fb.webm",
+            "SHA256": "ad1d824c20203de02dc9797d6b6a0ae5ea362dcca513025dcd035a67db0ec6b9",
+            "bytes": 880470,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_common_20182b86c5fb.mp4",
+            "SHA256": "d22cbe855c5ed9fc8840eae0ea32c3c2986d3f9d0aa30aab53bac569dacad3db",
+            "bytes": 17765,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_common_20182b86c5fb_clear.mp4",
+            "SHA256": "98d5ffc18ef724b169f5f4c145c2c79811136148450ef4863f3c96dff63253b0",
+            "bytes": 358704,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136843.3124528
+      }
+    },
+    {
+      "case": "simpleD",
+      "method": "core",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_no_registration_support_core_v1/cases/simpleD/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "d19f084b69434271fa6a3bfe01fff2fd9f08e54e593d9139a3a2601ed9137c42",
+        "frames": 81,
+        "fps": 15,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_core_d19f084b6943.webm",
+            "SHA256": "00de24df3f80e092e01ab8ee3c12879ad8426b1a2f657138d6241d0af01e948c",
+            "bytes": 879572,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_core_d19f084b6943.mp4",
+            "SHA256": "b9cc841494de4e3b7d54c5f5ff20e7eb3c84989ca50f574ae022f2dd4c697dcd",
+            "bytes": 17593,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/simpleD_core_d19f084b6943_clear.mp4",
+            "SHA256": "0c5f618014124579462bfb63912d1c3d8906d7d04cd16035a841315784334067",
+            "bytes": 358588,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "15/1",
+              "nb_read_frames": "81",
+              "verified_duration": 5.4,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136893.5182827
+      }
+    },
+    {
+      "case": "hardJ",
+      "method": "native",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38",
+        "frames": 81,
+        "fps": 25,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_native_7b16f715a451.webm",
+            "SHA256": "babef0b06f7c5e89b762efb24f983aa96cc2a87975fd6f504ae5ce8ecad625a9",
+            "bytes": 1194378,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_native_7b16f715a451.mp4",
+            "SHA256": "34452fd471ad491267380084ee362e40aac1f636c365209ba0a3a479182b900a",
+            "bytes": 12899,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_native_7b16f715a451_clear.mp4",
+            "SHA256": "0226cb998ca41333c088cf7051e05a66ea5caa4a1318dbe077c747e0a06007dc",
+            "bytes": 288651,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136894.91664
+      }
+    },
+    {
+      "case": "hardJ",
+      "method": "common",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8/cases/hardJ/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "a45648c6597c635c000b3f087b8c80287fea84e732251ff848731d76f6b00c2a",
+        "frames": 81,
+        "fps": 25,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_common_a45648c6597c.webm",
+            "SHA256": "3d89f45328fa6e53fc665c6a0aef6453eee9a7109b84467bc22fe59e27d395e4",
+            "bytes": 265937,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_common_a45648c6597c.mp4",
+            "SHA256": "905b78243ed83072c4fe0eb1aecdcc639c8b5270c040ae98fde8a33d8412c2c6",
+            "bytes": 7676,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_common_a45648c6597c_clear.mp4",
+            "SHA256": "159cc20e6489084462ae21085ce6d2fadebe4a3228d091ee8664d3c7d847ed87",
+            "bytes": 118326,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136890.3866367
+      }
+    },
+    {
+      "case": "hardJ",
+      "method": "core",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_hardJ_registered_K_no_pose/cases/hardJ/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "0eeac0b4bb20eeb3ce786cf84348945ad679659a9f80a31072d4abfc31017d7b",
+        "frames": 81,
+        "fps": 25,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_core_0eeac0b4bb20.webm",
+            "SHA256": "085af1a5a6a28fe17133ac7b82c79de7d2f17ae5a873fce43d619d8ee544b928",
+            "bytes": 270887,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_core_0eeac0b4bb20.mp4",
+            "SHA256": "42fe0d9cbc35cbe21a310287886ca826740174f3ee154409a2a68c72814ca14b",
+            "bytes": 7588,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_core_0eeac0b4bb20_clear.mp4",
+            "SHA256": "b5cf8df042eddccec8c07c8c674c50de14799da7c70f2831302b0c1570c058f8",
+            "bytes": 116368,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136937.423816
+      }
+    },
+    {
+      "case": "hardJ",
+      "method": "support",
+      "encoding": {
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_hardJ_original_K_no_pose/cases/hardJ/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+        "source_SHA256": "27ac99e519322f04b4de9a297b469699b2e81f8628b52d7af86430841de84b2b",
+        "frames": 81,
+        "fps": 25,
+        "explicit_frame_timestamp_assignment": true,
+        "scaled320_YUV420_all_frames_exact": true,
+        "not_original1280_RGB_lossless": true,
+        "files": {
+          "precise": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_support_27ac99e51932.webm",
+            "SHA256": "34f476446c8f1b72683a77c0751fc7521e480720690a903f0138f33dedf44762",
+            "bytes": 267697,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "light": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_support_27ac99e51932.mp4",
+            "SHA256": "21b21181215bc36993cd792c9b99d1af22feb6079cce8056f78cfe88a32e763d",
+            "bytes": 7699,
+            "probe": {
+              "width": 320,
+              "height": 176,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          },
+          "clear": {
+            "path": "/root/bullet_time_original_review_20261114/repository/media/DD-original-core-regression-20261120/hardJ_support_27ac99e51932_clear.mp4",
+            "SHA256": "a7170326812839e15f845f81b7af7a3814d5e43f2adc42fb57e5dd5ff6ee55c3",
+            "bytes": 118191,
+            "probe": {
+              "width": 1280,
+              "height": 704,
+              "r_frame_rate": "25/1",
+              "nb_read_frames": "81",
+              "verified_duration": 3.24,
+              "all81_timestamps_verified": true
+            }
+          }
+        },
+        "time": 1795136940.8531895
+      }
+    }
+  ],
+  "roots": {
+    "case13": {
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/case13_same_joint82_common_v8",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_registered_K_no_pose"
+    },
+    "simpleD": {
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_same_joint82_common_v8",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/simpleD_no_registration_support_core_v1"
+    },
+    "hardJ": {
+      "baseline": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v8",
+      "candidate": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_hardJ_registered_K_no_pose"
+    }
+  },
+  "page_SHA256": "e85e91c4c63f305c59d60973844a9e8a28611db7161d0d38dcddb0b92179ec21",
+  "whole_quality_passed": false,
+  "new_training_steps": 0,
+  "time": 1795136940.8693933
+}
