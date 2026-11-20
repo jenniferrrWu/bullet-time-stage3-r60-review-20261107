@@ -1,7 +1,7 @@
 {
   "page": "Stage3-DD-seams-round2-20261121.html",
-  "page_SHA256": "eae523b1334c99800d4e820c7f2e995aac3af4df4e1d2b443a9ca2278cdd05d8",
-  "completed_new_results": 21,
+  "page_SHA256": "14100b501a3c72c9b0ebb353127dc1b7a6a2c3681cdb87f679ee04360e82adb8",
+  "completed_new_results": 28,
   "planned_new_results": 28,
   "case_parameters_identical": true,
   "frames_each": 81,
@@ -215,6 +215,108 @@
             }
           },
           "time": 1795201818.5361397
+        },
+        "tst_output_release": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/repair_I_v2/round2/hardI/tst_output_release/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "a6887679b036ccc106a6530b74871faec9401d66a20baf92e15ce9245ff1d9f1",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_tst_output_release_a6887679b036.webm",
+              "SHA256": "1f9caf3504a9a6af691bd56cf249598302651c68e9fdd45a4fbecda33c57a910",
+              "bytes": 696150,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_tst_output_release_a6887679b036.mp4",
+              "SHA256": "55abd1da49ae67ef729b391ae36ea8439d59f7b0289e665afc6b61cbbe060238",
+              "bytes": 15150,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_tst_output_release_a6887679b036_clear.mp4",
+              "SHA256": "f7b9da9efc62417d798e7dd383f8f8fd256e5a397ab80be391c7b47d6ed8e22d",
+              "bytes": 256674,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203871.224343
+        },
+        "visibility_margin8": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/repair_I_v2/round2/hardI/visibility_margin8/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "9437c9f31db6650efc35438746bd7bdc765111735ed906b2b14bfa90c186837f",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_visibility_margin8_9437c9f31db6.webm",
+              "SHA256": "0b4f12c5c0db76f8952a07eca84c855ca3d637ce64f422307a2a460178f9ec97",
+              "bytes": 714965,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_visibility_margin8_9437c9f31db6.mp4",
+              "SHA256": "32659dc044c912a6a2e1e80917cf91662ab8a522f0a3c7b8c8bd8311132b1c7a",
+              "bytes": 14975,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_visibility_margin8_9437c9f31db6_clear.mp4",
+              "SHA256": "ca392aed75410f7340ec329ca57384037d460bae4680a2e6a41ad0865f81373b",
+              "bytes": 254915,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203873.8220325
         }
       }
     },
@@ -476,6 +578,57 @@
             }
           },
           "time": 1795201788.8462846
+        },
+        "same_time_source_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/source_time_candidate/round2/hardH/same_time_source_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "758e7e210904b5b948e5cc11016cab6cb2cdbd8ba5d8e5b497d311790ffa67de",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardH_same_time_source_attention_758e7e210904.webm",
+              "SHA256": "c6bde06518026164bcb5d7dc957eb5509e29651b85f54417af4817a41d97e38f",
+              "bytes": 1451613,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardH_same_time_source_attention_758e7e210904.mp4",
+              "SHA256": "c35fb4d09eb332038ef861180660ccad63059c8f30563f30e99e158c8eca6931",
+              "bytes": 26399,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardH_same_time_source_attention_758e7e210904_clear.mp4",
+              "SHA256": "6aeec9ed64ddb0bf66cb1ab34c509ae704017856d7660770752b2dd145c62201",
+              "bytes": 524056,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203844.189168
         }
       }
     },
@@ -737,6 +890,57 @@
             }
           },
           "time": 1795201787.149478
+        },
+        "same_time_source_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/source_time_candidate/round2/simpleD/same_time_source_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "35213437798dcdf1feefa775c7534d2363719cd4d1e3cba165f2792b68abd2e1",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/simpleD_same_time_source_attention_35213437798d.webm",
+              "SHA256": "1ba5323650ed05958bad570786195bffe62b8955bd59b477c211ff019afe935a",
+              "bytes": 1543049,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/simpleD_same_time_source_attention_35213437798d.mp4",
+              "SHA256": "2ca90b2691d23ee3c796787b6d3df498e89a231af93303e4ed7fe7268fac1bd1",
+              "bytes": 17621,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/simpleD_same_time_source_attention_35213437798d_clear.mp4",
+              "SHA256": "bf2b36d18cb898c44c6636601f5ea92f59cf40d0d4298c05b5e6552576093ad0",
+              "bytes": 437898,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203844.009063
         }
       }
     },
@@ -998,6 +1202,57 @@
             }
           },
           "time": 1795201816.2369323
+        },
+        "visibility_margin8": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/repair_K_v2/round2/hardK/visibility_margin8/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "0175be243bf56e5e5b1c0ad2f7a4d2c1561dea4f5e91e95d2fe185e3047a9fd5",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardK_visibility_margin8_0175be243bf5.webm",
+              "SHA256": "bde48b2d8dd4efddd5ada03b5f8b977edfcfa833c18ad712005571e6a8d1ac6e",
+              "bytes": 495936,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardK_visibility_margin8_0175be243bf5.mp4",
+              "SHA256": "75dfa0bbfc75ea5fc56df9842cc34d38296f7a02884573b2ce16889cca1d9e7e",
+              "bytes": 8149,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardK_visibility_margin8_0175be243bf5_clear.mp4",
+              "SHA256": "32a22da083881a38113c3b7425bbd56be6ea8bd79e6416d931efeb4638146704",
+              "bytes": 142989,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203875.0758755
         }
       }
     },
@@ -1259,6 +1514,57 @@
             }
           },
           "time": 1795200311.5568783
+        },
+        "same_time_source_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/source_time_candidate/round2/hardJ/same_time_source_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "18f224000cda2b2bfd8d4c89c988e6d9197ea10d8e6eb04a64f14d07a5e6a887",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardJ_same_time_source_attention_18f224000cda.webm",
+              "SHA256": "8514e099c79255c9fc5dcfc76bd64a9b4073b34bd0d01bb63d7ddbe8819959ff",
+              "bytes": 1028305,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardJ_same_time_source_attention_18f224000cda.mp4",
+              "SHA256": "2453503869c2ac11cd5e810b361cbb10e96bb93433b43a444387dd3d9142d0a8",
+              "bytes": 11949,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardJ_same_time_source_attention_18f224000cda_clear.mp4",
+              "SHA256": "c13e94b107db5b1cd27f4c6b607b441b1c71626ef27572687d697caf302d2230",
+              "bytes": 260212,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203838.5460007
         }
       }
     },
@@ -1832,9 +2138,60 @@
             }
           },
           "time": 1795201785.9718876
+        },
+        "same_time_source_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/source_time_candidate/round2/heldout_chalkboard/same_time_source_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "e14042784d7e1446c97c7f35a25bb821f2800125b5a14ac20b69ae02e9d82b1c",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/heldout_chalkboard_same_time_source_attention_e14042784d7e.webm",
+              "SHA256": "51398b297f43993a37e69a0d256cc99836bcee819d4aff810312673f220c9dd0",
+              "bytes": 916922,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/heldout_chalkboard_same_time_source_attention_e14042784d7e.mp4",
+              "SHA256": "6c382c4200980d502cce5e23a1646eea7c27324b830d35864e698108118828b2",
+              "bytes": 6597,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/heldout_chalkboard_same_time_source_attention_e14042784d7e_clear.mp4",
+              "SHA256": "094b0be9606057938094b8ba3f6b83a42f8412d3e8330a4f0d178212e5da994b",
+              "bytes": 146398,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795203841.473412
         }
       }
     }
   },
-  "time": 1795201844.2849946
+  "time": 1795203876.07707
 }

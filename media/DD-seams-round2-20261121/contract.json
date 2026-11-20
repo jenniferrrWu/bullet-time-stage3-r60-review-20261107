@@ -111,5 +111,35 @@
   "fresh_disabled_control_required_per_case": true,
   "total_planned_positive_results_with_supplement": 28,
   "supplemental_group": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/same_time_source_attention_20261121/progress.json",
-  "supplemental_source_attention_is_own_hypothesis": true
+  "supplemental_source_attention_is_own_hypothesis": true,
+  "supplemental_method_settings": [
+    {
+      "method": "zero_native",
+      "frames": 21,
+      "sigma_shift": 5,
+      "zero_prediction_steps": 0,
+      "source_attention_alpha": 0.1,
+      "module_SHA256": "c15830e39e62b499d9377abeac931060b5929c4da7a346077c9aee4a861ea534"
+    },
+    {
+      "method": "same_time_source_attention",
+      "frames": 21,
+      "sigma_shift": 5,
+      "zero_prediction_steps": 0,
+      "source_attention_alpha": 0.1,
+      "module_SHA256": "c15830e39e62b499d9377abeac931060b5929c4da7a346077c9aee4a861ea534"
+    }
+  ],
+  "operational_retry": {
+    "case": "hardI",
+    "missing_methods": [
+      "tst_output_release",
+      "visibility_margin8"
+    ],
+    "fresh_zero_control": true,
+    "inference_parameters_unchanged": true,
+    "audit_written_before_VAE_decode": true,
+    "expected_extra_full_predictions_if_retry_all3_succeeds": 100,
+    "original_failed50_forward_attempt_preserved": true
+  }
 }
