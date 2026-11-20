@@ -1,0 +1,51 @@
+{
+  "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_hardM_no_pose/positive/result/native_decoded_RGB_lossless.mkv",
+  "source_SHA256": "bd512c0911f1d9201b1d24e11a4b8b7561d43b9636441aafb0d5aad84456101b",
+  "frames": 81,
+  "fps": 25.0,
+  "explicit_frame_timestamp_assignment": true,
+  "scaled320_YUV420_all_frames_exact": true,
+  "not_original1280_RGB_lossless": true,
+  "files": {
+    "precise": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-seams-20261120/hardM_raw_bd512c0911f1.webm",
+      "SHA256": "7b889dc5770297583dac0fd78d08bf957b3ecd4b01f8b8e14c7b025b905d2c15",
+      "bytes": 560164,
+      "probe": {
+        "width": 320,
+        "height": 176,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    },
+    "light": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-seams-20261120/hardM_raw_bd512c0911f1.mp4",
+      "SHA256": "3fc090215f4ff437634bef55ea680435df1fa2e57668733c1ff16290ef320f34",
+      "bytes": 10446,
+      "probe": {
+        "width": 320,
+        "height": 176,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    },
+    "clear": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-seams-20261120/hardM_raw_bd512c0911f1_clear.mp4",
+      "SHA256": "13fa37793d8d2e5750a78dd1457aba8df2b6d2dd85318994bad6370eb667f81b",
+      "bytes": 132987,
+      "probe": {
+        "width": 1280,
+        "height": 704,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    }
+  },
+  "time": 1795150771.4739106
+}

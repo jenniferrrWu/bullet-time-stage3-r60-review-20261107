@@ -1,0 +1,125 @@
+{
+  "figures": [
+    {
+      "case": "case13",
+      "frame": 48,
+      "crop_xyxy": [
+        572,
+        264,
+        764,
+        456
+      ],
+      "image": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/native_keyframe_evidence/case13_f48_native192.png",
+      "image_SHA256": "072d86abe2390dd80d3fcfae5e70e1351a2bcced6ac047d5647f25a4f5e4284b",
+      "panels": [
+        {
+          "label": "raw RF",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_registered_K_no_pose/positive/result/native_decoded_RGB_lossless.mkv",
+          "source_frame_RGB_SHA256": "5b108180e6b39aeb1ecd9729c51cd7b2ee0fce9b9a60c7542531d798a981b726",
+          "source_frame_verified": true
+        },
+        {
+          "label": "current",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/original_case_coherent_core_regression/paired_conditions_case13_registered_K_no_pose/cases/case13/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "3aa4d8fa1d1169a09820b48252047ef50d84293c47c58d5e1a1d779703be97ec",
+          "source_frame_verified": true
+        },
+        {
+          "label": "causal only",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/case13/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "2a16d6b4c4e80c1f32ca6c1b2aae62eded49880ad9c5862f46a038aac701b210",
+          "source_frame_verified": true
+        },
+        {
+          "label": "protected alpha",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/RVM_safe_alpha/case13/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "2aa9bd7f592a8ea326ad054c0428624396b429be93cd601b63fbd959e9b1b3c5",
+          "source_frame_verified": true
+        }
+      ],
+      "actual_native192_RGB_crop_no_resizing": true,
+      "labels_outside_crops": true
+    },
+    {
+      "case": "hardI",
+      "frame": 22,
+      "crop_xyxy": [
+        537,
+        420,
+        729,
+        612
+      ],
+      "image": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/native_keyframe_evidence/hardI_f22_native192.png",
+      "image_SHA256": "83ec2c193ffa3cfca95876f81ba835fc09688eebc78685fbb5598af20a89febc",
+      "panels": [
+        {
+          "label": "raw RF",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_no_pose/positive/result/native_decoded_RGB_lossless.mkv",
+          "source_frame_RGB_SHA256": "da78c20ac683b89d1431839ffea2b69a9a88fe6f26779229bf0daaab01eaca81",
+          "source_frame_verified": true
+        },
+        {
+          "label": "current",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/consistent_conditions_HardI_no_pose/cases/hardI/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "050b5adfbeea05f37405da125d6a3efcf00247e714deb1d929b6933907c55d51",
+          "source_frame_verified": true
+        },
+        {
+          "label": "causal only",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/hardI/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "3df867ff027f67bcc0a46e1543659a032c7a0b5b54fc40ec0f30b09a2e51ca76",
+          "source_frame_verified": true
+        },
+        {
+          "label": "protected alpha",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/RVM_safe_alpha/hardI/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "394f236714a277dbae68cc0fe34be136769a22eaad2bb1cfa8f87859031dce1d",
+          "source_frame_verified": true
+        }
+      ],
+      "actual_native192_RGB_crop_no_resizing": true,
+      "labels_outside_crops": true
+    },
+    {
+      "case": "hardN",
+      "frame": 40,
+      "crop_xyxy": [
+        720,
+        512,
+        912,
+        704
+      ],
+      "image": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/native_keyframe_evidence/hardN_f40_native192.png",
+      "image_SHA256": "58430b839662a96d0cbe38202d0feeb753c7b5ba4852e924fa19519ed58cc385",
+      "panels": [
+        {
+          "label": "raw RF",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/paired_conditions_hardN_registered_K_no_pose/positive/result/native_decoded_RGB_lossless.mkv",
+          "source_frame_RGB_SHA256": "77290a6365679dd54055233f6602daedac32fdd6526122c79c5e749f0e306eef",
+          "source_frame_verified": true
+        },
+        {
+          "label": "current",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/paired_conditions_hardN_registered_K_no_pose/cases/hardN/uniform_feature_output/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "ceb208d0a63b360de2d088a17eb5f45af852be73e237c685538504347566112e",
+          "source_frame_verified": true
+        },
+        {
+          "label": "unsafe alpha",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/RVM_soft_alpha/hardN/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "2a5879fd50902d62b277e2b16cd07a3673bf90c428e7c1b9f041bb5c0b0a128b",
+          "source_frame_verified": true
+        },
+        {
+          "label": "protected alpha",
+          "video": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/RVM_safe_alpha/hardN/output/DD_same_sample_decoder_background_features.mkv",
+          "source_frame_RGB_SHA256": "3a5f4ad043a28b02c09fdddd1a31a6d82fe54a46e2ced5cc28a513cedfce7543",
+          "source_frame_verified": true
+        }
+      ],
+      "actual_native192_RGB_crop_no_resizing": true,
+      "labels_outside_crops": true
+    }
+  ],
+  "time": 1795156475.7374716
+}

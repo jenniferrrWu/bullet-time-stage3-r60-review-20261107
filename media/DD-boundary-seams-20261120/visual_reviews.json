@@ -1,0 +1,590 @@
+{
+  "causal_mask_only": {
+    "case13": {
+      "all81_boundary_crops_reviewed": true,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "pages": [
+        {
+          "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/case13/boundary_comparison/all81_boundary_crops_0.jpg",
+          "SHA256": "a6556c79d58d1e3e244bda519a73360c39392aaa1d2d9a8b4747505fd115df3f"
+        },
+        {
+          "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/case13/boundary_comparison/all81_boundary_crops_1.jpg",
+          "SHA256": "03c1b39d0721ecc1be7a2331e78354d5f60ec7770d44468886fc4e52b5708ffd"
+        },
+        {
+          "file": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/case13/boundary_comparison/all81_boundary_crops_2.jpg",
+          "SHA256": "76e6d3ce81aeb0e889bd6e815c096ca0a346e6b319625dbfb95aee59d08e2438"
+        }
+      ],
+      "description": "完整81帧边界裁剪已看：去掉过去帧保护后，部分臂旁和腿旁旧背景残留收小，但明显的白边、手臂间白色空洞/亮带仍在。部分手发重影在混合前RF约束DD输出中已存在；当前特征替换又在原背景与固定树木底图之间形成额外的突变。人物像素不变不等于边界自然；不能作为完整接缝修复。",
+      "fully_fixed": false,
+      "realtime_playback_reviewed": false,
+      "review_scope": "Each frame maximum-change192px native-resolution patch, raw/current/causal triplet. Not exhaustive inspection of every pixel or GT background.",
+      "time": 1795149137.299927
+    }
+  },
+  "RVM_soft_alpha": {
+    "case13": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪可见：原混合输出中肘部/手臂间的大片白色旧背景明显缩小，露出的固定树木更连贯；末段仍有细白轮廓及原生手部/头发模糊。不能称完全修好，且边界像素允许变化，仍需核对细手指有没有损伤。",
+      "fully_fixed": false,
+      "time": 1795150672.3570487
+    },
+    "hardN": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "description": "失败：RVM把变形条纹衣服的大面积区域误认作背景，f28–76可见衣服/躯干部位被底图替换。原可信内核由alpha交集定义，其像素不变不足以防止这种误擦。严禁采用；已开启独立原人物+阴影强制保护的保守后续对照。",
+      "fully_fixed": false,
+      "accepted": false,
+      "severe_foreground_erasure": true,
+      "time": 1795153116.7921388
+    }
+  },
+  "joint_boundary_DD": {
+    "case13": {
+      "all81_selected_edge_crops_viewed": true,
+      "all81_whole_frame_overviews_viewed": true,
+      "edge_overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_review_width_each": 192,
+      "whole_frame_allpixel_or_fine_anatomy_review_NOT_claimed": true,
+      "description": "关闭/开启均用32px保护+8px羽化进行匹配对照。81帧边界裁剪及全幅概览没有看到稳定、明确的接缝收益，手臂白带与末段轮廓仍在；边界误差约-1.2%、露出区域约+1.0%、闪动代理约-0.2%，不足以接受。全幅概览未见大的动作变化，但不代表所有手指像素完全一致。",
+      "fully_fixed": false,
+      "accepted": false,
+      "time": 1795151983.0012722
+    },
+    "hardI": {
+      "all81_selected_edge_crops_viewed": true,
+      "all81_whole_frame_overviews_viewed": true,
+      "edge_overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_review_width_each": 192,
+      "whole_frame_allpixel_or_fine_anatomy_review_NOT_claimed": true,
+      "description": "81帧匹配C0/C1边界裁剪和全幅概览已看。背景带误差-36.6%、露出区域-28.2%、边界闪动代理-27.3%，有局部量化改善；但手、头发和窗边重影仍可见，不能称完整接缝修复。全幅概览未见大的动作变化，未宣称手指像素完全一致。",
+      "fully_fixed": false,
+      "accepted": false,
+      "time": 1795152502.7538085
+    }
+  },
+  "overall_quality_passed": false,
+  "causal_mask_only.hardI": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Shoulder/window and hair/hand ghosts already visible in raw RF; old feature blending additionally creates bright local boundaries. Removing past2 support shrinks some remnants, leaves visible halos and hand/window distortion. Not complete repair.",
+    "time": 1795149935.1794872
+  },
+  "causal_mask_only.hardN": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Large body/clothing deformation is already in raw RF. Added light outline and floor patches appear after feature blending; causal-only update leaves bright outlines and abrupt floor transitions. Not accepted.",
+    "time": 1795149935.179497
+  },
+  "causal_mask_only.simpleD": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Thin hair edges and shoulder background transitions change locally; causal-only differences usually small, no new opaque actor change. Does not establish corrected camera/view or universal edge quality.",
+    "time": 1795149935.1795034
+  },
+  "causal_mask_only.hardL": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Fast-moving shoes/arms retain ghosts already present in raw RF. Causal-only removes some old foot remnants but leaves ghosts and abrupt dark-wall transitions. Not accepted as universal improvement.",
+    "time": 1795149935.1795065
+  },
+  "causal_mask_only.hardM": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Same actor preserved; small floor/grid transitions change, existing white-shoe smear remains. Reveal and temporal metrics regress; no universal repair acceptance.",
+    "time": 1795150368.209778
+  },
+  "causal_mask_only.hardH": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Dynamic cast shadows already exist in raw. Feature mixing makes bright outlines on clothing and shadows; causal-only still leaves outlines and changes reveal timing. Strong shadow-region metric regression, not accepted.",
+    "time": 1795150368.2097847
+  },
+  "causal_mask_only.hardJ": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Sleeve/hand blur and ghosting already exist in raw. Causal-only makes small background changes with opaque body preserved, cannot repair inherited ghosts.",
+    "time": 1795150368.2097895
+  },
+  "causal_mask_only.hardK": {
+    "all81_selected_edge_crops_viewed": true,
+    "pages": [
+      0,
+      1,
+      2
+    ],
+    "overview_resolution": [
+      1152,
+      1296
+    ],
+    "native_crop_size": [
+      192,
+      192
+    ],
+    "overview_crop_size": [
+      128,
+      128
+    ],
+    "whole_frame_allpixel_review_NOT_claimed": true,
+    "notes": "All81 selected edge crops reviewed. Small hip/arm/floor boundary changes; raw soft edges remain. Temporal and reveal metric regression prevents universal acceptance.",
+    "time": 1795150368.209796
+  },
+  "RVM_safe_alpha": {
+    "hardI": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧选定边界裁剪已看。原人物与阴影严格保持，腿旁及发梢的背景残片局部收小，但腿部白轮廓、手/窗和头发重影仍在，不能称完整修复。",
+      "fully_fixed": false,
+      "time": 1795154340.4952605
+    },
+    "hardN": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧选定边界裁剪已看。初版alpha中被擦掉的大块衣服已保留，逐像素独立人体保护通过；原RF约束DD输出中的大幅条纹人体变形依旧存在。边界局部变化较小，不能当作该case画质修复。",
+      "fully_fixed": false,
+      "time": 1795154340.495267
+    },
+    "case13": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。原人物和阴影逐像素保护通过；腋下/腿旁一些方块状旧背景残留收小，末段边缘局部更紧。手臂间白洞、细白轮廓和混合前已有的手发模糊仍存在；保守版本保留更多原轮廓，不能称完整修复。",
+      "fully_fixed": false,
+      "time": 1795154561.0500414
+    },
+    "simpleD": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。人物与阴影RGB逐像素保持，头发/肩部边缘的旧背景残留局部更窄，整体差异较小。头发柔边/橙色轮廓和原视角偏移仍保留，不把边缘指标下降当作整体画质通过。",
+      "fully_fixed": false,
+      "time": 1795155034.1876757
+    },
+    "hardL": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。鞋、手的快速运动重影在混合前RF约束DD输出中已存在；保守透明轮廓未明显消除它们。露出区域误差和边界闪动代理退化，不采用为统一改进。",
+      "fully_fixed": false,
+      "time": 1795155034.1876812
+    },
+    "hardJ": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。鞋/裤腿外围和袖口背景略有变化，原人物阴影像素不变；没有稳定明显的视觉收益。背景带误差和闪动代理下降，露出区域误差上升，因此不作为整体通过。",
+      "fully_fixed": false,
+      "time": 1795155592.4076028
+    },
+    "hardH": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。墙面动态投影和腿/衣服边缘仍有白轮廓，部分轮廓更硬；三项代理指标均退化，不能采用为统一修复。人体和原阴影区域的像素保护通过，不代表阴影与静态墙面的衔接自然。",
+      "fully_fixed": false,
+      "time": 1795155592.4076097
+    },
+    "hardM": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。地板网格、脚与手外围变化较小，保留了原人物阴影；未明显消除快速动作的原有拖影。露出区域误差和边界闪动代理退化，不采用为统一修复。",
+      "fully_fixed": false,
+      "time": 1795156151.7097375
+    },
+    "hardK": {
+      "all81_selected_edge_crops_viewed": true,
+      "pages": [
+        0,
+        1,
+        2
+      ],
+      "native_crop_size": [
+        192,
+        192
+      ],
+      "overview_crop_size": [
+        128,
+        128
+      ],
+      "overview_resolution": [
+        1152,
+        1296
+      ],
+      "whole_frame_allpixel_review_NOT_claimed": true,
+      "description": "81帧边界裁剪已看。裤腿、袖口、地板的色差和细边有局部变化，原人物阴影未改动；看不出稳定明显的接缝收益。露出区域误差上升，闪动代理基本持平略退化，不作为画质通过。",
+      "fully_fixed": false,
+      "time": 1795156151.7097433
+    }
+  },
+  "review_scope_summary": {
+    "causal9_all81_selected_edges": true,
+    "conservative_alpha9_all81_selected_edges": true,
+    "joint2_all81_selected_edges_and_whole_frame_overviews": true,
+    "unconstrained_alpha_only_roof_and_N_manually_all81_reviewed": true,
+    "unconstrained_alpha_other7_automated_checks_only_not_quality_acceptance": true,
+    "not_all_pixels_or_ground_truth_or_realtime_video_visual_acceptance": true,
+    "time": 1795156151.7097864
+  }
+}

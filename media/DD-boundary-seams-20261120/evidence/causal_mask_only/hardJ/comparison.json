@@ -1,0 +1,1664 @@
+{
+  "case": "hardJ",
+  "status": "all81_causal_intervention_qualified_boundary_visual_review_pending",
+  "same_actual_final_DD_latents": true,
+  "published_baseline_all81_exact_reproduced": true,
+  "all81_actor_and_shadow_RGB_exact": true,
+  "all81_previously_fully_static_RGB_exact": true,
+  "all81_new_fully_static_RGB_matches_observed_plate": true,
+  "actual_weight_rule_and_only_past_context_change_verified": true,
+  "actual_DD_calls": 0,
+  "new_training_steps": 0,
+  "metrics": {
+    "band": {
+      "baseline": 0.4096490443395237,
+      "candidate": 0.34846893694891906,
+      "relative_change": -0.14934761410037023,
+      "pixels": 4693503
+    },
+    "reveal": {
+      "baseline": 2.458014574643234,
+      "candidate": 2.4560599645428796,
+      "relative_change": -0.0007951987431311647,
+      "pixels": 29673
+    },
+    "temporal": {
+      "baseline": 0.18978817742105344,
+      "candidate": 0.17875893280975272,
+      "relative_change": -0.05811344395194784,
+      "pixels": 4533463
+    }
+  },
+  "rows": [
+    {
+      "frame": 0,
+      "changed_RGB_pixels": 0,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71068,
+      "old_band_error": 0.3184274137020111,
+      "new_band_error": 0.3184274137020111,
+      "reveal_pixels": 0,
+      "old_reveal_error": null,
+      "new_reveal_error": null
+    },
+    {
+      "frame": 1,
+      "changed_RGB_pixels": 5739,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71387,
+      "old_band_error": 0.651183009147644,
+      "new_band_error": 0.6050401329994202,
+      "reveal_pixels": 123,
+      "old_reveal_error": 3.899729013442993,
+      "new_reveal_error": 3.8699190616607666,
+      "old_background_boundary_temporal_MAE": 0.6361043453216553,
+      "new_background_boundary_temporal_MAE": 0.5908859968185425
+    },
+    {
+      "frame": 2,
+      "changed_RGB_pixels": 8674,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71536,
+      "old_band_error": 1.0441550016403198,
+      "new_band_error": 0.9016252756118774,
+      "reveal_pixels": 217,
+      "old_reveal_error": 5.6574506759643555,
+      "new_reveal_error": 5.614439010620117,
+      "old_background_boundary_temporal_MAE": 0.4723241329193115,
+      "new_background_boundary_temporal_MAE": 0.40565651655197144
+    },
+    {
+      "frame": 3,
+      "changed_RGB_pixels": 10549,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71544,
+      "old_band_error": 1.4269261360168457,
+      "new_band_error": 1.1825031042099,
+      "reveal_pixels": 370,
+      "old_reveal_error": 7.072071552276611,
+      "new_reveal_error": 6.986486434936523,
+      "old_background_boundary_temporal_MAE": 0.4809027314186096,
+      "new_background_boundary_temporal_MAE": 0.4242722988128662
+    },
+    {
+      "frame": 4,
+      "changed_RGB_pixels": 12050,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71462,
+      "old_band_error": 1.7496105432510376,
+      "new_band_error": 1.3896383047103882,
+      "reveal_pixels": 479,
+      "old_reveal_error": 9.485038757324219,
+      "new_reveal_error": 9.339595794677734,
+      "old_background_boundary_temporal_MAE": 0.4699252247810364,
+      "new_background_boundary_temporal_MAE": 0.4269893169403076
+    },
+    {
+      "frame": 5,
+      "changed_RGB_pixels": 11267,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71412,
+      "old_band_error": 1.0539451837539673,
+      "new_band_error": 0.8620774149894714,
+      "reveal_pixels": 232,
+      "old_reveal_error": 5.5445404052734375,
+      "new_reveal_error": 5.626437187194824,
+      "old_background_boundary_temporal_MAE": 0.7193928360939026,
+      "new_background_boundary_temporal_MAE": 0.5445314645767212
+    },
+    {
+      "frame": 6,
+      "changed_RGB_pixels": 10207,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71401,
+      "old_band_error": 0.6242910027503967,
+      "new_band_error": 0.5208377242088318,
+      "reveal_pixels": 310,
+      "old_reveal_error": 3.1666667461395264,
+      "new_reveal_error": 3.229032039642334,
+      "old_background_boundary_temporal_MAE": 0.47329744696617126,
+      "new_background_boundary_temporal_MAE": 0.3686756491661072
+    },
+    {
+      "frame": 7,
+      "changed_RGB_pixels": 8922,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71314,
+      "old_band_error": 0.40022996068000793,
+      "new_band_error": 0.3394985496997833,
+      "reveal_pixels": 357,
+      "old_reveal_error": 2.3380017280578613,
+      "new_reveal_error": 2.444444417953491,
+      "old_background_boundary_temporal_MAE": 0.3482949435710907,
+      "new_background_boundary_temporal_MAE": 0.2749716639518738
+    },
+    {
+      "frame": 8,
+      "changed_RGB_pixels": 8725,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71271,
+      "old_band_error": 0.34596118330955505,
+      "new_band_error": 0.29353687167167664,
+      "reveal_pixels": 444,
+      "old_reveal_error": 2.077327251434326,
+      "new_reveal_error": 2.229729652404785,
+      "old_background_boundary_temporal_MAE": 0.22549259662628174,
+      "new_background_boundary_temporal_MAE": 0.1909581571817398
+    },
+    {
+      "frame": 9,
+      "changed_RGB_pixels": 8363,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71361,
+      "old_band_error": 0.3307642340660095,
+      "new_band_error": 0.2813534736633301,
+      "reveal_pixels": 347,
+      "old_reveal_error": 1.9606149196624756,
+      "new_reveal_error": 2.1181557178497314,
+      "old_background_boundary_temporal_MAE": 0.16482806205749512,
+      "new_background_boundary_temporal_MAE": 0.15559229254722595
+    },
+    {
+      "frame": 10,
+      "changed_RGB_pixels": 8039,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 71266,
+      "old_band_error": 0.3275381326675415,
+      "new_band_error": 0.2826312780380249,
+      "reveal_pixels": 280,
+      "old_reveal_error": 1.9369049072265625,
+      "new_reveal_error": 2.096428632736206,
+      "old_background_boundary_temporal_MAE": 0.15252521634101868,
+      "new_background_boundary_temporal_MAE": 0.14204689860343933
+    },
+    {
+      "frame": 11,
+      "changed_RGB_pixels": 8259,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 70991,
+      "old_band_error": 0.3249097466468811,
+      "new_band_error": 0.2837120294570923,
+      "reveal_pixels": 420,
+      "old_reveal_error": 1.82619047164917,
+      "new_reveal_error": 1.9317461252212524,
+      "old_background_boundary_temporal_MAE": 0.15237221121788025,
+      "new_background_boundary_temporal_MAE": 0.1445804387331009
+    },
+    {
+      "frame": 12,
+      "changed_RGB_pixels": 8497,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 70822,
+      "old_band_error": 0.3438197076320648,
+      "new_band_error": 0.30282023549079895,
+      "reveal_pixels": 495,
+      "old_reveal_error": 1.988552212715149,
+      "new_reveal_error": 2.028956413269043,
+      "old_background_boundary_temporal_MAE": 0.1568288803100586,
+      "new_background_boundary_temporal_MAE": 0.1525396853685379
+    },
+    {
+      "frame": 13,
+      "changed_RGB_pixels": 8883,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 70751,
+      "old_band_error": 0.3347608745098114,
+      "new_band_error": 0.2959345579147339,
+      "reveal_pixels": 613,
+      "old_reveal_error": 1.7765089273452759,
+      "new_reveal_error": 1.8134855031967163,
+      "old_background_boundary_temporal_MAE": 0.16638268530368805,
+      "new_background_boundary_temporal_MAE": 0.15878242254257202
+    },
+    {
+      "frame": 14,
+      "changed_RGB_pixels": 8842,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 70566,
+      "old_band_error": 0.3247409164905548,
+      "new_band_error": 0.28912410140037537,
+      "reveal_pixels": 451,
+      "old_reveal_error": 1.7331854104995728,
+      "new_reveal_error": 1.8048779964447021,
+      "old_background_boundary_temporal_MAE": 0.15431661903858185,
+      "new_background_boundary_temporal_MAE": 0.14716596901416779
+    },
+    {
+      "frame": 15,
+      "changed_RGB_pixels": 8945,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 70360,
+      "old_band_error": 0.32056567072868347,
+      "new_band_error": 0.2802776098251343,
+      "reveal_pixels": 514,
+      "old_reveal_error": 1.8028533458709717,
+      "new_reveal_error": 1.704280138015747,
+      "old_background_boundary_temporal_MAE": 0.16083651781082153,
+      "new_background_boundary_temporal_MAE": 0.1566016972064972
+    },
+    {
+      "frame": 16,
+      "changed_RGB_pixels": 9050,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 70094,
+      "old_band_error": 0.31845808029174805,
+      "new_band_error": 0.27774128317832947,
+      "reveal_pixels": 536,
+      "old_reveal_error": 1.8439054489135742,
+      "new_reveal_error": 1.7356964349746704,
+      "old_background_boundary_temporal_MAE": 0.15485402941703796,
+      "new_background_boundary_temporal_MAE": 0.15024849772453308
+    },
+    {
+      "frame": 17,
+      "changed_RGB_pixels": 8909,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 69807,
+      "old_band_error": 0.3206125497817993,
+      "new_band_error": 0.2867811620235443,
+      "reveal_pixels": 519,
+      "old_reveal_error": 1.8298008441925049,
+      "new_reveal_error": 1.8715479373931885,
+      "old_background_boundary_temporal_MAE": 0.16569870710372925,
+      "new_background_boundary_temporal_MAE": 0.15683835744857788
+    },
+    {
+      "frame": 18,
+      "changed_RGB_pixels": 9018,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 69508,
+      "old_band_error": 0.32614949345588684,
+      "new_band_error": 0.29510751366615295,
+      "reveal_pixels": 519,
+      "old_reveal_error": 1.8644828796386719,
+      "new_reveal_error": 1.8458573818206787,
+      "old_background_boundary_temporal_MAE": 0.15987925231456757,
+      "new_background_boundary_temporal_MAE": 0.15130797028541565
+    },
+    {
+      "frame": 19,
+      "changed_RGB_pixels": 8763,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 69225,
+      "old_band_error": 0.32563379406929016,
+      "new_band_error": 0.2909257411956787,
+      "reveal_pixels": 419,
+      "old_reveal_error": 1.6690534353256226,
+      "new_reveal_error": 1.7334924936294556,
+      "old_background_boundary_temporal_MAE": 0.1565740704536438,
+      "new_background_boundary_temporal_MAE": 0.15230515599250793
+    },
+    {
+      "frame": 20,
+      "changed_RGB_pixels": 9184,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 68919,
+      "old_band_error": 0.3303152918815613,
+      "new_band_error": 0.297223299741745,
+      "reveal_pixels": 707,
+      "old_reveal_error": 1.6143327951431274,
+      "new_reveal_error": 1.5153230428695679,
+      "old_background_boundary_temporal_MAE": 0.15097709000110626,
+      "new_background_boundary_temporal_MAE": 0.14684943854808807
+    },
+    {
+      "frame": 21,
+      "changed_RGB_pixels": 9167,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 68459,
+      "old_band_error": 0.3355390429496765,
+      "new_band_error": 0.31221121549606323,
+      "reveal_pixels": 566,
+      "old_reveal_error": 1.656654953956604,
+      "new_reveal_error": 1.8733805418014526,
+      "old_background_boundary_temporal_MAE": 0.15549339354038239,
+      "new_background_boundary_temporal_MAE": 0.1518080234527588
+    },
+    {
+      "frame": 22,
+      "changed_RGB_pixels": 9075,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 68105,
+      "old_band_error": 0.3460538983345032,
+      "new_band_error": 0.3183270990848541,
+      "reveal_pixels": 670,
+      "old_reveal_error": 1.7935322523117065,
+      "new_reveal_error": 1.8238805532455444,
+      "old_background_boundary_temporal_MAE": 0.15236100554466248,
+      "new_background_boundary_temporal_MAE": 0.15553446114063263
+    },
+    {
+      "frame": 23,
+      "changed_RGB_pixels": 9115,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 67559,
+      "old_band_error": 0.3540954291820526,
+      "new_band_error": 0.3135678768157959,
+      "reveal_pixels": 592,
+      "old_reveal_error": 1.630630612373352,
+      "new_reveal_error": 1.7415540218353271,
+      "old_background_boundary_temporal_MAE": 0.15049096941947937,
+      "new_background_boundary_temporal_MAE": 0.1640487164258957
+    },
+    {
+      "frame": 24,
+      "changed_RGB_pixels": 9310,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 66986,
+      "old_band_error": 0.35711440443992615,
+      "new_band_error": 0.31149792671203613,
+      "reveal_pixels": 679,
+      "old_reveal_error": 1.761413812637329,
+      "new_reveal_error": 1.6701030731201172,
+      "old_background_boundary_temporal_MAE": 0.1516377180814743,
+      "new_background_boundary_temporal_MAE": 0.1564226746559143
+    },
+    {
+      "frame": 25,
+      "changed_RGB_pixels": 9211,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 66412,
+      "old_band_error": 0.34046056866645813,
+      "new_band_error": 0.3086339831352234,
+      "reveal_pixels": 643,
+      "old_reveal_error": 1.573872447013855,
+      "new_reveal_error": 1.8206325769424438,
+      "old_background_boundary_temporal_MAE": 0.16596682369709015,
+      "new_background_boundary_temporal_MAE": 0.16004900634288788
+    },
+    {
+      "frame": 26,
+      "changed_RGB_pixels": 9058,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 66037,
+      "old_band_error": 0.335554301738739,
+      "new_band_error": 0.3065301775932312,
+      "reveal_pixels": 591,
+      "old_reveal_error": 1.724196195602417,
+      "new_reveal_error": 1.8877609968185425,
+      "old_background_boundary_temporal_MAE": 0.15334491431713104,
+      "new_background_boundary_temporal_MAE": 0.15131253004074097
+    },
+    {
+      "frame": 27,
+      "changed_RGB_pixels": 9455,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 65402,
+      "old_band_error": 0.3436388075351715,
+      "new_band_error": 0.30498555302619934,
+      "reveal_pixels": 831,
+      "old_reveal_error": 1.7693541049957275,
+      "new_reveal_error": 1.9197752475738525,
+      "old_background_boundary_temporal_MAE": 0.14919158816337585,
+      "new_background_boundary_temporal_MAE": 0.15913909673690796
+    },
+    {
+      "frame": 28,
+      "changed_RGB_pixels": 9315,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 64681,
+      "old_band_error": 0.3384352922439575,
+      "new_band_error": 0.2969444990158081,
+      "reveal_pixels": 508,
+      "old_reveal_error": 1.539370059967041,
+      "new_reveal_error": 1.8005250692367554,
+      "old_background_boundary_temporal_MAE": 0.14660227298736572,
+      "new_background_boundary_temporal_MAE": 0.1490776687860489
+    },
+    {
+      "frame": 29,
+      "changed_RGB_pixels": 9597,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 63918,
+      "old_band_error": 0.33020952343940735,
+      "new_band_error": 0.2995556890964508,
+      "reveal_pixels": 746,
+      "old_reveal_error": 1.6684539318084717,
+      "new_reveal_error": 1.8842717409133911,
+      "old_background_boundary_temporal_MAE": 0.16334646940231323,
+      "new_background_boundary_temporal_MAE": 0.15488919615745544
+    },
+    {
+      "frame": 30,
+      "changed_RGB_pixels": 9544,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 63138,
+      "old_band_error": 0.32925230264663696,
+      "new_band_error": 0.2959812879562378,
+      "reveal_pixels": 635,
+      "old_reveal_error": 1.6314960718154907,
+      "new_reveal_error": 1.9002623558044434,
+      "old_background_boundary_temporal_MAE": 0.158407524228096,
+      "new_background_boundary_temporal_MAE": 0.1550224870443344
+    },
+    {
+      "frame": 31,
+      "changed_RGB_pixels": 9263,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 62282,
+      "old_band_error": 0.323870986700058,
+      "new_band_error": 0.28775036334991455,
+      "reveal_pixels": 609,
+      "old_reveal_error": 1.5615763664245605,
+      "new_reveal_error": 1.9906952381134033,
+      "old_background_boundary_temporal_MAE": 0.15697553753852844,
+      "new_background_boundary_temporal_MAE": 0.15698103606700897
+    },
+    {
+      "frame": 32,
+      "changed_RGB_pixels": 9077,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 61576,
+      "old_band_error": 0.32023298740386963,
+      "new_band_error": 0.28196588158607483,
+      "reveal_pixels": 450,
+      "old_reveal_error": 1.5666667222976685,
+      "new_reveal_error": 1.9237037897109985,
+      "old_background_boundary_temporal_MAE": 0.1533535122871399,
+      "new_background_boundary_temporal_MAE": 0.14949430525302887
+    },
+    {
+      "frame": 33,
+      "changed_RGB_pixels": 8632,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 60926,
+      "old_band_error": 0.3158476650714874,
+      "new_band_error": 0.280515193939209,
+      "reveal_pixels": 356,
+      "old_reveal_error": 1.7003744840621948,
+      "new_reveal_error": 1.884831428527832,
+      "old_background_boundary_temporal_MAE": 0.15209156274795532,
+      "new_background_boundary_temporal_MAE": 0.14275161921977997
+    },
+    {
+      "frame": 34,
+      "changed_RGB_pixels": 8465,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 60291,
+      "old_band_error": 0.3224030137062073,
+      "new_band_error": 0.2849181592464447,
+      "reveal_pixels": 463,
+      "old_reveal_error": 1.908567190170288,
+      "new_reveal_error": 1.969042420387268,
+      "old_background_boundary_temporal_MAE": 0.14245879650115967,
+      "new_background_boundary_temporal_MAE": 0.14067548513412476
+    },
+    {
+      "frame": 35,
+      "changed_RGB_pixels": 8475,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 59601,
+      "old_band_error": 0.3197261691093445,
+      "new_band_error": 0.2716676890850067,
+      "reveal_pixels": 397,
+      "old_reveal_error": 1.6473551988601685,
+      "new_reveal_error": 1.7691015005111694,
+      "old_background_boundary_temporal_MAE": 0.14576734602451324,
+      "new_background_boundary_temporal_MAE": 0.14476311206817627
+    },
+    {
+      "frame": 36,
+      "changed_RGB_pixels": 8527,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 58907,
+      "old_band_error": 0.30704331398010254,
+      "new_band_error": 0.25570815801620483,
+      "reveal_pixels": 436,
+      "old_reveal_error": 1.5802751779556274,
+      "new_reveal_error": 1.6834862232208252,
+      "old_background_boundary_temporal_MAE": 0.14074809849262238,
+      "new_background_boundary_temporal_MAE": 0.13989534974098206
+    },
+    {
+      "frame": 37,
+      "changed_RGB_pixels": 8682,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 58221,
+      "old_band_error": 0.3112221658229828,
+      "new_band_error": 0.2621619999408722,
+      "reveal_pixels": 512,
+      "old_reveal_error": 1.6412760019302368,
+      "new_reveal_error": 1.935546875,
+      "old_background_boundary_temporal_MAE": 0.14968253672122955,
+      "new_background_boundary_temporal_MAE": 0.14017637073993683
+    },
+    {
+      "frame": 38,
+      "changed_RGB_pixels": 8842,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 57558,
+      "old_band_error": 0.31779539585113525,
+      "new_band_error": 0.27170854806900024,
+      "reveal_pixels": 418,
+      "old_reveal_error": 1.7392343282699585,
+      "new_reveal_error": 1.9688994884490967,
+      "old_background_boundary_temporal_MAE": 0.1515836864709854,
+      "new_background_boundary_temporal_MAE": 0.14458990097045898
+    },
+    {
+      "frame": 39,
+      "changed_RGB_pixels": 8573,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 57016,
+      "old_band_error": 0.3310883641242981,
+      "new_band_error": 0.28157591819763184,
+      "reveal_pixels": 442,
+      "old_reveal_error": 1.54449462890625,
+      "new_reveal_error": 1.8122172355651855,
+      "old_background_boundary_temporal_MAE": 0.14949087798595428,
+      "new_background_boundary_temporal_MAE": 0.14329859614372253
+    },
+    {
+      "frame": 40,
+      "changed_RGB_pixels": 8699,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 56182,
+      "old_band_error": 0.3529007136821747,
+      "new_band_error": 0.305151104927063,
+      "reveal_pixels": 538,
+      "old_reveal_error": 1.5718711614608765,
+      "new_reveal_error": 1.9157373905181885,
+      "old_background_boundary_temporal_MAE": 0.1472455859184265,
+      "new_background_boundary_temporal_MAE": 0.1421816051006317
+    },
+    {
+      "frame": 41,
+      "changed_RGB_pixels": 8443,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 55522,
+      "old_band_error": 0.33950504660606384,
+      "new_band_error": 0.2993828058242798,
+      "reveal_pixels": 467,
+      "old_reveal_error": 1.8579585552215576,
+      "new_reveal_error": 2.115631580352783,
+      "old_background_boundary_temporal_MAE": 0.15657171607017517,
+      "new_background_boundary_temporal_MAE": 0.14416275918483734
+    },
+    {
+      "frame": 42,
+      "changed_RGB_pixels": 8070,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 54808,
+      "old_band_error": 0.3394455909729004,
+      "new_band_error": 0.2952914535999298,
+      "reveal_pixels": 426,
+      "old_reveal_error": 1.7370891571044922,
+      "new_reveal_error": 1.9225351810455322,
+      "old_background_boundary_temporal_MAE": 0.15504439175128937,
+      "new_background_boundary_temporal_MAE": 0.15191403031349182
+    },
+    {
+      "frame": 43,
+      "changed_RGB_pixels": 7510,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 54094,
+      "old_band_error": 0.33618637919425964,
+      "new_band_error": 0.29230600595474243,
+      "reveal_pixels": 332,
+      "old_reveal_error": 1.5622490644454956,
+      "new_reveal_error": 1.7198795080184937,
+      "old_background_boundary_temporal_MAE": 0.15924347937107086,
+      "new_background_boundary_temporal_MAE": 0.15232312679290771
+    },
+    {
+      "frame": 44,
+      "changed_RGB_pixels": 6972,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 53301,
+      "old_band_error": 0.32590383291244507,
+      "new_band_error": 0.28208351135253906,
+      "reveal_pixels": 303,
+      "old_reveal_error": 1.6215622425079346,
+      "new_reveal_error": 1.6259626150131226,
+      "old_background_boundary_temporal_MAE": 0.14668019115924835,
+      "new_background_boundary_temporal_MAE": 0.13718858361244202
+    },
+    {
+      "frame": 45,
+      "changed_RGB_pixels": 6373,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 52641,
+      "old_band_error": 0.32943904399871826,
+      "new_band_error": 0.2940737009048462,
+      "reveal_pixels": 254,
+      "old_reveal_error": 1.426509141921997,
+      "new_reveal_error": 1.4330708980560303,
+      "old_background_boundary_temporal_MAE": 0.15269702672958374,
+      "new_background_boundary_temporal_MAE": 0.13770033419132233
+    },
+    {
+      "frame": 46,
+      "changed_RGB_pixels": 5814,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 52006,
+      "old_band_error": 0.34413978457450867,
+      "new_band_error": 0.3129895329475403,
+      "reveal_pixels": 320,
+      "old_reveal_error": 1.2604167461395264,
+      "new_reveal_error": 1.2239583730697632,
+      "old_background_boundary_temporal_MAE": 0.13440576195716858,
+      "new_background_boundary_temporal_MAE": 0.12385132163763046
+    },
+    {
+      "frame": 47,
+      "changed_RGB_pixels": 5515,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 51543,
+      "old_band_error": 0.33706483244895935,
+      "new_band_error": 0.3027763366699219,
+      "reveal_pixels": 283,
+      "old_reveal_error": 1.5335688591003418,
+      "new_reveal_error": 1.4946995973587036,
+      "old_background_boundary_temporal_MAE": 0.11698876321315765,
+      "new_background_boundary_temporal_MAE": 0.10987497866153717
+    },
+    {
+      "frame": 48,
+      "changed_RGB_pixels": 5884,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 51121,
+      "old_band_error": 0.3530121147632599,
+      "new_band_error": 0.30918800830841064,
+      "reveal_pixels": 299,
+      "old_reveal_error": 1.534002423286438,
+      "new_reveal_error": 1.5105907917022705,
+      "old_background_boundary_temporal_MAE": 0.10757727175951004,
+      "new_background_boundary_temporal_MAE": 0.10747091472148895
+    },
+    {
+      "frame": 49,
+      "changed_RGB_pixels": 6015,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 50810,
+      "old_band_error": 0.3579545021057129,
+      "new_band_error": 0.2998097240924835,
+      "reveal_pixels": 150,
+      "old_reveal_error": 1.8911112546920776,
+      "new_reveal_error": 1.8422223329544067,
+      "old_background_boundary_temporal_MAE": 0.11763883382081985,
+      "new_background_boundary_temporal_MAE": 0.11608736217021942
+    },
+    {
+      "frame": 50,
+      "changed_RGB_pixels": 5889,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 50460,
+      "old_band_error": 0.3306315541267395,
+      "new_band_error": 0.2770511209964752,
+      "reveal_pixels": 230,
+      "old_reveal_error": 3.0724637508392334,
+      "new_reveal_error": 2.9536232948303223,
+      "old_background_boundary_temporal_MAE": 0.1377866566181183,
+      "new_background_boundary_temporal_MAE": 0.12857891619205475
+    },
+    {
+      "frame": 51,
+      "changed_RGB_pixels": 5390,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 50268,
+      "old_band_error": 0.2858942747116089,
+      "new_band_error": 0.2409418672323227,
+      "reveal_pixels": 187,
+      "old_reveal_error": 2.1319072246551514,
+      "new_reveal_error": 2.032085657119751,
+      "old_background_boundary_temporal_MAE": 0.1271800547838211,
+      "new_background_boundary_temporal_MAE": 0.1162579283118248
+    },
+    {
+      "frame": 52,
+      "changed_RGB_pixels": 5012,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 50029,
+      "old_band_error": 0.2738478481769562,
+      "new_band_error": 0.23218533396720886,
+      "reveal_pixels": 150,
+      "old_reveal_error": 2.168889045715332,
+      "new_reveal_error": 2.031111240386963,
+      "old_background_boundary_temporal_MAE": 0.10798312723636627,
+      "new_background_boundary_temporal_MAE": 0.10559658706188202
+    },
+    {
+      "frame": 53,
+      "changed_RGB_pixels": 5222,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 49661,
+      "old_band_error": 0.2973359525203705,
+      "new_band_error": 0.25655946135520935,
+      "reveal_pixels": 155,
+      "old_reveal_error": 6.870967864990234,
+      "new_reveal_error": 6.722581386566162,
+      "old_background_boundary_temporal_MAE": 0.10829425603151321,
+      "new_background_boundary_temporal_MAE": 0.1055365651845932
+    },
+    {
+      "frame": 54,
+      "changed_RGB_pixels": 5265,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 49516,
+      "old_band_error": 0.3011282682418823,
+      "new_band_error": 0.2438134402036667,
+      "reveal_pixels": 111,
+      "old_reveal_error": 2.1081082820892334,
+      "new_reveal_error": 2.0600602626800537,
+      "old_background_boundary_temporal_MAE": 0.12056316435337067,
+      "new_background_boundary_temporal_MAE": 0.11574035882949829
+    },
+    {
+      "frame": 55,
+      "changed_RGB_pixels": 5433,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 49303,
+      "old_band_error": 0.32502415776252747,
+      "new_band_error": 0.2559749484062195,
+      "reveal_pixels": 137,
+      "old_reveal_error": 2.3163018226623535,
+      "new_reveal_error": 2.2676401138305664,
+      "old_background_boundary_temporal_MAE": 0.10952400416135788,
+      "new_background_boundary_temporal_MAE": 0.10315265506505966
+    },
+    {
+      "frame": 56,
+      "changed_RGB_pixels": 5554,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 49174,
+      "old_band_error": 0.3532693386077881,
+      "new_band_error": 0.27616897225379944,
+      "reveal_pixels": 282,
+      "old_reveal_error": 2.910165548324585,
+      "new_reveal_error": 2.76241135597229,
+      "old_background_boundary_temporal_MAE": 0.11169002950191498,
+      "new_background_boundary_temporal_MAE": 0.11578619480133057
+    },
+    {
+      "frame": 57,
+      "changed_RGB_pixels": 5468,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 49066,
+      "old_band_error": 0.37285834550857544,
+      "new_band_error": 0.3031698763370514,
+      "reveal_pixels": 226,
+      "old_reveal_error": 4.74926233291626,
+      "new_reveal_error": 4.859882354736328,
+      "old_background_boundary_temporal_MAE": 0.13573887944221497,
+      "new_background_boundary_temporal_MAE": 0.12787967920303345
+    },
+    {
+      "frame": 58,
+      "changed_RGB_pixels": 5620,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48956,
+      "old_band_error": 0.37271565198898315,
+      "new_band_error": 0.30158373713493347,
+      "reveal_pixels": 178,
+      "old_reveal_error": 3.2865169048309326,
+      "new_reveal_error": 3.2078652381896973,
+      "old_background_boundary_temporal_MAE": 0.14631898701190948,
+      "new_background_boundary_temporal_MAE": 0.13942204415798187
+    },
+    {
+      "frame": 59,
+      "changed_RGB_pixels": 5414,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48782,
+      "old_band_error": 0.3776666522026062,
+      "new_band_error": 0.302761971950531,
+      "reveal_pixels": 124,
+      "old_reveal_error": 3.134408473968506,
+      "new_reveal_error": 3.0510754585266113,
+      "old_background_boundary_temporal_MAE": 0.14200037717819214,
+      "new_background_boundary_temporal_MAE": 0.13197004795074463
+    },
+    {
+      "frame": 60,
+      "changed_RGB_pixels": 5236,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48697,
+      "old_band_error": 0.3707825839519501,
+      "new_band_error": 0.30053186416625977,
+      "reveal_pixels": 149,
+      "old_reveal_error": 2.5190155506134033,
+      "new_reveal_error": 2.3624160289764404,
+      "old_background_boundary_temporal_MAE": 0.14403849840164185,
+      "new_background_boundary_temporal_MAE": 0.13316084444522858
+    },
+    {
+      "frame": 61,
+      "changed_RGB_pixels": 5003,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48554,
+      "old_band_error": 0.38901016116142273,
+      "new_band_error": 0.3113097548484802,
+      "reveal_pixels": 186,
+      "old_reveal_error": 2.5860214233398438,
+      "new_reveal_error": 2.43369197845459,
+      "old_background_boundary_temporal_MAE": 0.1493699550628662,
+      "new_background_boundary_temporal_MAE": 0.14487656950950623
+    },
+    {
+      "frame": 62,
+      "changed_RGB_pixels": 5155,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48514,
+      "old_band_error": 0.4263167679309845,
+      "new_band_error": 0.3328867554664612,
+      "reveal_pixels": 213,
+      "old_reveal_error": 3.3302035331726074,
+      "new_reveal_error": 3.175274133682251,
+      "old_background_boundary_temporal_MAE": 0.15142428874969482,
+      "new_background_boundary_temporal_MAE": 0.1468466967344284
+    },
+    {
+      "frame": 63,
+      "changed_RGB_pixels": 5553,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48418,
+      "old_band_error": 0.4327041208744049,
+      "new_band_error": 0.32800474762916565,
+      "reveal_pixels": 259,
+      "old_reveal_error": 3.249678134918213,
+      "new_reveal_error": 3.1287002563476562,
+      "old_background_boundary_temporal_MAE": 0.1483420580625534,
+      "new_background_boundary_temporal_MAE": 0.1451880782842636
+    },
+    {
+      "frame": 64,
+      "changed_RGB_pixels": 5947,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48298,
+      "old_band_error": 0.43536651134490967,
+      "new_band_error": 0.32971689105033875,
+      "reveal_pixels": 243,
+      "old_reveal_error": 3.430727005004883,
+      "new_reveal_error": 3.3251028060913086,
+      "old_background_boundary_temporal_MAE": 0.16264286637306213,
+      "new_background_boundary_temporal_MAE": 0.15623004734516144
+    },
+    {
+      "frame": 65,
+      "changed_RGB_pixels": 5899,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 48071,
+      "old_band_error": 0.419143944978714,
+      "new_band_error": 0.32112917304039,
+      "reveal_pixels": 198,
+      "old_reveal_error": 3.5740745067596436,
+      "new_reveal_error": 3.3872056007385254,
+      "old_background_boundary_temporal_MAE": 0.17902585864067078,
+      "new_background_boundary_temporal_MAE": 0.1613498330116272
+    },
+    {
+      "frame": 66,
+      "changed_RGB_pixels": 6389,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 47704,
+      "old_band_error": 0.41929396986961365,
+      "new_band_error": 0.3202876150608063,
+      "reveal_pixels": 261,
+      "old_reveal_error": 3.68454647064209,
+      "new_reveal_error": 3.2439334392547607,
+      "old_background_boundary_temporal_MAE": 0.18049244582653046,
+      "new_background_boundary_temporal_MAE": 0.17653514444828033
+    },
+    {
+      "frame": 67,
+      "changed_RGB_pixels": 6680,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 47338,
+      "old_band_error": 0.41600123047828674,
+      "new_band_error": 0.30327290296554565,
+      "reveal_pixels": 207,
+      "old_reveal_error": 3.9291465282440186,
+      "new_reveal_error": 3.454106330871582,
+      "old_background_boundary_temporal_MAE": 0.17406688630580902,
+      "new_background_boundary_temporal_MAE": 0.1755761057138443
+    },
+    {
+      "frame": 68,
+      "changed_RGB_pixels": 6647,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 46782,
+      "old_band_error": 0.4103715121746063,
+      "new_band_error": 0.3081883490085602,
+      "reveal_pixels": 265,
+      "old_reveal_error": 4.367295265197754,
+      "new_reveal_error": 3.426415205001831,
+      "old_background_boundary_temporal_MAE": 0.18885312974452972,
+      "new_background_boundary_temporal_MAE": 0.18159563839435577
+    },
+    {
+      "frame": 69,
+      "changed_RGB_pixels": 6470,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 46406,
+      "old_band_error": 0.38900142908096313,
+      "new_band_error": 0.29353246092796326,
+      "reveal_pixels": 198,
+      "old_reveal_error": 4.922558784484863,
+      "new_reveal_error": 4.215488433837891,
+      "old_background_boundary_temporal_MAE": 0.16349372267723083,
+      "new_background_boundary_temporal_MAE": 0.15732169151306152
+    },
+    {
+      "frame": 70,
+      "changed_RGB_pixels": 6121,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 46213,
+      "old_band_error": 0.3748728632926941,
+      "new_band_error": 0.2937701642513275,
+      "reveal_pixels": 250,
+      "old_reveal_error": 4.866666793823242,
+      "new_reveal_error": 3.690666675567627,
+      "old_background_boundary_temporal_MAE": 0.15950898826122284,
+      "new_background_boundary_temporal_MAE": 0.15628165006637573
+    },
+    {
+      "frame": 71,
+      "changed_RGB_pixels": 6140,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45948,
+      "old_band_error": 0.37278375029563904,
+      "new_band_error": 0.2827036380767822,
+      "reveal_pixels": 240,
+      "old_reveal_error": 4.949999809265137,
+      "new_reveal_error": 3.9125001430511475,
+      "old_background_boundary_temporal_MAE": 0.14342541992664337,
+      "new_background_boundary_temporal_MAE": 0.1526486575603485
+    },
+    {
+      "frame": 72,
+      "changed_RGB_pixels": 6399,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45570,
+      "old_band_error": 0.3795772194862366,
+      "new_band_error": 0.28620439767837524,
+      "reveal_pixels": 293,
+      "old_reveal_error": 4.862343788146973,
+      "new_reveal_error": 3.558589220046997,
+      "old_background_boundary_temporal_MAE": 0.14229916036128998,
+      "new_background_boundary_temporal_MAE": 0.1531587541103363
+    },
+    {
+      "frame": 73,
+      "changed_RGB_pixels": 6453,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45456,
+      "old_band_error": 0.3578552305698395,
+      "new_band_error": 0.27614250779151917,
+      "reveal_pixels": 269,
+      "old_reveal_error": 4.3345723152160645,
+      "new_reveal_error": 3.1933085918426514,
+      "old_background_boundary_temporal_MAE": 0.15614815056324005,
+      "new_background_boundary_temporal_MAE": 0.16588148474693298
+    },
+    {
+      "frame": 74,
+      "changed_RGB_pixels": 6169,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45273,
+      "old_band_error": 0.3395842909812927,
+      "new_band_error": 0.2801007330417633,
+      "reveal_pixels": 325,
+      "old_reveal_error": 3.7220516204833984,
+      "new_reveal_error": 2.9743590354919434,
+      "old_background_boundary_temporal_MAE": 0.14981751143932343,
+      "new_background_boundary_temporal_MAE": 0.1582048386335373
+    },
+    {
+      "frame": 75,
+      "changed_RGB_pixels": 4969,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45083,
+      "old_band_error": 0.29932937026023865,
+      "new_band_error": 0.23945462703704834,
+      "reveal_pixels": 177,
+      "old_reveal_error": 2.564971685409546,
+      "new_reveal_error": 1.794727087020874,
+      "old_background_boundary_temporal_MAE": 0.13953141868114471,
+      "new_background_boundary_temporal_MAE": 0.15689080953598022
+    },
+    {
+      "frame": 76,
+      "changed_RGB_pixels": 4403,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 44932,
+      "old_band_error": 0.2700006067752838,
+      "new_band_error": 0.2423068881034851,
+      "reveal_pixels": 202,
+      "old_reveal_error": 2.43894362449646,
+      "new_reveal_error": 2.470296859741211,
+      "old_background_boundary_temporal_MAE": 0.13994207978248596,
+      "new_background_boundary_temporal_MAE": 0.13647009432315826
+    },
+    {
+      "frame": 77,
+      "changed_RGB_pixels": 4555,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45503,
+      "old_band_error": 0.2873656749725342,
+      "new_band_error": 0.27621620893478394,
+      "reveal_pixels": 353,
+      "old_reveal_error": 3.8111424446105957,
+      "new_reveal_error": 3.055713176727295,
+      "old_background_boundary_temporal_MAE": 0.16706040501594543,
+      "new_background_boundary_temporal_MAE": 0.17460069060325623
+    },
+    {
+      "frame": 78,
+      "changed_RGB_pixels": 4894,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 45983,
+      "old_band_error": 0.3384076654911041,
+      "new_band_error": 0.3328403830528259,
+      "reveal_pixels": 412,
+      "old_reveal_error": 3.2346279621124268,
+      "new_reveal_error": 3.093851327896118,
+      "old_background_boundary_temporal_MAE": 0.16001267731189728,
+      "new_background_boundary_temporal_MAE": 0.19777020812034607
+    },
+    {
+      "frame": 79,
+      "changed_RGB_pixels": 5142,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 47026,
+      "old_band_error": 0.3112888038158417,
+      "new_band_error": 0.2964034080505371,
+      "reveal_pixels": 464,
+      "old_reveal_error": 3.030172348022461,
+      "new_reveal_error": 3.5862069129943848,
+      "old_background_boundary_temporal_MAE": 0.12712903320789337,
+      "new_background_boundary_temporal_MAE": 0.17762009799480438
+    },
+    {
+      "frame": 80,
+      "changed_RGB_pixels": 5663,
+      "changed_actor_RGB_pixels": 0,
+      "changed_previously_static_RGB_pixels": 0,
+      "band_pixels": 47351,
+      "old_band_error": 0.26697781682014465,
+      "new_band_error": 0.25042062997817993,
+      "reveal_pixels": 461,
+      "old_reveal_error": 3.2812728881835938,
+      "new_reveal_error": 3.413593292236328,
+      "old_background_boundary_temporal_MAE": 0.1208263486623764,
+      "new_background_boundary_temporal_MAE": 0.16671684384346008
+    }
+  ],
+  "all81_crop_xyxy": [
+    [
+      0,
+      0,
+      192,
+      192
+    ],
+    [
+      530,
+      512,
+      722,
+      704
+    ],
+    [
+      530,
+      512,
+      722,
+      704
+    ],
+    [
+      529,
+      512,
+      721,
+      704
+    ],
+    [
+      318,
+      282,
+      510,
+      474
+    ],
+    [
+      685,
+      176,
+      877,
+      368
+    ],
+    [
+      688,
+      174,
+      880,
+      366
+    ],
+    [
+      692,
+      168,
+      884,
+      360
+    ],
+    [
+      328,
+      278,
+      520,
+      470
+    ],
+    [
+      697,
+      166,
+      889,
+      358
+    ],
+    [
+      701,
+      160,
+      893,
+      352
+    ],
+    [
+      703,
+      160,
+      895,
+      352
+    ],
+    [
+      705,
+      156,
+      897,
+      348
+    ],
+    [
+      704,
+      152,
+      896,
+      344
+    ],
+    [
+      705,
+      153,
+      897,
+      345
+    ],
+    [
+      706,
+      148,
+      898,
+      340
+    ],
+    [
+      706,
+      148,
+      898,
+      340
+    ],
+    [
+      705,
+      143,
+      897,
+      335
+    ],
+    [
+      704,
+      143,
+      896,
+      335
+    ],
+    [
+      706,
+      139,
+      898,
+      331
+    ],
+    [
+      706,
+      136,
+      898,
+      328
+    ],
+    [
+      704,
+      132,
+      896,
+      324
+    ],
+    [
+      702,
+      131,
+      894,
+      323
+    ],
+    [
+      697,
+      132,
+      889,
+      324
+    ],
+    [
+      514,
+      512,
+      706,
+      704
+    ],
+    [
+      514,
+      512,
+      706,
+      704
+    ],
+    [
+      685,
+      126,
+      877,
+      318
+    ],
+    [
+      682,
+      126,
+      874,
+      318
+    ],
+    [
+      680,
+      119,
+      872,
+      311
+    ],
+    [
+      676,
+      115,
+      868,
+      307
+    ],
+    [
+      670,
+      115,
+      862,
+      307
+    ],
+    [
+      662,
+      113,
+      854,
+      305
+    ],
+    [
+      656,
+      109,
+      848,
+      301
+    ],
+    [
+      648,
+      108,
+      840,
+      300
+    ],
+    [
+      640,
+      108,
+      832,
+      300
+    ],
+    [
+      632,
+      110,
+      824,
+      302
+    ],
+    [
+      494,
+      512,
+      686,
+      704
+    ],
+    [
+      493,
+      512,
+      685,
+      704
+    ],
+    [
+      493,
+      512,
+      685,
+      704
+    ],
+    [
+      492,
+      512,
+      684,
+      704
+    ],
+    [
+      491,
+      512,
+      683,
+      704
+    ],
+    [
+      586,
+      117,
+      778,
+      309
+    ],
+    [
+      579,
+      121,
+      771,
+      313
+    ],
+    [
+      572,
+      124,
+      764,
+      316
+    ],
+    [
+      565,
+      128,
+      757,
+      320
+    ],
+    [
+      559,
+      133,
+      751,
+      325
+    ],
+    [
+      555,
+      137,
+      747,
+      329
+    ],
+    [
+      386,
+      400,
+      578,
+      592
+    ],
+    [
+      390,
+      403,
+      582,
+      595
+    ],
+    [
+      550,
+      512,
+      742,
+      704
+    ],
+    [
+      550,
+      512,
+      742,
+      704
+    ],
+    [
+      550,
+      512,
+      742,
+      704
+    ],
+    [
+      550,
+      512,
+      742,
+      704
+    ],
+    [
+      548,
+      512,
+      740,
+      704
+    ],
+    [
+      419,
+      449,
+      611,
+      641
+    ],
+    [
+      424,
+      454,
+      616,
+      646
+    ],
+    [
+      430,
+      459,
+      622,
+      651
+    ],
+    [
+      434,
+      462,
+      626,
+      654
+    ],
+    [
+      440,
+      471,
+      632,
+      663
+    ],
+    [
+      444,
+      477,
+      636,
+      669
+    ],
+    [
+      449,
+      486,
+      641,
+      678
+    ],
+    [
+      454,
+      494,
+      646,
+      686
+    ],
+    [
+      456,
+      496,
+      648,
+      688
+    ],
+    [
+      460,
+      496,
+      652,
+      688
+    ],
+    [
+      462,
+      494,
+      654,
+      686
+    ],
+    [
+      415,
+      160,
+      607,
+      352
+    ],
+    [
+      420,
+      160,
+      612,
+      352
+    ],
+    [
+      422,
+      159,
+      614,
+      351
+    ],
+    [
+      424,
+      155,
+      616,
+      347
+    ],
+    [
+      426,
+      154,
+      618,
+      346
+    ],
+    [
+      350,
+      153,
+      542,
+      345
+    ],
+    [
+      435,
+      150,
+      627,
+      342
+    ],
+    [
+      444,
+      147,
+      636,
+      339
+    ],
+    [
+      447,
+      143,
+      639,
+      335
+    ],
+    [
+      448,
+      141,
+      640,
+      333
+    ],
+    [
+      448,
+      139,
+      640,
+      331
+    ],
+    [
+      455,
+      134,
+      647,
+      326
+    ],
+    [
+      458,
+      132,
+      650,
+      324
+    ],
+    [
+      463,
+      130,
+      655,
+      322
+    ],
+    [
+      408,
+      131,
+      600,
+      323
+    ],
+    [
+      418,
+      130,
+      610,
+      322
+    ]
+  ],
+  "crop_selection": "Each frame: maximum change window outside estimated actor, same192x192 native-resolution patch for raw/baseline/candidate. Not a perceptual score or ground-truth frame.",
+  "all81_boundary_crops": [
+    "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/hardJ/boundary_comparison/all81_boundary_crops_0.jpg",
+    "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/hardJ/boundary_comparison/all81_boundary_crops_1.jpg",
+    "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/hardJ/boundary_comparison/all81_boundary_crops_2.jpg"
+  ],
+  "candidate_feature_proof": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/boundary_seam_campaign_20261120/causal_mask_only/hardJ/output/decoder_background_feature_control_proof_v903.json",
+  "metric_limit": "Observed static plate is not GT. Background temporal MAE excludes current and previous estimated actor. Lower error does not prove natural hair alpha or anatomical correctness.",
+  "whole_quality_accepted": false,
+  "time": 1795147743.7421882
+}

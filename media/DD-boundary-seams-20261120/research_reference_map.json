@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "name": "HarmoVid (2026)",
+      "url": "https://arxiv.org/html/2605.28811v1",
+      "relevance_and_implementation_limit": "训练时用不对称alpha条件学习自然边界，并处理光照闪动。本轮仅借鉴透明边界需要独立处理这一思路，没有复现其训练网络；RVM遮罩不等于HarmoVid。"
+    },
+    {
+      "name": "FlowPortal (CVPR2026)",
+      "url": "https://github.com/gaowenshuo/FlowPortalRelease",
+      "relevance_and_implementation_limit": "训练免费的残差校正flow与解耦条件，配合细节传递和掩码处理。官方使用Wan2.1-Fun-Control及49帧流程，不能直接当成我们的DD81插件。本轮已调研，未跑完整FlowPortal，不把C实验叫作该方法复现。"
+    },
+    {
+      "name": "AnyPortal (ICCV2025)",
+      "url": "https://arxiv.org/abs/2509.07472",
+      "relevance_and_implementation_limit": "结合图像重光照、视频时序先验及前景细节投影修正，说明自然合成还需要一致性与前景保真机制。本轮未复现其RPA；静态特征混合也不是AnyPortal。"
+    },
+    {
+      "name": "GenCompositor (ICLR2026)",
+      "url": "https://github.com/TencentARC/GenCompositor",
+      "relevance_and_implementation_limit": "训练背景保护分支、masked token注入与前景融合模块。官方CogVideoX-5B权重不能加载为DD适配器；本轮未训练或运行此模型。"
+    },
+    {
+      "name": "Your Latent Mask is Wrong (2025预印本)",
+      "url": "https://arxiv.org/abs/2512.05198",
+      "relevance_and_implementation_limit": "在FLUX图像模型上说明线性潜变量混合不等价于像素alpha合成，并训练DecFormer修正。可提示我们警惕混合边界，但不能直接证明Wan末层特征的具体机制，也不是本轮即插即用修复。"
+    },
+    {
+      "name": "Robust Video Matting (WACV2022，实际使用的成熟组件)",
+      "url": "https://github.com/PeterL1n/RobustVideoMatting",
+      "relevance_and_implementation_limit": "循环网络持续估计视频alpha；本轮实际冻结运行官方ResNet50。它不是同期新论文，且在变形的DD人物上发生误分割，因此增加独立原人物保护，不能把alpha交集内核不变当成人物完整。"
+    },
+    {
+      "name": "RePaint (CVPR2022，联合修复思路参考)",
+      "url": "https://github.com/andreas128/RePaint",
+      "relevance_and_implementation_limit": "借鉴已知区域按正确噪声分布约束、未知区域去噪的思想。C按DD的实际flow-matching sigma适配；没有复现其DDPM重采样跳步，不宣称论文性能迁移成功。"
+    }
+  ],
+  "only_primary_sources_used": true,
+  "engineering_guard_and_feather_not_paper_validated": true,
+  "no_paper_performance_claim_as_our_result": true,
+  "new_training_steps": 0,
+  "time": 1795153183.9272466
+}

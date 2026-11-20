@@ -1,0 +1,114 @@
+{
+  "status": "completed_scoped_causal_diagnosis_and_four_inference_variant_evaluation",
+  "reliable_scoped_conclusion_complete": true,
+  "universal_seam_fix_accepted": false,
+  "uniform_default_changed": false,
+  "all9_81_frames": true,
+  "new_training_steps": 0,
+  "new_DD_calls": 200,
+  "new_decoder_outputs": 31,
+  "public_summary": "已确认：接缝包含混合前已有的缺陷，以及遮罩时间范围、原背景与固定底图衔接引入的新增亮边/残片。保守边界处理在屋顶、室内和简单半身局部改善；尚无九例均有效、完全消缝的统一修复。",
+  "public_findings": [
+    "同一DD最终潜变量下逐帧对比：混合前已经有手、头发和背景重影；混合后另有新增或放大的白边、旧背景残片。混合前版本已含RF约束，不能据此把全部既有缺陷归罪于未经修改的DD模型。",
+    "旧遮罩额外保留过去2帧；加上末层RGB头的因果时间范围，会延长人物移开后旧背景的保留。去掉这部分支持能减少一些拖尾，但部分case的遮挡后露出区域与闪动反而退化，不能一刀切。",
+    "初版循环alpha可缩小屋顶白洞，却会擦掉N的条纹衣服，因此淘汰。保守版已强制保留独立的原人物及阴影区域，九例全部81帧RGB逐像素保护通过；这仍不保证轮廓之外没有白边。",
+    "保守版在屋顶、室内、简单D的三项背景代理指标均下降，但其余案例存在退化；J的部分指标改善也不足以判定露出区域通过。没有替换统一默认。",
+    "DD生成边界带已实测屋顶和室内各一组关闭/开启对照，均先通过50步关闭改动的完整81帧及潜变量精确复现。室内有局部量化改善，屋顶没有可靠收益，均不能标为完整接缝修复。",
+    "本轮方法全部只改推理，没有新增DD/LoRA训练，也没有生成后粘贴RGB。VAE中的静态特征替换确实改变了生成器内部背景，仍属于背景替换工程；未证明DD自身学会了静态背景或自然衔接。"
+  ],
+  "case_notes": {
+    "hardI": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "局部改善，尚未完全消缝。 边界误差-27.5%，露出误差-20.8%，闪动代理-8.1%；原人物和阴影RGB不变。",
+      "safe_alpha": "局部改善，尚未完全消缝。 边界误差-47.4%，露出误差-29.9%，闪动代理-19.6%；原人物和阴影RGB不变。",
+      "neutral32": "C1的匹配对照：DD干预关闭、相同32px/8px解码。不能把与当前4px输出的全部差异归因于DD联合修复。",
+      "joint32": "局部量化改善，手/发/窗边重影仍在，未完全修复。"
+    },
+    "simpleD": {
+      "raw": "仍存在本轮几何条件下的视角偏移；该问题独立于接缝。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "局部改善，尚未完全消缝。 边界误差-17.6%，露出误差-7.0%，闪动代理-8.8%；原人物和阴影RGB不变。",
+      "safe_alpha": "局部改善，尚未完全消缝。 边界误差-34.6%，露出误差-14.8%，闪动代理-24.5%；原人物和阴影RGB不变。 仍未解决视角偏移。"
+    },
+    "case13": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "局部白洞收小，但该方法在N误擦衣服，整体不采用。",
+      "causal": "局部改善，尚未完全消缝。 边界误差-21.4%，露出误差-10.0%，闪动代理-7.3%；原人物和阴影RGB不变。",
+      "safe_alpha": "局部改善，尚未完全消缝。 边界误差-38.8%，露出误差-18.0%，闪动代理-22.0%；原人物和阴影RGB不变。",
+      "neutral32": "C1的匹配对照：DD干预关闭、相同32px/8px解码。不能把与当前4px输出的全部差异归因于DD联合修复。",
+      "joint32": "与C0相比没有可靠的接缝收益，白带/亮边仍在，不采用为已修复结果。"
+    },
+    "hardN": {
+      "raw": "混合前已存在严重的条纹人体变形；边界专项不会把这项问题算作已修复。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "确认失败：f28–76大面积衣服/躯干部位被背景替换，不采用。",
+      "causal": "指标有退化或收益混合，不作为统一修复。 边界误差-6.4%，露出误差+5.1%，闪动代理+10.6%；原人物和阴影RGB不变。",
+      "safe_alpha": "指标有退化或收益混合，不作为统一修复。 边界误差-12.6%，露出误差+8.9%，闪动代理+7.0%；原人物和阴影RGB不变。 初版误擦已拦住；原有条纹人体变形仍在。"
+    },
+    "hardM": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "指标有退化或收益混合，不作为统一修复。 边界误差-5.8%，露出误差+53.2%，闪动代理+13.9%；原人物和阴影RGB不变。",
+      "safe_alpha": "指标有退化或收益混合，不作为统一修复。 边界误差-16.1%，露出误差+67.9%，闪动代理+11.0%；原人物和阴影RGB不变。"
+    },
+    "hardL": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "指标有退化或收益混合，不作为统一修复。 边界误差+9.4%，露出误差+95.6%，闪动代理+14.1%；原人物和阴影RGB不变。",
+      "safe_alpha": "指标有退化或收益混合，不作为统一修复。 边界误差+2.1%，露出误差+103.9%，闪动代理+9.5%；原人物和阴影RGB不变。"
+    },
+    "hardH": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "指标有退化或收益混合，不作为统一修复。 边界误差+31.2%，露出误差+137.7%，闪动代理+57.7%；原人物和阴影RGB不变。",
+      "safe_alpha": "指标有退化或收益混合，不作为统一修复。 边界误差+38.4%，露出误差+209.9%，闪动代理+73.1%；原人物和阴影RGB不变。"
+    },
+    "hardJ": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "局部改善，尚未完全消缝。 边界误差-14.9%，露出误差-0.1%，闪动代理-5.8%；原人物和阴影RGB不变。",
+      "safe_alpha": "指标有退化或收益混合，不作为统一修复。 边界误差-28.1%，露出误差+42.4%，闪动代理-12.6%；原人物和阴影RGB不变。"
+    },
+    "hardK": {
+      "raw": "同份DD的混合前解码，已含RF背景约束；用于定位处理前已有的缺陷。",
+      "current": "现有4px/4px静态特征混合输出，未因本轮实验替换默认。",
+      "alpha": "不采用的初版alpha方法：N已确认大面积误擦，不能靠alpha交集内核不变保证人物完整；本例仅保留作对照。",
+      "causal": "指标有退化或收益混合，不作为统一修复。 边界误差-5.4%，露出误差+35.7%，闪动代理+5.2%；原人物和阴影RGB不变。",
+      "safe_alpha": "指标有退化或收益混合，不作为统一修复。 边界误差-15.8%，露出误差+101.5%，闪动代理+0.5%；原人物和阴影RGB不变。"
+    }
+  },
+  "evidence_scope": {
+    "causal9_all81_selected_edges": true,
+    "conservative_alpha9_all81_selected_edges": true,
+    "joint2_all81_selected_edges_and_whole_frame_overviews": true,
+    "unconstrained_alpha_only_roof_and_N_manually_all81_reviewed": true,
+    "unconstrained_alpha_other7_automated_checks_only_not_quality_acceptance": true,
+    "not_all_pixels_or_ground_truth_or_realtime_video_visual_acceptance": true,
+    "time": 1795156151.7097864
+  },
+  "evidence": {
+    "mechanism": "boundary_mechanism_audit.json",
+    "causal": "causal_mask_actual_boundary_qualification.json",
+    "unconstrained_alpha": "RVM_actual_boundary_qualification.json",
+    "safe_alpha": "RVM_safe_actual_boundary_qualification.json",
+    "joint": "joint_actual_boundary_qualification.json",
+    "visual_reviews": "visual_reviews.json",
+    "research": "research_reference_map.json"
+  },
+  "limits": [
+    "No ground-truth target background/matte. Observed static background is a proxy, not GT.",
+    "Every primary pair reviewed at all81 selected192px edge windows shown128px overview; not exhaustive pixelwise perceptual inspection.",
+    "Only two81-frame cases underwent joint DD sampling; no full247-frame repair claim.",
+    "Inherited pre-feature defects not isolated between base DD and RF constraint in this campaign.",
+    "No trained harmony/alpha-aware DD branch and no full FlowPortal/AnyPortal/HarmoVid reproduction."
+  ],
+  "time": 1795156271.9089227
+}
