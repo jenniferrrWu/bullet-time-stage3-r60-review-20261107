@@ -127,6 +127,15 @@
       "same_method_second_strength_not_new_paper": true,
       "all7_same_parameters": true,
       "matched_zero_controls_reused": "Same exact module enabled=False; limits unused; full81 per-case original gates still required"
+    },
+    "whole_spatial_codec": {
+      "all_VAE_encode_decode_spatial_tiling": false,
+      "convolution_output_rows": 64,
+      "canvas_and_frames_unchanged": true,
+      "same_RGB_inputs_and_native_nonfirst_Gaussian_noise": true,
+      "first_GG_and_source_latents_intentionally_reencoded": true,
+      "zero_control": "Fresh exact same-worker disabled control per case before positive. No inference prior or RGB paste.",
+      "not_a_new_paper_method": "End-to-end VAE configuration diagnostic versus decoder-only diagnostic"
     }
   },
   "generation_methods": "research_and_implementation_in_progress",
@@ -135,8 +144,8 @@
   "extra_planned_tedio_results": 7,
   "extra_planned_full_DiT_predictions": 700,
   "extra_partial_prefix_evaluations_max": 210,
-  "planned_new_configuration_outputs": 42,
-  "planned_full_DiT_predictions_including_duplicate_control": 2150,
+  "planned_new_configuration_outputs": 49,
+  "planned_full_DiT_predictions_including_duplicate_control": 2850,
   "source_bound_scope": "TeDiO first-model wrapper captures initial state before the declared latent optimization; full denoiser inputs can intentionally differ after it. Source concat/camera/GG remain fixed.",
   "source_and_output_boundary_diagnostics": {
     "stage2_to_native": "Same automatic native boundary rule for all7 cases,3 crops each, actual Stage2GG / nativef0 / nativef1, no resize",
