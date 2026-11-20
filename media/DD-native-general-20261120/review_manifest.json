@@ -1,11 +1,11 @@
 {
   "page": "Stage3-DD-native-general-seams-20261120.html",
-  "page_SHA256": "f41be73ef9c3da611bba4728aea4b8078fbe222943c4a254cc338c842b333fdf",
-  "completed_new_results": 18,
+  "page_SHA256": "ef7b41178edceedfc67865c9225ff8e64fe6fffbe48b4d0b3a6d7ded0f7a77fa",
+  "completed_new_results": 21,
   "planned_new_results": 35,
-  "completed_actual_DiT_forwards": 502,
+  "completed_actual_DiT_forwards": 926,
   "planned_DiT_forwards": 1750,
-  "completed_partial_prefix_evaluations": 0,
+  "completed_partial_prefix_evaluations": 60,
   "whole_quality_passed": false,
   "case_parameters_identical": true,
   "frames_each": 81,
@@ -270,6 +270,108 @@
             }
           },
           "time": 1795169924.473803
+        },
+        "sigma_shift3": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardI/sigma_shift3/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "3079bc1860381d1a82b09b2c8f61d4ebdb35dd566a54ce389a523667e292fc37",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_sigma_shift3_3079bc186038.webm",
+              "SHA256": "54d03bbebd35454806ce02968ed6dabc21fc373ed627dcd12f56832ac92170dd",
+              "bytes": 763152,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_sigma_shift3_3079bc186038.mp4",
+              "SHA256": "5279b410a9e23ae753e5a284738e094b6eaf8823e012bb7cc0c41516ab0612b7",
+              "bytes": 15568,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_sigma_shift3_3079bc186038_clear.mp4",
+              "SHA256": "836b3469c7c1fbb866cb53bbe60745cafb95ab2c7f2e12dc7ddd89fb4d7d1c45",
+              "bytes": 286426,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795171597.3424726
+        },
+        "tedio_diagonal": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "d3a3f9d61acd4b79e093fc94103e3a57965898063c31cd2eabb7d25231dc5ff9",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_tedio_diagonal_d3a3f9d61acd.webm",
+              "SHA256": "2e1e46c729ef97e1d042cb28683ee01043b2f67a44fa53a4cc62dab963fe3bfc",
+              "bytes": 695904,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_tedio_diagonal_d3a3f9d61acd.mp4",
+              "SHA256": "2d4ac29bd56b27c8731cd8ee627f9d826e3be264d434ea0cdc30b0f53fee2855",
+              "bytes": 15012,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardI_tedio_diagonal_d3a3f9d61acd_clear.mp4",
+              "SHA256": "2a705d485c4e95a4c03fbfb81180aeb69851f7f43e900a5460be4f263d69ed4d",
+              "bytes": 254038,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795171597.448966
         }
       }
     },
@@ -843,6 +945,57 @@
             }
           },
           "time": 1795169926.3337293
+        },
+        "sigma_shift3": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/simpleD/sigma_shift3/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "be1da265b4e58da9261d3a7418740e7d527e3ebabc98f2b45ca3dd394d9aa18e",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/simpleD_sigma_shift3_be1da265b4e5.webm",
+              "SHA256": "2d4048433a9428c51c1e6c1f08c5dd933e3652c9ca0834bd7e14409265ceb185",
+              "bytes": 1562390,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/simpleD_sigma_shift3_be1da265b4e5.mp4",
+              "SHA256": "a15b88a33b9add2fe9434c449583e849bed0f18dc86fb4da4f7ce298ab606274",
+              "bytes": 16758,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/simpleD_sigma_shift3_be1da265b4e5_clear.mp4",
+              "SHA256": "514010b5f2fd9ee59bdea989f39f5434015d5b21a571af40ec380245542f0178",
+              "bytes": 418760,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795171618.2894132
         }
       }
     },
@@ -1687,5 +1840,5 @@
       }
     }
   },
-  "time": 1795169930.7618341
+  "time": 1795171620.2304714
 }
