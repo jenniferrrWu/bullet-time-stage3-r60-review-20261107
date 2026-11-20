@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "all81_native_RGB_exact": true,
+  "latent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/actual_final_latents.pt",
+  "VAE_class": "WanVideoVAE38",
+  "VAE_checkpoint": "/root/bullet_time_native_model_cache_20261115/Wan2.2_VAE.pth",
+  "options": {
+    "device": "cuda",
+    "tiled": true,
+    "tile_size": [
+      30,
+      52
+    ],
+    "tile_stride": [
+      15,
+      26
+    ]
+  },
+  "DiT_calls": 0,
+  "time": 1795205006.445917
+}

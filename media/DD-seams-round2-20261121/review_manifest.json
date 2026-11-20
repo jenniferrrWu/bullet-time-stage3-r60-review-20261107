@@ -1,8 +1,8 @@
 {
   "page": "Stage3-DD-seams-round2-20261121.html",
-  "page_SHA256": "14100b501a3c72c9b0ebb353127dc1b7a6a2c3681cdb87f679ee04360e82adb8",
-  "completed_new_results": 28,
-  "planned_new_results": 28,
+  "page_SHA256": "1d0bf009a543543c9a6efae086fe505e25ac591edec6059e9b7872b502f2de66",
+  "completed_new_results": 31,
+  "planned_new_results": 38,
   "case_parameters_identical": true,
   "frames_each": 81,
   "new_training_steps": 0,
@@ -317,6 +317,57 @@
             }
           },
           "time": 1795203873.8220325
+        },
+        "same_frame_joint_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/joint_frame_pilot/round2/hardI/same_frame_joint_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "b1e55d0ad260f19030995478c532d83ae864b8ae42d2262fc6d76c2dfd21c696",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_same_frame_joint_attention_b1e55d0ad260.webm",
+              "SHA256": "247a110215ac91daded0e5ff8621d988b385da86ebab02d6a712df61fca36520",
+              "bytes": 707392,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_same_frame_joint_attention_b1e55d0ad260.mp4",
+              "SHA256": "32288652be3199f6c58232250499977104988be6d0d197058ed2b1aebcfaa09a",
+              "bytes": 15837,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/hardI_same_frame_joint_attention_b1e55d0ad260_clear.mp4",
+              "SHA256": "505a71a422ab6b5e87d2a1bd969d11ff068c34d233cf75a783cbfdc986a7eeae",
+              "bytes": 265188,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795214088.9066923
         }
       }
     },
@@ -941,6 +992,57 @@
             }
           },
           "time": 1795203844.009063
+        },
+        "same_frame_joint_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/joint_frame_pilot/round2/simpleD/same_frame_joint_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "cf6427403a92b159a63c0dae009ece1395e22c2b1225f8069d1f2830f2c04450",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/simpleD_same_frame_joint_attention_cf6427403a92.webm",
+              "SHA256": "0d366d18ef07361b7cb316d1468ee11849d6c5f786797ef5455fcd8b550bb6da",
+              "bytes": 1536202,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/simpleD_same_frame_joint_attention_cf6427403a92.mp4",
+              "SHA256": "bf2733396b1b7ad0f4e858057f1f3e3005fb6d4499325f99f795a605fda082f0",
+              "bytes": 16949,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/simpleD_same_frame_joint_attention_cf6427403a92_clear.mp4",
+              "SHA256": "2e2475431479850901a67aa9b223edc6b1fd2a65ab755a823256bc7fc4cf2549",
+              "bytes": 408462,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795214111.174383
         }
       }
     },
@@ -1877,6 +1979,57 @@
             }
           },
           "time": 1795201843.2372334
+        },
+        "same_frame_joint_attention": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/joint_frame_pilot/round2/case13/same_frame_joint_attention/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "00c3b361c289ffdbc773ca932213722faae7f5a9c431919b23945cc475ee0e00",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/case13_same_frame_joint_attention_00c3b361c289.webm",
+              "SHA256": "008182d55fb2f19afd29aa7e10c967ef28f6874fe88531e6cfb8c358e660fe07",
+              "bytes": 1193390,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/case13_same_frame_joint_attention_00c3b361c289.mp4",
+              "SHA256": "241dba86e5aecd5f425ea3f6bbacf78ef5a30c08f72778552c5aa449a5498ee5",
+              "bytes": 15347,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-seams-round2-20261121/case13_same_frame_joint_attention_00c3b361c289_clear.mp4",
+              "SHA256": "ee62baf6d124614adf88549ab172977d1da5a9cc256fea2d2c8737c499f86d66",
+              "bytes": 482103,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795214111.6028318
         }
       }
     },
@@ -2193,5 +2346,5 @@
       }
     }
   },
-  "time": 1795203876.07707
+  "time": 1795214112.2574914
 }
