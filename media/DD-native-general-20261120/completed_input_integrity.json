@@ -1,0 +1,641 @@
+{
+  "rows": [
+    {
+      "case": "hardI",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardI/zero_velocity_first2"
+    },
+    {
+      "case": "hardH",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/zero_velocity_first2"
+    },
+    {
+      "case": "hardH",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/sigma_shift3"
+    },
+    {
+      "case": "simpleD",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/simpleD/zero_velocity_first2"
+    },
+    {
+      "case": "hardI",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardI/sigma_shift3"
+    },
+    {
+      "case": "simpleD",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/simpleD/sigma_shift3"
+    },
+    {
+      "case": "hardI",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal"
+    },
+    {
+      "case": "simpleD",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/simpleD/tedio_diagonal"
+    },
+    {
+      "case": "hardK",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardK/zero_velocity_first2"
+    },
+    {
+      "case": "hardH",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardH/tedio_diagonal"
+    },
+    {
+      "case": "hardK",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardK/sigma_shift3"
+    },
+    {
+      "case": "hardK",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardK/tedio_diagonal"
+    },
+    {
+      "case": "hardJ",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardJ/tedio_diagonal"
+    },
+    {
+      "case": "hardJ",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/zero_velocity_first2"
+    },
+    {
+      "case": "hardJ",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/sigma_shift3"
+    },
+    {
+      "case": "case13",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/zero_velocity_first2"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/heldout_chalkboard/tedio_diagonal"
+    },
+    {
+      "case": "case13",
+      "method": "tedio_diagonal",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/case13/tedio_diagonal"
+    },
+    {
+      "case": "case13",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/sigma_shift3"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "zero_velocity_first2",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/zero_velocity_first2"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "sigma_shift3",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/sigma_shift3"
+    },
+    {
+      "case": "hardI",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardI/tedio_stronger"
+    },
+    {
+      "case": "simpleD",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/simpleD/tedio_stronger"
+    },
+    {
+      "case": "hardJ",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardJ/tedio_stronger"
+    },
+    {
+      "case": "hardK",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardK/tedio_stronger"
+    },
+    {
+      "case": "case13",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/case13/tedio_stronger"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/heldout_chalkboard/tedio_stronger"
+    },
+    {
+      "case": "hardH",
+      "method": "tedio_stronger",
+      "initial_tensor_bit_exact": {
+        "latents": true,
+        "concat_latent": true,
+        "control_latents": true
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardH/tedio_stronger_retry1"
+    },
+    {
+      "case": "hardH",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardH/whole_spatial_codec"
+    },
+    {
+      "case": "simpleD",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec"
+    },
+    {
+      "case": "hardI",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardI/whole_spatial_codec"
+    },
+    {
+      "case": "hardJ",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardJ/whole_spatial_codec"
+    },
+    {
+      "case": "hardK",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardK/whole_spatial_codec"
+    },
+    {
+      "case": "case13",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/case13/whole_spatial_codec"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "whole_spatial_codec",
+      "initial_tensor_bit_exact": {
+        "latents": false,
+        "concat_latent": false,
+        "control_latents": false
+      },
+      "nonfirst_initial_noise_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_latent_pinned_all50": true,
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec"
+    }
+  ],
+  "checked_outputs": 35,
+  "codec_comparisons": [
+    {
+      "case": "hardH",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.0003524423809722066,
+          "max_abs": 0.1328125
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.005838458426296711,
+          "max_abs": 0.1875
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00025868890224955976,
+          "max_abs": 0.01123046875
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179156.8036518
+    },
+    {
+      "case": "simpleD",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00034460905590094626,
+          "max_abs": 0.130859375
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.006252191960811615,
+          "max_abs": 0.19873046875
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00021348851441871375,
+          "max_abs": 0.01123046875
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179158.0109122
+    },
+    {
+      "case": "hardI",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.0004535684420261532,
+          "max_abs": 0.15234375
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.008870399557054043,
+          "max_abs": 0.18359375
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00024286845291499048,
+          "max_abs": 0.01123046875
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179159.167406
+    },
+    {
+      "case": "hardJ",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00039795879274606705,
+          "max_abs": 0.1484375
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.006367581430822611,
+          "max_abs": 0.15625
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00025182077661156654,
+          "max_abs": 0.010498046875
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179160.2971432
+    },
+    {
+      "case": "hardK",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00048431576578877866,
+          "max_abs": 0.15234375
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.00889601930975914,
+          "max_abs": 0.1875
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.0002859809319488704,
+          "max_abs": 0.01025390625
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179161.5342326
+    },
+    {
+      "case": "case13",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00029505323618650436,
+          "max_abs": 0.12890625
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.006765220779925585,
+          "max_abs": 0.1640625
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00027521984884515405,
+          "max_abs": 0.01025390625
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179162.6710052
+    },
+    {
+      "case": "heldout_chalkboard",
+      "comparisons": {
+        "latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00037667667493224144,
+          "max_abs": 0.1484375
+        },
+        "concat_latent": {
+          "bit_exact": false,
+          "mean_abs": 0.005748013034462929,
+          "max_abs": 0.1640625
+        },
+        "control_latents": {
+          "bit_exact": false,
+          "mean_abs": 0.00024391483748331666,
+          "max_abs": 0.01123046875
+        }
+      },
+      "native_nonfirst_noise_bit_exact": true,
+      "source_RGB_prompt_seed_camera_LoRA_exact": true,
+      "first_and_source_latents_intentionally_reencoded": true,
+      "local_code_fact": "Original WarpControl already uses VAE.encode(tiled=False) by default. This ablation changes GG/source encoding tiling and decoding tiling; complete-neighborhood row-bounded convolutions may also change BF16 arithmetic.",
+      "time": 1795179163.8668356
+    }
+  ],
+  "source_RGB_prompt_seed_camera_LoRA_exact_all": true,
+  "whole_spatial_codec_intentionally_reencodes_latent_conditions": true,
+  "zero_new_DD_calls": true,
+  "time": 1795179163.8891509
+}

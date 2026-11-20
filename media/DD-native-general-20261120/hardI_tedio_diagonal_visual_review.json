@@ -1,0 +1,46 @@
+{
+  "case": "hardI",
+  "method": "tedio_diagonal",
+  "verdict_zh": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+  "reviewer": "Codex visual inspection",
+  "scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+  "evidence": [
+    {
+      "case": "hardI",
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/original_pixel_boundary_f03.png",
+      "SHA256": "935ea2bbbfbc51c5e6257e019dac6624cfcd633b90dfa59d413408ffa576855f"
+    },
+    {
+      "case": "hardI",
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/original_pixel_boundary_f40.png",
+      "SHA256": "d02351c7be81c43456ea11996c5af1f4fc6e75b4ae2747f4f0c147bdfb811c34"
+    },
+    {
+      "case": "hardI",
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/original_pixel_boundary_f80.png",
+      "SHA256": "f008b74f6f93ac4c2accd9e3e023422175b188226bf50af082cb8525c477c84f"
+    }
+  ],
+  "context_grid": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/visual_grid/tedio_diagonal_whole_scene_late_context.jpg",
+  "whole_quality_passed": false,
+  "not_per_case_parameters": true,
+  "previous_review": null,
+  "time": 1795177903.4660404,
+  "additional_review_scope": "Inspected resized contact evidence covering all81 automatic native-selected192px boundary crops, with tiny full-scene context. This is not exhaustive all81 full-resolution manual quality acceptance.",
+  "additional_evidence": [
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/all81_boundary_overview_0.jpg",
+      "SHA256": "3c4b7c8b1057824b140cf2c89962de8eff1670f22929ce66592200e200f21748"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/all81_boundary_overview_1.jpg",
+      "SHA256": "072eb8f2354fb48e68782469f15f551e6c98574ba6736e4710c98ba9bc34fb58"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/all81_boundary_overview_2.jpg",
+      "SHA256": "025be9cf189e3cc3997ea9610bf8f3e5b3d921238872e9a8a201ac3689ba1155"
+    }
+  ],
+  "additional_grid": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/visual_grid/all81/hardI_tedio_diagonal.jpg",
+  "updated": 1795178665.0785868
+}

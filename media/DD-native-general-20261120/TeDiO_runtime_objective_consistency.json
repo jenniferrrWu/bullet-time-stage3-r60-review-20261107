@@ -1,0 +1,301 @@
+{
+  "rows": [
+    {
+      "case": "hardI",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 13,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal"
+    },
+    {
+      "case": "simpleD",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/simpleD/tedio_diagonal"
+    },
+    {
+      "case": "hardH",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 14,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardH/tedio_diagonal"
+    },
+    {
+      "case": "hardK",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardK/tedio_diagonal"
+    },
+    {
+      "case": "hardJ",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 13,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardJ/tedio_diagonal"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/heldout_chalkboard/tedio_diagonal"
+    },
+    {
+      "case": "case13",
+      "method": "tedio_diagonal",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.015625,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.01,
+        "max_RMS_delta": 0.0005,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/case13/tedio_diagonal"
+    },
+    {
+      "case": "hardI",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 14,
+      "actual_max_coefficient_change_after_BFloat16": 0.05078125,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardI/tedio_stronger"
+    },
+    {
+      "case": "simpleD",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.05078125,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/simpleD/tedio_stronger"
+    },
+    {
+      "case": "hardJ",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 14,
+      "actual_max_coefficient_change_after_BFloat16": 0.0546875,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardJ/tedio_stronger"
+    },
+    {
+      "case": "hardK",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.05078125,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardK/tedio_stronger"
+    },
+    {
+      "case": "case13",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.05078125,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/case13/tedio_stronger"
+    },
+    {
+      "case": "heldout_chalkboard",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 12,
+      "actual_max_coefficient_change_after_BFloat16": 0.05078125,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/heldout_chalkboard/tedio_stronger"
+    },
+    {
+      "case": "hardH",
+      "method": "tedio_stronger",
+      "all10_identical_state_grad_vs_nograd_objectives_bit_exact": true,
+      "max_delta": 0.0,
+      "accepted_updates": 15,
+      "actual_max_coefficient_change_after_BFloat16": 0.05078125,
+      "partial_prefix_evaluations": 30,
+      "settings": {
+        "block_index": 1,
+        "active_steps": 5,
+        "iterations": 3,
+        "top_k": 1,
+        "max_coefficient_delta": 0.05,
+        "max_RMS_delta": 0.0025,
+        "reference": "https://arxiv.org/abs/2605.14136",
+        "adaptation": "target temporal half only, native first latent fixed; trust bounds + reject uphill steps; not official reproduction",
+        "enabled": true
+      },
+      "work": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardH/tedio_stronger_retry1"
+    }
+  ],
+  "all_checked_identical": true,
+  "scope": "Compare each accepted candidate no-grad loss to the next grad-enabled loss at identical state, and rejected state to its unchanged next loss; production14 runs only. Trust bounds are pre-quantization, actual BF16 deltas are recorded separately.",
+  "time": 1795179163.8844202
+}

@@ -1,0 +1,34 @@
+{
+  "case": "heldout_chalkboard",
+  "method": "whole_spatial_codec",
+  "verdict_zh": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+  "scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+  "evidence": [
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/all81_boundary_overview_0.jpg",
+      "SHA256": "c953478534af9dcc1b6b73d11da0af557675ed68af33b64ae93c6ae2f390ee99"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/all81_boundary_overview_1.jpg",
+      "SHA256": "f1d2e0893ef015165cf06232b69d1db70dea0cfb3dc302567bfcf981544bb91f"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/all81_boundary_overview_2.jpg",
+      "SHA256": "a116620310947919d8c951e56fbb455235b9772a2df1c72ffb13c6d7900fb475"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/original_pixel_boundary_f40.png",
+      "SHA256": "585260fe9ce484e6425cd0f4d6b4d71cf1385b697e91dcd592d7a088f443943a"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/original_pixel_boundary_f79.png",
+      "SHA256": "286f72eba02e8869f3bad788624475e05be9ff1ebb1f4b7ae98de4e9a91a7e7a"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/original_pixel_boundary_f80.png",
+      "SHA256": "af334fc8020f6ef0fa47ebc84907d720d3b1d59ae52fad14357ae98699f2b5ff"
+    }
+  ],
+  "whole_quality_passed": false,
+  "time": 1795179270.6401944
+}

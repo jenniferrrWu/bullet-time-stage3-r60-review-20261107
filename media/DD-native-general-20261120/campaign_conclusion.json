@@ -1,0 +1,1524 @@
+{
+  "status": "batch_evaluated_no_universal_mitigation_adopted",
+  "objective_remains_unresolved": true,
+  "completed_configuration_results": 49,
+  "configuration_count": 7,
+  "case_count": 7,
+  "configurations_are_NOT_49_methods": true,
+  "frames_each": 81,
+  "verified_output_RGB_frames": 3969,
+  "complete_DD_predictions": 2850,
+  "full_prediction_inventory": [
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/simpleD/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "49a226b9d84682ccd9a5011ec61e356c1188384f30a29f7b46ca83e7447140fd"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/simpleD/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "6031e4981fc6192662d82359bc5fa8eae067bdd46f1b11149247f909683608ce"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "1c825a1600f3bad8c1b000f425c7555c882d03cb06fcd85e394274f20e507386"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "2dca916839990d67700bf5ed6822bd7ea7db33768227458a5500464e9e6c2c35"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "7a30ba1f710fe5b275df7da5666388076951ebc7465749cfeccb77941f0334b3"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardK/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "901d9948c3af3cb4247dd7900f2d7d87975ed7fb7fe1c29990bf3db8870c70dc"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardI/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "0837a0d4fd4ef5698e9a4f5d89d723d31c7e4e9644f09ffdbc10529643b279ae"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardI/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "577b2669f0f67f5d369a843dd035ebd653c9c7cb622d155d6f80ffc08b3d292d"
+    },
+    {
+      "path": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/tedio/hardH/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "2dca916839990d67700bf5ed6822bd7ea7db33768227458a5500464e9e6c2c35"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "5b481c09b442fc88e0d44bd6539bca47a5d97bfaefaa9803e1ddcb92f26f2a2f"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f7db26bb479e1ec634c759759593d8f61b0789cba123e6234cc5833467d3ec9a"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "8365122e6e0605bdf20be99fc9fc74aa9e7ec4e1607581aec41c3ed5b85f6f93"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardK/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "3f544fb9ca7aa69e3e7dfcd7dfcb56cd86e3eb208a4ff880e0d6b81cf7dbc31f"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardK/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "d65975ac05a51a3a7aa8b68dd29b5650b2b27e1c1195438d7e6727bfb5afe774"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "0a83e38ab87c529f314d89b88641659298668c7827b37ec21707b662e75fc4c1"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "a028e685bc0636ee2292d96ab03c37e8138e9cbfd630ee624f3739f4a08fd0f9"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "e6c7ba1ef62ab54e016139704b0fdcae845c5c65652c6886072760060d07a341"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardI/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "e70924fd9e6f1d0f51bf386ceb2405949c5ece701b1385c1b20f4deeda071e95"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f036e53b25b61f724364e7ae8395311469a322f9965dfb69dc57928fa40d16fd"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f21b6cb73b4361fbbc6fbf6078b1569566d296662f3469678ab33423fbf440ad"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/zero_velocity_first2/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "6b7cc9f819ea989a980573e151deee02ce6b5709c51cc606b3c8218b5667ec5a"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/simpleD/sigma_shift3/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "ac68ff47bc88db28c1319525e7de53c9351cbcc561c3b185d35bbfc818fb8867"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/heldout_chalkboard/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "5b481c09b442fc88e0d44bd6539bca47a5d97bfaefaa9803e1ddcb92f26f2a2f"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/heldout_chalkboard/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "d77e0ab5ff08d30d71b82641105b5c3ba5e58c41c16aa5d1ab14b07eaaca1bef"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardK/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "901d9948c3af3cb4247dd7900f2d7d87975ed7fb7fe1c29990bf3db8870c70dc"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardK/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f27e6f12135e169e164f88713b81c7aef2d6320b0abd1ba83f214e62b1fee562"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/case13/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "0a83e38ab87c529f314d89b88641659298668c7827b37ec21707b662e75fc4c1"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/case13/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "7b14b91b56fc934cc96acd720dbad1c95bf5f209ef0678bda74dd78f84a90cac"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "577b2669f0f67f5d369a843dd035ebd653c9c7cb622d155d6f80ffc08b3d292d"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "79655a23a1be0d2d1900357d7f87a4292229de08069a154ba618e024bf1afe76"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardJ/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f036e53b25b61f724364e7ae8395311469a322f9965dfb69dc57928fa40d16fd"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardJ/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "48bd6464b16906cfe182cfe66a61786358c8707f7515f98cf7be4421e0226976"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardH/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "2dca916839990d67700bf5ed6822bd7ea7db33768227458a5500464e9e6c2c35"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardH/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "3b8889005df7e41094e12ddf30137b7ca608c3e07634f2fdc5eaf52dc9905e98"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/simpleD/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "6031e4981fc6192662d82359bc5fa8eae067bdd46f1b11149247f909683608ce"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/simpleD/tedio_diagonal/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "6c3cc084d12eda5bab6370bf76ecc6c434ac8933ed3dfbf39665ce064ca5ed89"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/heldout_chalkboard/tedio_stronger/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "760b4cbece4cf597d3e50f93d30210c42932b8e2b491f388d13158a472824373"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardK/tedio_stronger/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "9003cf1e07e6ab56d9d122758ca6aeeb121bcf059d3c283281841705456fa0d8"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/case13/tedio_stronger/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "251573224363fbbb6d287b1cac2e42d1fc51ab2dca48fa496ada79fbdcd28c0a"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardI/tedio_stronger/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "78fdff503da181056c5faa08ab23151159945a05ac2855bcb900fe79729e0ccc"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardJ/tedio_stronger/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "ebd61cdaa486f946fac3d8e53e526aeddc77461aae2cf693f2d62883037cd38b"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardH/tedio_stronger_retry1/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "e46b63dbbf6e20028b9a196a615d7bd90f9475cb99978b50ed3f00f19543afc2"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/simpleD/tedio_stronger/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "ed10269662072c790bb238416a9a7b7899f021b4b0bc9410cc457addc21973c5"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "203429ab13ae871f201988d6d050281c7d7e4571cd1e3515d8751fd72eec2c29"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "5b481c09b442fc88e0d44bd6539bca47a5d97bfaefaa9803e1ddcb92f26f2a2f"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardK/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "285234689c4d691edfe4214c0d273237f93a64a0eb5a537b4c1efcb618e02ac3"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardK/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "901d9948c3af3cb4247dd7900f2d7d87975ed7fb7fe1c29990bf3db8870c70dc"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/case13/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f99bf1a851cf79c0eccd426b3f31ba8b906918b270180f473b569991b1591d51"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/case13/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "0a83e38ab87c529f314d89b88641659298668c7827b37ec21707b662e75fc4c1"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardI/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "30401664758d25c3782b8a7785a576d1fdf9d3e62c927cace21db76ba0099a0e"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardI/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "577b2669f0f67f5d369a843dd035ebd653c9c7cb622d155d6f80ffc08b3d292d"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardJ/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "593c2c987ddb4f39a4c945a764294a28c1b638d5391e2dfe65acf9b595282750"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardJ/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "f036e53b25b61f724364e7ae8395311469a322f9965dfb69dc57928fa40d16fd"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardH/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "5bb4b25dfa813fa9a703c491f50273cc734207c432c495973b9cb10bb2f0a3d0"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardH/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "2dca916839990d67700bf5ed6822bd7ea7db33768227458a5500464e9e6c2c35"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "a083823c03ed092c789f65877ab8f670506089689b922795552203137579a495"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/zero_native/diagnostic_tensor_trace.json",
+      "actual_predictions": 50,
+      "SHA256": "6031e4981fc6192662d82359bc5fa8eae067bdd46f1b11149247f909683608ce"
+    }
+  ],
+  "partial_DiT_prefix_evaluations": 420,
+  "partial_passes_are_NOT_full_predictions": true,
+  "extra_diagnostic_probe_calls_not_counted_as_outputs": true,
+  "new_training_steps": 0,
+  "new_weights": false,
+  "RGB_background_paste": false,
+  "per_case_tuning": false,
+  "native_first_RGB_exact_for_all28_sampling_results": true,
+  "source_RGB_prompt_seed_camera_LoRA_exact_for_all35_new_sampling_results": true,
+  "full_codec_latent_conditions_intentionally_reencoded": true,
+  "TeDiO_all14_objective_checks_passed": true,
+  "whole_quality_passed": false,
+  "default_method": "unchanged_V7_native_DD",
+  "method_results": [
+    {
+      "method": "sigma_shift3",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "七例近身和窄边界变化代理均增大，检查帧没有可靠消缝收益；不采用。",
+      "near8to32_change_percent_range": [
+        5.1368419273439825,
+        107.37009171284946
+      ],
+      "narrow0to8_change_percent_range": [
+        1.9884192758565788,
+        45.95298363709679
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "hardH",
+          "mean_RGB_change": 1.63748311849288,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 1.058977111428976,
+            "change_percent": 5.909199352878769
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.3220450170338154,
+            "change_percent": 0.6068333674007942
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 4.667128580808639,
+            "change_percent": 1.9884192758565788
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/sigma_shift3/evaluation.json"
+        },
+        {
+          "case": "hardI",
+          "mean_RGB_change": 3.911635952231325,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 2.0810373440384864,
+            "change_percent": 53.82500532207046
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 0.15917075462639332,
+            "change_percent": 64.3656655280606
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 5.527366381883621,
+            "change_percent": 20.901361466263335
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardI/sigma_shift3/evaluation.json"
+        },
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 0.7306906476064965,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.6783560015261173,
+            "change_percent": 5.346935180631895
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.3745893944054842,
+            "change_percent": 6.284227726727498
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 3.818139672279358,
+            "change_percent": 2.84477274901358
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/simpleD/sigma_shift3/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 0.174951577168188,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 0.42247556038200856,
+            "change_percent": 6.122167397842526
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 0.2183647185564041,
+            "change_percent": 2.109958669118228
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 0.9943314418196678,
+            "change_percent": 4.983982936153297
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardK/sigma_shift3/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 3.254345824689041,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 0.7091741885989904,
+            "change_percent": 13.937845683879102
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 1.6287819154560566,
+            "change_percent": 22.678346660211023
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 1.5253064289689064,
+            "change_percent": 4.18369413598767
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/sigma_shift3/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 10.24651699743153,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 2.0765969276428224,
+            "change_percent": 107.37009171284946
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 0.8472500748932361,
+            "change_percent": 90.74069500363713
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 5.050418198108673,
+            "change_percent": 45.95298363709679
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/sigma_shift3/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 0.2393258578247494,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.4262771926820278,
+            "change_percent": 5.1368419273439825
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.2945660138502717,
+            "change_percent": 5.341652229076876
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.5167903535068035,
+            "change_percent": 3.2570427672009794
+          },
+          "visual_verdict": "边界问题仍在，未看到可靠消缝收益；本配置七例近身变化代理均增大，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/sigma_shift3/evaluation.json"
+        }
+      ]
+    },
+    {
+      "method": "tedio_diagonal",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "注意力目标真实下降，但七例检查证据仍接近原生，未形成可见通用消缝收益。",
+      "near8to32_change_percent_range": [
+        -0.5505898538436305,
+        0.09434500955551872
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.7084029074689191,
+        1.8793345770854453
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "hardI",
+          "mean_RGB_change": 0.18777528699533438,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 1.3454115338623525,
+            "change_percent": -0.5505898538436305
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 0.09703698763623833,
+            "change_percent": 0.20401732155754804
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 4.657717680931091,
+            "change_percent": 1.8793345770854453
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardI/tedio_diagonal/evaluation.json"
+        },
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 0.1804651540738565,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.644533222913742,
+            "change_percent": 0.09434500955551872
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.352579303458333,
+            "change_percent": 0.03918834907565838
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 3.69454140663147,
+            "change_percent": -0.4844494989354464
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/simpleD/tedio_diagonal/evaluation.json"
+        },
+        {
+          "case": "hardH",
+          "mean_RGB_change": 0.1530540783280208,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 0.9994067288935184,
+            "change_percent": -0.048485144155951954
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.3159464083611965,
+            "change_percent": 0.14273290289787965
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 4.543718335032463,
+            "change_percent": -0.7084029074689191
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardH/tedio_diagonal/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 0.04028410379441432,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 0.3982549667358398,
+            "change_percent": 0.03816601544373022
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 0.21367377182468772,
+            "change_percent": -0.08358422582003255
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 0.9498627804219723,
+            "change_percent": 0.288871232931176
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardK/tedio_diagonal/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 0.16011927019298813,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 0.6220315098762512,
+            "change_percent": -0.06273307436117648
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 1.3257097281515597,
+            "change_percent": -0.14877003625537455
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 1.4638923063874245,
+            "change_percent": -0.011102424979025916
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/hardJ/tedio_diagonal/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 0.10496941374407874,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.40532902888953687,
+            "change_percent": -0.02980508809247162
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.2798072434961796,
+            "change_percent": 0.06367316540987211
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.4692402973771095,
+            "change_percent": 0.02002443568600576
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/heldout_chalkboard/tedio_diagonal/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 0.2270749216830289,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 0.9975740224123001,
+            "change_percent": -0.3817188765598334
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 0.44366874508559706,
+            "change_percent": -0.1172294972270449
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 3.4628710046410562,
+            "change_percent": 0.07415925814340252
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio/case13/tedio_diagonal/evaluation.json"
+        }
+      ]
+    },
+    {
+      "method": "tedio_stronger",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "同方法固定强度增大五倍，仍未得到清晰通用收益；不是另一项论文方法。",
+      "near8to32_change_percent_range": [
+        -0.6965599679352175,
+        0.20911607341882466
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.8190967535853133,
+        1.6453334083252225
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "hardI",
+          "mean_RGB_change": 0.14305256914209435,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 1.3445512756705285,
+            "change_percent": -0.614177958744655
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 0.09742678487673402,
+            "change_percent": 0.606536509240363
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 4.614209163188934,
+            "change_percent": 0.9276627198250509
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardI/tedio_stronger/evaluation.json"
+        },
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 0.20654492770080213,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.6436503402888775,
+            "change_percent": -0.04276438203898447
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.35393083840608597,
+            "change_percent": 0.4226664995865548
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 3.6987769842147826,
+            "change_percent": -0.37036068830884616
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/simpleD/tedio_stronger/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 0.21959687171526898,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 0.6237235587090254,
+            "change_percent": 0.20911607341882466
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 1.3257473237812518,
+            "change_percent": -0.14593836821651385
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 1.464241474121809,
+            "change_percent": 0.012746936533103437
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardJ/tedio_stronger/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 0.04386779649850027,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 0.3975452195852995,
+            "change_percent": -0.14011626401327915
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 0.21241334481164814,
+            "change_percent": -0.6729749985499578
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 0.9471525833010673,
+            "change_percent": 0.002721890440304797
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardK/tedio_stronger/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 0.25925488622836124,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 0.9944212146103382,
+            "change_percent": -0.6965599679352175
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 0.4419927578419447,
+            "change_percent": -0.494543092285471
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 3.517238420248032,
+            "change_percent": 1.6453334083252225
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/case13/tedio_stronger/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 0.1105202877043206,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.4051701031625271,
+            "change_percent": -0.0690024679327772
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.2802336448803544,
+            "change_percent": 0.21616131478807699
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.4706638544797896,
+            "change_percent": 0.11693453027694645
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/heldout_chalkboard/tedio_stronger/evaluation.json"
+        },
+        {
+          "case": "hardH",
+          "mean_RGB_change": 0.2686463675381225,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 0.9968359507620335,
+            "change_percent": -0.30559084614045773
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.3161526501178742,
+            "change_percent": 0.15842777696051247
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 4.538652834296227,
+            "change_percent": -0.8190967535853133
+          },
+          "visual_verdict": "检查帧的轮廓与全景均接近原生DD；已有重影仍在，没有清晰可见的通用改善。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/tedio_stronger/hardH/tedio_stronger_retry1/evaluation.json"
+        }
+      ]
+    },
+    {
+      "method": "vae_full_spatial_bounded_conv",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "同latent取消空间分块，检查到的重影仍在；不能据此排除所有VAE因素。",
+      "near8to32_change_percent_range": [
+        0.3816409876419291,
+        6.416708372029656
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.18284797258851793,
+        1.8991080890365053
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 0.2752647109237718,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.6822097904980182,
+            "change_percent": 5.945418655546719
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.3745423279702663,
+            "change_percent": 6.270873318424175
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 3.7338269263505937,
+            "change_percent": 0.5737387012432427
+          },
+          "visual_verdict": "肩部/衣褶/发缘对照近似，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/simpleD/vae_full_spatial_bounded_conv/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 0.19533454249670476,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 0.6457247018814087,
+            "change_percent": 3.743879317687737
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 1.3430817157030106,
+            "change_percent": 1.1596719907529085
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 1.4800537206232547,
+            "change_percent": 1.0927779531355153
+          },
+          "visual_verdict": "袖口/裤脚及既有淡残留近似，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardJ/vae_full_spatial_bounded_conv/evaluation.json"
+        },
+        {
+          "case": "hardH",
+          "mean_RGB_change": 0.1899671326448888,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 1.0037075236439705,
+            "change_percent": 0.3816409876419291
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.316410306841135,
+            "change_percent": 0.17803529916218253
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 4.567768442630768,
+            "change_percent": -0.18284797258851793
+          },
+          "visual_verdict": "舞者轮廓与背景阴影走向基本一致，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardH/vae_full_spatial_bounded_conv/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 0.1920445809761683,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.43146640956401827,
+            "change_percent": 6.416708372029656
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.29967449214309455,
+            "change_percent": 7.1685281021905745
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.4968430243432522,
+            "change_percent": 1.8991080890365053
+          },
+          "visual_verdict": "板缘/发缘和持物形状基本一致，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/heldout_chalkboard/vae_full_spatial_bounded_conv/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 0.2758697129694032,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 1.0386927269399167,
+            "change_percent": 3.724417184560269
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 0.4688968941569328,
+            "change_percent": 5.562362432143186
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 3.4889838993549347,
+            "change_percent": 0.8288007047307921
+          },
+          "visual_verdict": "头发/手臂及既有半透明重影在对照中仍在，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/case13/vae_full_spatial_bounded_conv/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 0.0758074089700793,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 0.4047586016356945,
+            "change_percent": 1.6718222461444165
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 0.2239709916524589,
+            "change_percent": 4.731519138732643
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 0.9483066335320472,
+            "change_percent": 0.12456937977942673
+          },
+          "visual_verdict": "手臂与浅墙轮廓和既有模糊近似，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardK/vae_full_spatial_bounded_conv/evaluation.json"
+        },
+        {
+          "case": "hardI",
+          "mean_RGB_change": 0.10659363212776773,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 1.3683600582182407,
+            "change_percent": 1.1457068951266303
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 0.1018739259801805,
+            "change_percent": 5.198820493071943
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 4.589133286476136,
+            "change_percent": 0.37917227698518463
+          },
+          "visual_verdict": "窗帘/手臂/头发附近既有模糊残留基本一致，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardI/vae_full_spatial_bounded_conv/evaluation.json"
+        }
+      ]
+    },
+    {
+      "method": "vae_larger_overlap",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "同latent扩大解码块与重叠，未看到可靠通用消缝收益。",
+      "near8to32_change_percent_range": [
+        -0.17135175753457688,
+        0.9237200563106063
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.14909497865440713,
+        0.3924003529732767
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 0.28755310656111915,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.6428570203483105,
+            "change_percent": -0.16596492005794827
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.3473835106939077,
+            "change_percent": -1.435041379909352
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 3.709888109564781,
+            "change_percent": -0.07107327095665639
+          },
+          "visual_verdict": "肩部/衣褶/发缘对照近似，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/simpleD/vae_larger_overlap/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 0.20384262649365414,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 0.6228311907500028,
+            "change_percent": 0.06574582046416921
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 1.3265421979129315,
+            "change_percent": -0.08606918416425025
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 1.462291596084833,
+            "change_percent": -0.12043646396177055
+          },
+          "visual_verdict": "袖口/裤脚及既有淡残留近似，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardJ/vae_larger_overlap/evaluation.json"
+        },
+        {
+          "case": "hardH",
+          "mean_RGB_change": 0.22078453261911132,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 0.9990644969046116,
+            "change_percent": -0.08271205571701579
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.3128784731030465,
+            "change_percent": -0.09073513133833755
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 4.569313025474548,
+            "change_percent": -0.14909497865440713
+          },
+          "visual_verdict": "舞者轮廓与背景阴影走向基本一致，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardH/vae_larger_overlap/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 0.2096201753542747,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.40761253125965596,
+            "change_percent": 0.5333970532592547
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.2770315006375313,
+            "change_percent": -0.9289781424280386
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.47471029907465,
+            "change_percent": 0.3924003529732767
+          },
+          "visual_verdict": "板缘/发缘和持物形状基本一致，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/heldout_chalkboard/vae_larger_overlap/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 0.27507135529577,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 1.010646642744541,
+            "change_percent": 0.9237200563106063
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 0.44428175650537016,
+            "change_percent": 0.020777246847214492
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 3.473202234506607,
+            "change_percent": 0.3727234095403098
+          },
+          "visual_verdict": "头发/手臂及既有半透明重影在对照中仍在，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/case13/vae_larger_overlap/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 0.08437213274063887,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 0.3974208701401949,
+            "change_percent": -0.17135175753457688
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 0.21551851462572813,
+            "change_percent": 0.7790396101854835
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 0.9464635647833347,
+            "change_percent": -0.07002639576088043
+          },
+          "visual_verdict": "手臂与浅墙轮廓和既有模糊近似，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardK/vae_larger_overlap/evaluation.json"
+        },
+        {
+          "case": "hardI",
+          "mean_RGB_change": 0.12411546881920026,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 1.3558062821626664,
+            "change_percent": 0.2177635912292919
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 0.09745108336210251,
+            "change_percent": 0.631628032669318
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 4.573899877071381,
+            "change_percent": 0.04596839478112624
+          },
+          "visual_verdict": "窗帘/手臂/头发附近既有模糊残留基本一致，未见明显消缝收益。",
+          "manual_review_scope": "All81 automatically selected boundary crops and tiny whole-scene overviews; NOT exhaustive pixels or a fine halo acceptance",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardI/vae_larger_overlap/evaluation.json"
+        }
+      ]
+    },
+    {
+      "method": "whole_spatial_codec",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "完整空间编解码重新生成七例后，仍未看到可靠通用消缝收益。",
+      "near8to32_change_percent_range": [
+        0.21581427766745875,
+        6.988997762148652
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.6071390574099333,
+        3.1049913843810284
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "hardH",
+          "mean_RGB_change": 0.30325384346055395,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 1.0020494364202022,
+            "change_percent": 0.21581427766745875
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.3175582572817803,
+            "change_percent": 0.2653936396180612
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 4.591190454363823,
+            "change_percent": 0.3289814984780426
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardH/whole_spatial_codec/evaluation.json"
+        },
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 0.48956599721202143,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.6827601529657841,
+            "change_percent": 6.030888525478062
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.37452631928026675,
+            "change_percent": 6.266331088241128
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 3.689986523985863,
+            "change_percent": -0.6071390574099333
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/evaluation.json"
+        },
+        {
+          "case": "hardI",
+          "mean_RGB_change": 0.28936544134293074,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 1.3596498630940914,
+            "change_percent": 0.5018713507204842
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 0.10036069061607122,
+            "change_percent": 3.636197143661901
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 4.626727977395058,
+            "change_percent": 1.201489634289099
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardI/whole_spatial_codec/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 0.49039902841603317,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 0.6474289804697037,
+            "change_percent": 4.017693331109595
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 1.330543178319931,
+            "change_percent": 0.2152809577380621
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 1.4783696964383126,
+            "change_percent": 0.9777532884061912
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardJ/whole_spatial_codec/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 0.10399074843268336,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 0.40678674578666685,
+            "change_percent": 2.181274326406357
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 0.22478264356032013,
+            "change_percent": 5.111057295415278
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 0.950880030542612,
+            "change_percent": 0.39627502689307814
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/hardK/whole_spatial_codec/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 0.4820261060455699,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 1.0507428102195262,
+            "change_percent": 4.9277450146156365
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 0.4757898453623056,
+            "change_percent": 7.114166725231774
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 3.552430605888367,
+            "change_percent": 2.6623589878784104
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/case13/whole_spatial_codec/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 0.24139536641262196,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.43378675617277623,
+            "change_percent": 6.988997762148652
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.30127823650836943,
+            "change_percent": 7.742053469163146
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.5145568005740642,
+            "change_percent": 3.1049913843810284
+          },
+          "visual_verdict": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+          "manual_review_scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/heldout_chalkboard/whole_spatial_codec/evaluation.json"
+        }
+      ]
+    },
+    {
+      "method": "zero_velocity_first2",
+      "completed_cases": 7,
+      "adopted": false,
+      "conclusion_zh": "多例场景结构和背景明显退化，已有边缘问题未解决；不采用。只代表本轮zero-init单项。",
+      "near8to32_change_percent_range": [
+        9.505028558652162,
+        698.5247956960263
+      ],
+      "narrow0to8_change_percent_range": [
+        9.422973086044939,
+        400.8193434587705
+      ],
+      "proxy_is_NOT_quality_acceptance": true,
+      "per_case": [
+        {
+          "case": "hardI",
+          "mean_RGB_change": 40.633457089647834,
+          "near8to32": {
+            "native": 1.3528602451086045,
+            "variant": 2.8715903528034685,
+            "change_percent": 112.26067978462507
+          },
+          "far_fixed32": {
+            "native": 0.09683941844850778,
+            "variant": 2.2257616937160494,
+            "change_percent": 2198.404646966719
+          },
+          "narrow0to8": {
+            "native": 4.5717982947826385,
+            "variant": 5.7507082402706144,
+            "change_percent": 25.786569517586866
+          },
+          "visual_verdict": "检查帧出现明显背景/场景结构改变，已有边缘问题未解决；不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardI/zero_velocity_first2/evaluation.json"
+        },
+        {
+          "case": "hardH",
+          "mean_RGB_change": 16.970128895323953,
+          "near8to32": {
+            "native": 0.9998915277421474,
+            "variant": 1.1939367026090622,
+            "change_percent": 19.406622566858587
+          },
+          "far_fixed32": {
+            "native": 1.3140707969665528,
+            "variant": 1.2055316254496575,
+            "change_percent": -8.25976589445948
+          },
+          "narrow0to8": {
+            "native": 4.576135814189911,
+            "variant": 6.70214654803276,
+            "change_percent": 46.458645900552355
+          },
+          "visual_verdict": "未看到可靠消缝收益；这一统一配置在多例引入背景/场景退化，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/hardH/zero_velocity_first2/evaluation.json"
+        },
+        {
+          "case": "simpleD",
+          "mean_RGB_change": 3.5367049243715076,
+          "near8to32": {
+            "native": 0.6439257111400366,
+            "variant": 0.7444558382034302,
+            "change_percent": 15.612069113595473
+          },
+          "far_fixed32": {
+            "native": 0.3524411875754595,
+            "variant": 0.42321683317422865,
+            "change_percent": 20.081547813879077
+          },
+          "narrow0to8": {
+            "native": 3.712526723742485,
+            "variant": 4.314640799164772,
+            "change_percent": 16.218444208674
+          },
+          "visual_verdict": "未看到可靠消缝收益；这一统一配置在多例引入背景/场景退化，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/sampling/simpleD/zero_velocity_first2/evaluation.json"
+        },
+        {
+          "case": "hardK",
+          "mean_RGB_change": 42.92174308682665,
+          "near8to32": {
+            "native": 0.39810302667319775,
+            "variant": 3.1789513804018497,
+            "change_percent": 698.5247956960263
+          },
+          "far_fixed32": {
+            "native": 0.21385251879692077,
+            "variant": 3.7461941808462145,
+            "change_percent": 1651.7652828787516
+          },
+          "narrow0to8": {
+            "native": 0.947126803547144,
+            "variant": 4.743394239246845,
+            "change_percent": 400.8193434587705
+          },
+          "visual_verdict": "检查帧出现明显背景/场景结构改变，已有边缘问题未解决；不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardK/zero_velocity_first2/evaluation.json"
+        },
+        {
+          "case": "hardJ",
+          "mean_RGB_change": 21.478378266464045,
+          "near8to32": {
+            "native": 0.6224219743162394,
+            "variant": 1.9127049122005702,
+            "change_percent": 207.30035106838395
+          },
+          "far_fixed32": {
+            "native": 1.3276849254965781,
+            "variant": 4.027198620885611,
+            "change_percent": 203.32487351088707
+          },
+          "narrow0to8": {
+            "native": 1.4640548519790173,
+            "variant": 2.5136569425463677,
+            "change_percent": 71.69144579170408
+          },
+          "visual_verdict": "检查帧出现明显背景/场景结构改变，已有边缘问题未解决；不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/hardJ/zero_velocity_first2/evaluation.json"
+        },
+        {
+          "case": "case13",
+          "mean_RGB_change": 26.355594711539187,
+          "near8to32": {
+            "native": 1.0013965420424937,
+            "variant": 2.895901446044445,
+            "change_percent": 189.1862838010039
+          },
+          "far_fixed32": {
+            "native": 0.44418946616351607,
+            "variant": 1.971664172410965,
+            "change_percent": 343.87909273047717
+          },
+          "narrow0to8": {
+            "native": 3.460304868221283,
+            "variant": 6.066439071297646,
+            "change_percent": 75.31516159199019
+          },
+          "visual_verdict": "手部仍有重影，背景和构图发生改变；未看到可靠消缝收益，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/case13/zero_velocity_first2/evaluation.json"
+        },
+        {
+          "case": "heldout_chalkboard",
+          "mean_RGB_change": 1.0561479245438987,
+          "near8to32": {
+            "native": 0.4054498735815287,
+            "variant": 0.443987999856472,
+            "change_percent": 9.505028558652162
+          },
+          "far_fixed32": {
+            "native": 0.27962919473648074,
+            "variant": 0.30677188355475665,
+            "change_percent": 9.706672024662822
+          },
+          "narrow0to8": {
+            "native": 1.468946149200201,
+            "variant": 1.6073645494878293,
+            "change_percent": 9.422973086044939
+          },
+          "visual_verdict": "未看到可靠消缝收益；这一统一配置在多例引入背景/场景退化，不采用。",
+          "manual_review_scope": "Viewed three native/candidate original-pixel192x192 boundary pairs at the same native-selected worst pair, frame40 and frame80; also inspected reduced late whole-scene contact sheet including frame40,60,80 and method-selected worst frame. No claim of exhaustive manual all81 full-frame or dynamic video review.",
+          "evaluation": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/sampling/heldout_chalkboard/zero_velocity_first2/evaluation.json"
+        }
+      ]
+    }
+  ],
+  "causal_findings_zh": [
+    "原生DD不含静态背景特征混合，检查位置仍有边缘重影，因此不能把全部缝隙归因于后续合成。",
+    "七例Stage2→原生f0→f1的同规则原像素取样显示：部分软轮廓在输入已存在，部分重影在后续帧增加。",
+    "只更改空间VAE配置、采样时间分配或本轮注意力对角约束都没有形成可靠通用改善；尚不能唯一归因为条件、去噪器或时间VAE解码。"
+  ],
+  "limits_zh": [
+    "七例是现有回归集，不是独立未见测试集；黑板此前已见。",
+    "本轮固定一个seed和81帧；未覆盖屋顶247帧完整尾段。",
+    "指标共用估计遮罩，遮罩不是GT；相邻帧变化包含真实动作/阴影。",
+    "人工检查覆盖自动边界图及说明的原像素/全景取样，不声称逐像素人工验收所有完整帧。",
+    "TeDiO是DD条件视频适配，CFG-Zero*只测zero-init单项，不能推出原论文完整方法均无效。"
+  ],
+  "evidence_snapshot": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/final_evaluation_evidence_v1/manifest.json",
+  "time": 1795179644.012611
+}

@@ -1,0 +1,34 @@
+{
+  "case": "simpleD",
+  "method": "whole_spatial_codec",
+  "verdict_zh": "完整空间编解码仍未消除检查位置的边缘重影；没有看到可靠的通用消缝收益，未采用。",
+  "scope": "Inspected all81 automatic boundary crops and tiny full-scene context in resized contact sheets; also inspected three original-pixel192x192 boundary pairs and resized late whole-scene context. This does not cover every pixel and is not full-resolution dynamic video acceptance.",
+  "evidence": [
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/all81_boundary_overview_0.jpg",
+      "SHA256": "aa11aa2ff61807a4be114ea2d108049cc00bc0854fc4dccb2b8407abe7fed1f7"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/all81_boundary_overview_1.jpg",
+      "SHA256": "d5e2604a44028bfc9e9e8f7c3c84dab0b8dc50a31be1ecc93d6d74a602a83985"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/all81_boundary_overview_2.jpg",
+      "SHA256": "c31c87c003e071cb1d555c9e989acc4aa41ccb81bef2d45abb3931f0ddd82344"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/original_pixel_boundary_f13.png",
+      "SHA256": "6e9d895eb7bd81fa7b039218b96222121b7b7667f7e7a2b68e336c1ab8d805da"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/original_pixel_boundary_f40.png",
+      "SHA256": "4126940fa2000d618c77c86552e700857bce12f3ed022d8ca47fc9ad52d87f5e"
+    },
+    {
+      "path": "/root/bullet_time_original_review_20261114/native_general_local_runs_20261120/whole_spatial_codec/simpleD/whole_spatial_codec/original_pixel_boundary_f80.png",
+      "SHA256": "018a247db9edec9ea0cbb45a10eacf75645c37aa2b31bb5b3d48e73ede14c574"
+    }
+  ],
+  "whole_quality_passed": false,
+  "time": 1795179270.6120582
+}

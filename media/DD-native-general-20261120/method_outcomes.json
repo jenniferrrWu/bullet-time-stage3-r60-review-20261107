@@ -1,0 +1,190 @@
+{
+  "completed_new_results": 49,
+  "planned_new_results": 49,
+  "rows": [
+    {
+      "method": "vae_larger_overlap",
+      "title": "解码：更大分块与重叠",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "已检查的逐帧边界图没有显示可靠的通用消缝收益；局部代理有升有降，未采用。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        -0.17135175753457688,
+        0.9237200563106063
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.14909497865440713,
+        0.3924003529732767
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    },
+    {
+      "method": "vae_full_spatial_bounded_conv",
+      "title": "解码：完整空间邻域",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "取消空间分块仍未消除检查位置的重影/软边，未采用。只能说明本配置未奏效，不能排除所有VAE因素。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        0.3816409876419291,
+        6.416708372029656
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.18284797258851793,
+        1.8991080890365053
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    },
+    {
+      "method": "zero_velocity_first2",
+      "title": "采样：最初两步预测置零",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "多例出现明显场景结构变化，已有边缘问题仍在；不采用。此结果仅针对本轮zero-init单项。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        9.505028558652162,
+        698.5247956960263
+      ],
+      "narrow0to8_change_percent_range": [
+        9.422973086044939,
+        400.8193434587705
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    },
+    {
+      "method": "sigma_shift3",
+      "title": "采样：时间分配对照",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "七例近身变化代理均增大，检查帧未见可靠消缝收益；不采用。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        5.1368419273439825,
+        107.37009171284946
+      ],
+      "narrow0to8_change_percent_range": [
+        1.9884192758565788,
+        45.95298363709679
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    },
+    {
+      "method": "tedio_diagonal",
+      "title": "TeDiO思路：时序注意力约束",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "内部注意力目标实际下降，但检查帧的边界仍接近原生DD，没有清晰可见的通用改善；未采用。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        -0.5505898538436305,
+        0.09434500955551872
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.7084029074689191,
+        1.8793345770854453
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    },
+    {
+      "method": "tedio_stronger",
+      "title": "TeDiO · 同方法统一较强档",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "统一增加强度后仍没有清晰的通用收益；这是一项方法的第二档参数，不算新方法。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        -0.6965599679352175,
+        0.20911607341882466
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.8190967535853133,
+        1.6453334083252225
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    },
+    {
+      "method": "whole_spatial_codec",
+      "title": "VAE · 全编解码整幅空间对照",
+      "completed_cases": 7,
+      "planned_cases": 7,
+      "interpretation_zh": "已完成例尚未证明可靠消缝收益；保持同一套编解码规则，不对个别case补丁。结果判断以本行实际覆盖范围为限。",
+      "adopted": false,
+      "cases": [
+        "hardI",
+        "hardH",
+        "simpleD",
+        "hardK",
+        "hardJ",
+        "case13",
+        "heldout_chalkboard"
+      ],
+      "near8to32_change_percent_range": [
+        0.21581427766745875,
+        6.988997762148652
+      ],
+      "narrow0to8_change_percent_range": [
+        -0.6071390574099333,
+        3.1049913843810284
+      ],
+      "proxy_is_NOT_quality_acceptance": true
+    }
+  ],
+  "no_universal_mitigation_adopted": true,
+  "time": 1795179853.5211987
+}
