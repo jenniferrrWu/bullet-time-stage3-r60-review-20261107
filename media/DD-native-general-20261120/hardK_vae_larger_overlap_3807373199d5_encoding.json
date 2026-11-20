@@ -1,0 +1,51 @@
+{
+  "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_general_seam_mitigation_20261120/vae/hardK/vae_larger_overlap/native_decoded_RGB_lossless.mkv",
+  "source_SHA256": "3807373199d59c3fb230adac8cb4e831106cd9b20401dcc1b4274822270b7f76",
+  "frames": 81,
+  "fps": 25,
+  "explicit_frame_timestamp_assignment": true,
+  "scaled320_YUV420_all_frames_exact": true,
+  "not_original1280_RGB_lossless": true,
+  "files": {
+    "precise": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardK_vae_larger_overlap_3807373199d5.webm",
+      "SHA256": "f5dac8de7ff9769ed7ac39af5d762fb1be9cd159aa3afc6dcaa89f869eed5ee3",
+      "bytes": 505913,
+      "probe": {
+        "width": 320,
+        "height": 176,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    },
+    "light": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardK_vae_larger_overlap_3807373199d5.mp4",
+      "SHA256": "d6e8fe052484f99d98d4b68db2503b82117e4c37879e39d4e9ad85e1b6b4512c",
+      "bytes": 8364,
+      "probe": {
+        "width": 320,
+        "height": 176,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    },
+    "clear": {
+      "path": "/root/bullet_time_original_review_20261114/repository/media/DD-native-general-20261120/hardK_vae_larger_overlap_3807373199d5_clear.mp4",
+      "SHA256": "629709d1d2ccabf97d9cfc97222e5d89c9a1c420e34271175a13376809a6f6fd",
+      "bytes": 154518,
+      "probe": {
+        "width": 1280,
+        "height": 704,
+        "r_frame_rate": "25/1",
+        "nb_read_frames": "81",
+        "verified_duration": 3.24,
+        "all81_timestamps_verified": true
+      }
+    }
+  },
+  "time": 1795167241.9728725
+}
