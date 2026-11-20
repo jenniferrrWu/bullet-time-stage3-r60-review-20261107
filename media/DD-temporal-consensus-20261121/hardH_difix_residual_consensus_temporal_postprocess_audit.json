@@ -1,0 +1,747 @@
+{
+  "case": "hardH",
+  "method": "difix_residual_consensus",
+  "settings": {
+    "cases": {
+      "hardI": {
+        "label": "HardI · 室内女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef"
+      },
+      "hardH": {
+        "label": "HardH · 男舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2"
+      },
+      "simpleD": {
+        "label": "简单 D · 半身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592"
+      },
+      "hardK": {
+        "label": "HardK · 交叉摆臂",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467"
+      },
+      "hardJ": {
+        "label": "HardJ · 抬膝转身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38"
+      },
+      "case13": {
+        "label": "屋顶女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd"
+      },
+      "heldout_chalkboard": {
+        "label": "未调参新例 · 黑板讲解",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06"
+      }
+    },
+    "source": "frozen native DD from V7, without RF",
+    "same_parameters_for_all_cases": true,
+    "first_RGB_anchor_preserved": true,
+    "flow_model": "torchvision.raft_large/C_T_SKHT_V2",
+    "flow_precision": "float32",
+    "flow_updates": 12,
+    "FB_limit_pixels": 1.5,
+    "photometric_RGB_limit": 24.0,
+    "residual_correction_clip": 16.0,
+    "native_consensus_strength": 0.5,
+    "new_project_training_steps": 0,
+    "extra_pretrained_flow_weights": true,
+    "static_background_paste": false,
+    "method_scope": "General post-generation neighbor consensus; not an added DD generation block or paper reproduction.",
+    "research_sources": [
+      "https://docs.pytorch.org/vision/0.24/models/generated/torchvision.models.optical_flow.raft_large.html",
+      "https://arxiv.org/abs/2003.12039",
+      "https://perso.liris.cnrs.fr/nbonneel/consistency/"
+    ],
+    "quality_passed": false,
+    "time": 1795216369.095494
+  },
+  "all81_source_native_RGB_verified": true,
+  "all81_processed_source_RGB_verified": true,
+  "all81_output_RGB_verified": true,
+  "closed_branch_exact": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/temporal_consensus/round2/hardH/closed_branch_native_RGB_exact.json",
+  "first_RGB_exact_native": true,
+  "actual_DiT_calls": 0,
+  "actual_additional_RAFT_calls": 0,
+  "reused_RAFT_cache": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/temporal_consensus/flows/hardH/record.json",
+  "frame_statistics": [
+    {
+      "frame": 0,
+      "GG_anchor_bypass": true,
+      "accepted_fraction": 0.0,
+      "changed_fraction": 0.0,
+      "mean_RGB_change": 0.0
+    },
+    {
+      "frame": 1,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7899769176136363,
+      "changed_fraction": 0.55858154296875,
+      "mean_RGB_change": 0.6553869843482971,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 2,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7971535422585228,
+      "changed_fraction": 0.5921464399857954,
+      "mean_RGB_change": 0.6471242904663086,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 3,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8259543678977272,
+      "changed_fraction": 0.6055519797585227,
+      "mean_RGB_change": 0.5991044640541077,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 4,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7714854847301137,
+      "changed_fraction": 0.5697864879261364,
+      "mean_RGB_change": 0.5564759969711304,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 5,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8000998757102272,
+      "changed_fraction": 0.5418701171875,
+      "mean_RGB_change": 0.519973635673523,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 6,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8363492098721591,
+      "changed_fraction": 0.5922096946022727,
+      "mean_RGB_change": 0.5436678528785706,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 7,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8338734019886364,
+      "changed_fraction": 0.6158746892755682,
+      "mean_RGB_change": 0.5562511086463928,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 8,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8535100763494318,
+      "changed_fraction": 0.6302068536931819,
+      "mean_RGB_change": 0.5899010896682739,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 9,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8577903053977273,
+      "changed_fraction": 0.6152798739346591,
+      "mean_RGB_change": 0.5400257706642151,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 10,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8055908203125,
+      "changed_fraction": 0.5900190873579545,
+      "mean_RGB_change": 0.5014089941978455,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 11,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.81240234375,
+      "changed_fraction": 0.5976207386363637,
+      "mean_RGB_change": 0.48155146837234497,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 12,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8678921786221591,
+      "changed_fraction": 0.644775390625,
+      "mean_RGB_change": 0.5392888784408569,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 13,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8770696466619318,
+      "changed_fraction": 0.6513971502130682,
+      "mean_RGB_change": 0.539430558681488,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 14,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.9057361949573863,
+      "changed_fraction": 0.6650224165482954,
+      "mean_RGB_change": 0.5947624444961548,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 15,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8984030983664772,
+      "changed_fraction": 0.6474564985795455,
+      "mean_RGB_change": 0.5988999009132385,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 16,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8620150479403409,
+      "changed_fraction": 0.6567160866477273,
+      "mean_RGB_change": 0.6382572054862976,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 17,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8461814186789772,
+      "changed_fraction": 0.58304443359375,
+      "mean_RGB_change": 0.5595588684082031,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 18,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.844845303622159,
+      "changed_fraction": 0.6233165394176137,
+      "mean_RGB_change": 0.5901574492454529,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 19,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8137739701704545,
+      "changed_fraction": 0.6129649769176136,
+      "mean_RGB_change": 0.5792754292488098,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 20,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8172219016335227,
+      "changed_fraction": 0.5870527787642046,
+      "mean_RGB_change": 0.5515695214271545,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 21,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8344515713778409,
+      "changed_fraction": 0.6100186434659091,
+      "mean_RGB_change": 0.5945819020271301,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 22,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8200672496448863,
+      "changed_fraction": 0.5995982776988636,
+      "mean_RGB_change": 0.5845810174942017,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 23,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7836503462357954,
+      "changed_fraction": 0.5453857421875,
+      "mean_RGB_change": 0.5152968764305115,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 24,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7727428089488636,
+      "changed_fraction": 0.5974298650568182,
+      "mean_RGB_change": 0.6403745412826538,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 25,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8080067027698864,
+      "changed_fraction": 0.6639992453835227,
+      "mean_RGB_change": 0.7478263974189758,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 26,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8247214577414773,
+      "changed_fraction": 0.6784656871448863,
+      "mean_RGB_change": 0.8002349138259888,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 27,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.831302157315341,
+      "changed_fraction": 0.6034612482244318,
+      "mean_RGB_change": 0.586442768573761,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 28,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8802778764204545,
+      "changed_fraction": 0.6285466974431818,
+      "mean_RGB_change": 0.5816502571105957,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 29,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8651755593039773,
+      "changed_fraction": 0.5906938032670455,
+      "mean_RGB_change": 0.5373165011405945,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 30,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8195234818892045,
+      "changed_fraction": 0.6307306463068182,
+      "mean_RGB_change": 0.647275984287262,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 31,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8221968217329545,
+      "changed_fraction": 0.5535955255681818,
+      "mean_RGB_change": 0.5506754517555237,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 32,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8506691672585227,
+      "changed_fraction": 0.5860129616477273,
+      "mean_RGB_change": 0.5306119322776794,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 33,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8011330344460227,
+      "changed_fraction": 0.5673628373579546,
+      "mean_RGB_change": 0.5196451544761658,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 34,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7155872691761364,
+      "changed_fraction": 0.5191206498579546,
+      "mean_RGB_change": 0.5035722255706787,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 35,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.6858609286221591,
+      "changed_fraction": 0.4776067560369318,
+      "mean_RGB_change": 0.4529496729373932,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 36,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.755917080965909,
+      "changed_fraction": 0.5592018821022727,
+      "mean_RGB_change": 0.5148681402206421,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 37,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8142134232954545,
+      "changed_fraction": 0.567745694247159,
+      "mean_RGB_change": 0.47226378321647644,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 38,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.812625399502841,
+      "changed_fraction": 0.5872580788352273,
+      "mean_RGB_change": 0.49795255064964294,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 39,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7861483487215909,
+      "changed_fraction": 0.55750732421875,
+      "mean_RGB_change": 0.46474534273147583,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 40,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.811767578125,
+      "changed_fraction": 0.5837602095170454,
+      "mean_RGB_change": 0.49564245343208313,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 41,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7440141157670455,
+      "changed_fraction": 0.5248457475142045,
+      "mean_RGB_change": 0.44486159086227417,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 42,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7468172940340909,
+      "changed_fraction": 0.5387473366477272,
+      "mean_RGB_change": 0.49332016706466675,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 43,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8287198153409091,
+      "changed_fraction": 0.526904296875,
+      "mean_RGB_change": 0.46520960330963135,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 44,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8130237926136363,
+      "changed_fraction": 0.67406005859375,
+      "mean_RGB_change": 0.7446596026420593,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 45,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8373635031960227,
+      "changed_fraction": 0.5093228426846591,
+      "mean_RGB_change": 0.49093499779701233,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 46,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8510431463068182,
+      "changed_fraction": 0.5776278409090909,
+      "mean_RGB_change": 0.49265098571777344,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 47,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8216008966619318,
+      "changed_fraction": 0.6096646395596591,
+      "mean_RGB_change": 0.5339484810829163,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 48,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8241421786221591,
+      "changed_fraction": 0.5872591885653409,
+      "mean_RGB_change": 0.4924848973751068,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 49,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8455533114346591,
+      "changed_fraction": 0.5944968483664773,
+      "mean_RGB_change": 0.5314723253250122,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 50,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8515147816051136,
+      "changed_fraction": 0.5936179421164772,
+      "mean_RGB_change": 0.5188727974891663,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 51,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8079134854403409,
+      "changed_fraction": 0.5870860706676136,
+      "mean_RGB_change": 0.5682502388954163,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 52,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8230668501420455,
+      "changed_fraction": 0.59442138671875,
+      "mean_RGB_change": 0.6028664112091064,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 53,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8375543767755682,
+      "changed_fraction": 0.6065684925426137,
+      "mean_RGB_change": 0.5741147994995117,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 54,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8287242542613636,
+      "changed_fraction": 0.6071999289772727,
+      "mean_RGB_change": 0.5477842092514038,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 55,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8413307883522727,
+      "changed_fraction": 0.6077192826704545,
+      "mean_RGB_change": 0.5247148275375366,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 56,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8803733132102273,
+      "changed_fraction": 0.6243141867897727,
+      "mean_RGB_change": 0.5310491323471069,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 57,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8884610262784091,
+      "changed_fraction": 0.6243408203125,
+      "mean_RGB_change": 0.5200961232185364,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 58,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8967151988636364,
+      "changed_fraction": 0.6558094371448864,
+      "mean_RGB_change": 0.5773988962173462,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 59,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.9010553533380682,
+      "changed_fraction": 0.6490611683238636,
+      "mean_RGB_change": 0.5592924952507019,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 60,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8746570933948864,
+      "changed_fraction": 0.6175315163352273,
+      "mean_RGB_change": 0.5196633338928223,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 61,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8047119140625,
+      "changed_fraction": 0.5500765713778409,
+      "mean_RGB_change": 0.4642537534236908,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 62,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.776025390625,
+      "changed_fraction": 0.5510109641335227,
+      "mean_RGB_change": 0.48414602875709534,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 63,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.81158447265625,
+      "changed_fraction": 0.5701970880681818,
+      "mean_RGB_change": 0.48757991194725037,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 64,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8779196999289772,
+      "changed_fraction": 0.6286021839488637,
+      "mean_RGB_change": 0.5615123510360718,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 65,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7983598188920454,
+      "changed_fraction": 0.5655262340198863,
+      "mean_RGB_change": 0.503660261631012,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 66,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.7956886985085228,
+      "changed_fraction": 0.5638505415482955,
+      "mean_RGB_change": 0.5150820016860962,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 67,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8788785067471591,
+      "changed_fraction": 0.6322121360085228,
+      "mean_RGB_change": 0.547605574131012,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 68,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8480657404119318,
+      "changed_fraction": 0.5917746803977273,
+      "mean_RGB_change": 0.5190222263336182,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 69,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8545188210227272,
+      "changed_fraction": 0.5973721590909091,
+      "mean_RGB_change": 0.5248379707336426,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 70,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8785122958096591,
+      "changed_fraction": 0.6122780539772728,
+      "mean_RGB_change": 0.5524236559867859,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 71,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8923961292613637,
+      "changed_fraction": 0.6239779385653409,
+      "mean_RGB_change": 0.5482288599014282,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 72,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8928855202414773,
+      "changed_fraction": 0.5987082741477273,
+      "mean_RGB_change": 0.5288008451461792,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 73,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8370316938920455,
+      "changed_fraction": 0.56685791015625,
+      "mean_RGB_change": 0.4681037664413452,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 74,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8322187943892045,
+      "changed_fraction": 0.5351950905539773,
+      "mean_RGB_change": 0.46453043818473816,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 75,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8977228338068182,
+      "changed_fraction": 0.6164495294744318,
+      "mean_RGB_change": 0.5106194019317627,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 76,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.9159901012073863,
+      "changed_fraction": 0.6343639026988637,
+      "mean_RGB_change": 0.5210737586021423,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 77,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.923526278409091,
+      "changed_fraction": 0.6168523615056818,
+      "mean_RGB_change": 0.48895448446273804,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 78,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.90325927734375,
+      "changed_fraction": 0.618587979403409,
+      "mean_RGB_change": 0.5070582628250122,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 79,
+      "GG_anchor_bypass": false,
+      "accepted_fraction": 0.8984519264914773,
+      "changed_fraction": 0.7250155362215909,
+      "mean_RGB_change": 0.7142089605331421,
+      "RGB_max_abs_change": 16.0
+    },
+    {
+      "frame": 80,
+      "GG_anchor_bypass": false,
+      "endpoint_no_two_neighbors": true,
+      "accepted_fraction": 0.0,
+      "changed_fraction": 0.0,
+      "mean_RGB_change": 0.0
+    }
+  ],
+  "uses_neighbor_generated_RGB_or_corrections": true,
+  "static_background_paste": false,
+  "new_project_training_steps": 0,
+  "quality_passed": false,
+  "time": 1795217580.5044081
+}

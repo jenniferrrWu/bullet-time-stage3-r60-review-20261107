@@ -1,0 +1,748 @@
+{
+  "case": "hardI",
+  "actual_DiT_calls": 0,
+  "actual_refiner_UNet_calls": 81,
+  "frame40_duplicate_calls": 1,
+  "frames_refined": 80,
+  "first_frame_passthrough": true,
+  "source_all81_hashes_verified": true,
+  "all81_lossless_output_hashes_verified": true,
+  "settings": {
+    "cases": {
+      "hardI": {
+        "label": "HardI · 室内女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef"
+      },
+      "hardH": {
+        "label": "HardH · 男舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2"
+      },
+      "simpleD": {
+        "label": "简单 D · 半身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592"
+      },
+      "hardK": {
+        "label": "HardK · 交叉摆臂",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467"
+      },
+      "hardJ": {
+        "label": "HardJ · 抬膝转身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38"
+      },
+      "case13": {
+        "label": "屋顶女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd"
+      },
+      "heldout_chalkboard": {
+        "label": "未调参新例 · 黑板讲解",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06"
+      }
+    },
+    "method": "difix_pretrained_whole_frame",
+    "new_project_training_steps": 0,
+    "extra_pretrained_weights": "nvidia/difix",
+    "DD_weights_and_outputs_frozen": true,
+    "whole_frame_refinement_frames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "frame0_bypassed_to_preserve_Stage2_handoff": true,
+    "background_pasting": false,
+    "per_case_parameters": false,
+    "prompt": "remove degradation",
+    "timesteps": [
+      199
+    ],
+    "num_inference_steps": 1,
+    "guidance_scale": 0.0,
+    "seed_per_frame": 42,
+    "precision": "float32",
+    "planned_outputs": 7,
+    "risks": [
+      "Image model has no video temporal conditioning.",
+      "Domain transfer from 3D render artifacts to DD-generated people is unverified.",
+      "First-frame bypass may introduce a visible startup transition."
+    ],
+    "quality_passed": false,
+    "time": 1795214273.2113543
+  },
+  "per_frame": [
+    {
+      "frame": 0,
+      "source_RGB_SHA256": "81cd1ef307a585e4c036845816f05c833e77f6052ebf1b9522097f9729e2b67a",
+      "output_RGB_SHA256": "81cd1ef307a585e4c036845816f05c833e77f6052ebf1b9522097f9729e2b67a",
+      "mean_RGB_change": 0.0,
+      "refiner_bypass": true
+    },
+    {
+      "frame": 1,
+      "source_RGB_SHA256": "e42dfe6b555847f8d601df52b1f13b297a313d94f93eb03b90599969aa98d108",
+      "output_RGB_SHA256": "1ee90867eec925622f56b3eecd61929c8c10ed41dc90a13e8fd32477a8cd745d",
+      "mean_RGB_change": 2.9542839527130127,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 2,
+      "source_RGB_SHA256": "d7c45f9a7ced283cb675032b5d405ed4b1a235acb0bc64ef34b1b6c298259c66",
+      "output_RGB_SHA256": "2bcf6b5fce6dcd334d1bc1bcc7cb792d6c30410ded6bf083867c51441986b4b9",
+      "mean_RGB_change": 2.9602367877960205,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 3,
+      "source_RGB_SHA256": "1ca36846f02aae0c18f28a6c481dcd0ff33d23d49b8f29d27c88138c70acc79d",
+      "output_RGB_SHA256": "11443d941e4fd9266018c7b968e3eeb16d053bda13953331fc7e07fd2bb89a06",
+      "mean_RGB_change": 2.9463307857513428,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 4,
+      "source_RGB_SHA256": "444cf141067c21b145618f828dc7469b2e182f183ea372c4c5b765706f908166",
+      "output_RGB_SHA256": "00efa6eb4a7e127b452be81fa8a79970d274751049ff5480bdc6eb4bf5a99150",
+      "mean_RGB_change": 2.895199775695801,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 5,
+      "source_RGB_SHA256": "06aadaa3bea964ac395ccd1e720691b8f263a4ab8351ce17f812702ae92a5cf8",
+      "output_RGB_SHA256": "ffcd047c2a76c9996c378ca80a716dcedecf2190746ed2ec9b5c26dd7c8a7be2",
+      "mean_RGB_change": 2.958944320678711,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 6,
+      "source_RGB_SHA256": "1b4b7c54d1e06c889352d1c3d5daa9a0bbc00bfa1fdb9cc9614f3005f91bb6e4",
+      "output_RGB_SHA256": "d19a523868f2f8ff2156685b9487d35116de05c84a81018eeb794e222c8d000b",
+      "mean_RGB_change": 2.8943164348602295,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 7,
+      "source_RGB_SHA256": "3e1f513a51448c06aa891c2c791e755774e7c4ea697348a70d6c86e4a5714a84",
+      "output_RGB_SHA256": "1cc86b7d80a2cf2c81e8a604cd3d8087f6e9f91ff235b6c8b79711757a8be44c",
+      "mean_RGB_change": 2.832730770111084,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 8,
+      "source_RGB_SHA256": "59826b912b33d6abb0071052881d248e9dcdaf7d368d8dda6546e3aafc9f8fd9",
+      "output_RGB_SHA256": "1e9700a66407d9c31ec8b259477b7d41ac7b7a7d84a543a8425aa2b28e73e572",
+      "mean_RGB_change": 2.7898781299591064,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 9,
+      "source_RGB_SHA256": "247f0c819819707d4c24b1de4a9d98cce90f0c868d515668745455fa161017ae",
+      "output_RGB_SHA256": "aadfe55f6d80ea7612c81afd80f8b185a899113a82bbebd989eedefebf5f84ad",
+      "mean_RGB_change": 2.705965995788574,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 10,
+      "source_RGB_SHA256": "3827c29023dcbce948fef9896ce21e13f46776f2481d91baead5a67ebd3440a5",
+      "output_RGB_SHA256": "ae7ed9af26b74715c65d8b9d3171610c0039e5f55fe754ebf3179213c6d2c2aa",
+      "mean_RGB_change": 2.6525328159332275,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 11,
+      "source_RGB_SHA256": "acffbb6343f5b41fb3ca7f7d114471155aad0088ca702853deda609097fd2ee2",
+      "output_RGB_SHA256": "5c2c6278e028423f92f365d8bd8c7769d615dbf9f4ba0eed105b9a56bed87b3b",
+      "mean_RGB_change": 2.7512433528900146,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 12,
+      "source_RGB_SHA256": "6a7caaa930ad3b47b113afbf33cbddc64251040294cb438b6c56a4abe4853dfd",
+      "output_RGB_SHA256": "a7e6285a560a9f219f1ae007da343a9b798d0193176d570ae46b10c6ac54d85b",
+      "mean_RGB_change": 2.7197351455688477,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 13,
+      "source_RGB_SHA256": "8dc227be681d441a51cf4a077146c484c75e09f64e75807c0f104d853b35221c",
+      "output_RGB_SHA256": "b3c4e1d88f2935a5311bfb14ddf84cee311e675cdc1552f1f8e0a0c843216ce3",
+      "mean_RGB_change": 2.743597984313965,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 14,
+      "source_RGB_SHA256": "59594fd043e979fb5c7dff1c85663e43aea4083770c42774b0a9c1176da1294c",
+      "output_RGB_SHA256": "fb8767f461234478a97000321d9c151ef96b5e94dcde84f7186f76a542463233",
+      "mean_RGB_change": 2.7407078742980957,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 15,
+      "source_RGB_SHA256": "56d49e036a03805d378c202e18490e33982e5a5b87d79ec51cde80cd01cbd6da",
+      "output_RGB_SHA256": "783111919d99d94a337972345f8f79423cf30eaa3c3e036fbffeb755a45dd16f",
+      "mean_RGB_change": 2.675309896469116,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 16,
+      "source_RGB_SHA256": "b4248f234a1ee83012d7a5d67c985ccb7f15af3322ba81e018112285738ff1e8",
+      "output_RGB_SHA256": "11286bdda4e53bdff2527c4c27bca9c27d1e3a6913378c9845c3d6af5fbeed79",
+      "mean_RGB_change": 2.697991371154785,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 17,
+      "source_RGB_SHA256": "99a3f51984f301f2e11a1fe3abcf69b3cfe743adf2603195973d139552546659",
+      "output_RGB_SHA256": "915de5e8e202b7101cbb82d53765d2f1fb2feac414489b36d99c98aed4fe9ab2",
+      "mean_RGB_change": 2.6290183067321777,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 18,
+      "source_RGB_SHA256": "08fc5f167850b4fa23e5b55c834ec5b7605d2851529a40e68d86cadcbdcd579a",
+      "output_RGB_SHA256": "c86fedc83fdb6b0a64f6443a5217709471f36222a4fa06d1d37b5ee1701a29c8",
+      "mean_RGB_change": 2.6830365657806396,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 19,
+      "source_RGB_SHA256": "bca542e5d86cf1a2c1afe0793b2ea9c8b20408e01014e191b5298789e5120d98",
+      "output_RGB_SHA256": "0f27e6bb6660b492eeb619f7ea439972741e99855156a2b60305ba8563fec194",
+      "mean_RGB_change": 2.673563003540039,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 20,
+      "source_RGB_SHA256": "936ad6ab8e2023520778577c3dc50d4c135bd2fce1433c2f23a4ae6511cf9fa9",
+      "output_RGB_SHA256": "99aec71ba5116848fc2b825ef70ef1ac92e27e75ab12a3599860ec68222b76a5",
+      "mean_RGB_change": 2.6699044704437256,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 21,
+      "source_RGB_SHA256": "1df100d1669e5caa8e4c51f88ac82c9b8f04513e59f3ab2fc886b06db8aa81f8",
+      "output_RGB_SHA256": "6ccea7a75b657f56e536ae8c8b36bd6824f855ac1f5a4a673167d6a17acf46e9",
+      "mean_RGB_change": 2.592991352081299,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 22,
+      "source_RGB_SHA256": "717c65a60002f11d8c7e343e743d49dd93f39c190e3a2b3b497f5cf3cf26115b",
+      "output_RGB_SHA256": "a18cc076eedc24c04810c9a52e7486d7c47d6d424542730d816d0c49f1e80893",
+      "mean_RGB_change": 2.54443621635437,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 23,
+      "source_RGB_SHA256": "aef40a170ce5729c2c8ff80168f3116df873feb2a79c5e132a3c16ee8034b193",
+      "output_RGB_SHA256": "1f34e01dceb9d964c41a343ee542385d6f0a1f5fefcced5b6ec6d8e3c1ec4bb2",
+      "mean_RGB_change": 2.4891114234924316,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 24,
+      "source_RGB_SHA256": "18d79b29e3acd8012658d2ef38fcf392a505da530aaf385eccae882b7bd6ce9d",
+      "output_RGB_SHA256": "73daf5621e61f1ca2f4dfb8905d0886d88fdd79af4b2de9a1949af25191d160f",
+      "mean_RGB_change": 2.505851984024048,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 25,
+      "source_RGB_SHA256": "189a980d885d447a412efbad8fc626baa17b8f25b4523e7dda7395f719e7e35c",
+      "output_RGB_SHA256": "20cc529412f43e3c2163ce36fa31dbf70daa55eb9d7a971eea3d39b413b10856",
+      "mean_RGB_change": 2.488565444946289,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 26,
+      "source_RGB_SHA256": "e1583c2854dc3e6a97e94ae624a0fbbbf04430e6a92de9e3a54a7d93e7199c8f",
+      "output_RGB_SHA256": "2918a25b29da55b91cdbdec0a81fbe7720844de2855e5c2b9642830d71616c35",
+      "mean_RGB_change": 2.4948930740356445,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 27,
+      "source_RGB_SHA256": "f0a4a4dfe947e8e2127229557b9e82bfaef6f1a1e803becb094e6cbb3dede0d5",
+      "output_RGB_SHA256": "01a87cb49fcd499ac54cea54c80d18a8c3412cee4a921aa9e4efc2fb2ae617ab",
+      "mean_RGB_change": 2.454263925552368,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 28,
+      "source_RGB_SHA256": "75492887904e9138ab182dee810a19ada0e308fc9db457f688ab552078ecc2e1",
+      "output_RGB_SHA256": "bb0f395e05fde8c15c682265212a025c471e7341c8ef58fc77b359af64d1f6b1",
+      "mean_RGB_change": 2.506599187850952,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 29,
+      "source_RGB_SHA256": "47ea74680d5ecded00d029e050f549bde93f08a6d09e6edfcbe9d185f64eccd0",
+      "output_RGB_SHA256": "5eda843adf1f95ed585d50eadd2214f5fae356702adb34934dca4b653fef836c",
+      "mean_RGB_change": 2.4854259490966797,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 30,
+      "source_RGB_SHA256": "32982596dbfae88fbb0b268c51f6bbfd33a41ee62c21982d3195d1848d44f188",
+      "output_RGB_SHA256": "1979f44403ce4c7b8c09c79cb446cb2ea57a14e1d29d083152446dd0e4124de6",
+      "mean_RGB_change": 2.5898892879486084,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 31,
+      "source_RGB_SHA256": "38cfa22bbb07987c01a41e7c09bd0a94b6f71efdb6d98dbb6575dd1e64da2147",
+      "output_RGB_SHA256": "d21d3834a980fd9111c4d1124dc679371e79fd689bac7db8d1adc34d06a1f000",
+      "mean_RGB_change": 2.585657835006714,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 32,
+      "source_RGB_SHA256": "9afb76d84939b371ae5ac49173ff2a89caf5813690c27dcdf5b4388e6f4e164f",
+      "output_RGB_SHA256": "4cefe1b5b1f28c1bc3e2650b030b9da5bd2077d4271d653677b2265f98e536d9",
+      "mean_RGB_change": 2.5551695823669434,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 33,
+      "source_RGB_SHA256": "ae3e59ff20c86ecedf4e168320bc0b8b1b5ce99e1ccf6ab529f65dbac693b3d9",
+      "output_RGB_SHA256": "6c64b3ab2fd9b1f20a861d9d04e26bcd65ef365d9bb00008743c7a1686677007",
+      "mean_RGB_change": 2.506124496459961,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 34,
+      "source_RGB_SHA256": "205cd0d3f3f4fb53d09413d6fac0dc8069c3036377570579fc4a677337461512",
+      "output_RGB_SHA256": "2f4fb5f342dd4e53ffbd77b1ce5fbffbb89b9ec899c26631da442a6a97e7a6af",
+      "mean_RGB_change": 2.559436321258545,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 35,
+      "source_RGB_SHA256": "23c7309f13830f31c1012b06fa19689c8d5d5302631c81f2bc9851cba668e2ae",
+      "output_RGB_SHA256": "f0bebb29729e43aa7a6c2685a8854b30691aad193c21108eaad417ba7e6d4953",
+      "mean_RGB_change": 2.5722157955169678,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 36,
+      "source_RGB_SHA256": "02b2af8da3a9a64e603e8ec835c6cbeccff52b6f9b874a42b163307340f7d78a",
+      "output_RGB_SHA256": "13d7e3f4a93c5ba59d945070354a10954b3787b4a66fd7631ace9a74fcf8218b",
+      "mean_RGB_change": 2.5642566680908203,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 37,
+      "source_RGB_SHA256": "00b9b28240584196fda8b3df8fb402f1ebde6a57c5b924cbf604d8efa1941254",
+      "output_RGB_SHA256": "73778ecb56dd19f636fedfa88b3380453dceb6d1bab47a389c5d3c7cc187e515",
+      "mean_RGB_change": 2.5182037353515625,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 38,
+      "source_RGB_SHA256": "09f6fb68cc91b030c66814924507b28ce7d58189432ebc2bbbb0180fdfb444c3",
+      "output_RGB_SHA256": "bcbe39f3e1bc818b0da2ab19af3fad5d9dcb7ece6c1e3718f2d4c4cf17c54e33",
+      "mean_RGB_change": 2.550171375274658,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 39,
+      "source_RGB_SHA256": "8632699379addee1181b7f0826a88ef87ce2422ee31860fbcd59118c8de254bf",
+      "output_RGB_SHA256": "d1ea1f00548412440a8b35281ff446a844a29ad653bba96b0c49a8ad9ff1ac6a",
+      "mean_RGB_change": 2.5343286991119385,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 40,
+      "source_RGB_SHA256": "c18fff88339658820154c315ce6725f8a6463146ab89fa2c7632139518bd12d2",
+      "output_RGB_SHA256": "1dfde1d7ed734433826d6ba95108551f48da1cf294cbcd002334a2fc72e21912",
+      "mean_RGB_change": 2.4971675872802734,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 41,
+      "source_RGB_SHA256": "41fb7e577b1eedd75e0c16b3cceba538ca90cb98fa2e7d5cc17a3a8f7e9fa2aa",
+      "output_RGB_SHA256": "83be84f677510ba0bf878fe9a8a0e68e1d82fb94c58e30684e27b2f60c19d504",
+      "mean_RGB_change": 2.4731123447418213,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 42,
+      "source_RGB_SHA256": "b255b7855b429b7063095636fb34360440a6beb0632590f9840da6a6484f5fad",
+      "output_RGB_SHA256": "aae18a76bc3c2a90807fcfeb2cef4063fb79e060e3a4f426dd3f012ad3957857",
+      "mean_RGB_change": 2.4012842178344727,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 43,
+      "source_RGB_SHA256": "6f9163e811510b6a9a9eed7e0f949aac751561ca991105671da2aa1ab72af452",
+      "output_RGB_SHA256": "76e25cf384a45f64ccaad056ebee4ffdd6b1638dae2afab1f9364df26c640b8a",
+      "mean_RGB_change": 2.3723347187042236,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 44,
+      "source_RGB_SHA256": "5567d81f8516e858010f3ebe1954b8b3ac9147bfff0c3390735e4ca44206bb19",
+      "output_RGB_SHA256": "c13b0955d85de6a5f12ad880ae1a6d35096769c8119f9d2d7fa635698d2fd182",
+      "mean_RGB_change": 2.3680479526519775,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 45,
+      "source_RGB_SHA256": "8fbeafaca17be92cf2b5e65a2fa3c1a9c0e41ae3b89ff2e9bcef3b6b08977f3f",
+      "output_RGB_SHA256": "6c1279233a33ad5904bc06172438eeea6ffcc203bf678842d1dd2b3043774fc8",
+      "mean_RGB_change": 2.3868231773376465,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 46,
+      "source_RGB_SHA256": "c6a21e1bca1ec17497e15d048127f7134b42f7773c47a8e7716d1acc9f689dcd",
+      "output_RGB_SHA256": "ad156ff1612e69a60df5d0c6059c3b984aebf7761a40352e3b655cbc29752c96",
+      "mean_RGB_change": 2.3810338973999023,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 47,
+      "source_RGB_SHA256": "29352ed5f8510a50253dc21e2f5ed6606d880ab52052e903c90a1825d78fb2ac",
+      "output_RGB_SHA256": "ec53e247900d16155b21c7ba15f0eec5c0895c598a278adbcc3c34294b614020",
+      "mean_RGB_change": 2.396214723587036,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 48,
+      "source_RGB_SHA256": "5b4e399df73d0cead4c6138962a2a8a474ada40bcf28413b170cbc511d58ad22",
+      "output_RGB_SHA256": "4f996ce0fcfa9691e0b07555256e2d36ec9cb84ac1913894c027cbc91419f258",
+      "mean_RGB_change": 2.391555070877075,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 49,
+      "source_RGB_SHA256": "5270af2908e45423b4b59b7b773f9713856a8b2fe6fbf2af10008f5eaeb68b9b",
+      "output_RGB_SHA256": "d0057506e654e974a4bc1e3ccc239838b78e1e65e096268bbd5f4bc42df763a6",
+      "mean_RGB_change": 2.4835472106933594,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 50,
+      "source_RGB_SHA256": "c01cc14013ecc508a31c6841ceb3c17cc0674a37afbbd4dea1b483f7957be7df",
+      "output_RGB_SHA256": "cf17668dfb3fc381429a1e05ca7dc8168ba55f2575291d9b62ece61a6dec9cdc",
+      "mean_RGB_change": 2.4671435356140137,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 51,
+      "source_RGB_SHA256": "cc7379e02c36ccd6296ead0dcd6bf2489b4fab763501cee5eb9b801a33a154b9",
+      "output_RGB_SHA256": "12651401cd0b06fb620b0af60913af6a6338d91ebf6a17e4e310606ce4392f60",
+      "mean_RGB_change": 2.4803760051727295,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 52,
+      "source_RGB_SHA256": "0182465bdd5e2152f538fab86bd036e6bfaaf3cbb292a488a315224957a67f85",
+      "output_RGB_SHA256": "fef9ca66f569d57cab4b4a837259236f3a8329b971223e3e6790aad45bc6b57a",
+      "mean_RGB_change": 2.4701476097106934,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 53,
+      "source_RGB_SHA256": "9fed34696857ad127a5006ac215a255517fc583151bc107fdabcca85e7440efe",
+      "output_RGB_SHA256": "78efed3e60fc3e72b379edcdd09af30e87884d45bde454c21849245e7611fc08",
+      "mean_RGB_change": 2.558065414428711,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 54,
+      "source_RGB_SHA256": "0633a625fd11d0d7a3b25d7ea7d688b55711c1efbbad411bcf39988de76b253b",
+      "output_RGB_SHA256": "9972e7dd5b8fcdb5bdba647b92315e2eb56cfb37eeff6928c01ee584a9060661",
+      "mean_RGB_change": 2.5849852561950684,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 55,
+      "source_RGB_SHA256": "37cfceb2a76122b85bd414ab93e16211e50e6faccc48aec4f067e5693576585e",
+      "output_RGB_SHA256": "e94c8dabdf7a17ffa9024e3198b97487565df9f5c64c522e659203d820fb72f5",
+      "mean_RGB_change": 2.6009225845336914,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 56,
+      "source_RGB_SHA256": "b0519d194e75c865d3dc6643ebac365a742088bb300b534c486f76d5505d2010",
+      "output_RGB_SHA256": "a12dafaa35cad2cd8e055becae621a69c8e9ae4635d10dd66ad40d8af2670fab",
+      "mean_RGB_change": 2.662285566329956,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 57,
+      "source_RGB_SHA256": "1c810f84e24d0d78e489f7e3541a2a5193855114fc840fc3b84f951a69006f5e",
+      "output_RGB_SHA256": "6a12519d445fec55392d165d82f8adb5975b92db4d31c2bdc8a0b99c7bb03c9d",
+      "mean_RGB_change": 2.630571126937866,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 58,
+      "source_RGB_SHA256": "1b3ec70bf5cf4f443f8c22f129f87205c7a84c671b99165e09f928fd5e73d2e3",
+      "output_RGB_SHA256": "193091c34ed9f3537290432cb4b4177f596e10b7fed111cbf8444552f3b52454",
+      "mean_RGB_change": 2.669369697570801,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 59,
+      "source_RGB_SHA256": "b15dab7af4c59b92f792841897d68bfd8e7f2d7b958cf9facd5f9cb431616449",
+      "output_RGB_SHA256": "af557a1ebe8fe7eb79bad4243b246f9f35dc36fc3062ec6aca653834a1a21bd0",
+      "mean_RGB_change": 2.667651414871216,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 60,
+      "source_RGB_SHA256": "0756b8690e2327cbd3ca2ae8d63e953ebd0eeace885462ee5d57fa82ac26f911",
+      "output_RGB_SHA256": "4bd34cc3613fed92133d83b962b7fcbb42d97fd11793e5b200aea00510424116",
+      "mean_RGB_change": 2.6701903343200684,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 61,
+      "source_RGB_SHA256": "81457afd75ea748541a5ed5df0e3512c1dca3c8743213cd92665bdb6ce24e5c8",
+      "output_RGB_SHA256": "036e3de6f40b249beb18de043797cd3f492ed72185cbf1892ff9b7d4680d292e",
+      "mean_RGB_change": 2.6729133129119873,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 62,
+      "source_RGB_SHA256": "debc2dff0cb86d554cf780e1db091dd30a7fe7bc96c775c0b274cec7be9bdf73",
+      "output_RGB_SHA256": "1efca066c6999168bb8f3c1632e5068d1dea904d8976581bf80d66703708c57c",
+      "mean_RGB_change": 2.6915674209594727,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 63,
+      "source_RGB_SHA256": "57d69777eb3f1832e3d6f6eebcf1bfe84749c1949c698a901639eab322ccb826",
+      "output_RGB_SHA256": "5c7c90c62624771dce45c6b333030b5060adfff9e583b2688fc36de69a9281ea",
+      "mean_RGB_change": 2.644679546356201,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 64,
+      "source_RGB_SHA256": "e3c32331f1b5545f315a5c3004b4027e2709041ed126eefacfa8bc6da15df098",
+      "output_RGB_SHA256": "8a4cd0887fd8b2e62c1d8c7dfc6b9e6997fb10003a39742bfca31618398dea29",
+      "mean_RGB_change": 2.669276475906372,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 65,
+      "source_RGB_SHA256": "1f38306cb8879130fc588c0b6ee4620fd6c893b0957ac7265147b52f71c119af",
+      "output_RGB_SHA256": "790e269c7d38051046d49a19aa1b5c8a3059d2afa24f7e50a34d28d0febb2eb4",
+      "mean_RGB_change": 2.6833481788635254,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 66,
+      "source_RGB_SHA256": "aeca22568ef3403d59d209be5c4a3a6726fae3e756d8201cbe9d0805eb7b8f32",
+      "output_RGB_SHA256": "99da346c2cb962485612d56759a3f37affe750a62463cd6ec36baa27d7f10662",
+      "mean_RGB_change": 2.7294929027557373,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 67,
+      "source_RGB_SHA256": "f6996f2d4679e93f0e36de8868c7afe0234fbc3c1233f82970f184e14e25907a",
+      "output_RGB_SHA256": "793d35cc02ecc2a4b3095ddc9c0b7a9a274c9db1e43362e4db00c1c850a6d90d",
+      "mean_RGB_change": 2.7173266410827637,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 68,
+      "source_RGB_SHA256": "6868c415848173a639a3130939ec3785e5ca8fd0dc0ce5e3a0a32bfe04c4e192",
+      "output_RGB_SHA256": "3c14a38fceed6e3f2a77a1bb65d5dbea78f946bb3064c334f36e037253a899d5",
+      "mean_RGB_change": 2.716358184814453,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 69,
+      "source_RGB_SHA256": "a2be285924cb824891ea218e81cb47946e8d399cd944334135c66ca0e21eeeeb",
+      "output_RGB_SHA256": "2cb15071fba0489a5e29575ef1d2a36fafed70c60bcb84f138ffed00a1c3e0e0",
+      "mean_RGB_change": 2.69026517868042,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 70,
+      "source_RGB_SHA256": "16e78db1938080c41ba319a96a511c32d21ff8f731f9dd811836b5f648fcde18",
+      "output_RGB_SHA256": "5f71b6f97d32cef2a13e5486d113589245699e810e6f8d19013c296e1279a0a6",
+      "mean_RGB_change": 2.6895713806152344,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 71,
+      "source_RGB_SHA256": "851e53cbd9b2dd1856b83ec6b1bbf210412f9415f9ea5c08ca343637114c8f4b",
+      "output_RGB_SHA256": "497e4002aeeae4b0e89bef671cb88e90c27026d84b2652ba6185606f6bd65460",
+      "mean_RGB_change": 2.6764211654663086,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 72,
+      "source_RGB_SHA256": "c925d801f992d22341685815dff109f0fc3e3e33ff56569153b697abb01ea6e1",
+      "output_RGB_SHA256": "29b79cf5e7ab16ab57d685b6db931f03c209506bf7f2cef21e264a0e127d59a4",
+      "mean_RGB_change": 2.667909860610962,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 73,
+      "source_RGB_SHA256": "37b97d07aa12597ae07ec5e5e80e1bd13ec7297ff10cc35d98847d8d35fc1f70",
+      "output_RGB_SHA256": "85e5f7bb511e92ccd377c77a7cad5c546a5112e1d510f19b7be9c373275838d1",
+      "mean_RGB_change": 2.675372838973999,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 74,
+      "source_RGB_SHA256": "5972382a88bd4bf1703ef3085e55913988511b0a1f59af7002a68d4615aadac7",
+      "output_RGB_SHA256": "c339100c7ecc14c86068998d7ac5104c6edf0b01c8a13f0c4f4d5b31ae14fd2d",
+      "mean_RGB_change": 2.7053422927856445,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 75,
+      "source_RGB_SHA256": "4ec8b3441f655a9dcf3b1fbf7fd33dff839405c61bc88f85307f2a77f2540e1d",
+      "output_RGB_SHA256": "495b5bf7a2e70a16ec315144222405c8a0d16bed82464146a93305fec7263698",
+      "mean_RGB_change": 2.693636178970337,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 76,
+      "source_RGB_SHA256": "5a0055b4daca8c5f864fa2b1ca8b5a592b53ee7a5804317aef0218d2b7535314",
+      "output_RGB_SHA256": "35bd12a48491ac1fee0e4bc63d6317359f56a9b968b00603490cf23394af9bfd",
+      "mean_RGB_change": 2.706374406814575,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 77,
+      "source_RGB_SHA256": "3d6b816ecf2c6a7d75afbe0b41cf08938c9826084e55e36e1a2ed6aa68bc6a8b",
+      "output_RGB_SHA256": "221212a4e5153f72ab89f02717fc0d245c616feb909ba5b761cc90ed05d89505",
+      "mean_RGB_change": 2.682845115661621,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 78,
+      "source_RGB_SHA256": "6fc6ee2ad187ca808d7e6a16560e8788f743388411cabd6bdfe7968d44d24c69",
+      "output_RGB_SHA256": "4e881e022d26f5d2442286a7d36d8dea7e71576fff5d267d16059d1da1fd94d0",
+      "mean_RGB_change": 2.7405765056610107,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 79,
+      "source_RGB_SHA256": "79e216f9d56a07048754c465267b842744a1cd5cd963f6b7e1aadce36d5de36f",
+      "output_RGB_SHA256": "ef413d72914f6c9c7f805fc9515c0c87a2f09a99e0152286d1ebc39f27a3181d",
+      "mean_RGB_change": 2.7101240158081055,
+      "refiner_bypass": false
+    },
+    {
+      "frame": 80,
+      "source_RGB_SHA256": "3472569db39cff7b4594bcd176b32c9a5d083d07f94c65183cfecb2e5a907d35",
+      "output_RGB_SHA256": "f439309bd8ec4d8d6e67b8227c21930c2f948ef27361bf94838ddcf434b3af92",
+      "mean_RGB_change": 2.748495578765869,
+      "refiner_bypass": false
+    }
+  ],
+  "model_loading_audit": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_DD_motion_24h_20261119/native_DD_Difix_pretrained_probe_20261121/official_loading_audit.json",
+  "new_project_training_steps": 0,
+  "extra_pretrained_weights": true,
+  "background_pasting": false
+}

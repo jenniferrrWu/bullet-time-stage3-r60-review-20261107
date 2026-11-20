@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "frame": 40,
+  "current_latent_unchanged": true,
+  "reference_latent_changed": true,
+  "current_UNet_prediction_changed": true,
+  "output_RGB_change": 0.7860928773880005,
+  "actual_GG_trace": {
+    "case": "hardI",
+    "frame": 40,
+    "timestep": 199,
+    "shape": [
+      2,
+      4,
+      88,
+      160
+    ],
+    "reference_test_kind": "normal",
+    "current_latent_SHA256": "81ca4427ed636aa5d9ece50109687f6f106218f5b346c468df2ca31fcd3f8efb",
+    "reference_latent_SHA256": "eed028af3963d09c6db26d49bbf393c5daeff952612bfa91d3863ea02d617aa3",
+    "current_prediction_SHA256": "949caa8dce468391078a85c10b49fa57287cf8db3ac981e96fff61401ea9f548"
+  },
+  "counterfactual_trace": {
+    "case": "hardI",
+    "frame": 40,
+    "timestep": 199,
+    "shape": [
+      2,
+      4,
+      88,
+      160
+    ],
+    "reference_test_kind": "black_reference_ablation",
+    "current_latent_SHA256": "81ca4427ed636aa5d9ece50109687f6f106218f5b346c468df2ca31fcd3f8efb",
+    "reference_latent_SHA256": "9523e53dc0e3c6eef4e9ff4c3035a51dc1720df4ce1913d8de3c6cb5820caed4",
+    "current_prediction_SHA256": "6055a8cf04bf9b4db7c9311ff6e8293bb2491a6f845712213e37ec31b5131b71"
+  },
+  "counterfactual_NOT_in_final_video": true
+}
