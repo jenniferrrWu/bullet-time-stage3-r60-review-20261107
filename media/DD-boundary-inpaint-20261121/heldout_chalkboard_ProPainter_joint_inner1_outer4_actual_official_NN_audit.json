@@ -1,0 +1,50 @@
+{
+  "status": "completed",
+  "original_DD_calls": 0,
+  "new_project_training_steps": 0,
+  "loading": [
+    {
+      "module": "DataParallel",
+      "parameter_tensors": 124,
+      "all_loaded_learned_parameters_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "module": "RecurrentFlowCompleteNet",
+      "parameter_tensors": 74,
+      "all_loaded_learned_parameters_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "module": "InpaintGenerator",
+      "parameter_tensors": 208,
+      "all_loaded_learned_parameters_exact": true,
+      "missing": [],
+      "unexpected": []
+    }
+  ],
+  "ProPainter_forward_windows": 17,
+  "flow_completion_calls": 4,
+  "RAFT_forward_batches": 42,
+  "RAFT_pair_predictions": 160,
+  "skipped_lossy_video_writes": [
+    "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/heldout_chalkboard/round2/heldout_chalkboard/ProPainter_joint_inner1_outer4/official/input_frames/masked_in.mp4",
+    "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/heldout_chalkboard/round2/heldout_chalkboard/ProPainter_joint_inner1_outer4/official/input_frames/inpaint_out.mp4"
+  ],
+  "all_observed_predictions_finite": true,
+  "official_source_revision": "326782529a63d997cab80ab21439b92ed422b3d3",
+  "precision": "float32",
+  "subvideo_length": 40,
+  "neighbor_length": 10,
+  "ref_stride": 10,
+  "mask_dilation": 0,
+  "RAFT_iterations": 20,
+  "passed": true,
+  "output_frames": 81,
+  "expected_all_frame_window_coverage": true,
+  "all_loaded_learned_parameters_exact": true,
+  "output_directory": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/heldout_chalkboard/round2/heldout_chalkboard/ProPainter_joint_inner1_outer4/official/input_frames/frames",
+  "time": 1795227232.152353
+}

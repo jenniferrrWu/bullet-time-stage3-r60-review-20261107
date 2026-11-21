@@ -1,0 +1,1482 @@
+{
+  "page": "Stage3-DD-boundary-inpaint-20261121.html",
+  "page_SHA256": "00be124974df7f1a294625c91178fce20f304b9828bf3939000c5e01531b3cdb",
+  "completed_new_results": 14,
+  "reused_comparator_results": 0,
+  "planned_new_results": 14,
+  "frames_each": 81,
+  "whole_quality_passed": false,
+  "data": {
+    "hardI": {
+      "label": "HardI · 室内女舞者",
+      "fps": 25,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardI/DD_inputs_v951/source81_native_canvas.mkv",
+          "source_SHA256": "0e6ea4c97d7901bf02867fc1a71dff40e36443c6277893dd2a707216637f148f",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_source_0e6ea4c97d79.webm",
+              "SHA256": "3173f1358dc6dffd7dac16513c0084c4c8900be71b24f9ccee94c9d4b2d51d3d",
+              "bytes": 793393,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_source_0e6ea4c97d79.mp4",
+              "SHA256": "5b2d3dc09387a1947a58c0c6bc39f7ca92558f15abca13d54b5e6993693e5eab",
+              "bytes": 16547,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_source_0e6ea4c97d79_clear.mp4",
+              "SHA256": "7162bf76c83a7c2066d48c112a9ddeac323f096473f3ae16689612f51d455132",
+              "bytes": 259208,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073625.4225342
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_native_547b21a1290b.webm",
+              "SHA256": "b4dc32428842fe3109c6eed1c1613c852c6a08dcdb56f16747868a88432db780",
+              "bytes": 695933,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_native_547b21a1290b.mp4",
+              "SHA256": "40e732b1cf6093d69b4b404268a2a357218eabe714b54f487aef2a145342362e",
+              "bytes": 15086,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardI_native_547b21a1290b_clear.mp4",
+              "SHA256": "67ace2f54ad9423c8f8438c6a601a048dc277a18a06fe654372e3c809975cd74",
+              "bytes": 254945,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073632.1765635
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/hardI/round2/hardI/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "40ea14568d90cbc35c760028f701f3a08c69e46e23e005b2df540ecce795de83",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardI_ProPainter_outer4_40ea14568d90.webm",
+              "SHA256": "68c1c5e3a6da50e283f1ab668638bf6b2d7965c460c45a2c6f9f94768c30be56",
+              "bytes": 693231,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardI_ProPainter_outer4_40ea14568d90.mp4",
+              "SHA256": "1c8c4c0b60c5075d68dcdbac36baff92088cb0f853a4afb9dc766b792cad8a9a",
+              "bytes": 15075,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardI_ProPainter_outer4_40ea14568d90_clear.mp4",
+              "SHA256": "303762bb2fc766776e51820fc3a5591082b741105f6656baa0078b8916a1073e",
+              "bytes": 253593,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228213.9066296
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/hardI/round2/hardI/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "3b1e184e461a31166f8ce5b8de6e83df9ba6ba0290fc81bfbe6ea66e198b3fca",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardI_ProPainter_joint_inner1_outer4_3b1e184e461a.webm",
+              "SHA256": "618e0a34790bc2935518d1bc3d60b9f426a64cbca535014a597169b542f478d5",
+              "bytes": 692507,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardI_ProPainter_joint_inner1_outer4_3b1e184e461a.mp4",
+              "SHA256": "d94f399a3f042173f96422d83d305e415beff7dd67691b34f63d5b655ea42a59",
+              "bytes": 14912,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardI_ProPainter_joint_inner1_outer4_3b1e184e461a_clear.mp4",
+              "SHA256": "10e51ba2d4fb01b5eab322f07cd9ace5114081eaf6edfe26e8c76d29c8f7a869",
+              "bytes": 250529,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228246.489371
+        }
+      }
+    },
+    "hardH": {
+      "label": "HardH · 男舞者",
+      "fps": 25,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/hard_case_third_column_v425/inputs/source81_native_canvas.mkv",
+          "source_SHA256": "e20395ade34465af34702c5b79ea00a102e48e8b3329e3c97274474bcd39cad7",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_source_e20395ade344.webm",
+              "SHA256": "543090fd15f650b1dd658167deb3d01086d334a4ad3d148dd7d0730623c05315",
+              "bytes": 1733704,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_source_e20395ade344.mp4",
+              "SHA256": "bb009a23beea4017abf518ddc7d6031cc75dd3e026f806d6294bbbb232f92ab7",
+              "bytes": 27680,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_source_e20395ade344_clear.mp4",
+              "SHA256": "973f93a62fd15f6a213e6569ce46a7facd2be0fb4142ad92337b9e395e7624c6",
+              "bytes": 563148,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073676.2926311
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_native_ca12e1c6000c.webm",
+              "SHA256": "55461c16c91dbded86c988f9b0018169f79bb95568b155454920c1709a390abb",
+              "bytes": 1570606,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_native_ca12e1c6000c.mp4",
+              "SHA256": "30c9d4431a41595b024bf68b2973513f0d2a3b8a687acb2611e4234bb077bcca",
+              "bytes": 26905,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardH_native_ca12e1c6000c_clear.mp4",
+              "SHA256": "8f0134b61d5807576c94f3e3e705b7eacc5909421d71b7223c8400670d89d86b",
+              "bytes": 552903,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073687.9046223
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_memory_v3/attempts/hardH/round2/hardH/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "56a0c747c28959f043323a95b82d59ac31679eb8fa61e8aaa3c4006b9e933949",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardH_ProPainter_outer4_56a0c747c289.webm",
+              "SHA256": "e16dd0bbf14cf6a75d7dff0722c8c589986eb2c410f01acfeaddffcb49d45b8f",
+              "bytes": 1569384,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardH_ProPainter_outer4_56a0c747c289.mp4",
+              "SHA256": "35f54d865a2b7f9b7da1f537718e7d62005e9e1379ad93852c8752533d1b3956",
+              "bytes": 26677,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardH_ProPainter_outer4_56a0c747c289_clear.mp4",
+              "SHA256": "5d7fbfa250437e5ed4b1e2a4f2732e75cc966a2a3ff7825da489bf9074930365",
+              "bytes": 554309,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228353.0377786
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_memory_v3/attempts/hardH/round2/hardH/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "35cf494a2750dc054970d7f8dc2f151ff35bcfe65a083c6cc29ed931c68b1067",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardH_ProPainter_joint_inner1_outer4_35cf494a2750.webm",
+              "SHA256": "28e8b1c7d1311a8f024fa789121093059f764e8304e97269e4669a29b0f2b052",
+              "bytes": 1567185,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardH_ProPainter_joint_inner1_outer4_35cf494a2750.mp4",
+              "SHA256": "566a378ad9eacd5baa2b81b9b832ea97b5385f02b93776873ef47aee00fbdf39",
+              "bytes": 26572,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardH_ProPainter_joint_inner1_outer4_35cf494a2750_clear.mp4",
+              "SHA256": "8e04089e17b2bf0bebd391d7025fef63fb0619532613403ee80bd958023dd6ce",
+              "bytes": 548514,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228351.9666831
+        }
+      }
+    },
+    "simpleD": {
+      "label": "简单 D · 半身",
+      "fps": 15,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/stage23_simple_routes_20261020/inputs/simple01_woman_talking_plants/source_post_tstar_to_end_lossless.mp4",
+          "source_SHA256": "c3f3b22b0bb44e1f2046209d7f9553e845df6ee1136eadbb6fb60dc2b8cbb400",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_source_c3f3b22b0bb4.webm",
+              "SHA256": "999a77fca2f6352b17101b834ba9fb15722dede825d83782c2e7ae37f728ac0d",
+              "bytes": 1866153,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_source_c3f3b22b0bb4.mp4",
+              "SHA256": "08c35fde7abfeb8f2f15c1d36170e6e6e457cfd33862589b0e5b5f1971ae5277",
+              "bytes": 22353,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_source_c3f3b22b0bb4_clear.mp4",
+              "SHA256": "d354ba9d1ea5e3e80dd70774765b1e75dcb1abc4e88b7b8230682796897a0ee3",
+              "bytes": 1430549,
+              "probe": {
+                "width": 1920,
+                "height": 1080,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073733.9437914
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_native_d2aacef508fc.webm",
+              "SHA256": "73de9234b841ad37979a4f490b6a164edab2089fe604c775f95fdfef86e42252",
+              "bytes": 1531498,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_native_d2aacef508fc.mp4",
+              "SHA256": "4f9b5730b7c7011fc28f9c2027538f582008a9bce444b4ce0df4f16b48f3fc45",
+              "bytes": 16635,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/simpleD_native_d2aacef508fc_clear.mp4",
+              "SHA256": "cbd99038ba81799634758e78e17a08c9c33bf06743deec04881e1814f48c98ba",
+              "bytes": 399294,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073771.4091728
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/simpleD/round2/simpleD/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "1560bd3a786822ed7da4bff154f233bb21d6951d4b241edd48bd17fa247263a3",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/simpleD_ProPainter_outer4_1560bd3a7868.webm",
+              "SHA256": "b4bac5cde3810efec688227469518ba9ef94df6e853b057ca856cc1df250fccd",
+              "bytes": 1527273,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/simpleD_ProPainter_outer4_1560bd3a7868.mp4",
+              "SHA256": "5a593c9a2c6ff4482d27ce3f4f2eaf299df20dcf90bd5bcc228224bc8222a5f5",
+              "bytes": 16749,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/simpleD_ProPainter_outer4_1560bd3a7868_clear.mp4",
+              "SHA256": "9c1e54501cb81bfee961a900bd55cb1c183bb3f97a7e78bc7ddb3ddcb9ab0582",
+              "bytes": 402851,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228340.6357994
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/simpleD/round2/simpleD/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "6577beaf954e2246a006333bca7cd55fe59cc4eb113629bb7bf0f1c2df28a421",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/simpleD_ProPainter_joint_inner1_outer4_6577beaf954e.webm",
+              "SHA256": "50e3e205ff2184a50d3a8172653973aeccd0cde45cab6d80ef2aea65b9303ffa",
+              "bytes": 1527485,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/simpleD_ProPainter_joint_inner1_outer4_6577beaf954e.mp4",
+              "SHA256": "5e17a3f1b03922be1764b8ddef8335be87ba5011bbea31bc67c8e4a2045a5d50",
+              "bytes": 16684,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/simpleD_ProPainter_joint_inner1_outer4_6577beaf954e_clear.mp4",
+              "SHA256": "ceb5b7616d8967fd1c71e836c8ba122dab27d1520ca3a2a944505f42f84a7cb9",
+              "bytes": 400910,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228346.844112
+        }
+      }
+    },
+    "hardK": {
+      "label": "HardK · 交叉摆臂",
+      "fps": 25,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardK/DD_inputs_v951/source81_native_canvas.mkv",
+          "source_SHA256": "bfca58ebf542dc756a23bf00a359b9d467cb3e6ab59998882c43bc8bbcee4582",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_source_bfca58ebf542.webm",
+              "SHA256": "73516159cbfebc0fe35696d3d49dd67b730045826392b3bc6e73339986bf6bd7",
+              "bytes": 276722,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_source_bfca58ebf542.mp4",
+              "SHA256": "4554829972d519a824b9cd40769680611adaf18760016361b2efdcc1e3cd0bf8",
+              "bytes": 7227,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_source_bfca58ebf542_clear.mp4",
+              "SHA256": "26d246edcb6fb3a0b96a1627e2e355525fecc974a098655da191ae2de4fe6b1d",
+              "bytes": 111591,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073796.8043432
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_native_a35a6f60a74d.webm",
+              "SHA256": "663368e4a701aecda75a010e4923da0076bdbc01f3a2820cbee4434bb4edca13",
+              "bytes": 504088,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_native_a35a6f60a74d.mp4",
+              "SHA256": "f1623704cfafc4f89db993feb046c030ec17df20ebb56da90f7881ee5e1dd6a5",
+              "bytes": 8666,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardK_native_a35a6f60a74d_clear.mp4",
+              "SHA256": "d7d056b312e4e0c232df72934645f30d2f9007594cb1ea33d449c1b28ff0cba3",
+              "bytes": 154683,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073823.3339741
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/hardK/round2/hardK/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "2a00b9ed7bf8fc741b09209afd5f9c13a40e16c061c29433755736f907e1d638",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardK_ProPainter_outer4_2a00b9ed7bf8.webm",
+              "SHA256": "6a7bebd5e1fd803db262eb0cc03bc64f313b8adb6ba4b08608b17e31a74e2455",
+              "bytes": 503582,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardK_ProPainter_outer4_2a00b9ed7bf8.mp4",
+              "SHA256": "9f2043c7beca97a6e7b61cedc2de5fef89567ebb746965fcd5d0bf92916e041f",
+              "bytes": 8616,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardK_ProPainter_outer4_2a00b9ed7bf8_clear.mp4",
+              "SHA256": "0caf25adcf28ba7a504b1c1175de52dddaf3368cd83c711d6bffc0f964b26558",
+              "bytes": 155254,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228213.0996704
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/hardK/round2/hardK/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "9dee15beb33958f08e23c49c6bcec4fe751d7b892d21d7f015ebf254b8d63546",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardK_ProPainter_joint_inner1_outer4_9dee15beb339.webm",
+              "SHA256": "5586ca8b6ed8ddaa207b50509a3513400288d7a1da7b0e4b6f66a25d341723f2",
+              "bytes": 504829,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardK_ProPainter_joint_inner1_outer4_9dee15beb339.mp4",
+              "SHA256": "5f38e28ac8ac840bed951a76b222bdf85ba25f9a09c75f537bffd9a9fa874cbf",
+              "bytes": 8515,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardK_ProPainter_joint_inner1_outer4_9dee15beb339_clear.mp4",
+              "SHA256": "48dfe460492ecd8bcac2ac948d521bf7a74c2331dcbbc700ab4f1dd8627ec603",
+              "bytes": 153872,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228245.0727434
+        }
+      }
+    },
+    "hardJ": {
+      "label": "HardJ · 抬膝转身",
+      "fps": 25,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/six_case_background_review_v944/hardJ/DD_inputs_v951/source81_native_canvas.mkv",
+          "source_SHA256": "c87a2e587b3e3ae3e8db218736e215467f9178299eb92ca8c8ba8b216299118e",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_source_c87a2e587b3e.webm",
+              "SHA256": "bd3f051b281019a526481addd90b80175b10798d3f457f9783290412b3ee7cc9",
+              "bytes": 628089,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_source_c87a2e587b3e.mp4",
+              "SHA256": "72701db43a9b0582935cf96f9000fb1573267cac87c3cd6cb8a9a863c7f9a72a",
+              "bytes": 8298,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_source_c87a2e587b3e_clear.mp4",
+              "SHA256": "2df9ef63a83d544f92740ac13e453a79b0fc8e087b2d3590b68b828ead812240",
+              "bytes": 171695,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073846.8687508
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_native_7b16f715a451.webm",
+              "SHA256": "3c5431dbac543eb6cc4f06626a5f2838e5dcf330d8723ba3f36bccec60a8ed97",
+              "bytes": 1194378,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_native_7b16f715a451.mp4",
+              "SHA256": "34452fd471ad491267380084ee362e40aac1f636c365209ba0a3a479182b900a",
+              "bytes": 12899,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/hardJ_native_7b16f715a451_clear.mp4",
+              "SHA256": "0226cb998ca41333c088cf7051e05a66ea5caa4a1318dbe077c747e0a06007dc",
+              "bytes": 288651,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073882.7339501
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/hardJ/round2/hardJ/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "c394054e11dc06e68e7e60a4439a6e5eafd85e40d85fd89ff69e311044105a11",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardJ_ProPainter_outer4_c394054e11dc.webm",
+              "SHA256": "6d481660f89aa57d62bf514488dbb35fd2166c2b70d8ca3212f6fed46600cb4e",
+              "bytes": 1194810,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardJ_ProPainter_outer4_c394054e11dc.mp4",
+              "SHA256": "b39645751682042e586d997d5810c8e55355db752abf7954be0d73925f89d88d",
+              "bytes": 13027,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardJ_ProPainter_outer4_c394054e11dc_clear.mp4",
+              "SHA256": "5c931df7e82e18a079a29328d9bce619efe62bf5685f753413c989556664c2f0",
+              "bytes": 289360,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228297.8226354
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/hardJ/round2/hardJ/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "baf02c22ca9815fe96b1e0dc4e9f1b9e59e3e88fb5f7a73aea3b11249fe0a334",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardJ_ProPainter_joint_inner1_outer4_baf02c22ca98.webm",
+              "SHA256": "bdbe3da1d71b14d5af294ed64ebc6033b879fd2b9561906d5946f66b39f9b4f9",
+              "bytes": 1194899,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardJ_ProPainter_joint_inner1_outer4_baf02c22ca98.mp4",
+              "SHA256": "20be0dccbfc0d5048a2f0176e96bb33c5ee960fd5035790f6c7723a8ca3f6dfb",
+              "bytes": 13046,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/hardJ_ProPainter_joint_inner1_outer4_baf02c22ca98_clear.mp4",
+              "SHA256": "52276844bf61376c367c98c878907d29e7faf3b08b6c0da387993c01ab1afaad",
+              "bytes": 289501,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228299.5584588
+        }
+      }
+    },
+    "case13": {
+      "label": "屋顶女舞者",
+      "fps": 15,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/case13_native81_current_prior_v213/canonical/native81/window_000/input.mkv",
+          "source_SHA256": "6e672b605a7a08a8d9479b889dca82cf54fd6340171a89fc1075aafc172f8d54",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_source_6e672b605a7a.webm",
+              "SHA256": "c0730ed0869880b53f23aad084fba3a215f6d40493220f4168e9072ec35e48f7",
+              "bytes": 2384076,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_source_6e672b605a7a.mp4",
+              "SHA256": "7edc9ec02253cc90f96ffe3f9dcee2d980d8599739f5092aee35eb047d5f8c81",
+              "bytes": 41488,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_source_6e672b605a7a_clear.mp4",
+              "SHA256": "d151e7cc80f23c8b0c4b8e73fe613e916f5b80d56960d68d608ca6756e844124",
+              "bytes": 1211656,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073943.072103
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_native_91b3298a8316.webm",
+              "SHA256": "e41c64b48e5e0311ef3c87fd14c2459c1a49618f98b2048a41a8127b025d2685",
+              "bytes": 1176509,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_native_91b3298a8316.mp4",
+              "SHA256": "1e5b9e3e0311b8622591efce6a5cf42fc26bb95e46fd90ce86c5e56cf4f540fb",
+              "bytes": 15267,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/case13_native_91b3298a8316_clear.mp4",
+              "SHA256": "558b08c35112f9aa43d92d12612b3a342a92df50dc3874f39955c3eef34ead24",
+              "bytes": 466072,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073958.6249342
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/case13/round2/case13/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "b773bf6b840f389e6475139dad5e2833ba7cf517241aa377a0ea6f4a6de08760",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/case13_ProPainter_outer4_b773bf6b840f.webm",
+              "SHA256": "0821e6693700e5564f42351daf609431978480307fd8bd19d7cd6a29072fabc9",
+              "bytes": 1183149,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/case13_ProPainter_outer4_b773bf6b840f.mp4",
+              "SHA256": "73dd0b83123cda4244226622ecf0c3ab419e1908ecd91c933644e652d8522bfe",
+              "bytes": 15162,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/case13_ProPainter_outer4_b773bf6b840f_clear.mp4",
+              "SHA256": "895738d416b97b90e059c57334b363c160d074b0eabc39da40d8e5ea6bd901df",
+              "bytes": 467435,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228236.6643386
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/case13/round2/case13/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "6f021444b8a7e59221107f63b374227c13344edb8232fafdd30d2ec8952d4701",
+          "frames": 81,
+          "fps": 15,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/case13_ProPainter_joint_inner1_outer4_6f021444b8a7.webm",
+              "SHA256": "5dd2cce00ec9fb298285db2372ea699c858f41b45f8003c339bea07651364943",
+              "bytes": 1175763,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/case13_ProPainter_joint_inner1_outer4_6f021444b8a7.mp4",
+              "SHA256": "3fdfbfac43be1acbea0db1bd1b8a47cfa9f9341e2a55715ef434b6a07ccb5528",
+              "bytes": 15228,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/case13_ProPainter_joint_inner1_outer4_6f021444b8a7_clear.mp4",
+              "SHA256": "307655377c1f787e1b2ed75e70f26e2174e98da0679d357ecb1ff78e33359635",
+              "bytes": 464457,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "15/1",
+                "nb_read_frames": "81",
+                "verified_duration": 5.4,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228292.26854
+        }
+      }
+    },
+    "heldout_chalkboard": {
+      "label": "回归 · 黑板讲解（已见）",
+      "fps": 25,
+      "variants": {
+        "source": {
+          "source": "/public/wufeier/automatic_bullet_time/results/stage23_simple_routes_20261020/raw/route_a/depthdirector/stage3/simple02_woman_presenting_chalkboard/attempt03_right_w2c_fix/preprocess/Rotate,0,30,0,0,0/input.mp4",
+          "source_SHA256": "d6f9b3648047b52ce68447f8f27c3894c411f738c611144b42a034033aeba637",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_source_d6f9b3648047.webm",
+              "SHA256": "f73be24a74cbfb116ad017299865b85aab18575996fc53367ba6506dca052fd0",
+              "bytes": 885593,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_source_d6f9b3648047.mp4",
+              "SHA256": "06bca69df588323d0131e6a6b2f2f5b496e04832b56e50c59e20407b3d988d57",
+              "bytes": 8458,
+              "probe": {
+                "width": 320,
+                "height": 180,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_source_d6f9b3648047_clear.mp4",
+              "SHA256": "b98ce14400e094ff35c93bfffe9aee1c8aca98d85a62364a73e48af17e99a988",
+              "bytes": 197154,
+              "probe": {
+                "width": 1024,
+                "height": 576,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795073963.9271703
+        },
+        "native": {
+          "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+          "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_native_969f8c40c9d4.webm",
+              "SHA256": "f0e0dd65acc4773e3ca6d8d30d2df4f0f9a4f185a6e1ebae72cb31f4f7c6b6a6",
+              "bytes": 911418,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_native_969f8c40c9d4.mp4",
+              "SHA256": "a9026c290f9a7eaa9dcfe4e078b6baa312629d7678bf5f5c61dedffabb4c7abd",
+              "bytes": 6072,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/uniform-DD-v7/heldout_chalkboard_native_969f8c40c9d4_clear.mp4",
+              "SHA256": "db88797e6cff7742205bee50d900e40342e0ba2556c27c363be6951118838b3d",
+              "bytes": 120514,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795074015.2284827
+        },
+        "ProPainter_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/heldout_chalkboard/round2/heldout_chalkboard/ProPainter_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "37bd4b867f05b64dcff32f41d357822feaec1e9f42f8a7ec21d1a04b708e9495",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/heldout_chalkboard_ProPainter_outer4_37bd4b867f05.webm",
+              "SHA256": "effaa191bfbaa5ae334fbb4a6a2c544f3861ccee7384db2b11479abd083ce29d",
+              "bytes": 911496,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/heldout_chalkboard_ProPainter_outer4_37bd4b867f05.mp4",
+              "SHA256": "4009c054e5e4b2111d6def04f236eff3f9022bf65814194afdc91a515c376119",
+              "bytes": 5962,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/heldout_chalkboard_ProPainter_outer4_37bd4b867f05_clear.mp4",
+              "SHA256": "1330fa6b3ea7eae5dfa755e434a5f934bf7a2c22ca7b5b37ab4e6fea48bd9c10",
+              "bytes": 122787,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228233.8814352
+        },
+        "ProPainter_joint_inner1_outer4": {
+          "source": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/ProPainter_boundary_v2/attempts/heldout_chalkboard/round2/heldout_chalkboard/ProPainter_joint_inner1_outer4/DD_boundary_ProPainter_RGB_lossless.mkv",
+          "source_SHA256": "c57f9222c852228961dcd1f383a653c1763e2085a70c51f24920f2c41dcf72e5",
+          "frames": 81,
+          "fps": 25,
+          "explicit_frame_timestamp_assignment": true,
+          "scaled320_YUV420_all_frames_exact": true,
+          "not_original1280_RGB_lossless": true,
+          "files": {
+            "precise": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/heldout_chalkboard_ProPainter_joint_inner1_outer4_c57f9222c852.webm",
+              "SHA256": "ad3d2174a00d241a7d1359871e090b9366047086d084cb1b2891deacc5f8ee3c",
+              "bytes": 912090,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "light": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/heldout_chalkboard_ProPainter_joint_inner1_outer4_c57f9222c852.mp4",
+              "SHA256": "ecbf91dc8a01c59d1f21ddfdeb13340d8b27d53179c6499b8b05c6fa746b67f1",
+              "bytes": 6050,
+              "probe": {
+                "width": 320,
+                "height": 176,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            },
+            "clear": {
+              "path": "/root/bullet_time_original_review_20261114/repository/media/DD-boundary-inpaint-20261121/heldout_chalkboard_ProPainter_joint_inner1_outer4_c57f9222c852_clear.mp4",
+              "SHA256": "bc082bcdaf9321403270bda63dc313507beadc6a56ad61abf78ccf5b3a30983f",
+              "bytes": 122084,
+              "probe": {
+                "width": 1280,
+                "height": 704,
+                "r_frame_rate": "25/1",
+                "nb_read_frames": "81",
+                "verified_duration": 3.24,
+                "all81_timestamps_verified": true
+              }
+            }
+          },
+          "time": 1795228286.2443943
+        }
+      }
+    }
+  },
+  "time": 1795228355.8333921
+}
