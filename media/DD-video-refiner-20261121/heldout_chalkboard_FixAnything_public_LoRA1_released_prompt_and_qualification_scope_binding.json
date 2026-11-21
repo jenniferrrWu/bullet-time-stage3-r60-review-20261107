@@ -1,0 +1,25 @@
+{
+  "released_source": "/root/bullet_time_original_review_20261114/research_20261121/FixAnything/scripts/run_inference.py",
+  "SHA256": "5c6864292864ff5ef90cd54e3227d2dadeb8d0c27dc5372aa93e0e11e24c7ff4",
+  "actual_call_uses_released_function_defaults": true,
+  "prompts": {
+    "DEFAULT_PROMPT": "A clean, high-quality, photorealistic video with sharp details, smooth motion, and natural lighting.",
+    "DEFAULT_NEGATIVE_PROMPT": "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走"
+  },
+  "production_overrides": {
+    "clean_frame_indices": [
+      0
+    ],
+    "num_frames": 81,
+    "num_repeat_last": 4,
+    "height": 480,
+    "width": 832,
+    "seed": 1,
+    "num_inference_steps": 10,
+    "cfg_scale": 5
+  },
+  "actual_reference_ablation_scope": "13-frame real clip qualification with17internal frames, not all7production85frame ablations",
+  "RGB_output_first_frame_bypass_native": true,
+  "DDoriginal_inputs_and_prompt_frozen": true,
+  "time": 1795225444.0479352
+}

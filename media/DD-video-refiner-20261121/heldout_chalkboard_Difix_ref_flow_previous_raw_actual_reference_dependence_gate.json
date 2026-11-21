@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "frame": 40,
+  "current_latent_unchanged": true,
+  "only_reference_changed": true,
+  "actual_output_changed": true,
+  "RGB_MAE": 0.7926280498504639,
+  "repeated_same_condition_bit_exact": true,
+  "history_source": "frozen original native DD output at previous frame",
+  "flow_aligned": true,
+  "invalid_flow_fallback": "current native DD condition RGB",
+  "counterfactual_NOT_in_final_video": true
+}
