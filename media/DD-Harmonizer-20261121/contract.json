@@ -1,0 +1,95 @@
+{
+  "cases": {
+    "hardI": {
+      "label": "HardI · 室内女舞者",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline",
+      "fps": 25,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef"
+    },
+    "hardH": {
+      "label": "HardH · 男舞者",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline",
+      "fps": 25,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2"
+    },
+    "simpleD": {
+      "label": "简单 D · 半身",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline",
+      "fps": 15,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592"
+    },
+    "hardK": {
+      "label": "HardK · 交叉摆臂",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline",
+      "fps": 25,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467"
+    },
+    "hardJ": {
+      "label": "HardJ · 抬膝转身",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline",
+      "fps": 25,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38"
+    },
+    "case13": {
+      "label": "屋顶女舞者",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline",
+      "fps": 15,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd"
+    },
+    "heldout_chalkboard": {
+      "label": "未调参新例 · 黑板讲解",
+      "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline",
+      "fps": 25,
+      "frames": 81,
+      "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+      "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06"
+    }
+  },
+  "planned_model_configurations": 3,
+  "planned_size_precision_controls": 2,
+  "planned_outputs": 35,
+  "frames_each": 81,
+  "source": "Frozen V7 native DD, plus existing frozen Difix where explicitly labeled",
+  "public_checkpoint_revision": "20ca33d4612b1e98e0526b3a7ee604af5b289f58",
+  "source_revision": "826c1998796e024bc82c9843b3ec515c50737573",
+  "timestep": 250,
+  "precision": "bfloat16",
+  "input_wh": [
+    1024,
+    576
+  ],
+  "input_resize": "PIL bilinear full canvas, official preprocessing float32 before BF16",
+  "output_wh": [
+    1280,
+    704
+  ],
+  "output_resize": "PIL bicubic, official uint8 conversion",
+  "history_offsets": [
+    -1,
+    -2,
+    -3,
+    -4
+  ],
+  "history": "autoregressive prior outputs from same variant; first4frames no past conditioning",
+  "first_frame": "bypass refiner, exact native DD first RGB",
+  "f40_controls": "per-source official JIT comparison, per-temporal-method exact repeat and replace-only-history test",
+  "legacy_norm": "Real TE2.10 CUDA kernel through old TorchScript ABI; mathematical formula preflight and public JIT/eager numerical gate",
+  "new_project_training_steps": 0,
+  "static_background_paste": false,
+  "additional_pretrained_weights": true,
+  "all_settings_shared": true,
+  "quality_passed": false,
+  "time": 1795221294.4674876
+}
