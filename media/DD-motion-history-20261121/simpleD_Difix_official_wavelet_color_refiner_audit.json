@@ -1,0 +1,360 @@
+{
+  "case": "simpleD",
+  "method": "Difix_official_wavelet_color",
+  "source_all81_hashes_verified": true,
+  "all81_lossless_output_hashes_verified": true,
+  "actual_DiT_calls": 0,
+  "actual_learned_model_calls": 0,
+  "new_pretrained_weights": false,
+  "new_project_training_steps": 0,
+  "fixed_convolutions_not_NN_predictions": 230,
+  "component_manifest": {
+    "repository": "https://github.com/sczhou/Upscale-A-Video",
+    "revision": "10ca1d751cad25b8ac0b9b0cab415a82d9df1ac6",
+    "path": "models_video/color_correction.py",
+    "SHA256": "2d0196e0ea5df6c116adfea3b70bd8b580e5f184826a229f9f0a59c136d098d7",
+    "used_function": "wavelet_reconstruction",
+    "levels": 5,
+    "not_full_Upscale_A_Video_reproduction": true,
+    "time": 1795224635.2557118
+  },
+  "first_frame_passthrough": true,
+  "low_frequencies_from_same_current_native_DD_frame": true,
+  "no_static_output_background_paste": true,
+  "RGB_postprocessing_is_explicit": true,
+  "optional_motion_aligned_residual_median": false,
+  "consensus_parameters": {
+    "FB": 1.5,
+    "photo": 24,
+    "clip": 16,
+    "require_both_neighbors": true
+  },
+  "zero_mixing_qualification": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/Difix_wavelet_v1/attempts/simpleD/same_inputs_closed_postprocessing/disabled_qualification.json",
+  "component_identity_all81": "/root/bullet_time_original_review_20261114/native_general_round2_20261121/Difix_wavelet_v1/attempts/simpleD/all81_official_component_identity_qualification.json",
+  "per_frame": [
+    {
+      "frame": 0,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 1,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 2,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 3,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 4,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 5,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 6,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 7,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 8,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 9,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 10,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 11,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 12,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 13,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 14,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 15,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 16,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 17,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 18,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 19,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 20,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 21,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 22,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 23,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 24,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 25,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 26,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 27,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 28,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 29,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 30,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 31,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 32,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 33,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 34,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 35,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 36,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 37,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 38,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 39,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 40,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 41,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 42,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 43,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 44,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 45,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 46,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 47,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 48,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 49,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 50,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 51,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 52,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 53,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 54,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 55,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 56,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 57,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 58,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 59,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 60,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 61,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 62,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 63,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 64,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 65,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 66,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 67,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 68,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 69,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 70,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 71,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 72,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 73,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 74,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 75,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 76,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 77,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 78,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 79,
+      "official_wavelet_only": true
+    },
+    {
+      "frame": 80,
+      "official_wavelet_only": true
+    }
+  ]
+}

@@ -251,5 +251,165 @@
     "quality_passed": false,
     "time": 1795223664.72836
   },
-  "scope": "5 shared inference configurations across7cases=35 new neural outputs;35 comparators reused; no new project training or static output background paste"
+  "frozen_previous": {
+    "cases": {
+      "hardI": {
+        "label": "HardI · 室内女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef"
+      },
+      "hardH": {
+        "label": "HardH · 男舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2"
+      },
+      "simpleD": {
+        "label": "简单 D · 半身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592"
+      },
+      "hardK": {
+        "label": "HardK · 交叉摆臂",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467"
+      },
+      "hardJ": {
+        "label": "HardJ · 抬膝转身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38"
+      },
+      "case13": {
+        "label": "屋顶女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd"
+      },
+      "heldout_chalkboard": {
+        "label": "未调参新例 · 黑板讲解",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06"
+      }
+    },
+    "methods": [
+      "Difix_ref_previous_raw",
+      "Difix_ref_flow_previous_raw"
+    ],
+    "planned_outputs": 14,
+    "frames": 81,
+    "source": "frozen original native DD",
+    "pretrained_model": "nvidia/difix_ref",
+    "reference": "previous frame of frozen original native DD output, no autoregressive enhanced feedback",
+    "flow_variant": "frozen native RAFT current->previous; FB<=1.5px and native RGB error<=24, otherwise current native RGB used as reference condition",
+    "model_parameters": {
+      "timestep": 199,
+      "seed_per_frame": 42,
+      "CFG": 0,
+      "precision": "float32",
+      "prompt": "remove degradation"
+    },
+    "first_frame_bypass_native": true,
+    "new_project_training_steps": 0,
+    "static_output_background_paste": false,
+    "all_settings_shared": true,
+    "quality_passed": false,
+    "time": 1795224350.627151
+  },
+  "wavelet": {
+    "cases": {
+      "hardI": {
+        "label": "HardI · 室内女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardI/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "547b21a1290bf9b3c957701304a6e55f913837e5923d9a80490267b54e489fef"
+      },
+      "hardH": {
+        "label": "HardH · 男舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardH/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "ca12e1c6000cd4ff61e35d4e426d5256b014dad5035b767526e898c705331dd2"
+      },
+      "simpleD": {
+        "label": "简单 D · 半身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/simpleD/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "d2aacef508fcc274aabaa9e3101a1db9bb8ef4a6fc803f8b50289bc021a37592"
+      },
+      "hardK": {
+        "label": "HardK · 交叉摆臂",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardK/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "a35a6f60a74dd9f9daa684c78d56652988a2ce0ee433a5a5124e748433ae5467"
+      },
+      "hardJ": {
+        "label": "HardJ · 抬膝转身",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/hardJ/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "7b16f715a451ef6d57e6e57beca854702ec3c9ba7ba6ac159a530563e5a40c38"
+      },
+      "case13": {
+        "label": "屋顶女舞者",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline",
+        "fps": 15,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v1/cases/case13/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "91b3298a8316dc02dfe3fc22a5a4fc8dbd94ea423f2d9d60d2dcf39516bd09dd"
+      },
+      "heldout_chalkboard": {
+        "label": "未调参新例 · 黑板讲解",
+        "parent": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline",
+        "fps": 25,
+        "frames": 81,
+        "source": "/public/wufeier/automatic_bullet_time/results/dd_nov13_recovered_20261114/repair_campaigns/unified_stage3_dd_v5/heldout_chalkboard/cases/heldout_chalkboard/native_baseline/result/native_decoded_RGB_lossless.mkv",
+        "source_SHA256": "969f8c40c9d451ac31f027ec64d4fd2285ee87a293fdb5b977a9b541c9bb4a06"
+      }
+    },
+    "planned_outputs": 14,
+    "methods": [
+      "Difix_official_wavelet_color",
+      "Difix_wavelet_residual_consensus"
+    ],
+    "source": "frozen native DD and existing frozen Difix",
+    "module": "Pinned Upscale-A-Video official wavelet_reconstruction, levels5",
+    "precision": "float32",
+    "second_method": "same previous proven RAFT aligned3frame residual median, FB1.5/photo24/clip16",
+    "per_case_parameters": false,
+    "first_RGB_native_passthrough": true,
+    "additional_model_predictions": 0,
+    "new_project_training_steps": 0,
+    "static_output_background_paste": false,
+    "RGB_postprocessing_is_explicit": true,
+    "quality_passed": false,
+    "time": 1795224718.0149655
+  },
+  "scope": "9 shared configurations across7cases=63 new outputs, including14 fixed postprocessing outputs;35 comparators reused; no new project training or static output background paste"
 }
