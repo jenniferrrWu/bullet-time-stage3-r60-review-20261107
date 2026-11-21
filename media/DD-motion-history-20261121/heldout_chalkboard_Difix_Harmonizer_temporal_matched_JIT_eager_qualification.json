@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "scope": "Native and Difix f40, same public checkpoint and resolution; not an all81 official replay",
+  "comparisons": [
+    {
+      "source": "native",
+      "frame": 40,
+      "equivalent_RGB_MAE": 0.12668082118034363,
+      "max_abs_normalized_difference": 0.0234375,
+      "all_model_weights_verified": true
+    },
+    {
+      "source": "difix",
+      "frame": 40,
+      "equivalent_RGB_MAE": 0.13243207335472107,
+      "max_abs_normalized_difference": 0.028076171875,
+      "all_model_weights_verified": true
+    }
+  ]
+}
