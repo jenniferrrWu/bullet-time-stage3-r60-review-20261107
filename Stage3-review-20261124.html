@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>子弹时刻 · Stage 3 验收</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101720;color:#edf3f9;font:16px/1.6 system-ui,sans-serif}header,main{max-width:1500px;margin:auto;padding:20px 24px}header{padding-bottom:0}h1{margin:0;font-size:clamp(26px,4vw,42px)}p{margin:8px 0;color:#becddd}nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}button,a{font:inherit}button{background:#1e2b3a;color:#eef5ff;border:1px solid #4c6078;border-radius:8px;padding:7px 12px;cursor:pointer}button[aria-pressed=true]{background:#bcefff;color:#102636;border-color:#bcefff}a{color:#a9e6ff}section{border:1px solid #41546c;border-radius:10px;overflow:hidden}section header{padding:12px 16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}h2{margin:0;font-size:20px}iframe{display:block;width:100%;height:76vh;min-height:520px;border:0;background:white}footer{margin-top:18px}
+</style>
+<header><h1>子弹时刻 · Stage 3 验收</h1><p>11 月 21 日实验 · 默认对照为 V7 原生 DD · 通用消缝及屋顶 247 帧整段仍待验收</p></header>
+<main><nav aria-label="方案" id="tabs"></nav>
+<section><header><h2 id="title"></h2><a id="original" target="_blank" rel="noopener">打开原验收页</a><p id="status" style="flex-basis:100%"></p></header><iframe id="review" title="Stage 3 视频对照"></iframe></section>
+<footer><p><strong>未完成：</strong>作者 LoRA 强度对照旧索引 6/14，原产物路径缺失。已启动权重缓存恢复，并排入 HardI 原生复现。ProPainter 梯度版 14 份已生成，画质未通过。</p></footer></main>
+<script>
+const base='https://jenniferrrwu.github.io/bullet-time-stage3-r60-review-20261107/';
+const options=[
+['运动历史','Stage3-DD-motion-history-20261121.html','63 份新结果。包含原分辨率 Harmonizer、Difix 动态历史和冻结历史、小波颜色校正。'],
+['FixAnything','Stage3-DD-video-refiner-20261121.html','21 份新结果。比较首帧锚定、首尾锚定和尺寸对照。本次复查的 557 个线上资源均返回 HTTP 200。'],
+['ProPainter','Stage3-DD-boundary-inpaint-20261121.html','首批 14 份已发布验证。'],
+['Harmonizer','Stage3-DD-Harmonizer-20261121.html','35 份已发布验证。包含尺寸与精度对照。'],
+['时序共识','Stage3-DD-temporal-consensus-20261121.html','28 份新结果。包含 Difix 后验均值与运动对齐时序后处理。'],
+['消缝第二轮','Stage3-DD-seams-round2-20261121.html','52 份已发布验证。包含统一采样调整、联合注意力和 Difix。'],
+['消缝第一轮','Stage3-DD-native-general-seams-20261120.html','49 份已发布验证。包含 VAE、采样和 TeDiO。'],
+['V7 原生 DD','Stage3-DD-unified-v7.html','默认对照为页面内「原生 DD」行。']
+];
+const tabs=document.querySelector('#tabs'),review=document.querySelector('#review');
+function select(index){
+ const [name,path,summary]=options[index];
+ tabs.querySelectorAll('button').forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+ document.querySelector('#title').textContent=name;
+ document.querySelector('#status').textContent=summary;
+ document.querySelector('#original').href=base+path;
+ review.src=base+path;
+}
+options.forEach(([name],index)=>{
+ const button=document.createElement('button');button.type='button';button.textContent=name;
+ button.addEventListener('click',()=>select(index));tabs.append(button);
+});
+select(0);
+</script></html>
