@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage3 验收</title>
+<style>
+  :root {
+    color-scheme: dark;
+    font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #0b0f17;
+    color: #eef4fd;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { max-width: 1440px; margin: auto; padding: 22px clamp(12px, 3vw, 34px) 36px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 15px; }
+  h1 { font-size: clamp(20px, 3vw, 26px); margin: 0; }
+  label, figcaption { font-size: 14px; color: #cad7e8; }
+  nav { display: flex; align-items: center; gap: 8px; }
+  select, button {
+    font: inherit;
+    color: inherit;
+    background: #172232;
+    border: 1px solid #435369;
+    border-radius: 6px;
+    min-height: 40px;
+    padding: 6px 10px;
+  }
+  button { min-width: 40px; cursor: pointer; }
+  button:disabled { opacity: 0.36; cursor: default; }
+  :focus-visible { outline: 2px solid #84c3ff; outline-offset: 3px; }
+  figure { margin: 0; min-width: 0; }
+  .comparison { display: block; width: 100%; aspect-ratio: 1920 / 796; }
+  video, figure img { border-radius: 7px; background: #111927; }
+  .references { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 18px; }
+  figcaption { margin: 0 0 8px; }
+  .references video, .references img { display: block; width: 100%; height: clamp(180px, 35vw, 410px); object-fit: contain; }
+  .references a { display: block; border-radius: 7px; }
+  @media (max-width: 650px) {
+    .references { grid-template-columns: 1fr; }
+    .references video, .references img { height: auto; max-height: 420px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Stage3 六法对比</h1>
+    <nav aria-label="切换案例">
+      <button id="previous" aria-label="上一个案例" type="button">←</button>
+      <label for="case">案例</label>
+      <select id="case"></select>
+      <button id="next" aria-label="下一个案例" type="button">→</button>
+    </nav>
+  </header>
+  <video id="comparison" class="comparison" aria-label="六种方法同屏" controls playsinline preload="metadata"></video>
+  <div class="references">
+    <figure>
+      <figcaption id="source-title"></figcaption>
+      <video id="source" aria-labelledby="source-title" controls playsinline preload="metadata"></video>
+    </figure>
+    <figure>
+      <figcaption>Stage2 末帧 · 第 80 帧</figcaption>
+      <a id="frame-link" target="_blank" rel="noopener" aria-label="打开原尺寸 Stage2 末帧">
+        <img id="frame" alt="Stage2 末帧">
+      </a>
+    </figure>
+  </div>
+</main>
+<script>
+  const cases = [{"id": "brick", "title": "砖墙前舞蹈", "frames": [38, 118], "hold": 0.6666666666666666}, {"id": "shadow", "title": "人影与长阴影", "frames": [25, 105], "hold": 0.6666666666666666}, {"id": "rehearsal", "title": "排练室舞蹈", "frames": [1190, 1270], "hold": 0.6666666666666666}, {"id": "court", "title": "球场舞蹈", "frames": [1200, 1280], "hold": 0.6666666666666666}, {"id": "steps", "title": "台阶旁舞蹈", "frames": [40, 120], "hold": 0.6666666666666666}, {"id": "hardI", "title": "Hard I · 居家舞蹈", "frames": [300, 380], "hold": 0.6666666666666666}, {"id": "hardJ", "title": "Hard J · 男生舞蹈", "frames": [105, 185], "hold": 0.6666666666666666}, {"id": "hardK", "title": "Hard K · 女生舞蹈", "frames": [300, 380], "hold": 0.6666666666666666}, {"id": "hardL", "title": "Hard L · 舞蹈", "frames": [0, 80], "hold": 0.6666666666666666}, {"id": "hardM", "title": "Hard M · 舞蹈", "frames": [0, 80], "hold": 0.6666666666666666}];
+  const selector = document.getElementById('case');
+  const comparison = document.getElementById('comparison');
+  const source = document.getElementById('source');
+  const frame = document.getElementById('frame');
+  const frameLink = document.getElementById('frame-link');
+  const previous = document.getElementById('previous');
+  const next = document.getElementById('next');
+  const sourceTitle = document.getElementById('source-title');
+
+  cases.forEach((item) => selector.add(new Option(item.title, item.id)));
+
+  function showCase(index) {
+    const item = cases[index];
+    const base = 'media/' + item.id + '/';
+    selector.selectedIndex = index;
+    previous.disabled = index === 0;
+    next.disabled = index === cases.length - 1;
+    comparison.src = base + 'comparison.mp4';
+    source.src = base + 'source.mp4';
+    frameLink.href = base + 'stage2.png';
+    frame.src = frameLink.href;
+    sourceTitle.textContent = '原视频片段 · 第 ' + item.frames[0] + '–' + item.frames[1] + ' 帧';
+  }
+
+  function selectCase(index) {
+    const hash = '#' + cases[index].id;
+    if (location.hash !== hash) history.replaceState(null, '', hash);
+    showCase(index);
+  }
+
+  function showHash() {
+    showCase(Math.max(0, cases.findIndex((item) => '#' + item.id === window.location.hash)));
+  }
+
+  selector.addEventListener('change', () => selectCase(selector.selectedIndex));
+  previous.addEventListener('click', () => selectCase(selector.selectedIndex - 1));
+  next.addEventListener('click', () => selectCase(selector.selectedIndex + 1));
+  window.addEventListener('hashchange', showHash);
+  showHash();
+</script>
+</body>
+</html>
