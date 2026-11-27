@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stage3 验收</title>
+<style>
+  :root {
+    color-scheme: dark;
+    font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #0b0f17;
+    color: #eef4fd;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { max-width: 1440px; margin: auto; padding: 22px clamp(12px, 3vw, 34px) 36px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 15px; }
+  h1 { font-size: clamp(20px, 3vw, 26px); margin: 0; }
+  label, figcaption { font-size: 14px; color: #cad7e8; }
+  nav { display: flex; align-items: center; gap: 8px; }
+  select, button {
+    font: inherit;
+    color: inherit;
+    background: #172232;
+    border: 1px solid #435369;
+    border-radius: 6px;
+    min-height: 40px;
+    padding: 6px 10px;
+  }
+  button { min-width: 40px; cursor: pointer; }
+  button:disabled { opacity: 0.36; cursor: default; }
+  :focus-visible { outline: 2px solid #84c3ff; outline-offset: 3px; }
+  .view-controls { display: flex; gap: 8px; margin: 0 0 8px; }
+  button[aria-pressed="true"] { border-color: #84c3ff; }
+  figure { margin: 0; min-width: 0; }
+  .comparison { display: block; width: 100%; aspect-ratio: 1920 / 796; }
+  video, figure img { border-radius: 7px; background: #111927; }
+  .references { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 18px; }
+  figcaption { margin: 0 0 8px; }
+  .references video, .references img { display: block; width: 100%; height: clamp(180px, 35vw, 410px); object-fit: contain; }
+  .references a { display: block; border-radius: 7px; }
+  @media (max-width: 650px) {
+    .references { grid-template-columns: 1fr; }
+    .references video, .references img { height: auto; max-height: 420px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Stage3 人物边界接缝</h1>
+    <nav aria-label="切换案例">
+      <button id="previous" aria-label="上一个案例" type="button">←</button>
+      <label for="case">案例</label>
+      <select id="case"></select>
+      <button id="next" aria-label="下一个案例" type="button">→</button>
+    </nav>
+  </header>
+  <div class="view-controls">
+    <button id="grid-view" type="button" aria-pressed="true">六种修复</button>
+    <button id="fixed-view" type="button" aria-pressed="false">背景固定原版</button>
+  </div>
+  <video id="comparison" class="comparison" aria-label="六种方法同屏" controls playsinline preload="metadata"></video>
+  <div class="references">
+    <figure>
+      <figcaption id="source-title"></figcaption>
+      <video id="source" aria-labelledby="source-title" controls playsinline preload="metadata"></video>
+    </figure>
+    <figure>
+      <figcaption id="stage2-title">Stage2 末帧</figcaption>
+      <a id="frame-link" target="_blank" rel="noopener" aria-label="打开原尺寸 Stage2 末帧">
+        <img id="frame" alt="Stage2 末帧">
+      </a>
+    </figure>
+  </div>
+</main>
+<script>
+  const cases = [{"id": "hardI", "title": "Hard I · 居家舞蹈", "frames": [300, 380], "stage2": "Stage2 末帧 · 第 80 帧"}, {"id": "hardJ", "title": "Hard J · 舞蹈室", "frames": [105, 185], "stage2": "Stage2 末帧 · 第 80 帧"}, {"id": "hardK", "title": "Hard K · 全身舞蹈", "frames": [300, 380], "stage2": "Stage2 末帧 · 第 80 帧"}, {"id": "hardL", "title": "Hard L · 地板舞", "frames": [0, 80], "stage2": "Stage2 末帧 · 第 80 帧"}, {"id": "hardM", "title": "Hard M · 地板舞", "frames": [0, 80], "stage2": "Stage2 末帧 · 第 80 帧"}, {"id": "hardH", "title": "Hard H · 长阴影舞蹈", "frames": [241, 321], "stage2": "Stage2 末帧 · 实际选用的 25 帧前缀"}, {"id": "case13", "title": "Case13 · 天台舞蹈", "frames": [845, 925], "stage2": "Stage2 实际交接末帧"}, {"id": "simpleD", "title": "Simple D · 室内说话", "frames": [259, 339], "stage2": "Stage2 实际交接末帧"}, {"id": "heldout_chalkboard", "title": "黑板前动作", "frames": [150, 230], "stage2": "Stage2 实际交接末帧"}, {"id": "heldout_slow_expression", "title": "近景表情", "frames": [237, 317], "stage2": "Stage2 实际交接末帧"}];
+  const selector = document.getElementById('case');
+  const comparison = document.getElementById('comparison');
+  const source = document.getElementById('source');
+  const frame = document.getElementById('frame');
+  const frameLink = document.getElementById('frame-link');
+  const previous = document.getElementById('previous');
+  const next = document.getElementById('next');
+  const sourceTitle = document.getElementById('source-title');
+  const stage2Title = document.getElementById('stage2-title');
+  const gridView = document.getElementById('grid-view');
+  const fixedView = document.getElementById('fixed-view');
+
+  function setView(fixed, keepPosition) {
+    const item = cases[selector.selectedIndex];
+    const time = keepPosition ? comparison.currentTime : 0;
+    const playing = keepPosition && !comparison.paused;
+    gridView.setAttribute('aria-pressed', String(!fixed));
+    fixedView.setAttribute('aria-pressed', String(fixed));
+    comparison.src = 'media/' + item.id + '/' + (fixed ? 'fixed.mp4' : 'comparison.mp4');
+    if (time > 0 || playing) {
+      comparison.onloadedmetadata = () => {
+        comparison.currentTime = Math.min(time, comparison.duration);
+        if (playing) comparison.play().catch(() => {});
+        comparison.onloadedmetadata = null;
+      };
+    } else {
+      comparison.onloadedmetadata = null;
+    }
+  }
+  gridView.addEventListener('click', () => setView(false, true));
+  fixedView.addEventListener('click', () => setView(true, true));
+
+  cases.forEach((item) => selector.add(new Option(item.title, item.id)));
+
+  function showCase(index) {
+    const item = cases[index];
+    const base = 'media/' + item.id + '/';
+    selector.selectedIndex = index;
+    previous.disabled = index === 0;
+    next.disabled = index === cases.length - 1;
+    setView(false, false);
+    stage2Title.textContent = item.stage2;
+    source.src = base + 'source.mp4';
+    frameLink.href = base + 'stage2.png';
+    frame.src = frameLink.href;
+    sourceTitle.textContent = '原视频片段 · 第 ' + item.frames[0] + '–' + item.frames[1] + ' 帧';
+  }
+
+  function selectCase(index) {
+    const hash = '#' + cases[index].id;
+    if (location.hash !== hash) history.replaceState(null, '', hash);
+    showCase(index);
+  }
+
+  function showHash() {
+    showCase(Math.max(0, cases.findIndex((item) => '#' + item.id === window.location.hash)));
+  }
+
+  selector.addEventListener('change', () => selectCase(selector.selectedIndex));
+  previous.addEventListener('click', () => selectCase(selector.selectedIndex - 1));
+  next.addEventListener('click', () => selectCase(selector.selectedIndex + 1));
+  window.addEventListener('hashchange', showHash);
+  showHash();
+</script>
+</body>
+</html>
